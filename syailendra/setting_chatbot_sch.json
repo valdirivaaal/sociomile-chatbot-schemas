@@ -1,0 +1,791 @@
+{
+    "schemas": {
+        "default": {
+            "survey": {
+                "active": false
+            },
+            "reset_keys": [],
+            "top_level_questions": [
+                {
+                    "id": "A",
+                    "text": "Reksa Dana",
+                    "type": "actions"
+                },
+                {
+                    "id": "B",
+                    "text": "Aplikasi dan Fitur",
+                    "type": "actions"
+                },
+                {
+                    "id": "C",
+                    "text": "Tentang Akun",
+                    "type": "actions"
+                },
+                {
+                    "id": "D",
+                    "text": "Pendaftaran",
+                    "type": "actions"
+                },
+                {
+                    "id": "E",
+                    "text": "Transaksi",
+                    "type": "actions"
+                }
+            ],
+            "MENU": [
+                {
+                    "id": "A",
+                    "text": "Reksa Dana",
+                    "type": "actions"
+                },
+                {
+                    "id": "B",
+                    "text": "Aplikasi dan Fitur",
+                    "type": "actions"
+                },
+                {
+                    "id": "C",
+                    "text": "Tentang Akun",
+                    "type": "actions"
+                },
+                {
+                    "id": "D",
+                    "text": "Pendaftaran",
+                    "type": "actions"
+                },
+                {
+                    "id": "E",
+                    "text": "Transaksi",
+                    "type": "actions"
+                }
+            ],
+            "A": [
+                {
+                    "id": "AA",
+                    "text": "1. Apa itu Reksa Dana ?\n2. Apa saja jenis-jenis Reksa Dana ?\n3. Apa saja produk Reksa Dana Syailendra ?\n4. Kembali ke menu utama",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "A1A",
+                            "text": "Reksa Dana adalah wadah untuk menghimpun dana Investor untuk selanjutnya akan dikelola oleh Manajer Investasi ke dalam beberapa portofolio efek seperti deposito, obligasi dan saham.\n\n*Ketik 1* Kembali ke menu sebelumnya\n*Ketik 2* Kembali ke menu utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "A11A",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                },
+                                "2": {
+                                    "id": "A12A",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "A2A",
+                            "text": "Berikut adalah jenis Reksa Dana yang dijual secara umun :\n\n1. Reksa Dana Pasar Uang adalah Reksa Dana yang portofolio investasinya 100% ditempatkan pada instrumen pasar uang seperti deposito atau obligasi yang kurang dari setahun. Tingkat risiko jenis Reksa Dana ini tergolong kecil dan jangka waktu investasi idealnya adalah < 1 tahun.\n\n2. Reksa Dana Pendapatan Tetap adalah Reksa Dana yang asetnya 80% ditempatkan pada pada instrumen surat hutang yang berjangka lebih dari 1 tahun. Tingkat risiko jenis Reksa Dana ini adalah sedang dan jangka waktu investasi idealnya adalah  1 – 3 tahun.\n\n3. Reksa Dana Campuran adalah Reksa Dana yang penempatan asetnya merupakan kombinasi antara instrumen saham dengan surat utang dengan komposisi masing-masing tidak melebihi 80%. Tingkat risiko jenis Reksa Dana ini tergolong menengah di atas reksa dana pendapatan tetap dan jangka waktu investasi idealny adalah 3 – 5 tahun.\n\n4. Reksa Dana Saham adalah Reksa Dana yang  Penempatan asetnya 80% ditempatkan pada instrumen saham. Tingkat risiko jenis reksa dana ini tergolong tinggi dan jangka waktu investasi idealnya adalah > 5 tahun.\n\n*Ketik 1* Kembali ke menu sebelumnya\n*Ketik 2* Kembali ke menu utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "A21A",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                },
+                                "2": {
+                                    "id": "A22A",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        },
+                        "3": {
+                            "id": "A3A",
+                            "text": "Berikut adalah produk-produk Reksa Dana kami sesuai dengan jenisnya :\n\nReksa Dana Saham :\n1. Syailendra Equity Opportunity Fund (SEOF)\n2. Syailendra Equity BUMN Plus (SEBP)\n3. Syailendra Sharia Equity Fund\n\nReksa Dana Campuran :\n1. Syailendra Balance Oportunity Fund (SBOF)\n\nReksa Dana Indeks :\n1. Syailendra MSCI Indonesia Value Index Fund (SMSCI)\n2. Syailendra ETF MSCI Indonesia ESG Universal Fund\n\nReksa Dana Pendapatan Tetap :\n1. Syailendra Liberty Fund (SLF)\n2. Syailendra Fixed Income Fund (SFIF)\n3. Syailendra Pendapatan Tetap Premium (SPTP)\n\nReksa Dana Pasar Uang :\n1. Syailendra Dana Kas (SDK)\n2. Syailendra Sharia Money Market Fund (SSMMF)\n\nUntuk informasi lebih detail mengenai produk kami, dapat dilihat melalui website kami melalui link berikut :  https://www.syailendracapital.com/product\n\n*Ketik 1* Kembali ke menu sebelumnya\n*Ketik 2* Kembali ke menu utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "A31A",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                },
+                                "2": {
+                                    "id": "A32A",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        },
+                        "4": {
+                            "id": "A4A",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }
+            ],
+            "B": {
+                "id": "BB",
+                "text": "1. Apa itu SCOR ?\n2. Fitur SCOR\n3. Kembali ke menu utama",
+                "type": "nest_menu",
+                "menus": {
+                    "1": {
+                        "id": "B1B",
+                        "text": "SCOR adalah platform yang  dibuat oleh PT. Syailendra Capital untuk mempermudah para pengguna dalam berinvestasi reksa dana. User dapat melakukan segala aktivitas Reksa Dana mulai dari pendaftaran, pembelian, pengalihan hingga penjualan Reksa Dana secara online melalui aplikasi maupun website SCOR.\n\n*Ketik 1* Kembali ke menu sebelumnya\n*Ketik 2* Kembali ke menu utama",
+                        "type": "nest_menu",
+                        "menus": {
+                            "1": {
+                                "id": "B11B",
+                                "text": "",
+                                "type": "goto",
+                                "goto": "parent"
+                            },
+                            "2": {
+                                "id": "B12B",
+                                "text": "",
+                                "type": "goto",
+                                "goto": "main"
+                            }
+                        }
+                    },
+                    "2": {
+                        "id": "B2B",
+                        "text": "1. Goals Planner\n2. Smartplan\n3. Investasi sesuai Profile\n4. Investasi sesuai Pilihan Kamu\n5. Kembali ke menu sebelumnya\n6. Kembali ke menu sebelumnya",
+                        "type": "nest_menu",
+                        "menus": {
+                            "1": {
+                                "id": "B21B",
+                                "text": "1. Apa itu Goals Planner ?\n2. Bagaimana cara menggunakan fitur goals planner ?\n3. Kembali ke menu sebelumnya\n4. Kembali ke menu utama",
+                                "type": "nest_menu",
+                                "menus": {
+                                    "1": {
+                                        "id": "B211B",
+                                        "text": "Fitur ini ditujukan untuk kamu yang memiliki perencanaan tujuan tertentu. Pada fitur ini user dapat membeli lebih dari 1  produk dalam waktu yang bersamaan.\n\n*Ketik 1* Kembali ke menu utama",
+                                        "type": "nest_menu",
+                                        "menus": {
+                                            "1": {
+                                                "id": "B2111B",
+                                                "text": "",
+                                                "type": "goto",
+                                                "goto": "main"
+                                            }
+                                        }
+                                    },
+                                    "2": {
+                                        "id": "B212B",
+                                        "text": "Cara menggunakan fitur Goals Planner :\n\n1) Pilih salah satu Goals dari daftar Goals Planner\n2) Masukkan perkiraan biaya dan waktu rencana\n3) User akan diberikan 1-2 rekomendasi produk sesuai dengan profil risikonya.\n4) Masukkan nilai setoran awal untuk mengetahui nilai investasi bulanan\n5) Setujui Syarat & Ketentuan dengan mengklik kotak ceklist\n6) Klik tombol lanjut\n7) Pilih salah satu metode pembayaran dan klik tombol bayar\n\n*Ketik 1* Kembali ke menu utama",
+                                        "type": "nest_menu",
+                                        "menus": {
+                                            "1": {
+                                                "id": "B2121B",
+                                                "text": "",
+                                                "type": "goto",
+                                                "goto": "main"
+                                            }
+                                        }
+                                    },
+                                    "3": {
+                                        "id": "B213B",
+                                        "text": "",
+                                        "type": "goto",
+                                        "goto": "parent"
+                                    },
+                                    "4": {
+                                        "id": "B214B",
+                                        "text": "",
+                                        "type": "goto",
+                                        "goto": "main"
+                                    }
+                                }
+                            },
+                            "2": {
+                                "id": "B22B",
+                                "text": "1. Apa itu fitur Smart Plan ?\n2. Siapa saja yang dapat mengikuti program Smartplan ?\n3. Benefit apa yang didapat dari program Smartplan ?\n4. Bagaimana cara berinvestasi menggunakan fitur Smartplan ?\n5. Bagaimana cara melihat simulasi investasi menggunakan fitur Smartplan ?\n6. Kembali ke menu sebelumnya\n7. Kembali ke menu utama",
+                                "type": "nest_menu",
+                                "menus": {
+                                    "1": {
+                                        "id": "B221B",
+                                        "text": "Smart plan adalah program investasi reksa dana dari Syailendra capital yang memberikan benefit asuransi gratis, asuransi yang digunakan bekerjasama dengan CIGNA Insurance yaitu CIGNA Dynamic Protection.\n\n*Ketik 1* Kembali ke menu utama",
+                                        "type": "nest_menu",
+                                        "menus": {
+                                            "1": {
+                                                "id": "B2211B",
+                                                "text": "",
+                                                "type": "goto",
+                                                "goto": "main"
+                                            }
+                                        }
+                                    },
+                                    "2": {
+                                        "id": "B222B",
+                                        "text": "Produk Cigna Dynamic Protection ditujukan kepada seluruh nasabah baru (perorangan) PT. Syailendra Capital yang memiliki minimal total Nilai Aktiva Bersih (NAB) Investasi sebesar Rp 10 Juta sampai dengan maksimum Rp500 Juta. Dengan Usia Tertanggung Usia Tertanggung 18 – 64 Tahun.\n\n*Ketik 1* Kembali ke menu utama",
+                                        "type": "nest_menu",
+                                        "menus": {
+                                            "1": {
+                                                "id": "B2221B",
+                                                "text": "",
+                                                "type": "goto",
+                                                "goto": "main"
+                                            }
+                                        }
+                                    },
+                                    "3": {
+                                        "id": "B223B",
+                                        "text": "Program ini memberikan manfaat asuransi bagi nasabah PT. Syailendra Capital apabila mengalami peristiwa yang dipertanggungkan yaitu:\n1) Manfaat meninggal dunia karena penyakit dan/atau kecelakaan;\n2) Manfaat harian rawat inap karena penyakit dan/atau kecelakaan;\n3) Manfaat harian perawatan ICU.\n\n*Ketik 1* Kembali ke menu utama",
+                                        "type": "nest_menu",
+                                        "menus": {
+                                            "1": {
+                                                "id": "B2231B",
+                                                "text": "",
+                                                "type": "goto",
+                                                "goto": "main"
+                                            }
+                                        }
+                                    },
+                                    "4": {
+                                        "id": "B224B",
+                                        "text": "Untuk melakukan investasi melalui fitur smartplan dapat dilakukan dengan cara sebagai berikut :\n1) Pilih fitur Smartplan\n2) Tekan tombol Investasi Sekarang\n3) Masukkan nominal Pembelian atau dapat juga memilih salah satu pilihan nominal yang tersedia\n4) Setujui Syarat &  Ketentuan Pembelian, kemudian klik tombol lanjut\n5) Pilih metode pembayaran yang diinginkan\n6) Tekan tombol Bayar\n7) Lakukan pembayaran sesuai dengan metode pembayaran yang kamu pilih\n\n*Ketik 1* Kembali ke menu utama",
+                                        "type": "nest_menu",
+                                        "menus": {
+                                            "1": {
+                                                "id": "B2241B",
+                                                "text": "",
+                                                "type": "goto",
+                                                "goto": "main"
+                                            }
+                                        }
+                                    },
+                                    "5": {
+                                        "id": "B225B",
+                                        "text": "Kamu dapat melihat perhitungan simulasi investasi kamu pada fitur smartplan dengan cara :\n\n1) Tekan tombol simulasi pada fitur smartplan\n2) Masukkan jangka waktu investasi, nilai setoran awal dan nilai investasi bulanan\n3) Hasil simulasi akan muncul di Nilai Investasi kamu beserta keuntungan yang didapat seperti Nilai santunan rawat inap dan nilai santunan kematian\n\n*Grafik pergerakan investasi juga dapat dilihat pada kalkulasi Smart Plan\n*Untuk memulai investasi, kamu dapat menekan tombol Investasi Sekarang\n\n*Ketik 1* Kembali ke menu utama",
+                                        "type": "",
+                                        "menus": {
+                                            "1": {
+                                                "id": "B2251B",
+                                                "text": "",
+                                                "type": "goto",
+                                                "goto": "main"
+                                            }
+                                        }
+                                    },
+                                    "6": {
+                                        "id": "B226B",
+                                        "text": "",
+                                        "type": "goto",
+                                        "goto": "parent"
+                                    },
+                                    "7": {
+                                        "id": "B227B",
+                                        "text": "",
+                                        "type": "goto",
+                                        "goto": "main"
+                                    }
+                                }
+                            },
+                            "3": {
+                                "id": "B23B",
+                                "text": "1. Apa itu fitur investasi sesuai profil ?\n2. Bagaimana cara menggunakan fitur investasi sesuai profil ?\n3. Kembali ke menu sebelumnya\n4. Kembali ke menu utama",
+                                "type": "nest_menu",
+                                "menus": {
+                                    "1": {
+                                        "id": "B231B",
+                                        "text": "Pada fitur investasi sesuai profil, kamu dapat melakukan investasi pada produk yang sesuai dengan profil risikonya. Kamu juga dapat melakukan pembelian 2 produk secara bersamaan pada fitur ini.\n\n*Ketik 1* Kembali ke menu utama",
+                                        "type": "nest_menu",
+                                        "menus": {
+                                            "1": {
+                                                "id": "B2311B",
+                                                "text": "",
+                                                "type": "goto",
+                                                "goto": "main"
+                                            }
+                                        }
+                                    },
+                                    "2": {
+                                        "id": "B232B",
+                                        "text": "Untuk melakukan pembelian produk berdasarkan profil risiko, dapat dilakukan dengan cara :\n\n1) Pilih fitur profil risiko\n2) Tekan tombol beli\n3) Masukkan nominal yang ingin kamu investasikan atau dapat memilih nominal yang tersedia\n4) Setujui Syarat & Ketentuan pembelian dan tekan tombol lanjut\n5) Pilih metode pembayaran yang diinginkan\n6) Tekan tombol Bayar\n\n*Ketik 1* Kembali ke menu utama",
+                                        "type": "nest_menu",
+                                        "menus": {
+                                            "1": {
+                                                "id": "B2321B",
+                                                "text": "",
+                                                "type": "goto",
+                                                "goto": "main"
+                                            }
+                                        }
+                                    },
+                                    "3": {
+                                        "id": "B233B",
+                                        "text": "",
+                                        "type": "goto",
+                                        "goto": "parent"
+                                    },
+                                    "4": {
+                                        "id": "B234B",
+                                        "text": "",
+                                        "type": "goto",
+                                        "goto": "main"
+                                    }
+                                }
+                            },
+                            "4": {
+                                "id": "B24B",
+                                "text": "1. Apa itu fitur Pilihan Kamu ?\n2. Bagaimana berinvestasi pada fitur \"Pilihan Kamu\" ?\n3. Kembali ke menu sebelumnya\n4. Kembali ke menu utama",
+                                "type": "nest_menu",
+                                "menus": {
+                                    "1": {
+                                        "id": "B241B",
+                                        "text": "Pada fitur *Pilihan Kamu*, kamu dapat membeli Reksa Dana sesuai dengan pilihan kamu. Pada fitur ini, produk Reksa Dana dibedakan sesuai dengan jenis Reksa Dana.\n\n*Ketik 1* Kembali ke menu utama",
+                                        "type": "nest_menu",
+                                        "menus": {
+                                            "1": {
+                                                "id": "B2411B",
+                                                "text": "",
+                                                "type": "goto",
+                                                "goto": "main"
+                                            }
+                                        }
+                                    },
+                                    "2": {
+                                        "id": "B242B",
+                                        "text": "Kamu dapat berinvestasi pada fitur Pilihan Kamu dengan cara :\n\n1) Pilih fitur investasi Pilihan Kamu\n2) Pilih salah satu jenis Reksa Dana\n3) Klik tombol Beli pada salah satu produk yang menjadi tujuan investasi kamu\n4) Masukkan nominal yang ingin kamu investasikan atau dapat memilih nominal yang tersedia\n5) Setujui Syarat & Ketentuan pembelian dan tekan tombol lanjut\n6) Pilih metode pembayaran yang diinginkan\n7) Tekan tombol Bayar\n\n*Ketik 1* Kembali ke menu utama",
+                                        "type": "nest_menu",
+                                        "menus": {
+                                            "1": {
+                                                "id": "B2421B",
+                                                "text": "",
+                                                "type": "goto",
+                                                "goto": "main"
+                                            }
+                                        }
+                                    },
+                                    "3": {
+                                        "id": "B243B",
+                                        "text": "",
+                                        "type": "goto",
+                                        "goto": "parent"
+                                    },
+                                    "4": {
+                                        "id": "B244B",
+                                        "text": "",
+                                        "type": "goto",
+                                        "goto": "main"
+                                    }
+                                }
+                            },
+                            "5": {
+                                "id": "B25B",
+                                "text": "",
+                                "type": "goto",
+                                "goto": "parent"
+                            },
+                            "6": {
+                                "id": "B26B",
+                                "text": "",
+                                "type": "goto",
+                                "goto": "main"
+                            }
+                        }
+                    },
+                    "3": {
+                        "id": "B3B",
+                        "text": "",
+                        "type": "goto",
+                        "goto": "main"
+                    }
+                }
+            },
+            "C": {
+                "id": "CC",
+                "text": "1. Perubahan Data\n2. Password\n3. PIN\n4. Kembali ke menu utama",
+                "type": "nest_menu",
+                "menus": {
+                    "1": {
+                        "id": "C1C",
+                        "text": "1. Perubahan Data Profil\n2. Perubahan Email\n3. Perubahan No Handphone\n4. Perubahan Data Bank\n5. Kembali ke menu sebelumnya\n6. Kembali ke menu utama",
+                        "type": "nest_menu",
+                        "menus": {
+                            "1": {
+                                "id": "C11C",
+                                "text": "Kamu dapat melakukan perubahan pada data diri kamu, dengan cara sebagai berikut :\n\n1) Pilih menu Profil\n2) Pilih Data Diri\n3) Masukkan PIN\n4) Setelah muncul data diri kamu, klik tombol edit yang terdapat pada bagian bawah\n5) Lakukan perubahan pada data yang ingin diubah\n6) Klik tombol Kirim Data\n\n*Ketik 1* Kembali ke menu utama",
+                                "type": "nest_menu",
+                                "menus": {
+                                    "1": {
+                                        "id": "C111C",
+                                        "text": "",
+                                        "type": "goto",
+                                        "goto": "main"
+                                    }
+                                }
+                            },
+                            "2": {
+                                "id": "C12C",
+                                "text": "Untuk mengubah email kamu, dapat dilakukan dengan cara sebagai berikut :\n\n1) Masuk ke menu Profil\n2) Pilih Setting\n3) Pilih Ubah Email\n4) Masukkan 6 digit PIN kamu\n5) Masukkan email baru yang ingin kamu gunakan\n6) Klik tombol kirim verifikasi email\n7) Lakukan verifikasi dengan mengklik tautan Verifikasi Email yang terdapat pada email yang dikirimkan oleh sistem kami\n\nJika muncul keterangan Validasi Sukses, artinya email kamu sudah berhasil diubah\n\n*Ketik 1* Kembali ke menu utama",
+                                "type": "nest_menu",
+                                "menus": {
+                                    "1": {
+                                        "id": "C121C",
+                                        "text": "",
+                                        "type": "goto",
+                                        "goto": "main"
+                                    }
+                                }
+                            },
+                            "3": {
+                                "id": "C13C",
+                                "text": "Untuk mengubah nomor Handphone kamu, dapat dilakukan dengan cara sebagai berikut :\n\n1) Masuk ke menu Profil\n2) Pilih Setting\n3) Pilih Ubah No Handphone\n4) Masukkan 6 digit PIN kamu\n5) Masukkan nomor Handphone baru yang ingin kamu gunakan\n6) Klik tombol kirim verifikasi nomor\n7) Masukkan 4 digit kode verifikasi yang dikirimkan melalui whatsapp ke nomor kamu yang terbaru\n8) Klik tombol Verifikasi\n\n*Ketik 1* Kembali ke menu utama",
+                                "type": "nest_menu",
+                                "menus": {
+                                    "1": {
+                                        "id": "C131C",
+                                        "text": "",
+                                        "type": "goto",
+                                        "goto": "main"
+                                    }
+                                }
+                            },
+                            "4": {
+                                "id": "C14C",
+                                "text": "Untuk mengubah atau menambah rekening bank kamu, dapat dilakukan dengan cara sebagai berikut :\n\n1) Masuk ke menu Profil\n2) Pilih Setting\n3) Pilih Ubah rekening Bank\n4) Klik tombol Tambah Rekening Lain\n5) Masukkan Nama Bank, nomor rekening dan cabang (pastikan nama pemilik rekening sesuai dengan data KTP yang didaftarkan)\n6) Klik tombol simpan\n\n*Ketik 1* Kembali ke menu utama",
+                                "type": "nest_menu",
+                                "menus": {
+                                    "1": {
+                                        "id": "C141C",
+                                        "text": "",
+                                        "type": "goto",
+                                        "goto": "main"
+                                    }
+                                }
+                            },
+                            "5": {
+                                "id": "C15C",
+                                "text": "",
+                                "type": "goto",
+                                "goto": "parent"
+                            },
+                            "6": {
+                                "id": "C16C",
+                                "text": "",
+                                "type": "goto",
+                                "goto": "main"
+                            }
+                        }
+                    },
+                    "2": {
+                        "id": "C2C",
+                        "text": "1. Lupa Password\n2. Ganti/Ubah Password\n3. Kembali ke menu sebelumnya\n4. Kembali ke menu utama",
+                        "type": "nest_menu",
+                        "menus": {
+                            "1": {
+                                "id": "C21C",
+                                "text": "Jika kamu lupa password, kamu dapat melakukan cara sebagai berikut :\n\n1) Klik tombol Lupa Password  yang terdapat pada halaman Login\n2) Masukkan  email yang kamu daftarkan pada akun SCOR\n3) Klik tombol Kirim Verifikasi Email\n4) Masukkan 4 digit kode verifikasi yang telah dikirimkan ke emailmu\n5) Masukkan password baru dan masukkan kembali pada kolom konfirmasi password baru\n6) Klik tombol Ubah Password\n\n*Ketik 1* Kembali ke menu utama",
+                                "type": "nest_menu",
+                                "menus": {
+                                    "1": {
+                                        "id": "C211C",
+                                        "text": "",
+                                        "type": "goto",
+                                        "goto": "main"
+                                    }
+                                }
+                            },
+                            "2": {
+                                "id": "C22C",
+                                "text": "Kamu dapat mengubah password kamu pada menu Profil dengan cara sebagai berikut :\n\n1) Pilih Setting\n2) Pilih Ganti Password\n3) Masukkan password kamu saat ini\n4) Masukkan password baru yang ingin kamu gunakan\n5) Konfirmasi password baru\n6) Klik Ubah Password\n\n*Ketik 1* Kembali ke menu utama",
+                                "type": "nest_menu",
+                                "menus": {
+                                    "1": {
+                                        "id": "C211C",
+                                        "text": "",
+                                        "type": "goto",
+                                        "goto": "main"
+                                    }
+                                }
+                            },
+                            "3": {
+                                "id": "C23C",
+                                "text": "",
+                                "type": "goto",
+                                "goto": "parent"
+                            },
+                            "4": {
+                                "id": "C24C",
+                                "text": "",
+                                "type": "goto",
+                                "goto": "main"
+                            }
+                        }
+                    },
+                    "3": {
+                        "id": "C3C",
+                        "text": "1. Lupa PIN\n2. Ganti/Ubah PIN\n3. Kembali ke menu sebelumnya\n4. Kembali ke menu utama",
+                        "type": "nest_menu",
+                        "menus": {
+                            "1": {
+                                "id": "C31C",
+                                "text": "Jika kamu lupa PIN, kamu dapat melakukan cara sebagai berikut :\n\n1) Klik tombol Lupa PIN\n2) Masukkan password kamu saat ini\n3) Masukkan PIN baru yang ingin kamu gunakan\n4) Konfirmasi PIN baru\n5) Klik Ubah PIN\n\n*Ketik 1* Kembali ke menu utama",
+                                "type": "nest_menu",
+                                "menus": {
+                                    "1": {
+                                        "id": "C311C",
+                                        "text": "",
+                                        "type": "goto",
+                                        "goto": "main"
+                                    }
+                                }
+                            },
+                            "2": {
+                                "id": "C32C",
+                                "text": "Kamu dapat mengubah PIN kamu pada menu Profil dengan cara sebagai berikut :\n\n1) Pilih Setting\n2) Pilih Ubah PIN\n3) Masukkan PIN kamu saat ini\n4) Masukkan PIN baru yang ingin kamu gunakan\n5) Konfirmasi PIN baru\n6) Klik Ubah PIN\n\n*Ketik 1* Kembali ke menu utama",
+                                "type": "nest_menu",
+                                "menus": {
+                                    "1": {
+                                        "id": "C321C",
+                                        "text": "",
+                                        "type": "goto",
+                                        "goto": "main"
+                                    }
+                                }
+                            },
+                            "3": {
+                                "id": "C33C",
+                                "text": "",
+                                "type": "goto",
+                                "goto": "parent"
+                            },
+                            "4": {
+                                "id": "C34C",
+                                "text": "",
+                                "type": "goto",
+                                "goto": "main"
+                            }
+                        }
+                    },
+                    "4": {
+                        "id": "C4C",
+                        "text": "",
+                        "type": "goto",
+                        "goto": "main"
+                    }
+                }
+            },
+            "D": {
+                "id": "DD",
+                "text": "1. Pendaftaran/Pembukaan Akun\n2. Kembali ke menu utama",
+                "type": "nest_menu",
+                "menus": {
+                    "1": {
+                        "id": "D1D",
+                        "text": "1. Cara Daftar/Buat Akun\n2. Status Pendaftaran/Pembukaan Akun\n3. Kembali ke menu sebelumnya\n4. Kembali ke menu utama",
+                        "type": "nest_menu",
+                        "menus": {
+                            "1": {
+                                "id": "D11D",
+                                "text": "Untuk melakukan pendaftaran/ pembukaan akun Syailendra Capital, kamu dapat menginstall aplikasi SCOR melalui handphonemu atau dapat juga melalui website SCOR, lalu lengkapi data diri serta lampirkan foto KTP dan foto selfie kamu untuk selanjutnya dapat diverifikasi tim kami.\nUntuk langkah-langkah pembukaan rekening di SCOR, kamu dapat mengikuti panduan berikut :\n\n1) Download aplikasi SCOR atau dapat juga melalui web SCOR\n2) Masukkan nomor Handphone kamu yang ingin kamu gunakan dan pastikan nomor tersebut masih aktif\n3) Masukkan kode OTP yang dikirimkan ke nomor whatsapp kamu, lalu tekan tombol verifikasi\n4) Upload foto KTP kamu. Pastikan foto yang dilampirkan terlihat dengan jelas agar data kamu dapat terbaca dengan benar oleh sistem kami.\n(Jika kamu sudah terdaftar sebagai nasabah Syailendra Capital, kamu cukup memasukkan nomor SIDmu)\n5) Cek kembali data yang ditampilkan apakah sudah sesuai dengan KTP. Jika terdapat data yang tidak sesuai, kamu dapat mengubahnya secara manual\n6) Upload foto selfie kamu dengan KTP\n7) Masukkan email dan password untuk Login\n8) Lengkapi data profilmu sesuai dengan kolom dan pilihan yang tersedia\n9) Klik tombol Cek/Ubah Profil Risiko untuk mengetahui profil risikomu dan rekomendasi produk yang sesuai dengan profilmu dengan dengan menjawab pertanyaan yang tersedia\n10) Masukkan data rekening Bank. Pastikan rekening yang kamu cantumkan masih aktif dan sesuai dengan nama KTP\n11) Lakukan tandatangan digital sesuai dengan KTPmu\n12) Buat PIN berupa 6 digit angka untuk mempermudah kamu saat bertransaksi\n13) Lakukan konfirmasi akun dengan mengklik link yang dikirimkan keemailmu\n\n*Ketik 1* Kembali ke menu utama",
+                                "type": "nest_menu",
+                                "menus": {
+                                    "1": {
+                                        "id": "D111D",
+                                        "text": "",
+                                        "type": "goto",
+                                        "goto": "main"
+                                    }
+                                }
+                            },
+                            "2": {
+                                "id": "D12D",
+                                "text": "1. Berapa lama waktu yang dibutuhkan untuk memproses pendaftaran/pembukaan akun Saya ?\n2. Bagaimana cara mengecek status pendaftaran Saya ?\n 3. Kembali ke menu utama",
+                                "type": "nest_menu",
+                                "menus": {
+                                    "1": {
+                                        "id": "D121D",
+                                        "text": "Tim SYAILENDRA membutuhkan waktu 1x24 jam pada hari kerja untuk memproses pendaftaran kamu. Jika pendaftaran sudah selesai, SYAILENDRA akan mengirimkan notifikasi ke email kamu.\n\n*Ketik 1* Kembali ke menu utama",
+                                        "type": "nest_menu",
+                                        "menus": {
+                                            "1": {
+                                                "id": "D1211D",
+                                                "text": "",
+                                                "type": "goto",
+                                                "goto": "main"
+                                            }
+                                        }
+                                    },
+                                    "2": {
+                                        "id": "D122D",
+                                        "text": "Kamu dapat mengecek status pendaftaran kamu pada aplikasi SCOR yang terdiri dari : Verifikasi email, Syailendra, dan KSEI.\nJika ketiganya sudah muncul tanda ceklist, hal ini berarti pendaftaran kamu telah disetujui dan kamu sudah dapat melakukan transaksi\n\n*Ketik 1* Kembali ke menu utama",
+                                        "type": "nest_menu",
+                                        "menus": {
+                                            "1": {
+                                                "id": "D1221D",
+                                                "text": "",
+                                                "type": "goto",
+                                                "goto": "main"
+                                            }
+                                        }
+                                    },
+                                    "3": {
+                                        "id": "D123D",
+                                        "text": "",
+                                        "type": "goto",
+                                        "goto": "main"
+                                    }
+                                }
+                            },
+                            "3": {
+                                "id": "D13D",
+                                "text": "",
+                                "type": "goto",
+                                "goto": "parent"
+                            },
+                            "4": {
+                                "id": "D14D",
+                                "text": "",
+                                "type": "goto",
+                                "goto": "main"
+                            }
+                        }
+                    },
+                    "2": {
+                        "id": "D2D",
+                        "text": "",
+                        "type": "goto",
+                        "goto": "main"
+                    }
+                }
+            },
+            "E": {
+                "id": "EE",
+                "text": "1. Pembelian/Subscription\n2. Penjualan/Redemption\n3. Pengalihan/Switching\n4. Cara mengecek history transaksi\n5. Cara mengecek saldo investasi\n6. Laporan Investasi\n7. Kembali ke menu utama",
+                "type": "nest_menu",
+                "menus": {
+                    "1": {
+                        "id": "E1E",
+                        "text": "Kamu dapat berinvestasi melalui SCOR dengan memilih salah satu produk yang sesuai dengan profil investasi kamu, dengan cara :\n\n1) Pilih salah satu produk yang kamu inginkan\n2) Klik tombol Investasi Sekarang\n3) Pilih salah satu nominal yang sudah tertera atau masukkan nominal yang ingin kamu investasikan\n4) Ceklist keterangan \"Saya telah membaca dan menyetujui pembelian Reksa Dana ini sesuai dengan Prospektus, Syarat dan Ketentuan Transaksi Reksadana Online Syailendra\"\n5) Pilih salah satu metode pembayaran yang tersedia\n6) Lakukan pembayaran kerekening sesuai dengan yang tertera pada informasi pembayaran\n7) Upload bukti transfer agar transaksi kamu dapat segera diverifikasi dan diproses tim SCOR\n\n*Ketik 1* Kembali ke menu sebelumnya\n*Ketik 2* Kembali ke menu utama",
+                        "type": "nest_menu",
+                        "menus": {
+                            "1": {
+                                "id": "E11E",
+                                "text": "",
+                                "type": "goto",
+                                "goto": "parent"
+                            },
+                            "2": {
+                                "id": "E12E",
+                                "text": "",
+                                "type": "goto",
+                                "goto": "main"
+                            }
+                        }
+                    },
+                    "2": {
+                        "id": "E2E",
+                        "text": "Untuk melakukan penarikan / penjualan, kamu dapat melakukan langkah-langkah sebagai berikut :\n\n1) Masuk ke menu Portofolio\n2) Pilih produk yang ingin kamu jual\n3) Masukkan jumlah unit yang ingin dijual\n4) Pilih rekening yang ingin kamu gunakan sebagai rekening pencairan dana\n5) Ceklist keterangan \"Saya telah membaca dan menyetujui penjualan Reksa Dana ini sesuai dengan Prospektus, Syarat dan Ketentuan Transaksi Reksadana Online Syailendra\" \n6) Klik tombol Lanjut\n7) Masukkan PIN sebagai konfirmasi penjualan Reksa Dana kamu\n\n*Ketik 1* Kembali ke menu sebelumnya\n*Ketik 2* Kembali ke menu utama",
+                        "type": "nest_menu",
+                        "menus": {
+                            "1": {
+                                "id": "E21E",
+                                "text": "",
+                                "type": "goto",
+                                "goto": "parent"
+                            },
+                            "2": {
+                                "id": "E22E",
+                                "text": "",
+                                "type": "goto",
+                                "goto": "main"
+                            }
+                        }
+                    },
+                    "3": {
+                        "id": "E3E",
+                        "text": "Untuk melakukan pengalihan (switching), kamu dapat melakukan langkah-langkah sebagai berikut :\n\n1) Masuk ke menu Portofolio\n2) Klik tombol Konversi pada salah satu produk yang ingin kamu alihkan (switching)\n3) Pilih produk tujuan pengalihan (switching)\n4) Masukkan jumlah unit yang ingin dialihkan\n5) Ceklist keterangan \"Saya telah membaca dan menyetujui penjualan Reksa Dana ini sesuai dengan Prospektus, Syarat dan Ketentuan Transaksi Reksadana Online Syailendra\" \n6) Klik tombol Lanjut\n7) Masukkan PIN sebagai konfirmasi penjualan Reksa Dana kamu\n\n*Ketik 1* Kembali ke menu sebelumnya\n*Ketik 2* Kembali ke menu utama",
+                        "type": "nest_menu",
+                        "menus": {
+                            "1": {
+                                "id": "E31E",
+                                "text": "",
+                                "type": "goto",
+                                "goto": "parent"
+                            },
+                            "2": {
+                                "id": "E32E",
+                                "text": "",
+                                "type": "goto",
+                                "goto": "main"
+                            }
+                        }
+                    },
+                    "4": {
+                        "id": "E4E",
+                        "text": "Kamu dapat melihat riwayat transaksi yang telah kamu lakukan pada halaman history yang terdapat pada menu Transaksi.\n\nKamu juga dapat melihat transaksi kamu yang gagal atau belum selesai, seperti transaksi yang belum di upload bukti pembayarannya atau transaksi yang masih dalam proses.\n\n*Ketik 1* Kembali ke menu sebelumnya\n*Ketik 2* Kembali ke menu utama",
+                        "type": "nest_menu",
+                        "menus": {
+                            "1": {
+                                "id": "E41E",
+                                "text": "",
+                                "type": "goto",
+                                "goto": "parent"
+                            },
+                            "2": {
+                                "id": "E42E",
+                                "text": "",
+                                "type": "goto",
+                                "goto": "main"
+                            }
+                        }
+                    },
+                    "5": {
+                        "id": "E5E",
+                        "text": "Kamu dapat melihat saldo investasimu pada menu Portofolio.\n\nPada menu Portofolio, kamu juga dapat melihat persentase alokasi dana kamu per masing-masing produk, alokasi asset dan kategori produk seperti Reksa Dana Syariah atau Konvensional.\n\n*Ketik 1* Kembali ke menu sebelumnya\n*Ketik 2* Kembali ke menu utama",
+                        "type": "nest_menu",
+                        "menus": {
+                            "1": {
+                                "id": "E51E",
+                                "text": "",
+                                "type": "goto",
+                                "goto": "parent"
+                            },
+                            "2": {
+                                "id": "E52E",
+                                "text": "",
+                                "type": "goto",
+                                "goto": "main"
+                            }
+                        }
+                    },
+                    "6": {
+                        "id": "E6E",
+                        "text": "Kamu dapat melihat laporan portofolio dan rincian transaksi kamu di Syailendra  yang diterbitkan setiap bulannya pada Menu Setting kemudian pilih E-Statement\n\n*Ketik 1* Kembali ke menu sebelumnya\n*Ketik 2* Kembali ke menu utama",
+                        "type": "nest_menu",
+                        "menus": {
+                            "1": {
+                                "id": "E61E",
+                                "text": "",
+                                "type": "goto",
+                                "goto": "parent"
+                            },
+                            "2": {
+                                "id": "E62E",
+                                "text": "",
+                                "type": "goto",
+                                "goto": "main"
+                            }
+                        }
+                    },
+                    "7": {
+                        "id": "E7E",
+                        "text": "",
+                        "type": "goto",
+                        "goto": "main"
+                    }
+                }
+            }
+        }
+    }
+}
