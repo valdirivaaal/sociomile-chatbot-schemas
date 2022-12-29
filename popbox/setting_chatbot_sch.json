@@ -1,0 +1,339 @@
+{
+    "schemas": {
+        "default": {
+            "survey": {
+                "active": false
+            },
+            "reset_keys": [""],
+            "load_conversation": "wabaTemplateConversation",
+            "top_level_questions": [
+                {
+                    "id": "1",
+                    "text": "Info (fitur/harga/lokasi/program)",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "Cek status paket",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "Keluhan / bantuan",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "Informasi kerjasama",
+                    "type": "actions"
+                }
+            ],
+            "MENU": [
+                {
+                    "id": "1",
+                    "text": "Info (fitur/harga/lokasi/program)",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "Cek status paket",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "Keluhan / bantuan",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "Informasi kerjasama",
+                    "type": "actions"
+                }
+            ],
+            "1": [
+                {
+                    "id": "AA",
+                    "text": "Silahkan pilih informasi yang ingin kamu ketahui:\n1. Fitur\n2. Harga\n3. Lokasi\n4. Program\n9. Menu Sebelumnya\n00. Menu Utama",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "A1A",
+                            "text": "Silahkan pilih fitur yang ingin kamu ketahui:\n1. Kirim (LastMile & PopSend)\n2. Titip (PopSafe)\n3. Ambil\n4. Loker Insulator\n9. Menu Sebelumnya",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "A11A",
+                                    "text": "Menu Kirim dari PopBox memiliki beberapa layanan yang dapat dipilih dan disesuaikan:\n\nLast Mile\nLayanan ini membantu kurir untuk mengirimkan beberapa paket ke satu loker saja. Pengguna dapat mengambil paket, sesuai loker yang dipilih untuk dikirimkan paket.\n\nPopSend\nLayanan yang membantu kamu untuk mengirimkan barang melalui loker PopBox, kamu tidak perlu repot harus pergi atau antri ke ekspedisi lagi.",
+                                    "type": "text"
+                                },
+                                "2": {
+                                    "id": "A12A",
+                                    "text": "Titip (PopSafe)\n\nLayanan untuk menitipkan barang yang aman tanpa khawatir barang hilang atau tertukar. Titip di mana saja dan kapan saja",
+                                    "type": "text"
+                                },
+                                "3": {
+                                    "id": "A13A",
+                                    "text": "Ambil di mana pun dan kapan pun dengan mudah. Hanya perlu kode pin atau kode QR untuk membuka loker.",
+                                    "type": "text"
+                                },
+                                "4": {
+                                    "id": "A14A",
+                                    "text": "Loker Insulator adalah layanan loker dari PopBox untuk makanan atau minuman. Loker PopBox akan dilapisi oleh lapisan insulasi yang dapat menahan suhu dari makanan atau minuman selama kurang lebih 3 jam.",
+                                    "type": "text"
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "A2A",
+                            "text": "Temukan harga layanan PopBox sesuai dengan kebutuhan kamu di aplikasi PopBox atau kunjungi www.popbox.asia\nApakah Informasi yang kami berikan sudah cukup jelas?\n1. Kembali ke menu utama \n2. Tidak, saya sudah selesai",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "A21A",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "2": {
+                                    "id": "A22A",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                }
+                            }
+                        },
+                        "3": {
+                            "id": "A3A",
+                            "text": "Temukan lokasi loker PopBox terdekat kamu di aplikasi PopBox atau kunjungi www.popbox.asia\nApakah Informasi yang kami berikan sudah cukup jelas?\n1. Kembali ke menu utama \n2. Tidak, saya sudah selesai",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "A31A",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "2": {
+                                    "id": "A32A",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                }
+                            }
+                        },
+                        "4": {
+                            "id": "A4A",
+                            "text": "Temukan program menarik untuk kami di aplikasi PopBox atau kunjungi www.popbox.asia\nApakah Informasi yang kami berikan sudah cukup jelas?\n1. Kembali ke menu utama \n2. Tidak, saya sudah selesai",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "A41A",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "2": {
+                                    "id": "A42A",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                }
+                            }
+                        },
+                        "9": {
+                            "id": "A9A",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "parent"
+                        },
+                        "00": {
+                            "id": "A00A",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }
+            ],
+            "2": [
+                {
+                    "id": "BB",
+                    "text": "Untuk pengecekan status paket, kamu bisa buka aplikasi PopBox pada menu Your Parcel.\nPastikan kamu sudah login di aplikasi PopBox menggunakan nomor yang terdaftar di paket kamu.\n\nApakah masalah kamu terselesaikan?\n1. Ya, keluar\n2. Tidak, perlu bantuan",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "B1B",
+                            "text": "Semoga informasi ini sudah cukup jelas dan apabila sudah tidak ada yang ingin ditanyakan maka chat ini akan kami akhiri. Terima kasih.",
+                            "type": "text"
+                        },
+                        "2": {
+                            "id": "B2B",
+                            "text": "Untuk melanjutkan, silahkan isi data berikut:\n\nNo Resi:\nNo Tlp Penerima:\nLokasi Loker:",
+                            "type": "text"
+                        }
+                    }
+                }
+            ],
+            "3": [
+                {
+                    "id": "CC",
+                    "text": "Untuk melanjutkan silahkan pilih kendala yang kamu alami:\n1. Kendala kode ambil\n2. Perpanjang batas pengambilan paket\n3. Kendala aplikasi\n4. Kendala loker\n5. Kendala paket\n6. Kendala pembayaran\n7. Kendala lainnya\n9. Kembali ke menu sebelumnya",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "C1C",
+                            "text": "Silahkan pilih kendala kode ambil yang kamu alami:\n1. Tidak menerima kode ambil\n2. Kode ambil salah\n3. Kode ambil kadaluarsa\n9. Kembali ke menu sebelumnya",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "C11C",
+                                    "text": "Kode ambil bisa kamu temukan pada aplikasi PopBox.\n- Pastikan login menggunakan nomor yang ada pada paket kamu\n- Buka menu Your Parcel\nAktifkan notifikasi aplikasi PopBox untuk mendapatkan notifikasi secara realtime.\n\nApakah kamu sudah menemukan kode ambil?\n1. Ya, keluar\n2. Tidak, perlu bantuan",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "1": {
+                                            "id": "C111C",
+                                            "text": "Semoga informasi ini sudah cukup jelas dan apabila sudah tidak ada yang ingin ditanyakan maka chat ini akan kami akhiri. Terima kasih.",
+                                            "type": "text"
+                                        },
+                                        "2": {
+                                            "id": "C112C",
+                                            "text": "Untuk melanjutkan, silahkan isi data berikut:\nNo Resi:\nNo Tlp Penerima:\nLokasi Loker:",
+                                            "type": "text"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "C12C",
+                                    "text": "Jika kode ambil yang kamu masukkan salah, lokasi loker yang kamu datangi tidak sesuai. Pastikan lokasi loker sudah sesuai dengan notifikasi kode ambil.\n\nApakah kendala kamu terselesaikan?\n1. Ya, keluar\n2. Tidak, perlu bantuan",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "1": {
+                                            "id": "C121C",
+                                            "text": "Semoga informasi ini sudah cukup jelas dan apabila sudah tidak ada yang ingin ditanyakan maka chat ini akan kami akhiri. Terima kasih.",
+                                            "type": "text"
+                                        },
+                                        "2": {
+                                            "id": "C122C",
+                                            "text": "Untuk melanjutkan, silahkan isi data berikut:\nNo Resi:\nNo Tlp Penerima:\nLokasi Loker:",
+                                            "type": "text"
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "id": "C13C",
+                                    "text": "Untuk memperpanjang masa pengambilan paket, silahkan isi data berikut: \nNo Resi:\nNo Tlp Penerima:\nLokasi Loker:",
+                                    "type": "text"
+                                },
+                                "9": {
+                                    "id": "C19C",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "C2C",
+                            "text": "Untuk proses perpanjangan masa pengambilan paket kamu, silahkan isi data berikut:\nNo Resi:\nNo Tlp Penerima:\nLokasi Loker:\nPastikan kamu sudah login di aplikasi PopBox menggunakan nomor yang terdaftar di paket kamu.",
+                            "type": "text"
+                        },
+                        "3": {
+                            "id": "C3C",
+                            "text": "Untuk pengecekan kendala aplikasi, silahkan isi data berikut:\nNo Tlp:\nEmail:\nMerk HP:\nOS yang digunakan:\nKendala:",
+                            "type": "text"
+                        },
+                        "4": {
+                            "id": "C4C",
+                            "text": "Silahkan pilih kendala loker yang kamu alami:\n1. Pintu loker tidak terbuka\n2. Loker offline / mati\n3. Layar loker bermasalah\n9.Kembali ke menu sebelumnya",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "C41C",
+                                    "text": "Untuk pengecekan oleh tim kami, silahkan isi data berikut:\nNo Resi: \nNo Tlp Penerima:\nLokasi Loker:",
+                                    "type": "text"
+                                },
+                                "2": {
+                                    "id": "C42C",
+                                    "text": "Untuk pengecekan oleh tim kami, silahkan isi data berikut:\nLokasi Loker:",
+                                    "type": "text"
+                                },
+                                "3": {
+                                    "id": "C43C",
+                                    "text": "Untuk pengecekan oleh tim kami, silahkan isi data berikut:\nLokasi Loker:",
+                                    "type": "text"
+                                },
+                                "9": {
+                                    "id": "C49C",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "5": {
+                            "id": "C5C",
+                            "text": "Silahkan pilih kendala paket yang kamu alami:\n1. Paket tidak ada di dalam loker\n2. Paket tidak lengkap\n3. Paket tertukar\n4. Paket Operator/Courier Taken\n5. Kendala lainnya\n9. Kembali ke menu sebelumnya",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "C51C",
+                                    "text": "Untuk proses pengecekan paket kamu, silahkan isi data berikut:\nNo Resi:\nNo Tlp Penerima:\nLokasi Loker:\nKronologi:",
+                                    "type": "text"
+                                },
+                                "2": {
+                                    "id": "C52C",
+                                    "text": "Untuk proses pengecekan paket kamu, silahkan isi data berikut:\nNo Resi:\nNo Tlp Penerima:\nLokasi Loker:\nKronologi:",
+                                    "type": "text"
+                                },
+                                "3": {
+                                    "id": "C53C",
+                                    "text": "Untuk proses pengecekan paket kamu, silahkan isi data berikut:\nNo Resi:\nNo Tlp Penerima:\nLokasi Loker:\nKronologi:",
+                                    "type": "text"
+                                },
+                                "4": {
+                                    "id": "C54C",
+                                    "text": "Untuk proses pengecekan paket kamu, silahkan isi data berikut:\nNo Resi:\nNo Tlp Penerima:\nLokasi Loker:\nKronologi:",
+                                    "type": "text"
+                                },
+                                "5": {
+                                    "id": "C55C",
+                                    "text": "Untuk proses pengecekan paket kamu, silahkan isi data berikut:\nNo Resi:\nNo Tlp Penerima:\nLokasi Loker:\nKronologi:",
+                                    "type": "text"
+                                },
+                                "9": {
+                                    "id": "C59C",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "6": {
+                            "id": "C6C",
+                            "text": "Untuk proses pengecekan kendala kamu, silahkan isi data berikut:\nNo Resi:\nNo Tlp Penerima:\nLokasi Loker:\nMetode Pembayaran: Ovo/Gopay/Shopee Pay/Dana\n\nSertakan juga bukti pembayaran jika ada",
+                            "type": "text"
+                        },
+                        "7": {
+                            "id": "C7C",
+                            "text": "Untuk melanjutkan, silahkan isi data berikut:\nNama:\nDetail kendala:\nNo Tlp:",
+                            "type": "text"
+                        },
+                        "9": {
+                            "id": "C9C",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "parent"
+                        }
+                    }
+                }
+            ],
+            "4": [
+                {
+                    "id": "DD",
+                    "text": "Untuk melanjutkan, silahkan isi data berikut:\nNama:",
+                    "type": "text"
+                }
+            ]
+        }
+    }
+}

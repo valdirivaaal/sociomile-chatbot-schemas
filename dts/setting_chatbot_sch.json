@@ -1,0 +1,422 @@
+{
+    "schemas": {
+        "default": {
+            "survey": {
+                "active": false
+            },
+            "reset_keys": [""],
+            "top_level_questions": [
+                {
+                    "id": "1",
+                    "text": "Informasi apa yang Sobat butuhkan?\n\n1. Informasi Umum",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "2. Teknis Pelaksanaan Pelatihan",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "3. Dukungan Teknis",
+                    "type": "actions"
+                }
+            ],
+            "MENU": [
+                {
+                    "id": "1",
+                    "text": "Informasi apa yang Sobat butuhkan?\n\n1. Informasi Umum",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "2. Teknis Pelaksanaan Pelatihan",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "3. Dukungan Teknis",
+                    "type": "actions"
+                }
+            ],
+            "1": [
+                {
+                    "id": "1A",
+                    "text": "Silahkan pilih informasi yang Sobat butuhkan\n\n1. Persyaratan Digital Talent Scholarship (DTS)\n2. Mekanisme Pendaftaran dan Pelatihan Umum\n3. Jadwal Pelatihan Umum\n4. Informasi Umum Tentang Tes Substansi\n5. Informasi SIMONAS\n6. Informasi Jenis Academy & Pelatihan\n7. Informasi Umum Beasiswa",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "1A1",
+                            "text": "Informasi Persyaratan dapat Sobat lihat melalui link berikut ini :\n1. Vocational School Graduate Academy (VSGA)\nhttps://digitalent.kominfo.go.id/pelatihan/VSGA\nFresh Graduate Academy (FGA)\nhttps://digitalent.kominfo.go.id/pelatihan/FGA \nGovernment Transformation Academy (GTA)\nhttps://digitalent.kominfo.go.id/pelatihan/GTA\nDigital Entrepreneurship Academy (DEA)\nhttps://digitalent.kominfo.go.id/pelatihan/DEA\nProfessional Academy (PRO)\nhttps://digitalent.kominfo.go.id/pelatihan/PROA\nThematic Academy (TA)\nhttps://digitalent.kominfo.go.id/pelatihan/TA\nTalent Scounting Academy (TSA)\nhttps://digitalent.kominfo.go.id/pelatihan/TSA\n\nSobat, apakah informasi yang disampaikan sudah cukup jelas atau masih membutuhkan bantuan lain?\n\n(A) Kembali ke Menu Utama\n(B) Kontak CS",
+                            "type": "nest_menu",
+                            "menus": {
+                                "A": {
+                                    "id": "1A11",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "B": {
+                                    "id": "1A12",
+                                    "text": "1. Vocational School Graduate Academy (VSGA)\n2. Fresh Graduate Academy (FGA)\n3. Government Transformation Academy (GTA)\n4. Digital Entrepreneurship Academy (DEA)\n5. Professional Academy (PRO)\n6. Thematic Academy (TA)\n7. Talent Scounting Academy (TSA)",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "1": {
+                                            "id": "1A121",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "2": {
+                                            "id": "1A122",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "3": {
+                                            "id": "1A123",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "4": {
+                                            "id": "1A124",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "5": {
+                                            "id": "1A125",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "6": {
+                                            "id": "1A126",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "7": {
+                                            "id": "1A127",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "1A2",
+                            "text": "Mekanisme pendaftaran pelatihan dapat Sobat lihat melalui link berikut ini :\n1. Vocational School Graduate Academy (VSGA)\nhttps://digitalent.kominfo.go.id/pelatihan/VSGA\nFresh Graduate Academy (FGA)\nhttps://digitalent.kominfo.go.id/pelatihan/FGA\nGovernment Transformation Academy (GTA)\nhttps://digitalent.kominfo.go.id/pelatihan/GTA\nDigital Entrepreneurship Academy (DEA)\nhttps://digitalent.kominfo.go.id/pelatihan/DEA\nProfessional Academy (PRO)\nhttps://digitalent.kominfo.go.id/pelatihan/PROA\nThematic Academy (TA)\nhttps://digitalent.kominfo.go.id/pelatihan/TA\nTalent Scounting Academy (TSA)\nhttps://digitalent.kominfo.go.id/pelatihan/TSA\n\nSobat, apakah informasi yang disampaikan sudah cukup jelas atau masih membutuhkan bantuan lain ?\n\n(A) Kembali ke Menu Utama\n(B) Kontak CS",
+                            "type": "nest_menu",
+                            "menus": {
+                                "A": {
+                                    "id": "1A21",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "B": {
+                                    "id": "1A22",
+                                    "text": "1. Vocational School Graduate Academy (VSGA)\n2. Fresh Graduate Academy (FGA)\n3. Government Transformation Academy (GTA)\n4. Digital Entrepreneurship Academy (DEA)\n5. Professional Academy (PRO)\n6. Thematic Academy (TA)\n7. Talent Scounting Academy (TSA)\n8. Digital Leadership Academy (DLA)",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "1": {
+                                            "id": "1A221",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "2": {
+                                            "id": "1A222",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "3": {
+                                            "id": "1A223",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "4": {
+                                            "id": "1A224",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "5": {
+                                            "id": "1A225",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "6": {
+                                            "id": "1A226",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "7": {
+                                            "id": "1A227",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "8": {
+                                            "id": "1A228",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "id": "1A3",
+                            "text": "Informasi jadwal pelatihan dapat dilihat dari masing-masing link dibawah ini :\n1. Vocational School Graduate Academy (VSGA)\nhttps://digitalent.kominfo.go.id/pelatihan/VSGA\nFresh Graduate Academy (FGA)\nhttps://digitalent.kominfo.go.id/pelatihan/FGA\nGovernment Transformation Academy (GTA)\nhttps://digitalent.kominfo.go.id/pelatihan/GTA\nDigital Entrepreneurship Academy (DEA)\nhttps://digitalent.kominfo.go.id/pelatihan/DEA\nProfessional Academy (PRO)\nhttps://digitalent.kominfo.go.id/pelatihan/PROA\nThematic Academy (TA)\nhttps://digitalent.kominfo.go.id/pelatihan/TA\nTalent Scounting Academy (TSA)\nhttps://digitalent.kominfo.go.id/pelatihan/TSA\n\nSobat, apakah informasi yang disampaikan sudah cukup jelas atau masih membutuhkan bantuan lain ?\n(A) Kembali ke Menu Utama\n(B) Kontak CS",
+                            "type": "nest_menu",
+                            "menus": {
+                                "A": {
+                                    "id": "1A31",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "B": {
+                                    "id": "1A32",
+                                    "text": "1. Vocational School Graduate Academy (VSGA)\n2. Fresh Graduate Academy (FGA)\n3. Government Transformation Academy (GTA)\n4. Digital Entrepreneurship Academy (DEA)\n5. Professional Academy (PRO)\n6. Thematic Academy (TA)\n7. Talent Scounting Academy (TSA)",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "1": {
+                                            "id": "1A321",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "2": {
+                                            "id": "1A322",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "3": {
+                                            "id": "1A323",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "4": {
+                                            "id": "1A324",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "5": {
+                                            "id": "1A325",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "6": {
+                                            "id": "1A326",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "7": {
+                                            "id": "1A327",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                    }
+                                }
+                            }
+                        },
+                        "4": {
+                            "id": "1A4",
+                            "text": "Informasi panduan tes substansi dapat Sobat lihat melalui link berikut ini :\nhttps://digitalent.kominfo.go.id/panduan-tes-substansi",
+                            "type": "text"
+                        },
+                        "5": {
+                            "id": "1A5",
+                            "text": "Informasi Simonas dapat Sobat lihat melalui link berikut ini :\nhttps://simonas.kominfo.go.id/\n\nSobat, apakah informasi yang disampaikan sudah cukup jelas atau masih membutuhkan bantuan lain ?\n(A) Kembali ke Menu Utama\n(B) Kontak CS",
+                            "type": "nest_menu",
+                            "menus": {
+                                "A": {
+                                    "id": "1A51",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "B": {
+                                    "id": "1A512",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                }
+                            }
+                        },
+                        "6": {
+                            "id": "1A6",
+                            "text": "Informasi Jenis Academy & Pelatihan,  dapat Sobat lihat dari link berikut ini :\n1. Vocational School Graduate Academy (VSGA)\nhttps://digitalent.kominfo.go.id/pelatihan/VSGA\nFresh Graduate Academy (FGA)\nhttps://digitalent.kominfo.go.id/pelatihan/FGA\nGovernment Transformation Academy (GTA)\nhttps://digitalent.kominfo.go.id/pelatihan/GTA\nDigital Entrepreneurship Academy (DEA)\nhttps://digitalent.kominfo.go.id/pelatihan/DEA\nProfessional Academy (PRO)\nhttps://digitalent.kominfo.go.id/pelatihan/PROA\nThematic Academy (TA)\nhttps://digitalent.kominfo.go.id/pelatihan/TA\nTalent Scounting Academy (TSA)\nhttps://digitalent.kominfo.go.id/pelatihan/TSA\n\nSobat, apakah informasi yang disampaikan sudah jelas atau masih membutuhkan bantuan lain?\n(A) Kembali ke Menu Utama\n(B) Kontak CS",
+                            "type": "nest_menu",
+                            "menus": {
+                                "A": {
+                                    "id": "1A61",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "B": {
+                                    "id": "1A62",
+                                    "text": "1. Vocational School Graduate Academy (VSGA)\n2. Fresh Graduate Academy (FGA)\n3. Government Transformation Academy (GTA)\n4. Digital Entrepreneurship Academy (DEA)\n5. Professional Academy (PRO)\n6. Thematic Academy (TA)\n7. Talent Scounting Academy (TSA)",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "1": {
+                                            "id": "1A621",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "2": {
+                                            "id": "1A622",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "3": {
+                                            "id": "1A623",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "4": {
+                                            "id": "1A624",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "5": {
+                                            "id": "1A625",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "6": {
+                                            "id": "1A626",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "7": {
+                                            "id": "1A627",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "7": {
+                            "id": "1A7",
+                            "text": "Informasi Beasiswa dapat Sobat lihat melalui link berikut :\nhttps://digitalent.kominfo.go.id/\n\nSobat, apakah informasi yang disampaikan sudah cukup jelas atau masih membutuhkan bantuan lain ?\n(A) Kembali ke Menu Utama\n(B) Kontak CS",
+                            "type": "nest_menu",
+                            "menus": {
+                                "A": {
+                                    "id": "1A71",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "B": {
+                                    "id": "1A72",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                }
+                            }
+                        }
+                    }
+                }
+            ],
+            "2": [
+                {
+                    "id": "2A",
+                    "text": "Silahkan pilih informasi yang Sobat butuhkan\n1. Peserta Tidak Dapat Konfirmasi Email Jadwal Pelatihan & Pendaftaran\n2. Peserta Tidak Dapat Sertifikat\n3. Peserta Ingin Melakukan Test Subtansi Susulan\n4. Peserta Tidak Dapat Mendownload File Komitmen dan LPJ di WEB DTS\n5. Nama Peserta di Sertifikat Salah\n6. Peserta Tidak Dapat Membuat Akun Simonas (Pokja Pasca Pelatihan)",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "2A1",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "2": {
+                            "id": "2A2",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "3": {
+                            "id": "2A3",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "4": {
+                            "id": "2A4",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "5": {
+                            "id": "2A5",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "6": {
+                            "id": "2A6",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "cs"
+                        }
+                    }
+                }
+            ],
+            "3": [
+                {
+                    "id": "3A1",
+                    "text": "Silahkan pilih informasi yang Sobat butuhkan\n1. Server Down Saat Peserta Melakukan Test Subtansi\n2. Peserta Tidak Dapat Mengupload Form Komitmen\n3. Peserta Belum Mendapatkan Sertifikat Tetapi Akun Sudah Ter-Reset",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "3A11",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "2": {
+                            "id": "3A12",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "3": {
+                            "id": "3A13",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "cs"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

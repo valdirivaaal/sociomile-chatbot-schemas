@@ -1,0 +1,17 @@
+{
+    "active": true,
+    "mode": "basic",
+    "greetingMessage": "Hi <name>, selamat datang di Transcosmos Indonesia. Welcome to Transcosmos Indonesia. Untuk melanjutkan, silakan ketik kode pilihan bahasa berikut. Please type code for language option below:",
+    "exit_keyword": "",
+    "order_keywords": ["NAMA", "NIP", "PROJECT", "EMAIL", "NOMOR HP", "PERUSAHAAN", "NO. TELEPON", "TOPIK", "SARAN DAN MASUKAN", "NAME", "EMPLOYEE ID", "PHONE NO", "COMPANY", "PHONE", "PROJECT/CLIENT", "TOPIC", "IDEA/SUGGESTION"],
+    "order_reply_msg": "",
+    "to_cs_keyword": "",
+    "response_cs_keyword": "",
+    "listCommandMessage": "",
+    "contactCsMessage": "Terima kasih telah menghubungi Transcosmos Indonesia, sampai jumpa dan selamat beraktifitas kembali.",
+    "prefixGreeting": "",
+    "notUnderstandMessage": "Mohon maaf pilihan Anda tidak sesuai. Ketik *MENU* untuk kembali ke menu utama",
+    "check_office_hour": true,
+    "concat_greeting_and_menu": true,
+    "no_ofh_bot_msg": ""
+}

@@ -1,0 +1,17 @@
+{
+    "active": true,
+    "mode": "basic",
+    "greetingMessage": "Silahkan ketik angka dibawah ini untuk melanjutkan informasi berikutnya :",
+    "exit_keyword": "",
+    "order_keywords": ["NO RESI", "NO TLP PENERIMA", "LOKASI LOKER", "NO TLP", "EMAIL", "MERK HP", "OS YANG DIGUNAKAN", "KENDALA", "KRONOLOGI"],
+    "order_reply_msg": "",
+    "to_cs_keyword": "",
+    "response_cs_keyword": "Terimakasih atas informasinya, mohon ditunggu. Tim PopBox akan segera membantu kamu",
+    "listCommandMessage": "",
+    "contactCsMessage": "",
+    "prefixGreeting": "",
+    "notUnderstandMessage": "",
+    "check_office_hour": true,
+    "concat_greeting_and_menu": true,
+    "no_ofh_bot_msg": ""
+}

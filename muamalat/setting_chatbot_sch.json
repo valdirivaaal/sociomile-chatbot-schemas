@@ -1,0 +1,1851 @@
+{
+    "schemas": {
+        "default": {
+            "survey": {
+                "active": false
+            },
+            "reset_keys": [
+                "0"
+            ],
+            "load_conversation": "WabaTemplateConversation",
+            "top_level_question": [
+                {
+                    "id": "1",
+                    "text": "1. Sudah Mengetahui Produk Bank Muamalat",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "2. Ingin Mengetahun tentang Bank Muamalat",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "3. Layanan Permintaan & Pengaduan",
+                    "type": "actions"
+                }
+            ],
+            "0": [
+                {
+                    "id": "1",
+                    "text": "1. Sudah Mengetahui Produk Bank Muamalat",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "2. Ingin Mengetahun tentang Bank Muamalat",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "3. Layanan Permintaan & Pengaduan",
+                    "type": "actions"
+                }
+            ],
+            "1": [
+                {
+                    "id": "1A",
+                    "current_menu": "1",
+                    "text": "*1. Penyimpanan Dana*\n*2. Pembiayaan*\n*3. Fasilitas*\n*4. Muamalat*",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "1A1",
+                            "current_menu": "1-1",
+                            "text": "*1. Tabungan*\n*2. Deposito*\n*3. Giro*\n*4. Layanan*\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *#* untuk Kembali ke Menu Sebelumnya, atau\nKetik *0* untuk Kembali ke Menu Utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "#": {
+                                    "id": "1A1BACK",
+                                    "current_menu": "1-1-5",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                },
+                                "0": {
+                                    "id": "1A1MAIN",
+                                    "current_menu": "1-1-6",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "1A11",
+                                    "current_menu": "1-1-1",
+                                    "text": "*1. Tabungan IB Hijrah*\n*2. Tabungan IB Hijrah Haji*\n*3. Tabungan*\n*4. Tabungan IB Hijrah Rencana*\n*5. Tabungan IB Simpel*\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *#* untuk Kembali ke Menu Sebelumnya, atau\nKetik *0* untuk Kembali ke Menu Utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "#": {
+                                            "id": "1A11BACK",
+                                            "current_menu": "1-1-1-6",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        },
+                                        "0": {
+                                            "id": "1A11MAIN",
+                                            "current_menu": "1-1-1-7",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "1": {
+                                            "id": "1A111",
+                                            "current_menu": "1-1-1-1",
+                                            "text": "-Penjelasan singkat produk\n- Syarat & Ketentuan\n- Fitur & Benefit produk\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A111BACK",
+                                                    "current_menu": "1-1-1-1-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A111MAIN",
+                                                    "current_menu": "1-1-1-1-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A111SALMA",
+                                                    "current_menu": "1-1-1-1-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "1A112",
+                                            "current_menu": "1-1-1-2",
+                                            "text": "-Penjelasan singkat produk\n- Syarat & Ketentuan\n- Fitur & Benefit produk\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A112BACK",
+                                                    "current_menu": "1-1-1-2-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A112MAIN",
+                                                    "current_menu": "1-1-1-2-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A112SALMA",
+                                                    "current_menu": "1-1-1-2-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "id": "1A113",
+                                            "current_menu": "1-1-1-3",
+                                            "text": "-Penjelasan singkat produk\n- Syarat & Ketentuan\n- Fitur & Benefit produk\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A113BACK",
+                                                    "current_menu": "1-1-1-3-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A113MAIN",
+                                                    "current_menu": "1-1-1-3-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A113SALMA",
+                                                    "current_menu": "1-1-1-3-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "4": {
+                                            "id": "1A114",
+                                            "current_menu": "1-1-1-4",
+                                            "text": "-Penjelasan singkat produk\n- Syarat & Ketentuan\n- Fitur & Benefit produk\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A114BACK",
+                                                    "current_menu": "1-1-1-4-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A114MAIN",
+                                                    "current_menu": "1-1-1-4-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A114SALMA",
+                                                    "current_menu": "1-1-1-4-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "5": {
+                                            "id": "1A115",
+                                            "current_menu": "1-1-1-5",
+                                            "text": "-Penjelasan singkat produk\n- Syarat & Ketentuan\n- Fitur & Benefit produk\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A115BACK",
+                                                    "current_menu": "1-1-1-5-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A115MAIN",
+                                                    "current_menu": "1-1-1-5-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A115SALMA",
+                                                    "current_menu": "1-1-1-5-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "1A12",
+                                    "current_menu": "1-1-2",
+                                    "text": "*1. Deposito IB Hijrah*\n*2. Deposito Online IB Hijrah*\n*3. Deposito DHE SDA IB Hijrah*\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *#* untuk Kembali ke Menu Sebelumnya, atau\nKetik *0* untuk Kembali ke Menu Utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "#": {
+                                            "id": "1A12BACK",
+                                            "current_menu": "1-1-2-4",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        },
+                                        "0": {
+                                            "id": "1A12MAIN",
+                                            "current_menu": "1-1-2-5",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "1": {
+                                            "id": "1A121",
+                                            "current_menu": "1-1-2-1",
+                                            "text": "-Penjelasan singkat produk\n- Syarat & Ketentuan\n- Fitur & Benefit produk\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A121BACK",
+                                                    "current_menu": "1-1-2-1-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A121MAIN",
+                                                    "current_menu": "1-1-2-1-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A121SALMA",
+                                                    "current_menu": "1-1-2-1-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "1A122",
+                                            "current_menu": "1-1-2-2",
+                                            "text": "-Penjelasan singkat produk\n- Syarat & Ketentuan\n- Fitur & Benefit produk\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A122BACK",
+                                                    "current_menu": "1-1-2-2-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A122MAIN",
+                                                    "current_menu": "1-1-2-2-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A122SALMA",
+                                                    "current_menu": "1-1-2-2-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "id": "1A123",
+                                            "current_menu": "1-1-2-3",
+                                            "text": "-Penjelasan singkat produk\n- Syarat & Ketentuan\n- Fitur & Benefit produk\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A123BACK",
+                                                    "current_menu": "1-1-2-3-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A123MAIN",
+                                                    "current_menu": "1-1-2-3-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A123SALMA",
+                                                    "current_menu": "1-1-2-3-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "id": "1A13",
+                                    "current_menu": "1-1-3",
+                                    "text": "*1. Giro IB Hijrah Attijary*\n*2. Giro IB Hijrah Ultima*\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *#* untuk Kembali ke Menu Sebelumnya, atau\nKetik *0* untuk Kembali ke Menu Utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "#": {
+                                            "id": "1A13BACK",
+                                            "current_menu": "1-1-3-4",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        },
+                                        "0": {
+                                            "id": "1A13MAIN",
+                                            "current_menu": "1-1-3-3",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "1": {
+                                            "id": "1A131",
+                                            "current_menu": "1-1-3-1",
+                                            "text": "-Penjelasan singkat produk\n- Syarat & Ketentuan\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A131BACK",
+                                                    "current_menu": "1-1-3-1-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A131MAIN",
+                                                    "current_menu": "1-1-3-1-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A131SALMA",
+                                                    "current_menu": "1-1-3-1-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "1A132",
+                                            "current_menu": "1-1-3-2",
+                                            "text": "-Penjelasan singkat produk\n- Syarat & Ketentuan\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A132BACK",
+                                                    "current_menu": "1-1-3-2-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A132MAIN",
+                                                    "current_menu": "1-1-3-2-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A132SALMA",
+                                                    "current_menu": "1-1-3-2-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "4": {
+                                    "id": "1A14",
+                                    "current_menu": "1-1-4",
+                                    "text": "*1. Layanan Cek Saldo*\n*2. Layanan Mutasi Rekening*\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *#* untuk Kembali ke Menu Sebelumnya, atau\nKetik *0* untuk Kembali ke Menu Utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "#": {
+                                            "id": "1A14BACK",
+                                            "current_menu": "1-1-4-4",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        },
+                                        "0": {
+                                            "id": "1A14MAIN",
+                                            "current_menu": "1-1-4-3",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "1": {
+                                            "id": "1A141",
+                                            "current_menu": "1-1-4-1",
+                                            "text": "Informasi  cek saldo dan Mutasi  dilakukan melalui SalaMuamalat di nomer 1500016 (nomer langsung dial)  atau melalui aplikasi MDIN (link aplikasi MDIN)\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A141BACK",
+                                                    "current_menu": "1-1-4-1-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A141MAIN",
+                                                    "current_menu": "1-1-4-1-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A141SALMA",
+                                                    "current_menu": "1-1-4-1-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "1A142",
+                                            "current_menu": "1-1-4-2",
+                                            "text": "Informasi  cek saldo dan Mutasi  dilakukan melalui SalaMuamalat di nomer 1500016 (nomer langsung dial)  atau melalui aplikasi MDIN (link aplikasi MDIN)\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A142BACK",
+                                                    "current_menu": "1-1-4-2-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A142MAIN",
+                                                    "current_menu": "1-1-4-2-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A142SALMA",
+                                                    "current_menu": "1-1-4-2-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "1A2",
+                            "current_menu": "1-2",
+                            "text": "*1. Pembiayaan Consumer*\n*2. Pembiayaan SME*\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *#* untuk Kembali ke Menu Sebelumnya, atau\nKetik *0* untuk Kembali ke Menu Utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "#": {
+                                    "id": "1A2BACK",
+                                    "current_menu": "1-2-3",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                },
+                                "0": {
+                                    "id": "1A2MAIN",
+                                    "current_menu": "1-2-4",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "1A21",
+                                    "current_menu": "1-2-1",
+                                    "text": "*1. Pembiayaan KPR*\n*2. Pembiayaan Multiguna*\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *#* untuk Kembali ke Menu Sebelumnya, atau\nKetik *0* untuk Kembali ke Menu Utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "#": {
+                                            "id": "1A21BACK",
+                                            "current_menu": "1-2-1-3",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        },
+                                        "0": {
+                                            "id": "1A21MAIN",
+                                            "current_menu": "1-2-1-4",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "1": {
+                                            "id": "1A211",
+                                            "current_menu": "1-2-1-1",
+                                            "text": "-Penjelasan singkat produk\n- Syarat & Ketentuan\n- Fitur & Benefit produk\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A211BACK",
+                                                    "current_menu": "1-2-1-1-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A211MAIN",
+                                                    "current_menu": "1-2-1-1-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A211SALMA",
+                                                    "current_menu": "1-2-1-1-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "1A212",
+                                            "current_menu": "1-2-1-2",
+                                            "text": "-Penjelasan singkat produk\n- Syarat & Ketentuan\n- Fitur & Benefit produk\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A212BACK",
+                                                    "current_menu": "1-2-1-2-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A212MAIN",
+                                                    "current_menu": "1-2-1-2-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A212SALMA",
+                                                    "current_menu": "1-2-1-2-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "1A22",
+                                    "current_menu": "1-2-2",
+                                    "text": "*1. Pembiayaan Modal Kerja*\n*2. Pembiayaan Modal Kerja LKS*\n*3. Pembiayaan Investasi*\n*4. Pembiayaan SME Lainnya*\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *#* untuk Kembali ke Menu Sebelumnya, atau\nKetik *0* untuk Kembali ke Menu Utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "#": {
+                                            "id": "1A22BACK",
+                                            "current_menu": "1-2-2-5",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        },
+                                        "0": {
+                                            "id": "1A22MAIN",
+                                            "current_menu": "1-2-2-6",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "1": {
+                                            "id": "1A221",
+                                            "current_menu": "1-2-2-1",
+                                            "text": "-Penjelasan singkat produk\n- Syarat & Ketentuan\n- Fitur & Benefit produk\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A221BACK",
+                                                    "current_menu": "1-2-2-1-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A221MAIN",
+                                                    "current_menu": "1-2-2-1-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A221SALMA",
+                                                    "current_menu": "1-2-2-1-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "1A222",
+                                            "current_menu": "1-2-2-2",
+                                            "text": "-Penjelasan singkat produk\n- Syarat & Ketentuan\n- Fitur & Benefit produk\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A222BACK",
+                                                    "current_menu": "1-2-2-2-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A222MAIN",
+                                                    "current_menu": "1-2-2-2-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A222SALMA",
+                                                    "current_menu": "1-2-2-2-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "id": "1A223",
+                                            "current_menu": "1-2-2-3",
+                                            "text": "-Penjelasan singkat produk\n- Syarat & Ketentuan\n- Fitur & Benefit produk\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A223BACK",
+                                                    "current_menu": "1-2-2-3-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A223MAIN",
+                                                    "current_menu": "1-2-2-3-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A223SALMA",
+                                                    "current_menu": "1-2-2-3-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "4": {
+                                            "id": "1A224",
+                                            "current_menu": "1-2-2-4",
+                                            "text": "-Penjelasan singkat produk\n- Syarat & Ketentuan\n- Fitur & Benefit produk\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A224BACK",
+                                                    "current_menu": "1-2-2-4-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A224MAIN",
+                                                    "current_menu": "1-2-2-4-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A224SALMA",
+                                                    "current_menu": "1-2-2-4-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "id": "1A3",
+                            "current_menu": "1-3",
+                            "text": "*1. Kartu ATM*\n*2. Mobile Banking - MDIN*\n*3. Internet Banking*\n*4. Lokasi ATM*\n*5. Lokasi Kantor Layanan*\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *#* untuk Kembali ke Menu Sebelumnya, atau\nKetik *0* untuk Kembali ke Menu Utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "#": {
+                                    "id": "1A3BACK",
+                                    "current_menu": "1-3-6",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                },
+                                "0": {
+                                    "id": "1A3MAIN",
+                                    "current_menu": "1-3-7",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "1A31",
+                                    "current_menu": "1-3-1",
+                                    "text": "*1. Kartu Shar-E Debit Reguler (GPN)*\n*2. Kartu Shar-E Debit Classic*\n*3. Kartu Shar-E Debit 1HRAM*\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *#* untuk Kembali ke Menu Sebelumnya, atau\nKetik *0* untuk Kembali ke Menu Utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "#": {
+                                            "id": "1A31BACK",
+                                            "current_menu": "1-3-1-4",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        },
+                                        "0": {
+                                            "id": "1A31MAIN",
+                                            "current_menu": "1-3-1-5",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "1": {
+                                            "id": "1A311",
+                                            "current_menu": "1-3-1-1",
+                                            "text": "- Penjelasan singkat kartu ATM\n- Fitur & Biaya kartu ATM\n- Limit Transaksi & Informasi Jaringan\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A311BACK",
+                                                    "current_menu": "1-3-1-1-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A311MAIN",
+                                                    "current_menu": "1-3-1-1-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A311SALMA",
+                                                    "current_menu": "1-3-1-1-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "1A312",
+                                            "current_menu": "1-3-1-2",
+                                            "text": "- Penjelasan singkat kartu ATM\n- Fitur & Biaya kartu ATM\n- Limit Transaksi & Informasi Jaringan\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A312BACK",
+                                                    "current_menu": "1-3-1-2-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A312MAIN",
+                                                    "current_menu": "1-3-1-2-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A312SALMA",
+                                                    "current_menu": "1-3-1-2-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "id": "1A313",
+                                            "current_menu": "1-3-1-3",
+                                            "text": "- Penjelasan singkat kartu ATM\n- Fitur & Biaya kartu ATM\n- Limit Transaksi & Informasi Jaringan\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A313BACK",
+                                                    "current_menu": "1-3-1-3-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A313MAIN",
+                                                    "current_menu": "1-3-1-3-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A313SALMA",
+                                                    "current_menu": "1-3-1-3-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "1A32",
+                                    "current_menu": "1-3-2",
+                                    "text": "*1. Fitur MDIN*\n*2. Limit Transaksi MDIN*\n*3. Cara Registrasi MDIN*\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *#* untuk Kembali ke Menu Sebelumnya, atau\nKetik *0* untuk Kembali ke Menu Utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "#": {
+                                            "id": "1A32BACK",
+                                            "current_menu": "1-3-2-4",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        },
+                                        "0": {
+                                            "id": "1A32MAIN",
+                                            "current_menu": "1-3-2-5",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "1": {
+                                            "id": "1A321",
+                                            "current_menu": "1-3-2-1",
+                                            "text": "- Informasi fitur MDIN\n- Informasi limit transaksi MDIN\n- Informasi Cara Registrasi MDIN\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A321BACK",
+                                                    "current_menu": "1-3-2-1-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A321MAIN",
+                                                    "current_menu": "1-3-2-1-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A321SALMA",
+                                                    "current_menu": "1-3-2-1-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "1A322",
+                                            "current_menu": "1-3-2-2",
+                                            "text": "- Informasi fitur MDIN\n- Informasi limit transaksi MDIN\n- Informasi Cara Registrasi MDIN\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A322BACK",
+                                                    "current_menu": "1-3-2-2-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A322MAIN",
+                                                    "current_menu": "1-3-2-2-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A322SALMA",
+                                                    "current_menu": "1-3-2-2-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "id": "1A323",
+                                            "current_menu": "1-3-2-3",
+                                            "text": "- Informasi fitur MDIN\n- Informasi limit transaksi MDIN\n- Informasi Cara Registrasi MDIN\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A323BACK",
+                                                    "current_menu": "1-3-2-3-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A323MAIN",
+                                                    "current_menu": "1-3-2-3-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A323SALMA",
+                                                    "current_menu": "1-3-2-3-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "id": "1A33",
+                                    "current_menu": "1-3-3",
+                                    "text": "*1. Fitur Internet Banking*\n*2. Limit Transaksi Internet Banking*\n*3. Cara Registrasi Internet Banking*\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *#* untuk Kembali ke Menu Sebelumnya, atau\nKetik *0* untuk Kembali ke Menu Utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "#": {
+                                            "id": "1A33BACK",
+                                            "current_menu": "1-3-3-4",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        },
+                                        "0": {
+                                            "id": "1A33MAIN",
+                                            "current_menu": "1-3-3-5",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "1": {
+                                            "id": "1A331",
+                                            "current_menu": "1-3-3-1",
+                                            "text": "- Informasi fitur Internet Banking\n- Informasi  fitur Internet Banking\n- Informasi Cara Registrasi Internet Banking\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A331BACK",
+                                                    "current_menu": "1-3-3-1-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A331MAIN",
+                                                    "current_menu": "1-3-3-1-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A331SALMA",
+                                                    "current_menu": "1-3-3-1-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "1A332",
+                                            "current_menu": "1-3-3-2",
+                                            "text": "- Informasi fitur Internet Banking\n- Informasi  limit transaksi Banking\n- Informasi Cara Registrasi Internet Banking\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A332BACK",
+                                                    "current_menu": "1-3-3-2-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A332MAIN",
+                                                    "current_menu": "1-3-3-2-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A332SALMA",
+                                                    "current_menu": "1-3-3-2-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "id": "1A333",
+                                            "current_menu": "1-3-3-3",
+                                            "text": "- Informasi fitur Internet Banking\n- Informasi Cara Registrasi Internet Banking\n- Informasi Cara Registrasi Internet Banking\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A332BACK",
+                                                    "current_menu": "1-3-3-2-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A332MAIN",
+                                                    "current_menu": "1-3-3-2-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A332SALMA",
+                                                    "current_menu": "1-3-3-2-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "4": {
+                                    "id": "1A34",
+                                    "current_menu": "1-3-4",
+                                    "text": "*1. Pilihan Provinsi*\n*2. Pilihan Kota*\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *#* untuk Kembali ke Menu Sebelumnya, atau\nKetik *0* untuk Kembali ke Menu Utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "#": {
+                                            "id": "1A34BACK",
+                                            "current_menu": "1-3-4-4",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        },
+                                        "0": {
+                                            "id": "1A34MAIN",
+                                            "current_menu": "1-3-4-3",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "1": {
+                                            "id": "1A341",
+                                            "current_menu": "1-3-4-1",
+                                            "text": " Informasi Lokasi ATM sesuai pilihan provinsi & Kota nasabah\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A341BACK",
+                                                    "current_menu": "1-3-4-1-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A341MAIN",
+                                                    "current_menu": "1-3-4-1-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A341SALMA",
+                                                    "current_menu": "1-3-4-1-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "1A342",
+                                            "current_menu": "1-3-4-2",
+                                            "text": " Informasi Lokasi ATM sesuai pilihan provinsi & Kota nasabah\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A342BACK",
+                                                    "current_menu": "1-3-4-2-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A342MAIN",
+                                                    "current_menu": "1-3-4-2-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A342SALMA",
+                                                    "current_menu": "1-3-4-2-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "5": {
+                                    "id": "1A35",
+                                    "current_menu": "1-3-5",
+                                    "text": "*1. Pilihan Provinsi*\n*2. Pilihan Kota*\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *#* untuk Kembali ke Menu Sebelumnya, atau\nKetik *0* untuk Kembali ke Menu Utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "#": {
+                                            "id": "1A35BACK",
+                                            "current_menu": "1-3-5-4",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        },
+                                        "0": {
+                                            "id": "1A35MAIN",
+                                            "current_menu": "1-3-5-3",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "1": {
+                                            "id": "1A351",
+                                            "current_menu": "1-3-5-1",
+                                            "text": " Informasi Lokasi  Cabang sesuai pilihan provinsi & Kota nasabah\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A351BACK",
+                                                    "current_menu": "1-3-5-1-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A351MAIN",
+                                                    "current_menu": "1-3-5-1-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A351SALMA",
+                                                    "current_menu": "1-3-5-1-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "1A352",
+                                            "current_menu": "1-3-5-2",
+                                            "text": " Informasi Lokasi  Cabang sesuai pilihan provinsi & Kota nasabah\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A352BACK",
+                                                    "current_menu": "1-3-5-2-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A352MAIN",
+                                                    "current_menu": "1-3-5-2-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A352SALMA",
+                                                    "current_menu": "1-3-5-2-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "4": {
+                            "id": "1A4",
+                            "current_menu": "1-4",
+                            "text": "**\n**\n**\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *#* untuk Kembali ke Menu Sebelumnya, atau\nKetik *0* untuk Kembali ke Menu Utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "#": {
+                                    "id": "1A4BACK",
+                                    "current_menu": "1-4-4",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                },
+                                "0": {
+                                    "id": "1A4MAIN",
+                                    "current_menu": "1-4-5",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "1A41",
+                                    "current_menu": "1-4-1",
+                                    "text": "*1. Syarat Menjadi Nasabah MP*\n*2. Dedicated RM & Call Center Line*\n*3. Priority Center, Lane & Parking Lot*\n*4. Airport Lounge Gratis*\n*5. Layanan Prioritas Lainnya*\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *#* untuk Kembali ke Menu Sebelumnya, atau\nKetik *0* untuk Kembali ke Menu Utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "1": {
+                                            "id": "1A411",
+                                            "current_menu": "1-4-1-1",
+                                            "text": "Penjelasan singkat setiap submenu\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A411BACK",
+                                                    "current_menu": "1-4-1-1-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A411MAIN",
+                                                    "current_menu": "1-4-1-1-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A411SALMA",
+                                                    "current_menu": "1-4-1-1-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "1A412",
+                                            "current_menu": "1-4-1-2",
+                                            "text": "Penjelasan singkat setiap submenu\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A412BACK",
+                                                    "current_menu": "1-4-1-2-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A412MAIN",
+                                                    "current_menu": "1-4-1-2-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A412SALMA",
+                                                    "current_menu": "1-4-1-2-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "id": "1A413",
+                                            "current_menu": "1-4-1-3",
+                                            "text": "Penjelasan singkat setiap submenu\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A413BACK",
+                                                    "current_menu": "1-4-1-3-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A413MAIN",
+                                                    "current_menu": "1-4-1-3-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A413SALMA",
+                                                    "current_menu": "1-4-1-3-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "4": {
+                                            "id": "1A414",
+                                            "current_menu": "1-4-1-4",
+                                            "text": "Penjelasan singkat setiap submenu\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A414BACK",
+                                                    "current_menu": "1-4-1-4-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A414MAIN",
+                                                    "current_menu": "1-4-1-4-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A414SALMA",
+                                                    "current_menu": "1-4-1-4-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "5": {
+                                            "id": "1A415",
+                                            "current_menu": "1-4-1-5",
+                                            "text": "Penjelasan singkat setiap submenu\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A415BACK",
+                                                    "current_menu": "1-4-1-5-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A415MAIN",
+                                                    "current_menu": "1-4-1-5-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A415SALMA",
+                                                    "current_menu": "1-4-1-5-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "1A42",
+                                    "current_menu": "1-4-2",
+                                    "text": "*1. Shar-E Debit Prioritas & Limit Transaksi Khusus*\n*2. Bebas Biaya Transaksi Transfer*\n*3. Special Fee Remittance, Tarik dan Setor USD*\n*4. Layanan SMS & Email Notifikasi*\n*5. Layanan Laporan Konsolidasi Rekening*\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *#* untuk Kembali ke Menu Sebelumnya, atau\nKetik *0* untuk Kembali ke Menu Utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "1": {
+                                            "id": "1A421",
+                                            "current_menu": "1-4-2-1",
+                                            "text": "Penjelasan singkat setiap submenu\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A421BACK",
+                                                    "current_menu": "1-4-2-1-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A421MAIN",
+                                                    "current_menu": "1-4-2-1-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A421SALMA",
+                                                    "current_menu": "1-4-2-1-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "1A422",
+                                            "current_menu": "1-4-2-2",
+                                            "text": "Penjelasan singkat setiap submenu\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A422BACK",
+                                                    "current_menu": "1-4-2-2-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A422MAIN",
+                                                    "current_menu": "1-4-2-2-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A422SALMA",
+                                                    "current_menu": "1-4-2-2-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "id": "1A423",
+                                            "current_menu": "1-4-2-3",
+                                            "text": "Penjelasan singkat setiap submenu\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A423BACK",
+                                                    "current_menu": "1-4-2-3-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A423MAIN",
+                                                    "current_menu": "1-4-2-3-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A423SALMA",
+                                                    "current_menu": "1-4-2-3-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "4": {
+                                            "id": "1A424",
+                                            "current_menu": "1-4-2-4",
+                                            "text": "Penjelasan singkat setiap submenu\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A424BACK",
+                                                    "current_menu": "1-4-2-4-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A424MAIN",
+                                                    "current_menu": "1-4-2-4-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A424SALMA",
+                                                    "current_menu": "1-4-2-4-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "5": {
+                                            "id": "1A425",
+                                            "current_menu": "1-4-2-5",
+                                            "text": "Penjelasan singkat setiap submenu\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A425BACK",
+                                                    "current_menu": "1-4-2-5-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A425MAIN",
+                                                    "current_menu": "1-4-2-5-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A425SALMA",
+                                                    "current_menu": "1-4-2-5-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "id": "1A43",
+                                    "current_menu": "1-4-3",
+                                    "text": "*1. Welcome Park Exclusive*\n*2. Safe Deposit Box*\n*3. Bingkisan Eksklusif di Hari Istimewa Nasabah*\n*4. Event Eksklusif*\n*5. Program Prioritas Lainnya*\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *#* untuk Kembali ke Menu Sebelumnya, atau\nKetik *0* untuk Kembali ke Menu Utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "1": {
+                                            "id": "1A431",
+                                            "current_menu": "1-4-3-1",
+                                            "text": "Penjelasan singkat setiap submenu\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A431BACK",
+                                                    "current_menu": "1-4-3-1-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A431MAIN",
+                                                    "current_menu": "1-4-3-1-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A431SALMA",
+                                                    "current_menu": "1-4-3-1-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "1A432",
+                                            "current_menu": "1-4-3-2",
+                                            "text": "Penjelasan singkat setiap submenu\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A432BACK",
+                                                    "current_menu": "1-4-3-2-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A432MAIN",
+                                                    "current_menu": "1-4-3-2-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A432SALMA",
+                                                    "current_menu": "1-4-3-2-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "id": "1A433",
+                                            "current_menu": "1-4-3-3",
+                                            "text": "Penjelasan singkat setiap submenu\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A433BACK",
+                                                    "current_menu": "1-4-3-3-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A433MAIN",
+                                                    "current_menu": "1-4-3-3-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A433SALMA",
+                                                    "current_menu": "1-4-3-3-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "4": {
+                                            "id": "1A434",
+                                            "current_menu": "1-4-3-4",
+                                            "text": "Penjelasan singkat setiap submenu\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A434BACK",
+                                                    "current_menu": "1-4-3-4-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A434MAIN",
+                                                    "current_menu": "1-4-3-4-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A434SALMA",
+                                                    "current_menu": "1-4-3-4-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "5": {
+                                            "id": "1A435",
+                                            "current_menu": "1-4-3-5",
+                                            "text": "Penjelasan singkat setiap submenu\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "#": {
+                                                    "id": "1A435BACK",
+                                                    "current_menu": "1-4-3-5-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                },
+                                                "0": {
+                                                    "id": "1A435MAIN",
+                                                    "current_menu": "1-4-3-5-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                },
+                                                "SALMA": {
+                                                    "id": "1A435SALMA",
+                                                    "current_menu": "1-4-3-5-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            ],
+            "2": [
+                {
+                    "id": "2B",
+                    "current_menu": "2",
+                    "text": "*1. Seputar Bank Muamalat*\n*2. Informasi Produk & Layanan*\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *#* untuk Kembali ke Menu Sebelumnya, atau\nKetik *0* untuk Kembali ke Menu Utama",
+                    "type": "nest_menu",
+                    "menus": {
+                        "#": {
+                            "id": "2B1BACK",
+                            "current_menu": "2-3",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "parent"
+                        },
+                        "0": {
+                            "id": "2B1MAIN",
+                            "current_menu": "2-4",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        },
+                        "1": {
+                            "id": "2B1",
+                            "current_menu": "2-1",
+                            "text": "Informasi link tentang Bank Muamalat https://www.bankmuamalat.co.id/profil-bank-muamalat\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                            "type": "nest_menu",
+                            "menus": {
+                                "#": {
+                                    "id": "2B11BACK",
+                                    "current_menu": "2-1-3",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                },
+                                "0": {
+                                    "id": "2B11MAIN",
+                                    "current_menu": "2-1-2",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "SALMA": {
+                                    "id": "2B11SALMA",
+                                    "current_menu": "2-1-1",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "2B2",
+                            "current_menu": "2-2",
+                            "text": "Informasi  link tentang Produk & Layanan Bank Muamalat :\nhttps://www.bankmuamalat.co.id/produk-layanan-consumer\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *0* untuk Kembali ke Menu Awal\nKetik *#* untuk Kembali ke Menu sebelumnya, atau\nKetik *SALMA* untuk terhubung dengan rekan Salma",
+                            "type": "nest_menu",
+                            "menus": {
+                                "#": {
+                                    "id": "2B21BACK",
+                                    "current_menu": "2-2-3",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                },
+                                "0": {
+                                    "id": "2B21MAIN",
+                                    "current_menu": "2-2-2",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "SALMA": {
+                                    "id": "2B21SALMA",
+                                    "current_menu": "2-2-1",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                }
+                            }
+                        }
+                    }
+                }
+            ],
+            "3": [
+                {
+                    "id": "3C",
+                    "current_menu": "3",
+                    "text": "Menu layanan ini terkait permintaan blokir kartu ATM, MDIN, maupun pengaduan transaksi. Mohon menunggu Anda akan terhubung dengan SALMA\nSilakan ketik *Selesai* untuk Keluar dari percakapan ini\nKetik *#* untuk Kembali ke Menu Sebelumnya, atau\nKetik *0* untuk Kembali ke Menu Utama",
+                    "type": "nest_menu",
+                    "menus": {
+                        "#": {
+                            "id": "3C1BACK",
+                            "current_menu": "3-1",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "parent"
+                        },
+                        "0": {
+                            "id": "3C1MAIN",
+                            "current_menu": "3-2",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

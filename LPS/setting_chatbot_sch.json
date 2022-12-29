@@ -1,0 +1,205 @@
+{
+    "schemas": {
+        "default": {
+            "survey": {
+                "active": false
+            },
+            "reset_keys": [
+                "0"
+            ],
+            "load_conversation": "WabaTemplateConversation",
+            "top_level_questions": [
+                {
+                    "id": "1",
+                    "text": "Registrasi",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "Persyaratan dan Ketentuan",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "Informasi Hadiah Pemenang",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "Informasi Tema Sub Khusus",
+                    "type": "actions"
+                }
+            ],
+            "0": [
+                {
+                    "id": "1",
+                    "text": "Registrasi",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "Persyaratan dan Ketentuan",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "Informasi Hadiah Pemenang",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "Informasi Tema Sub Khusus",
+                    "type": "actions"
+                }
+            ],
+            "1": [
+                {
+                    "id": "1A",
+                    "current_menu": "1",
+                    "text": "Silakan registrasi online melalui link berikut ini : https://cfr.lps.go.idHome/SignIn \n\nMasa pendaftaran dimulai sejak tanggal 1 April – 5 Agustus 2022.",
+                    "type": "nest_menu",
+                    "interactive_type": "button",
+                    "interactive_message": true,
+                    "next_bubbles": [
+                        {
+                            "type": "interactive_button",
+                            "text": "Ketik *0* untuk kembali ke Menu Utama",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "0": {
+                            "id": "0",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }
+            ],
+            "2": [
+                {
+                    "id": "2B",
+                    "current_menu": "2",
+                    "text": "Informasi Persyaratan dan Ketentuan bisa dilihat melalui link berikut ini : https://bit.ly/3xUFnfO",
+                    "type": "nest_menu",
+                    "interactive_type": "button",
+                    "interactive_message": true,
+                    "next_bubbles": [
+                        {
+                            "type": "text",
+                            "text": "Format isian Curriculum Vitae dan Surat Pernyataan dapat diunduh melalui link berikut :\n1. Curriculum Vitae (https://bit.ly/39wadlG)\n2. Surat Pernyataan Perorangan (https://bit.ly/3NTEIAS)\n3. Surat Pernyataan Kelompok (https://bit.ly/3b986EZ)"
+                        },
+                        {
+                            "type": "text",
+                            "text": "FAQ lain dapat dilihat lebih detail melalui link berikut : https://bit.ly/3HIs4CJ"
+                        },
+                        {
+                            "type": "interactive_button",
+                            "text": "Ketik *0* untuk kembali ke Menu Utama",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "0": {
+                            "id": "0",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }
+            ],
+            "3": [
+                {
+                    "id": "3C",
+                    "current_menu": "3",
+                    "text": "Berikut informasi hadiah untuk para pemenang *LPS Call for Research 2022 :*",
+                    "type": "nest_menu",
+                    "interactive_type": "button",
+                    "interactive_message": true,
+                    "next_bubbles": [
+                        {
+                            "type": "text",
+                            "text": "*A. SUB TEMA KHUSUS*\nJuara 1 – IDR 45.000.000\nJuara 2 – IDR 35.000.000\nJuara 3 – IDR 25.000.000"
+                        },
+                        {
+                            "type": "text",
+                            "text": "*B. SUB TEMA UMUM*\nJuara 1 – IDR 35.000.000\nJuara 2 – IDR 25.000.000\nJuara 3 – IDR 15.000.000"
+                        },
+                        {
+                            "type": "interactive_button",
+                            "text": "Ketik *0* untuk kembali ke Menu Utama",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "0": {
+                            "id": "0",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }
+            ],
+            "4": [
+                {
+                    "id": "4C",
+                    "current_menu": "4",
+                    "text": "",
+                    "type": "nest_menu",
+                    "interactive_type": "button",
+                    "interactive_message": true,
+                    "next_bubbles": [
+                        {
+                            "type": "text",
+                            "text": "Informasi Tema Sub Khusus bisa dilihat melalui link berikut ini : https://bit.ly/3b7vK4F"
+                        },
+                        {
+                            "type": "interactive_button",
+                            "text": "Ketik *0* untuk kembali ke Menu Utama",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "0": {
+                            "id": "0",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

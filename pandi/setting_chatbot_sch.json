@@ -1,0 +1,309 @@
+{
+    "schemas": {
+        "default": {
+            "survey": {
+                "active": false
+            },
+            "reset_keys": [
+                "MAIN"
+            ],
+            "load_conversation": "WabaTemplateConversation",
+            "top_level_question": [
+                {
+                    "id": "1",
+                    "text": "1. Informasi PANDI",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "2. Registran (Pengguna Nama Domain)",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "3. Registrar (Mitra Penjualan Nama Domain)",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "4. Laporan & Keluhan",
+                    "type": "actions"
+                },
+                {
+                    "id": "5",
+                    "text": "5. Terhubung ke Live Agent Customer Service"
+                }
+            ],
+            "MAIN": [
+                {
+                    "id": "1",
+                    "text": "1. Informasi PANDI",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "2. Registran (Pengguna Nama Domain)",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "3. Registrar (Mitra Penjualan Nama Domain)",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "4. Laporan & Keluhan",
+                    "type": "actions"
+                },
+                {
+                    "id": "5",
+                    "text": "5. Terhubung ke Live Agent Customer Service"
+                }
+            ],
+            "1": [
+                {
+                    "id": "1A",
+                    "current_menu": "1",
+                    "text": "1. Tentang PANDI\n2. Nama Domain .id (SLD)\n3. Siklus Nama Domain\n4. Masa Expired Nama Domain\n5. Pendaftaran Nama Domain\n6. Transfer Nama Domain\n7. Perselisihan Nama Domain\n*Silakan Ketik \"MENU\" untuk kembali ke menu sebelumnya*",
+                    "type": "nest_menu",
+                    "menus": {
+                        "MENU": {
+                            "id": "1A1MENU",
+                            "current_menu": "1-8",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "parent"
+                        },
+                        "1": {
+                            "id": "1A1",
+                            "current_menu": "1-1",
+                            "text": "Pengelola Nama Domain Internet Indonesia (.id Registri)\nRegistri Nama Domain Internet Indonesia (PANDI) adalah Registri Nama Domain Tingkat Atas Indonesia (.ID) yang ditugaskan oleh Menteri Komunikasi dan Teknologi Informasi (Kominfo) Republik Indonesia dengan Keputusan No. 806 tahun 2014.",
+                            "type": "text"
+                        },
+                        "2": {
+                            "id": "1A2",
+                            "current_menu": "1-2",
+                            "text": "Sahabat ID dapat mengetahui SLD dan persyaratan nama domain pada halaman https://pandi.id/mengapa-id/",
+                            "type": "text"
+                        },
+                        "3": {
+                            "id": "1A3",
+                            "current_menu": "1-3",
+                            "text": "Sahabat ID dapat mengetahui siklus nama domain pada halaman https://pandi.id/mengelola-domain/",
+                            "type": "text"
+                        },
+                        "4": {
+                            "id": "1A4",
+                            "current_menu": "1-4",
+                            "text": "Sahabat ID dapat mengetahui masa Expired nama domain pada halaman https://pandi.id/whois/",
+                            "type": "text"
+                        },
+                        "5": {
+                            "id": "1A5",
+                            "current_menu": "1-5",
+                            "text": "Untuk persyaratan pendaftaran menjadi Registrar sahabat ID dapat mengunjungi halaman https://pandi.id/registrar/",
+                            "type": "text"
+                        },
+                        "6": {
+                            "id": "1A6",
+                            "current_menu": "1-6",
+                            "text": "Sahabat ID dapat melakukan Transfer nama domain dalam estimasi 45 hari kalender kepada pihak Registrar, Sahabat ID dapat menggunakan authorization code yang dimiliki pada Domain tersebut untuk melakukan Transfer nama domain",
+                            "type": "text"
+                        },
+                        "7": {
+                            "id": "1A7",
+                            "current_menu": "1-7",
+                            "text": "Berdirinya Penyelesaian Perselisihan Nama Domain (PPND) merupakan perwujudan dari salah satu wewenang yang diberikan perundang-undangan kepada Pengelola Nama Domain Internet Indonesia (PANDI). Pasal 75 Ayat (3) PP Nomor 82 Tahun 2012 tentang Penyelenggaraan Sistem dan Transaksi Elektronik mengatur bahwa PANDI, sebagai Registri nama domain internet Indonesia memiliki salahsatu fungsi menyelesaikan perselisihan nama domain.\n\nPPND adalah jalur penyelesaian sengketa non-litigasi bagi perselisihan hak atas suatu nama domain internet Indonesia.\n\nSumber hukum bagi pelaksanaan PPND dapat ditemukan pada Kebijakan PPND.\n\nPPND menangani tiga jenis perselisihan nama domain, yakni perselisihan nama domain terkait merek, perselisihan nama domain terkait nama terdaftar dan perselisihan nama domain terkait kepatutan yang berlaku dalam masyarakat.",
+                            "type": "text"
+                        }
+                    }
+                }
+            ],
+            "2": [
+                {
+                    "id": "2B",
+                    "current_menu": "2",
+                    "text": "1. Pendaftaran Nama Domain\n2. Konfirmasi Pembayaran Nama Domain .id\n3. Pembayaran Nama Domain Baru\n4. Konfirmasi Perpanjangan Nama Domain .net .id dan Mil.id\n5. Perpanjangan Nama Domain go.id dan desa.id\n6. Konfirmasi Perpanjangan Nama Domain go.id dan desa.id\n7. Top-up Deposit Registran\n8. Perubahan NS dan DNSsec\n9. Faktur pajak\n10. Refund\n11. Authcode\n12. Permintaan data Whois\n13. Perubahan akun pengelola nama domain .id desa.id dan go.id\n*Silakan Ketik \"MENU\" untuk kembali ke menu sebelumnya*",
+                    "type": "nest_menu",
+                    "menus": {
+                        "MENU": {
+                            "id": "2B1MENU",
+                            "current_menu": "2-14",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "parent"
+                        },
+                        "1": {
+                            "id": "2B1",
+                            "current_menu": "2-1",
+                            "text": "Sahabat ID dapat melakukan pendaftaran nama domain pada halaman https://pandi.id/ namun sebelum melakukan pendaftaran nama domain Sahabat ID dapat melakukan pengecekan terlebih dahulu atas ketersediaan nama domain, jika masih tersedia maka nama domain dapat didaftarkan.\n\nSilahkan masukan Nama Domain yang Anda cari: *[SEARCH_NAMA_DOMAIN] >> Integrasi dengan WHOIS PANDI*",
+                            "type": "text"
+                        },
+                        "2": {
+                            "id": "2B2",
+                            "current_menu": "2-2",
+                            "text": "Sahabat ID dapat melakukan konfirmasi pembayaran dengan cara menginformasikan nama domain atau invoice, serta mengirimkan bukti pembayaran kepada pihak Registrar di mana nama domain tersebut terdaftar.",
+                            "type": "text"
+                        },
+                        "3": {
+                            "id": "2B3",
+                            "current_menu": "2-3",
+                            "text": "Sahabat ID dapat melakukan pembayaran nama domain sesuai dengan invoice yang telah di terima melalui email atau akun yang telah terdaftar.",
+                            "type": "text"
+                        },
+                        "4": {
+                            "id": "2B4",
+                            "current_menu": "2-4",
+                            "text": "Sahabat ID dapat melakukan konfirmasi pembayaran dengan cara menginformasikan nama domain atau invoice, serta mengirimkan bukti pembayaran kepada helpdesk PANDI melalui Email Helpdesk@pandi.id",
+                            "type": "text"
+                        },
+                        "5": {
+                            "id": "2B5",
+                            "current_menu": "2-5",
+                            "text": "Sahabat ID dapat melakukan perpanjangan nama domain desa.id dan Go.id dengan cara masuk ke dalam akun Sahabat ID yang telah terdaftar di https://layanan.kominfo.go.id/ atau https://domain.go.id/ kemudian pilih nama domain yang akan dilakukan perpanjangan dan klik renew",
+                            "type": "text"
+                        },
+                        "6": {
+                            "id": "2B6",
+                            "current_menu": "2-6",
+                            "text": "Sahabat ID dapat melakukan konfirmasi pembayaran dengan cara menginformasikan nama domain atau invoice serta melampirkan bukti pembayaran kepada helpdesk PANDI melalui Email Helpdesk@pandi.id",
+                            "type": "text"
+                        },
+                        "7": {
+                            "id": "2B7",
+                            "current_menu": "2-7",
+                            "text": "Sahabat ID dapat melakukan Top up deposit pada akun yang telah terdaftar dihalaman https://register.domain.id/",
+                            "type": "text"
+                        },
+                        "8": {
+                            "id": "2B8",
+                            "current_menu": "2-8",
+                            "text": "Perubahana Nameserver dan DNSsec sangatlah mudah, Sahabat ID dapat melakukan perubahan nameserver pada halaman register.domain.id apabila nama domain tersebut terdaftar pada PANDI, jika nama domain tersebut terdaftar pada pihak Registrar maka Sahabat ID dapat melakukan perubahan melalui portal menage domain yang disediakan dari pihak Registrar.",
+                            "type": "text"
+                        },
+                        "9": {
+                            "id": "2B9",
+                            "current_menu": "2-9",
+                            "text": "Untuk permohonan Faktur pajak sahabat ID bisa mengajukan permohonan faktur pajak melalui email helpdesk@pandi.id dengan melampirkan NPWP atas nama domain tersebut.",
+                            "type": "text"
+                        },
+                        "10": {
+                            "id": "2B10",
+                            "current_menu": "2-10",
+                            "text": "Permintaan Refund dana dapat diajukan ke PANDI melalui email ke alamat helpdesk@pandi.id,",
+                            "type": "text"
+                        },
+                        "11": {
+                            "id": "2B11",
+                            "current_menu": "2-11",
+                            "text": "Permintaan authcode dapat diajukan ke PANDI melalui email ke alamat helpdesk@pandi.id",
+                            "type": "text"
+                        },
+                        "12": {
+                            "id": "2B12",
+                            "current_menu": "2-12",
+                            "text": "Permintaan Data Whois dapat diajukan ke PANDI melalui email ke alamat helpdesk@pandi.id.",
+                            "type": "text"
+                        },
+                        "13": {
+                            "id": "2B13",
+                            "current_menu": "2-13",
+                            "text": "Sahabat ID dapat melakukan perubahan akun pengelolaan nama domain dengan cara menghubungi pihak Registrar nama domain tersebut terdaftar.\nSahabat ID dapat melakukan perubahan akun pengelolaan nama domain go.id dan desa.id dengan cara menghubungi pihak Kominfo pada kontak kominfo 021-3868159 021-34830963 layanan.aptika@mail.kominfo.go.id .",
+                            "type": "text"
+                        }
+                    }
+                }
+            ],
+            "3": [
+                {
+                    "id": "3C",
+                    "current_menu": "3",
+                    "text": "1. Cara menjadi Registrar\n2. Registrar Terakreditasi PANDI\n*Silakan Ketik \"MENU\" untuk kembali ke menu sebelumnya*",
+                    "type": "nest_menu",
+                    "menus": {
+                        "MENU": {
+                            "id": "3C1MENU",
+                            "current_menu": "3-3",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "parent"
+                        },
+                        "1": {
+                            "id": "3C1",
+                            "current_menu": "3-1",
+                            "text": "Persyaratan pendaftaran menjadi Registrar sahabat ID dapat mengunjungi halaman https://pandi.id/registrar/",
+                            "type": "text"
+                        },
+                        "2": {
+                            "id": "3C2",
+                            "current_menu": "3-2",
+                            "text": "Sahabat ID  dapat mengunjungi halaman https://pandi.id/registrar/ untuk mengetahui Registrar yang telah terakreditasi oleh PANDI",
+                            "type": "text"
+                        }
+                    }
+                }
+            ],
+            "4": [
+                {
+                    "id": "4D",
+                    "current_menu": "4",
+                    "text": "1. Abuse/Phising\n2. Suspend/Unsuspend\n*Silakan Ketik \"MENU\" untuk kembali ke menu sebelumnya*",
+                    "type": "nest_menu",
+                    "menus": {
+                        "MENU": {
+                            "id": "4D1MENU",
+                            "current_menu": "4-3",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "parent"
+                        },
+                        "1": {
+                            "id": "4D1",
+                            "current_menu": "4-1",
+                            "text": "Sahabat ID Tidak perlu khawatir untuk prihal Abuse/Phising dapat dilaporkan pada halaman https://pandi.id/Formulir-Penyalahgunaan-Domain/\n\nKetik \"LAPOR\" untuk membuat laporan penyalahgunaan Nama Domain\n\n\"LAPOR\" >> Rangkaian Pertanyaan yang sumbernya dari form disini: https://pandi.id/Formulir-Penyalahgunaan-Domain/",
+                            "type": "text"
+                        },
+                        "2": {
+                            "id": "4D2",
+                            "current_menu": "4-2",
+                            "text": "Sahabat ID Tidak perlu khawatir untuk prihal Unsuspend nama domain dapat diajukan melalui halaman https://pandi.id/formulir-unsuspend/",
+                            "type": "text"
+                        }
+                    }
+                }
+            ],
+            "5": [
+                {
+                    "id": "5E",
+                    "current_menu": "5",
+                    "text": "1. Ya\n2. Tidak",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "5E1",
+                            "current_menu": "5-1",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "2": {
+                            "id": "5E2",
+                            "current_menu": "5-2",
+                            "text": "Apakah ada hal lain yang bisa Kami bantu?\nSilakan ketik *\"MENU\"* untuk kembali ke menu sebelumnya\natau ketik *\"Selesai\"* kalau sudah tidak ada pertanyaan lagi ya",
+                            "type": "nest_menu",
+                            "menus": {
+                                "MENU": {
+                                    "id": "5E21MENU",
+                                    "current_menu": "5-2-1",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

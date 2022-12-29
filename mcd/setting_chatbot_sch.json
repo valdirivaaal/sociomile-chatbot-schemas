@@ -1,0 +1,1550 @@
+{
+    "schemas": {
+        "default": {
+            "survey": {
+                "active": false
+            },
+            "reset_keys": [
+                "0"
+            ],
+            "load_conversation": "WabaTemplateConversation",
+            "top_level_questions": [
+                {
+                    "id": 1,
+                    "text": "Informasi",
+                    "type": "actions"
+                },
+                {
+                    "id": 2,
+                    "text": "Saran",
+                    "type": "actions"
+                },
+                {
+                    "id": 3,
+                    "text": "Keluhan",
+                    "type": "actions"
+                }
+            ],
+            "0": [
+                {
+                    "id": 1,
+                    "text": "Informasi",
+                    "type": "actions"
+                },
+                {
+                    "id": 2,
+                    "text": "Saran",
+                    "type": "actions"
+                },
+                {
+                    "id": 3,
+                    "text": "Keluhan",
+                    "type": "actions"
+                }
+            ],
+            "1": [
+                {
+                    "id": "1A",
+                    "current_menu": "1",
+                    "text": "Baik, Kak (Nama). Kamu bisa temukan informasi yang kamu butuhkan dengan mengetik salah satu nomor berikut ini:",
+                    "type": "nest_menu",
+                    "interactive_type": "list",
+                    "interactive_message": true,
+                    "next_bubbles": [
+                        {
+                            "type": "text",
+                            "text": "1. Promo Terbaru\n2. Perayaan Ulang Tahun di McDonald's\n3. Menu McD\n4. KateringMcD\n5. McKids\n6. Lokasi dan Jam Operasional Restoran\n7. McDelivery\n8. Aplikasi McDonald's\n9. Karir McDonald's\n10. Informasi Kerjasama"
+                        },
+                        {
+                            "type": "text",
+                            "text": "atau ketik 0 untuk kembali Ke Menu Utama"
+                        }
+                    ],
+                    "menus": {
+                        "0": {
+                            "id": "MENU",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        },
+                        "1": {
+                            "id": "1A1",
+                            "current_menu": "1-1",
+                            "text": "Baik, Kak (Nama). Silakan pilih informasi yang kamu inginkan dengan mengetik salah satu nomor berikut ini:",
+                            "type": "nest_menu",
+                            "interactive_type": "button",
+                            "interactive_message": true,
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "1. Promo Kegiatan\n2. Promo Menu\n3. Promo Cashless"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "atau ketik 0 untuk kembali Ke Menu Utama"
+                                }
+                            ],
+                            "menus": {
+                                "0": {
+                                    "id": "MENU",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "1A11",
+                                    "current_menu": "1-1-1",
+                                    "text": "Hai kak (Nama), saat ini McDonald's memiliki beberapa promo kegiatan yang bisa kamu nikmati. Kamu bisa pilih informasi yang kamu inginkan dengan mengetik salah satu nomor berikut ini:",
+                                    "interactive_type": "list",
+                                    "interactive_message": true,
+                                    "next_bubbles": [
+                                        {
+                                            "type": "text",
+                                            "text": "1. McDelivery Promo Biaya Antar Rp1\n2. Foto Kompetisi #SerunyaRakitBareng\n3. McDelivery Promo Happy Hour\n4. Lainnya"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "atau ketik 0 untuk kembali Ke Menu Utama"
+                                        }
+                                    ],
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "0": {
+                                            "id": "MENU",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "1": {
+                                            "id": "1A111",
+                                            "current_menu": "1-1-1-1",
+                                            "text": "Hai kak (Nama), yuk pesan menu favoritmu paling hemat hanya pesan lewat McDelivery aja! Dapatkan Biaya Antar hanya Rp1,- khusus pemesanan melalui aplikasi McDelivery dan www.mcdelivery.co.id",
+                                            "type": "text",
+                                            "next_bubbles": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "1. Periode promo 5 Juni - 25 Juli 2022\n2. Minimal pemesanan Rp 79.000,- (sudah termasuk pajak dan biaya take away)\n3. Promo ini dapat digabungkan dengan promo non tunai lainnya\n4. McDelivery berhak untuk membatalkan pesanan apabila menemukan indikasi kecurangan atau tidak sesuai dengan syarat dan ketentuan yang berlaku"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "Ayo nikmati promonya sekarang, kak (Nama)!"
+                                                }
+                                            ]
+                                        },
+                                        "2": {
+                                            "id": "1A112",
+                                            "current_menu": "1-1-1-2",
+                                            "text": "Hai kak (Nama), yuk ajak si kecil ikutan Foto Kompetisi #SerunyaRakitBareng figur 3D Pahlawan Wanita di Instagram, Facebook atau Twitter McDonald’s Indonesia dengan cara sebagai berikut:",
+                                            "type": "text",
+                                            "next_bubbles": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "1. Peserta bisa mendapatkan figur 3D Pahlawan Wanita Indonesia melalui pembelian Paket Family Weekend McD.\n2. Mengunggah foto hasil rakitan figur 3D Pahlawan Wanita Indonesia bareng si Kecil.\n3. Kreasikan latar belakang fotonya sekreatif mungkin.\n4. Scan QR Code yang ada di kartu Pahlawan dan ceritakan kisah Pahlawan semenarik mungkin di caption.\n5. Tag/mention @mcdonaldsid dan 4 temanmu, sertakan juga hashtag #SerunyaRakitBareng dan #McDMainanBangunBangsa.\n6. Periode 14 Mei – 14 Juli 2022."
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "Selain serunya dapat, kamu juga bisa berkesempatan untuk memenangkan total hadiah Gift Card McD senilai Jutaan rupiah! Cek syarat dan ketentuan lengkapnya di: https://mcdonalds.co.id/promo/foto-kompetisi-serunya-rakit-bareng"
+                                                }
+                                            ]
+                                        },
+                                        "3": {
+                                            "id": "1A113",
+                                            "current_menu": "1-1-1-3",
+                                            "text": "Hai kak (Nama), kamu bisa nikmati promo Happy Hour dengan mendapatkan diskon Rp 25.000,- Khusus pemesanan melalui aplikasi McDelivery dan mcdelivery.co.id loh! Cek cara serta syarat dan ketentuan promonya di bawah ini ya:",
+                                            "type": "text",
+                                            "next_bubbles": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "1. Berlaku untuk pemesanan hari Senin - Jum'at pada jam 14.00 - 17.00\n2. Pastikan sebelum menyelesaikan pesanan untuk memasukkan kode promo : happyhour\n3. Minimal pemesanan Rp 100.000,- (sudah termasuk pajak, biaya antar dan biaya take away)\n4. Promo ini dapat digabungkan dengan promo non tunai lainnya.\n5. Periode promo 1 Mei - 31 Juli 2022\n6. McDelivery berhak untuk membatalkan pesanan apabila menemukan indikasi kecurangan atau tidak sesuai dengan syarat dan ketentuan yang berlaku"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "Buruan pasang alarm dan pesan menu McD favoritmu melalui McDelivery!"
+                                                }
+                                            ]
+                                        },
+                                        "4": {
+                                            "id": "1A114",
+                                            "current_menu": "1-1-1-4",
+                                            "text": "Baik, Kak (Nama). Kami akan sambungkan kamu ke agent kami. Mohon kesediaannya untuk menunggu sebentar ya kak. :)",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "1A12",
+                                    "current_menu": "1-1-2",
+                                    "text": "Baik, Kak (Nama). Silakan pilih informasi yang kamu inginkan dengan mengetik salah satu nomor berikut ini:",
+                                    "interactive_type": "button",
+                                    "interactive_message": true,
+                                    "next_bubbles": [
+                                        {
+                                            "type": "text",
+                                            "text": "1. Diskon WOW 20% Aplikasi McDonald's\n2. Matchagato & Chocogato McCafe\n3. Taste of The World"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "atau ketik 0 untuk kembali Ke Menu Utama"
+                                        }
+                                    ],
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "0": {
+                                            "id": "MENU",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "3": {
+                                            "id": "1A133",
+                                            "current_menu": "1-1-3-3",
+                                            "text": "Nikmati menu baru Taste of The World dengan pilihan Beef Onion Stew & Egg dari barat yang gurih atau McSpicy Korean Burger dari Timur yang pedas.",
+                                            "next_bubbles": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "Pilihan Menu Taste of The World:\n• Beef Onion Stew & Egg Burger\n• Double Beef Onion Stew Burger\n• Beef Spicy Korean Burger with Egg\n• McSpicy Korean Burger\n• McShaker Fries Sweet & Spicy BBQ\n• Ginger Ale Fizz"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "Tersedia untuk Makan Ditempat, Take Away, Drive Thru, Delivery dan Aplikasi Online Selama Persediaan Masih Ada"
+                                                }
+                                            ],
+                                            "type": "text"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "1A2",
+                            "current_menu": "1-2",
+                            "text": "Baik, Kak (Nama). Silakan pilih informasi yang kamu inginkan dengan mengetik salah satu nomor berikut ini:",
+                            "type": "nest_menu",
+                            "interactive_type": "list",
+                            "interactive_message": true,
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "1. Paket Ulang Tahun\n2. Syarat & Ketentuan\n3. Booking Ulang Tahun\n4. Lainnya"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "atau ketik 0 untuk kembali Ke Menu Utama"
+                                }
+                            ],
+                            "menus": {
+                                "0": {
+                                    "id": "MENU",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "1A21",
+                                    "current_menu": "1-2-1",
+                                    "text": "Hai kak (Nama), perayaan ulang tahun di McDonald's tersedia dalam Paket Silver & Paket Gold. Berikut informasi lengkap untuk masing-masing paket ya kak:",
+                                    "type": "text",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "text",
+                                            "text": "1. Paket Silver\nPilihan Paket Silver hanya Rp8.559/paket, sudah termasuk:\n- MC/pembawa acara\n- Kartu undangan\n- Topi ulang tahun\n- Hadiah untuk yang berulang tahun\n- Souvenir Paket Silver untuk undangan\n- Hadiah permainan\n- Dekorasi\n- Balon\n\n*Paket Silver/Gold belum termasuk dengan menu favorit McDonald’s\n*Harga belum termasuk pajak"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "2. Paket Gold\nPilihan Paket Gold hanya Rp11.261/paket, sudah termasuk:\n- MC/pembawa acara\n- Kartu undangan\n- Topi ulang tahun\n- Hadiah untuk yang berulang tahun\n- Souvenir Paket Gold untuk undangan\n- Hadiah permainan\n- Dekorasi\n- Balon\n\n*Paket Silver/Gold belum termasuk dengan menu favorit McDonald’s\n*Harga belum termasuk pajak"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "Yuk, rayakan ulang tahun si Kecil di McDonald's!"
+                                        }
+                                    ]
+                                },
+                                "2": {
+                                    "id": "1A22",
+                                    "current_menu": "1-2-2",
+                                    "text": "Hai kak (Nama), berikut syarat dan ketentuan untuk melakukan perayaan ulang tahun bersama McDonald's:",
+                                    "type": "text",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "text",
+                                            "text": "1. Pesta ulang tahun dapat dilaksanakan setiap hari, disesuaikan dengan jadwal yang tersedia di restoran McDonald's\n2. Pesta ulang tahun dimulai dan berakhir tepat waktu (maks 1,5 jam, sudah termasuk menunggu tamu dan pelunasan pembayaran).\n3. Pesta ulang tahun harus disertai pemesanan makanan dan minuman McDonald's\n4. Pemesanan pesta ulang tahun wajib membayar uang muka/DP sebesar minimum 10 fasilitas ultah silver atau gold\n5. Apabila konsumen memakai tema pesta ulang tahun diluar yang disediakan McDonald's, isi tema diluar tanggung jawab McDonald's dan McDonald's berhak menolak tema pesta ulang tahun tersebut apabila tidak sesuai dengan peraturan yang berlaku"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "6. Tidak diperkenankan membawa badut/karakter lain dari luar\n7. Kue ulang tahun harus lunas pada saat pemesanan pesta (pilihan kue dapat dipilih pada katalog kue ulang tahun yang ada di restoran McDonald's)\n8. Apabila membawa kue ulang tahun dari luar, digunakan sebagai seremonial saja, tidak untuk makan di tempat\n9. Uang muka tidak dapat dikembalikan, bila pesta batal konsumen dapat menukarkan slip pembayaran uang muka dengan 10 fasilitas ulang tahun yang dipilih\n10. Pelunasan pembayaran pesta ulang tahun dilakukan pada akhir acara dan dapat dibayar menggunakan uang tunai dan non tunai"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "11. Khusus outside party, biaya transportasi (pergi-pulang) menjadi tanggung jawab konsumen\n12. Harga tidak mengikat dan dapat berubah sewaktu-waktu tanpa pemberitahuan terlebih dahulu."
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "Yuk, rayakan ulang tahun si Kecil di McDonald's!"
+                                        }
+                                    ]
+                                },
+                                "3": {
+                                    "id": "1A23",
+                                    "current_menu": "1-2-3",
+                                    "text": "Hai kak (Nama), silakan kunjungi https://mcdonalds.co.id/kids-birthday atau mendatangi restoran McDonald's terdekatmu untuk booking perayaan ulang tahun si Kecil bersama McDonald's. :)",
+                                    "type": "text"
+                                },
+                                "4": {
+                                    "id": "1A24",
+                                    "current_menu": "1-2-4",
+                                    "text": "Baik, Kak (Nama). Kami akan sambungkan kamu ke agent kami. Mohon kesediaannya untuk menunggu sebentar ya kak. :)",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                }
+                            }
+                        },
+                        "3": {
+                            "id": "1A3",
+                            "current_menu": "1-3",
+                            "text": "Baik, Kak (Nama). Silakan pilih informasi yang kamu inginkan dengan mengetik salah satu nomor berikut ini:",
+                            "type": "nest_menu",
+                            "interactive_type": "list",
+                            "interactive_message": true,
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "1. Menu Breakfast\n2. Menu Regular\n3. Menu Penawaran Terbatas\n4. Jaminan Kualitas"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "atau ketik 0 untuk kembali Ke Menu Utama"
+                                }
+                            ],
+                            "menus": {
+                                "0": {
+                                    "id": "MENU",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "1A31",
+                                    "current_menu": "1-3-1",
+                                    "text": "Hai, Kak (Nama). Silakan pilih informasi menu breakfast yang kamu inginkan dengan mengetik salah satu nomor berikut ini:",
+                                    "type": "nest_menu",
+                                    "interactive_type": "list",
+                                    "interactive_message": true,
+                                    "next_bubbles": [
+                                        {
+                                            "type": "text",
+                                            "text": "1. Harga\n2. Kandungan\n3. Halal\n4. Lainnya"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "atau ketik 0 untuk kembali Ke Menu Utama"
+                                        }
+                                    ],
+                                    "menus": {
+                                        "0": {
+                                            "id": "MENU",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "1": {
+                                            "id": "1A311",
+                                            "current_menu": "1-3-1-1",
+                                            "text": "Boleh kamu infokan nama menu yang ingin kamu ketahui?",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "2": {
+                                            "id": "1A312",
+                                            "current_menu": "1-3-1-2",
+                                            "text": "Boleh kamu infokan nama menu yang ingin kamu ketahui?",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "3": {
+                                            "id": "1A313",
+                                            "current_menu": "1-3-1-3",
+                                            "text": "Hai kak (Nama), sejak tahun 1994 McDonald’s Indonesia dijamin kehalalannya oleh lembaga MUI yang diperpanjang setiap dua tahun sekali. Karena itu, McDonald’s Indonesia menjamin bahwa setiap produk yang disajikan dan juga bahan baku yang digunakan oleh semua restoran McDonald’s di seluruh Indonesia adalah halal",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "4": {
+                                            "id": "1A314",
+                                            "current_menu": "1-3-1-4",
+                                            "text": "Baik, Kak (Nama). Kami akan sambungkan kamu ke agent kami. Mohon kesediaannya untuk menunggu sebentar ya kak. :)",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "1A32",
+                                    "current_menu": "1-3-2",
+                                    "text": "Hai, Kak (Nama). Silakan pilih informasi menu regular yang kamu inginkan dengan mengetik salah satu nomor berikut ini:",
+                                    "type": "nest_menu",
+                                    "interactive_type": "list",
+                                    "interactive_message": true,
+                                    "next_bubbles": [
+                                        {
+                                            "type": "text",
+                                            "text": "1. Harga\n2. Kandungan\n3. Halal\n4. Lainnya"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "atau ketik 0 untuk kembali Ke Menu Utama"
+                                        }
+                                    ],
+                                    "menus": {
+                                        "0": {
+                                            "id": "MENU",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "1": {
+                                            "id": "1A321",
+                                            "current_menu": "1-3-2-1",
+                                            "text": "Boleh kamu infokan nama menu yang ingin kamu ketahui?",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "2": {
+                                            "id": "1A322",
+                                            "current_menu": "1-3-2-2",
+                                            "text": "Boleh kamu infokan nama menu yang ingin kamu ketahui?",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "3": {
+                                            "id": "1A323",
+                                            "current_menu": "1-3-2-3",
+                                            "text": "Kami pastikan semua menu halal. Sejak tahun 1994, McDonald’s mendapatkan sertifikat halal dari MUI sebagai restoran cepat saji pertama bersertifikat halal di Indonesia. Pada tahun 2020 McDonald’s meraih penghargaan Implementasi Sistem Jaminan Halal kategori restaurant dari LPPOM MUI, di tahun yang sama McD Indonesia telah bersertifikat halal dari BPJPH yang sesuai peraturan pemerintah memiliki kewenangan sebagai Badan Penyelenggara Jaminan Produk Halal.\n\nKategori halal kami sudah termasuk bahan baku, proses produksi, hingga penyajian produk.",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "4": {
+                                            "id": "1A324",
+                                            "current_menu": "1-3-2-4",
+                                            "text": "Baik, Kak (Nama). Kami akan sambungkan kamu ke agent kami. Mohon kesediaannya untuk menunggu sebentar ya kak. :)",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "id": "1A33",
+                                    "current_menu": "1-3-3",
+                                    "text": "Hai, Kak (Nama). Silakan pilih informasi menu penawaran terbatas yang kamu inginkan dengan mengetik salah satu nomor berikut ini:",
+                                    "type": "nest_menu",
+                                    "interactive_type": "list",
+                                    "interactive_message": true,
+                                    "next_bubbles": [
+                                        {
+                                            "type": "text",
+                                            "text": "1. Harga\n2. Kandungan\n3. Halal\n4. Lainnya"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "atau ketik 0 untuk kembali Ke Menu Utama"
+                                        }
+                                    ],
+                                    "menus": {
+                                        "0": {
+                                            "id": "MENU",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "1": {
+                                            "id": "1A331",
+                                            "current_menu": "1-3-3-1",
+                                            "text": "Boleh kamu infokan nama menu yang ingin kamu ketahui?",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "2": {
+                                            "id": "1A332",
+                                            "current_menu": "1-3-3-2",
+                                            "text": "Boleh kamu infokan nama menu yang ingin kamu ketahui?",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "3": {
+                                            "id": "1A333",
+                                            "current_menu": "1-3-3-3",
+                                            "text": "Kami pastikan semua menu halal. Sejak tahun 1994, McDonald’s mendapatkan sertifikat halal dari MUI sebagai restoran cepat saji pertama bersertifikat halal di Indonesia. Pada tahun 2020 McDonald’s meraih penghargaan Implementasi Sistem Jaminan Halal kategori restaurant dari LPPOM MUI, di tahun yang sama McD Indonesia telah bersertifikat halal dari BPJPH yang sesuai peraturan pemerintah memiliki kewenangan sebagai Badan Penyelenggara Jaminan Produk Halal.\n\nKategori halal kami sudah termasuk bahan baku, proses produksi, hingga penyajian produk.",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "4": {
+                                            "id": "1A334",
+                                            "current_menu": "1-3-3-4",
+                                            "text": "Baik, Kak (Nama). Kami akan sambungkan kamu ke agent kami. Mohon kesediaannya untuk menunggu sebentar ya kak. :)",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        }
+                                    }
+                                },
+                                "4": {
+                                    "id": "1A34",
+                                    "current_menu": "1-3-4",
+                                    "text": "Hai, Kak (Nama). Silakan pilih informasi jaminan kualitas yang kamu inginkan dengan mengetik salah satu nomor berikut ini:",
+                                    "type": "nest_menu",
+                                    "interactive_type": "list",
+                                    "interactive_message": true,
+                                    "next_bubbles": [
+                                        {
+                                            "type": "text",
+                                            "text": "1. Kualitas Makanan\n2. Kebersihan\n3. Halal\n4. Lainnya"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "atau ketik 0 untuk kembali Ke Menu Utama"
+                                        }
+                                    ],
+                                    "menus": {
+                                        "0": {
+                                            "id": "MENU",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "1": {
+                                            "id": "1A341",
+                                            "current_menu": "1-3-4-1",
+                                            "text": "Kami di McDonald's akan menyediakan kamu pengalaman makan terbaik di gerai - gerai kami. Nikmati makanan berkualitas tinggi yang dipastikan dalam segi kebersihan dan prosedur keselamatan yang telah di praktikan",
+                                            "type": "text"
+                                        },
+                                        "2": {
+                                            "id": "1A342",
+                                            "current_menu": "1-3-4-2",
+                                            "text": "Kebersihan restoran kami akan selamanya menjadi prioritas utama kami. Kami akan selalu memastikan meja depan (tempat tersibuk kami), tempat makan, dan hingga dapur kami tetap bersih dan bersih. Makanan yang bersih dan aman untuk dikonsumsi dihasilkan oleh tangan yang bersih pula. Oleh karena itu, kami mewajibkan crew restoran untuk mencuci tangan mereka sebersih mungkin sebelum mulai bekerja. Sesekali kami melakukan inspeksi mendadak untuk melihat apakah crew melakukan prosedur rutin cuci tangan dan sebelum mereka memakai sarung tangan sekali pakai untuk bekerja.",
+                                            "type": "text"
+                                        },
+                                        "3": {
+                                            "id": "1A343",
+                                            "current_menu": "1-3-4-3",
+                                            "text": "Kami pastikan semua menu halal. McDonald’s Indonesia mendapatkan Sertifikat Halal pertama kali dari LPPOM Majelis Ulama Indonesia (MUI) pada tahun 1994, dan menjadi restoran cepat saji pertama yang mendapat Sertifikat Halal di Indonesia. Sejak itu, McDonald’s Indonesia selalu memperpanjang Sertifikat Halal setiap 2 (dua) tahun sekali, sesuai ketentuan MUI.\n\nKategori halal kami sudah termasuk bahan baku, proses produksi, hingga penyajian produk.",
+                                            "type": "text"
+                                        },
+                                        "4": {
+                                            "id": "1A344",
+                                            "current_menu": "1-3-4-4",
+                                            "text": "Hai kak, supaya kamu makin kenal dengan Jaminan Kualitas dari McDonald's Indonesia, kamu bisa cek tautan ini ya : https://mcdonalds.co.id/makin-kenal-makin-sayang",
+                                            "type": "text"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "4": {
+                            "id": "1A4",
+                            "current_menu": "1-4",
+                            "text": "Baik, Kak (Nama). Silakan pilih informasi yang kamu inginkan dengan mengetik salah satu nomor berikut ini:",
+                            "type": "nest_menu",
+                            "interactive_type": "button",
+                            "interactive_message": true,
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "1. Pilihan Paket\n2. Cara Pesan\n3. Syarat & Ketentuan"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "atau ketik 0 untuk kembali Ke Menu Utama"
+                                }
+                            ],
+                            "menus": {
+                                "0": {
+                                    "id": "MENU",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "1A41",
+                                    "current_menu": "1-4-1",
+                                    "text": "Hai kak (Nama), silakan pilih menu KateringMcD ini:",
+                                    "type": "nest_menu",
+                                    "interactive_type": "button",
+                                    "interactive_message": true,
+                                    "next_bubbles": [
+                                        {
+                                            "type": "text",
+                                            "text": "1. 1pc Ayam McD + Regular Nasi + Prim-A 600ml\n2. 1pc Ayam McD + Regular Nasi + Prim-A cup 240ml\n3. Pilihan Menu Lainnya"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "atau ketik 0 Kembali ke Menu Utama"
+                                        }
+                                    ],
+                                    "menus": {
+                                        "0": {
+                                            "id": "MENU",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "1": {
+                                            "id": "1A411",
+                                            "current_menu": "1-4-1-1",
+                                            "text": "Hai kak, kamu bisa memesan KateringMcD dengan menu 1pc Ayam McD + Regular Nasi + Prim-A 600ml seharga Rp21.818 per paket untuk minimal pembelian 50 pax. Untuk pemesanan, kamu bisa langsung mendatangi restoran McD terdekat ya kak. :)",
+                                            "type": "text"
+                                        },
+                                        "2": {
+                                            "id": "1A412",
+                                            "current_menu": "1-4-1-2",
+                                            "text": "Hai kak, kamu bisa memesan KateringMcD dengan menu 1pc Ayam McD + Regular Nasi + Prim-A cup 240ml seharga Rp19.545 per paket untuk minimal pembelian 50 pax. Untuk pemesanan, kamu bisa langsung mendatangi restoran McD terdekat ya kak. :)",
+                                            "type": "text"
+                                        },
+                                        "3": {
+                                            "id": "1A413",
+                                            "current_menu": "1-4-1-3",
+                                            "text": "Baik kak, kami akan sambungkan kamu ke agent kami. Mohon kesediaannya untuk menunggu sebentar ya kak. :)",
+                                            "type": "text"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "1A42",
+                                    "current_menu": "1-4-2",
+                                    "text": "Hai kak (Nama), kamu bisa langsung mengunjungi https://mcdonalds.co.id/katering-mcd atau mendatangi restoran McDonald's terdekatmu untuk pemesanan KateringMcD ya. :)",
+                                    "type": "text"
+                                },
+                                "3": {
+                                    "id": "1A43",
+                                    "current_menu": "1-4-3",
+                                    "text": "Hai kak (Nama), kamu bisa mengetahui syarat dan ketentuan pemesanan Katering McDonald's di bawah ini:",
+                                    "type": "text",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "text",
+                                            "text": "1. Pemesanan paket KateringMcD minimal 50 pax.\n2. Pembayaran DP minimal 50% dari total pemesanan, dan dibayarkan selambat - lambatnya 7 (tujuh) hari sebelum acara.\n3. Pelunasan pembayaran dilakukan selambat - lambatnya pada saat 3 (tiga) hari sebelum acara.\n4. Penambahan pemesanan dapat dilakukan selambat – lambatnya 2 (dua) hari sebelum acara dan harus segera dibayarkan lunas."
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "5. Pembayaran melalui transfer ke rekening PT Rekso Nasional Food, di bank BCA dengan No Rekening 0353106641.\n6. Apabila jadwal pembayaran jatuh pada hari libur, maka pembayaran dapat dilakukan pada hari kerja sebelumnya.\n7. Jika terjadi pembatalan pemesanan, pembayaran yang telah diterima PT Rekso Nasional Food akan dikembalikan dalam bentuk produk McDonald's."
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "Yuk, pesan KateringMcD sekarang di McDonald's!"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "5": {
+                            "id": "1A5",
+                            "current_menu": "1-5",
+                            "text": "Baik, Kak (Nama). Silakan pilih informasi yang kamu inginkan dengan mengetik salah satu nomor berikut ini:",
+                            "type": "nest_menu",
+                            "interactive_type": "list",
+                            "interactive_message": true,
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "1. Apa itu McKids\n2. Keuntungan menjadi anggota McKids\n3. Cara Bergabung\n4. Lainnya"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "atau ketik 0 untuk kembali Ke Menu Utama"
+                                }
+                            ],
+                            "menus": {
+                                "0": {
+                                    "id": "MENU",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "1A51",
+                                    "current_menu": "1-5-1",
+                                    "text": "",
+                                    "type": "text"
+                                },
+                                "2": {
+                                    "id": "1A52",
+                                    "current_menu": "1-5-2",
+                                    "text": "Hai kak (Nama), si Kecil akan mendapatkan berbagai keuntungan ketika bergabung menjadi anggota McKids, yaitu:",
+                                    "type": "text",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "text",
+                                            "text": "• Gratis 1 Choco Top untuk pembelian Happy Meal\n• Gratis 1 Ice Cream Cone setiap mengikuti kegiatan McKids Day\n• Gratis 10 PaNas 1 bila merayakan ulang tahun di McDonald's (minimum 40 undangan)\n• Hadiah Ulang Tahun bagi member yang berulang tahun, dengan menukarkan voucher ke McDonald's tempat mendaftar (hanya dapat ditukar di bulan ulang tahun)\n• Majalah McKids yang terbit per 2 bulan. Majalah dapat diambil di gerai McDonald's terdekat."
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "Tunggu apalagi? Segera daftarkan si Kecil menjadi anggota McKids sekarang!"
+                                        }
+                                    ]
+                                },
+                                "3": {
+                                    "id": "1A53",
+                                    "current_menu": "1-5-3",
+                                    "text": "Hai kak, kamu bisa mendaftar si Kecil menjadi anggota McKids melalui https://mcdonalds.co.id/mcdkids/data-diri atau mendatangi restoran McDonald's terdekatmu ya.",
+                                    "type": "text"
+                                },
+                                "4": {
+                                    "id": "1A54",
+                                    "current_menu": "1-5-4",
+                                    "text": "Baik, Kak (Nama). Kami akan sambungkan kamu ke agent kami. Mohon kesediaannya untuk menunggu sebentar ya kak. :)",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                }
+                            }
+                        },
+                        "6": {
+                            "id": "1A6",
+                            "current_menu": "1-6",
+                            "text": "Baik, Kak (Nama). Silakan pilih informasi yang kamu inginkan dengan mengetik salah satu nomor berikut ini:",
+                            "type": "nest_menu",
+                            "interactive_type": "list",
+                            "interactive_message": true,
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "1. Sumatera\n2. Jawa\n3. Bali, NTB, NTT\n4. Kalimantan\n5. Sulawesi & Ambon"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "atau ketik 0 untuk kembali Ke Menu Utama"
+                                }
+                            ],
+                            "menus": {
+                                "0": {
+                                    "id": "MENU",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "1A61",
+                                    "current_menu": "1-6-1",
+                                    "text": "Hai kak, boleh kamu infokan cabang restoran McD yang ingin kamu ketahui?",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "2": {
+                                    "id": "1A62",
+                                    "current_menu": "1-6-2",
+                                    "text": "Hai kak, boleh kamu infokan cabang restoran McD yang ingin kamu ketahui?",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "3": {
+                                    "id": "1A63",
+                                    "current_menu": "1-6-3",
+                                    "text": "Hai kak, boleh kamu infokan cabang restoran McD yang ingin kamu ketahui?",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "4": {
+                                    "id": "1A64",
+                                    "current_menu": "1-6-4",
+                                    "text": "Hai kak, boleh kamu infokan cabang restoran McD yang ingin kamu ketahui?",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "5": {
+                                    "id": "1A65",
+                                    "current_menu": "1-6-5",
+                                    "text": "Hai kak, boleh kamu infokan cabang restoran McD yang ingin kamu ketahui?",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                }
+                            }
+                        },
+                        "7": {
+                            "id": "1A7",
+                            "current_menu": "1-7",
+                            "text": "Baik, Kak (Nama). Silakan pilih informasi yang kamu inginkan dengan mengetik salah satu nomor berikut ini:",
+                            "type": "nest_menu",
+                            "interactive_type": "button",
+                            "interactive_message": true,
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "1. Cara Pemesanan \n2. Biaya Pengantaran\n3. Lainnya"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "atau ketik 0 untuk kembali Ke Menu Utama"
+                                }
+                            ],
+                            "menus": {
+                                "0": {
+                                    "id": "MENU",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "1A71",
+                                    "current_menu": "1-7-1",
+                                    "text": "text",
+                                    "type": "Hai kak (Nama), kamu bisa pesan menu McD favoritmu melalui Aplikasi McDelivery, website www.mcdelivery.co.id atau menghubungi Call Center 14045"
+                                },
+                                "2": {
+                                    "id": "1A72",
+                                    "current_menu": "1-7-2",
+                                    "text": "text",
+                                    "type": "Hai kak (Nama), untuk pemesanan melalui McDelivery akan dikenakan biaya pengantaran sebesar Rp13.000 ya. :)"
+                                },
+                                "3": {
+                                    "id": "1A73",
+                                    "current_menu": "1-7-3",
+                                    "text": "Baik, Kak (Nama). Kami akan sambungkan kamu ke agent kami. Mohon kesediaannya untuk menunggu sebentar ya kak. :)",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                }
+                            }
+                        },
+                        "8": {
+                            "id": "1A8",
+                            "current_menu": "1-8",
+                            "text": "Baik, Kak (Nama). Silakan pilih informasi yang kamu inginkan dengan mengetik salah satu nomor berikut ini:",
+                            "type": "nest_menu",
+                            "interactive_type": "button",
+                            "interactive_message": true,
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "1. Cara Download\n2. Cara Penukaran\n3. Lainnya"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "atau ketik 0 untuk kembali Ke Menu Utama"
+                                }
+                            ],
+                            "menus": {
+                                "0": {
+                                    "id": "MENU",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "1A81",
+                                    "current_menu": "1-8-1",
+                                    "text": "Hai kak (Nama), kamu bisa nikmati penawaran spesial dari Aplikasi McDonald's dengan mendownload aplikasinya dengan klik https://apps.apple.com/id/app/mcdonalds/id1217507712 untuk pengguna Apple iOS atau klik https://play.google.com/store/apps/details?id=com.mcdonalds.mobileapp untuk pengguna Android. :)",
+                                    "type": "text"
+                                },
+                                "2": {
+                                    "id": "1A82",
+                                    "current_menu": "1-8-2",
+                                    "text": "Hai kak (Nama), kamu bisa tukarkan penawaran di Aplikasi McDonald's melalui Dine In, Take Away, Drive Thru ataupun melalui Self-Order Kiosk (SOK) ya. Yuk, tukar penawaran spesialnya di McDonald's!",
+                                    "type": "text"
+                                },
+                                "3": {
+                                    "id": "1A83",
+                                    "current_menu": "1-8-3",
+                                    "text": "Baik, Kak (Nama). Kami akan sambungkan kamu ke agent kami. Mohon kesediaannya untuk menunggu sebentar ya kak. :)",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                }
+                            }
+                        },
+                        "9": {
+                            "id": "1A9",
+                            "current_menu": "1-9",
+                            "text": "Baik, Kak (Nama). Silakan pilih informasi yang kamu inginkan dengan mengetik salah satu nomor berikut ini:",
+                            "type": "nest_menu",
+                            "interactive_type": "button",
+                            "interactive_message": true,
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "1. Informasi Karir\n2. Lainnya"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "atau ketik 0 untuk kembali Ke Menu Utama"
+                                }
+                            ],
+                            "menus": {
+                                "0": {
+                                    "id": "MENU",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "1A91",
+                                    "current_menu": "1-9-1",
+                                    "text": "Hai kak (Nama)! Terima kasih atas ketertarikannya untuk bergabung dengan kami! Untuk informasi lowongan yang terkini, kamu bisa cek pada tautan ini ya : https://mcdid.karir.com/",
+                                    "type": "text"
+                                },
+                                "2": {
+                                    "id": "1A92",
+                                    "current_menu": "1-9-2",
+                                    "text": "Baik, Kak (Nama). Kami akan sambungkan kamu ke agent kami. Mohon kesediaannya untuk menunggu sebentar ya kak. :)",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                }
+                            }
+                        },
+                        "10": {
+                            "id": "1A10",
+                            "current_menu": "1-10",
+                            "text": "Hai kak (Nama), untuk informasi dan pertanyaan seputar informasi kerjasama dengan McDonald's Indonesia, kamu dapat menanyakannya langsung melalui email ke customer.care@id.mcd.com. :)",
+                            "type": "text"
+                        }
+                    }
+                }
+            ],
+            "2": [
+                {
+                    "id": "2B",
+                    "current_menu": "2",
+                    "text": "Baik, Kak (Nama). Kamu bisa temukan informasi yang kamu butuhkan dengan mengetik salah satu nomor berikut ini:",
+                    "type": "nest_menu",
+                    "interactive_type": "list",
+                    "interactive_message": true,
+                    "next_bubbles": [
+                        {
+                            "type": "text",
+                            "text": "1. Layanan Restoran\n2. Menu\n3. Aplikasi McDonald's\n4. McDelivery\n5. Online Delivery\n6. Cashless"
+                        },
+                        {
+                            "type": "text",
+                            "text": "atau ketik 0 untuk kembali Ke Menu Utama"
+                        }
+                    ],
+                    "menus": {
+                        "0": {
+                            "id": "2B0",
+                            "title": "MENU",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        },
+                        "1": {
+                            "id": "2B1",
+                            "current_menu": "2-1",
+                            "text": "Hai Kak (Nama). Silakan pilih salah satu nomor berikut ini :",
+                            "type": "nest_menu",
+                            "interactive_type": "list",
+                            "interactive_message": true,
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "1. Produk Kurang\n2. Ulang Tahun\n3. McKids\n4. Aktivitas dan Lomba\n5. Keamanan\n6. Service Karyawan"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "atau ketik 0 untuk kembali Ke Menu Utama"
+                                }
+                            ],
+                            "menus": {
+                                "0": {
+                                    "id": "2B1MENU",
+                                    "title": "MENU",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "2B11",
+                                    "current_menu": "2-1-1",
+                                    "text": "Baik Kak, mohon maaf atas ketidaknyamanan yang kamu alami. Perkenalkan nama saya (Nama Agent) akan membantu kamu untuk menindaklanjuti keluhanmu. Bolehkah Kak (Nama Customer) infokan data-data berikut ini ya:",
+                                    "type": "text",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "text",
+                                            "text": "1. Nama lengkap\n2. No. yang bisa dihubungi\n3. Tanggal dan waktu kejadian\n4. Lokasi McDonald's pembelian\n5. Tipe pemesanan: Dine in/Takeaway/DriveThru/GOJEK/Grabfood/McDelivery\n6. Kronologis singkat\n7. Foto/screenshot pemesanan dan struk (jika tidak ada struk, maka Anda bisa menjabarkan pesanan Anda pada saat itu)"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "Mohon untuk mengisi data di atas secara lengkap ya Kak agar bisa ditindaklanjuti. (Nama Agent) tunggu Kak (Nama Customer) 😊"
+                                        }
+                                    ]
+                                },
+                                "2": {
+                                    "id": "2B12",
+                                    "current_menu": "2-1-2",
+                                    "text": "Halo Kak (Nama), mohon maaf atas ketidaknyamanan yang kamu alami ya. (Nama Agent) akan membantu kamu untuk menindaklanjuti keluhanmu, bolehkah kamu infokan beberapa data berikut ini:",
+                                    "type": "text",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "text",
+                                            "text": "1. Nama Pemesan:\n2. Email Pemesan:\n3. Lokasi McD\n4. Foto/screenshot pemesanan\n5. No. yang bisa dihubungi"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "Mohon untuk mengisi data di atas secara lengkap ya Kak agar bisa ditindaklanjuti. (Nama Agent) tunggu Kak (Nama Customer) 😊"
+                                        }
+                                    ]
+                                },
+                                "3": {
+                                    "id": "2B13",
+                                    "current_menu": "2-1-3",
+                                    "text": "Halo Kak (Nama), mohon maaf atas ketidaknyamanan yang kamu alami ya. (Nama Agent) akan membantu kamu untuk menindaklanjuti keluhanmu, bolehkah kamu infokan beberapa data berikut ini:",
+                                    "type": "text",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "text",
+                                            "text": "1. Nama Anak dan Nama Orangtua:\n2. Email Pemesan:\n3. Lokasi McD\n4. Foto/screenshot pemesanan\n5. No. yang bisa dihubungi"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "Mohon untuk mengisi data di atas secara lengkap ya Kak agar bisa ditindaklanjuti. (Nama Agent) tunggu Kak (Nama Customer) 😊"
+                                        }
+                                    ]
+                                },
+                                "4": {
+                                    "id": "2B14",
+                                    "current_menu": "2-1-4",
+                                    "text": "Halo Kak (Nama), mohon maaf atas ketidaknyamanan yang kamu alami ya. (Nama Agent) akan membantu kamu untuk menindaklanjuti keluhanmu, bolehkah kamu infokan nama kegiatan atau lomba yang kamu maksud?",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "5": {
+                                    "id": "2B15",
+                                    "current_menu": "2-1-5",
+                                    "text": "Halo Kak (Nama), mohon maaf atas ketidaknyamanan yang kamu alami ya. (Nama Agent) akan membantu kamu untuk menindaklanjuti keluhanmu, bolehkah kamu infokan beberapa data berikut ini:",
+                                    "type": "text",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "text",
+                                            "text": "1. Nama Lengkap\n2. No. yang dapat dihubungi\n3. Lokasi McDonald's\n4. Kronologis Kejadian"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "Mohon untuk mengisi data di atas secara lengkap ya Kak agar bisa ditindaklanjuti. (Nama Agent) tunggu Kak (Nama Customer) 😊"
+                                        }
+                                    ]
+                                },
+                                "6": {
+                                    "id": "2B16",
+                                    "current_menu": "2-1-6",
+                                    "text": "Halo Kak (Nama), mohon maaf atas ketidaknyamanan yang kamu alami dari kru kami. (Nama Agent) akan membantu kamu untuk menindaklanjuti keluhanmu, bolehkah kamu infokan beberapa data berikut ini:",
+                                    "type": "text",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "text",
+                                            "text": "1. Nama Lengkap\n2. No. yang dapat dihubungi\n3. Lokasi McDonald's\n4. Kronologis Kejadian"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "Mohon untuk mengisi data di atas secara lengkap ya Kak agar bisa ditindaklanjuti. (Nama Agent) tunggu Kak (Nama Customer) 😊"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "2B2",
+                            "current_message": "2-2",
+                            "text": "Hai Kak (Nama). Silakan pilih salah satu nomor berikut ini:",
+                            "interactive_type": "button",
+                            "interactive_message": true,
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "1. Kualitas Makanan\n2. Ketersediaan Produk"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "atau ketik 0 untuk kembali Ke Menu Utama"
+                                }
+                            ],
+                            "menus": {
+                                "0": {
+                                    "id": "2B2MENU",
+                                    "title": "MENU",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "2B21",
+                                    "current_menu": "2-2-1",
+                                    "text": "Halo Kak (Nama), mohon maaf atas ketidaknyamanan yang kamu alami ya. (Nama Agent) akan membantu kamu untuk menindaklanjuti keluhanmu, bolehkah kamu infokan beberapa data berikut ini:",
+                                    "type": "text",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "text",
+                                            "text": "1. Nama Lengkap\n2. No. yang dapat dihubungi\n3. Lokasi McDonald's\n4. Kronologis Kejadian"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "Mohon untuk mengisi data di atas secara lengkap ya Kak agar bisa ditindaklanjuti. (Nama Agent) tunggu Kak (Nama Customer) 😊"
+                                        }
+                                    ]
+                                },
+                                "2": {
+                                    "id": "2B22",
+                                    "current_menu": "2-2-2",
+                                    "text": "Halo Kak (Nama), mohon maaf atas ketidaknyamanan yang kamu alami ya. (Nama Agent) akan membantu kamu untuk menindaklanjuti keluhanmu, bolehkah kamu infokan beberapa data berikut ini:",
+                                    "type": "text",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "text",
+                                            "text": "1. Nama Lengkap\n2. No. yang dapat dihubungi\n3. Lokasi McDonald's\n4. Kronologis Kejadian"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "Mohon untuk mengisi data di atas secara lengkap ya Kak agar bisa ditindaklanjuti. (Nama Agent) tunggu Kak (Nama Customer) 😊"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "3": {
+                            "id": "2B3",
+                            "current_message": "2-3",
+                            "text": "Hai Kak (Nama). Silakan pilih salah satu nomor berikut ini:",
+                            "interactive_type": "button",
+                            "interactive_message": true,
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "1. Kendala Download\n2. Kendala Penukaran Promo/Penawaran\n3. Lainnya"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "atau ketik 0 untuk kembali Ke Menu Utama"
+                                }
+                            ],
+                            "menus": {
+                                "0": {
+                                    "id": "2B3MENU",
+                                    "title": "MENU",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "2B31",
+                                    "current_menu": "2-3-1",
+                                    "text": "Baik Kak. Perkenalkan nama saya (Nama Agent) akan membantu kamu terkait keluhanmu mengenai Aplikasi McDonald's. Bolehkah Kak (Nama Customer) infokan data-data berikut ini ya:",
+                                    "type": "text",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "text",
+                                            "text": "1. Nama\n2. Email yang terdaftar diaplikasi McDonald's\n3. No HP yang terdaftar diaplikasi McDonald's\n4. Tipe & Merek HP\n5. Tipe dan Versi OS yang digunakan\n6. Apakah Sudah Update Aplikasi McDonald's terbaru: Sudah/Belum\n7. Screenshot Error yang dialami\n8. Kronologis keluhan"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "Mohon untuk mengisi data di atas secara lengkap ya Kak agar (Nama Agent) bisa menindaklanjuti keluhanmu. (Nama Agent) tunggu Kak (Nama Customer) 😊"
+                                        }
+                                    ]
+                                },
+                                "2": {
+                                    "id": "2B32",
+                                    "current_menu": "2-3-2",
+                                    "text": "Baik Kak. Perkenalkan nama saya (Nama Agent) akan membantu kamu terkait keluhanmu mengenai Aplikasi McDonald's. Bolehkah Kak (Nama Customer) infokan data-data berikut ini ya:",
+                                    "type": "text",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "text",
+                                            "text": "1. Nama lengkap\n2. Nama Promo di Aplikasi McDonald's\n3. Foto/Screenshot kendala yang di alami"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "Mohon untuk mengisi data di atas secara lengkap ya Kak agar (Nama Agent) bisa menindaklanjuti keluhanmu. (Nama Agent) tunggu Kak (Nama Customer) 😊"
+                                        }
+                                    ]
+                                },
+                                "3": {
+                                    "id": "2B33",
+                                    "current_menu": "2-3-3",
+                                    "text": "Baik, Kak (Nama). Kami akan sambungkan kamu ke agent kami. Mohon kesediaannya untuk menunggu sebentar ya kak. :)",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                }
+                            }
+                        },
+                        "4": {
+                            "id": "2B4",
+                            "current_message": "2-4",
+                            "text": "Hai Kak (Nama). Silakan pilih salah satu nomor berikut ini:",
+                            "interactive_type": "list",
+                            "interactive_message": true,
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "1. Produk Kurang\n2. Lama Pengiriman\n3. Service Karyawan / Rider\n4. Kendala Download Aplikasi\n5. Lainnya"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "atau ketik 0 untuk kembali Ke Menu Utama"
+                                }
+                            ],
+                            "menus": {
+                                "0": {
+                                    "id": "2B4MENU",
+                                    "title": "MENU",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "2B41",
+                                    "current_menu": "2-4-1",
+                                    "text": "Baik Kak, mohon maaf atas ketidaknyamanan yang kamu alami. Perkenalkan nama saya (Nama Agent) akan membantu kamu untuk menindaklanjuti keluhanmu. Bolehkah Kak (Nama Customer) infokan data-data berikut ini ya:",
+                                    "type": "text",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "text",
+                                            "text": "1. Nama\n2. Email yang terdaftar diaplikasi McDelivery\n3. No HP yang terdaftar diaplikasi McDelivey\n4. Foto Struk/Screenshot Error yang dialami\n5. Kronologis keluhan"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "Mohon untuk mengisi data di atas secara lengkap ya Kak agar bisa ditindaklanjuti. (Nama Agent) tunggu Kak (Nama Customer) 😊"
+                                        }
+                                    ]
+                                },
+                                "2": {
+                                    "id": "2B42",
+                                    "current_menu": "2-4-2",
+                                    "text": "Hai Kak (Nama) kami berusaha mengantar pesanan secepat mungkin. Untuk melacak pesananmu, kamu bisa pilih \"Status Pengantaran\" untuk melihat perkiraan waktu pengantaran pada web ataupun Aplikasi McDelivery. Terima kasih :)",
+                                    "type": "text"
+                                },
+                                "3": {
+                                    "id": "2B43",
+                                    "current_menu": "2-4-3",
+                                    "text": "Hai kak (Nama), kami mohon maaf atas ketidaknyamanan yang kamu alami dari kru kami. Bolehkah kamu infokan beberapa data berikut:",
+                                    "type": "text",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "text",
+                                            "text": "1. Nama:\n2. No HP aktif:\n3. Lokasi McD:\n4. Tanggal dan jam kejadian:\n5. Kronologis keluhan:"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "Mohon untuk mengisi data di atas secara lengkap ya Kak agar bisa ditindaklanjuti. (Nama Agent) tunggu Kak (Nama Customer) 😊"
+                                        }
+                                    ]
+                                },
+                                "4": {
+                                    "id": "2B44",
+                                    "current_menu": "2-4-4",
+                                    "text": "Baik Kak, mohon maaf atas ketidaknyamanan yang kamu alami. Perkenalkan nama saya (Nama Agent) akan membantu kamu untuk menindaklanjuti keluhanmu. Bolehkah Kak (Nama Customer) infokan data-data berikut ini ya:",
+                                    "type": "text",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "text",
+                                            "text": "1. Nama\n2. Email yang terdaftar diaplikasi McDelivery\n3. No HP yang terdaftar diaplikasi McDelivey\n4. Foto Struk/Screenshot Error yang dialami\n5. Kronologis keluhan\n6. Tipe HP dan Jenis OS yang digunakan"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "Mohon untuk mengisi data di atas secara lengkap ya Kak agar bisa ditindaklanjuti. (Nama Agent) tunggu Kak (Nama Customer) 😊"
+                                        }
+                                    ]
+                                },
+                                "5": {
+                                    "id": "2B45",
+                                    "current_menu": "2-4-5",
+                                    "text": "Baik, Kak (Nama). Kami akan sambungkan kamu ke agent kami. Mohon kesediaannya untuk menunggu sebentar ya kak. :)",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                }
+                            }
+                        },
+                        "5": {
+                            "id": "2B5",
+                            "current_message": "2-5",
+                            "text": "Hai Kak (Nama). Silakan pilih salah satu nomor berikut ini:",
+                            "interactive_type": "button",
+                            "interactive_message": true,
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "1. GrabFood\n2. GoFood\n3. ShopeeFood"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "atau ketik 0 untuk kembali Ke Menu Utama"
+                                }
+                            ],
+                            "menus": {
+                                "0": {
+                                    "id": "2B5MENU",
+                                    "title": "MENU",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "2B51",
+                                    "current_menu": "2-5-1",
+                                    "text": "Hai, kak (Nama). Mohon maaf atas ketidaknyamanan yang kamu alami. Boleh kamu infokan kendalamu dengan memilih salah satu nomor di bawah ini:",
+                                    "type": "nest_menu",
+                                    "interactive_type": "button",
+                                    "interactive_message": true,
+                                    "next_bubbles": [
+                                        {
+                                            "type": "text",
+                                            "text": "1. Produk Kurang\n2. Pengiriman\n3. Lainnya"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "atau ketik 0 untuk kembali ke Menu Utama"
+                                        }
+                                    ],
+                                    "menus": {
+                                        "0": {
+                                            "id": "2B51MENU",
+                                            "title": "MENU",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "1": {
+                                            "id": "2B511",
+                                            "current_menu": "2-5-1-1",
+                                            "text": "Baik Kak, mohon maaf atas ketidaknyamanan yang kamu alami. Perkenalkan nama saya (Nama Agent) akan membantu kamu untuk menindaklanjuti keluhanmu. Bolehkah Kak (Nama Customer) infokan data-data berikut ini ya:",
+                                            "type": "text",
+                                            "next_bubbles": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "1. Nama lengkap\n2. No. yang bisa dihubungi\n3. Tanggal dan waktu kejadian\n4. Lokasi McDonald's pembelian\n5. No. Pemesanan di Aplikasi GRABFOOD\n6. Kronologis singkat\n7. Foto/screenshot pemesanan dan struk (jika tidak ada struk, maka Anda bisa menjabarkan pesanan Anda pada saat itu)"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "Mohon untuk mengisi data di atas secara lengkap ya Kak agar bisa ditindaklanjuti. (Nama Agent) tunggu Kak (Nama Customer) 😊"
+                                                }
+                                            ]
+                                        },
+                                        "2": {
+                                            "id": "2B512",
+                                            "current_menu": "2-5-1-2",
+                                            "text": "Baik Kak, mohon maaf atas ketidaknyamanan yang kamu alami. Perkenalkan nama saya (Nama Agent) akan membantu kamu untuk menindaklanjuti keluhanmu. Bolehkah Kak (Nama Customer) infokan data-data berikut ini ya:",
+                                            "type": "text",
+                                            "next_bubbles": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "1. Nama lengkap\n2. No. yang bisa dihubungi\n3. Tanggal dan waktu kejadian\n4. Lokasi McDonald's pembelian\n5. No. Pemesanan di Aplikasi GRABFOOD\n6. Kronologis singkat\n7. Foto/screenshot pemesanan dan struk (jika tidak ada struk, maka Anda bisa menjabarkan pesanan Anda pada saat itu)"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "Mohon untuk mengisi data di atas secara lengkap ya Kak agar bisa ditindaklanjuti. (Nama Agent) tunggu Kak (Nama Customer) 😊"
+                                                }
+                                            ]
+                                        },
+                                        "3": {
+                                            "id": "2B513",
+                                            "current_menu": "2-5-1-3",
+                                            "text": "Hai, Kak (Nama). Perkenalkan saya (Nama Agent) akan siap membantu kamu untuk menindaklanjuti keluhanmu. Bolehkah kamu infokan kendala yang kamu alami?",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "2B52",
+                                    "current_menu": "2-5-2",
+                                    "text": "Hai, kak (Nama). Mohon maaf atas ketidaknyamanan yang kamu alami. Boleh kamu infokan kendalamu dengan memilih salah satu nomor di bawah ini:",
+                                    "type": "nest_menu",
+                                    "interactive_type": "button",
+                                    "interactive_message": true,
+                                    "next_bubbles": [
+                                        {
+                                            "type": "text",
+                                            "text": "1. Produk Kurang\n2. Pengiriman\n3. Lainnya"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "atau ketik 0 untuk kembali ke Menu Utama"
+                                        }
+                                    ],
+                                    "menus": {
+                                        "0": {
+                                            "id": "2B52MENU",
+                                            "title": "MENU",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "1": {
+                                            "id": "2B521",
+                                            "current_menu": "2-5-2-1",
+                                            "text": "Baik Kak, mohon maaf atas ketidaknyamanan yang kamu alami. Perkenalkan nama saya (Nama Agent) akan membantu kamu untuk menindaklanjuti keluhanmu. Bolehkah Kak (Nama Customer) infokan data-data berikut ini ya:",
+                                            "type": "text",
+                                            "next_bubbles": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "1. Nama lengkap\n2. No. yang bisa dihubungi\n3. Tanggal dan waktu kejadian\n4. Lokasi McDonald's pembelian\n5. No. Pemesanan di Aplikasi GRABFOOD\n6. Kronologis singkat\n7. Foto/screenshot pemesanan dan struk (jika tidak ada struk, maka Anda bisa menjabarkan pesanan Anda pada saat itu)"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "Mohon untuk mengisi data di atas secara lengkap ya Kak agar bisa ditindaklanjuti. (Nama Agent) tunggu Kak (Nama Customer) 😊"
+                                                }
+                                            ]
+                                        },
+                                        "2": {
+                                            "id": "2B522",
+                                            "current_menu": "2-5-2-2",
+                                            "text": "Baik Kak, mohon maaf atas ketidaknyamanan yang kamu alami. Perkenalkan nama saya (Nama Agent) akan membantu kamu untuk menindaklanjuti keluhanmu. Bolehkah Kak (Nama Customer) infokan data-data berikut ini ya:",
+                                            "type": "text",
+                                            "next_bubbles": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "1. Nama lengkap\n2. No. yang bisa dihubungi\n3. Tanggal dan waktu kejadian\n4. Lokasi McDonald's pembelian\n5. No. Pemesanan di Aplikasi GRABFOOD\n6. Kronologis singkat\n7. Foto/screenshot pemesanan dan struk (jika tidak ada struk, maka Anda bisa menjabarkan pesanan Anda pada saat itu)"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "Mohon untuk mengisi data di atas secara lengkap ya Kak agar bisa ditindaklanjuti. (Nama Agent) tunggu Kak (Nama Customer) 😊"
+                                                }
+                                            ]
+                                        },
+                                        "3": {
+                                            "id": "2B523",
+                                            "current_menu": "2-5-2-3",
+                                            "text": "Hai, Kak (Nama). Perkenalkan saya (Nama Agent) akan siap membantu kamu untuk menindaklanjuti keluhanmu. Bolehkah kamu infokan kendala yang kamu alami?",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "id": "2B53",
+                                    "current_menu": "2-5-3",
+                                    "text": "Hai, kak (Nama). Mohon maaf atas ketidaknyamanan yang kamu alami. Boleh kamu infokan kendalamu dengan memilih salah satu nomor di bawah ini:",
+                                    "type": "nest_menu",
+                                    "interactive_type": "button",
+                                    "interactive_message": true,
+                                    "next_bubbles": [
+                                        {
+                                            "type": "text",
+                                            "text": "1. Produk Kurang\n2. Pengiriman\n3. Lainnya"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "atau ketik 0 untuk kembali ke Menu Utama"
+                                        }
+                                    ],
+                                    "menus": {
+                                        "0": {
+                                            "id": "2B53MENU",
+                                            "title": "MENU",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "1": {
+                                            "id": "2B531",
+                                            "current_menu": "2-5-3-1",
+                                            "text": "Baik Kak, mohon maaf atas ketidaknyamanan yang kamu alami. Perkenalkan nama saya (Nama Agent) akan membantu kamu untuk menindaklanjuti keluhanmu. Bolehkah Kak (Nama Customer) infokan data-data berikut ini ya:",
+                                            "type": "text",
+                                            "next_bubbles": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "1. Nama lengkap\n2. No. yang bisa dihubungi\n3. Tanggal dan waktu kejadian\n4. Lokasi McDonald's pembelian\n5. No. Pemesanan di Aplikasi GRABFOOD\n6. Kronologis singkat\n7. Foto/screenshot pemesanan dan struk (jika tidak ada struk, maka Anda bisa menjabarkan pesanan Anda pada saat itu)"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "Mohon untuk mengisi data di atas secara lengkap ya Kak agar bisa ditindaklanjuti. (Nama Agent) tunggu Kak (Nama Customer) 😊"
+                                                }
+                                            ]
+                                        },
+                                        "2": {
+                                            "id": "2B532",
+                                            "current_menu": "2-5-3-2",
+                                            "text": "Baik Kak, mohon maaf atas ketidaknyamanan yang kamu alami. Perkenalkan nama saya (Nama Agent) akan membantu kamu untuk menindaklanjuti keluhanmu. Bolehkah Kak (Nama Customer) infokan data-data berikut ini ya:",
+                                            "type": "text",
+                                            "next_bubbles": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "1. Nama lengkap\n2. No. yang bisa dihubungi\n3. Tanggal dan waktu kejadian\n4. Lokasi McDonald's pembelian\n5. No. Pemesanan di Aplikasi GRABFOOD\n6. Kronologis singkat\n7. Foto/screenshot pemesanan dan struk (jika tidak ada struk, maka Anda bisa menjabarkan pesanan Anda pada saat itu)"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "Mohon untuk mengisi data di atas secara lengkap ya Kak agar bisa ditindaklanjuti. (Nama Agent) tunggu Kak (Nama Customer) 😊"
+                                                }
+                                            ]
+                                        },
+                                        "3": {
+                                            "id": "2B533",
+                                            "current_menu": "2-5-3-3",
+                                            "text": "Hai, Kak (Nama). Perkenalkan saya (Nama Agent) akan siap membantu kamu untuk menindaklanjuti keluhanmu. Bolehkah kamu infokan kendala yang kamu alami?",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "6": {
+                            "id": "2B6",
+                            "current_message": "2-6",
+                            "text": "Hai Kak (Nama). Silakan pilih salah satu nomor berikut ini:",
+                            "interactive_type": "button",
+                            "interactive_message": true,
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "1. Kendala Pembayaran\n2. Lainnya"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "atau ketik 0 untuk kembali Ke Menu Utama"
+                                }
+                            ],
+                            "menus": {
+                                "0": {
+                                    "id": "2B6MENU",
+                                    "title": "MENU",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "2B61",
+                                    "current_menu": "2-6-1",
+                                    "text": "Baik, Kak (Nama). Kami akan sambungkan kamu ke agent kami. Mohon kesediaannya untuk menunggu sebentar ya kak. :)",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "2": {
+                                    "id": "2B62",
+                                    "current_menu": "2-6-2",
+                                    "text": "Baik, Kak (Nama). Kami akan sambungkan kamu ke agent kami. Mohon kesediaannya untuk menunggu sebentar ya kak. :)",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                }
+                            }
+                        }
+                    }
+                }
+            ],
+            "3": [
+                {
+                    "id": "3C",
+                    "current_menu": "3",
+                    "text": "Hai Kak (Nama), silahkan sampaikan saran kamu di sini ya. Masukkan yang kamu berikan akan sangat membantu kami untuk lebih baik ke depannya. Terima kasih :)",
+                    "type": "text"
+                }
+            ]
+        }
+    }
+}

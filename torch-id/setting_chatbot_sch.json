@@ -1,0 +1,277 @@
+{
+    "schemas": {
+        "default": {
+            "survey": {
+                "active": false
+            },
+            "reset_keys": [
+                "0"
+            ],
+            "load_conversation": "WabaTemplateConversation",
+            "top_level_questions": [
+                {
+                    "id": "1",
+                    "text": "Info Promo dan Produk",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "Cara Pemesanan",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "Konfirmasi Pesanan",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "Komplain",
+                    "type": "actions"
+                },
+                {
+                    "id": "5",
+                    "text": "Lainnya",
+                    "type": "actions"
+                }
+            ],
+            "0": [
+                {
+                    "id": "1",
+                    "text": "Info Promo dan Produk",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "Cara Pemesanan",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "Konfirmasi Pesanan",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "Komplain",
+                    "type": "actions"
+                },
+                {
+                    "id": "5",
+                    "text": "Lainnya",
+                    "type": "actions"
+                }
+            ],
+            "1": [
+                {
+                    "id": "1A",
+                    "current_menu": "1",
+                    "text": "Untuk informasi promo hari ini bisa klik link berikut: https://torch.id/pages/travel-fest",
+                    "type": "nest_menu",
+                    "interactive_type": "button",
+                    "interactive_message": true,
+                    "next_bubbles": [
+                        {
+                            "type": "text",
+                            "text": "Untuk informasi produk, silahkan kirim gambar atau nama produknya ya"
+                        },
+                        {
+                            "type": "interactive_button",
+                            "text": "Ketik *0* untuk kembali ke Menu Utama",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "0": {
+                            "id": "0",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }
+            ],
+            "2": [
+                {
+                    "id": "2B",
+                    "current_menu": "2",
+                    "text": "Berikut langkah pemesanan melalui Website",
+                    "type": "nest_menu",
+                    "interactive_type": "button",
+                    "interactive_message": true,
+                    "next_bubbles": [
+                        {
+                            "type": "text",
+                            "text": "Apabila mengalami kendala saat proses pemesanan di Website"
+                        },
+                        {
+                            "type": "interactive_button",
+                            "text": "Ketik 1 : Bantuan Pemesanan\nKetik 0 : Kembali ke Menu Utama",
+                            "menus": {
+                                "1": {
+                                    "id": "1",
+                                    "title": "Bantuan Pemesanan"
+                                },
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "1": {
+                            "id": "1",
+                            "title": "Bantuan Pemesanan",
+                            "current_menu": "1-1",
+                            "text": "Silahkan mengisi form order berikut:",
+                            "type": "text",
+                            "interactive_type": "button",
+                            "interactive_message": false,
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "Email :\nNama Lengkap :\nAlamat Lengkap :\nKecamatan :\nKota/Kabupaten :\nProvinsi :\nKode Pos :\nNomor HP :\nMetode Pembayaran : (pilih salah satu)\n1. Virtual Account (BCA, BNI, Mandiri, Permata)\n2. Online Payment (Indomaret, Alfamart)\n3. Bank Transfer Manual (BCA, BNI, Mandiri)n\n\nProduk dan Jumlah : "
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "*Pembayaran melalui Bank Transfer Manual akan divalidasi dulu estimasi 1x24 jam sebelum proses pengemasan"
+                                }
+                            ]
+                        },
+                        "0": {
+                            "id": "0",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }
+            ],
+            "3": [
+                {
+                    "id": "3C",
+                    "current_menu": "3",
+                    "text": "Silahkan infokan kode order  (berupa 6 digit angka yang tertera pada invoice yang dikirim ke Email. Contoh : #112233)",
+                    "interactive_type": "button",
+                    "interactive_message": true,
+                    "next_bubbles": [
+                        {
+                            "type": "interactive_button",
+                            "text": "Ketik *0* untuk kembali ke Menu Utama",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "0": {
+                            "id": "0",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }
+            ],
+            "4": [
+                {
+                    "id": "4D",
+                    "current_menu": "4",
+                    "text": "Silahkan infokan kode order  (berupa 6 digit angka yang tertera pada invoice yang dikirim ke Email. Contoh : #112233)",
+                    "type": "sequences",
+                    "interactive_type": "button",
+                    "interactive_message": true,
+                    "next_bubbles": [
+                        {
+                            "type": "interactive_button",
+                            "text": "Ketik *0* untuk kembali ke Menu Utama",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama"
+                                }
+                            }
+                        }
+                    ],
+                    "prev_menus": {
+                        "0": {
+                            "id": "0",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    },
+                    "required_data": [
+                        {
+                            "id": "4D_SQ1",
+                            "text": "Kami lakukan pengecekan terlebih dahulu. Mohon menunggu pesan ini akan terhubung dengan agent kami 🙂",
+                            "type": "text",
+                            "index": "",
+                            "label": "",
+                            "error_msg": ""
+                        }
+                    ]
+                }
+            ],
+            "5": [
+                {
+                    "id": "5E",
+                    "current_menu": "5",
+                    "text": "Beritahu kami, keperluan lain apa yang bisa kami bantu? ☺️🙏",
+                    "type": "sequences",
+                    "interactive_type": "button",
+                    "interactive_message": true,
+                    "next_bubbles": [
+                        {
+                            "type": "interactive_button",
+                            "text": "Ketik *0* untuk kembali ke Menu Utama",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama"
+                                }
+                            }
+                        }
+                    ],
+                    "prev_menus": {
+                        "0": {
+                            "id": "0",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    },
+                    "required_data": [
+                        {
+                            "id": "5E_SQ1",
+                            "text": "Terima kasih, mohon menunggu pesan kamu akan segera direspon oleh agent kami",
+                            "type": "text",
+                            "index": "",
+                            "label": "",
+                            "error_msg": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

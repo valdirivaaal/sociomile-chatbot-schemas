@@ -1,0 +1,482 @@
+{
+    "schemas": {
+        "default": {
+            "survey": {
+                "active": false
+            },
+            "reset_keys": [
+                "MAIN"
+            ],
+            "load_conversation": "WabaTemplateConversation",
+            "top_level_question": [
+                {
+                    "id": "1",
+                    "text": "1. Informasi Outlet",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "2. Masalah Akun Login",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "3. Biaya Aplikasi",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "4. Pelanggan",
+                    "type": "actions"
+                },
+                {
+                    "id": "5",
+                    "text": "5. Produk",
+                    "type": "actions"
+                },
+                {
+                    "id": "6",
+                    "text": "6. Karyawan",
+                    "type": "actions"
+                },
+                {
+                    "id": "7",
+                    "text": "7. Transaksi",
+                    "type": "actions"
+                },
+                {
+                    "id": "8",
+                    "text": "8. Printer",
+                    "type": "actions"
+                },
+                {
+                    "id": "9",
+                    "text": "9. Topup & Withdraw",
+                    "type": "actions"
+                },
+                {
+                    "id": "10",
+                    "text": "10. Laporan",
+                    "type": "actions"
+                }
+            ],
+            "MAIN": [
+                {
+                    "id": "1",
+                    "text": "1. Informasi Outlet",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "2. Masalah Akun Login",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "3. Biaya Aplikasi",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "4. Pelanggan",
+                    "type": "actions"
+                },
+                {
+                    "id": "5",
+                    "text": "5. Produk",
+                    "type": "actions"
+                },
+                {
+                    "id": "6",
+                    "text": "6. Karyawan",
+                    "type": "actions"
+                },
+                {
+                    "id": "7",
+                    "text": "7. Transaksi",
+                    "type": "actions"
+                },
+                {
+                    "id": "8",
+                    "text": "8. Printer",
+                    "type": "actions"
+                },
+                {
+                    "id": "9",
+                    "text": "9. Topup & Withdraw",
+                    "type": "actions"
+                },
+                {
+                    "id": "10",
+                    "text": "10. Laporan",
+                    "type": "actions"
+                }
+            ],
+            "1": [
+                {
+                    "id": "1A",
+                    "current_menu": "1",
+                    "text": "1. Bagaimana mengubah email & no. telp outlet?\n2. Bagaimana mengubah syarat ketentuan?\n3. Bagaimana mengatur informasi antar jemput?\n4. Bagaimana menonaktifkan pemberitahuan/nota/pengingat whatsapp pelanggan?\n5. Bagaimana cara mengatur template whatsapp pelanggan?\n6. Bagaimana menambahkan daftar rak/lokasi penyimpanan?\n7. Bagaimana menambah Outlet/Cabang/Agen Baru?",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "1A1",
+                            "current_menu": "1-1",
+                            "text": "Pada halaman Home Aplikasi, \n- Silakan klik *”Ubah outlet”* pada bagian atas tampilan home, \n- Setelah masuk ke halaman informasi outlet, \n- Klik tombol bagian bawah kanan lalu akan muncul Form dan silakan ubah informasi email dan no telp\n- Silakan klik Simpan",
+                            "type": "text"
+                        },
+                        "2": {
+                            "id": "1A2",
+                            "current_menu": "1-2",
+                            "text": "Pada halaman Home Aplikasi,\n- Silakan klik “Ubah outlet” pada bagian atas tampilan home,\n- Setelah masuk ke halaman informasi outlet,\n- Klik tombol bagian bawah kanan lalu akan muncul form,\n- Silakan ubah informasi syarat ketententuan bagian bawah form,\n- Jangan lupa tick aktifkan syarat ketentuannya\n- Silakan klik Simpan",
+                            "type": "text"
+                        },
+                        "3": {
+                            "id": "1A3",
+                            "current_menu": "1-3",
+                            "text": "Pada halaman Home Aplikasi,\n- Silakan klik “Ubah outlet” pada bagian atas tampilan home,\n- Setelah masuk ke halaman informasi outlet,\n- Klik tombol bagian bawah kanan lalu akan muncul form,\n- Silakan tick aktifkan Status antar jemput,\n- Masukan Jarak maksimal antar jemput, jika tidak ada maksimal silakan masukan 0,\n- Silakan masukan biaya antar Jeput, jika tidak ada biaya silakan masukan 0",
+                            "type": "text"
+                        },
+                        "4": {
+                            "id": "1A4",
+                            "current_menu": "1-4",
+                            "text": "Pada Halaman home Aplikasi :\n- Silakan Klik Icon/menu Lainnya,\n- Kemudian Klik kembali Icon/Menu “Fitur Lainnya”\n- Cari Pengaturan, kemudian klik\n- Silakan unchecklist pilihan noitifikasi Whatsapp pelanggan\n- Nota selanjutnya tidak akan terkirim secara otomatis melainkan dikirimkan secara manual",
+                            "type": "text"
+                        },
+                        "5": {
+                            "id": "1A5",
+                            "current_menu": "1-5",
+                            "text": "*Pada Aplikasi Smartphone*\nPada Halaman Home Aplikasi :\n- Klik Icon/menu Lainnya,\n- Kemudian klik kembali Icon/Menu “Fitur Lainnya”\n- Klik “Whatsapp template” kemudian silakan isi narasi template kamu.\n- Untuk menambahkan parameter informasi silakan mengganti dengan format yang kami sediakan\n- Contoh : menambahkan parameter #NAMAPELANGGAN. Sehingga kamu ketikan _“Hai #NAMAPELANGGAN, Seluruh pakaian anda telah selesai. Jika kayak ingin mengambil, kami persilakan. Terima kasih.”\n- Hasilnya : Hai Bu Luna, Seluruh pakaian anda telah selesai. Jika kayak ingin mengambil, kami persilakan. Terima kasih._\n\n*Pada Web Browser Laptop & PC*\n- Login di https://squad.simpelin.id/login dengan email dan password\n- Pada halaman dashboard silakan pilih menu “Lainnya”\n- Scroll ke bagian bawah silakan klik “Whatsapp Template”.\n- Untuk menambahkan parameter informasi silakan mengganti dengan format yang kami sediakan\n- Contoh : menambahkan parameter #NAMAPELANGGAN. Sehingga kamu ketikan _“Hai #NAMAPELANGGAN, Seluruh pakaian anda telah selesai. Jika kayak ingin mengambil, kami persilakan. Terima kasih.”\n- Hasilnya : Hai Bu Luna, Seluruh pakaian anda telah selesai. Jika kayak ingin mengambil, kami persilakan. Terima kasih._",
+                            "type": "text"
+                        },
+                        "6": {
+                            "id": "1A6",
+                            "current_menu": "1-6",
+                            "text": "Pada Halaman Home Aplikasi silakan klik “Ubah Outlet”\n- Klik kembali pada Tab atas “Rak”\n- Silakan klik tombol + (Tambah)\n- Masukan nama Rak/Lokasi dan deskripsi (Penjelasan lokasi)\n- Kemudian simpan.\n- Selanjutnya akan muncul saat proses pakaian selesai untuk diminta menyimpan ke lokasi rak anda.",
+                            "type": "text"
+                        },
+                        "7": {
+                            "id": "1A7",
+                            "current_menu": "1-7",
+                            "text": "Pada Halaman Home Aplikasi silakan klik “Ubah Outlet”\n- Silakan klik bagian atas kanan “Icon Panah kiri kanan”.\n- Kemudian klik Tambah Outlet/Cabang/Agen\n- Masukan Informasi Outlet seperti “Nama”, “No Telp Outlet”,”Email” dan “Lokasi Outlet” Kemudian Simpan. \n- Untuk mengaktifkannya, silakan klik *“Icon Panah Kiri Kanan”*. Klik cabang yang diinginkan. Kemudian refresh halaman dan ikuti langkah mengisi informasi outlet dari awal.",
+                            "type": "text"
+                        }
+                    }
+                }
+            ],
+            "2": [
+                {
+                    "id": "2B",
+                    "current_menu": "2",
+                    "text": "1. Lupa Password\n2. Lupa Email/Username\n3. Aktifasi/Verifikasi Email/No Hp\n4. Perubahan No Handphone",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "2B1",
+                            "current_menu": "2-1",
+                            "text": "Silakan copy dan paste url https://squad.simpelin.id/password_request pada browser.\n- Masukan Email Login Aplikasi kamu.\n- Kami akan mengirimkan Email untuk Ubah password masuk aplikasi Simpelin\n- Silakan masukan password baru kamu. \n- Setelah berhasil, silakan gunakan email & password baru pada login aplikasi kamu.",
+                            "type": "text"
+                        }
+                    }
+                }
+            ],
+            "3": [
+                {
+                    "id": "3C",
+                    "current_menu": "3",
+                    "text": "1. Rincian Biaya Penggunaan Aplikasi\n2. VIP Access",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "3C1",
+                            "current_menu": "3-1",
+                            "text": "Biaya yang muncul untuk pemakaian Aplikasi Simpelin dengan cara pemotongan saldo sesuai pemakaian aplikasi. Apa saja biaya pemakaiannya:\n- Pembuatan Nota Baru Rp 100/transaksi\n- Pembuatan Nota Tanggal Kemarin RP 150/transaksi\n- Pembuatan Outlet/Cabang/Agen Baru Rp 20.000/outlet\n- Penambahan Akun Karyawan Rp 2.000/akun\n- pembuatan outlet baru 20 rb diawal saja\n- penambahan akun karyawan > 1 akun dikenakan biaya 2000/akun\n- Export Excel Laporan dikenakan biaya Rp 300/Proses/1 Hari\n- Biaya Pembuatan gaji Rp 1.000/generate\n- Biaya Pembuatan tagihan Bulanan Rp 100/generate\n- Biaya Pembuatan Langganan Bulanan (Kg) Rp 500/langganan",
+                            "type": "text"
+                        }
+                    }
+                }
+            ],
+            "4": [
+                {
+                    "id": "4D",
+                    "current_menu": "4",
+                    "text": "1. Kendala Data Pelanggan\n2. Deposit Saldo Pelanggan",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "4D1",
+                            "current_menu": "4-1",
+                            "text": "1. Bagaimana menambahkan data pelanggan?\n2. Bagaimana mengubah data pelanggan\n3. Bagaimana menghapus data Pelanggan?\n4. Bagaimana mencari data Transaksi per Pelanggan?",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "4D11",
+                                    "current_menu": "4-1-1",
+                                    "text": "- Bagaimana menambahkan data pelanggan?\n- Bagaimana mengubah data pelanggan?\n- Bagaimana menghapus data Pelanggan?\n- Bagaimana mencari data Transaksi per Pelanggan",
+                                    "type": "text"
+                                },
+                                "2": {
+                                    "id": "4D12",
+                                    "current_menu": "4-1-2",
+                                    "text": "- Bagaimana menambahkan deposit saldo?\n- Bagaimana menghapus saldo deposit?",
+                                    "type": "text"
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "4D2",
+                            "current_menu": "4-2",
+                            "text": "1. Bagaimana menambahkan deposit saldo?\n2. Bagaimana menghapus saldo deposit?",
+                            "type": "nest_menu",
+                            "menus": {
+                                
+                            }
+                        }
+                    }
+                }
+            ],
+            "5": [
+                {
+                    "id": "5E",
+                    "current_menu": "5",
+                    "text": "1. Data Produk/Jasa\n2. Cara menambahkan mengubah & Menghapus kategori Produk\n3. Varian",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "5E1",
+                            "current_menu": "5-1",
+                            "text": "1. Cara Mencari daftar produk/jasa\n2. Bagaimana menambahkan produk/jasa baru?\n3. Bagaimana cara menentukan skema bagi hasil Karyawan?\n4. Bagaimana mengaktifkan proses Produksi?",
+                            "type": "nest_menu",
+                            "menus": {
+                                
+                            }
+                        },
+                        "2": {
+                            "id": "5E2",
+                            "current_menu": "5-2",
+                            "text": "1. Cara menambahkan mengubah & Menghapus kategori",
+                            "type": "nest_menu",
+                            "menus": {
+                                
+                            }
+                        },
+                        "3": {
+                            "id": "5E3",
+                            "current_menu": "5-3",
+                            "text": "1. Varian",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "5E31",
+                                    "current_menu": "5-3-1",
+                                    "text": "1. Fungsi Varian dan Kategori Varian\n2. Bagaimana mengaktifkan varian pada Produk tertentu?",
+                                    "type": "nest_menu",
+                                    "menus": {
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            ],
+            "6": [
+                {
+                    "id": "6F",
+                    "current_menu": "6",
+                    "text": "1. Info Data Karyawan\n2. Absensi Karyawan\n3. Gaji Karyawan",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "6F1",
+                            "current_menu": "6-1",
+                            "text": "1. Bagaimana menambahkan karyawan baru?\n2. Bagaimana melakukan aktifasi karyawan\n3. Bagaimana cara blok karyawan resign?\n4. Bagaimana cara mengubah password karyawan?\n5. Bagaimana mengoneksikan karyawan dengan outlet lainnya?",
+                            "type": "nest_menu",
+                            "menus": {
+                                
+                            }
+                        },
+                        "2": {
+                            "id": "6F2",
+                            "current_menu": "6-2",
+                            "text": "1. Bagaimana karyawan melakukan absensi?\n2. Bagaimana memonitor absensi karyawan?",
+                            "type": "nest_menu",
+                            "menus": {
+
+                            }
+                        },
+                        "3": {
+                            "id": "6F3",
+                            "current_menu": "6-3",
+                            "text": "1. Bagaimana membuat slip gaji karyawan?\n2. Bagaimana menentukan gaji per bagi hasil pengerjaan produk?",
+                            "type": "nest_menu",
+                            "menus": {
+
+                            }
+                        }
+                    }
+                }
+            ],
+            "7": [
+                {
+                    "id": "7G",
+                    "current_menu": "7",
+                    "text": "1. Nota\n2. Antrian\n3. Tagihan\n4. Pembayaran\n5. Pengeluaran\n6. Web Tagihan Online\n7. Langganan (KG)\n8. Setoran",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "7G1",
+                            "current_menu": "7-1",
+                            "text": "1. Nota Pelanggan Baru\n2. Nota Pelanggan Tanpa No Telp\n3. Pembuatan Nota Baru\n4. Pembuatan Nota Tanggal Kemarin\n5. Cara Mencetak Nota & Label\n6. Cara mengirimkan Invoice whatsapp outlet\n7. Cara mencari Nota?\n8. Cara memperbaharui proses pekerjaan?\n9. Cara menyimpan pakaian selesai pada rak/lokasi penyimpanan\n10. Bagaimana cara pengambilan pakaian/menyelesaikan Nota?\n11. Pembuatan Nota Langganan\n12. Ralat Nota\n13. Owner Hapus Nota\n14. Karyawan Hapus Data",
+                            "type": "nest_menu",
+                            "menus": {
+
+                            }
+                        },
+                        "2": {
+                            "id": "7G2",
+                            "current_menu": "7-2",
+                            "text": "1. Cara kerja antrian",
+                            "type": "nest_menu",
+                            "menus": {
+
+                            }
+                        },
+                        "3": {
+                            "id": "7G3",
+                            "current_menu": "7-3",
+                            "text": "1. Cara download tagihan\n2. Proses pelunasan Nota Tagihan",
+                            "type": "nest_menu",
+                            "menus": {
+
+                            }
+                        },
+                        "4": {
+                            "id": "7G4",
+                            "current_menu": "7-4",
+                            "text": "1. Bayar Uang Muka, Pelunasan & Bayar saat Ambil\n2. Cara Pembayaran Tunai\n3. Cara Pembayaran Non-tunai\n4. Cara Pembayaran EDC\n5. Cara Pembayaran Tagihan\n6. Cara Pembayaran Deposit Saldo\n7. Cara menyimpan uang lebih menjadi Deposit Saldo\n8. Cara pembayaran melalui Virtual Account",
+                            "type": "nest_menu",
+                            "menus": {
+
+                            }
+                        },
+                        "5": {
+                            "id": "7G5",
+                            "current_menu": "7-5",
+                            "text": "1. Cara Menambahkan Pengeluaran/Biaya\n2. Cara memberikan kategori Pengeluaran/Biaya\n3. Cara melihat Riwayat Pengeluaran/Biaya",
+                            "type": "nest_menu",
+                            "menus": {
+
+                            }
+                        },
+                        "6": {
+                            "id": "7G6",
+                            "current_menu": "7-6",
+                            "text": "1. Cara share Web Tagihan Online\n2. Pembayaran apa saja yang tersedia",
+                            "type": "nest_menu",
+                            "menus": {
+
+                            }
+                        },
+                        "7": {
+                            "id": "7G7",
+                            "current_menu": "7-7",
+                            "text": "1. Bagaimana membuat Paket Langganan?\n2. Cara Membuat Paket Langganan Pelanggan\n3. Cara memperpanjang masa kadaluarsa paket",
+                            "type": "nest_menu",
+                            "menus": {
+
+                            }
+                        },
+                        "8": {
+                            "id": "7G8",
+                            "current_menu": "7-8",
+                            "text": "1. Cara Karyawan Setoran\n2. Cara Owner Menerima Setoran",
+                            "type": "nest_menu",
+                            "menus": {
+
+                            }
+                        }
+                    }
+                }
+            ],
+            "8": [
+                {
+                    "id": "8H",
+                    "current_menu": "8",
+                    "text": "1. Pemasangan kertas Printer & penggunaan printer bluetooth baru\n2. Cara Menghubungkan Printer ke android\n3. Cara Tes Printer ke aplikasi\n4. Cara menampilkan syarat & ketentuan, Logo dan QrCode\n5. Cara memasukan logo\n6. Kendala printer tidak berfungsi",
+                    "type": "nest_menu",
+                    "menus": {
+                        
+                    }
+                }
+            ],
+            "9": [
+                {
+                    "id": "9I",
+                    "current_menu": "9",
+                    "text": "1. Cara melakukan Top Up?\n2. Berapa lama Kredit Produk akan sampai?\n3. Cara Melakukan Withdraw Saldo?\n4. Berapa lama Proses Withdraw Selesai?",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "9I1",
+                            "current_menu": "9-1",
+                            "text": "1. Ewallet / Dompet Digital\n2. Virtual Account\n3. Retail Outlet (Alfamart)\n4. Manual Topup Manual",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "9I11",
+                                    "current_menu": "9-1-1",
+                                    "text": "Pada Home Aplikasi Simpelin : \n- Silakan klik Icon/Menu Topup Saldo\n- Kemudian pilih nominal Saldo Kredit produk\n- Kemudian pilih Topup menggunakan E-wallet OVO, Gopay\n- Masukan Nomor Hp yang terdaftar di Ewallet yang ada di hp yang kamu pegang saat ini di aplikasi simpelin. Artinya *Nomor yang di hp dan di ewallet harus sama*.\n- Kemudian klik Selanjutnya, kemudian buka ewallet kamu, akan ada Notifikasi Pembayaran dari Simpelin sebesar nominal yang kamu beli.\n- Silakan bayar dan berhasil\n- Saldo kredit produk masuk ke akun simpelin kamu.\nUntuk Informasi melalui tutorial video silakan klik url di bawah ini :\n*_https://youtu.be/ycR5Yq-Zo30_*",
+                                    "type": "text"
+                                },
+                                "2": {
+                                    "id": "9I12",
+                                    "current_menu": "9-1-2",
+                                    "text": "Pada Home Aplikasi Simpelin : \n- Silakan klik Icon/Menu Topup Saldo\n- Kemudian pilih nominal Saldo Kredit produk\n- Kemudian pilih Topup menggunakan Virtual Account BCA, MANDIRI, BRI, BNI.\n- Masukan Nomor Hp yang lalu klik Selanjutnya.\n- Akan muncul nomor *Virtual Account*, kamu bisa copy dan paste di M-banking / Internet Banking.\n- Silakan mengikuti cara/petunjuk untuk menyelesaikan proses transaksi melalui M-banking/internet Banking/ATM.\n- Setelah menyelesaikan proses pembayaran, saldo akan secara otomatis masuk ke Akun simpelin kamu",
+                                    "type": "text"
+                                },
+                                "3": {
+                                    "id": "9I13",
+                                    "current_menu": "9-1-3",
+                                    "text": "Pada Home Aplikasi Simpelin : \n- Silakan klik Icon/Menu Topup Saldo\n- Kemudian pilih nominal Saldo Kredit produk\n- Kemudian pilih Topup menggunakan Retail Outlet Minimarket AlfaMart\n- Masukan Nomor Hp yang lalu klik Selanjutnya.\n- Akan muncul *Kode Transaksi*.\n- Silakan melakukan proses pembayaran ke alfa mart terdekat.\n- Setelah menyelesaikan proses pembayaran, saldo akan secara otomatis masuk ke Akun simpelin kamu",
+                                    "type": "text"
+                                },
+                                "4": {
+                                    "id": "9I14",
+                                    "current_menu": "9-1-4",
+                                    "text": "Pada Home Aplikasi Simpelin :\n- Silakan klik Icon/Menu Topup Saldo\n- Kemudian pilih nominal Saldo Kredit produk\n- Kemudian klik topup via admin\n- Silakan informasi topup nominal dan minta rekening topup sertakan email login dan nama outlet.\n- Setelah melakukan transfer, segera Konfirmasi Transfer ke admin.\n- Saldo Kredit Produk masuk ke akun kamu.",
+                                    "type": "text"
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "9I2",
+                            "current_menu": "9-2",
+                            "text": "Proses Topup Saldo Kredit produk bagi kamu yang melakukan proses topup melalui sistem Simpelin, maka saldo akan sampai saat transaksi berhasil anda lakukan.\n\nBagi kamu yang melakukan proses topup melalui Admin, silakan informasikan transaksi kamu berhasil dilakukan, sehingga admin dapat segera mengisi kredit produk ke akun kamu, biasanya berlangsung 5 menit - 60 menit.",
+                            "type": "text"
+                        }
+                    }
+                }
+            ],
+            "10": [
+                {
+                    "id": "10J",
+                    "current_menu": "10",
+                    "text": "1. Fungsi rekap Transaksi Harian Dashboard\n2. Cara mengetahui Pengeluaran\n3. Cara mengetahui Pembayaran Tunai, Non Tunai, Virtual Account\n4. Cara melihat laporan toko?",
+                    "type": "nest_menu",
+                    "menus": {
+                        "4": {
+                            "id": "10J4",
+                            "current_menu": "10-4",
+                            "text": "1. Melihat Laporan Penjualan (Laba/Rugi)\n2. Melihat Laporan Transaksi\n3. Melihat Laporan Pembayaran\n4. Melihat Laporan Piutang Customer\n5. Melihat Data Customer\n6. Melihat Laporan Pengeluaran\n7. Melihat Laporan Pengambilan Barang\n8. Melihat Laporan Rekap Transaksi\n9. Melihat Laporan Tahunan",
+                            "type": "nest_menu",
+                            "menus": {
+
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

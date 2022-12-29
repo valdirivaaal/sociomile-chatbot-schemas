@@ -1,0 +1,1859 @@
+{
+    "schemas": {
+        "default": {
+            "survey": {
+                "active": false
+            },
+            "reset_keys": [
+                "MENU"
+            ],
+            "load_conversation": "WabaTemplateConversation",
+            "top_level_question": [
+                {
+                    "id": "1",
+                    "text": "Kariermu Talent Hub",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "Kariermu Lab",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "Informasi umum Kariermu",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "Informasi kartu prakerja di Kariermu",
+                    "type": "actions"
+                },
+                {
+                    "id": "5",
+                    "text": "Tata cara bermitra untuk program Kartu Prakerja",
+                    "type": "actions"
+                }
+            ],
+            "MENU": [
+                {
+                    "id": "1",
+                    "text": "Kariermu Talent Hub",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "Kariermu Lab",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "Informasi umum Kariermu",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "Informasi kartu prakerja di Kariermu",
+                    "type": "actions"
+                },
+                {
+                    "id": "5",
+                    "text": "Tata cara bermitra untuk program Kartu Prakerja",
+                    "type": "actions"
+                }
+            ],
+            "1": [
+                {
+                    "id": "1A",
+                    "current_menu": "1",
+                    "text": "Halo Sobat Kariermu, Kamu telah memilih menu Kariermu talent hub, berikut informasi seputar talent hub.\n\nSilakan ketik angka yang sesuai pada menu dibawah ini dan ketik satu kali saja, ya, Sobat! Kami akan segera menjawab. 😊\n\n1. Tentang Kariermu Talent Hub\n2. Apa saja layanan Kariermu Talent Hub\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "1A1",
+                            "current_menu": "1-1",
+                            "text": "Halo Sobat Kariermu, berikut informasi tentang talent hub.\n\nKariermu Talent Hub hadir sebagai wadah untuk para talent dapat menemukan dan mengembangkan bakat dan mengeksplor karya serta tempat mempertemukan talent dengan perusahaan atau industri yang sesuai dengan minat talent\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "TANYA": {
+                                    "id": "1A11",
+                                    "current_menu": "1-1-1",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "BACK": {
+                                    "id": "1A12",
+                                    "current_menu": "1-1-2",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "1A2",
+                            "current_menu": "1-2",
+                            "text": "Silakan ketik angka yang sesuai pada menu dibawah ini dan ketik satu kali saja, ya, Sobat! Kami akan segera menjawab. 😊\n\n1. Lowongan Pekerjaan\n2. Talent Hub Assessment\n3. Karier Space\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "1A21",
+                                    "current_menu": "1-2-1",
+                                    "text": "Silakan ketik angka yang sesuai pada menu dibawah ini dan ketik satu kali saja, ya, Sobat! Kami akan segera menjawab. 😊\n\n1. Bagaimana cara memperoleh info lowongan pekerjaan di Karier.mu Talent Hub?\n2. Bagaimana cara melamar pekerjaan di Karier.mu Talent Hub?\n3. Saya ingin mengirim info lowongan pekerjaan. Bagaimana caranya?\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "1": {
+                                            "id": "1A211",
+                                            "current_menu": "1-2-1-1",
+                                            "text": "Kunjungi jobs.talentics.id\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "1A2111",
+                                                    "current_menu": "1-2-1-1-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "1A2112",
+                                                    "current_menu": "1-2-1-1-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "1A212",
+                                            "current_menu": "1-2-1-2",
+                                            "text": "Pastikan kamu sudah memiliki akun di jobs.talentics.id lengkapi data profile kamu pilih pekerjaan yang sesuai dengan minat dan keinginan kamu apply / lamar pekerjaan (good luck!)\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "1A2121",
+                                                    "current_menu": "1-2-1-2-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "1A2122",
+                                                    "current_menu": "1-2-1-2-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "id": "1A213",
+                                            "current_menu": "1-2-1-3",
+                                            "text": "Kunjungi https://app.talentics.id/\n\nDaftar kan perusahaan kamu melalui https://app.talentics.id/login/\n\nLengkapi profil perusahaan kamu dan input lowongan pekerjaan lowongan pekerjaan kamu dapat dilihat jobseeker di website jobs.talentics.id\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "1A2131",
+                                                    "current_menu": "1-2-1-3-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "1A2132",
+                                                    "current_menu": "1-2-1-3-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "TANYA": {
+                                            "id": "1A214",
+                                            "current_menu": "1-2-1-4",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "1A215",
+                                            "current_menu": "1-2-1-5",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "1A22",
+                                    "current_menu": "1-2-2",
+                                    "text": "Silakan ketik angka yang sesuai pada menu dibawah ini dan ketik satu kali saja, ya, Sobat! Kami akan segera menjawab. 😊\n\n1. Apa itu talent Hub Assessment\n2. Siapa yang dapat menggunakan asesmen ini?\n3. Bagaimana cara mengikuti asesmen?\n4. Apa yang didapatkan setelah mengikuti asesmen?\n5. Berapa lama proses pengerjaan talent hub assessment?\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "1": {
+                                            "id": "1A221",
+                                            "current_menu": "1-2-2-1",
+                                            "text": "Talent Hub Assessment adalah alat yang dapat digunakan untuk mengenali lebih jauh mengenai Potensi diri melalui tes kepribadian, tes kemampuan kognitif, tes kesiapan kerja, dan test kemampuan teknis tertentu seperti microsoft office tes, sales test, dan lain sebagainya.\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "1A2211",
+                                                    "current_menu": "1-2-2-1-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "1A2212",
+                                                    "current_menu": "1-2-2-1-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "1A222",
+                                            "current_menu": "1-2-2-2",
+                                            "text": "Minimal pendidikan SMA/SMK, Mahasiswa, dan Profesioanal.\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "1A2221",
+                                                    "current_menu": "1-2-2-2-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "1A2222",
+                                                    "current_menu": "1-2-2-2-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "id": "1A223",
+                                            "current_menu": "1-2-2-3",
+                                            "text": "Kunjungi www.karier.mu dan pastikan kamu sudah memiliki akun karier.mu.\n\nPilih program asesmen test yang ingin kamu ikuti.\nUntuk Asesmen Test Siap Kerja x Rencanamu :\nhttps://www.karier.mu/program/assessment-tes-siap-kerja\n\nUntuk Asesmen Test Microsoft Office :\nhttps://www.karier.mu/program/assessment-microsoft-office\n\nUntuk Asesmen Test Siap Kerja x Talentics :\nhttps://www.karier.mu/program/asesmen-siap-kerja-x-talentics\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "1A2231",
+                                                    "current_menu": "1-2-2-3-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "1A2232",
+                                                    "current_menu": "1-2-2-3-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "4": {
+                                            "id": "1A224",
+                                            "current_menu": "1-2-2-4",
+                                            "text": "Peserta akan mendapatkan laporan / sertifikat setelah mengikuti tes asesmen.\n\nLaporan / Sertifikat tersebut dapat menambah portofolio peserta untuk menjadi nilai tambah pada saat melamar pekerjaan.\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "1A2241",
+                                                    "current_menu": "1-2-2-4-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "1A2242",
+                                                    "current_menu": "1-2-2-4-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "5": {
+                                            "id": "1A225",
+                                            "current_menu": "1-2-2-5",
+                                            "text": "Proses pengerjaan talent hub assessment beraneka ragam, bergantung kepada test yang diambil peserta. Durasi rata-rata test assessment berkisar 2 jam.\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "1A2251",
+                                                    "current_menu": "1-2-2-5-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "1A2252",
+                                                    "current_menu": "1-2-2-5-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                }
+                                            }
+                                        },
+                                        "TANYA": {
+                                            "id": "1A226",
+                                            "current_menu": "1-2-2-6",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "1A227",
+                                            "current_menu": "1-2-2-7",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "id": "1A23",
+                                    "current_menu": "1-2-3",
+                                    "text": "Silakan ketik angka yang sesuai pada menu dibawah ini dan ketik satu kali saja, ya, Sobat! Kami akan segera menjawab. 😊\n\n1. Apa itu Kariermu Space?\n2. Siapa saja yang bisa bergabung?\n3. Aplikasi apa yang akan digunakan Karier Space?\n4. Kapan bisa mendaftar di Karier Space?\n5. Bagaimana cara bergabung ke Karier Space?\n6. Apakah diminta biaya untuk bergabung ke Karier Space?\n7. Program apa saja yang ada di Karier Space?\n8. Apa saja keuntungan mengikuti Karier Space?\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "1": {
+                                            "id": "1A231",
+                                            "current_menu": "1-2-3-1",
+                                            "text": "Kariermu Space adalah program dan wadah untuk mempersiapkan dan mengembangkan karier bagi para pencari kerja, mahasiswa, fresh graduate, dan profesional.\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "1A2311",
+                                                    "current_menu": "1-2-3-1-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "1A2312",
+                                                    "current_menu": "1-2-3-1-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "1A232",
+                                            "current_menu": "1-2-3-2",
+                                            "text": "Lulusan SMP & SMA, mahasiswa, fresh graduate, dan profesional\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "1A2321",
+                                                    "current_menu": "1-2-3-2-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "1A2322",
+                                                    "current_menu": "1-2-3-2-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "id": "1A233",
+                                            "current_menu": "1-2-3-3",
+                                            "text": "Discord dan Telegram untuk grup komunitas. Untuk event Karier Space secara daring akan menggunakan Zoom Meeting\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "1A2331",
+                                                    "current_menu": "1-2-3-3-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "1A2332",
+                                                    "current_menu": "1-2-3-3-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                }
+                                            }
+                                        },
+                                        "4": {
+                                            "id": "1A234",
+                                            "current_menu": "1-2-3-4",
+                                            "text": "Pendaftaran anggota Kariermu Space dibuka sepanjang waktu\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "1A2341",
+                                                    "current_menu": "1-2-3-4-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "1A2342",
+                                                    "current_menu": "1-2-3-4-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                }
+                                            }
+                                        },
+                                        "5": {
+                                            "id": "1A235",
+                                            "current_menu": "1-2-3-5",
+                                            "text": "- Untuk mahasiswa, fresh graduate, dan profesional bisa mengisi form pendaftaran\nhttps://bit.ly/PendaftaranKarierSpace Tim Kariermu Space akan mengirimkan link grup melalui email\n- Bagi prakerja bisa mengakses\nhttps://www.karier.mu/program/beasiswa-pelatihan-menjadi-talenta-siap-kerja\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "1A2351",
+                                                    "current_menu": "1-2-3-5-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "1A2352",
+                                                    "current_menu": "1-2-3-5-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                }
+                                            }
+                                        },
+                                        "6": {
+                                            "id": "1A236",
+                                            "current_menu": "1-2-3-6",
+                                            "text": "Untuk menjadi anggota karier space tidak dipungut biaya, GRATIS!\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "1A2361",
+                                                    "current_menu": "1-2-3-6-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "1A2362",
+                                                    "current_menu": "1-2-3-6-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                }
+                                            }
+                                        },
+                                        "7": {
+                                            "id": "1A237",
+                                            "current_menu": "1-2-3-7",
+                                            "text": "- Karier Class: Diskusi mengenai persiapan dan pengembangan karier melalui Zoom dan Telegram (untuk prakerja)\n- Karier Clinic: Group coaching persiapan dan pengembangan karier khusus anggota Kariermu Space\n- Karier Talks : Webinar terkait karier bersama narasumber ahli\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "1A2371",
+                                                    "current_menu": "1-2-3-7-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "1A2372",
+                                                    "current_menu": "1-2-3-7-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                }
+                                            }
+                                        },
+                                        "8": {
+                                            "id": "1A238",
+                                            "current_menu": "1-2-3-8",
+                                            "text": "- Membangun relasi dengan anggota dari seluruh Indonesia\n- Mendapatkan voucher potongan program pilihan Karier.mu sampai dengan 80%\n- Mendapatkan bimbingan persiapan dan pengembangan karier melalui semua kegiatan di Kariermu Space\n- Berkesempatan mengikuti private coaching dari Karier.mu untuk anggota Kariermu Space\n- Berkesempatan berkarier di Karier.mu dan Sekolah.mu serta perusahaan mitra Kariermu lainnya\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "1A2381",
+                                                    "current_menu": "1-2-3-8-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "1A2382",
+                                                    "current_menu": "1-2-3-8-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                }
+                                            }
+                                        },
+                                        "TANYA": {
+                                            "id": "1A239",
+                                            "current_menu": "1-2-3-9",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "1A2310",
+                                            "current_menu": "1-2-3-10",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "TANYA": {
+                                    "id": "1A24",
+                                    "current_menu": "1-2-4",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "BACK": {
+                                    "id": "1A25",
+                                    "current_menu": "1-2-5",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "TANYA": {
+                            "id": "1A3",
+                            "current_menu": "1-3",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "BACK": {
+                            "id": "1A4",
+                            "current_menu": "1-4",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "parent"
+                        }
+                    }
+                }
+            ],
+            "2": [
+                {
+                    "id": "2B",
+                    "current_menu": "2",
+                    "text": "Halo Sobat Kariermu, Kamu telah memilih menu Kariermu Lab, berikut informasi seputar Kariermu Lab.\n\nSilakan ketik angka yang sesuai pada menu dibawah ini dan ketik satu kali saja, ya, Sobat! Kami akan segera menjawab. 😊\n\n1. Tentang Kariermu Lab\n2. Program Kariermu Lab\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1":{
+                            "id": "2B1",
+                            "current_menu": "2-1",
+                            "text": "Silakan ketik angka yang sesuai pada menu dibawah ini dan ketik satu kali saja, ya, Sobat! Kami akan segera menjawab. 😊\n\n1. Apa itu Kariermu Lab?\n2. Bagaimana Cara untuk Daftar di dalam Kariermu Lab\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "2B11",
+                                    "current_menu": "2-1-1",
+                                    "text": "Karier.mu Lab adalah go to platform dalam mengembangkan kompetensi untuk peningkatan karier, mulai dari eksplorasi sampai akselerasi, dengan beragam cara dan metode belajar; self-paced learning, kelas intensif asinkronus, coaching, mentoring, dan juga bootcamp.\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "2B111",
+                                            "current_menu": "2-1-1-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "2B112",
+                                            "current_menu": "2-1-1-2",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "2B12",
+                                    "current_menu": "2-1-2",
+                                    "text": "Untuk mendaftar program Kariermu Lab silahkan ikuti langkah-langkah dibawah ini:\n\n1. Pertama, Sobat Karier dapat masuk ke web Kariermu : https://www.karier.mu\n2. Anda dapat melihat berbagai pilihan program yang tersedia dari Spanduk, Pencarian Terpopuler, Pilihan Tim Karier.mu, Program Rekomendasi dan Program Unggulan\n3. Selain itu, Sobat juga dapat mencari program menggunakan bilah pencarian yang tersedia\n4. Klik program yang Sobat inginkan dan Sobat dapat melihat rincian dari program tersebut\n5. Klik tombol 'ikut program\n6.Pastikan program yang Sobat inginkan sudah tercentang pada halaman daftar pilihan dan klik \"Lanjut ke Pembayaran\"\n7. Pilih opsi pembayaran yang diinginkan\n8. Selamat! anda terdaftar dalam program Kariermu Lab\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "2B121",
+                                            "current_menu": "2-1-2-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "2B122",
+                                            "current_menu": "2-1-2-2",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "TANYA": {
+                                    "id": "2B13",
+                                    "current_menu": "2-1-3",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "BACK": {
+                                    "id": "2B14",
+                                    "current_menu": "2-1-4",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "2":{
+                            "id": "2B2",
+                            "current_menu": "2-2",
+                            "text": "Silakan ketik angka yang sesuai pada menu dibawah ini dan ketik satu kali saja, ya, Sobat! Kami akan segera menjawab. 😊\n\n1. Pelatihan On Demand\n2. Kelas Intensif\n3. Kelas Offline\n4. Program Sertifikasi\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "2B21",
+                                    "current_menu": "2-2-1",
+                                    "text": "Pelatihan on-demand yang tersedia di Kariermu merupakan pelatihan belajar mandiri. Materi pelatihan yang sudah dirancang khusus agar anda dapat mengikuti pelatihan sesuai dengan fleksibilitas waktu dan tempat sesuai kebutuhan Sobat.\n\nBerikut adalah program yang tersedia untuk kategori On Demand\n\nSilakan ketik angka yang sesuai pada menu dibawah ini dan ketik satu kali saja, ya, Sobat! Kami akan segera menjawab. 😊\n\n1. Pelatihan Digital Marketing\n2. Pelatihan Keguruan\n3. Pelatihan Bisnis\n4. Pelatihan Data Science\n5. Pelatihan Keuangan\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "1": {
+                                            "id": "2B211",
+                                            "current_menu": "2-2-1-1",
+                                            "text": "Kuasai ilmu digital marketing melalui beragam pelatihan yang dirancang oleh para individu ahli di bidangnya. Tingkatkan karir, tambah skill dan portofolio, hingga ke pengembangan bisnis. Semua dalam satu platform, mudah diakses dari mana saja!. Anda dapat mencari ragam program Digital Marketing dengan mengetik \"marketing\" atau \"pemasaran\" pada bilah pencarian\n\nAtau klik tautan berikut : https://lab.karier.mu/digital-marketing/\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "2B2111",
+                                                    "current_menu": "2-2-1-1-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "2B2112",
+                                                    "current_menu": "2-2-1-1-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "2B212",
+                                            "current_menu": "2-2-1-2",
+                                            "text": "Tingkatkan pengalaman belajar guru yang berkualitas dengan berbagai pelatihan yang dirancang demi perubahan di dunia pendidikan. Semua dalam satu platform, dapat diakses di mana saja. Anda dapat mencari ragam program Keguruan dengan mengetik \"keguruan\" atau \"pengajaran\" pada bilah pencarian\n\nAtau klik tautan berikut : https://lab.karier.mu/keguruan\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "2B2121",
+                                                    "current_menu": "2-2-1-2-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "2B2122",
+                                                    "current_menu": "2-2-1-2-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "id": "2B213",
+                                            "current_menu": "2-2-1-3",
+                                            "text": "Mulai wujudkan rencana bisnismu dengan ilmu yang utuh dari beragam pelatihan yang dirancang oleh para ahli di bidangnya. Tingkatkan kemampuan dan potensimu dengan satu platform, mudah diakses dari mana saja! Anda dapat mencari ragam program Bisnis dengan mengetik \"bisnis\" atau \"entrepreneur\" pada bilah pencarian\n\nAtau klik tautan berikut : https://lab.karier.mu/bisnis/\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "2B2131",
+                                                    "current_menu": "2-2-1-3-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "2B2132",
+                                                    "current_menu": "2-2-1-3-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                }
+                                            }
+                                        },
+                                        "4": {
+                                            "id": "2B214",
+                                            "current_menu": "2-2-1-4",
+                                            "text": "Dengan paket pelatihan ini, kamu akan mendapatkan pelajaran lengkap seputar ilmu data science. Kamu akan belajar bagaimana cara mengolah data. Anda dapat mencari ragam program Data Science dengan mengetik \"data\" atau \"data science\" pada bilah pencarian\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "2B2141",
+                                                    "current_menu": "2-2-1-4-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "2B2142",
+                                                    "current_menu": "2-2-1-4-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                }
+                                            }
+                                        },
+                                        "5": {
+                                            "id": "2B215",
+                                            "current_menu": "2-2-1-5",
+                                            "text": "Dengan paket pelatihan ini, kamu akan mendapatkan ilmu seputar dunia keuangan. Kamu akan belajar bagaimana cara mengatur rencana keuangan pribadi yang sederhana tetapi efektif dan juga lengkap. Anda dapat mencari ragam program Keuangan dengan mengetik \"keuangan\" atau \"finance\" pada bilah pencarian\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "2B2151",
+                                                    "current_menu": "2-2-1-5-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "2B2152",
+                                                    "current_menu": "2-2-1-5-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                }
+                                            }
+                                        },
+                                        "TANYA": {
+                                            "id": "2B216",
+                                            "current_menu": "2-2-1-6",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "2B217",
+                                            "current_menu": "2-2-1-7",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "2B22",
+                                    "current_menu": "2-2-2",
+                                    "text": "Silakan ketik angka yang sesuai pada menu dibawah ini dan ketik satu kali saja, ya, Sobat! Kami akan segera menjawab. 😊\n\n1. Apa itu Kelas Intensif\n2. Program untuk Kelas Intensif\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "1": {
+                                            "id": "2B221",
+                                            "current_menu": "2-2-2-1",
+                                            "text": "Kelas intensif di Kariermu merupakan pelatihan menggunakan metode blended learning yaitu synchronous (belajar live / waktu ditentukan) dan asynchronous (belajar mandiri)\n\nSobat akan mendapatkan materi belajar yang dapat diakses kapan saja ditambah dengan materi live (webinar/workshop) langsung bersama para ahlinya!\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "2B2211",
+                                                    "current_menu": "2-2-2-1-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "2B2212",
+                                                    "current_menu": "2-2-2-1-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "2B222",
+                                            "current_menu": "2-2-2-2",
+                                            "text": "Silakan ketik angka yang sesuai pada menu dibawah ini dan ketik satu kali saja, ya, Sobat! Kami akan segera menjawab. 😊\n\n1. Your Job Is Not Your Career\n2. Mastering The Art of Blended Learning Teaching Method\n3. Siap Kerja Jadi Digital Marketer : Facebook & Instagram Ads\n4. Tingkatkan Kemampuan Digital Marketing dengan Copywriting\n5. Menarik Perhatian Rekruiter dengan personal Branding yang kuat\n6. Pelatihan Persiapan Kerja : Ms Excel Series\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "1": {
+                                                    "id": "2B2221",
+                                                    "current_menu": "2-2-2-2-1",
+                                                    "text": "Kelas intensif di Kariermu merupakan program yang diadaptasi dari buku terbaru Rene Suhardo ini akan membantu peserta yang hilang arah / tersesat ambisi karier mereka karena terlalu fokus hanya pada target kerja hingga melupakan aspirasi diri.\n\nProgram ini akan langsung dipandu secara live webinar yang terdiri dari 10 sesi dimana setiap sesi bisa memberikan jawaban ataupun arahan untuk jalan kariermu. Kamu juga akan mendapat keuntungan lainnya seperti sertifikat dan panduan eksplorasi berkarier dalam bentuk video yang bisa diakses kapan saja.\n\nKlik tautan berikut untuk melihat detail program : https://lab.karier.mu/pengembangan-karier/\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                                    "type": "nest_menu",
+                                                    "menus": {
+                                                        "TANYA": {
+                                                            "id": "2B22211",
+                                                            "current_menu": "2-2-2-2-1-1",
+                                                            "text": "",
+                                                            "type": "goto",
+                                                            "goto": "cs"
+                                                        },
+                                                        "BACK": {
+                                                            "id": "2B22212",
+                                                            "current_menu": "2-2-2-2-1-2",
+                                                            "text": "",
+                                                            "type": "goto",
+                                                            "goto": "parent"
+                                                        }
+                                                    }
+                                                },
+                                                "2": {
+                                                    "id": "2B2222",
+                                                    "current_menu": "2-2-2-2-2",
+                                                    "text": "Program ini merupakan kombinasi metode dan materi belajar untuk pendalaman materi menuju penguasaan keterampilan spesifik. Program Kelas Intensif: Mastering The Art of Blended Learning Teaching Method terdiri dari rangkaian webinar, workshop, networking, konsultasi, belajar mandiri dan coaching (add-on). Series kelas intensif ini akan membahas tentang pembelajaran blended learning terintegrasi digital, mulai dari memahami konsep dan praktik 5M serta kompetensi dalam pembelajaran, hingga strategi dan asesmen dalam pembelajaran blended learning.\n\n\n\nKelas intensif ini bertujuan untuk membantu calon pengajar, pengajar muda dan/atau tenaga pendidik lainnya untuk memahami serta mempraktikkan pembelajaran blended learning yang bermakna dan terintegrasi digital.\n\nKlik tautan berikut untuk melihat detail program :\nhttps://lab.karier.mu/kelas-intensive-mastering-the-art-of-blended-learning-teaching/\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                                    "type": "nest_menu",
+                                                    "menus": {
+                                                        "TANYA": {
+                                                            "id": "2B22221",
+                                                            "current_menu": "2-2-2-2-2-1",
+                                                            "text": "",
+                                                            "type": "goto",
+                                                            "goto": "cs"
+                                                        },
+                                                        "BACK": {
+                                                            "id": "2B22222",
+                                                            "current_menu": "2-2-2-2-2-2",
+                                                            "text": "",
+                                                            "type": "goto",
+                                                            "goto": "parent"
+                                                        }
+                                                    }
+                                                },
+                                                "3": {
+                                                    "id": "2B2223",
+                                                    "current_menu": "2-2-2-2-3",
+                                                    "text": "Penggunaan digital marketing dalam strategi pengembangan bisnis telah menjadi hal yang esensial, dengan kemampuannya untuk menjangkau target pasar yang lebih akurat dan biaya yang lebih efisien. Salah satunya dengan memasarkan produk melalui platform Facebook dan Instagram.\n\nDengan mengikuti kelas ini, kamu akan mempelajari konsep dasar digital ads dan mampu memasang iklan secara efektif di Facebook dan Instagram. Selain itu, kamu juga akan mempelajari bagaimana membuat budgeting, membuat dan eksekusi media plan, serta cara membaca report ads. Dapatkan semuanya dalam satu pelatihan yang bisa diakses di mana saja.\n\nKlik tautan berikut untuk melihat detail program : https://lab.karier.mu/kelas-intensif-fb-ig/\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                                    "type": "nest_menu",
+                                                    "menus": {
+                                                        "TANYA": {
+                                                            "id": "2B22231",
+                                                            "current_menu": "2-2-2-2-3-1",
+                                                            "text": "",
+                                                            "type": "goto",
+                                                            "goto": "cs"
+                                                        },
+                                                        "BACK": {
+                                                            "id": "2B22232",
+                                                            "current_menu": "2-2-2-2-3-2",
+                                                            "text": "",
+                                                            "type": "goto",
+                                                            "goto": "parent"
+                                                        }
+                                                    }
+                                                },
+                                                "4": {
+                                                    "id": "2B2224",
+                                                    "current_menu": "2-2-2-2-4",
+                                                    "text": "Pemasaran produk dengan digital marketing dapat menjangkau target pasar yang lebih akurat dan biaya yang lebih efisien. Dalam hal ini, copywriting memiliki peran penting untuk menarik perhatian auidens yang dituju agar semakin tertarik dengan produk yang dipasarkan.\n\nDengan mengikuti kelas ini, kamu akan mempelajari tentang konsep dasar copywriting dan bagaimana copywriting dapat meningkatkan penjualan produk. Kamu juga akan belajar tentang bagaimana mempersiapkan dan membuat copywriting yang efektif untuk berbagai media. Dapatkan semuanya dalam satu pelatihan yang bisa diakses di mana saja.\n\nKlik Tautan Berikut untuk Melihat Detail Program : https://lab.karier.mu/intensive-copywriting/\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                                    "type": "nest_menu",
+                                                    "menus": {
+                                                        "TANYA": {
+                                                            "id": "2B22241",
+                                                            "current_menu": "2-2-2-2-4-1",
+                                                            "text": "",
+                                                            "type": "goto",
+                                                            "goto": "cs"
+                                                        },
+                                                        "BACK": {
+                                                            "id": "2B22242",
+                                                            "current_menu": "2-2-2-2-4-2",
+                                                            "text": "",
+                                                            "type": "goto",
+                                                            "goto": "parent"
+                                                        }
+                                                    }
+                                                },
+                                                "5": {
+                                                    "id": "2B2225",
+                                                    "current_menu": "2-2-2-2-5",
+                                                    "text": "Personal branding dianggap penting untuk menunjukkan dan mempromosikan citra kamu sebagai individu. Di pelatihan ini, kamu akan diajarkan esensi, keuntungan, sampai tahapan membangun personal branding yang efektif untuk pengembangan kariermu. Dapatkan semuanya dalam satu pelatihan yang bisa diakses di mana saja.\n\nKlik Tautan Berikut untuk melihat detail program : https://lab.karier.mu/personal-branding/\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                                    "type": "nest_menu",
+                                                    "menus": {
+                                                        "TANYA": {
+                                                            "id": "2B22251",
+                                                            "current_menu": "2-2-2-2-5-1",
+                                                            "text": "",
+                                                            "type": "goto",
+                                                            "goto": "cs"
+                                                        },
+                                                        "BACK": {
+                                                            "id": "2B22252",
+                                                            "current_menu": "2-2-2-2-5-2",
+                                                            "text": "",
+                                                            "type": "goto",
+                                                            "goto": "parent"
+                                                        }
+                                                    }
+                                                },
+                                                "6": {
+                                                    "id": "2B2226",
+                                                    "current_menu": "2-2-2-2-6",
+                                                    "text": "Program pelatihan persiapan kerja Karier.mu merupakan program pelatihan secara intensif yang berfokus pada posisi tertentu dengan metode blended learning.\n\nPada Program Persiapan Kerja: Microsoft Excel Series mempelajari tentang pengelolaan dan pengolahan data dan administrasi dengan Microsoft Excel sehingga membuat pekerjaan lebih efisien dan optimal.\n\nProgram Persiapan Kerja: Microsoft Excel Series memiliki pilihan level basic dan intermediate yang dapat dipilih sesuai kebutuhan.\n\nKlik Tautan Berikut untuk melihat detail program :\nhttps://lab.karier.mu/pelatihan-persiapan-kerja-microsoft-excel-series/\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                                    "type": "nest_menu",
+                                                    "menus": {
+                                                        "TANYA": {
+                                                            "id": "2B22261",
+                                                            "current_menu": "2-2-2-2-6-1",
+                                                            "text": "",
+                                                            "type": "goto",
+                                                            "goto": "cs"
+                                                        },
+                                                        "BACK": {
+                                                            "id": "2B22262",
+                                                            "current_menu": "2-2-2-2-6-2",
+                                                            "text": "",
+                                                            "type": "goto",
+                                                            "goto": "parent"
+                                                        }
+                                                    }
+                                                },
+                                                "TANYA": {
+                                                    "id": "2B2227",
+                                                    "current_menu": "2-2-2-2-7",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "2B2228",
+                                                    "current_menu": "2-2-2-2-8",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                }
+                                            }
+                                        },
+                                        "TANYA": {
+                                            "id": "2B223",
+                                            "current_menu": "2-2-2-3",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "2B224",
+                                            "current_menu": "2-2-2-4",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "id": "2B23",
+                                    "current_menu": "2-2-3",
+                                    "text": "Program pelatihan secara intensif yang berfokus pada posisi tertentu dengan metode blended (daring dan luring). Lokasi luring akan tersedia di beberapa kota yang dapat dilihat detailnya pada program yang aktif di Kariermu.\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "2B231",
+                                            "current_menu": "2-2-3-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "2B232",
+                                            "current_menu": "2-2-3-2",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "4": {
+                                    "id": "2B24",
+                                    "current_menu": "2-2-4",
+                                    "text": "Silakan ketik angka yang sesuai pada menu dibawah ini dan ketik satu kali saja, ya, Sobat! Kami akan segera menjawab. 😊\n\n1. Apa Itu Program Sertifikasi\n2. Program yang tersedia\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "1": {
+                                            "id": "2B241",
+                                            "current_menu": "2-2-4-1",
+                                            "text": "Program sertifikasi merupakan rangkaian pelatihan yang diikuti dengan pengujian penguasaan individu terhadap bidang tertentu yang diakui oleh lembaga.\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "2B2411",
+                                                    "current_menu": "2-2-4-1-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "2B2412",
+                                                    "current_menu": "2-2-4-1-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "2B242",
+                                            "current_menu": "2-2-4-2",
+                                            "text": "Silakan ketik angka yang sesuai pada menu dibawah ini dan ketik satu kali saja, ya, Sobat! Kami akan segera menjawab. 😊\n\n1. Sertifikasi Guru Blended Learning\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "1": {
+                                                    "id": "2B2421",
+                                                    "current_menu": "2-2-4-2-1",
+                                                    "text": "Program ini bertujuan melatih dan menguji guru untuk mendemonstrasikan keterampilan profesional dalam mengajar di abad 21 yang dapat memberdayakan teknologi dalam pembelajaran.\n\nKlik tautan berikut untuk melihat detail program : https://lab.karier.mu/sertifikasi/\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                                    "type": "nest_menu",
+                                                    "menus": {
+                                                        "TANYA": {
+                                                            "id": "2B24211",
+                                                            "current_menu": "2-2-4-2-1-1",
+                                                            "text": "",
+                                                            "type": "goto",
+                                                            "goto": "cs"
+                                                        },
+                                                        "BACK": {
+                                                            "id": "2B24212",
+                                                            "current_menu": "2-2-4-2-1-2",
+                                                            "text": "",
+                                                            "type": "goto",
+                                                            "goto": "parent"
+                                                        }
+                                                    }
+                                                },
+                                                "TANYA": {
+                                                    "id": "2B2422",
+                                                    "current_menu": "2-2-4-2-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "2B2423",
+                                                    "current_menu": "2-2-4-2-3",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                }
+                                            }
+                                        },
+                                        "TANYA": {
+                                            "id": "2B243",
+                                            "current_menu": "2-2-4-3",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "2B244",
+                                            "current_menu": "2-2-4-4",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "TANYA": {
+                                    "id": "2B25",
+                                    "current_menu": "2-2-5",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "BACK": {
+                                    "id": "2B26",
+                                    "current_menu": "2-2-6",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "TANYA": {
+                            "id": "2B3",
+                            "current_menu": "2-3",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "BACK": {
+                            "id": "2B4",
+                            "current_menu": "2-4",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "parent"
+                        }
+                    }
+                }
+            ],
+            "3": [
+                {
+                    "id": "3C",
+                    "current_menu": "3",
+                    "text": "Halo Sobat Kariermu, Kamu telah memilih menu Informasi Umum Kariermu.\n\nSilakan ketik angka yang sesuai pada menu dibawah ini dan ketik satu kali saja, ya, Sobat! Kami akan segera menjawab. 😊\n\n1. Background Kariermu\n2. Lokasi Kariermu\n3. Cara Daftar Di Kariermu\n4. Cara Menjalankan Program Di Kariermu\n5. Kendala\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "3C1",
+                            "current_menu": "3-1",
+                            "text": "Kariermu adalah platform peningkatan dan pengembangan karier dari Sekolahmu yang berbasis teknologi dan berkolaborasi untuk menyediakan program pelatihan bagi semua orang. Tujuan utama Kariermu yaitu menghubungkan semua orang kepada mentor terbaik, untuk membantu mereka mewujudkan mimpi dan karier impian di masa depan. Kariermu menyediakan berbagai program dengan mutu pelayanan yang berpihak kepada semua orang secara merata, serta menyediakan akses pelatihan terintegrasi digital dengan materi yang  dirancang oleh ahli dari berbagai bidang.\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "TANYA": {
+                                    "id": "3C11",
+                                    "current_menu": "3-1-1",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "BACK": {
+                                    "id": "3C12",
+                                    "current_menu": "3-1-2",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "3C2",
+                            "current_menu": "3-2",
+                            "text": "Kategori Jenjang atau Usia :\n\n1. Profesional\n2. OrangTua\n3. Guru/ Dosen / Tenaga Pendidik\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "TANYA": {
+                                    "id": "3C21",
+                                    "current_menu": "3-2-1",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "BACK": {
+                                    "id": "3C22",
+                                    "current_menu": "3-2-2",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "3": {
+                            "id": "3C3",
+                            "current_menu": "3-3",
+                            "text": "Untuk melakukan pendaftaran di Kariermu, silahkan mengikuti langkah – langkah berikut :\n\n1. Akses ke situs https://www.karier.mu/ melalui browser, atau unduh aplikasi kariermu di Playstore.\n2. Klik tombol “Masuk/Daftar” di kanan atas.\n3. Silahkan masukan data-data Sobat.\n4. Klik tombol checklist “Saya menyetujui ketentuan & kebijakan privasi”\n5. Klik Tombol Daftar\n6. Atau Sobat dapat memilih tombol “Daftar Dengan Google”\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "TANYA": {
+                                    "id": "3C31",
+                                    "current_menu": "3-3-1",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "BACK": {
+                                    "id": "3C32",
+                                    "current_menu": "3-3-2",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "4": {
+                            "id": "3C4",
+                            "current_menu": "3-4",
+                            "text": "Sobat Karier,\n\nJika anda ingin menjalankan program yang sudah dibeli, silahkan ikuti langkah – langkah berikut :\n\n1.Pada Halaman awal di situs Kariermu pilih menu “programmu” yang posisinya ada di kanan atas.\n2. Pilih program yang ingin dijalankan.\n3. Akan muncul berbagai jenis aktivitas di samping program. Kamu bisa mulai belajar dengan memilih topik dan aktivitas yang ada secara berurutan atau pun secara fleksibel.\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "TANYA": {
+                                    "id": "3C41",
+                                    "current_menu": "3-4-1",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "BACK": {
+                                    "id": "3C42",
+                                    "current_menu": "3-4-2",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "5": {
+                            "id": "3C5",
+                            "current_menu": "3-5",
+                            "text": "Halo Sobat Kariermu, Kamu telah memilih menu Kendala.\n\nSilakan ketik angka yang sesuai pada menu dibawah ini dan ketik satu kali saja, ya, Sobat! Kami akan segera menjawab. 😊\n\n1. Tidak Bisa Mendaftar Di Kariermu\n2. Tidak Dapat Login atau lupa password\n3. Tidak Dapat Melakukan Verifikasi Email\n4. Program Kariermu Hilang\n5. Progress Persentase Program Tidak Bertambah\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "3C51",
+                                    "current_menu": "3-5-1",
+                                    "text": "Sobat Karier,\n\nJika sobat mengalami kesulitan dalam melakukan pendaftaran dengan keterangan Email / No HP sudah pernah terdaftar, silahkan melakukan pendaftaran kembali dengan email / No HP yang berbeda.\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "3C511",
+                                            "current_menu": "3-5-1-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "3C512",
+                                            "current_menu": "3-5-1-2",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "3C52",
+                                    "current_menu": "3-5-2",
+                                    "text": "Sobat Karier,\n\nJika sobat tidak bisa login dikarenakan lupa password sobat bisa mengikuti langkah – langkah sebagai berikut :\n\n1. Pada halaman awal web https://www.karier.mu/, pilih tab “Masuk/Daftar”\n2. Pada langkah selanjutnya, pilih “Lupa kata sandi”\n3. Masukan alamat email yang terdaftar di Kariermu lalu klik “Lanjut”\n4. Periksa email yang sudah kami kirimkan ke alamat email yang sudah kamu cantumkan sebelumnya.\n5. Klik “Ubah Kata Sandi”\n6. Masukan kata sandi baru dan verifikasi kata sandi tersebut dengan memasukan kata sandi lagi\n7. Kembali kehalaman awal untuk login dengan email dan password yang baru.\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "3C521",
+                                            "current_menu": "3-5-2-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "3C522",
+                                            "current_menu": "3-5-2-2",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "id": "3C53",
+                                    "current_menu": "3-5-3",
+                                    "text": "Silakan ketik angka yang sesuai pada menu dibawah ini dan ketik satu kali saja, ya, Sobat! Kami akan segera menjawab. 😊\n\n1. Tidak menerima email kode verifikasi\n2. Kode Verifikasi Salah\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "1": {
+                                            "id": "3C531",
+                                            "current_menu": "3-5-3-1",
+                                            "text": "Sobat Karier,\n\nJika sobat tidak menerima email kode verifikasi mohon untuk perhatikan hal-hal berikut :\n\n1. Pastikan Email yang didaftarkan oleh user tidak typo dan emailnya valid.\n2. Jika tidak ada di kotak masuk, mohon dipastikan untuk cek di bagian promosi atau spam.\n3. Mohon pastikan jaringan internet yang digunakan oleh user stabil.\n4. Jika langkah – langkah di atas sudah dilakukan namun anda masih belum terima email untuk verifikasi, mohon dicoba berkala dengan meng klik “kirim verifikasi” kembali.\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "3C5311",
+                                                    "current_menu": "3-5-3-1-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "3C5312",
+                                                    "current_menu": "3-5-3-1-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "3C532",
+                                            "current_menu": "3-5-3-2",
+                                            "text": "Sobat Karier,\n\nJika sobat tidak dapat melakukan verifikasi email sobat, mohon perhatikan beberapa hal berikut :\n\n1. Pastikan Kode yang sobat masukan sesuai dengan kode yang dikirimkan di email sobat\n2. Pastikan kode tersebut tidak kadaluarsa\n3. Mohon pastikan jaringan internet yang digunakan oleh user stabil.\n4. Jika langkah – langkah di atas sudah dilakukan namun anda masih mengalami kendala, sobat dapat menghubungi live agent kami.\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "3C5321",
+                                                    "current_menu": "3-5-3-2-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "3C5322",
+                                                    "current_menu": "3-5-3-2-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                }
+                                            }
+                                        },
+                                        "TANYA": {
+                                            "id": "3C533",
+                                            "current_menu": "3-5-3-3",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "3C534",
+                                            "current_menu": "3-5-3-4",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        }
+                                    }
+                                },
+                                "4": {
+                                    "id": "3C54",
+                                    "current_menu": "3-5-4",
+                                    "text": "Sobat Karier,\n\nSebelumnya mohon pastikan Email yang anda gunakan untuk login ke web atau apps kariermu adalah Email yang sobat gunakan saat melakukan pembelian.\n\nJika program sobat masih belum ditemukan, sobat dapat menghubungi live agent kami.\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "3C541",
+                                            "current_menu": "3-5-4-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "3C542",
+                                            "current_menu": "3-5-4-2",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "5": {
+                                    "id": "3C5",
+                                    "current_menu": "3-5-1",
+                                    "text": "Sobat Karier,\n\nJika Progress Persentase Program Kamu tidak bertambah, padahal kamu sudah menjalankan aktivitas pada program kamu, jangan khawatir ya sobat. Sobat dapat mengikuti langkah - langkah berikut :\n\n1. Masuk ke tab penilaian yang berada di sebelah tab aktivitas\n2. Klik tombol “Hitung Ulang Partisipasi”\n3. Tunggu 1x24 jam, system akan melakukan perhitungan ulang pada progress partisipasi kamu\n4. Check Secara Berkala, Jika kendala kamu masih belum teratasi, kamu bisa menghubungi live agent kami.\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "3C51",
+                                            "current_menu": "3-5-1-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "3C52",
+                                            "current_menu": "3-5-1-2",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        }
+                                    }
+                                },
+                                "TANYA": {
+                                    "id": "3C56",
+                                    "current_menu": "3-5-6",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "BACK": {
+                                    "id": "3C57",
+                                    "current_menu": "3-5-7",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "TANYA": {
+                            "id": "3C6",
+                            "current_menu": "3-6",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "BACK": {
+                            "id": "3C7",
+                            "current_menu": "3-7",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "parent"
+                        }
+                    }
+                }
+            ],
+            "4": [
+                {
+                    "id": "4D",
+                    "current_menu": "4",
+                    "text": "Halo Sobat Kariermu, Kamu telah memilih menu Informasi Kartu Prakerja di Kariermu.\n\nSilakan ketik angka yang sesuai pada menu dibawah ini dan ketik satu kali saja, ya, Sobat! Kami akan segera menjawab. 😊\n\n1. Cara Membeli Program Kariermu Menggunakan Kartu Prakerja\n2. Kendala\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "4D1",
+                            "current_menu": "4-1",
+                            "text": "Silakan ketik angka yang sesuai pada menu dibawah ini dan ketik satu kali saja, ya, Sobat! Kami akan segera menjawab. 😊\n\n1. Cara 1 (Pembelian Program Mitra Di Platform Kariermu dan Menjalankan Program Di Platform Kariermu)\n2. Cara 2 (Pembelian Program Mitra di Platform Kariermu dan Menjalankan Program di Web Mitra Penyelenggara Program)\n3. Cara 3 (Pembelian Program Kariermu di Platform Mitra dan Menjalankan Program di Platform Kariermu)\n4. Cara 4 (Pembelian Program mitra di Platform Mitra Penyelenggara dan Menjalankan Aktifitas Program di Platform Kariermu)\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "4D11",
+                                    "current_menu": "4-1-1",
+                                    "text": "1. Buka aplikasi Kariermu atau masuk melalui website prakerja.karier.mu\n2. Klik “daftar” jika kamu belum memiliki akun, jika sudah mempunyai akun kamu bisa klik “masuk di sini\n3. Cari dan pilih program-program dari Lembaga Pelatihan yang diinginkan\n4. Bayar menggunakan kartu prakerja\n5. Setelah pembelian berhasil program yang sudah kamu beli, bisa kamu cek di menu programmu/kelasku\n6. Klik program tersebut dan kamu bisa memulai dan menyelesaikan seluruh aktivitas yang ada di dalam program tersebut hingga progres mencapai 100%\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "4D111",
+                                            "current_menu": "4-1-1-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "4D112",
+                                            "current_menu": "4-1-1-2",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "4D12",
+                                    "current_menu": "4-1-2",
+                                    "text": "1. Buka aplikasi Karier.mu atau masuk melalui website prakerja.karier.mu\n2. Klik “daftar” jika kamu belum memiliki akun, jika sudah mempunyai akun kamu bisa klik “masuk di sini“\n3. Pilih program-program dari Lembaga Pelatihan yang diinginkan\n4. Ikuti Langkah-langkah melihat kode voucher setelah melakukan pembelian di Karier.mu\n5. Masuk ke website Lembaga Pelatihan dari program yang kamu beli tersebut dan lakukan langkah-langkah berikut\na. Kunjungi website Lembaga Pelatihan dari masing-masing program\nb. Login di website tersebut\nc. Masukan kode voucher di kolom “Kode Voucher“\nd. Klik check “Kode Voucher“\ne. Klik “Dapatkan Voucher“\nf. Pelatihan sudah bisa kamu pelajari dan selesaikan hingga kamu medapatkan sertifikat dari Lembaga Pelatihan tersebut\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "4D121",
+                                            "current_menu": "4-1-2-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "4D122",
+                                            "current_menu": "4-1-2-2",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "id": "4D13",
+                                    "current_menu": "4-1-3",
+                                    "text": "1. Masuk ke Digital Platform yang kamu inginkan (Bukalapak, Tokopedia, Pintaria, PijarMahir)\n2. Cari dan piih program-program dari Lembaga Pelatihan Karier.mu\n3. Bayar dengan Kartu Prakerja,\n4. Setelah pembayaran berhasil cek kode voucher di menu riwayat transaksi dan kamu copy kode voucher tersebut\n5. Masuk ke aplikasi Karier.mu atau website prakerja.karier.mu\n6. Pilih menu “Tukar Voucher” yang ada di bagian profile\n7. Masukan kode voucher yang kamu miliki, dan klik “Tukar Kode Voucher”\n8. Setelah berhasil program pelatihan kamu akan ada di menu programmu/kelasku\n9. Klik program tersebut dan kamu bisa memulai dan menyelesaikan seluruh aktivitas yang ada di dalam program tersebut hingga progres mencapai 100%\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "4D131",
+                                            "current_menu": "4-1-3-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "4D132",
+                                            "current_menu": "4-1-3-2",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "4": {
+                                    "id": "4D14",
+                                    "current_menu": "4-1-4",
+                                    "text": "1. Masuk ke website Lembaga Pelatihan yang kamu inginkan (BakingWorld, Vokraf, L.A Academy, Cakra, DLL)\n2. Cari dan pilih program-program yang yang kamu inginkan\n3. Bayar dengan Kartu Prakerja,\n4. Setelah pembayaran berhasil cek kode voucher di menu riwayat transaksi dan copy kode voucher tersebut\n5. Masuk ke aplikasi Karier.mu atau website prakerja.karier.mu\n6. Pilih menu “Tukar Voucher” yang ada di bagian profile\n7. Masukan kode voucher yang kamu miliki, dan klik “Tukar Kode Voucher”\n8. Setelah berhasil program pelatihan kamu akan ada di menu programmu/kelasku\n9. Klik program tersebut dan kamu bisa memulai dan menyelesaikan seluruh aktivitas yang ada di dalam program tersebut hingga progres mencapai 100%\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "4D1411",
+                                            "current_menu": "4-1-4-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "4D1422",
+                                            "current_menu": "4-1-4-2",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "TANYA": {
+                                    "id": "4D15",
+                                    "current_menu": "4-1-5",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "BACK": {
+                                    "id": "4D16",
+                                    "current_menu": "4-1-6",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "4D2",
+                            "current_menu": "4-2",
+                            "text": "Silakan ketik angka yang sesuai pada menu dibawah ini dan ketik satu kali saja, ya, Sobat! Kami akan segera menjawab. 😊\n\n1. Kode OTP Saat Pembelian Program\n2. Sertifikat\n3. Tidak Bisa Mendaftar di Kariermu\n4. Tidak Dapat Login atau lupa password\n5. Tidak Dapat Melakukan Verifikasi Email\n6. Program Kariermu Hilang\n7. Progress Persentase Program Tidak Bertambah\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Menu* untuk kembali ke menu utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "4D21",
+                                    "current_menu": "4-2-1",
+                                    "text": "Silakan ketik angka yang sesuai pada menu dibawah ini dan ketik satu kali saja, ya, Sobat! Kami akan segera menjawab. 😊\n\n1. Tidak Menerima Kode OTP\n2. Kode OTP Tidak Dapat Digunakan\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "1": {
+                                            "id": "4D211",
+                                            "current_menu": "4-2-1-1",
+                                            "text": "Sobat Kariermu,\n\nJika kamu tidak menerima kode OTP saat kamu melakukan pembelian menggunakan kartu prakerja, kami sarankan agar sobat menghubungi pihak manajemen kartu prakerja karena hal tersebut merupakan kebijakan atau wewenang yang ada di pihak manajemen kartu prakerja\n\nBerikut kontak yang dapat sobat hubungi ke manajemen kartu prakerja :\n\nTelepon : 08001503001\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "4D2111",
+                                                    "current_menu": "4-2-1-1-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "4D2112",
+                                                    "current_menu": "4-2-1-1-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "4D212",
+                                            "current_menu": "4-2-1-2",
+                                            "text": "Sobat Kariermu,\n\nJika kode OTP tidak dapat digunakan saat kamu melakukan pembelian menggunakan kartu prakerja, kami sarankan agar sobat menghubungi pihak manajemen kartu prakerja karena hal tersebut merupakan kebijakan atau wewenang yang ada di pihak manajemen kartu prakerja\n\nBerikut Kontak yang dapat sobat hubungi ke manajemen kartu prakerja :\n\nTelepon : 08001503001\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "4D2121",
+                                                    "current_menu": "4-2-1-2-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "4D2122",
+                                                    "current_menu": "4-2-1-2-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                }
+                                            }
+                                        },
+                                        "TANYA": {
+                                            "id": "4D213",
+                                            "current_menu": "4-2-1-3",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "4D214",
+                                            "current_menu": "4-2-1-4",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "4D22",
+                                    "current_menu": "4-2-2",
+                                    "text": "Silakan ketik angka yang sesuai pada menu dibawah ini dan ketik satu kali saja, ya, Sobat! Kami akan segera menjawab. 😊\n\n1. Sertifikat Belum Muncul Di Dashboard Prakerja\n2. Sertifikat Belum Muncul di Akun Kariermu\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "1": {
+                                            "id": "4D221",
+                                            "current_menu": "4-2-2-1",
+                                            "text": "Sobat Kariermu,\n\n- Kariermu akan mengirimkan laporan penyelesaian pelatihan ke pihak Prakerja H+1 (hari kerja).\n- Untuk pelatihan yang menggunakan voucher, laporan akan dikirimkan setelah lembaga pelatihan megirimkan laporan penyelesaian ke Kariermu.\n- Laporan akan diproses maksimum 7×24 jam hari kerja (10 hari) setelah laporan penyelesaian pelatihan diterima oleh pihak Prakerja.\n- Pihak Prakerja akan menerbitkan sertifikat di dashboard kartu prakerja masing-masing peserta.\n- Kamu dapat langsung memberikan rating dan ulasan pada dashboard Prakerja setelah sertifikat muncul di dasboard Kartu Prakerja Kamu. Di dashboard prakerja, status pelatihan Kamu akan berubah menjadi “Menunggu Rating Ulasan” dan tombol “Tulis Ulasan” akan diaktifkan (berubah menjadi warna Biru) agar Kamu dapat mengisi ulasan yang telah disediakan.\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "4D2211",
+                                                    "current_menu": "4-2-2-1-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "4D2212",
+                                                    "current_menu": "4-2-2-1-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "4D222",
+                                            "current_menu": "4-2-2-2",
+                                            "text": "1. Pelatihan Kamu belum selesai, pastikan Kamu sudah menyelesaikan seluruh aktivitas sehingga progress bar mencapai 100%.\n2. Jika Kamu membeli pelatihan dengan skema voucher, kemungkinan lembaga pelatihan belum mengirimkan laporan penyelesaian ke Karier.mu.\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "4D2221",
+                                                    "current_menu": "4-2-2-2-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "4D2222",
+                                                    "current_menu": "4-2-2-2-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                }
+                                            }
+                                        },
+                                        "TANYA": {
+                                            "id": "4D223",
+                                            "current_menu": "4-2-2-3",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "4D224",
+                                            "current_menu": "4-2-2-4",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "id": "4D23",
+                                    "current_menu": "4-2-3",
+                                    "text": "Sobat Karier,\n\nJika sobat mengalami kesulitan dalam melakukan pendaftaran dengan keterangan Email / No HP sudah pernah terdaftar, silahkan melakukan pendaftaran kembali dengan email / No HP yang berbeda.\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "4D231",
+                                            "current_menu": "4-2-3-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "4D232",
+                                            "current_menu": "4-2-3-2",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "4": {
+                                    "id": "4D24",
+                                    "current_menu": "4-2-4",
+                                    "text": "Sobat Karier,\n\nJika sobat tidak bisa login dikarenakan lupa password sobat bisa mengikuti langkah – langkah sebagai berikut :\n\n1. Pada halaman awal web https://www.karier.mu/, pilih tab “Masuk/Daftar”\n2. Pada langkah selanjutnya, pilih “Lupa kata sandi”\n3. Masukan alamat email yang terdaftar di Kariermu lalu klik “Lanjut”\n4. Periksa email yang sudah kami kirimkan ke alamat email yang sudah kamu cantumkan sebelumnya.\n5. Klik “Ubah Kata Sandi”\n6. Masukan kata sandi baru dan verifikasi kata sandi tersebut dengan memasukan kata sandi lagi\n7. Kembali kehalaman awal untuk login dengan email dan password yang baru.\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "4D241",
+                                            "current_menu": "4-2-4-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "4D242",
+                                            "current_menu": "4-2-4-2",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "5": {
+                                    "id": "4D25",
+                                    "current_menu": "4-2-5",
+                                    "text": "Silakan ketik angka yang sesuai pada menu dibawah ini dan ketik satu kali saja, ya, Sobat! Kami akan segera menjawab. 😊\n\n1. Tidak menerima email kode verifikasi\n2. Kode Verifikasi Salah\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "1": {
+                                            "id": "4D251",
+                                            "current_menu": "4-2-5-1",
+                                            "text": "Sobat Karier,\n\nJika sobat tidak menerima email kode verifikasi mohon untuk perhatikan hal-hal berikut :\n\n1. Pastikan Email yang didaftarkan oleh user tidak typo dan emailnya valid.\n2. Jika tidak ada di kotak masuk, mohon dipastikan untuk cek di bagian promosi atau spam.\n3. Mohon pastikan jaringan internet yang digunakan oleh user stabil.\n4. Jika langkah – langkah di atas sudah dilakukan namun anda masih belum terima email untuk verifikasi, mohon dicoba berkala dengan meng klik “kirim verifikasi” kembali.\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "4D2511",
+                                                    "current_menu": "4-2-5-1-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "4D2512",
+                                                    "current_menu": "4-2-5-1-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "4D252",
+                                            "current_menu": "4-2-5-2",
+                                            "text": "Sobat Karier,\n\nJika sobat tidak dapat melakukan verifikasi email sobat, mohon perhatikan beberapa hal berikut :\n\n1. Pastikan Kode yang sobat masukan sesuai dengan kode yang dikirimkan di email sobat\n2. Pastikan kode tersebut tidak kadaluarsa\n3. Mohon pastikan jaringan internet yang digunakan oleh user stabil.\n4. Jika langkah – langkah di atas sudah dilakukan namun anda masih mengalami kendala, sobat dapat menghubungi live agent kami.\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "4D2521",
+                                                    "current_menu": "4-2-5-2-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "4D2522",
+                                                    "current_menu": "4-2-5-2-2",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                }
+                                            }
+                                        },
+                                        "TANYA": {
+                                            "id": "4D253",
+                                            "current_menu": "4-2-5-3",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "4D254",
+                                            "current_menu": "4-2-5-4",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        }
+                                    }
+                                },
+                                "6": {
+                                    "id": "4D26",
+                                    "current_menu": "4-2-6",
+                                    "text": "Sobat Karier,\n\nSebelumnya mohon pastikan Email yang anda gunakan untuk login ke web atau apps kariermu adalah Email yang sobat gunakan saat melakukan pembelian.\n\nJika program sobat masih belum ditemukan, sobat dapat menghubungi live agent kami.\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "4D261",
+                                            "current_menu": "4-2-6-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "4D262",
+                                            "current_menu": "4-2-6-2",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "7": {
+                                    "id": "4D27",
+                                    "current_menu": "4-2-7",
+                                    "text": "Sobat Karier,\n\nJika Progress Persentase Program Kamu tidak bertambah, padahal kamu sudah menjalankan aktivitas pada program kamu, jangan khawatir ya sobat. Sobat dapat mengikuti langkah - langkah berikut :\n\n1. Masuk ke tab penilaian yang berada di sebelah tab aktivitas\n2. Klik tombol “Hitung Ulang Partisipasi”\n3. Tunggu 1x24 jam, system akan melakukan perhitungan ulang pada progress partisipasi kamu\n4. Check Secara Berkala, Jika kendala kamu masih belum teratasi, kamu bisa menghubungi live agent kami.\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "4D271",
+                                            "current_menu": "4-2-7-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "4D272",
+                                            "current_menu": "4-2-7-2",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        }
+                                    }
+                                },
+                                "TANYA": {
+                                    "id": "4D28",
+                                    "current_menu": "4-2-8",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "BACK": {
+                                    "id": "4D29",
+                                    "current_menu": "4-2-9",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "TANYA": {
+                            "id": "4D3",
+                            "current_menu": "4-3",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "BACK": {
+                            "id": "4D4",
+                            "current_menu": "4-4",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "parent"
+                        }
+                    }
+                }
+            ],
+            "5": [
+                {
+                    "id": "5E",
+                    "current_menu": "5",
+                    "text": "Untuk informasi mengenai kemitraan serta penyediaan pelatihan program Kartu Prakerja, anda diharapkan dapat menghubungi:\n\nNarahubung: *Putri*\nEmail : *partnership@sekolahmu.co.id*\n\nKetik *Tanya* untuk menghubungi live agent kami\nKetik *Back* untuk kembali ke menu sebelumnya",
+                    "type": "nest_menu",
+                    "menus": {
+                        "TANYA": {
+                            "id": "5E1",
+                            "current_menu": "5-1",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "BACK": {
+                            "id": "5E2",
+                            "current_menu": "5-2",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "parent"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

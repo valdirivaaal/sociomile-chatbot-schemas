@@ -1,0 +1,133 @@
+{
+    "schemas": {
+        "default": {
+            "survey": {
+                "active": false
+            },
+            "reset_keys": [
+                "MENU"
+            ],
+            "load_conversation": "WabaTemplateConversation",
+            "top_level_question": [
+                {
+                    "id": "1",
+                    "text": "Konfirmasi Donasi",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "Konsultasi",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "Informasi",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "Program Rumah Zakat",
+                    "type": "actions"
+                }
+            ],
+            "MENU": [
+                {
+                    "id": "1",
+                    "text": "Konfirmasi Donasi",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "Konsultasi",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "Informasi",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "Program Rumah Zakat",
+                    "type": "actions"
+                }
+            ],
+            "1": [
+                {
+                    "id": "1A",
+                    "current_menu": "1",
+                    "text": "1. API Get No HP\n2. Doa\n3. Cross Selling\n4. Penutup",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "1A1",
+                            "current_menu": "1-1",
+                            "text": "1. Existing\n2. Baru",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "1A11",
+                                    "current_menu": "1-1-1",
+                                    "text": "ID Donatur: \nNama: \nAkad: \nTgl Donasi: \nNominal: \nBukti Transfer: \n",
+                                    "type": "text"
+                                },
+                                "2": {
+                                    "id": "1A12",
+                                    "current_menu": "1-1-2",
+                                    "text": "Nama Lengkap: \nNo Tlpn: \nEmail: \nAlamat: \nTTD: \nAkad: \nTgl Donasi: \nNominal: \nBukti Transfer: \n",
+                                    "type": "text"
+                                }
+                            }
+                        }
+                    }
+                }
+            ],
+            "2": [
+                {
+                    "id": "2B",
+                    "current_menu": "2",
+                    "text": "1. Cara Menghitung Zakat\n2. Cara Berdonasi\n3. Live Agent",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "2B1",
+                            "current_menu": "2-1",
+                            "text": "Kalkulator Zakat",
+                            "type": "text"
+                        }
+                    }
+                }
+            ],
+            "3": [
+                {
+                    "id": "3C",
+                    "current_menu": "3",
+                    "text": "1. Layanan Mustahik\n2. Pengajuan Penelitian\n3. Keluhan\n4. Unduh BSZ",
+                    "type": "nest_menu",
+                    "menus": {
+                        "3": {
+                            "id": "3C3",
+                            "current_menu": "3-3",
+                            "text": "1. Live Agent\n2. Input ticket",
+                            "type": "nest_menu",
+                            "menus": {
+
+                            }
+                        }
+                    }
+                }
+            ],
+            "4": [
+                {
+                    "id": "4D",
+                    "current_menu": "4",
+                    "text": "1. Insidental Bencana & Kemanusiaan\n2. Wakaf\n3. Beasiswa",
+                    "type": "nest_menu",
+                    "menus": {
+
+                    }
+                }
+            ]
+        }
+    }
+}

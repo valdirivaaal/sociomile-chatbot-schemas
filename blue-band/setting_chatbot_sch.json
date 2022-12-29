@@ -1,0 +1,1028 @@
+{
+    "schemas": {
+        "default": {
+            "survey": {
+                "active": false
+            },
+            "reset_keys": [
+                "MENU"
+            ],
+            "load_conversation": "WabaTemplateConversation",
+            "dual_language": true,
+            "language_localization": {
+                "ID": {
+                    "auto_close_msg": ""
+                },
+                "EN": {
+                    "auto_close_msg": ""
+                }
+            },
+            "top_level_questions": [
+                {
+                    "id": "ID",
+                    "text": "Bahasa",
+                    "type": "actions"
+                },
+                {
+                    "id": "EN",
+                    "text": "English",
+                    "type": "actions"
+                }
+            ],
+            "MENU": [
+                {
+                    "id": "ID",
+                    "text": "Bahasa",
+                    "type": "actions"
+                },
+                {
+                    "id": "EN",
+                    "text": "English",
+                    "type": "actions"
+                }
+            ],
+            "ID": [
+                {
+                    "id": "AA",
+                    "current_menu": "ID",
+                    "current_lang": "ID",
+                    "text": "Terima kasih sudah menghubungi Customer Care Upfield Profesional.",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "list",
+                    "next_bubble": [
+                        {
+                            "type": "text",
+                            "text": "Silakan pilih menu dibawah ini:"
+                        },
+                        {
+                            "type": "interactive_button",
+                            "text": "1. Tentang Upfield Profesional.\n2. Bergabung dengan komunitas kami\n3. Pemesanan Produk\n4. Berbicara dengan CS\n5. Konsultasi dengan chef kami",
+                            "menus": {
+                                "1": {
+                                    "id": "1",
+                                    "title": "Tentang Upfield Profesional"
+                                },
+                                "2": {
+                                    "id": "2",
+                                    "title": "Bergabung dengan komunitas kami"
+                                },
+                                "3": {
+                                    "id": "3",
+                                    "title": "Pemesanan Produk"
+                                },
+                                "4": {
+                                    "id": "4",
+                                    "title": "Berbicara dengan CS"
+                                },
+                                "5": {
+                                    "id": "5",
+                                    "title": "Konsultasi dengan chef kami"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "1": {
+                            "id": "1",
+                            "current_menu": "1-1",
+                            "title": "Tentang Upfield Profesional",
+                            "text": "Sejak 1871, kami senantiasa berupaya menciptakan alternatif yang lebih sehat untuk mentega, krim, dan minyak, melalui produk bercita rasa lezat yang tak kalah berkualitas dengan produk susu. Saat ini, dengan tantangan kolektif untuk membangun masa depan berkelanjutan, semakin penting untuk menyediakan produk nabati alami di dapur dan toko roti profesional. Produk inovatif yang menjadi inspirasi makanan lezat sekaligus bergizi dan lebih baik untuk bumi.\nSilakan kunjungi web kami untuk mengetahui tentang Upfield Profesional https://www.upfieldprofessional.com/id-id/produk",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "next_bubbles": [
+                                {
+                                    "type": "interactive_button",
+                                    "text": "Ketik angka *0* untuk kembali ke menu utama, angka *4* untuk terhubung dengan customer service, atau angka *5* untuk terhubung dengan cheff kami, ketik *END* untuk mengakhiri sesi",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama"
+                                        },
+                                        "4": {
+                                            "id": "4",
+                                            "title": "Terhubung ke Customer Service"
+                                        },
+                                        "5": {
+                                            "id": "5",
+                                            "title": "Terhubung ke Cheff"
+                                        }
+                                    }
+                                }
+                            ],
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "4": {
+                                    "id": "4",
+                                    "title": "Terhubung ke Customer Service",
+                                    "current_menu": "CS",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "5": {
+                                    "id": "5",
+                                    "title": "Terhubung ke Cheff",
+                                    "current_menu": "CHEFF",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cheff"
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "2",
+                            "current_menu": "1-2",
+                            "title": "Bergabung dengan komunitas kami",
+                            "text": "Bergabung bersama komunitas kami untuk usaha / bisnis Anda semakin mudah",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "Silahkan pilih salah satu menu dengan mengetikkan pilihan nomor di bawah ini (Contoh: 1) :"
+                                },
+                                {
+                                    "type": "interactive_button",
+                                    "text": "1. Facebook\n2. Instagram",
+                                    "menus": {
+                                        "1": {
+                                            "id": "1",
+                                            "title": "Facebook"
+                                        },
+                                        "2": {
+                                            "id": "2",
+                                            "title": "Instagram"
+                                        }
+                                    }
+                                }
+                            ],
+                            "menus": {
+                                "1": {
+                                    "id": "1",
+                                    "title": "Facebook",
+                                    "current_menu": "1-2-1",
+                                    "text": "Bergabung bersama kami, silahkan kunjungi tautan berikut: bit.ly/bluebandkitchenmasterindonesia",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive_button",
+                                            "text": "Ketik angka *0* untuk kembali ke menu utama, angka *4* untuk terhubung dengan customer service, atau angka *5* untuk terhubung dengan cheff kami, ketik *END* untuk mengakhiri sesi",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama"
+                                                },
+                                                "4": {
+                                                    "id": "4",
+                                                    "title": "Terhubung ke Customer Service"
+                                                },
+                                                "5": {
+                                                    "id": "5",
+                                                    "title": "Terhubung ke Cheff"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "4": {
+                                            "id": "4",
+                                            "title": "Terhubung ke Customer Service",
+                                            "current_menu": "CS",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "5": {
+                                            "id": "5",
+                                            "title": "Terhubung ke Cheff",
+                                            "current_menu": "CHEFF",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cheff"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "2",
+                                    "title": "Instagram",
+                                    "current_menu": "1-2-2",
+                                    "text": "Bergabung bersama kami, silahkan kunjungi tautan berikut: bit.ly/kitchenmasterindonesia",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive_button",
+                                            "text": "Ketik angka *0* untuk kembali ke menu utama, angka *4* untuk terhubung dengan customer service, atau angka *5* untuk terhubung dengan cheff kami, ketik *END* untuk mengakhiri sesi",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama"
+                                                },
+                                                "4": {
+                                                    "id": "4",
+                                                    "title": "Terhubung ke Customer Service"
+                                                },
+                                                "5": {
+                                                    "id": "5",
+                                                    "title": "Terhubung ke Cheff"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "4": {
+                                            "id": "4",
+                                            "title": "Terhubung ke Customer Service",
+                                            "current_menu": "CS",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "5": {
+                                            "id": "5",
+                                            "title": "Terhubung ke Cheff",
+                                            "current_menu": "CHEFF",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cheff"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "id": "3",
+                            "current_menu": "1-3",
+                            "title": "Pemesanan Produk",
+                            "text": "Terima kasih telah memilih produk-produk terbaik dari Upfield Profesional.\n\nUntuk mendapatkan produk-produk Upfield Profesional, silahkan pilih salah satu menu dengan mengetikkan pilihan nomor di bawah ini (Contoh: 1) :\n\n1. Tokopedia\n2. Shopee\n3. Daftarkan usaha kamu ke Distriibutor resmi",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "list",
+                            "next_bubbles": [
+                                {
+                                    "type": "interactive_button",
+                                    "text": "Ketik angka *0* untuk kembali ke menu utama, angka *4* untuk terhubung dengan customer service, atau angka *5* untuk terhubung dengan cheff kami, ketik *END* untuk mengakhiri sesi",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama"
+                                        },
+                                        "4": {
+                                            "id": "4",
+                                            "title": "Terhubung ke Customer Service"
+                                        },
+                                        "5": {
+                                            "id": "5",
+                                            "title": "Terhubung ke Cheff"
+                                        }
+                                    }
+                                }
+                            ],
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "1",
+                                    "current_menu": "1-3-1",
+                                    "text": "Sangat mudah untuk mendapatkan produk Upfield Profesional, silahkan kunjungi tautan berikut: bit.ly/bluebandofficialtokopedia",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive_button",
+                                            "text": "Ketik angka *0* untuk kembali ke menu utama, angka *4* untuk terhubung dengan customer service, atau angka *5* untuk terhubung dengan cheff kami, ketik *END* untuk mengakhiri sesi",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama"
+                                                },
+                                                "4": {
+                                                    "id": "4",
+                                                    "title": "Terhubung ke Customer Service"
+                                                },
+                                                "5": {
+                                                    "id": "5",
+                                                    "title": "Terhubung ke Cheff"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "4": {
+                                            "id": "4",
+                                            "title": "Terhubung ke Customer Service",
+                                            "current_menu": "CS",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "5": {
+                                            "id": "5",
+                                            "title": "Terhubung ke Cheff",
+                                            "current_menu": "CHEFF",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cheff"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "2",
+                                    "current_menu": "1-3-2",
+                                    "text": "Sangat mudah untuk mendapatkan produk Upfield Profesional. silahkan kunjungi tautan berikut dan nikmati promo yang tersedia : bit.ly/bluebandofficialshopee",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive_button",
+                                            "text": "Ketik angka *0* untuk kembali ke menu utama, angka *4* untuk terhubung dengan customer service, atau angka *5* untuk terhubung dengan cheff kami, ketik *END* untuk mengakhiri sesi",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama"
+                                                },
+                                                "4": {
+                                                    "id": "4",
+                                                    "title": "Terhubung ke Customer Service"
+                                                },
+                                                "5": {
+                                                    "id": "5",
+                                                    "title": "Terhubung ke Cheff"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "4": {
+                                            "id": "4",
+                                            "title": "Terhubung ke Customer Service",
+                                            "current_menu": "CS",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "5": {
+                                            "id": "5",
+                                            "title": "Terhubung ke Cheff",
+                                            "current_menu": "CHEFF",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cheff"
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "id": "3",
+                                    "current_menu": "1-3-3",
+                                    "text": "Anda bisa memilih salah satu area dibawah ini untuk mendaftarkan usaha kamu ke distributor resmi Upfield Profesional. Silahkan pilih salah satu menu dengan mengetikkan pilihan nomor di bawah ini (Contoh: 1) :\n\n1. Jabodetabek\n2. Jawa Barat\n3. Jawa Tengah + Daerah Istimewa Yogyakarta\n4. Jawa Timur\n5. Medan\n6. Bali",
+                                    "type": "sequences",
+                                    "required_data": [
+                                        {
+                                            "id": "1_3_SQ1",
+                                            "text": "Untuk mendaftarkan usaha pada  area yang sudah Anda pilih silahkan isi form dibawah ini :\n\nNama :\nNo telepon : \nAlamat :\nPropinsi :\nKota :\nKecamatan :\nKelurahan :\nNama usaha :\nJenis usaha (bakery, restoran, catering, martabak, dll) :\nRata-rata pemakaian margarin dalam 1 bulan berapa kg :",
+                                            "type": "text",
+                                            "index": "biodata",
+                                            "label": ""
+                                        },
+                                        {
+                                            "id": "1_3_SQ2",
+                                            "text": "Terima kasih atas konfirmasinya. Berikut detail informasi Anda :\n\nNama : Muhammad Farhan\nNo telepon :  081584019996\nAlamat : Jl. Kober no. 5 A RT 002/02 (Gg. H. Amir)\nPropinsi : DKI Jakarta\nKota : Jakarta Timur\nKecamatan :  Kramat Jati\nKelurahan : Balekambang\nNama usaha : Farhan bakery\nJenis usaha : bakery\nRata-rata pemakaian margarin dalam 1 bulan berapa kg : 10kg\n\nKetik *Ya* jika sudah sesuai dan *Tidak* jika belum sesuai.",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "YA": {
+                                                    "id": "YA",
+                                                    "current_menu": "1_3_SQ2_YA",
+                                                    "text": "Terima kasih atas konfirmasinya. \nBerikut kontak PIC sesuai area yang Anda pilih : Imbang ; 08xxxx (base on wilayah yg cust pilih diatas)\n\nKami akan memproses pendaftaran usaha Bapak/Ibu paling lambat dalam waktu 1x24 jam kerja. Jika dalam waktu tersebut belum ada konfirmasi, Bapak/Ibu dapat menghubungi Kami kembali.",
+                                                    "type": "text"
+                                                },
+                                                "TIDAK": {
+                                                    "id": "TIDAK",
+                                                    "current_menu": "1_3_SQ2_TIDAK",
+                                                    "text": "Terima kasih atas konfirmasinya. Mohon lengkapi detil data yang sesuai.\n\nNama :\nNo telepon : \nAlamat :\nPropinsi :\nKota :\nKecamatan :\nKelurahan :\nNama usaha :\nJenis usaha (bakery, restoran, catering, martabak, dll) :\nRata-rata pemakaian margarin dalam 1 bulan berapa kg :",
+                                                    "type": "text",
+                                                    "index": "biodata",
+                                                    "label": ""
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                "4": {
+                                    "id": "4",
+                                    "title": "Terhubung ke Customer Service",
+                                    "current_menu": "CS",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "5": {
+                                    "id": "5",
+                                    "title": "Terhubung ke Cheff",
+                                    "current_menu": "CHEFF",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cheff"
+                                }
+                            }
+                        },
+                        "4": {
+                            "id": "4",
+                            "current_menu": "1-4",
+                            "title": "Berbicara dengan CS",
+                            "text": "Mohon menunggu, sesaat lagi Bapak/Ibu akan terhubung dengan Customer Care Representative Kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "5": {
+                            "id": "5",
+                            "current_menu": "1-5",
+                            "title": "Konsultasi dengan chef kami",
+                            "text": "Untuk terhubung dengan cheff profesional kami, silahkan pilih salah satu cheff dibawah ini untuk berkonsultasi (Contoh, ketik: *1* untuk memilih opsi layanan).:",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "next_bubbles": [
+                                {
+                                    "type": "interactive_button",
+                                    "text": "1. Baking\n2. Cooking",
+                                    "menus": {
+                                        "1": {
+                                            "id": "1",
+                                            "title": "Baking"
+                                        },
+                                        "2": {
+                                            "id": "2",
+                                            "title": "Cooking"
+                                        }
+                                    }
+                                }
+                            ],
+                            "menus": {
+                                "1": {
+                                    "id": "1",
+                                    "title": "Baking",
+                                    "current_menu": "1-5-1",
+                                    "text": "Mohon menunggu, sesaat lagi Bapak/Ibu akan terhubung dengan Cheff Baking kami",
+                                    "type": "goto",
+                                    "goto": "chef_baking"
+                                },
+                                "2": {
+                                    "id": "2",
+                                    "title": "Cooking",
+                                    "current_menu": "1-5-2",
+                                    "text": "Mohon menunggu, sesaat lagi Bapak/Ibu akan terhubung dengan Cheff Cooking kami",
+                                    "type": "goto",
+                                    "goto": "chef_cooking"
+                                }
+                            }
+                        }
+                    }
+                }
+            ],
+            "EN": [
+                {
+                    "id": "BB",
+                    "current_menu": "EN",
+                    "current_lang": "EN",
+                    "text": "Thank you for contacting Upfield Professional Customer Care.",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "list",
+                    "next_bubble": [
+                        {
+                            "type": "text",
+                            "text": "Please select the menu below:"
+                        },
+                        {
+                            "type": "interactive_button",
+                            "text": "1. About Upfield Profesional.\n2. Join our community\n3. Product Order\n4. Talk to CS\n5. Consult to our chef",
+                            "menus": {
+                                "1": {
+                                    "id": "1",
+                                    "title": "About Upfield Profesional"
+                                },
+                                "2": {
+                                    "id": "2",
+                                    "title": "Join our community"
+                                },
+                                "3": {
+                                    "id": "3",
+                                    "title": "Product Order"
+                                },
+                                "4": {
+                                    "id": "4",
+                                    "title": "Talk to CS"
+                                },
+                                "5": {
+                                    "id": "5",
+                                    "title": "Consult to our chef"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "1": {
+                            "id": "1",
+                            "current_menu": "1-1",
+                            "title": "About Upfield Profesional",
+                            "text": "Since 1871, we have always strived to create healthier alternatives to butter, cream and oil, through delicious tasting products that are not inferior in quality to dairy products. Today, with the collective challenge of building a sustainable future, it is increasingly important to provide natural plant-based products in professional kitchens and bakeries. Innovative products that inspire delicious, nutritious and better food for the earth.\nPlease visit our website to know about Upfield Professional https://www.upfieldprofessional.com/en-id/products",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "next_bubbles": [
+                                {
+                                    "type": "interactive_button",
+                                    "text": "Type *0* to return to the main menu, *4* to connect with customer service, or *5* to connect with our cheff, type *END* to end the session",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Main Menu"
+                                        },
+                                        "4": {
+                                            "id": "4",
+                                            "title": "Connect with Customer Service"
+                                        },
+                                        "5": {
+                                            "id": "5",
+                                            "title": "Connect with Our Cheff"
+                                        }
+                                    }
+                                }
+                            ],
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Main Menu",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "4": {
+                                    "id": "4",
+                                    "title": "Connect with Customer Service",
+                                    "current_menu": "CS",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "5": {
+                                    "id": "5",
+                                    "title": "Connect with Our Cheff",
+                                    "current_menu": "CHEFF",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cheff"
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "2",
+                            "current_menu": "1-2",
+                            "title": "Join our community",
+                            "text": "Join our community to make your business easier",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "Please select one of the menu by typing the number option below (Example: 1) :"
+                                },
+                                {
+                                    "type": "interactive_button",
+                                    "text": "1. Facebook\n2. Instagram",
+                                    "menus": {
+                                        "1": {
+                                            "id": "1",
+                                            "title": "Facebook"
+                                        },
+                                        "2": {
+                                            "id": "2",
+                                            "title": "Instagram"
+                                        }
+                                    }
+                                }
+                            ],
+                            "menus": {
+                                "1": {
+                                    "id": "1",
+                                    "title": "Facebook",
+                                    "current_menu": "1-2-1",
+                                    "text": "Join with us, please visit the following link: bit.ly/bluebandkitchenmasterindonesia",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive_button",
+                                            "text": "Type *0* to return to the main menu, *4* to connect with customer service, or *5* to connect with our cheff, type *END* to end the session",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Main Menu"
+                                                },
+                                                "4": {
+                                                    "id": "4",
+                                                    "title": "Connect with Customer Service"
+                                                },
+                                                "5": {
+                                                    "id": "5",
+                                                    "title": "Connect with Our Cheff"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Main Menu",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "4": {
+                                            "id": "4",
+                                            "title": "Connect with Customer Service",
+                                            "current_menu": "CS",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "5": {
+                                            "id": "5",
+                                            "title": "Connect with Our Cheff",
+                                            "current_menu": "CHEFF",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cheff"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "2",
+                                    "title": "Instagram",
+                                    "current_menu": "1-2-2",
+                                    "text": "Join with us, please visit the following link: bit.ly/kitchenmasterindonesia",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive_button",
+                                            "text": "Type *0* to return to the main menu, *4* to connect with customer service, or *5* to connect with our cheff, type *END* to end the session",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Main Menu"
+                                                },
+                                                "4": {
+                                                    "id": "4",
+                                                    "title": "Connect with Customer Service"
+                                                },
+                                                "5": {
+                                                    "id": "5",
+                                                    "title": "Connect with Our Cheff"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Main Menu",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "4": {
+                                            "id": "4",
+                                            "title": "Connect with Customer Service",
+                                            "current_menu": "CS",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "5": {
+                                            "id": "5",
+                                            "title": "Connect with Our Cheff",
+                                            "current_menu": "CHEFF",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cheff"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "id": "3",
+                            "current_menu": "1-3",
+                            "title": "Product Order",
+                            "text": "Thank you for choosing the best product from Upfield Professional.\n\nTo get Upfield products, Please select one of the menu by typing the number option below (Example: 1) :\n\n1. Tokopedia\n2. Shopee\n3. Register your business with an authorized distributor",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "list",
+                            "next_bubbles": [
+                                {
+                                    "type": "interactive_button",
+                                    "text": "Type *0* to return to the main menu, *4* to connect with customer service, or *5* to connect with our cheff, type *END* to end the session",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Main Menu"
+                                        },
+                                        "4": {
+                                            "id": "4",
+                                            "title": "Connect with Customer Service"
+                                        },
+                                        "5": {
+                                            "id": "5",
+                                            "title": "Connect with Our Cheff"
+                                        }
+                                    }
+                                }
+                            ],
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Main Menu",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "1",
+                                    "current_menu": "1-3-1",
+                                    "text": "It's very easy to get Upfield Profesional products, please visit the following link: bit.ly/bluebandofficialtokopedia",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive_button",
+                                            "text": "Type *0* to return to the main menu, *4* to connect with customer service, or *5* to connect with our cheff, type *END* to end the session",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Main Menu"
+                                                },
+                                                "4": {
+                                                    "id": "4",
+                                                    "title": "Connect with Customer Service"
+                                                },
+                                                "5": {
+                                                    "id": "5",
+                                                    "title": "Connect with Our Cheff"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Main Menu",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "4": {
+                                            "id": "4",
+                                            "title": "Connect with Customer Service",
+                                            "current_menu": "CS",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "5": {
+                                            "id": "5",
+                                            "title": "Connect with Our Cheff",
+                                            "current_menu": "CHEFF",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cheff"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "2",
+                                    "current_menu": "1-3-2",
+                                    "text": "It's very easy to get Upfield Profesional products, please visit the following link and enjoy the available promos : bit.ly/bluebandofficialshopee",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive_button",
+                                            "text": "Type *0* to return to the main menu, *4* to connect with customer service, or *5* to connect with our cheff, type *END* to end the session",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Main Menu"
+                                                },
+                                                "4": {
+                                                    "id": "4",
+                                                    "title": "Connect with Customer Service"
+                                                },
+                                                "5": {
+                                                    "id": "5",
+                                                    "title": "Connect with Our Cheff"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Main Menu",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "4": {
+                                            "id": "4",
+                                            "title": "Connect with Customer Service",
+                                            "current_menu": "CS",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "5": {
+                                            "id": "5",
+                                            "title": "Connect with Our Cheff",
+                                            "current_menu": "CHEFF",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cheff"
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "id": "3",
+                                    "current_menu": "1-3-3",
+                                    "text": "You can select one of the areas below to register your business with an authorized Upfield Professional distributor. Please select one of the menu by typing the number option below (Example: 1)\n\n1. Jabodetabek\n2. Jawa Barat\n3. Jawa Tengah + Daerah Istimewa Yogyakarta\n4. Jawa Timur\n5. Medan\n6. Bali",
+                                    "type": "sequences",
+                                    "required_data": [
+                                        {
+                                            "id": "1_3_SQ1",
+                                            "text": "To register a business in your chosen area, please fill out the form below:\n\nName:\nPhone number:\nAddress :\nProvince :\nCity :\nSub-district :\nUrban village :\nBusiness Name:\nType of business (bakery, restaurant, catering, martabak, etc.):\nThe average use of margarine in 1 month how many kg:",
+                                            "type": "text",
+                                            "index": "biodata",
+                                            "label": ""
+                                        },
+                                        {
+                                            "id": "1_3_SQ2",
+                                            "text": "Thank you for the confirmation. Here are your details:\n\nName : Muhammad Farhan\nTel: 081584019996\nAddress : Jl. Kober no. 5 A RT 002/02 (Gg. H. Amir)\nProvince : DKI Jakarta\nCity : East Jakarta\nDistrict: Kramat Jati\nVillage: Balekambang\nBusiness name: Farhan bakery\nType of business: bakery\nThe average use of margarine in 1 month is how many kg: 10kg\n\nType *Yes* if it fits and *No* if it doesn't.",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "YA": {
+                                                    "id": "YA",
+                                                    "current_menu": "1_3_SQ2_YA",
+                                                    "text": "Thank you for the confirmation.\n\nThe following are the contacts for the PIC according to the area you selected: Imbang ; 08xxxxxx\n\nWe will process your business registration no later than 1x24 working hours. If within that time there is no confirmation, you can contact us again.",
+                                                    "type": "text"
+                                                },
+                                                "TIDAK": {
+                                                    "id": "TIDAK",
+                                                    "current_menu": "1_3_SQ2_TIDAK",
+                                                    "text": "Thank you for the confirmation. Please complete the correct details.\n\nName:\nPhone number:\nAddress :\nProvince :\nCity :\nSub-district :\nUrban village :\nBusiness Name:\nType of business (bakery, restaurant, catering, martabak, etc.):\nThe average use of margarine in 1 month how many kg:",
+                                                    "type": "text",
+                                                    "index": "biodata",
+                                                    "label": ""
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                "4": {
+                                    "id": "4",
+                                    "title": "Connect with Customer Service",
+                                    "current_menu": "CS",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "5": {
+                                    "id": "5",
+                                    "title": "Connect with Our Cheff",
+                                    "current_menu": "CHEFF",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cheff"
+                                }
+                            }
+                        },
+                        "4": {
+                            "id": "4",
+                            "current_menu": "1-4",
+                            "title": "Talk to CS",
+                            "text": "Please wait for a moment, you will be connected to our Customer Care Representative.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "5": {
+                            "id": "5",
+                            "current_menu": "1-5",
+                            "title": "Consult to our chef",
+                            "text": "To connect with our professional chefs, please select one of the cheff below for a consultation (For example, type: *1* to select a service option). :",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "next_bubbles": [
+                                {
+                                    "type": "interactive_button",
+                                    "text": "1. Baking\n2. Cooking",
+                                    "menus": {
+                                        "1": {
+                                            "id": "1",
+                                            "title": "Baking"
+                                        },
+                                        "2": {
+                                            "id": "2",
+                                            "title": "Cooking"
+                                        }
+                                    }
+                                }
+                            ],
+                            "menus": {
+                                "1": {
+                                    "id": "1",
+                                    "title": "Baking",
+                                    "current_menu": "1-5-1",
+                                    "text": "Please wait for a moment, you will be connected with our Baking Chef",
+                                    "type": "goto",
+                                    "goto": "chef_baking"
+                                },
+                                "2": {
+                                    "id": "2",
+                                    "title": "Cooking",
+                                    "current_menu": "1-5-2",
+                                    "text": "Please wait for a moment, you will be connected with our Cooking Chef",
+                                    "type": "goto",
+                                    "goto": "chef_cooking"
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

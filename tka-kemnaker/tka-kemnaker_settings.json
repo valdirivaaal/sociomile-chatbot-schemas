@@ -1,0 +1,1489 @@
+{
+    "schemas": {
+        "default": {
+            "survey": {
+                "active": false
+            },
+            "reset_keys": [
+                "0"
+            ],
+            "load_conversation": "WabaTemplateConversation",
+            "dual_language": true,
+            "language_localization": {
+                "ID": {
+                    "auto_close_msg": ""
+                },
+                "EN": {
+                    "auto_close_msg": ""
+                }
+            },
+            "expire_time": 5,
+            "top_level_questions": [
+                {
+                    "id": "1",
+                    "text": "Bahasa Indonesia",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "English",
+                    "type": "actions"
+                }
+            ],
+            "MAIN_MENU": [
+                {
+                    "id": "1",
+                    "text": "Bahasa Indonesia",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "English",
+                    "type": "actions"
+                }
+            ],
+            "DICTIONARY_KEYS": {},
+            "ID": [
+                {
+                    "id": "AA",
+                    "current_menu": "ID",
+                    "text": "Ada yang bisa kami bantu?\n\nSilakan pilih salah satu nomor atau opsi menu yang anda inginkan :\n1. Pendaftaran akun TKA Online.\n2. Hasil Penilaian Kelayakan RPTKA.\n3. Pengesahan RPTKA.\n4. Layanan Lainnya.\n5. Chat dengan petugas Layanan TIKA.",
+                    "current_lang": "ID",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "list",
+                    "menus": {
+                        "1": {
+                            "id": "1A",
+                            "current_menu": "ID-1",
+                            "title": "Pendaftaran akun TKA Online",
+                            "text": "Silakan pilih salah satu nomor atau opsi menu yang anda inginkan :\n\n1. Kendala dalam proses pendaftaran akun perusahaan.\n2. Permohonan usernam dan password tka-online.\n\nSilakan tekan *0* untuk kembali ke menu utama",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "ID-0"
+                                },
+                                "1": {
+                                    "id": "1",
+                                    "title": "Kendala dalam proses pendaftaran akun perusahaan",
+                                    "current_menu": "ID-1-1",
+                                    "text": "*1. saya sudah mencoba mendaftar, namun link verifikasi belum terkirim ke email, apa yang harus saya lakukan?*\nApabila ada kendala pendaftaran perusahaan (Link verifikasi pendaftaran belum terkirim ke email/pendaftaran tidak berhasil), silahkan lakukan pendaftaran ulang dengan menggunakan username, email, dan komputer yang berbeda dari sebelumnya. Terima Kasih\n\n*2. saya sedang mencoba mendaftar akun perusahaan namun ditolak, tertulis sudah ada nama perusahaan yang sama, apa yang harus saya lakukan?*\nPerusahaan anda sudah memiliki akun tka-online. Apabila anda tidak memiliki akses/lupa password ke akun perusahaan anda, silahkan kirim permohonan ke pptka.contact@gmail.com. Lampirkan surat permohonan dengan kop perusahaan dan tanda pengenal (ID Card) dari perusahaan\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "99": {
+                                            "id": "99",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "PARENT",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-1"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "2",
+                                    "title": "Kendala dalam proses pendaftaran akun perusahaan",
+                                    "current_menu": "ID-1-2",
+                                    "text": "*1. perusahaan kami sudah memiliki akun perusahaan, namun kami lupa untuk username dan passwordnya, apa yang harus saya lakukan?*\n\nApabila anda tidak memiliki akses/lupa password ke akun perusahaan anda, silahkan kirim permohonan ke pptka.contact@gmail.com. Lampirkan surat permohonan dengan kop perusahaan dan tand pengenal karyawan (ID Card) dari perusahaan\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "99": {
+                                            "id": "99",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "PARENT",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-1"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "2A",
+                            "current_menu": "ID-2",
+                            "title": "Hasil Penilaian Kelayakan RPTKA",
+                            "text": "Silahkan Pilih salah satu Nomor atau opsi menu yang anda inginkan :\n1. Persyaratan Permohonan HPK.\n2. Cara Pengajuan Permohonan HPK. 3. Proses Pengajuan yang masih belum bergerak.\n\nSilakan tekan *0* untuk kembali ke menu utama",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "ID-0"
+                                },
+                                "1": {
+                                    "id": "1",
+                                    "title": "Persyaratan Permohonan HPK",
+                                    "current_menu": "ID-2-1",
+                                    "text": "Silakan Pilih salah satu Nomor atau opsi menu yang anda inginkan :\n\n1. Permohonan Baru\n_Permohonan pekerjaan lebih dari 6 bulan._\n2. Permohonan Direksi\n3. Permohonan Jangka Pendek\n_Kurang dari 6 bulan_\n4. Permohonan Perpanjangan\n5. Permohonan non-DKPTKA\n\nSilakan tekan *0* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "list",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "1": {
+                                            "id": "1",
+                                            "title": "Permohonan Baru",
+                                            "current_menu": "ID-2-1-1",
+                                            "text": "*1. Surat permohonan Pengesahan RPTKA;\n2. Surat tugas atau surat kuasa dari pimpinan Pemberi Kerja TKA;\n3. NIB dan/atau izin usaha Pember Kerja TKA;\n4. Akta dan keputusan pengesahan pendirian dan/atau perubahan dari instansi yang berwenang;\n5. Bukti wajib lapor ketenagakerjaan di perusahaan;\n6. Domisili Pemberi Kerja TKA;\n7. Rancangan perjanjian kerja atau perjanjian lain; dan\n8. Bagan struktur organisasi perusahaan.*\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "button",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-0"
+                                                },
+                                                "99": {
+                                                    "id": "99",
+                                                    "title": "Menu Sebelumnya",
+                                                    "current_menu": "PARENT",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-2-1"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "2",
+                                            "title": "Permohonan Baru",
+                                            "current_menu": "ID-2-1-2",
+                                            "text": "*1. Surat permohonan Pengesahan RPTKA;\n2. Surat tugas atau surat kuasa dari pimpinan Pemberi TKA;\n3. NIB dan/atau izin usaha Pemberi Kerja TKA;\n4. Akta dan keputusan pengesahan pendirian dan/atau perubahan dari instansi yang berwenang;\n5. Bukti wajib lapor ketenagakerjaan di perusahaan;\n6. Domisili Pemberi Kerja TKA;\n7. Akta dan keputusan pengesahan pengangkatan sebagai Direksi; dan\n8. Bagan struktur organisasi perusahaan.*\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "button",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-0"
+                                                },
+                                                "99": {
+                                                    "id": "99",
+                                                    "title": "Menu Sebelumnya",
+                                                    "current_menu": "PARENT",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-2-1"
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "id": "3",
+                                            "title": "Permohonan Baru",
+                                            "current_menu": "ID-2-1-3",
+                                            "text": "*1. Surat permohonan Pengesahan RPTKA;\n2. Surat tugas atau surat kuasa dari pimpinan Pemberi Kerja TKA;\n3. NIB dan/atau izin usaha Pemberi Kerja TKA;\n4. Akta dan keputusan pengesahan pendirian dan/atau perubahan dari instansi yang berwenang;\n5. Bukti wajib lapor ketenagakerjaan di perusahaan;\n6. Domisili Pemberi Kerja TKA; dan\n7. Rancangan perjanjian kerja atau perjanjian lain.*\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "button",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-0"
+                                                },
+                                                "99": {
+                                                    "id": "99",
+                                                    "title": "Menu Sebelumnya",
+                                                    "current_menu": "PARENT",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-2-1"
+                                                }
+                                            }
+                                        },
+                                        "4": {
+                                            "id": "4",
+                                            "title": "Permohonan Baru",
+                                            "current_menu": "ID-2-1-4",
+                                            "text": "*1. Surat permohonan Perpanjangan Pengesahan RPTKA;\n2. Surat tugas atau surat kuasa dari pimpinan Pemberi Kerja TKA;\n3. NIB dan/atau izin usaha Pemberi Kerja TKA;\n4. Akta dan keputusan pengesahan pendirian dan/atau perubahan dari instansi yang berwenang;\n5. Bukti wajib lapor ketenagakerjaan di perusahaan;\n6. Domisili Pemberi Kerja TKA;\n7. Rancangan perjanjian kerja atau perjanjian lain; dan\n8. Bagan struktur organisasi perusahaan.\n9. Hasil Penilaian Kelayakan RPTKA dan Pengesahan RPTKA terakhir.*\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "button",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-0"
+                                                },
+                                                "99": {
+                                                    "id": "99",
+                                                    "title": "Menu Sebelumnya",
+                                                    "current_menu": "PARENT",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-2-1"
+                                                }
+                                            }
+                                        },
+                                        "5": {
+                                            "id": "5",
+                                            "title": "Permohonan Baru",
+                                            "current_menu": "ID-2-1-5",
+                                            "text": "*1. Surat permohonan Pengesahan RPTKA;\n2. Surat tugas atau surat kuasa dari pimpinan Pemberi Kerja TKA;\n3. NIB dan/atau izin usaha Pemberi Kerja TKA;\n4. Akta dan keputusan pengesahan pendirian dan/atau perubahan dari instansi yang berwenang;\n5. Bukti wajib lapor ketenagakerjaan di perusahaan;\n6. Domisili Pemberi Kerja TKA;\n7. Rancangan perjanjian kerja atau perjanjian lain;\n8. Bagan struktur organisasi perusahaan; dan\n9. Surat persetujuan dari kementerian/lembaga terkait untuk pembebasan DKPTKA.*\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "button",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-0"
+                                                },
+                                                "99": {
+                                                    "id": "99",
+                                                    "title": "Menu Sebelumnya",
+                                                    "current_menu": "PARENT",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-2-1"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "2",
+                                    "title": "Persyaratan Permohonan HPK",
+                                    "current_menu": "ID-2-2",
+                                    "text": "Silakan Pilih salah satu Nomor atau opsi menu yang anda inginkan :\n\n1. Bagaimana Cara Mengajukan Permohonan Baru (Pekerjaan lebih dari 6 bulan)\n2. Bagaimana Cara Mengajukan Permohonan Direksi / Komisaris.\n3. Bagaimana Cara Mengajukan Permohonan Jangka Pendek (Kurang dari 6 bulan)\n4. Bagaimana Cara Mengajukan Permohonan Perpanjangan\n5. Bagaimana Cara Mengajukan Permohonan non DKPTKA.\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "list",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "99": {
+                                            "id": "99",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "PARENT",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-2"
+                                        },
+                                        "1": {
+                                            "id": "1",
+                                            "title": "Bagaimana Cara Mengajukan Permohonan Baru (Pekerjaan lebih dari 6 bulan)",
+                                            "current_menu": "ID-2-2-1",
+                                            "text": "*Untuk pengajuan permohonan baru,*\n- Silahkan akses web : https://tka-online.kemnaker.go.id/\n- Jika sudah memiliki akun, silahkan login. Jika belum memiliki akun, silakan register.\n- Lalu pilih tab Pengajuan surat, Pilih Pengesahan RPTKA lalu pilih Pekerjaan Lebih dari 6 bulan\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "button",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-0"
+                                                },
+                                                "99": {
+                                                    "id": "99",
+                                                    "title": "Menu Sebelumnya",
+                                                    "current_menu": "PARENT",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-2-1"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "2",
+                                            "title": "Bagaimana Cara Mengajukan Permohonan Baru (Pekerjaan lebih dari 6 bulan)",
+                                            "current_menu": "ID-2-2-2",
+                                            "text": "*Untuk pengajuan permohonan baru dengan jabatan direktur/komisaris :*\n- Silahkan akses web : https://tka-online.kemnaker.go.id/\n- Jika sudah memiliki akun, silahkan login. Jika belum memiliki akun, silahkan register.\n- Lalu pilih tab Pengajuan surat, Pilih Pengesahan RPTKA lalu pilih Direktur/Komisaris\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "button",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-0"
+                                                },
+                                                "99": {
+                                                    "id": "99",
+                                                    "title": "Menu Sebelumnya",
+                                                    "current_menu": "PARENT",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-2-1"
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "id": "3",
+                                            "title": "Bagaimana Cara Mengajukan Permohonan Baru (Pekerjaan lebih dari 6 bulan)",
+                                            "current_menu": "ID-2-2-3",
+                                            "text": "*Untuk pengajuan permohonan dengan jangka waktu <6 bulan :*\n- Silahkan akses web : https://tka-online.kemnaker.go.id/\n- Jika sudah memiliki akun, silakan login. Jika belum memiliki akun, silakan register\n- Lalu pilih tab Pengajuan surat, Pilih Pengesahan RPTKA lalu pilih Sementara (1-6 bulan)\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "button",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-0"
+                                                },
+                                                "99": {
+                                                    "id": "99",
+                                                    "title": "Menu Sebelumnya",
+                                                    "current_menu": "PARENT",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-2-1"
+                                                }
+                                            }
+                                        },
+                                        "4": {
+                                            "id": "4",
+                                            "title": "Bagaimana Cara Mengajukan Permohonan Baru (Pekerjaan lebih dari 6 bulan)",
+                                            "current_menu": "ID-2-2-4",
+                                            "text": "*Untuk pengajuan permohonan perpanjangan :*\n- Silahkan akses web : https://tka-online.kemnaker.go.id/\n- Jika sudah memiliki akun, silahkan login. Jika belum memiliki akun, silahkan register.\n- Lalu pilih tab Pengajuan surat, Pilih Pengesahan RPTKA lalu pilih Perpanjangan.\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "button",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-0"
+                                                },
+                                                "99": {
+                                                    "id": "99",
+                                                    "title": "Menu Sebelumnya",
+                                                    "current_menu": "PARENT",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-2-1"
+                                                }
+                                            }
+                                        },
+                                        "5": {
+                                            "id": "5",
+                                            "title": "Bagaimana Cara Mengajukan Permohonan Baru (Pekerjaan lebih dari 6 bulan)",
+                                            "current_menu": "ID-2-2-5",
+                                            "text": "*Untuk pengajuan permohonan baru non DKPTKA :*\n- Silahkan akses web : https://tka-online.kemnaker.go.id/\n- Jika sudah memiliki akun, silahkan login. Jika belum memiliki akun, silahkan register.\n- Lalu pilih tab Pengajuan surat, Pilih Pengesahan RPTKA lalu pilih non DKPTKA.\n\n*Untuk pengajuan permohonan perpanjangan non DKPTKA :*\n- Silahkan akses web : https://tka-online.kemnaker.go.id/\n- Jika sudah memiliki akun, silahkan login. Jika belum memiliki akun, silahkan register.\n- Lalu pilih tab Pengajuan surat, Pilih Pengesahan RPTKA lalu pilih Perpanjangan non DKPTKA\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "button",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-0"
+                                                },
+                                                "99": {
+                                                    "id": "99",
+                                                    "title": "Menu Sebelumnya",
+                                                    "current_menu": "PARENT",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-2-1"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "id": "3",
+                                    "title": "Persyaratan Permohonan HPK",
+                                    "current_menu": "ID-2-3",
+                                    "text": "Silakan Pilih salah satu Nomor atau opsi menu yang anda inginkan :\n\n1. Pengajuan Saya Masih Tertulis Sedang di di Proses, apa yang harus saya lakukan?\n2. Pengajuan Saya Masih Tertulis Verifikasi, Apa yang harus saya lakukan?\n3. Pengajuan Saya Masih Tertulis Pengesahan Ekspos, Apa yang harus saya lakukan?\n4. Pengajuan Saya Masih Tertulis Print Draft Surat, Apa yang harus saya lakukan?\n5. Pengajuan Saya Masih Tertulis Pemeriksaan Subkoordinator, Apa yang harus saya lakukan?\n6. Pengajuan Saya Masih Tertulis Pemeriksaan, Koordinator, Apa yang harus saya lakukan?\n\nSilakan tekan *0* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "list",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "id": "3A",
+                            "current_menu": "ID-3",
+                            "title": "Pengesahan RPTKA",
+                            "text": "Silahkan Pilih salah satu Nomor atau opsi menu yang anda inginkan :\n\n1. Persyaratan Permohonan Pengesahan RPTKA.\n2. Cara Pengajuan Permohonan Pengesahan RPTKA.\n3. Proses Pengajuan yang masih belum bergerak.\n4. Jabatan Tidak Muncul atau Kota Jabatan sudah Habis.\n5. Kode Billing Pembayaran Pengesahan RPTKA sudah kadaluarsa.\n6. Upload Bukti Pembayaran\n7. Pengiriman Belum Berhasil Terkirim ke Imigrasi.\n8. Kode Billing Terhutang\n9. Penerbitan Kode Billing PNBP Visa.\n10. Pengesahan RPTKA Tidak Dapat di cetak\n\nSilahkan tekan *0* untuk Kembali ke menu utama",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "list",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "ID-0"
+                                },
+                                "1": {
+                                    "id": "1",
+                                    "title": "Persyaratan Permohonan Pengesahan RPTKA",
+                                    "current_menu": "ID-3-1",
+                                    "text": "Silahkan Pilih salah satu Nomor atau opsi menu yang anda  inginkan :\n\n1. Permohonan Baru (Permohonan Pekerjaan lebih dari 6 bulan)\n2. Permohonan Direksi / Komisaris\n3. Permohonan Jangka Pendek (Kurang dari 6 bulan)\n4. Permohonan Perpanjangan\n5. Permohonan non DKPTKA bagi pemberi kerja TKA pada instansi Pemerintah, Perwakilan Negara Asing, dan Badan Internasional.\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "list",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "99": {
+                                            "id": "99",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "PARENT",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-3"
+                                        },
+                                        "1": {
+                                            "id": "1",
+                                            "title": "Permohonan Baru (Permohonan Pekerjaan lebih dari 6 bulan)",
+                                            "current_menu": "ID-3-1-1",
+                                            "text": "*Dokumen TKA*\n- Ijazah Pendidikan;\n- Sertifikat kompetensi atau pengalaman kerja;\n- perjanjian kerja atau perjanjian lain dengan pemberi kerja TKA;\n- paspor kebangsaan TKA (berwarna); dan\n- pas foto berwarna ukuran 4x6 dengan latar belakang merah.\n\n*Dokumen Pemberi Kerja TKA*\n- surat permohonan pengesahan RPTKA;\n- surat tugas atau surat kuasa dari pimpinan Pemberi TKA;\n- surat permohonan kepada Direktur Jenderal Imigrasi untuk pengajuan visa dalam rangka bekerja;\n- rekening koran atau tabungan Pemberi Kerja TKA;\n- surat persetujuan Rp0,00 (nol rupiah);\n- surat keterangan penunjukan Tenaga Kerja Pendamping TKA; dan\n- surat pernyataan Pemberi Kerja TKA sebagai penjamin TKA.\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "list",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-0"
+                                                },
+                                                "99": {
+                                                    "id": "99",
+                                                    "title": "Menu Sebelumnya",
+                                                    "current_menu": "PARENT",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-3-1"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "2",
+                                            "title": "Permohonan Direksi / Komisaris",
+                                            "current_menu": "ID-3-1-2",
+                                            "text": "*Dokumen TKA*\n- perjanjian kerja atau perjanjian lain dengan pemberi kerja TKA atau akta pengangkatan TKA sebagai direksi;\n- paspor kebangsaan TKA (berwarna); dan\n- pas foto berwarna ukuran 4x6 dengan latar belakang merah.\n\n*Dokumen Pemberi Kerja TKA*\n- surat permohonan pengesahan RPTKA;\n- surat tugas atau surat kuasa dari pimpinan Pemberi Kerja TKA;\n- surat permohonan kepada Direktur Jenderal Imigrasi untuk pengajuan visa dalam rangka bekerja;\n- rekening koran atau tabungan Pemberi Kerja TKA; dan\n- surat pernyataan Pemberi Kerja TKA sebagai penjamin TKA.\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "list",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-0"
+                                                },
+                                                "99": {
+                                                    "id": "99",
+                                                    "title": "Menu Sebelumnya",
+                                                    "current_menu": "PARENT",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-3-1"
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "id": "3",
+                                            "title": "Permohonan Jangka Pendek (Kurang dari 6 bulan)",
+                                            "current_menu": "ID-3-1-3",
+                                            "text": "*Dokumen TKA*\n- perjanjian kerja atau perjanjian lain dengan pemberi kerja TKA;\n- paspor kebangsaan TKA (berwarna); dan\n- pas foto berwarna ukuran 4x6 dengan latar belakang merah.\n\n*Dokumen Pemberi Kerja TKA*\n- surat permohonan pengesahan RPTKA;\n- surat tugas atau surat kuasa dari pimpinan Pemberi Kerja TKA;\n- surat permohonan kepada Direktur Jenderal Imigrasi untuk pengajuan visa dalam rangka bekerja;\n- rekening koran atau tabungan Pemberi Kerja TKA; dan\n- surat pernyataan Pemberi Kerja TKA sebagai penjamin TKA\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "list",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-0"
+                                                },
+                                                "99": {
+                                                    "id": "99",
+                                                    "title": "Menu Sebelumnya",
+                                                    "current_menu": "PARENT",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-3-1"
+                                                }
+                                            }
+                                        },
+                                        "4": {
+                                            "id": "4",
+                                            "title": "Permohonan Perpanjangan",
+                                            "current_menu": "ID-3-1-4",
+                                            "text": "*- Surat permohonan perpanjangan Pengesahan RPTKA;\n- Surat tugas atau surat kuasa dari pimpinan Pemberi Kerja TKA;\n- Domisili Pemberi Kerja TKA;\n- Bukti wajib lapor ketenagakerjaan di perusahaan;dan\n- Laporan realisasi pelaksanaan pendidikan dan pelatihan kerja bagi tenaga kerja Indonesia sesuai dengan kualifikasi jabatan yang diduduki oleh TKA*\n- Perjanjian kerja atau perjanjian lain dengan Pem Kerja TKA;\n- Izin tinggal yang masih berlaku;\n- Paspor kebangsaan TKA (berwarna); dan\n- Pas foto berwarna ukuran 4x6 dengan latar belakang merah.\n- Laporan pelaksanaan pendampingan TKA.\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "list",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-0"
+                                                },
+                                                "99": {
+                                                    "id": "99",
+                                                    "title": "Menu Sebelumnya",
+                                                    "current_menu": "PARENT",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-3-1"
+                                                }
+                                            }
+                                        },
+                                        "5": {
+                                            "id": "5",
+                                            "title": "Permohonan non DKPTKA bagi pemberi kerja TKA pada instansi Pemerintah, Perwakilan Negara Asing, dan Badan Internasional.",
+                                            "current_menu": "ID-3-1-5",
+                                            "text": "*Surat permohonan dan alasan penggunaan TKA;\n- Surat tugas atau surat kuasa dari pimpinan Pemberi Kerja TKA;\n- Perjanjian kerja atau perjanjian lain; dan/atau\n- Surat persetujuan dari instansi yang berwenang.*\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "list",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-0"
+                                                },
+                                                "99": {
+                                                    "id": "99",
+                                                    "title": "Menu Sebelumnya",
+                                                    "current_menu": "PARENT",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-3-1"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "2",
+                                    "title": "Cara Pengajuan Permohonan Pengesahan RPTKA",
+                                    "current_menu": "ID-3-2",
+                                    "text": "Silahkan Pilih salah satu Nomor atau opsi menu yang anda  inginkan :\n\n1. Bagaimana Cara Mengajukan Permohonan Baru (Pekerjaan  Lebih dari 6 Bulan)\n2. Bagaimana Cara Mengajukan Permohonan Direksi/Komisaris.\n3. Bagaimana Cara Mengajukan Permohonan Jangka Pendek (Kurang dari 6 bulan)\n4. Bagaimana Cara Mengajukan Permohonan Perpanjangan\n5. Bagaimana Cara Mengajukan Permohonan non DKPTKA\n6. Bagaimana Cara Mengajukan Permohonan non DKPTKA bagi pemberi Kerja TKA pada instansi pemerintah, perwakilan negara asing, dan Badan Internasional.\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "list",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "99": {
+                                            "id": "99",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "PARENT",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-3"
+                                        },
+                                        "1": {
+                                            "id": "1",
+                                            "title": "Bagaimana Cara Mengajukan Permohonan Baru (Pekerjaan  Lebih dari 6 Bulan)",
+                                            "current_menu": "ID-3-2-1",
+                                            "text": "*Untuk pengajuan permohonan baru :*\n- Silahkan akses web : https://tka-online.kemnaker.go.id/\n- Jika sudah memiliki akun, silahkan login. Jika belum memiliki akun, silahkan register.\n- Lalu pilih tab Pengajuan surat, Pilih Pengesahan RPTKA lalu pilih Pekerjaan Lebih dari 6 bulan\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "list",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-0"
+                                                },
+                                                "99": {
+                                                    "id": "99",
+                                                    "title": "Menu Sebelumnya",
+                                                    "current_menu": "PARENT",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-3-2"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "2",
+                                            "title": "Bagaimana Cara Mengajukan Permohonan Direksi/Komisaris",
+                                            "current_menu": "ID-3-2-2",
+                                            "text": "*untuk pengajuan permohonan baru dengan jabatan direktur/komisaris :*\n- Silahkan akses web : https://tka-online.kemnaker.go.id/\n- Jika sudah memiliki akun, silahkan login. Jika belum memiliki akun, silahkan register.\n- Lalu pilih tab Pengajuan surat, Pilih Pengesahan RPTKA lalu pilih Direktur/Komisaris\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "list",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-0"
+                                                },
+                                                "99": {
+                                                    "id": "99",
+                                                    "title": "Menu Sebelumnya",
+                                                    "current_menu": "PARENT",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-3-2"
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "id": "3",
+                                            "title": "Bagaimana Cara Mengajukan Permohonan Jangka Pendek (Kurang dari 6 bulan)",
+                                            "current_menu": "ID-3-2-3",
+                                            "text": "*Untuk pengajuan permohonan dengan jangka waktu <6 bulan :*\n- Silahkan akses web : https://tka-online.kemnaker.go.id/\n- Jika sudah memiliki akun, silahkan akun, silahkan register.\n- Lalu pilih tab Pengajuan surat, Pilih Pengesahan RPTKA lalu pilih Sementara (1-6 bulan)\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "list",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-0"
+                                                },
+                                                "99": {
+                                                    "id": "99",
+                                                    "title": "Menu Sebelumnya",
+                                                    "current_menu": "PARENT",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-3-2"
+                                                }
+                                            }
+                                        },
+                                        "4": {
+                                            "id": "4",
+                                            "title": "Bagaimana Cara Mengajukan Permohonan Perpanjangan 5. Bagaimana Cara Mengajukan Permohonan non DKPTKA",
+                                            "current_menu": "ID-3-2-4",
+                                            "text": "*Untuk pengajuan permohonan perpanjangan :*\n- Silahkan akses web : https://tka-online.kemnaker.go.id/\n- Jika sudah memiliki akun, silahkan login. Jika belum memiliki akun, silahkan register.\n- Lalu pilih tab Pengajuan surat, Pilih Pengesahan RPTKA lalu pilih Perpanjangan.\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "list",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-0"
+                                                },
+                                                "99": {
+                                                    "id": "99",
+                                                    "title": "Menu Sebelumnya",
+                                                    "current_menu": "PARENT",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-3-2"
+                                                }
+                                            }
+                                        },
+                                        "5": {
+                                            "id": "5",
+                                            "title": "Bagaimana Cara Mengajukan Permohonan non DKPTKA",
+                                            "current_menu": "ID-3-2-5",
+                                            "text": "*Untuk pengajuan permohonan baru non DKPTKA :*\n- Silahkan akses web : https://tka-online.kemnaker.go.id/\n- Jika sudah memiliki akun, silahkan login. Jika belum memiliki akun, silahkan register.\n- Lalu pilih tab Pengajuan surat, Pilih Pengesahan RPTKA lalu pilih non DKPTKA.\n\n*Untuk pengajuan permohonan perpanjangan non DKPTKA :*\n- Silahkan akses web : https://tka-online.kemnaker.go.id/\n- Jika sudah memiliki akun, silahkan login. Jika belum memiliki akun, silahkan register.\n- Lalu pilih tab Pengajuan surat, Pilih Pengesahan RPTKA lalu Perpanjangan non DKPTKA\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "list",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-0"
+                                                },
+                                                "99": {
+                                                    "id": "99",
+                                                    "title": "Menu Sebelumnya",
+                                                    "current_menu": "PARENT",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-3-2"
+                                                }
+                                            }
+                                        },
+                                        "6": {
+                                            "id": "6",
+                                            "title": "Bagaimana Cara Mengajukan Permohonan non DKPTKA bagi pemberi Kerja TKA pada instansi pemerintah, perwakilan negara asing, dan Badan Internasional",
+                                            "current_menu": "ID-3-2-6",
+                                            "text": "*Untuk pengajuan permohonan non HPK :*\n- Silahkan akses web : https://tka-online.kemnaker.go.id/\n- Jika sudah memiliki akun, silahkan login. Jika belum memiliki akun, silahkan register.\n- Lalu pilih tab Pengajuan surat, Pilih Pengesahan RPTKA lalu pilih non HPK.\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "list",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-0"
+                                                },
+                                                "99": {
+                                                    "id": "99",
+                                                    "title": "Menu Sebelumnya",
+                                                    "current_menu": "PARENT",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-3-2"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "id": "3",
+                                    "title": "Proses Pengajuan yang masih belum bergerak",
+                                    "current_menu": "ID-3-3",
+                                    "text": "Silahkan Pilih salah satu Nomor atau opsi menu yang anda  inginkan :\n\n\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "list",
+                                    "menus": {
+
+                                    }
+                                },
+                                "4": {
+                                    "id": "4",
+                                    "title": "Jabatan Tidak Muncul atau Kota Jabatan sudah Habis",
+                                    "current_menu": "ID-3-4",
+                                    "text": "Untuk kendala terkait jabatan yang tidak muncul saat pengajuan pengesahan RPTKA, mohon lampirkan nomor barcode HPK.",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "list",
+                                    "menus": {
+
+                                    }
+                                },
+                                "5": {
+                                    "id": "5",
+                                    "title": "Kode Billing Pembayaran Pengesahan RPTKA sudah kadaluarsa",
+                                    "current_menu": "ID-3-5",
+                                    "text": "*saya sudah mencoba untuk membayarkan kode billing, namun petugas bank mengatakan bahwa kode billing sudah kadaluarsa.apa yang harus saya lakukan?*\n\nKode billing yang telah diterbitkan akan expired setelah 3 hari kerja. Jika sudah dinyatakan expired saat pembayaran ke Bank, maka pengaju bisa menunggu hingga kode billing tersebut expired di system kami setelah 5 hari kerja sejak penerbitan awal. Setelah kode billing kadaluarsa di system, silahkan klik proses kembali untuk mendapatkan persetujuan direktur, dan terbit kode billing terbaru. Terima kasih\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "list",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "99": {
+                                            "id": "99",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "PARENT",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-3"
+                                        }
+                                    }
+                                },
+                                "6": {
+                                    "id": "6",
+                                    "title": "Upload Bukti Pembayaran",
+                                    "current_menu": "ID-3-6",
+                                    "text": "*saya sudah melakukan pembayaran kode billing untuk permohonan pengesahan RPTKA perpanjangan, ketika saya akan mengupload bukti bayar, kolom untuk upload bukti bayar tidak muncul, apa yang harus saya lakukan?*\n\nUntuk proses perpanjangan, setelah pembayaran maka harus mengupload bukti pembayaran tersebut. Mohon sebutkan nomor barcode pengesahan RPTKA melalui menu Utama nomor 5 Chat dengan petugas Layanan TIKA. akan kami teruskan ke petugas kolom upload bukti pembayaran tersebut.\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "list",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "99": {
+                                            "id": "99",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "PARENT",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-3"
+                                        }
+                                    }
+                                },
+                                "7": {
+                                    "id": "7",
+                                    "title": "Pengiriman Belum Berhasil Terkirim ke Imigrasi",
+                                    "current_menu": "ID-3-7",
+                                    "text": "*Saya sudah melakukan pembayaran, namun sampai saat ini pengajuan saya belum berhasil terkirim ke imigrasi. apa yang harus saya lakukan?*\n\nUntuk permohonan pengesahan RPTKA dengan kode billing yang sudah dibayarkan namun belum terkirim ke imigrasi, dapat diinfokan melalui petugas hotline dan mohon lampirkan nomor barcode pengesahan RPTKA tersebut melalui menu Utama nomor 5 Chat dengan petugas Layanan TIKA. akan kami teruskan ke petugas bagian sistem untuk dimunculkan kolom upload bukti pembayaran tersebut.\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "list",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "99": {
+                                            "id": "99",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "PARENT",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-3"
+                                        }
+                                    }
+                                },
+                                "8": {
+                                    "id": "8",
+                                    "title": "Kode Billing Terhutang",
+                                    "current_menu": "ID-3-8",
+                                    "text": "*pengajuan pengesahan RPTKA saya ditolak, tertulis terdapat kode Pengiriman belum berhasil billing terhutang. apa yang harus saya lakukan?*\n\nUntuk permohonan kode billing terhutang, dapat diajukan dan dikonfirmasi terlebih dahulu kepada petugas hotline dengan melampirkan nomor barcode pengesahan RPTKA.\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "list",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "99": {
+                                            "id": "99",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "PARENT",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-3"
+                                        }
+                                    }
+                                },
+                                "9": {
+                                    "id": "9",
+                                    "title": "Penerbitan Kode Billing PNBP Visa",
+                                    "current_menu": "ID-3-9",
+                                    "text": "*dapat disampaikan bahwa untuk Penerbitan Billing PNBP Visa adalah kewenangan dari Imigirasi, bisa langsung diinformasikan ke imigrasi melalui email visa@imigrasi.go.id. Demikian. terima kasih*\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "list",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "99": {
+                                            "id": "99",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "PARENT",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-3"
+                                        }
+                                    }
+                                },
+                                "10": {
+                                    "id": "10",
+                                    "title": "Pengesahan RPTKA Tidak Dapat di cetak",
+                                    "current_menu": "ID-3-10",
+                                    "text": "*Pengesahan RPTKA sudah selesai pembayaran dan sudah terkirim ke imigrasi, namun masih belum bisa dicetak, tertulis pengajuan IMTA melebihi RPTKA. apa yang harus saya lakukan?*\n\nMohon maaf atas kendala yang dihadapi, untuk kendala Pengesahan RPTKA yang tidak dapat dicetak dikarenakan masa berlaku pengesahan RPTKA melebihi masa berlaku Hasil Penilaian Kelayakan (HPK). Bisa diinfokan nomor barcode pengesahan RPTKA yang tidak dapat dicetak melalui menu Utama nomor 5 Chat dengan petugas Layanan TIKA. Selanjutnya akan kami bantu untuk perbaikan data isian masa berlaku, agar pengesahan RPTKA bisa dicetak.\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "list",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "99": {
+                                            "id": "99",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "PARENT",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-3"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "4": {
+                            "id": "4A",
+                            "current_menu": "ID-4",
+                            "title": "Layanan Lainnya",
+                            "text": "Silahkan Pilih salah satu Nomor atau opsi menu yang anda inginkan :\n\n1. TA03\n2. Ralat Lokasi Kerja & Alamat Perusahaan\n3. Ralat Alamat Tinggal TKA\n4. Ralat Nomor Passport serta masa Berlaku\n5. Perubahan Alamat Email tka-online\n6. Pembatalan RPTKA/HPK\n7. Pencabutan Notifikasi / Pengesahan RPTKA\n8. Penarikan DKPTKA\n9. Kewajiban Lapor Keberadaan TKA\n10. Pembuatan PJP3TKA\n11. Wajib Lapor Ketenagakerjaan\n12. Revisi Data Visa\n\nSilahkan tekan *0* untuk Kembali ke menu utama",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "list",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "ID-0"
+                                },
+                                "1": {
+                                    "id": "1",
+                                    "title": "TA03",
+                                    "current_menu": "ID-4-1",
+                                    "text": "*1. Apa yang dimaksud dengan TA03?*\nTA03 adalah rekomendasi yang diterbitkan oleh Direktorat Pengendalian Penggunaan TKA untuk melakukan perubahan jabatan atau perubahan sponsor.\n\n*2. Persyaratan TA03*\nUntuk persyaratan TA03 :\n1. surat permohonan\n2. surat kuasa\n3. akte perusahaan\n4. RPTKA baru\n5. Notifikasi TKA sebelumnya\n6. ITAS/ITAP TKA yang masih berlaku\n\n*3. Cara pengajuan TA03*\nAlur proses pengajuan alih jabatan/alih sponsor sebagai berikut :\n1. Ajukan HPK RPTKA Baru dengan jabatan baru TKA\n2. Setelah RPTKA terbit silahkan ajukan TA03 (alih jabatan/alih sponsor) kirim ke loket.pptka@gmail.com\n3. Setelah SK TA03 terbit, ajukan Pengesahan RPTKA Pemegang Izin Tinggal Jabatan/Alih Sponsor)\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "list",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "99": {
+                                            "id": "99",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "PARENT",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-4"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "2",
+                                    "title": "Ralat Lokasi Kerja & Alamat Perusahaan",
+                                    "current_menu": "ID-4-2",
+                                    "text": "*Untuk permohonan perubahan alamat perusahaan ataupun ralat lokasi kerja, dapat diajukan melalui email loket.pptka@gmail.com, dengan persyaratan sebagai berikut:*\n\n1. Surat permohonan (disebutkan perubahan/penambahan lokasi dari apa menjadi apa)\n2. Surat tugas/kuasa\n3. Fotokopi RPTKA\n4. Surat keterangan domisili/kontrak kerja/purchase order untuk lokasi yang akan ditambahkan\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "list",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "99": {
+                                            "id": "99",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "PARENT",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-4"
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "id": "3",
+                                    "title": "Ralat Alamat Tinggal TKA",
+                                    "current_menu": "ID-4-3",
+                                    "text": "*Untuk permohonan perubahan alamat tempat tinggal TKA, mohon lampirkan nomor barcode pengesahan RPTKA beserta alamat baru TKA melalui menu Utama nomor 5 Chat dengan petugas Layanan TIKA, yang selanjutnya akan kami bantu ralat alamatnya.*\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "list",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "99": {
+                                            "id": "99",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "PARENT",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-4"
+                                        }
+                                    }
+                                },
+                                "4": {
+                                    "id": "4",
+                                    "title": "Ralat Nomor Passport serta masa Berlaku",
+                                    "current_menu": "ID-4-4",
+                                    "text": "*Untuk perubahan nomor passport TKA, mohon lampirkan nomor barcode pengesahan RPTKA beserta lampiran passport terbaru milik TKA melalui menu Utama nomor 5 Chat dengan petugas Layanan TIKA, yang selanjutnya akan kami bantu ralat alamatnya.*\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "list",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "99": {
+                                            "id": "99",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "PARENT",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-4"
+                                        }
+                                    }
+                                },
+                                "5": {
+                                    "id": "5",
+                                    "title": "Perubahan Alamat Email tka-online",
+                                    "current_menu": "ID-4-5",
+                                    "text": "*Pergantian alamat email bisa anda langsung lakukan dari akun TKA Online anda, bisa anda pilih dari PROFILE -> GANTI ALAMAT EMAIL*\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "list",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "99": {
+                                            "id": "99",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "PARENT",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-4"
+                                        }
+                                    }
+                                },
+                                "6": {
+                                    "id": "6",
+                                    "title": "Pembatalan RPTKA/HPK",
+                                    "current_menu": "ID-4-6",
+                                    "text": "*Untuk pembatalan RPTKA/HPK Hasil Penilaian Kelayakan, dapat diajukan melalui email kami pptka.contact@gmail.com dengan melampirkan dokumen sebagai berikut :\n1. Surat permohonan dari perusahaan (Ttd di atas materai)\n2. Surat Kuasa (Ttd di atas materai)\n3. RPTKA/HPK yang akan dibatalkan*\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "list",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "99": {
+                                            "id": "99",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "PARENT",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-4"
+                                        }
+                                    }
+                                },
+                                "7": {
+                                    "id": "7",
+                                    "title": "Pencabutan Notifikasi / Pengesahan RPTKA",
+                                    "current_menu": "ID-4-7",
+                                    "text": "*Untuk permohonan pencabutan notifikasi/ pengesahan RPTKA, dapat diajukan melalui sistem tka-online dengan memilih menu : Pengajuan Surat -> Notifikasi -> Pencabutan Dengan melampirkan persyaratan :*\n1. Surat permohonan pencabutan Notifikasi dari Pemberi Kerja TKA\n2. Surat Kuasa atau Surat Tugas (dilengkapi identitas pemberi dan penerima kuasa/tugas, yang masih berlaku)\n3. Notifikasi yang akan dicabut\n4. Bukti setor DKPTKA\n5. ITAS/ITAP\n6. Paspor\n7. Bukti ERP/MERP atau Stempel/Stiker EPO atau\n8. Bukti Surat Pemutusan Hubungan Kerja/Surat Pengunduran diri atau Surat Keterangan Meninggal Dunia.\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "list",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "99": {
+                                            "id": "99",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "PARENT",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-4"
+                                        }
+                                    }
+                                },
+                                "8": {
+                                    "id": "8",
+                                    "title": "Penarikan DKPTKA",
+                                    "current_menu": "ID-4-8",
+                                    "text": "*Apakah semua bentuk pengajuan dapat diajukan penarikan DKPTKA?*\nBerdasarkan Peraturan Menteri Ketenagakerjaan Nomor 20 Tahun 2019 Pasal 6, dapat kami infokan bahwa Penarikan DKPTKA dapat dilakukan untuk permohonan Notifikasi/Pengesahan RPTKA Baru dengan kondisi TKA batal datang ke Indonesia.\n\n*Apa saja persyaratan untuk mengajukan penarikan DKPTKA?*\n- Surat pencabutan notifikasi\n- Bukti setor DKPTKA\n- Bukti yang menyatakan TKA batal datang ke Indonesia diterbitkan oleh instansi yang berwenang\n- Rekening koran bank yang masih aktif atas nama Pemberi Kerja TKA dalam bentuk dolar Amerika Serikat\n- Surat kuasa dari Pimpinan Pemberi Kerja TKA bermaterai Rp 10.000,00 (sepuluh ribu rupiah) jika dikuasakan\n- Nomor Pokok Wajib Pajak Pemberi Kerja TKA\n\n*Bagaimana cara mengajukan permohonan penarikan DKPTKA?\nUntuk permohonan penarikan DKPTKA, dapat diajukan melalui sistem tka-online dengan cara :*\n- Silahkan akses web : https://tka-online.kemnaker.go.id/\n- Jika sudah memiliki akun, silahkan login. Jika belum memiliki akun, silahkan register.\n- Pengajuan Surat -> Notifikasi -> Penarikan\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "list",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "99": {
+                                            "id": "99",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "PARENT",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-4"
+                                        }
+                                    }
+                                },
+                                "9": {
+                                    "id": "9",
+                                    "title": "Kewajiban Lapor Keberadaan TKA",
+                                    "current_menu": "ID-4-9",
+                                    "text": "*Kewajiban Lapor Keberadaan TKA tidak diamanatkan untuk dilaporkan, namun yang perlu dicermati ialah kewajiban menyampaikan Laporan Penggunaan TKA secara berkala tahunan (annual report) atau jika penggunaan TKA berakhir/kontrak kerja atau pekerjaan berakhir (Pasal 32 ayat (1), Peraturan Pemerintah 34/2021) laporan penggunaan TKA disampaikan melalui email tu.pptka@gmail.com*\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "list",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "99": {
+                                            "id": "99",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "PARENT",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-4"
+                                        }
+                                    }
+                                },
+                                "10": {
+                                    "id": "10",
+                                    "title": "Pembuatan PJP3TKA",
+                                    "current_menu": "ID-4-10",
+                                    "text": "*Pengajuan oleh perusahaan langsung\nUntuk perusahan langsung pengguna TKA, mohon lampirkan :*\n1.akta pendirian perusahan (cover plus10 halaman pertama)\n2.surat penunjukan petugas yang di tujukan ke sesditjen binapenta dan PKK(max 2 petugas)\n3.ktp petugas\n4.foto petugas 4X6 (background merah)\nUntuk pengajuan melalui email ptsabinapenta@gmail.com\n\n*Pengajuan untuk perusahaan jasa/agent\nUntuk Perusahaan Jasa/agent*\n1.KTP direktur perusahaan\n2.Akta Pendirian(cover depan plus 10 halaman pertama)\n3.surat penunjukan petugas yang di tujukan ke sesditjen binapenta dan pkk\n4.Izin Lokasi dari OSS\n5.NIB dari OSS\n6.NPWP Perusahaan\n7.Wajib Lapor Ketenagakerjaan\n8.KTP Petugas\n9.Foto petugas 4X6 background Merah\n10.Foto Plang Perusahaan\n11.Lap 10 bulan Terakhir(untuk perpanjangan)\nUntuk pengajuan melalui email ptsabinapenta@gmail.com Terima kasih.\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "list",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "99": {
+                                            "id": "99",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "PARENT",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-4"
+                                        }
+                                    }
+                                },
+                                "11": {
+                                    "id": "11",
+                                    "title": "Wajib Lapor Ketenagakerjaan",
+                                    "current_menu": "ID-4-11",
+                                    "text": "*Pengajuan wajib lapor ketenagakerjaan*\nPenyampaian wajib lapor ketengakerjaan dilakukan secara online melalui website wajiblapor.kemnaker.go.id\n\n*Konsultasi mengenai wajib lapor ketenagakerjaan*\nUntuk konsultasi mengenai wajib lapor ketenagakerjaan, dapat menghubungi *support@kemnaker.go.id*\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "list",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "99": {
+                                            "id": "99",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "PARENT",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-4"
+                                        }
+                                    }
+                                },
+                                "12": {
+                                    "id": "12",
+                                    "title": "Revisi Data Visa",
+                                    "current_menu": "ID-4-12",
+                                    "text": "*Apabila terdapat perubahan/revisi data pada visa, maka bisa dilakukan proses pengiriman ulang jika evisa sudah selesai diproses dan sudah terbit. Untuk perubahan/revisi data pada visa mohon lampirkan nomor barcode pengesahan RPTKA, evisa, serta infokan data apa saja yang akan diperbaiki. Selanjutnya akan kami bantu teruskan ke petugas sistem untuk dilakukan proses pengiriman kembali ke imigrasi. Terima kasih.*\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "list",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "99": {
+                                            "id": "99",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "PARENT",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-4"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "id": "5A",
+                            "current_menu": "ID-5",
+                            "title": "Chat dengan petugas Layanan TIKA",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "cs"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

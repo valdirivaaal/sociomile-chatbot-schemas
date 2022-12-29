@@ -1,0 +1,17 @@
+{
+    "active": true,
+    "mode": "basic",
+    "greetingMessage": "",
+    "exit_keyword": "Terima kasih atas data yang terlah diisi, tim kami akan segera menghubungi kamu",
+    "order_keywords": ["NAMA", "NO TELPON", "NO RESI", "SEBAGAI PENGIRIM / PENERIMA", "NAMA BARANG", "ALAMAT PENERIMA"],
+    "order_reply_msg": "",
+    "to_cs_keyword": "",
+    "response_cs_keyword": "Jangan khawatir Poppers, Popi akan membantu :)",
+    "listCommandMessage": "",
+    "contactCsMessage": "",
+    "prefixGreeting": "",
+    "notUnderstandMessage": "",
+    "check_office_hour": true,
+    "concat_greeting_and_menu": true,
+    "no_ofh_bot_msg": ""
+}

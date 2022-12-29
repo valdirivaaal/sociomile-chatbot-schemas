@@ -1,0 +1,851 @@
+{
+    "schemas": {
+        "default": {
+            "survey": {
+                "active": false
+            },
+            "reset_keys": [
+                "MENU"
+            ],
+            "load_conversation": "WabaTemplateConversation",
+            "dual_language": true,
+            "language_localization": {
+                "ID": {
+                    "auto_close_msg": "Terima kasih telah menghubungi Customer Care Pristine8.6+. Tetap jaga kesehatan dengan memastikan pH tubuhmu seimbang dengan Pristine8.6+"
+                },
+                "EN": {
+                    "auto_close_msg": "Thank you for contacting Pristine8.6+ Customer Care. Stay healthy by ensuring your body's pH level is balanced with Pristine8.6+"
+                },
+                "JP": {
+                    "auto_close_msg": ""
+                }
+            },
+            "top_level_questions": [
+                {
+                    "id": "ID",
+                    "text": "Bahasa",
+                    "type": "actions"
+                },
+                {
+                    "id": "EN",
+                    "text": "English",
+                    "type": "actions"
+                },
+                {
+                    "id": "JP",
+                    "text": "日本語",
+                    "type": "actions"
+                }
+            ],
+            "MENU": [
+                {
+                    "id": "ID",
+                    "text": "Bahasa",
+                    "type": "actions"
+                },
+                {
+                    "id": "EN",
+                    "text": "English",
+                    "type": "actions"
+                },
+                {
+                    "id": "JP",
+                    "text": "日本語",
+                    "type": "actions"
+                }
+            ],
+            "ID": [
+                {
+                    "id": "AA",
+                    "current_menu": "ID",
+                    "text": "Terima kasih sudah menghubungi Customer Care Pristine8.6+. Silahkan pilih salah satu menu dengan mengetikkan pilihan nomor di bawah ini (Contoh: 1) :\n1. Informasi Produk\n2. Order\n3. Keluhan\n4. Ingin Menjadi kemitraan\n5. Berbicara dengan CS",
+                    "current_lang": "ID",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "list",
+                    "next_bubble": [
+                        {
+                            "type": "text",
+                            "text": "Pilihan Anda?"
+                        }
+                    ],
+                    "menus": {
+                        "1": {
+                            "id": "1A",
+                            "current_menu": "1-1",
+                            "text": "Pristine8.6+ adalah air minum pH tinggi yang sudah memenuhi standar BPOM (pH > 8.6), diproduksi dengan teknologi ionisasi  No. 1 Jepang dari Nihon Trim menghasilkan mikro molekul baik yang mudah diserap oleh tubuh membantu seimbangkan pH tubuh.",
+                            "type": "nest_menu",
+                            "interactive_type": "button",
+                            "interactive_message": true,
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "pH tubuh seimbang, bantu jaga imunitas."
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "Kami sedang ada promo menarik bulan Agustus 2022 yaitu “Beli 2 Galon + Isi RP. 90,000”"
+                                },
+                                {
+                                    "type": "interactive_button",
+                                    "text": "Apakah anda tertarik untuk order?",
+                                    "menus": {
+                                        "ORDER": {
+                                            "id": "ORDER",
+                                            "title": "Order"
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Menu Utama"
+                                        }
+                                    }
+                                }
+                            ],
+                            "menus": {
+                                "ORDER": {
+
+                                },
+                                "MENU": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "2A",
+                            "title": "Order",
+                            "current_menu": "1-2",
+                            "text": "Terima kasih telah memilih Pristine8.6+, air minum pH tinggi yang baik untuk jaga kesehatan tubuhmu. Untuk pemesanan silahkan isi form pada link berikut https://pristineofficial.com/cara-pembelian",
+                            "type": "sequences",
+                            "required_data": [
+                                {
+                                    "id": "1_SQ1",
+                                    "text": "Terima kasih telah memesan Pristine8.6+, berikut detail pemesanan Bapak/Ibu \nNama : {{1}}\nEmail : {{2}}\nProvinsi : {{3}}\nKota : {{4}}\nKecamatan : {{5}}\nKelurahan : {{6}}\nKode pos : {{7}}\nAlamat Lengkap : {{8}}\nNo. WA : {{9}}\nKode Promo : {{10}}\nDetil Pesanan : {{11}}",
+                                    "type": "nest_menu",
+                                    "interactive_type": "button",
+                                    "interactive_message": true,
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive_button",
+                                            "text": "Apakah detil pemesanan di atas sudah sesuai?",
+                                            "menus": {
+                                                "TIDAK": {
+                                                    "id": "TIDAK",
+                                                    "title": "Tidak"
+                                                },
+                                                "YA": {
+                                                    "id": "YA",
+                                                    "title": "Ya"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "menus": {
+                                        "TIDAK": {
+                                            "id": "TIDAK",
+                                            "title": "Tidak",
+                                            "current_menu": "1_SQ1_TIDAK",
+                                            "text": "Terima kasih atas konfirmasinya. Mohon lengkapi detil pemesanan yang sesuai\nNama : {{1}}\nEmail : {{2}}\nProvinsi : {{3}}\nKota : {{4}}\nKecamatan : {{5}}\nKelurahan : {{6}}\nKode pos : {{7}\nAlamat Lengkap : {{8}}\nNo. WA : {{9}}\nKode Promo : {{10}}\nDetil Pesanan : {{11}}",
+                                            "index": "order",
+                                            "label": "",
+                                            "type": "text",
+                                            "validation": {
+                                                "status": true,
+                                                "text": "Maaf, data yang anda kirimkan tidak sesuai. Mohon melengkapi data-data berikut dengan benar :\nNama : {{1}}\nEmail : {{2}}\nProvinsi : {{3}}\nKota : {{4}}\nKecamatan : {{5}}\nKelurahan : {{6}}\nKode pos : {{7}\nAlamat Lengkap : {{8}}\nNo. WA : {{9}}\nKode Promo : {{10}}\nDetil Pesanan : {{11}}",
+                                                "type": "input",
+                                                "method": "",
+                                                "error": {
+                                                    "text": "Maaf, data yang anda kirimkan tidak sesuai. Mohon melengkapi data-data berikut dengan benar :\nNama : {{1}}\nEmail : {{2}}\nProvinsi : {{3}}\nKota : {{4}}\nKecamatan : {{5}}\nKelurahan : {{6}}\nKode pos : {{7}\nAlamat Lengkap : {{8}}\nNo. WA : {{9}}\nKode Promo : {{10}}\nDetil Pesanan : {{11}}"
+                                                }
+                                            }
+                                        },
+                                        "YA": {
+                                            "id": "YA",
+                                            "title": "Ya",
+                                            "current_menu": "1_SQ1_YA",
+                                            "text": "Terima kasih atas konfirmasinya.\nNomor pesanan Bapak/Ibu : {{No Pesanan}}\nKami akan memproses pemesanan Bapak/Ibu paling lambat dalam waktu 3x24 jam kerja. Jika dalam waktu tersebut belum ada pengiriman, Bapak/Ibu dapat menghubungi Kami kembali di nomor WhatsApp Customer Care Pristine8.6+",
+                                            "type": "text"
+                                        }
+                                    }
+                                },
+                                {
+                                    "id": "1_SQ3",
+                                    "type": "nest_menu",
+                                    "text": "Salam sehat Bapak/Ibu {{1}},\nTerima kasih telah mempercayakan air minum Anda bersama Pristine8.6+ Mohon konfirmasinya, apakah pesanan Bapak/Ibu sudah diterima ?",
+                                    "interactive_type": "button",
+                                    "interactive_message": true,
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive_button",
+                                            "text": "",
+                                            "menus": {
+                                                "TIDAK": {
+                                                    "id": "TIDAK",
+                                                    "title": "Tidak"
+                                                },
+                                                "YA": {
+                                                    "id": "YA",
+                                                    "title": "Ya"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "menus": {
+                                        "TIDAK": {
+                                            "id": "TIDAK",
+                                            "title": "Tidak",
+                                            "current_menu": "1_SQ3_TIDAK",
+                                            "text": "Mohon maaf untuk ketidaknyamanannya. \nKami akan segera menindak lanjuti hal ini ke tim terkait kami. Semoga pesanan Bapak/Ibu dapat segera di terima. Terima kasih",
+                                            "type": "text"
+                                        },
+                                        "YA": {
+                                            "id": "YA",
+                                            "title": "Ya",
+                                            "current_menu": "1_SQ3_YA",
+                                            "text": "Senang mendengarnya.\nSemoga Bapak/Ibu {{1}} selalu sehat dan fit setelah rutin mengonsumsi air minum Pristine8.6+ \nKami dengan senang hati menerima masukan dan saran agar Pristine8.6+ selalu dapat memberikan produk dan layanan terbaik. \nKami tunggu pemesanan berikutnya. Terima kasih",
+                                            "type": "text"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "3": {
+                            "id": "3A",
+                            "current_menu": "1-3",
+                            "text": "Apa jenis keluhan Bapak/Ibu yang dapat kami bantu?",
+                            "type": "nest_menu",
+                            "interactive_type": "button",
+                            "interactive_message": true,
+                            "next_bubbles": [
+                                {
+                                    "type": "interactive_button",
+                                    "text": "",
+                                    "menus": {
+                                        "PRODUK": {
+                                            "id": "PRODUK",
+                                            "title": "Produk"
+                                        },
+                                        "ORDER": {
+                                            "id": "ORDER",
+                                            "title": "Order"
+                                        }
+                                    }
+                                }
+                            ],
+                            "menus": {
+                                "PRODUK": {
+                                    "id": "PRODUK",
+                                    "current_menu": "1-3-1",
+                                    "title": "Produk",
+                                    "text": "Untuk keluhan produk, silahkan isi form pada link berikut :\nwww.pristineofficial.com",
+                                    "type": "sequences",
+                                    "required_data": [
+                                        {
+                                            "id": "1_3_SQ1",
+                                            "text": "Terima kasih, keluhan Anda sudah kami terima. Mohon kesediaannya menunggu, Tim customer service kami akan segera menghubungi Bapak/Ibu dalam 1X24 jam.",
+                                            "type": "text"
+                                        }
+                                    ]
+                                },
+                                "ORDER": {
+
+                                }
+                            }
+                        },
+                        "4": {
+                            "id": "4A",
+                            "current_menu": "1-4",
+                            "text": "Silahkan pilih jenis kemitraan yang Bapak/Ibu inginkan",
+                            "type": "nest_menu",
+                            "interactive_type": "button",
+                            "interactive_message": true,
+                            "next_bubbles": [
+                                {
+                                    "type": "interactive_button",
+                                    "text": "",
+                                    "menus": {
+                                        "AGEN": {
+                                            "id": "AGEN",
+                                            "title": "Agen"
+                                        },
+                                        "DISTRIBUTOR": {
+                                            "id": "DISTRIBUTOR",
+                                            "title": "Distributor"
+                                        }
+                                    }
+                                }
+                            ],
+                            "menus": {
+                                "AGEN": {
+                                    "id": "AGEN",
+                                    "title": "Menjadi Agen",
+                                    "current_menu": "1-4-1",
+                                    "text": "Silakan Bapak/Ibu melengkapi data berikut:\nNama:\nAlamat :\nNomor WhatsApp yang dapat dihubungi:\nArea cover yang diinginkan :",
+                                    "type": "input"
+                                },
+                                "DISTRIBUTOR": {
+                                    "id": "DISTRIBUTOR",
+                                    "title": "Menjadi Distributor",
+                                    "current_menu": "1-4-2",
+                                    "text": "Silakan Bapak/Ibu melengkapi data berikut:\nNama:\nAlamat :\nNomor WhatsApp yang dapat dihubungi:\nArea cover yang diinginkan : ",
+                                    "type": "input"
+                                }
+                            }
+                        },
+                        "5": {
+                            "id": "5A",
+                            "current_menu": "1-5",
+                            "text": "Mohon menunggu, sesaat lagi Bapak/Ibu akan terhubung dengan Customer Care Representative Kami.",
+                            "type": "goto_cs",
+                            "goto": "cs"
+                        },
+                        "OUT_OFFICE_HOUR": {
+                            "id": "OUT_OH",
+                            "current_menu": "OUT_OH",
+                            "text": "Mohon maaf, Customer Care Pristine8.6+ akan segera menghubungi Bapak/Ibu di jam operasional pada hari Senin-Jumat, pukul 08.00-17.00 WIB.",
+                            "type": "text",
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "Terima kasih telah menghubungi Customer Care Pristine8.6+. Tetap jaga kesehatan dengan memastikan pH tubuhmu seimbang dengan Pristine8.6+"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
+            "EN": [
+                {
+                    "id": "BB",
+                    "current_menu": "EN",
+                    "text": "Thank you for contacting Pristine8.6+ Customer Care. Please select one of the following options by typing the numbers below (Example: 1):\n1. Product Information\n2. Order\n3. Complaint\n4. Partnership\n5. Chat with Customer Care Representative",
+                    "current_lang": "EN",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "list",
+                    "next_bubble": [
+                        {
+                            "type": "text",
+                            "text": "Your Choice"
+                        }
+                    ],
+                    "menus": {
+                        "1": {
+                            "id": "1A_EN",
+                            "current_menu": "1-1-EN",
+                            "text": "Pristine8.6+ is a high pH drinking water that has fulfilled the BPOM standard (pH > 8.6), manufactured with Japan's No.1 ionization technology from Nihon Trim to produce beneficial micro molecules that are quickly absorbed by our body, helping to balance the body's pH level.",
+                            "type": "nest_menu",
+                            "interactive_type": "button",
+                            "interactive_message": true,
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "A balanced body pH, helps maintain immunity."
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "We are having an interesting promo in August 2022, named “Buy 2 Gallons + refill RP90.000”"
+                                },
+                                {
+                                    "type": "interactive_button",
+                                    "text": "Would you like to order?",
+                                    "menus": {
+                                        "ORDER": {
+                                            "id": "ORDER",
+                                            "title": "Order"
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Main Menu"
+                                        }
+                                    }
+                                }
+                            ],
+                            "menus": {
+                                "ORDER": {
+
+                                },
+                                "MENU": {
+                                    "id": "0",
+                                    "title": "Main Menu",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "2A_EN",
+                            "title": "Order",
+                            "current_menu": "1-2-EN",
+                            "text": "Thank you for choosing Pristine8.6+, a high pH drinking water for keep your body healthy. To order, please fill out the form on the following link https://pristineofficial.com/cara-belian",
+                            "type": "sequences",
+                            "required_data": [
+                                {
+                                    "id": "1_SQ1_EN",
+                                    "text": "Thank you for ordering Pristine8.6+, here are the details of your order:\nName: {{1}}\nE-mail: {{2}}\nProvince: {{3}}\nCity : {{4}}\nDistrict: {{5}}\nSubdistrict: {{6}}\nPostal code: {{7}}\nFull address: {{8}}\nWhatsApp number: {{9}}\nPromo code: {{10}}\nOrder details: {{11}}",
+                                    "type": "nest_menu",
+                                    "interactive_type": "button",
+                                    "interactive_message": true,
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive_button",
+                                            "text": "Are the order details above correct?",
+                                            "menus": {
+                                                "NO": {
+                                                    "id": "NO",
+                                                    "title": "No"
+                                                },
+                                                "YES": {
+                                                    "id": "YES",
+                                                    "title": "Yes"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "menus": {
+                                        "NO": {
+                                            "id": "NO",
+                                            "title": "No",
+                                            "current_menu": "1_SQ1_EN_TIDAK",
+                                            "text": "Thank you for the confirmation. Please complete the correct order details : \nName: {{1}}\nE-mail: {{2}}\nProvince: {{3}}\nCity: {{4}}\nDistrict: {{5}}\nSubdistrict: {{6}}\nPostal code: {{7}}\nFull address: {{8}}\nWhatsApp number: {{9}}\nPromo code: {{10}}\nOrder details: {{11}}",
+                                            "index": "order",
+                                            "label": "",
+                                            "type": "text",
+                                            "validation": {
+                                                "status": true,
+                                                "text": "Sorry, your data is invalid. Please complete the following data correctly:\nName: {{1}}\nE-mail: {{2}}\nProvince: {{3}}\nCity: {{4}}\nDistrict: {{5}}\nSubdistrict: {{6}}\nPostal code: {{7}}\nFull address: {{8}}\nWhatsApp number: {{9}}\nPromo code: {{10}}\nOrder details: {{11}}",
+                                                "type": "input",
+                                                "method": "",
+                                                "error": {
+                                                    "text": "Sorry, your data is invalid. Please complete the following data correctly:\nName: {{1}}\nE-mail: {{2}}\nProvince: {{3}}\nCity: {{4}}\nDistrict: {{5}}\nSubdistrict: {{6}}\nPostal code: {{7}}\nFull address: {{8}}\nWhatsApp number: {{9}}\nPromo code: {{10}}\nOrder details: {{11}}"
+                                                }
+                                            }
+                                        },
+                                        "YES": {
+                                            "id": "YES",
+                                            "title": "Yes",
+                                            "current_menu": "1_SQ1_EN_YA",
+                                            "text": "Thank you for the confirmation. Your order number: {{1}}\nWe will process your order within 3x24 working hours. If your order hasn't been delivered within that time, you can contact us through Pristine8.6+ Customer Care's Whatsapp number.",
+                                            "type": "text"
+                                        }
+                                    }
+                                },
+                                {
+                                    "id": "1_SQ3_EN",
+                                    "type": "nest_menu",
+                                    "text": "Dear Customer Mr/Mrs {{1}}\nThank you for trusting Pristine8.6+ as your drinking water\nPlease confirm, have you already receive your order?",
+                                    "interactive_type": "button",
+                                    "interactive_message": true,
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive_button",
+                                            "text": "",
+                                            "menus": {
+                                                "NO": {
+                                                    "id": "NO",
+                                                    "title": "No"
+                                                },
+                                                "YES": {
+                                                    "id": "YES",
+                                                    "title": "Yes"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "menus": {
+                                        "NO": {
+                                            "id": "NO",
+                                            "title": "No",
+                                            "current_menu": "1_SQ3_TIDAK",
+                                            "text": "Sorry for the inconvenience.\nWe will follow up immediately with our relevant team. Hopefully you can receive your order soon.\nThank you",
+                                            "type": "text"
+                                        },
+                                        "YES": {
+                                            "id": "YES",
+                                            "title": "Yes",
+                                            "current_menu": "1_SQ3_YA",
+                                            "text": "We are so glad to hear that.\nWe hope that Mr/Mrs {{1}} is always healthy and fit by drinking Pristine8.6+ water regularly.\nWe would be glad to hear your feedback and suggestion so that Pristine8.6+ always be able to provide the best product and service to our customers. \nWe are looking forward to your next order.\nThank you.",
+                                            "type": "text"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "3": {
+                            "id": "3A_EN",
+                            "current_menu": "1-3-EN",
+                            "text": "What complaints can we help you with?",
+                            "type": "nest_menu",
+                            "interactive_type": "button",
+                            "interactive_message": true,
+                            "next_bubbles": [
+                                {
+                                    "type": "interactive_button",
+                                    "text": "",
+                                    "menus": {
+                                        "PRODUCT": {
+                                            "id": "PRODUCT",
+                                            "title": "Product"
+                                        },
+                                        "ORDER": {
+                                            "id": "ORDER",
+                                            "title": "Order"
+                                        }
+                                    }
+                                }
+                            ],
+                            "menus": {
+                                "PRODUCT": {
+                                    "id": "PRODUCT",
+                                    "current_menu": "1-3-1-EN",
+                                    "title": "Product",
+                                    "text": "For product complaints, please fill out the form on the following link www.pristineofficial.com",
+                                    "type": "sequences",
+                                    "required_data": [
+                                        {
+                                            "id": "1_3_SQ1_EN",
+                                            "text": "Thank you. Your complaint has been received. Please kindy wait. Our Customer Care Representative will contact you within 1x24hours.",
+                                            "type": "text"
+                                        }
+                                    ]
+                                },
+                                "ORDER": {
+
+                                }
+                            }
+                        },
+                        "4": {
+                            "id": "4A_EN",
+                            "current_menu": "1-4-EN",
+                            "text": "Please select your preferable partnership with Pristine8.6+",
+                            "type": "nest_menu",
+                            "interactive_type": "button",
+                            "interactive_message": true,
+                            "next_bubbles": [
+                                {
+                                    "type": "interactive_button",
+                                    "text": "",
+                                    "menus": {
+                                        "AGENT": {
+                                            "id": "AGENT",
+                                            "title": "Become an Agent"
+                                        },
+                                        "DISTRIBUTOR": {
+                                            "id": "DISTRIBUTOR",
+                                            "title": "Become a Distributor"
+                                        }
+                                    }
+                                }
+                            ],
+                            "menus": {
+                                "AGENT": {
+                                    "id": "AGENT",
+                                    "title": "Become an Agent",
+                                    "current_menu": "1-4-1-EN",
+                                    "text": "Please complete the following data\nName:\nAddress:\nWhatsApp number:\nArea coverage:",
+                                    "type": "input"
+                                },
+                                "DISTRIBUTOR": {
+                                    "id": "DISTRIBUTOR",
+                                    "title": "Become a Distributor",
+                                    "current_menu": "1-4-2",
+                                    "text": "Please complete the following data\nName:\nAddress:\nWhatsApp number:\nArea coverage:",
+                                    "type": "input"
+                                }
+                            }
+                        },
+                        "5": {
+                            "id": "5A_EN",
+                            "current_menu": "1-5-EN",
+                            "text": "Please wait for a moment, you will be connected to our Customer Care Representative.",
+                            "type": "goto_cs",
+                            "goto": "cs"
+                        },
+                        "OUT_OFFICE_HOUR": {
+                            "id": "OUT_OH",
+                            "current_menu": "OUT_OH",
+                            "text": "We are sorry, Pristine8.6+ Customer Care will contact you during operational working hours on Monday-Friday, 08.00-17.00 WIB.",
+                            "type": "text",
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "Thank you for contacting Pristine8.6+ Customer Care. Stay healthy by ensuring your body's pH is balanced with Pristine8.6+"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
+            "JP": [
+                {
+                    "id": "CC",
+                    "current_menu": "JP",
+                    "text": "Pristine8.6+カスタマーケアーでございます。ご連絡頂き誠にありがとうございます。続きましては下記のメニュー番号をご記入ください。(例: 1)：\n1. Pristine8.6について\n2. 注文\n3. 苦情\n4. パートナーシップ\n5. カスタマーケアの窓口",
+                    "current_lang": "JP",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "list",
+                    "next_bubble": [
+                        {
+                            "type": "text",
+                            "text": "あなたの選択"
+                        }
+                    ],
+                    "menus": {
+                        "1": {
+                            "id": "1A_JP",
+                            "current_menu": "1-1-JP",
+                            "text": "Pristine8.6+は BPOM 基準を満された、pHが高いお水です。日本トリムからのno.1イオン化技術を採用して作られています。Pristine8.6+の小さな粒子で体のpHバランスを整えます。",
+                            "type": "nest_menu",
+                            "interactive_type": "button",
+                            "interactive_message": true,
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "体のpHバランスを整え、免疫力を維持を！"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "8月のプロモーションがあり！2個新しいガロンはRp.90.000で。"
+                                },
+                                {
+                                    "type": "interactive_button",
+                                    "text": "ご注文はよろしいですか。",
+                                    "menus": {
+                                        "ORDER": {
+                                            "id": "ORDER",
+                                            "title": "はい。"
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "メニューに戻す。"
+                                        }
+                                    }
+                                }
+                            ],
+                            "menus": {
+                                "ORDER": {
+
+                                },
+                                "MENU": {
+                                    "id": "0",
+                                    "title": "メニューに戻す。",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "2A_JP",
+                            "title": "はい。",
+                            "current_menu": "1-2-JP",
+                            "text": "健康に良い、pHが高いPristine8.6+をお選びいただき、誠にありがとうございます。恐れ入りますが、ご注文いただきたい方は下記のリンクフォームをご記入下さい。 https://pristineofficial.com/cara-belian",
+                            "type": "sequences",
+                            "required_data": [
+                                {
+                                    "id": "1_SQ1_JP",
+                                    "text": "ご注文頂き誠にありがとうございました。ご注文の情報は下記の通りとなってります。\nお名前：{{1}}\nメール：{{2}}\n首都：{{3}}\n都市：{{4}}\n区域： {{5}}\n地区：{{6}}\n郵便番号：{{7}}\nフール住所: {{8}}\nWhatsApp番号：{{9}}\nプロモーション コード: {{10}}\nご注文：{{11}}",
+                                    "type": "nest_menu",
+                                    "interactive_type": "button",
+                                    "interactive_message": true,
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive_button",
+                                            "text": "上記のご注文はお間違いないでしょうか。",
+                                            "menus": {
+                                                "NO": {
+                                                    "id": "NO",
+                                                    "title": "いいえ"
+                                                },
+                                                "YES": {
+                                                    "id": "YES",
+                                                    "title": "はい"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "menus": {
+                                        "NO": {
+                                            "id": "NO",
+                                            "title": "いいえ",
+                                            "current_menu": "1_SQ1_JP_TIDAK",
+                                            "text": "ご確認いただき誠にありがとうございます。正確のご注文を下記にてご入力下さい。\nお名前：{{1}}\nメール：{{2}}\n首都：{{3}}\n都市：{{4}}\n区域：{{5}}\n地区：{{6}}\n郵便番号：{{7}}\nフール住所: {{8}}\nWhatsApp番号：{{9}}\nプロモーション コード: {{10}}\nご注文：{{11}}",
+                                            "index": "order",
+                                            "label": "",
+                                            "type": "text",
+                                            "validation": {
+                                                "status": true,
+                                                "text": "大変申し訳ございません、送りいただいた情報は誤記入となっております。恐れ入りますが、もう1度正確の情報をご記入ください。\nお名前：{{1}}\nメール：{{2}}\n首都：{{3}}\n都市：{{4}}\n区域：{{5}}\n地区：{{6}}\n郵便番号：{{7}}\nフール住所: {{8}}\nWhatsApp番号：{{9}}\nプロモーション コード: {{10}}\nご注文：{{11}}",
+                                                "type": "input",
+                                                "method": "",
+                                                "error": {
+                                                    "text": "大変申し訳ございません、送りいただいた情報は誤記入となっております。恐れ入りますが、もう1度正確の情報をご記入ください。\nお名前：{{1}}\nメール：{{2}}\n首都：{{3}}\n都市：{{4}}\n区域：{{5}}\n地区：{{6}}\n郵便番号：{{7}}\nフール住所: {{8}}\nWhatsApp番号：{{9}}\nプロモーション コード: {{10}}\nご注文：{{11}}"
+                                                }
+                                            }
+                                        },
+                                        "YES": {
+                                            "id": "YES",
+                                            "title": "はい",
+                                            "current_menu": "1_SQ1_JP_YA",
+                                            "text": "ご確認いただき誠にありがとうございます。ご注文番号は {{1}} となります。\nご注文は3x24営業時間以内に処理させていただきます。その間配達がない場合は、こちらのチャット専用Whatsappまでご連絡ください。",
+                                            "type": "text"
+                                        }
+                                    }
+                                },
+                                {
+                                    "id": "1_SQ3_JP",
+                                    "type": "nest_menu",
+                                    "text": "お客様、お世話になっております。\nPristine 8.6+ をお選び頂き誠にありがとうございますご確認のためご連絡いたしますが、ご注文は受け取られたでしょうか？",
+                                    "interactive_type": "button",
+                                    "interactive_message": true,
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive_button",
+                                            "text": "",
+                                            "menus": {
+                                                "NO": {
+                                                    "id": "NO",
+                                                    "title": "いええ"
+                                                },
+                                                "YES": {
+                                                    "id": "YES",
+                                                    "title": "はい"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "menus": {
+                                        "NO": {
+                                            "id": "NO",
+                                            "title": "いええ",
+                                            "current_menu": "1_SQ3_TIDAK",
+                                            "text": "ご迷惑をおかけいたして大変申し訳ございません。\nご注文をもう一度担当者にご確認いたします。\nお客様のご注文は早めに受け取れるため対応させていただきます。\n何卒よろしくお願い致します。",
+                                            "type": "text"
+                                        },
+                                        "YES": {
+                                            "id": "YES",
+                                            "title": "はい",
+                                            "current_menu": "1_SQ3_YA",
+                                            "text": "ご注文は受け取られたことかしこまりました。Pristine8.6+を飲んで、健康な生活を！\nPristine8.6+はお客様により良いサービスを提供いただけるため、お客様からのご提案を聞いていただければ幸いです。\n次のご注文をお待ちしております。\n何卒よろしくお願い致します。",
+                                            "type": "text"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "3": {
+                            "id": "3A_JP",
+                            "current_menu": "1-3-JP",
+                            "text": "どのような苦情にばりますでしょうか?",
+                            "type": "nest_menu",
+                            "interactive_type": "button",
+                            "interactive_message": true,
+                            "next_bubbles": [
+                                {
+                                    "type": "interactive_button",
+                                    "text": "",
+                                    "menus": {
+                                        "PRODUCT": {
+                                            "id": "PRODUCT",
+                                            "title": "製品苦情"
+                                        },
+                                        "ORDER": {
+                                            "id": "ORDER",
+                                            "title": "ご注文苦情"
+                                        }
+                                    }
+                                }
+                            ],
+                            "menus": {
+                                "PRODUCT": {
+                                    "id": "PRODUCT",
+                                    "current_menu": "1-3-1-JP",
+                                    "title": "ご注文苦情",
+                                    "text": "製品苦情の場合は、下記のリンクのフォームをご記入下さい。www.pristineofficial.com",
+                                    "type": "sequences",
+                                    "required_data": [
+                                        {
+                                            "id": "1_3_SQ1_JP",
+                                            "text": "苦情フォームをご記入いただきありがとうございます。カスタマーケアーの担当は 1X24時間以内にご連絡いただきますので、しばらくお待ちください。",
+                                            "type": "text"
+                                        }
+                                    ]
+                                },
+                                "ORDER": {
+
+                                }
+                            }
+                        },
+                        "4": {
+                            "id": "4A_JP",
+                            "current_menu": "1-4-JP",
+                            "text": "下記にてご希望協力をご入力ください。",
+                            "type": "nest_menu",
+                            "interactive_type": "button",
+                            "interactive_message": true,
+                            "next_bubbles": [
+                                {
+                                    "type": "interactive_button",
+                                    "text": "",
+                                    "menus": {
+                                        "AGENT": {
+                                            "id": "AGENT",
+                                            "title": "代理店になりたい"
+                                        },
+                                        "DISTRIBUTOR": {
+                                            "id": "DISTRIBUTOR",
+                                            "title": "ディストリビューターになりたい"
+                                        }
+                                    }
+                                }
+                            ],
+                            "menus": {
+                                "AGENT": {
+                                    "id": "AGENT",
+                                    "title": "代理店になりたい",
+                                    "current_menu": "1-4-1-JP",
+                                    "text": "続きましては下記のデータをを入力してください。\nお名前：\n住所：\nWhatsApp番号：\nカバーアレア：",
+                                    "type": "input"
+                                },
+                                "DISTRIBUTOR": {
+                                    "id": "DISTRIBUTOR",
+                                    "title": "ディストリビューターになりたい",
+                                    "current_menu": "1-4-2",
+                                    "text": "Please complete the following data\nName:\nAddress:\nWhatsApp number:\nArea coverage:",
+                                    "type": "input"
+                                }
+                            }
+                        },
+                        "5": {
+                            "id": "5A_JP",
+                            "current_menu": "1-5-JP",
+                            "text": "カスタマーケアーの担当にお繋ぎいたしますのでしばらくお待ち下さい。",
+                            "type": "goto_cs",
+                            "goto": "cs"
+                        },
+                        "OUT_OFFICE_HOUR": {
+                            "id": "OUT_OH",
+                            "current_menu": "OUT_OH",
+                            "text": "大変申し訳ございません。Pristine8.6+のカスタマーケアーの営業時間は平日の午前8時から午後5時までとなりま。恐れ入りますが営業時間以内に対応させて頂きます。",
+                            "type": "text",
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "Pristine8.6+ カスタマーケアーにご連絡頂き誠にありがとうございます。Pristine8.6+ を飲んで体の pHバランスを整え、健康な生活を！"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

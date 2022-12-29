@@ -1,0 +1,961 @@
+{
+    "schemas": {
+        "default": {
+            "survey": {
+                "active": false
+            },
+            "reset_keys": [
+                "MENU"
+            ],
+            "load_conversation": "WabaTemplateConversation",
+            "dual_language": false,
+            "language_localization": {},
+            "expire_time": 5,
+            "top_level_question": [
+                {
+                    "id": "1",
+                    "text": "majoonians Integrated Access",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "Informasi Benefit Salary",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "Informasi Benefit BPJS Kesehatan",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "Informasi Benefit BPJS Ketenagakerjaan",
+                    "type": "actions"
+                },
+                {
+                    "id": "5",
+                    "text": "Informasi Benefit Asuransi Kesehatan",
+                    "type": "actions"
+                },
+                {
+                    "id": "6",
+                    "text": "Informasi for New majoonians - Onboarding",
+                    "type": "actions"
+                },
+                {
+                    "id": "7",
+                    "text": "Informasi Development & Career Path",
+                    "type": "actions"
+                },
+                {
+                    "id": "8",
+                    "text": "Informasi Device / Working Tools majoonians",
+                    "type": "actions"
+                },
+                {
+                    "id": "9",
+                    "text": "Informasi majoonians culture & Engagement Program",
+                    "type": "actions"
+                },
+                {
+                    "id": "10",
+                    "text": "Peraturan Work From Office",
+                    "type": "actions"
+                },
+                {
+                    "id": "11",
+                    "text": "Lainnya",
+                    "type": "actions"
+                },
+                {
+                    "id": "12",
+                    "text": "Saran untuk majoo",
+                    "type": "actions"
+                }
+            ],
+            "MENU": [
+                {
+                    "id": "1",
+                    "text": "majoonians Integrated Access",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "Informasi Benefit Salary",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "Informasi Benefit BPJS Kesehatan",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "Informasi Benefit BPJS Ketenagakerjaan",
+                    "type": "actions"
+                },
+                {
+                    "id": "5",
+                    "text": "Informasi Benefit Asuransi Kesehatan",
+                    "type": "actions"
+                },
+                {
+                    "id": "6",
+                    "text": "Informasi for New majoonians - Onboarding",
+                    "type": "actions"
+                },
+                {
+                    "id": "7",
+                    "text": "Informasi Development & Career Path",
+                    "type": "actions"
+                },
+                {
+                    "id": "8",
+                    "text": "Informasi Device / Working Tools majoonians",
+                    "type": "actions"
+                },
+                {
+                    "id": "9",
+                    "text": "Informasi majoonians culture & Engagement Program",
+                    "type": "actions"
+                },
+                {
+                    "id": "10",
+                    "text": "Peraturan Work From Office",
+                    "type": "actions"
+                },
+                {
+                    "id": "11",
+                    "text": "Lainnya",
+                    "type": "actions"
+                },
+                {
+                    "id": "12",
+                    "text": "Saran untuk majoo",
+                    "type": "actions"
+                }
+            ],
+            "1": [
+                {
+                    "id": "AA",
+                    "current_menu": "1",
+                    "text": "1. Majoonians Integrated Access\n\nUntuk melanjutkan, silakan ketik angka dibawah ini untuk melanjutkan informasi berikutnya.\n\n(Angka 1 - 10 di Flow berikutnya)",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "list",
+                    "next_bubbles": [
+                        {
+                            "type": "interactive-button",
+                            "text": "1. Login ke aplikasi mia\n2. Recruitment\n3. Perubahan Informasi Pribadi\n4. Cuti Tahunan dan Izin Khusus\n5. Absensi dan Lembur\n6. Permintaan Manpower\n7. Performance / Perpindahan dan Promosi Karyawan\n8. Pengunduran diri via mia\n9. Reimbursement/Cash Advance/Petty Cash\n10. Invalid Data",
+                            "menus": {
+                                "1": {
+                                    "id": "1",
+                                    "title": "Login ke aplikasi mia"
+                                },
+                                "2": {
+                                    "id": "2",
+                                    "title": "Recruitment"
+                                },
+                                "3": {
+                                    "id": "3",
+                                    "title": "Perubahan Informasi Pribadi"
+                                },
+                                "4": {
+                                    "id": "4",
+                                    "title": "Cuti Tahunan dan Izin Khusus"
+                                },
+                                "5": {
+                                    "id": "5",
+                                    "title": "Absensi dan Lembur"
+                                },
+                                "6": {
+                                    "id": "6",
+                                    "title": "Permintaan Manpower"
+                                },
+                                "7": {
+                                    "id": "7",
+                                    "title": "Performance / Perpindahan dan Promosi Karyawan"
+                                },
+                                "8": {
+                                    "id": "8",
+                                    "title": "Pengunduran diri via mia"
+                                },
+                                "9": {
+                                    "id": "9",
+                                    "title": "Reimbursement/Cash Advance/Petty Cash"
+                                },
+                                "10": {
+                                    "id": "10",
+                                    "title": "Invalid Data"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "1": {
+                            "id": "1",
+                            "title": "Login ke aplikasi mia",
+                            "current_menu": "1-1",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "2": {
+                            "id": "2",
+                            "title": "Recruitment",
+                            "current_menu": "1-2",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "3": {
+                            "id": "3",
+                            "title": "Perubahan Informasi Pribadi",
+                            "current_menu": "1-3",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "4": {
+                            "id": "4",
+                            "title": "Cuti Tahunan dan Izin Khusus",
+                            "current_menu": "1-4",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "5": {
+                            "id": "5",
+                            "title": "Absensi dan Lembur",
+                            "current_menu": "1-5",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "6": {
+                            "id": "6",
+                            "title": "Permintaan Manpower",
+                            "current_menu": "1-6",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "7": {
+                            "id": "7",
+                            "title": "Performance / Perpindahan dan Promosi Karyawan",
+                            "current_menu": "1-7",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "8": {
+                            "id": "8",
+                            "title": "Pengunduran diri via mia",
+                            "current_menu": "1-8",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "9": {
+                            "id": "9",
+                            "title": "Reimbursement/Cash Advance/Petty Cash",
+                            "current_menu": "1-9",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "10": {
+                            "id": "10",
+                            "title": "Invalid Data",
+                            "current_menu": "1-10",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        }
+                    }
+                }
+            ],
+            "2": [
+                {
+                    "id": "BB",
+                    "current_menu": "2",
+                    "text": "2. Informasi Benefit Salary\n\nUntuk melanjutkan, silakan ketik angka dibawah ini untuk melanjutkan informasi berikutnya.\n\n(Angka 1 - 4 di Flow berikutnya)",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "list",
+                    "next_bubbles": [
+                        {
+                            "type": "interactive-button",
+                            "text": "1. Request Payslip\n2. Payslip Tidak Bisa Dibuka\n3. Cut Off Perhitungan Salary\n4. Perhitungan Salary",
+                            "menus": {
+                                "1": {
+                                    "id": "1",
+                                    "title": "Request Payslip"
+                                },
+                                "2": {
+                                    "id": "2",
+                                    "title": "Payslip Tidak Bisa Dibuka"
+                                },
+                                "3": {
+                                    "id": "3",
+                                    "title": "Cut Off Perhitungan Salary"
+                                },
+                                "4": {
+                                    "id": "4",
+                                    "title": "Perhitungan Salary"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "1": {
+                            "id": "1",
+                            "title": "Request Payslip",
+                            "current_menu": "2-1",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "2": {
+                            "id": "2",
+                            "title": "Payslip Tidak Bisa Dibuka",
+                            "current_menu": "2-2",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "3": {
+                            "id": "3",
+                            "title": "Cut Off Perhitungan Salary",
+                            "current_menu": "2-3",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "4": {
+                            "id": "4",
+                            "title": "Perhitungan Salary",
+                            "current_menu": "2-4",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        }
+                    }
+                }
+            ],
+            "3": [
+                {
+                    "id": "CC",
+                    "current_menu": "3",
+                    "text": "3. Informasi Benefit BPJS Kesehatan\n\nUntuk melanjutkan, silakan ketik angka dibawah ini untuk melanjutkan informasi berikutnya.\n\n(Angka 1 - 4 di Flow berikutnya)",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "list",
+                    "next_bubbles": [
+                        {
+                            "type": "interactive-button",
+                            "text": "1. Pendaftaran / Kepesertaan\n2. Mutasi Kepesertaan\n3. Penonaktifan\n4. Mobile JKN",
+                            "menus": {
+                                "1": {
+                                    "id": "1",
+                                    "title": "Pendaftaran / Kepesertaan"
+                                },
+                                "2": {
+                                    "id": "2",
+                                    "title": "Mutasi Kepesertaan"
+                                },
+                                "3": {
+                                    "id": "3",
+                                    "title": "Penonaktifan"
+                                },
+                                "4": {
+                                    "id": "4",
+                                    "title": "Mobile JKN"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "1": {
+                            "id": "1",
+                            "title": "Pendaftaran / Kepesertaan",
+                            "current_menu": "3-1",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "2": {
+                            "id": "2",
+                            "title": "Mutasi Kepesertaan",
+                            "current_menu": "3-2",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "3": {
+                            "id": "3",
+                            "title": "Penonaktifan",
+                            "current_menu": "3-3",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "4": {
+                            "id": "4",
+                            "title": "Mobile JKN",
+                            "current_menu": "3-4",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        }
+                    }
+                }
+            ],
+            "4": [
+                {
+                    "id": "DD",
+                    "current_menu": "4",
+                    "text": "4. Informasi Benefit BPJS Ketenagakerjaan\n\nUntuk melanjutkan, silakan ketik angka dibawah ini untuk melanjutkan informasi berikutnya.\n\n(Angka 1 - 3 di Flow berikutnya)",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "list",
+                    "next_bubbles": [
+                        {
+                            "type": "interactive-button",
+                            "text": "1. Pendaftaran / Kepesertaan\n2. Penonaktifan\n3. JMO Mobile",
+                            "menus": {
+                                "1": {
+                                    "id": "1",
+                                    "title": "Pendaftaran / Kepesertaan"
+                                },
+                                "2": {
+                                    "id": "2",
+                                    "title": "Penonaktifan"
+                                },
+                                "3": {
+                                    "id": "3",
+                                    "title": "JMO Mobile"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "1": {
+                            "id": "1",
+                            "title": "Pendaftaran / Kepesertaan",
+                            "current_menu": "4-1",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "2": {
+                            "id": "2",
+                            "title": "Penonaktifan",
+                            "current_menu": "4-2",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "3": {
+                            "id": "3",
+                            "title": "JMO Mobile",
+                            "current_menu": "4-3",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        }
+                    }
+                }
+            ],
+            "5": [
+                {
+                    "id": "EE",
+                    "current_menu": "5",
+                    "text": "5. Informasi Benefit Asuransi Kesehatan\n\nUntuk melanjutkan, silakan ketik angka dibawah ini untuk melanjutkan informasi berikutnya.\n\n(Angka 1 - 3 di Flow berikutnya)",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "list",
+                    "next_bubbles": [
+                        {
+                            "type": "interactive-button",
+                            "text": "1. Pendaftaran / Kepesertaan\n2. Benefit\n3. Aplikasi",
+                            "menus": {
+                                "1": {
+                                    "id": "1",
+                                    "title": "Pendaftaran / Kepesertaan"
+                                },
+                                "2": {
+                                    "id": "2",
+                                    "title": "Benefit"
+                                },
+                                "3": {
+                                    "id": "3",
+                                    "title": "Aplikasi"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "1": {
+                            "id": "1",
+                            "title": "Pendaftaran / Kepesertaan",
+                            "current_menu": "5-1",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "2": {
+                            "id": "2",
+                            "title": "Benefit",
+                            "current_menu": "5-2",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "3": {
+                            "id": "3",
+                            "title": "Aplikasi",
+                            "current_menu": "5-3",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        }
+                    }
+                }
+            ],
+            "6": [
+                {
+                    "id": "FF",
+                    "current_menu": "6",
+                    "text": "6. Informasi for New majoonians - Onboarding\n\nUntuk melanjutkan, silakan ketik angka dibawah ini untuk melanjutkan informasi berikutnya.\n\n(Angka 1 - 3 di Flow berikutnya)",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "list",
+                    "next_bubbles": [
+                        {
+                            "type": "interactive-button",
+                            "text": "1. Mandatory Document\n2. Buddy Program\n3. Sales Onboarding Program",
+                            "menus": {
+                                "1": {
+                                    "id": "1",
+                                    "title": "Mandatory Document"
+                                },
+                                "2": {
+                                    "id": "2",
+                                    "title": "Buddy Program"
+                                },
+                                "3": {
+                                    "id": "3",
+                                    "title": "Sales Onboarding Program"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "1": {
+                            "id": "1",
+                            "title": "Mandatory Document",
+                            "current_menu": "6-1",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "2": {
+                            "id": "2",
+                            "title": "Buddy Program",
+                            "current_menu": "6-2",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "3": {
+                            "id": "3",
+                            "title": "Sales Onboarding Program",
+                            "current_menu": "6-3",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        }
+                    }
+                }
+            ],
+            "7": [
+                {
+                    "id": "GG",
+                    "current_menu": "7",
+                    "text": "7. Informasi Development & Career Path\n\nUntuk melanjutkan, silakan ketik angka dibawah ini untuk melanjutkan informasi berikutnya.\n\n(Angka 1 - 5 di Flow berikutnya)",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "list",
+                    "next_bubbles": [
+                        {
+                            "type": "interactive-button",
+                            "text": "1. Kontrak Kerja\n2. TCP Direct Sales\n3. TCP Telesales\n4. Grade Karyawan\n5. Promosi",
+                            "menus": {
+                                "1": {
+                                    "id": "1",
+                                    "title": "Kontrak Kerja"
+                                },
+                                "2": {
+                                    "id": "2",
+                                    "title": "TCP Direct Sales"
+                                },
+                                "3": {
+                                    "id": "3",
+                                    "title": "TCP Telesales"
+                                },
+                                "4": {
+                                    "id": "4",
+                                    "title": "Grade Karyawan"
+                                },
+                                "5": {
+                                    "id": "5",
+                                    "title": "Promosi"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "1": {
+                            "id": "1",
+                            "title": "Kontrak Kerja",
+                            "current_menu": "7-1",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "2": {
+                            "id": "2",
+                            "title": "TCP Direct Sales",
+                            "current_menu": "7-2",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "3": {
+                            "id": "3",
+                            "title": "TCP Telesales",
+                            "current_menu": "7-3",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "4": {
+                            "id": "4",
+                            "title": "Grade Karyawan",
+                            "current_menu": "7-4",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "5": {
+                            "id": "5",
+                            "title": "Promosi",
+                            "current_menu": "7-5",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        }
+                    }
+                }
+            ],
+            "8": [
+                {
+                    "id": "HH",
+                    "current_menu": "8",
+                    "text": "8. Informasi Device / Working Tools majoonians\n\nUntuk melanjutkan, silakan ketik angka dibawah ini untuk melanjutkan informasi berikutnya.\n\n(Angka 1 - 8 di Flow berikutnya)",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "list",
+                    "next_bubbles": [
+                        {
+                            "type": "interactive-button",
+                            "text": "1. Permintaan / Penggantian Device\n2. Permintaan / Penggantian Work Identify\n3. Device Rusak / Hilang\n4. Request Email\n5. Request Rename Email\n6. Request Join Mail Group\n7. Request Software CRM\n8. Learning Management System",
+                            "menus": {
+                                "1": {
+                                    "id": "1",
+                                    "title": "Permintaan / Penggantian Device"
+                                },
+                                "2": {
+                                    "id": "2",
+                                    "title": "Permintaan / Penggantian Work Identify"
+                                },
+                                "3": {
+                                    "id": "3",
+                                    "title": "Device Rusak / Hilang"
+                                },
+                                "4": {
+                                    "id": "4",
+                                    "title": "Request Email"
+                                },
+                                "5": {
+                                    "id": "5",
+                                    "title": "Request Rename Email"
+                                },
+                                "6": {
+                                    "id": "6",
+                                    "title": "Request Join Mail Group"
+                                },
+                                "7": {
+                                    "id": "7",
+                                    "title": "Request Software CRM"
+                                },
+                                "8": {
+                                    "id": "8",
+                                    "title": "Learning Management System"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "1": {
+                            "id": "1",
+                            "title": "Permintaan / Penggantian Device",
+                            "current_menu": "8-1",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "2": {
+                            "id": "2",
+                            "title": "Permintaan / Penggantian Work Identify",
+                            "current_menu": "8-2",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "3": {
+                            "id": "3",
+                            "title": "Device Rusak / Hilang",
+                            "current_menu": "8-3",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "4": {
+                            "id": "4",
+                            "title": "Request Email",
+                            "current_menu": "8-4",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "5": {
+                            "id": "5",
+                            "title": "Request Rename Email",
+                            "current_menu": "8-5",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "6": {
+                            "id": "6",
+                            "title": "Request Join Mail Group",
+                            "current_menu": "8-6",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "7": {
+                            "id": "7",
+                            "title": "Request Software CRM",
+                            "current_menu": "8-7",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "8": {
+                            "id": "8",
+                            "title": "Learning Management System",
+                            "current_menu": "8-8",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        }
+                    }
+                }
+            ],
+            "9": [
+                {
+                    "id": "II",
+                    "current_menu": "9",
+                    "text": "9. Informasi majoonians Culture & Engagement Program\n\nUntuk melanjutkan, silakan ketik angka dibawah ini untuk melanjutkan informasi berikutnya.\n\n(Angka 1 - 5 di Flow berikutnya)",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "list",
+                    "next_bubbles": [
+                        {
+                            "type": "interactive-button",
+                            "text": "1. Gathering Team\n2. majoo' internal new: iNews\n3. majoo' current / seasonal event\n4. Majoonaise Counseling Program\n5. Majoonians Club",
+                            "menus": {
+                                "1": {
+                                    "id": "1",
+                                    "title": "Gathering Team"
+                                },
+                                "2": {
+                                    "id": "2",
+                                    "title": "majoo' internal new: iNews"
+                                },
+                                "3": {
+                                    "id": "3",
+                                    "title": "majoo' current / seasonal event"
+                                },
+                                "4": {
+                                    "id": "4",
+                                    "title": "Majoonaise Counseling Program"
+                                },
+                                "5": {
+                                    "id": "5",
+                                    "title": "Majoonians Club"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "1": {
+                            "id": "1",
+                            "title": "Gathering Team",
+                            "current_menu": "9-1",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "2": {
+                            "id": "2",
+                            "title": "majoo' internal new: iNews",
+                            "current_menu": "9-2",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "3": {
+                            "id": "3",
+                            "title": "majoo' current / seasonal event",
+                            "current_menu": "9-3",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "4": {
+                            "id": "4",
+                            "title": "Majoonaise Counseling Program",
+                            "current_menu": "9-4",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "5": {
+                            "id": "5",
+                            "title": "Majoonians Club",
+                            "current_menu": "9-5",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        }
+                    }
+                }
+            ],
+            "10": [
+                {
+                    "id": "JJ",
+                    "current_menu": "10",
+                    "text": "10. Peraturan Work From Office\n\nUntuk melanjutkan, silakan ketik angka dibawah ini untuk melanjutkan informasi berikutnya.\n\n(Angka 1 - 4 di Flow berikutnya)",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "list",
+                    "next_bubbles": [
+                        {
+                            "type": "interactive-button",
+                            "text": "1. Ketentuan WFO\n2. Lokasi Office\n3. Link WFO Form\n4. Peduli Lindungi",
+                            "menus": {
+                                "1": {
+                                    "id": "1",
+                                    "title": "Ketentuan WFO"
+                                },
+                                "2": {
+                                    "id": "2",
+                                    "title": "Lokasi Office"
+                                },
+                                "3": {
+                                    "id": "3",
+                                    "title": "Link WFO Form"
+                                },
+                                "4": {
+                                    "id": "4",
+                                    "title": "Peduli Lindungi"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "1": {
+                            "id": "1",
+                            "title": "Ketentuan WFO",
+                            "current_menu": "10-1",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "2": {
+                            "id": "2",
+                            "title": "Lokasi Office",
+                            "current_menu": "10-2",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "3": {
+                            "id": "3",
+                            "title": "Link WFO Form",
+                            "current_menu": "10-3",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "4": {
+                            "id": "4",
+                            "title": "Peduli Lindungi",
+                            "current_menu": "10-4",
+                            "text": "Baik, mohon menunggu untuk disambungkan dengan team kami.",
+                            "type": "goto",
+                            "goto": "cs"
+                        }
+                    }
+                }
+            ],
+            "11": [
+                {
+                    "id": "KK",
+                    "current_menu": "11",
+                    "text": "Lainnya",
+                    "type": "goto",
+                    "goto": "cs"
+                }
+            ],
+            "12": [
+                {
+                    "id": "LL",
+                    "current_menu": "12",
+                    "text": "",
+                    "type": "sequences",
+                    "required_data": [
+                        {
+                            "id": "SQ1",
+                            "index": "majoonians",
+                            "label": "saran",
+                            "text": "Semangat Pagi!\nKami menyadari masih banyak kekurangan dalam layanan kami bagi para majoonians. Kami akan sangat berterima kasih apabila kamu dapat memberikan ide, kritik dan saran untuk membantu kami melakukan improvement.\nKami juga akan menjaga kerahasiaan data kamu. Untuk itu, silakan input ide, kritik atau saran kamu dengan format berikut\n\n*Nama:*\n*majooninas ID:*\n*Topik:*\n*Ide:*",
+                            "type": "text"
+                        },
+                        {
+                            "id": "SQ2",
+                            "index": "",
+                            "label": "",
+                            "text": "Terima kasih atas ide dan feedback kamu, sudah kami terima dengan baik. Kami akan menyampaikan ke pihak-pihak terkait untuk bisa segera ada action terkait hal-hal yang sudah kamu sampaikan.\nTerus aktif berikan feedback ke majoo, karena pendapat kamu sangat berarti untuk kita bersama menjadi lebih baik lagi.\nSemangat maju! Terus melangkah maju, menjadi yang terbaik dan selalu maju.",
+                            "type": "text"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

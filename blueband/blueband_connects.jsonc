@@ -1,0 +1,99 @@
+{
+    "active": true,
+    "mode": "basic",
+    "greetingMessage": "Hai Mitra Bisnis, Selamat Datang di Blue Band Kitchen Master dari Upfield Professional\n\nHi Business Partner, Welcome to Blue Band Kitchen Master from Upfield Professional\n\nUntuk melanjutkan, silakan pilih bahasa berikut\nTo continue, please choose your preference language",
+    "exit_keyword": "",
+    "order_keywords": [],
+    "order_reply_msg": "",
+    "to_cs_keyword": "_NO_CS_KEY_YET_",
+    "response_cs_keyword": "Mohon menunggu, sesaat lagi Bapak/Ibu akan terhubung dengan Customer Care Representative Kami.",
+    "listCommandMessage": "Untuk melanjutkan, silakan pilih bahasa berikut\nTo continue, please choose your preference language",
+    "backtomenu_msg": "",
+    "contactCsMessage": "",
+    "prefixGreeting": "",
+    "notUnderstandMessage": "Silahkan KETIK pilihan menu yang sudah diinformasikan di atas untuk menjelajahi informasi yang tersedia\n\n(Contoh, ketik: \"1\" untuk memilih opsi layanan).",
+    "multiLangNotUnderstandMessage": {
+        "ID": "Silahkan KETIK pilihan menu yang sudah diinformasikan di atas untuk menjelajahi informasi yang tersedia\n\n(Contoh, ketik: \"1\" untuk memilih opsi layanan).",
+        "EN": "Please TYPE the menu options that have been informed above to explore the available information\n\n(For example, type: \"1\" to select a service option)."
+    },
+    "check_office_hour": true,
+    "concat_greeting_and_menu": true,
+    "no_ofh_bot_msg": "",
+    "skip_cs_keyword": false,
+    "end_session_keys": [
+        "END", "END_SESSION"
+    ],
+    "end_session_reply": "Terima kasih telah menyapa, kami senang melayani Anda :)",
+    "menus_detail": {
+        "ID": "Bahasa",
+        "ID-1": "Mengenal Upfield Professional",
+        "ID-2": "Bergabung dengan komunitas kami",
+        "ID-2-1": "Facebook",
+        "ID-2-2": "Instagram",
+        "ID-3": "Dapatkan Produk Kami",
+        "ID-3-1": "Daftarkan usaha kamu ke Distributor resmi",
+        "ID-4": "Berbicara dengan CS",
+        "ID-5": "Konsultasi dengan cheff",
+        "ID-5-1": "Baking",
+        "ID-5-2": "Cooking",
+        "EN": "English",
+        "EN-1": "Introduction of Upfield Professional",
+        "EN-2": "Join our community",
+        "EN-2-1": "Facebook",
+        "EN-2-2": "Instagram",
+        "EN-3": "Purchase our product",
+        "EN-3-1": "Register your business with an authorized distributor",
+        "EN-4": "Chat with Customer Service",
+        "EN-5": "Consult with our Chef",
+        "EN-5-1": "Baking",
+        "EN-5-2": "Cooking",
+        "END_SESSION": "End Session",
+        "MENU": "Main Menu",
+        "1-YA": "Ya",
+        "1-YES": "Yes",
+        "1-TIDAK": "Tidak",
+        "1-NO": "No"
+    },
+    "next_bubbles_after_greeting": null,
+    "always_to_bot_dict": [],
+    "first_reminder": {
+        "local_testing": false,
+        "status": true,
+        "set_expire": true,
+        "minutes": 5,
+        "interactive_message": false,
+        "interactive_type": "text",
+        "menus": {
+            "ID": {
+                "MENU": "Ya",
+                "ENDCONVER": "Tidak"
+            }
+        },
+        "message": {
+            "ID": "Terima kasih telah menghubungi Blue Band Kitchen Master, kami akan selalu memberikan produk yang terbaik untuk perkembangan bisnis Anda. Ketik \"Hi\" jika anda ingin mendapatkan informasi lainnya.",
+            "EN": "Thank you for contacting Blue Band Kitchen Master, we will always provide the best products to develop your business. Type \"Hi\" for further information."
+        },
+        "next_bubbles_": []
+    },
+    "sequence_reminder": {
+        "local_testing": false,
+        "status": true,
+        "set_expire": false,
+        "minutes": 3,
+        "limit": 2,
+        "concate_last_question": true,
+        "interactive_message": false,
+        "interactive_type": "text",
+        "menus": {
+            "ID": {
+                "MENU": "Ya",
+                "ENDCONVER": "Tidak"
+            }
+        },
+        "message": {
+            "ID": "Kami belum menerima respon/jawaban Anda",
+            "EN": "We haven't received your response yet"
+        },
+        "next_bubbles_": []
+    }
+}

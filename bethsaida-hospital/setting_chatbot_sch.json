@@ -1,0 +1,870 @@
+{
+    "survey": {
+        "active": false
+    },
+    "reset_keys": [
+        "0"
+    ],
+    "expire_time": 15,
+    "load_conversation": "WabaTemplateConversation",
+    "top_level_questions": [
+        {
+            "id": "1",
+            "text": "Buat Janji Dokter (Doctor Appointment)",
+            "type": "actions"
+        },
+        {
+            "id": "2",
+            "text": "BHDC (Bethsaida Hospital Dental Center)",
+            "type": "actions"
+        },
+        {
+            "id": "3",
+            "text": "Konsultasi Virtual",
+            "type": "actions"
+        },
+        {
+            "id": "4",
+            "text": "Pendaftaran Drive Thru",
+            "type": "actions"
+        },
+        {
+            "id": "5",
+            "text": "CER (Community Emergency Response)",
+            "type": "actions"
+        },
+        {
+            "id": "6",
+            "text": "Layanan Pelanggan dan Pemasaran (Customer Service and Marketing)",
+            "type": "actions"
+        },
+        {
+            "id": "7",
+            "text": "Emergency",
+            "type": "actions"
+        }
+    ],
+    "0": [
+        {
+            "id": "header_text",
+            "text": "Ada yang bisa VINA bantu?"
+        },
+        {
+            "id": "1",
+            "text": "Buat Janji Dokter (Doctor Appointment)",
+            "type": "actions"
+        },
+        {
+            "id": "2",
+            "text": "BHDC (Bethsaida Hospital Dental Center)",
+            "type": "actions"
+        },
+        {
+            "id": "3",
+            "text": "Konsultasi Virtual",
+            "type": "actions"
+        },
+        {
+            "id": "4",
+            "text": "Pendaftaran Drive Thru",
+            "type": "actions"
+        },
+        {
+            "id": "5",
+            "text": "CER (Community Emergency Response)",
+            "type": "actions"
+        },
+        {
+            "id": "6",
+            "text": "Layanan Pelanggan dan Pemasaran (Customer Service and Marketing)",
+            "type": "actions"
+        },
+        {
+            "id": "7",
+            "text": "Emergency",
+            "type": "actions"
+        }
+    ],
+    "1": [
+        {
+            "id": "1A",
+            "current_menu": "1",
+            "text": "Bethsaida Hospital memiliki Poliklinik Umum dan Spesialis seperti di bawah ini:\n\n1. Klinik Bedah Vaskular dan Endovaskular\n2. Klinik Penyakit Dalam\n3. Klinik Bedah Plastik dan Rekonstruksi\n4. Klinik Hiperbarik\n5. Klinik Saraf\n6. Klinik Akupunktur\n7. Klinik Anak\n8. Klinik Bedah Anak\n9. Klinik Bedah Digestif\n10. Klinik Menyusui\n11. Klinik Bedah Onkologi\n12. Klinik Bedah Saraf\n13. Klinik Bedah Toraks, Kardiak dan Vaskular\n14. Klinik Bedah Umum\n15. Klinik Endokrin, Metabolis dan Diabetes\n16. Klinik Penyakit Dalam Saluran Cerna dan Hati\n17. Klinik Gizi\n18. Klinik Jantung dan Pembuluh Darah\n19. Klinik Kedokteran Jiwa\n20. Klinik Kulit dan Kelamin\n21. Klinik Mata\n22. Klinik Kedokteran Okupasi\n23. Klinik Kebidanan dan Kandungan\n24. Klinik Bedah Tulang\n25. Klinik Penyakit Dalam Ginjal dan Hipertensi\n26. Klinik Rehabilitasi Medik\n27. Klinik Psikologi\n28. Klinik THT\n29. Klinik Bedah Saluran Kemih\n30. Klinik Paru dan Respirasi\n31. Klinik Kedokteran Olahraga\n32. Klinik Kedokteran Penerbangan\n33. Klinik Penyakit Dalam : Psikosomatik",
+            "type": "sequences",
+            "interactive_message": false,
+            "interactive_type": "list",
+            "next_bubbles": [
+                {
+                    "type": "text",
+                    "text": "Spesialis dokter manakah yang Anda ingin VINA tampilkan jadwalnya? Silahkan ketik keyword dari menu di atas.\nContoh : Ketik *1* untuk Klinik Bedah Vaskular dan Endovaskular."
+                },
+                {
+                    "type": "text",
+                    "text": "Ketik 0 untuk kembali ke Menu Utama.\nKetik 99 untuk kembali ke Menu Sebelumnya."
+                }
+            ],
+            "config": {
+                "api_url": "",
+                "method": "get-doctor-name"
+            },
+            "required_data": [
+                {
+                    "id": "1A_SQ1",
+                    "text": "Berikut ini adalah dokter untuk {Jenis Klinik}\n\n1. {Nama Dokter}\n2. {Nama Dokter}",
+                    "index": "Dokter",
+                    "label": "nama",
+                    "type": "nest_menu",
+                    "error_msg": "",
+                    "config": {
+                        "api_url": "",
+                        "method": "get-doctor-schedule"
+                    },
+                    "interactive_message": false,
+                    "interactive_type": "button",
+                    "next_bubbles": [
+                        {
+                            "type": "text",
+                            "text": "Pilih Nama dokter yang ingin Anda kunjungi, ketik nomor menu di atas.\nContoh : ketik *1* untuk {Nama Dokter}"
+                        },
+                        {
+                            "type": "interactive_button",
+                            "text": "Ketik 0 untuk kembali ke Menu Utama.\nKetik 99 untuk kembali ke Menu Sebelumnya.",
+                            "menus": {
+                                "0": {
+                                    "id": "MENU",
+                                    "title": "Menu Utama"
+                                },
+                                "99": {
+                                    "id": "BACK",
+                                    "title": "Menu Sebelumnya"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "0": {
+                            "id": "MENU",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        },
+                        "99": {
+                            "id": "BACK",
+                            "title": "Menu Sebelumnya",
+                            "current_menu": "BACK",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "parent"
+                        }
+                    }
+                },
+                {
+                    "id": "1A_SQ2",
+                    "text": "Berikut Jadwal Dokter yang Anda Pilih :\n\n{Nama Dokter}\n\n1.  {Jadwal Dokter}\nA. {Jam Bekerja}\n\n2.{Jadwal Dokter}\nM.  {Jam Bekerja}\n\n3.{Jadwal Dokter}\nM. {Jam Bekerja}\n\n4. {Jadwal Dokter}\nM. {Jam Bekerja}\n\n5. {Jadwal Dokter}\nM. {Jam Bekerja}",
+                    "index": "Dokter",
+                    "label": "jadwal",
+                    "type": "nest_menu",
+                    "error_msg": "",
+                    "config": {
+                        "api_url": "",
+                        "method": "get-doctor-queue-number"
+                    },
+                    "interactive_message": false,
+                    "interactive_type": "button",
+                    "next_bubbles": [
+                        {
+                            "type": "text",
+                            "text": "Silahkan pilih jadwal yang Anda inginkan.\nContoh:\nKetik *5M* untuk Shift 1 : {Jam Bekerja}"
+                        },
+                        {
+                            "type": "interactive_button",
+                            "text": "Ketik 0 untuk kembali ke Menu Utama.\nKetik 99 untuk kembali ke Menu Sebelumnya.",
+                            "menus": {
+                                "0": {
+                                    "id": "MENU",
+                                    "title": "Menu Utama"
+                                },
+                                "99": {
+                                    "id": "BACK",
+                                    "title": "Menu Sebelumnya"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "0": {
+                            "id": "MENU",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        },
+                        "99": {
+                            "id": "BACK",
+                            "title": "Menu Sebelumnya",
+                            "current_menu": "BACK",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "parent"
+                        }
+                    }
+                },
+                {
+                    "id": "1A_SQ3",
+                    "text": "Di bawah ini adalah jadwal antrian Dokter yang tersedia :\n\n1  {jam antrian 1}\n2 {jam antrian 1}",
+                    "index": "Antrian",
+                    "label": "jam",
+                    "type": "nest_menu",
+                    "error_msg": "",
+                    "config": {
+                        "api_url": "",
+                        "method": "get-patient-categories"
+                    },
+                    "interactive_message": false,
+                    "interactive_type": "button",
+                    "next_bubbles": [
+                        {
+                            "type": "text",
+                            "text": "Silahkan ketik nomor yang Anda inginkan untuk mengambil antrian.\nContoh: *1*"
+                        },
+                        {
+                            "type": "interactive_button",
+                            "text": "Ketik 0 untuk kembali ke Menu Utama.\nKetik 99 untuk kembali ke Menu Sebelumnya.",
+                            "menus": {
+                                "0": {
+                                    "id": "MENU",
+                                    "title": "Menu Utama"
+                                },
+                                "99": {
+                                    "id": "BACK",
+                                    "title": "Menu Sebelumnya"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "0": {
+                            "id": "MENU",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        },
+                        "99": {
+                            "id": "BACK",
+                            "title": "Menu Sebelumnya",
+                            "current_menu": "BACK",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "parent"
+                        }
+                    }
+                },
+                {
+                    "id": "1A_SQ4",
+                    "text": "Bapak / Ibu Silahkan memilih kategori Pasien berikut ini :\n\n1. Pasien Baru\n2. Pasien Lama",
+                    "index": "Pasien",
+                    "label": "kategori",
+                    "type": "nest_menu",
+                    "error_msg": "",
+                    "interactive_message": false,
+                    "interactive_type": "button",
+                    "next_bubbles": [
+                        {
+                            "type": "text",
+                            "text": "Ketik nomor dari menu di atas.\nContoh : ketik *1* untuk Pasien Baru"
+                        },
+                        {
+                            "type": "interactive_button",
+                            "text": "Ketik 0 untuk kembali ke Menu Utama.\nKetik 99 untuk kembali ke Menu Sebelumnya.",
+                            "menus": {
+                                "0": {
+                                    "id": "MENU",
+                                    "title": "Menu Utama"
+                                },
+                                "99": {
+                                    "id": "BACK",
+                                    "title": "Menu Sebelumnya"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "0": {
+                            "id": "MENU",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        },
+                        "99": {
+                            "id": "BACK",
+                            "title": "Menu Sebelumnya",
+                            "current_menu": "BACK",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "parent"
+                        },
+                        "1": {
+                            "id": "1A_SQ5",
+                            "text": "Silakan isi data berikut dengan copy format dibawah ini :\n\nNama : \nTanggal Lahir : \nAlamat : \nKelurahan : \nKecamatan : \nWilayah Kota : \nKTP Propinsi :\nNegara :",
+                            "index": "",
+                            "label": "",
+                            "type": "text",
+                            "error_msg": "",
+                            "contact_fields": [
+                                {
+                                    "name": "Pasien.nama"
+                                },
+                                {
+                                    "name": "Pasien.tanggal_lahir"
+                                },
+                                {
+                                    "name": "Pasien.alamat"
+                                },
+                                {
+                                    "name": "Pasien.kelurahan"
+                                },
+                                {
+                                    "name": "Pasien.kecamatan"
+                                },
+                                {
+                                    "name": "Pasien.wilayah_kota"
+                                },
+                                {
+                                    "name": "Pasien.ktp_propinsi"
+                                },
+                                {
+                                    "name": "Pasien.negara"
+                                }
+                            ],
+                            "next_bubbles": [
+                                {
+                                    "type": "interactive_button",
+                                    "text": "Ketik 0 untuk kembali ke Menu Utama.\nKetik 99 untuk kembali ke Menu Sebelumnya.",
+                                    "menus": {
+                                        "0": {
+                                            "id": "MENU",
+                                            "title": "Menu Utama"
+                                        },
+                                        "99": {
+                                            "id": "BACK",
+                                            "title": "Menu Sebelumnya"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "2": {
+                            "id": "1A_SQ6",
+                            "text": "Ketik *Nama Anda#Tanggal Lahir Anda*\nContoh : *John Doe#17081990*",
+                            "index": "",
+                            "label": "",
+                            "type": "text",
+                            "error_msg": "",
+                            "config": {
+                                "api_url": "",
+                                "method": "get-patient-data"
+                            },
+                            "next_bubbles": [
+                                {
+                                    "type": "interactive_buttons",
+                                    "text": "Ketik *0* untuk kembali ke Menu Utama.\nKetik *99* untuk kembali ke Menu Sebelumnya.",
+                                    "menus": {
+                                        "0": {
+                                            "id": "MENU",
+                                            "title": "Menu Utama"
+                                        },
+                                        "99": {
+                                            "id": "BACK",
+                                            "title": "Menu Sebelumnya"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "id": "1A_SQ7",
+                    "text": "Anda tercatat sebagai pasien dari Bethsaida Hospital\n\nNama : {Get data by API}\nTanggal Lahir : {Get data by API}\nAlamat : {Get data by API}\nKelurahan : {Get data by API}\nKecamatan : {Get data by API}\nWilayah Kota : {Get data by API}\nKTP Propinsi : {Get data by API}\nNegara : {Get data by API}",
+                    "index": "",
+                    "label": "",
+                    "type": "nest_menu",
+                    "error_msg": "",
+                    "interactive_message": false,
+                    "interactive_type": "button",
+                    "next_bubbles": [
+                        {
+                            "type": "text",
+                            "text": "Apakah ini benar data anda? ketik *Y* jika benar dan ketik *T* jika salah."
+                        },
+                        {
+                            "type": "interactive_button",
+                            "text": "Ketik *0* untuk kembali ke Menu Utama.\nKetik *99* untuk kembali ke Menu Sebelumnya.",
+                            "menus": {
+                                "0": {
+                                    "id": "MENU",
+                                    "title": "Menu Utama"
+                                },
+                                "99": {
+                                    "id": "BACK",
+                                    "title": "Menu Sebelumnya"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "0": {
+                            "id": "MENU",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        },
+                        "99": {
+                            "id": "BACK",
+                            "title": "Menu Sebelumnya",
+                            "current_menu": "BACK",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "parent"
+                        }
+                    }
+                },
+                {
+                    "id": "1A_SQ8",
+                    "text": "Untuk melanjutkan proses pemesanan, silahkan pilih metode pembayaran berikut : \n\n1. Virtual Account\n2. Others Online Payment (DOKU, Link Aja, Ovo, Jenius Pay, Debit Card, Credit Card)",
+                    "type": "nest_menu",
+                    "error_msg": "",
+                    "label": "",
+                    "interactive_message": true,
+                    "interactive_type": "button",
+                    "next_bubbles": [
+                        {
+                            "type": "text",
+                            "text": "Ketik *1* untuk memilih *Virtual Account*"
+                        },
+                        {
+                            "type": "interactive_button",
+                            "text": "Ketik *0* untuk kembali ke Menu Utama.\nKetik *99* untuk kembali ke Menu Sebelumnya.",
+                            "menus": {
+                                "0": {
+                                    "id": "MENU",
+                                    "title": "Menu Utama"
+                                },
+                                "99": {
+                                    "id": "BACK",
+                                    "title": "Menu Sebelumnya"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "0": {
+                            "id": "MENU",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        },
+                        "99": {
+                            "id": "BACK",
+                            "title": "Menu Sebelumnya",
+                            "current_menu": "BACK",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "parent"
+                        },
+                        "1": {
+                            "id": "1A_SQ9",
+                            "text": "Silahkan pilih Bank untuk Virtual Account yang anda maksud.\n\n1. Permata\n2. Mandiri\n3. CIMB\n4. Danamon\n5. Maybank\n6. BRI\n7. BNI \n8. ARTAJASA",
+                            "index": "",
+                            "label": "",
+                            "type": "text",
+                            "error_msg": "",
+                            "interactive_message": false,
+                            "interactive_type": "list",
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "Ketik *1* untuk memilih Virtual Account Permata"
+                                },
+                                {
+                                    "type": "interactive_button",
+                                    "text": "Ketik *0* untuk kembali ke Menu Utama\nKetik *99* untuk kembali Menu Sebelumnya",
+                                    "menus": {
+                                        "0": {
+                                            "id": "MENU",
+                                            "title": "Menu Utama"
+                                        },
+                                        "99": {
+                                            "id": "BACK",
+                                            "title": "Menu Sebelumnya"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "2": {
+                            "id": "1A_SQ10",
+                            "text": "Untuk melanjutkan proses janji dokter, silahkan Anda melakukan pembayaran administrasi. silahkan klik tautan dibawah ini.\n\nhttps://bethsaidapayment.coster.id/payment_gateway/request/payment/BTSD20220317160244\n\nBerikut ini adalah informasi pembayaran atas Buat Janji Dokter. Di bawah ini Jadwal Kunjungan yang VINA buatkan :\n\nNama : *Aditya Dwi Nugraha*\nRekam Medis {jika pasien lama} : 00154379\nHp : 6285714264761\nAlamat : PERUM DAMAI LANGGENG BLOK 1 NO 2\n\nPoly : *Klinik Penyakit Dalam (INT)*\nDokter : DIPDO PETRUS WIDJAYA, SP.PD\nShift : a, (13:00 - 14:00)\nJadwal Kunjung : 23-03-2022\n\nPembayaran : Administrasi Booking\nNominal : Rp. 55.000,00\n\nDan tunggu notifikasi Jadwal Buat Janji Dokter dari kami setelah pembayaran Anda terkonfirmasi.\n\nBerikut ini merupakan informasi mengenai ketentuan umum layanan ini, mohon perhatiannya untuk memperhatikan beberapa hal di bawah ini ya.\n\n- Pendaftaran layanan Buat Janji Dokter akan dikenakan biaya admin sesuai dengan syarat dan ketentuan yang berlaku.\n- Pasien yang telah melakukan pendaftaran layanan Buat Janji Dokter, tidak dapat melakukan kembali uang (refund).\n- Untuk melakukan penjadwalan ulang (reschedule), dapat dilakukan melalui layanan whatsapp ini dengan memilih Layanan Pelanggan dan Pemasaran (Customer Service and Marketing).\n- Layanan ini hanya berlaku untuk Pasien yang menggunakan Pembayaran Pribadi (Private).\n\nTerima kasih",
+                            "index": "Pembayaran",
+                            "label": "status",
+                            "type": "text",
+                            "error_msg": ""
+                        }
+                    }
+
+                },
+                {
+                    "id": "1A_SQ11",
+                    "text": "Berikut ini adalah informasi pembayaran atas \nBooking Jadwal Kunjungan yang anda lakukan.\n\nNama :\nRekam Medis {jika pasien lama} :  \nHp : \nAlamat : \nPoly :\nDokter : \nShift :\nJadwal Kunjung : \nPembayaran : Administrasi Booking\nNominal : Rp55.000,00\nNama Bank : \nNomor VA : \n\nSilakan lakukan pembayaran 3 jam dari sekarang.\nDan tunggu notifikasi Jadwal Booking dari kami setelah pembayaran anda terkonfirmasi. \n\nBerikut ini merupakan informasi mengenai ketentuan umum layanan ini, mohon perhatiannya untuk memperhatikan beberapa hal di bawah ini ya.\n\n- Pendaftaran layanan Buat Janji Dokter akan dikenakan biaya admin sesuai dengan syarat dan ketentuan yang berlaku.\n- Pasien yang telah melakukan pendaftaran layanan Buat Janji Dokter, tidak dapat melakukan kembali uang (refund).\n- Untuk melakukan penjadwalan ulang (reschedule), dapat dilakukan melalui layanan whatsapp ini dengan memilih Layanan Pelanggan dan Pemasaran (Customer Service and Marketing).\n- Layanan ini hanya berlaku untuk Pasien yang menggunakan Pembayaran Pribadi (Private).\n\nTerima kasih",
+                    "index": "",
+                    "label": "",
+                    "interactive_message": false,
+                    "interactive_type": "button",
+                    "next_bubbles": [
+                        {
+                            "type": "text",
+                            "text": "Ketik *0* untuk kembali ke Menu Utama.\nKetik *99* untuk kembali ke Menu Sebelumnya"
+                        }
+                    ],
+                    "menus": {
+                        "0": {
+                            "id": "MENU",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        },
+                        "99": {
+                            "id": "BACK",
+                            "title": "Menu Sebelumnya",
+                            "current_menu": "BACK",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "parent"
+                        }
+                    }
+                }
+            ],
+            "prev_menus": {
+                "0": {
+                    "id": "MENU",
+                    "title": "Menu Utama",
+                    "current_menu": "MENU",
+                    "text": "",
+                    "type": "goto",
+                    "goto": "main"
+                },
+                "99": {
+                    "id": "BACK",
+                    "title": "Menu Sebelumnya",
+                    "current_menu": "BACK",
+                    "text": "",
+                    "type": "goto",
+                    "goto": "parent"
+                }
+            }
+        }
+    ],
+    "2": [
+        {
+            "id": "2B",
+            "current_menu": "2",
+            "text": "Berikut ini adalah dokter untuk Klinik Gigi :\n\n- drg. Nety Trisnawaty, Ph.D.\n- drg. R. A. Syanti W. Astuty, Sp.Perio, M.M.\n- drg. Fauzia Adhiwidyanti,Sp.Ort\n- drg. Dewi Riasari Zainuddin, Sp.KGA\n- drg. Alex Sugiana, Sp.BM\n- drg. Shiril Paskalis\n- drg. Gina Lasiasari, Sp.Pros\n- drg. Ratna Sari Dewi, Sp.KG\n- drg. Gina Triana\n- drg. Yura Muharsya, Sp.KG\n- drg. Vini Muslimov Sebastian Putra, Sp.BM\n- drg. Retno Oktasari, Sp.KGA",
+            "type": "nest_menu",
+            "interactive_message": false,
+            "interactive_type": "button",
+            "next_bubbles": [
+                {
+                    "type": "text",
+                    "text": "Silakan klik link di bawah ini, untuk pendaftaran dan informasi selengkapnya :\nhttps://wa.me/6287770779191"
+                },
+                {
+                    "type": "interactive_button",
+                    "text": "Ketik 0 untuk kembali ke Menu Utama.\nKetik 99 untuk kembali ke Menu Sebelumnya.",
+                    "menus": {
+                        "0": {
+                            "id":"MENU",
+                            "title": "Menu Utama"
+                        },
+                        "99": {
+                            "id": "BACK",
+                            "title": "Menu Sebelumnya"
+                        }
+                    }
+                }
+            ],
+            "menus": {
+                "0": {
+                    "id": "MENU",
+                    "title": "Menu Utama",
+                    "current_menu": "MENU",
+                    "text": "",
+                    "type": "goto",
+                    "goto": "main"
+                },
+                "99": {
+                    "id": "BACK",
+                    "title": "Menu Sebelumnya",
+                    "current_menu": "BACK",
+                    "text": "",
+                    "type": "goto",
+                    "goto": "parent"
+                }
+            }
+        }
+    ],
+    "3": [
+        {
+            "id": "3C",
+            "current_menu": "3",
+            "text": "Konsultasi dokter spesialis Bethsaida Hospital dengan mudah dan dari mana saja melalui AIDO. Untuk pemesanan klik link berikut : https://bit.ly/36nhQsx ",
+            "type": "nest_menu",
+            "interactive_message": false,
+            "interactive_type": "button",
+            "next_bubbles": [
+                {
+                    "type": "interactive_button",
+                    "text": "Ketik 0 untuk kembali ke Menu Utama.",
+                    "menus": {
+                        "0": {
+                            "id": "MENU",
+                            "title": "Menu Utama"
+                        }
+                    }
+                }
+            ],
+            "menus": {
+                "0": {
+                    "id": "MENU",
+                    "title": "Menu Utama",
+                    "current_menu": "MENU",
+                    "text": "",
+                    "type": "goto",
+                    "goto": "main"
+                }
+            }
+        }
+    ],
+    "4": [
+        {
+            "id": "4D",
+            "current_menu": "4",
+            "text": "Silahkan klik link di bawah ini untuk melakukan pendaftaran Drive Thru\nhttps://dt.bethsaidahospitals.com/ ",
+            "interactive_message": false,
+            "interactive_type": "button",
+            "next_bubbles": [
+                {
+                    "type": "interactive_button",
+                    "text": "Ketik 0 untuk kembali ke Menu Utama.\nKetik 99 untuk kembali ke Menu Sebelumnya.",
+                    "menus": {
+                        "99": {
+                            "id": "BACK",
+                            "title": "Menu Sebelumnya"
+                        },
+                        "0": {
+                            "id": "MENU",
+                            "title": "Menu Utama"
+                        }
+                    }
+                }
+            ],
+            "type": "nest_menu",
+            "menus": {
+                "0": {
+                    "id": "MENU",
+                    "title": "Menu Utama",
+                    "current_menu": "MENU",
+                    "text": "",
+                    "type": "goto",
+                    "goto": "main"
+                },
+                "99": {
+                    "id": "BACK",
+                    "title": "Menu Sebelumnya",
+                    "current_menu": "BACK",
+                    "text": "",
+                    "type": "goto",
+                    "goto": "parent"
+                }
+            }
+        }
+    ],
+    "5": [
+        {
+            "id": "5E",
+            "current_menu": "5",
+            "type": "nest_menu",
+            "text": "Layanan Homecare dan Homevisit dari Bethsaida Hospital, dengan layanan sebagai berikut :\n\n- Perawatan Luka (Wound Care)\n- Konsultasi Dokter Di Rumah (Home Visit) \n- Tindakan Invasif\n- Perawatan Ibu Dan Bayi (Mom And Baby Care)\n- Fisioterapi\n- Vaksinasi Anak\n- Laboratorium Mobile",
+            "interactive_message": false,
+            "interactive_type": "button",
+            "next_bubbles": [
+                {
+                    "type": "text",
+                    "text": "Silakan klik link dibawah ini, untuk pendaftaran dan informasi selengkapnya :\nhttps://cer.bethsaidahospitals.com"
+                },
+                {
+                    "type": "text",
+                    "text": "Atau klik link di bawah ini untuk berbicara dengan layanan pelanggan Bethsaida Hospital :\nhttps://cutt.ly/xU6y7MD"
+                },
+                {
+                    "type": "interactive_button",
+                    "text": "Ketik 0 untuk kembali ke Menu Utama.\nKetik 99 untuk kembali ke Menu Sebelumnya.",
+                    "menus": {
+                        "99": {
+                            "id": "BACK",
+                            "title": "Menu Sebelumnya"
+                        },
+                        "0": {
+                            "id": "MENU",
+                            "title": "Menu Utama"
+                        }
+                    }
+                }
+            ],
+            "menus": {
+                "0": {
+                    "id": "MENU",
+                    "title": "Menu Utama",
+                    "current_menu": "MENU",
+                    "text": "",
+                    "type": "goto",
+                    "goto": "main"
+                },
+                "99": {
+                    "id": "BACK",
+                    "title": "Menu Sebelumnya",
+                    "current_menu": "BACK",
+                    "text": "",
+                    "type": "goto",
+                    "goto": "parent"
+                }
+            }
+        }
+    ],
+    "6": [
+        {
+            "id": "6F",
+            "current_menu": "6",
+            "text": "Silahkan pilih petugas yang Anda ingin tuju :\n\n1. Layanan Pelanggan (Customer Service)\n2. Pemasaran / Marketing (Senin - Jumat, 08.00 - 17.00)",
+            "type": "nest_menu",
+            "interactive_message": true,
+            "interactive_type": "button",
+            "next_bubbles": [
+                {
+                    "type": "text",
+                    "text": "Silahkan ketik keyword dari menu di atas\nContoh : ketik 1 untuk Layanan Pelanggan (Customer Service)"
+                },
+                {
+                    "type": "interactive_button",
+                    "text": "Ketik 0 untuk kembali ke Menu Utama.\nKetik 99 untuk kembali ke Menu Sebelumnya.",
+                    "menus": {
+                        "99": {
+                            "id": "BACK",
+                            "title": "Menu Sebelumnya"
+                        },
+                        "0": {
+                            "id": "MENU",
+                            "title": "Menu Utama"
+                        }
+                    }
+                }
+            ],
+            "menus": {
+                "1": {
+                    "id": "6F1",
+                    "current_menu": "6-1",
+                    "text": "Terima kasih sudah menghubungi Official WhatsApp Bethsaida Hospital. \nTim kami akan segera membantu Anda. Mohon Menunggu.",
+                    "type": "goto",
+                    "goto": "cs",
+                    "interactive_message": false,
+                    "interactive_type": "list",
+                    "next_bubbles": [
+                        {
+                            "type": "text",
+                            "text": "Anda akan terhubung ke tim Layanan Pelanggan (Customer Service) kami."
+                        }
+                    ]
+                },
+                "2": {
+                    "id": "6F2",
+                    "current_menu": "6-2",
+                    "text": "Terima kasih sudah menghubungi Official WhatsApp Bethsaida Hospital. \nTim kami akan segera membantu Anda. Mohon Menunggu.",
+                    "type": "goto",
+                    "goto": "cs"
+                },
+                "0": {
+                    "id": "MENU",
+                    "title": "Menu Utama",
+                    "current_menu": "MENU",
+                    "text": "",
+                    "type": "goto",
+                    "goto": "main"
+                },
+                "99": {
+                    "id": "BACK",
+                    "title": "Menu Sebelumnya",
+                    "current_menu": "BACK",
+                    "text": "",
+                    "type": "goto",
+                    "goto": "parent"
+                }
+            }
+        }
+    ],
+    "7": [
+        {
+            "id": "7G",
+            "current_menu": "7",
+            "text": "Silahkan Klik Nomor di bawah ini :\n1500990",
+            "type": "nest_menu",
+            "interactive_message": false,
+            "interactive_type": "button",
+            "next_bubbles": [
+                {
+                    "type": "interactive_button",
+                    "text": "Ketik 0 untuk kembali ke Menu Utama.\nKetik 99 untuk kembali ke Menu Sebelumnya.",
+                    "menus": {
+                        "99": {
+                            "id": "BACK",
+                            "title": "Menu Sebelumnya"
+                        },
+                        "0": {
+                            "id": "MENU",
+                            "title": "Menu Utama"
+                        }
+                    }
+                }
+            ],
+            "menus": {
+                "0": {
+                    "id": "MENU",
+                    "title": "Menu Utama",
+                    "current_menu": "MENU",
+                    "text": "",
+                    "type": "goto",
+                    "goto": "main"
+                },
+                "99": {
+                    "id": "BACK",
+                    "title": "Menu Sebelumnya",
+                    "current_menu": "BACK",
+                    "text": "",
+                    "type": "goto",
+                    "goto": "parent"
+                }
+            }
+        }
+    ]
+}

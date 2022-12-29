@@ -1,0 +1,1173 @@
+/* 1 */
+{
+    "_id" : ObjectId("5dae7700801ddf3d511968ac"),
+    "get_started_walkthrough" : 1,
+    "project" : 6608,
+    "updated_at" : ISODate("2021-12-15T07:37:02.000Z"),
+    "created_at" : ISODate("2019-10-22T03:26:56.000Z"),
+    "mandatory_tag" : true,
+    "office_hour" : {
+        "status" : true,
+        "data" : [ 
+            {
+                "day" : 1,
+                "name" : "Monday",
+                "is_close" : false,
+                "from" : "9:00",
+                "to" : "16:00"
+            }, 
+            {
+                "day" : 2,
+                "name" : "Tuesday",
+                "is_close" : false,
+                "from" : "9:00",
+                "to" : "16:00"
+            }, 
+            {
+                "day" : 3,
+                "name" : "Wednesday",
+                "is_close" : false,
+                "from" : "9:00",
+                "to" : "16:00"
+            }, 
+            {
+                "day" : 4,
+                "name" : "Thursday",
+                "is_close" : false,
+                "from" : "9:00",
+                "to" : "16:00"
+            }, 
+            {
+                "day" : 5,
+                "name" : "Friday",
+                "is_close" : false,
+                "from" : "9:00",
+                "to" : "16:00"
+            }, 
+            {
+                "day" : 6,
+                "name" : "Saturday",
+                "is_close" : false,
+                "from" : "9:00",
+                "to" : "16:00"
+            }, 
+            {
+                "day" : 7,
+                "name" : "Sunday",
+                "is_close" : true,
+                "from" : "9:00",
+                "to" : "16:00"
+            }
+        ]
+    },
+    "special_hours" : [ 
+        {
+            "date" : "2020-01-01",
+            "is_close" : true,
+            "from" : "8:00",
+            "to" : "16:00"
+        }, 
+        {
+            "date" : "2020-03-25",
+            "is_close" : true,
+            "from" : "8:00",
+            "to" : "16:00"
+        }, 
+        {
+            "date" : "2020-04-10",
+            "is_close" : true,
+            "from" : "8:00",
+            "to" : "16:00"
+        }, 
+        {
+            "date" : "2020-05-01",
+            "is_close" : true,
+            "from" : "8:00",
+            "to" : "16:00"
+        }, 
+        {
+            "date" : "2021-05-13",
+            "is_close" : true,
+            "from" : "8:00",
+            "to" : "16:00"
+        }, 
+        {
+            "date" : "2021-05-14",
+            "is_close" : true,
+            "from" : "8:00",
+            "to" : "16:00"
+        }, 
+        {
+            "date" : "2021-05-15",
+            "is_close" : true,
+            "from" : "8:00",
+            "to" : "16:00"
+        }, 
+        {
+            "date" : "2021-05-16",
+            "is_close" : true,
+            "from" : "8:00",
+            "to" : "16:00"
+        }, 
+        {
+            "date" : "2021-07-20",
+            "is_close" : true,
+            "from" : "8:00",
+            "to" : "16:00"
+        }, 
+        {
+            "date" : "2021-08-11",
+            "is_close" : true,
+            "from" : "8:00",
+            "to" : "16:00"
+        }, 
+        {
+            "date" : "2021-08-17",
+            "is_close" : true,
+            "from" : "8:00",
+            "to" : "16:00"
+        }
+    ],
+    "notif_waba_24h" : true,
+    "waba_templates" : [ 
+        {
+            "namespace" : "584eead3_cbc7_436e_82e1_309e56699f39",
+            "name" : "greeting",
+            "type" : "template",
+            "message" : "Selamat datang dilayanan Whatsapp Official KASOEM CARE, dengan senang hati kami siap MEMBANTU Anda :)",
+            "message_type" : "text",
+            "language" : {
+                "code" : "id",
+                "policy" : "deterministic"
+            },
+            "param_size" : 0,
+            "is_followup_reply" : true
+        }
+    ],
+    "create_log_enabled" : 1,
+    "initial_prefix" : "",
+    "chatbot_sch" : {
+        "schemas" : {
+            "60a79bf473bedb4f3526b463" : {
+                "1" : [ 
+                    {
+                        "id" : "1A",
+                        "text" : "*Kasoem Vision Care* adalah layanan kesehatan yang menjalankan fungsi Optik untuk menjaga penglihatan Anda dan Keluarga tetap selalu optimal dengan 3 pilar layanan yang berkesinambungan yaitu Preventif (Tindakan Pencegahan), Kuratif (Tindakan Penanganan) dan Rehabilitatif (Tindakan Pemeliharaan) yang dilakukan oleh Refraksionis Optisien yang professional.\n\nSilakan pilih kebutuhan Anda :\n1. Informasi Alamat & Jam Operasional Toko\n2. Informasi Layanan Vision Care\n3. Informasi Solusi Produk\n4. Informasi Program Promo, Event & Marketplace\n5. Cek Status Pemesanan\n6. Penyampaian Pengaduan/Klaim Garansi\n7. Berbicara dengan Kasoem Care Officer*\n\n---\nSilakan balas dengan mengetikkan nomor sesuai kebutuhan Anda, \nContoh : ketik 1 untuk informasi alamat & jam Operasional toko\nKetik *MENU* untuk kembali ke menu utama",
+                        "type" : "nest_menu",
+                        "menus" : {
+                            "1" : {
+                                "id" : "11A",
+                                "text" : "Silakan pilih area domisi Kasoem Vision Care terdekat Anda :\n1. Wilayah DKI Jakarta\n2. Wilayah Jawa Barat\n3. Wilayah Karawang-Cikampek\n4. Wilayah Tanggerang-Serang-Cilegon\n\n---\nSilakan balas dengan mengetikkan angka sesuai kebutuhan Anda\nContoh : ketik 1 untuk wilayah DKI Jakarta\nKetik *MENU* untuk kembali ke menu utama",
+                                "type" : "nest_menu",
+                                "menus" : {
+                                    "1" : {
+                                        "id" : "111A",
+                                        "text" : "*=JAKARTA PUSAT=*\n1.Kasoem Vision Care Cikini\nAlamat : Jl. CIkini Raya No. 18 Jakarta Pusat\nJam Operasional : Senin s.d Sabtu pukul 08.00 - 20.00 WIB. Minggu pukul 09.00-17.00 WIB\nGoogle Maps : bit.ly/KasoemCikiniVC\n\n*=JAKARTA SELATAN=*\n2. Kasoem Vision Care Pejaten\nAlamat : Jl. Taman Marga Satwa No. 18 Jakarta Selatan\nJam Operasional : Senin s.d Sabtu pukul 08.00 - 20.00 WIB. Minggu pukul 09.00-17.00 WIB\nGoogle Maps : bit.ly/KasoemPejaten\n\n3. Kasoem Vision Care Kebayoran Lama\nAlamat : Jl. Kebayoran Lama No. 94 Jakarta Selatan\nJam Operasional : Senin s.d Minggu pukul 09.00 - 17.00 WIB\nGoogle Maps : bit.ly/KasoemKL\n\n4. Kasoem Vision Care Komplek Perum PERURI (KOPETRI)\nAlamat : Jl. Falatehan No. 14 Jakarta Selatan\nJam Operasional : Senin s.d Jumat pukul 08.00 - 16.00 WIB\nGoogle Maps : bit.ly/KasoemKopetri\n\n5. Kasoem Vision Care Gandaria City Mall\nAlamat : Lower Ground Jl. Sultan Iskandar Muda, RT.10/RW.6, Kby. Lama, Jakarta Selatan\nJam Operasional : Senin s.d Minggu pukul 10.00 - 21.00 WIB\nGoogle Maps : bit.ly/KasoemGandaria \n\n*=JAKARTA TIMUR=*\n6. Kasoem Vision Care Buaran Plaza\nAlamat : Lower Ground Jl. Raden Inten II No. 1 Klender Jakarta Timur\nJam Operasional : Senin s.d Minggu pukul 10.00 - 20.00 WIB\nGoogle Maps : bit.ly/KasoemBuaran\n\n---\nKetik *MENU* untuk kembali ke menu utama\nKetik *HELP* untuk konsultasi dengan KASOEM CARE OFFICER",
+                                        "type" : "nest_menu",
+                                        "menus" : {
+                                            "BACK" : {
+                                                "id" : "111BACKA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "parent"
+                                            },
+                                            "MENU" : {
+                                                "id" : "111MENUA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "main"
+                                            },
+                                            "HELP" : {
+                                                "id" : "111HELPA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "cs"
+                                            }
+                                        }
+                                    },
+                                    "2" : {
+                                        "id" : "112A",
+                                        "text" : "*=KOTA DAN KABUPATEN BOGOR=*\n1. Kasoem Vision Care Botani Square Mall\nAlamat : Ground FIoor No.51, Botani Square Mall Jl. Raya Pajajaran Bogor\nJam Operasional : Senin s.d Minggu pukul 10.00 - 20.00 WIB\nGoogle Maps : bit.ly/KasoemBSQ\n\n2. Kasoem Vision Care Rumah Sakit PMI\nAlamat : Jl. Raya Pajajaran No.80 Bogor\nJam Operasional : Senin s.d Jumat pukul 09.00 - 16.00 WIB. Sabtu pukul 09.00 - 15.00 WIB\nGoogle Maps : bit.ly/KasoemPMI\n\n3. Kasoem Vision Care Cibinong City Mall\nAlamat : LG FIoor No 44-45 Cibinong City Mall Jl. Tegar Beriman No. 1 Cibinong\nJam Operasional : Senin s.d Minggu pukul 10.00 - 21.00 WIB\nGoogle Maps : bit.ly/KasoemCCM\n\n*=KOTA BEKASI=*\n4. Kasoem Vision Care Blu Plaza\nAlamat : UG FI Blok F Blu Plaza Jl. Chairil Anwar No. 27-36 Bekasi\nJam Operasional : Senin s.d Minggu pukul 10.00 - 20.00 WIB\nGoogle Maps : bit.ly/KasoemCBP\n\n*=KOTA CIMAHI=*\n5. Kasoem Vision Care Cimahi Mall\nAlamat : LG Floor Blok D2, Cimahi Mall Jl. Ganda Wijaya No. 1 Cimahi\nJam Operasional : Senin s.d Minggu pukul 10.00 - 19.00 WIB\nGoogle Maps : bit.ly/KasoemCimahi\n\n*=KOTA CIANJUR=*\n6. Kasoem Vision Care Citimall Cianjur\nAlamat : Ground Floor B11, Cianjur Citimall, Jl. KH Abdullah Bin Nuh No.1, Pamoyanan, Cianjur \nJam Operasional : Senin s.d Minggu pukul 10.00 - 20.30 WIB.\nGoogle Maps : bit.ly/KasoemCianjur\n\n*=KOTA SUKABUMI=*\n7. Kasoem Vision Care Citimall Sukabumi\nAlamat : Ground Floor No. 140, Jl. Ahmad Yani Cokole Sukabumi\nJam Operasional : Senin s.d Minggu pukul 10.00 - 20.00 WIB\nGoogle Maps : bit.ly/KasoemSkb\n\n*=KOTA CIREBON=*\n8. Kasoem Vision Care Grage Mall\nAlamat : LG Floor Paviliun 1 No 19 Jl. Tentara Pelajar No. 1 Cirebon\nJam Operasional : Senin s.d Minggu pukul 10.00 - 21.00 WIB\nGoogle Maps : bit.ly/KasoemGrage\n\n9. Kasoem Vision Care Cirebon Superblock Mall\nAlamat : Komp. Chelsea Blue Ruko 9 - 10, Jl. DR. Cipto Mangunkusumo No.26, Pekiringan, Kota Cirebon\nJam Operasional : Senin s.d Minggu pukul 09.00 s.d 21.00 WIB\n\nKetik *MENU* untuk kembali ke menu utama\nKetik *HELP* untuk konsultasi dengan KASOEM CARE OFFICER",
+                                        "type" : "nest_menu",
+                                        "menus" : {
+                                            "BACK" : {
+                                                "id" : "112BACKA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "parent"
+                                            },
+                                            "MENU" : {
+                                                "id" : "112MENUA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "main"
+                                            },
+                                            "HELP" : {
+                                                "id" : "112HELPA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "cs"
+                                            }
+                                        }
+                                    },
+                                    "3" : {
+                                        "id" : "113A",
+                                        "text" : "*=KOTA KARAWANG=*\n1. Kasoem Vision Care Kota Karawang\nAlamat : Jl. Jend. Ahmad Yani 100D Karawang\nJam Operasional : Senin s.d Sabtu pukul 08.00 - 20.00 WIB. Minggu/libur pukul 08.30-17.00 WIB\nGoogle Maps : bit.ly/KasoemKarawang\n\n2. Kasoem Vision Care Karawang Central Plaza\nAlamat : LG Floor Blok B11 Kawasan Galuh Mas, Jl. Galuh Mas Raya, Telukjambe Karawang\nJam Operasional : Senin s.d Minggu pukul 10.00 - 20.30 WIB\nGoogle Maps : bit.ly/KasoemKCP\n\n3. Kasoem Vision Care Resinda Park Mall\nAlamat : First Floor Blok F1 No. 19A Jl. Resinda Raya No. 2 Karawang\nJam Operasional : Senin s.d Minggu pukul 10.00 - 21.00 WIB\nGoogle Maps : bit.ly/KasoemRPM\n\n*=CIKAMPEK=*\n5. Kasoem Vision Care Klinik Mata dr. Suparman Cikampek\nAlamat : Jl. H. Juanda Sukasueri No. 202 Sarimulya, Cikampek\nJam Operasional : Senin s.d Sabtu pukul 08.00 - 20.00 WIB. Minggu/libur pukul 08.00 - 16.30 WIB\nGoogle Maps : bit.ly/KasoemCikampek\n\nKetik *MENU* untuk kembali ke menu utama\nKetik *HELP* untuk konsultasi dengan KASOEM CARE OFFICER",
+                                        "type" : "nest_menu",
+                                        "menus" : {
+                                            "BACK" : {
+                                                "id" : "113BACKA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "parent"
+                                            },
+                                            "MENU" : {
+                                                "id" : "113MENUA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "main"
+                                            },
+                                            "HELP" : {
+                                                "id" : "113HELPA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "cs"
+                                            }
+                                        }
+                                    },
+                                    "4" : {
+                                        "id" : "114A",
+                                        "text" : "*=TANGERANG=*\n1. Kasoem Vision Care Tangerang\nAlamat : Jl. Kisamaun No. 143 Sukasari Tangerang\nJam Operasional : Senin s.d Sabtu pukul 09.00 - 20.00 WIB. Minggu pukul 09.00 -17.00 WIB\nGoogle Maps : bit.ly/KasoemTgr\n\n*=SERANG=*\n1. Kasoem Vision Care Kota Serang\nAlamat : Jl. Veteran No. 2 Serang\nJam Operasional : Senin s.d Minggu pukul 09.00 - 20.00 WIB\nGoogle Maps : bit.ly/KasoemSerang\n\n2. Kasoem Vision Care Carrefour Serang\nAlamat : Ground Floor No. 8 Jl. Ahmad Yani No. 196-198 Serang\nJam Operasional : Senin s.d Sabtu pukul 11.00-19.00 WIB. Minggu pukul 11.00 s.d 20.00 WIB.\nGoogle Maps : bit.ly/KasoemCarSerang\n\n*=CILEGON=*\n1. Kasoem Vision Care Cilegon City Square\nAlamat : Jl. Raya Cilegon-Serang Lingkungan Kadipaten A1/16 Kota Cilegon\nJam Operasional : Senin s.d Minggu pukul 09.00 - 20.00 WIB\nGoogle Maps : bit.ly/KasoemCCS\n\n2. Kasoem Vision Care Rumah Sakit Krakatau Medika\nAlamat : Jl. Semang Raya Cilegon\nJam Operasional : Senin s.d Jumat pukul 09.00 - 17.00 WIB. Sabtu pukul 09.00 - 15.00 WIb. Minggu tutup\nGoogle Maps : bit.ly/KasoemRSKM\n\n3. Kasoem Vision Care Supermall Cilegon\nAlamat : Ground Floor B6 Jl. Raya Serang Cilegon\nJam Operasional : Senin s.d Minggu pukul 10.00 - 20.00 WIB\nGoogle Maps : bit.ly/KasoemCilegonSupermall\n\nKetik *MENU* untuk kembali ke menu utama\nKetik *HELP* untuk konsultasi dengan KASOEM CARE OFFICER",
+                                        "type" : "nest_menu",
+                                        "menus" : {
+                                            "BACK" : {
+                                                "id" : "114BACKA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "parent"
+                                            },
+                                            "MENU" : {
+                                                "id" : "114MENUA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "main"
+                                            },
+                                            "HELP" : {
+                                                "id" : "114HELPA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "cs"
+                                            }
+                                        }
+                                    },
+                                    "MENU" : {
+                                        "id" : "11MENUA",
+                                        "text" : "",
+                                        "type" : "goto",
+                                        "goto" : "main"
+                                    }
+                                }
+                            },
+                            "2" : {
+                                "id" : "12A",
+                                "text" : "Kasoem Vision Care menyediakan layanan konsultasi dengan Refraksionis Optisien mengenai solusi penglihatan optimal yang unik bagi Anda dan keluarga.\n\nSilakan pilih layanan Kasoem Vision Care yang Anda butuhkan : \n1. Layanan Pemeriksaan Mata Komprehensif\n2. Layanan Pemeriksaan Kelainan Penglihatan\n3. Layanan BPJS Kesehatan\n\nSilakan balas dengan mengetikkan angka sesuai kebutuhan Anda\nContoh : ketik 1 untuk layanan pemeriksaan anak\n---\nKetik *MENU* untuk kembali ke menu utama",
+                                "type" : "nest_menu",
+                                "menus" : {
+                                    "1" : {
+                                        "id" : "121A",
+                                        "text" : "Konsultasikan kondisi dan kebutuhan penglihatan Anda dengan Staff Profesional kami dengan Layanan Pemeriksaan Mata Komprehensif yang berfungsi untuk dapat mengetahui kondisi penglihatan Anda secara detail dan menyeluruh.\n---\nKetik *MENU* untuk kembali ke menu utama\nKetik *HELP* untuk reservasi appointment melalui KASOEM CARE OFFICER",
+                                        "image_url" : "https://smcdn.s45.in/bot/assets_kasoem/Layanan%20Pemeriksaan%20Mata%20Komprehensif%20-%20Kasoem%20Vision%20Care.jpeg",
+                                        "type" : "nest_menu",
+                                        "menus" : {
+                                            "BACK" : {
+                                                "id" : "121BACKA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "parent"
+                                            },
+                                            "MENU" : {
+                                                "id" : "121MENUA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "main"
+                                            },
+                                            "HELP" : {
+                                                "id" : "121HELPA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "cs"
+                                            }
+                                        }
+                                    },
+                                    "2" : {
+                                        "id" : "122A",
+                                        "text" : "Hasil Pemeriksaan Mata Komprehensif akan mengetahui kondisi penglihatan hingga mendeteksi kondisi kelainan penglihatan yang lebih spesifik seperti kelainan medis, gangguan binokular, low vision, mata lelah dan gangguan penglihatan lain sehingga kami dapat memberikan solusi komprehensif kepada Anda dan Keluarga.\n---\nKetik *MENU* untuk kembali ke menu utama\nKetik *HELP* untuk reservasi appointment melalui KASOEM CARE OFFICER",
+                                        "image_url" : "https://smcdn.s45.in/bot/assets_kasoem/Layanan%20Pemeriksaan%20Penglihatan%20Khusus%20-%20Kasoem%20Vision%20Care.jpg",
+                                        "type" : "nest_menu",
+                                        "menus" : {
+                                            "BACK" : {
+                                                "id" : "122BACKA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "parent"
+                                            },
+                                            "MENU" : {
+                                                "id" : "122MENUA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "main"
+                                            },
+                                            "HELP" : {
+                                                "id" : "122HELPA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "cs"
+                                            }
+                                        }
+                                    },
+                                    "3" : {
+                                        "id" : "123A",
+                                        "text" : "Layanan BPJS Kesehatan mempermudah Anda dan keluarga untuk selalu menjaga penglihatan optimal, kami melayani proses klaim melalui BPJS Kesehatan. Toko yang telah bekerjasama dengan BPJS Kesehatan :\n1. Kasoem Vision Care Serang\n2. Kasoem Vision Care Karawang\n3. Kasoem Vision Care Cibinong City Mall\n4. Kasoem Vision Care RS PMI Bogor\n---\nKetik *MENU* untuk kembali ke menu utama\nKetik *HELP* untuk reservasi appointment melalui KASOEM CARE OFFICER",
+                                        "image_url" : "https://smcdn.s45.in/bot/assets_kasoem/Layanan%20BPJS%20Kesehatan%20-%20Kasoem%20Vision%20Care.jpg",
+                                        "type" : "nest_menu",
+                                        "menus" : {
+                                            "BACK" : {
+                                                "id" : "123BACKA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "parent"
+                                            },
+                                            "MENU" : {
+                                                "id" : "123MENUA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "main"
+                                            },
+                                            "HELP" : {
+                                                "id" : "123HELPA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "cs"
+                                            }
+                                        }
+                                    },
+                                    "MENU" : {
+                                        "id" : "12MENUA",
+                                        "text" : "",
+                                        "type" : "goto",
+                                        "goto" : "main"
+                                    }
+                                }
+                            },
+                            "3" : {
+                                "id" : "13A",
+                                "text" : "Penglihatan dan lifestyle setiap manusia adalah unik. Mengetahui informasi solusi produk yang tepat bagi kebutuhan penglihatan Anda adalah keharusan dengan tetap menjadi diri sendiri. Konsultasikan hasil pemeriksaan dan lifestyle Anda dan keluarga dengan Vision Care Advisor kami.\n\nSilakan pilih informasi produk yang Anda butuhkan : \n1. Informasi jenis dan koleksi Frame\n2. Informasi jenis dan koleksi Lensa \n3. Informasi jenis dan koleksi Lensa Kontak\n\nSilakan balas dengan mengetikkan angka sesuai kebutuhan Anda\nContoh : ketik 1 untuk informasi jenis frame\n---\nKetik *MENU* untuk kembali ke menu utama",
+                                "type" : "nest_menu",
+                                "menus" : {
+                                    "1" : {
+                                        "id" : "131A",
+                                        "text" : "Frame adalah cerminan dari kepribadian dan kepercayaan diri Anda. Pemilihan frame harus sesuai dengan aktifitas dan style unik Anda. \nKoleksi frame di e-commerce Kasoem Vision Care : https://www.kasoemvisioncare.com/\n---\nKetik *MENU* untuk kembali ke menu utama\nKetik *HELP* untuk konsultasi dengan KASOEM CARE OFFICER",
+                                        "image_url" : "https://smcdn.s45.in/bot/assets_kasoem/Informasi%20Jenis%20dan%20Produk%20Frame%20-%20Kasoem%20Vision%20Care.jpg",
+                                        "type" : "nest_menu",
+                                        "menus" : {
+                                            "BACK" : {
+                                                "id" : "131BACKA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "parent"
+                                            },
+                                            "MENU" : {
+                                                "id" : "131MENUA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "main"
+                                            },
+                                            "HELP" : {
+                                                "id" : "131HELPA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "cs"
+                                            }
+                                        }
+                                    },
+                                    "2" : {
+                                        "id" : "132A",
+                                        "text" : "Lensa adalah fungsi utama dari kacamata Anda yang membantu melindungi penglihatan tetap optimal dari setiap aktifitas dan style unik Anda dan keluarga. Ketidaksesuaian pemilihan lensa akan mengganggu aktifitas dan kondisi penglihatan Anda. Pemilihan lensa yang tepat akan membantu dan menjaga penglihatan Anda semakin optimal. Konsultasikan kebutuhan Anda dengan Kasoem Care Officer kami.\n---\nKetik *MENU* untuk kembali ke menu utama\nKetik *HELP* untuk konsultasi dengan KASOEM CARE OFFICER",
+                                        "image_url" : "https://smcdn.s45.in/bot/assets_kasoem/Informasi%20Jenis%20dan%20Produk%20Lensa%20-%20Kasoem%20Vision%20Care.jpg",
+                                        "type" : "nest_menu",
+                                        "menus" : {
+                                            "BACK" : {
+                                                "id" : "132BACKA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "parent"
+                                            },
+                                            "MENU" : {
+                                                "id" : "132MENUA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "main"
+                                            },
+                                            "HELP" : {
+                                                "id" : "132HELPA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "cs"
+                                            }
+                                        }
+                                    },
+                                    "3" : {
+                                        "id" : "133A",
+                                        "text" : "Lensa kontak bukan hanya meningkatkan kepercayaan diri Anda saja namun juga membantu penglihatan Anda menjadi semakin optimal. Konsultasikan kebutuhan Anda dengan Kasoem Care Officer kami.\n---\nKetik *MENU* untuk kembali ke menu utama\nKetik *HELP* untuk berbicara dengan KASOEM CARE OFFICER",
+                                        "image_url" : "https://smcdn.s45.in/bot/assets_kasoem/Informasi%20Jenis%20dan%20Produk%20Lensa%20Kontak%20-%20Kasoem%20Vision%20Care.jpg",
+                                        "type" : "nest_menu",
+                                        "menus" : {
+                                            "BACK" : {
+                                                "id" : "133BACKA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "parent"
+                                            },
+                                            "MENU" : {
+                                                "id" : "133MENUA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "main"
+                                            },
+                                            "HELP" : {
+                                                "id" : "133HELPA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "cs"
+                                            }
+                                        }
+                                    },
+                                    "MENU" : {
+                                        "id" : "13MENUA",
+                                        "text" : "",
+                                        "type" : "goto",
+                                        "goto" : "main"
+                                    }
+                                }
+                            },
+                            "4" : {
+                                "id" : "14A",
+                                "text" : "*=Program Promo=*\n\n*Promo Beli Kacamata Berkesempatan Dapat Motor*\nDapatkan kupon undian berhadiah motor dengan melakukan transaksi minimal Rp. 500.000,- (berlaku kelipatan).\nPeriode s.d 31 Januari 2021\n\n*Promo Retrograde*\nPembelian sudah termasuk lensa single vision Kastalite Shiny Blue dan tambah Rp 199.000,- untuk upgrade lensa Pelindung Sinar Radiasi Biru (Single Vision Kastalite Photo Blue)\nPeriode s.d 31 Desember 2021\n\n*Promo Kacamata Gadget Anak*\nPembelian sudah termasuk lensa FSV Kastalite Shiny Blue senilai Rp 299.000\nPeriode s.d 31 Desember 2021\n\n*Promo Kacamata Gamers*\nPembelian sudah termasuk lensa single vision Kastalite Shiny Blue dan tambah Rp 199.000,- untuk upgrade lensa Pelindung Sinar Radiasi Biru (Single Vision Kastalite Photo Blue)\nPeriode s.d 31 Desember 2021\n\n*Promo Beli Kacamata Gratis Sunglass*\nFree Sunglass Picasso setiap pembelian kacamata dengan minimal Rp 1.500.000,-\nPeriode s.d 31 Desember 2021\n\n*Promo Beli Kacamata Gratis Merchandise*\nFree Merchandise setiap melakukan pembelian frame dari brand Elle, Paul Frank, dan Esprite\nPeriode s.d 31 Desember 2021\n\n*Promo Free Upgrade Lensa Anti-Fog/Anti Embun*\nUpgrade lensa anti embun hanya dengan melakukan pembelian lensa UV\nPeriode s.d 31 Desember 2021\n\n*Promo Ayo Vaksin dan Dapatkan Cashback Rp 200.000*\nBerlaku untuk transaksi kacamata/frame/lensa saja minimal Rp 1.000.000 dan untuk pelanggan yang sudah vaksin dengan menunjukan sertifikat vaksinasi \nPeriode s.d 31 Desember 2021\n\n*Promo KasoemxWatsons*\nTunjukkan Member Watsons mu dan dapatkan diskon 30% untuk setiap pembelian Frame dan diskon 15% untuk pembelian Lensa\nPeriode s.d 31 Desember 2021\nberlaku di semua cabang\n\n*=Official Marketplace Store=*\n*Tokopedia : Optik Kasoem Official*\nhttp://bit.ly/tokpedkasoemvisioncare\n\n*Shopee : Kasoem Vision Care*\nhttp://bit.ly/shopeekasoemvisioncare\n\n------\nKetik *MENU* untuk kembali ke menu utama\nKetik *HELP* untuk konsultasi lebih lanjut dengan KASOEM CARE OFFICER",
+                                "type" : "nest_menu",
+                                "menus" : {
+                                    "BACK" : {
+                                        "id" : "14BACKA",
+                                        "text" : "",
+                                        "type" : "goto",
+                                        "goto" : "parent"
+                                    },
+                                    "MENU" : {
+                                        "id" : "14MENUA",
+                                        "text" : "",
+                                        "type" : "goto",
+                                        "goto" : "main"
+                                    },
+                                    "HELP" : {
+                                        "id" : "14HELPA",
+                                        "text" : "",
+                                        "type" : "goto",
+                                        "goto" : "cs"
+                                    }
+                                }
+                            },
+                            "5" : {
+                                "id" : "15A",
+                                "text" : "Silakan cek status pemesanan Anda dengan mengetikkan format berikut, KASOEM CARE OFFICER kami akan membantu pengecekan pesanan Anda :\nketik SO<spasi>SO ID\n\ncontoh :SO SO115120109910\n----\nKetik *MENU* untuk kembali ke menu utama\nKetik *HELP* jika ingin membutuhkan bantu lain dari KASOEM CARE OFFICER\n[Sebagai informasi]\nJam operasional Kasoem Care Officer setiap hari Senin s.d Sabtu pukul 09.00 s.d 16.00 WIB, khusus tanggal merah dan hari minggu libur kami akan merespon kebutuhan Anda dihari kerja berikutnya. Terimakasih.",
+                                "type" : "integrate_api",
+                                "config" : {
+                                    "api_url" : "https://kasea.kasoem.co.id:471/API/Sostatus?SO=<SOID>"
+                                },
+                                "dummy_response" : [ 
+                                    "Kabar baik! Pesanan Anda no ~SOID~ atas nama {nama pelanggan} telah selesai. Silakan jadwalkan kunjungan Anda dan kami tunggu kedatangannya.\n---\nKetik *MENU* untuk kembali ke menu utama\nKetik *HELP* jika ingin membutuhkan bantu lain dari KASOEM CARE OFFICER", 
+                                    "Mohon kesabarannya, Pesanan Anda no ~SOID~ atas nama {nama pelanggan} sedang dalam proses. Anda akan segera menerima pesan notifikasi melalui whatsapp setelah pesanan Anda tersedia.\n---\nKetik *MENU* untuk kembali ke menu utama\nKetik *HELP* jika ingin membutuhkan bantu lain dari KASOEM CARE OFFICER", 
+                                    "Mohon maaf, nomor ~SOID~ yang Anda masukkan tidak ditemukan. Silakan masukkan kembali SO ID Anda.\nketik kembali : SO<spasi>SO ID\n---\nKetik *MENU* untuk kembali ke menu utama\nKetik *HELP* jika ingin membutuhkan bantu lain dari KASOEM CARE OFFICER", 
+                                    "Pesanan Anda no ~SOID~ atas nama {nama pelanggan} telah Anda terima pada tanggal {tanggal serah}.\n---\nKetik *MENU* untuk kembali ke menu utama\nKetik *HELP* jika ingin membutuhkan bantu lain dari KASOEM CARE OFFICER"
+                                ],
+                                "after_input" : "goto_cs",
+                                "prev_menus" : {
+                                    "BACK" : {
+                                        "id" : "BACKA",
+                                        "text" : "",
+                                        "type" : "goto",
+                                        "goto" : "parent"
+                                    },
+                                    "MENU" : {
+                                        "id" : "MENUA",
+                                        "text" : "",
+                                        "type" : "goto",
+                                        "goto" : "main"
+                                    },
+                                    "HELP" : {
+                                        "id" : "HELPA",
+                                        "text" : "",
+                                        "type" : "goto",
+                                        "goto" : "cs"
+                                    }
+                                }
+                            },
+                            "6" : {
+                                "id" : "16A",
+                                "text" : "",
+                                "type" : "sequences",
+                                "parent_key" : "1_6",
+                                "required_data" : [ 
+                                    {
+                                        "id" : "1_6_SQ1",
+                                        "text" : "Terimakasih sudah bersedia menyampaikan kendala / kesulitan yang Anda ke kami. Mohon maaf atas ketidaknyamanan yang Anda alami.\n\nKami berkomitmen untuk membantu memberikan solusi terbaik. 😊\nMohon kesediaannya untuk memberikan informasi *nama lengkap* Anda?\n\nKetik *MENU* untuk kembali ke menu utama",
+                                        "index" : "Pelanggan",
+                                        "label" : "nama",
+                                        "type" : "text",
+                                        "validation" : null,
+                                        "max_length" : 35.0,
+                                        "error_max_length_msg" : "Jumlah karakter melebihi batas maksimal 35!",
+                                        "error_msg" : ""
+                                    }, 
+                                    {
+                                        "id" : "1_6_SQ2",
+                                        "text" : "Mohon kesediaannya untuk memberikan informasi *SO ID pembelian* Anda?\n\nKetik *MENU* untuk kembali ke menu utama",
+                                        "index" : "Pelanggan",
+                                        "label" : "soid",
+                                        "type" : "text",
+                                        "validation" : null,
+                                        "max_length" : 35.0,
+                                        "error_max_length_msg" : "Jumlah karakter melebihi batas maksimal 35!",
+                                        "error_msg" : ""
+                                    }, 
+                                    {
+                                        "id" : "1_6_SQ3",
+                                        "text" : "Mohon kesediaannya untuk menyampaikan kendala/kesulitan yang Anda alami?\n\nKetik *MENU* untuk kembali ke menu utama",
+                                        "index" : "Pelanggan",
+                                        "label" : "kendala",
+                                        "type" : "text",
+                                        "validation" : null,
+                                        "max_length" : 255.0,
+                                        "error_max_length_msg" : "Jumlah karakter melebihi batas maksimal 255!",
+                                        "error_msg" : ""
+                                    }, 
+                                    {
+                                        "id" : "1_6_SQ4",
+                                        "text" : "",
+                                        "index" : "",
+                                        "label" : "",
+                                        "type" : "completed",
+                                        "enable_edit_mode" : false,
+                                        "create_ticket" : true,
+                                        "end_session" : true,
+                                        "validation" : null,
+                                        "error_msg" : "",
+                                        "update_contact" : false,
+                                        "contact_fields" : {
+                                            "name" : "Pelanggan.nama"
+                                        },
+                                        "completed_template" : "Nama: ~Pelanggan.nama~\nSO ID Pembelian: ~Pelanggan.soid~\nKesulitan/kendala: ~Pelanggan.kendala~\n\nMohon kesediannya untuk menunggu,\nKasoem Care Officer kami akan segera memberikan respon pada kesempatan pertama. 😊\n---\n[Sebagai informasi]\nJam operasional Kasoem Care Officer setiap hari Senin s.d Sabtu pukul 09.00 s.d 16.00 WIB, khusus tanggal merah dan hari minggu libur kami akan merespon kebutuhan Anda dihari kerja berikutnya. Terimakasih."
+                                    }
+                                ],
+                                "create_ticket" : true,
+                                "prev_menus" : {
+                                    "BACK" : {
+                                        "id" : "BACKA",
+                                        "text" : "",
+                                        "type" : "goto",
+                                        "goto" : "parent"
+                                    },
+                                    "MENU" : {
+                                        "id" : "MENUA",
+                                        "text" : "",
+                                        "type" : "goto",
+                                        "goto" : "main"
+                                    }
+                                }
+                            },
+                            "7" : {
+                                "id" : "17A",
+                                "text" : "Terimakasih telah memilih menu untuk berbicara dengan Kasoem Care Officer. Petugas kami dengan senang hati akan segera memberikan respon atas kebutuhan Anda 😊\n---\n[Sebagai informasi]\nJam operasional Kasoem Care Officer setiap hari Senin s.d Sabtu pukul 09.00 s.d 16.00 WIB, khusus tanggal merah dan hari minggu libur kami akan merespon kebutuhan Anda dihari kerja berikutnya. Terimakasih.",
+                                "type" : "goto",
+                                "goto" : "cs"
+                            },
+                            "MENU" : {
+                                "id" : "MENUA",
+                                "text" : "",
+                                "type" : "goto",
+                                "goto" : "main"
+                            }
+                        }
+                    }
+                ],
+                "2" : [ 
+                    {
+                        "id" : "2A",
+                        "text" : "*Kasoem Hearing Center* adalah layanan kesehatan _one stop solution_ untuk membantu pendengaran Anda dan keluarga semakin optimal mulai dari tes pendengaran, konsultasi, pemilihan alat bantu dengar, layanan purna jual hingga terapi mendengar dan bicara yang dilakukan oleh Tenaga Ahli yang professional.\n\nsilakan pilih kebutuhan Anda :\n1. Informasi Alamat & Jam Operasional Cabang\n2. Informasi Layanan Pendengaran\n3. Informasi Solusi Pendengaran\n4. Informasi Program Promo & Marketplace\n5. Penyampaian Pengaduan/Klaim Garansi\n6. Berbicara dengan Kasoem Care Officer*\n\n---\nSilakan balas dengan mengetikkan nomor sesuai kebutuhan Anda\nContoh : ketik 1 untuk informasi alamat & jam operasional cabang\nKetik *MENU* untuk kembali ke menu utama",
+                        "type" : "nest_menu",
+                        "menus" : {
+                            "1" : {
+                                "id" : "21A",
+                                "text" : "Silakan pilih area Kasoem Hearing Center terdekat Anda : \n1. Wilayah JABODETABEK-BANTEN\n2. Wilayah JABAR, JATENG, JATIM\n3. Wilayah SUMATERA-KALIMANTAN\n\n---\nSilakan balas dengan mengetikkan angka sesuai kebutuhan Anda\nContoh : ketik 1 untuk wilayah JABODETABEK-BANTEN\nKetik *MENU* untuk kembali ke menu utama",
+                                "type" : "nest_menu",
+                                "menus" : {
+                                    "1" : {
+                                        "id" : "211A",
+                                        "text" : "*=JAKARTA PUSAT=*\n1.Kasoem Hearing Center Cikini\nAlamat : Jl. CIkini Raya No. 18 Jakarta Pusat\nJam Operasional : Senin s.d Sabtu pukul 08.00 - 19.00 WIB. Minggu pukul 09.00-16.00 WIB\nGoogle Maps : bit.ly/KasoemCikiniHC\n\n*=JAKARTA SELATAN=*\n2. Kasoem Hearing Center CTEC\nAlamat : Jl. Lebak Bulus Raya No. 1 Jakarta Selatan\nJam Operasional : Senin s.d Sabtu pukul 09.00 - 16.00 WIB. Minggu/hari libur tutup.\nGoogle Maps : bit.ly/KasoemCTEC\n\n3. Kasoem Hearing Center Pejaten\nAlamat : Kasoem Vision Care Pejaten Jl. Taman Marga Satwa No. 18 Jakarta Selatan\nJam Operasional : Senin s.d Sabtu pukul 09.00 - 16.00 WIB. Minggu/hari libur tutup.\nGoogle Maps : bit.ly/KasoemPejatenHC\n\n*=JAKARTA UTARA=*\n4. Kasoem Hearing Center Kelapa Gading\nAlamat : Jl. Boulevard Raya No.1, Kelapa Gading Timur, Jakarta Utara\nJam Operasional : Senin s.d Sabtu pukul 09.00 - 16.00 WIB. Minggu/hari libur tutup.\nGoogle Maps : bit.ly/KasoemKelGading\n\n*=BEKASI=*\n5. Kasoem Hearing Center Bekasi\nAlamat : Bekasi Ruko Suncity Square Jl. Mayor Hasibuan Blok A No. 33 Bekasi\nJam Operasional : Senin s.d Sabtu pukul 09.00 - 16.00 WIB. Minggu/hari libur tutup.\nGoogle Maps : bit.ly/KasoemBekasi\n\n=*BUMI SERPONG DAMAI=*\n6. Kasoem Hearing Center BSD\nAlamat : BSD Alam Sutra Komp. Puri Mutiara Serpong Blok A No.1 Pakulonan Serpong Utara\nJam Operasional : Senin s.d Sabtu pukul 09.00 - 16.00 WIB. Minggu/hari libur tutup.\nGoogle Maps : bit.ly/KasoemBSD\n\n*=SERANG=*\n7. Kasoem Hearing Center Serang\nAlamat : Kasoem Vision Care Serang lantai 2, Jl. Veteran No.2 Serang\nJam Operasional : Senin s.d Sabtu pukul 09.00 - 16.00 WIB. Minggu/hari libur tutup.\nGoogle Maps : bit.ly/KasoemSerangHC\n---\nKetik *MENU* untuk kembali ke menu utama\nKetik *HELP* untuk reservasi kedatangan/bantuan lain melalui KASOEM CARE OFFICER",
+                                        "type" : "nest_menu",
+                                        "menus" : {
+                                            "BACK" : {
+                                                "id" : "BACKA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "parent"
+                                            },
+                                            "MENU" : {
+                                                "id" : "MENUA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "main"
+                                            },
+                                            "HELP" : {
+                                                "id" : "HELPA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "cs"
+                                            }
+                                        }
+                                    },
+                                    "2" : {
+                                        "id" : "212A",
+                                        "text" : "*=BANDUNG=*\n1.Kasoem Hearing Center Bandung\nAlamat : Jl. Setiabudi No. 34 Bandung\nJam Operasional : Senin s.d Sabtu pukul 09.00 - 16.00 WIB.Minggu/hari libur tutup.\nGoogle Maps : bit.ly/KasoemBandung\n\n*=CIREBON=*\n2. Kasoem Hearing Center Cirebon\nAlamat : RS Permata Cirebon\nJl. Tuparev No. 117 Cirebon\nJam Operasional : Senin s.d Sabtu pukul 09.00 - 16.00 WIB. Minggu/hari libur tutup.\nGoogle Maps : bit.ly/KasoemCirebon\n\n*=SEMARANG=*\n3. Kasoem Hearing Center Semarang\nAlamat : Jl. Sriwijaya No.24 Semarang\nJam Operasional : Senin s.d sabtu pukul 09.00 - 16.00 WIB. Minggu/hari libur tutup.\nGoogle Maps : bit.ly/KasoemSemarang\n\n*=SURABAYA=*\n4. Kasoem Hearing Center Surabaya\nAlamat : Jl. Raya Prapen No. 29 Surabaya\nJam Operasional : Senin s.d Sabtu pukul 09.00 - 16.00 WIB. Minggu/hari libur tutup.\nGoogle Maps : bit.ly/KasoemSurabaya\n\n*=MALANG=*\n5. Kasoem Hearing Center Malang\nAlamat : Jl. WR Supratman C3 Kav. 21 Malang, Depan RS Lavalette\nJam Operasional : Senin s.d Sabtu pukul 09.00 - 16.00 WIB. Minggu/hari libur tutup.\nGoogle Maps : bit.ly/KasoemMalang\n\n---\nKetik *MENU* untuk kembali ke menu utama\nKetik *HELP* untuk reservasi kedatangan/bantuan lain melalui KASOEM CARE OFFICER",
+                                        "type" : "nest_menu",
+                                        "menus" : {
+                                            "BACK" : {
+                                                "id" : "BACKA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "parent"
+                                            },
+                                            "MENU" : {
+                                                "id" : "MENUA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "main"
+                                            },
+                                            "HELP" : {
+                                                "id" : "HELPA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "cs"
+                                            }
+                                        }
+                                    },
+                                    "3" : {
+                                        "id" : "213A",
+                                        "text" : "*=MEDAN=* \n1.Kasoem Hearing Center Medan\nAlamat : Komplek Tomang Elok Blok A No. 79, Jl. Gatot Subroto, Kota Medan\nJam Operasional : Senin s.d Sabtu pukul 09.00 - 16.00 WIB. Minggu/hari libur tutup. \nGoogle Maps : bit.ly/KasoemMedan\n\n*=PADANG=*\n2. Kasoem Hearing Center Padang\nAlamat : Jl. Sawahan No. 59 Padang\nJam Operasional : Senin s.d Sabtu pukul 09.00 - 16.00 WIB. Minggu/hari libur tutup.\nGoogle Maps : bit.ly/KasoemPadang\n\n*=BATAM=*\n3. Kasoem Hearing Center Batam\nAlamat : Komplek Mega Indah, Jl. Laksmana Bintan, Sungai Panas Kota Batam\nJam Operasional : Senin s.d Sabtu pukul 09.00 - 16.00 WIB. Minggu/hari libur tutup.\nGoogle Maps : bit.ly/KasoemBatam\n\n*=PEKANBARU=*\n4. Kasoem Hearing Center Pekanbaru\nAlamat :  Jl. Jendral Sudirman, Tengkerang Sel, Bukit Raya Pekanbaru\nJam Operasional : Senin s.d Sabtu pukul 09.00 - 16.00 WIB. Minggu/hari libur tutup.\nGoogle Maps : bit.ly/KasoemPekanbaru\n\n*=BALIKPAPAN=*\n5. Kasoem Hearing Center Balikpapan\nAlamat : Klinik Panacea Ruko Mall Fantasi Blok AB2 No. 18-20 Balikpapan Baru\nJam Operasional : Senin s.d sabtu pukul 09.00 - 16.00 WITA. Minggu/hari libur tutup.\nGoogle Maps : bit.ly/KasoemBalikpapan\n\n---\nKetik *MENU* untuk kembali ke menu utama\nKetik *HELP* untuk reservasi kedatangan/bantuan lain melalui KASOEM CARE OFFICER",
+                                        "type" : "nest_menu",
+                                        "menus" : {
+                                            "BACK" : {
+                                                "id" : "BACKA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "parent"
+                                            },
+                                            "MENU" : {
+                                                "id" : "MENUA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "main"
+                                            },
+                                            "HELP" : {
+                                                "id" : "HELPA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "cs"
+                                            }
+                                        }
+                                    },
+                                    "MENU" : {
+                                        "id" : "MENUA",
+                                        "text" : "",
+                                        "type" : "goto",
+                                        "goto" : "main"
+                                    }
+                                }
+                            },
+                            "2" : {
+                                "id" : "22A",
+                                "text" : "Kasoem Hearing Center menyediakan layanan konsultasi dengan Staf Professional kami mengenai kondisi dan kebutuhan pendengaran unik Anda dan keluarga.\n\nSilakan pilih layanan yang Anda butuhkan : \n1. Layanan Tes Pendengaran Anak dan Dewasa\n2. Layanan Konsultasi Pendengaran\n3. Layanan Terapi Mendengar & Bicara (AVT)\n4. Layanan Screen Pendengaran Online\n\nSilakan balas dengan mengetikkan angka sesuai kebutuhan Anda\nContoh : ketik 1 untuk layanan pemeriksaan anak\n---\nKetik *MENU* untuk kembali ke menu utama",
+                                "type" : "nest_menu",
+                                "menus" : {
+                                    "1" : {
+                                        "id" : "221A",
+                                        "text" : "Tes pendengaran merupakan tes untuk mengetahui kemampuan mendengar seseorang terhadap bunyi atau suara. Jenis tes pendengaran ada yang bersifat subyektif dan obyektif. Tes pendengaran anak dan dewasa harus disesuaikan dengan kondisi pendengaran. Konsultasikan kondisi dan kebutuhan pendengaran Anda dengan Staff Profesional kami secara komprehensif untuk mendapatkan kondisi dan solusi pendengaran yang optimal melalui layanan _One Stop Solution_.\n---\nKetik *MENU* untuk kembali ke menu utama\nKetik *HELP* untuk informasi lain / reservasi appointment melalui KASOEM CARE OFFICER",
+                                        "type" : "nest_menu",
+                                        "image_url" : "https://smcdn.s45.in/bot/assets_kasoem/Layanan%20Tes%20Pendengaran%20Anak%20dan%20Dewasa%20-%20Kasoem%20Hearing%20Center.jpg",
+                                        "menus" : {
+                                            "BACK" : {
+                                                "id" : "BACKA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "parent"
+                                            },
+                                            "MENU" : {
+                                                "id" : "MENUA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "main"
+                                            },
+                                            "HELP" : {
+                                                "id" : "HELPA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "cs"
+                                            }
+                                        }
+                                    },
+                                    "2" : {
+                                        "id" : "222A",
+                                        "text" : "Setiap manusia memiliki pendengaran unik. Hasil tes pendengaran akan menjadi dasar dalam penggunaan alat bantu dengar yang sesuai dengan kebutuhan dan lifestyle Anda dan keluarga. Konsultasi melalui Dokter Audiologi berpengalaman maupun Hearing Advisor akan membantu Anda dan keluarga mendapatkan solusi pendengaran terbaik.\n---\nKetik *MENU* untuk kembali ke menu utama\nKetik *HELP* untuk informasi lain / reservasi appointment melalui KASOEM CARE OFFICER",
+                                        "type" : "nest_menu",
+                                        "image_url" : "https://smcdn.s45.in/bot/assets_kasoem/Layanan%20Konsultasi%20Pendengaran%20-%20Kasoem%20Hearing%20Center.jpg",
+                                        "menus" : {
+                                            "BACK" : {
+                                                "id" : "BACKA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "parent"
+                                            },
+                                            "MENU" : {
+                                                "id" : "MENUA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "main"
+                                            },
+                                            "HELP" : {
+                                                "id" : "HELPA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "cs"
+                                            }
+                                        }
+                                    },
+                                    "3" : {
+                                        "id" : "223A",
+                                        "text" : "Apakah setelah pemasangan alat bantu dengar membuat anak langsung dapat berbicara? \nTerapi Mendengar dan Berbicara atau _Auditory Verbal Therapy_ (disingkat AVT) adalah terapi yang mengoptimalkan sisa pendengaran yang menggunakan teknologi alat bantu dengar dengan harapan anak-anak dengan gangguan dengar dapat belajar mendengar dan memroses bahasa verbal & bicara.\n---\nKetik *MENU* untuk kembali ke menu utama\nKetik *HELP* untuk informasi lain / reservasi appointment melalui KASOEM CARE OFFICER",
+                                        "type" : "nest_menu",
+                                        "image_url" : "https://smcdn.s45.in/bot/assets_kasoem/Layanan%20Terapi%20Mendengar%20%26%20Bicara%20%28AVT%29%20-%20Kasoem%20Hearing%20Center.jpg",
+                                        "menus" : {
+                                            "BACK" : {
+                                                "id" : "BACKA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "parent"
+                                            },
+                                            "MENU" : {
+                                                "id" : "MENUA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "main"
+                                            },
+                                            "HELP" : {
+                                                "id" : "HELPA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "cs"
+                                            }
+                                        }
+                                    },
+                                    "4" : {
+                                        "id" : "224A",
+                                        "text" : "Apakah Anda atau anak Anda dapat mendengar dengan baik? \nLakukan screening pendengaran secara mandiri sebagai tahap awal untuk mengetahui kemampuan mendengar Anda melalui link berikut :\nhttps://www.oticon.global/hearing-aid-users/hearing-loss/understand-hearing-loss/hearing-test/hearing-test-questions\n---\nKetik *MENU* untuk kembali ke menu utama\nKetik *HELP* untuk informasi lain / reservasi appointment melalui KASOEM CARE OFFICER",
+                                        "type" : "nest_menu",
+                                        "menus" : {
+                                            "BACK" : {
+                                                "id" : "BACKA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "parent"
+                                            },
+                                            "MENU" : {
+                                                "id" : "MENUA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "main"
+                                            },
+                                            "HELP" : {
+                                                "id" : "HELPA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "cs"
+                                            }
+                                        }
+                                    },
+                                    "MENU" : {
+                                        "id" : "MENUA",
+                                        "text" : "",
+                                        "type" : "goto",
+                                        "goto" : "main"
+                                    }
+                                }
+                            },
+                            "3" : {
+                                "id" : "23A",
+                                "text" : "Karena pendengaran setiap manusia adalah unik. Mengetahui informasi solusi yang tepat bagi kebutuhan pendengaran Anda adalah keharusan namun Anda tetap dapat menjadi diri sendiri.\n\nSilakan pilih informasi produk yang Anda butuhkan : \n1. Informasi Alat Bantu Dengar (ABD)\n2. Informasi Cochlear Implant dan BAHA\n\nSilakan balas dengan mengetikkan angka sesuai kebutuhan Anda\nContoh : ketik 1 untuk informasi Alat Bantu Mendengar (ABM)\n---\nKetik *MENU* untuk kembali ke menu utama",
+                                "type" : "nest_menu",
+                                "menus" : {
+                                    "1" : {
+                                        "id" : "231A",
+                                        "text" : "Alat Bantu Dengar (ABD) adalah alat elektronik yang mempunyai fungsi dasarnya memperkeras suara, sehingga orang yang mengalami gangguan dengar mampu mendengar suara. Pemilihan Alat Bantu Dengar disesuaikan dengan derajat gangguan dengar, aktifitas dan lifestyle unik Anda dan keluarga.\n---\nKetik *MENU* untuk kembali ke menu utama\nKetik *HELP* untuk konsultasi lebih lanjut dengan KASOEM CARE OFFICER",
+                                        "image_url" : "https://smcdn.s45.in/bot/assets_kasoem/Informasi%20Alat%20Bantu%20Dengar%20-%20Kasoem%20Hearing%20Center.jpg",
+                                        "type" : "nest_menu",
+                                        "menus" : {
+                                            "BACK" : {
+                                                "id" : "BACKA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "parent"
+                                            },
+                                            "MENU" : {
+                                                "id" : "MENUA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "main"
+                                            },
+                                            "HELP" : {
+                                                "id" : "HELPA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "cs"
+                                            }
+                                        }
+                                    },
+                                    "2" : {
+                                        "id" : "232A",
+                                        "text" : "Cochlea Implant / Implan koklea adalah Sebuah sistem yang mengembalikan sensitivitas pendengaran untuk anak-anak dan orang dewasa dengan gangguan pendengaran sedang hingga sangat berat. Bekerjasama dengan Cochlear, salah satu pelopor teknologi implan terbaik didunia.\n---\nKetik *MENU* untuk kembali ke menu utama\nKetik *HELP* untuk konsultasi lebih lanjut dengan KASOEM CARE OFFICER",
+                                        "image_url" : "https://smcdn.s45.in/bot/assets_kasoem/Informasi%20Chochlear%20Implant%20dan%20BAHA%20-%20Kasoem%20Hearing%20Center.jpg",
+                                        "type" : "nest_menu",
+                                        "menus" : {
+                                            "BACK" : {
+                                                "id" : "BACKA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "parent"
+                                            },
+                                            "MENU" : {
+                                                "id" : "MENUA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "main"
+                                            },
+                                            "HELP" : {
+                                                "id" : "HELPA",
+                                                "text" : "",
+                                                "type" : "goto",
+                                                "goto" : "cs"
+                                            }
+                                        }
+                                    },
+                                    "MENU" : {
+                                        "id" : "MENUA",
+                                        "text" : "",
+                                        "type" : "goto",
+                                        "goto" : "main"
+                                    }
+                                }
+                            },
+                            "4" : {
+                                "id" : "24A",
+                                "text" : "*=Program Promo=*\n*\"\"Mendengar Lebih Baik dengan Dua Telinga\"\"*\n\nDapatkan promo *potongan harga spesial hingga 75%* untuk pembelian ABD kedua, dengan ketentuan sebagai berikut:\n✅ Diskon berlaku bagi pembelian binaural secara langsung.\n✅ Diskon berlaku untuk alat kedua.\n\nBagi Anda yang sudah memiliki satu ABD juga bisa mendapatkan *potongan harga spesial hingga 35%* untuk pembelian satu ABD telinga sebelahnya, dengan ketentuan sebagai berikut:\n✅ Diskon berlaku untuk pasien yang baru menggunakan ABD di 1 telinga\n✅ Diskon berlaku jika pasien membeli alat untuk telinga sebelahnya yang belum menggunakan ABD.\n✅ Diskon berlaku khusus pelanggan pengguna Oticon\n\n*Special diskon hingga 30%* untuk pembelian upgrade ABD:\n✅ Diskon berlaku untuk pasien yang membeli ABD dengan teknologi diatas dari teknologi ABD yang saat ini digunakan\n✅ Diskon berlaku khusus pelanggan pengguna Oticon\n\nPeriode promo ini berlaku hingga tanggal 31 Desember 2021.\n\n*=Official Marketplace Store=*\n*Tokopedia : Kasoem Hearing Official*\nhttp://bit.ly/tokpedKasoemHC\n\n*Shopee : Kasoem Hearing*\nhttp://bit.ly/shopeeKasoemHC\n\n------\nKetik *MENU* untuk kembali ke menu utama\nKetik *HELP* untuk konsultasi lebih lanjut dengan Kasoem Care Officer",
+                                "type" : "nest_menu",
+                                "menus" : {
+                                    "MENU" : {
+                                        "id" : "MENUA",
+                                        "text" : "",
+                                        "type" : "goto",
+                                        "goto" : "main"
+                                    },
+                                    "HELP" : {
+                                        "id" : "HELPA",
+                                        "text" : "",
+                                        "type" : "goto",
+                                        "goto" : "cs"
+                                    }
+                                }
+                            },
+                            "5" : {
+                                "id" : "25A",
+                                "text" : "",
+                                "type" : "sequences",
+                                "parent_key" : "2_5",
+                                "required_data" : [ 
+                                    {
+                                        "id" : "1_6_SQ1",
+                                        "text" : "Terimakasih sudah bersedia menyampaikan kendala / kesulitan yang Anda ke kami. Mohon maaf atas ketidaknyamanan yang Anda alami.\n\nKami siap membantu memberikan solus terbaik dari setiap kendala/kesulitan yang Anda alami. 😊\nMohon kesediaannya untuk memberikan informasi *nama lengkap* Anda?\n\nKetik *MENU* untuk kembali ke menu utama",
+                                        "index" : "Pelanggan",
+                                        "label" : "nama",
+                                        "type" : "text",
+                                        "validation" : null,
+                                        "max_length" : 35.0,
+                                        "error_max_length_msg" : "Jumlah karakter melebihi batas maksimal 35!",
+                                        "error_msg" : ""
+                                    }, 
+                                    {
+                                        "id" : "1_6_SQ2",
+                                        "text" : "Mohon kesediaannya untuk memberikan informasi *SO ID pembelian* Anda?\n\nKetik *MENU* untuk kembali ke menu utama",
+                                        "index" : "Pelanggan",
+                                        "label" : "soid",
+                                        "type" : "text",
+                                        "validation" : null,
+                                        "max_length" : 35.0,
+                                        "error_max_length_msg" : "Jumlah karakter melebihi batas maksimal 35!",
+                                        "error_msg" : ""
+                                    }, 
+                                    {
+                                        "id" : "1_6_SQ3",
+                                        "text" : "Mohon kesediaannya untuk menyampaikan kendala/kesulitan yang Anda alami?\n\nKetik *MENU* untuk kembali ke menu utama",
+                                        "index" : "Pelanggan",
+                                        "label" : "kendala",
+                                        "type" : "text",
+                                        "validation" : null,
+                                        "max_length" : 255.0,
+                                        "error_max_length_msg" : "Jumlah karakter melebihi batas maksimal 255!",
+                                        "error_msg" : ""
+                                    }, 
+                                    {
+                                        "id" : "1_6_SQ4",
+                                        "text" : "",
+                                        "index" : "",
+                                        "label" : "",
+                                        "type" : "completed",
+                                        "enable_edit_mode" : false,
+                                        "create_ticket" : true,
+                                        "end_session" : true,
+                                        "validation" : null,
+                                        "error_msg" : "",
+                                        "update_contact" : false,
+                                        "contact_fields" : {
+                                            "name" : "Pelanggan.nama"
+                                        },
+                                        "completed_template" : "Nama: ~Pelanggan.nama~\nSO ID Pembelian: ~Pelanggan.soid~\nKesulitan/kendala: ~Pelanggan.kendala~\n\nMohon kesediannya untuk menunggu,\nKasoem Care Officer kami akan segera memberikan respon pada kesempatan pertama. 😊\n---\n[Sebagai informasi]\nJam operasional Kasoem Care Officer setiap hari Senin s.d Sabtu pukul 09.00 s.d 16.00 WIB, khusus tanggal merah dan hari minggu libur kami akan merespon kebutuhan Anda dihari kerja berikutnya. Terimakasih."
+                                    }
+                                ],
+                                "create_ticket" : true,
+                                "prev_menus" : {
+                                    "BACK" : {
+                                        "id" : "BACKA",
+                                        "text" : "",
+                                        "type" : "goto",
+                                        "goto" : "parent"
+                                    },
+                                    "MENU" : {
+                                        "id" : "MENUA",
+                                        "text" : "",
+                                        "type" : "goto",
+                                        "goto" : "main"
+                                    }
+                                }
+                            },
+                            "6" : {
+                                "id" : "26A",
+                                "text" : "Terimakasih telah memilih menu untuk berbicara dengan Kasoem Care Officer. Petugas kami dengan senang hati akan segera memberikan respon atas kebutuhan Anda 😊\n---\n[Sebagai informasi]\nJam operasional Kasoem Care Officer setiap hari Senin s.d Sabtu pukul 09.00 s.d 16.00 WIB, khusus tanggal merah dan hari minggu libur kami akan merespon kebutuhan Anda dihari kerja berikutnya. Terimakasih.",
+                                "type" : "goto",
+                                "goto" : "cs"
+                            },
+                            "MENU" : {
+                                "id" : "MENUA",
+                                "text" : "",
+                                "type" : "goto",
+                                "goto" : "main"
+                            }
+                        }
+                    }
+                ],
+                "3" : [ 
+                    {
+                        "id" : "3A",
+                        "text" : "Kami sangat paham di Era Adaptasi Kebiasaan Baru ini kesehatan, keselamatan, dan kenyamanan Anda dan keluarga adalah prioritas. Gangguan pada indera penglihatan ataupun pendengaran tentu saja akan sedikit banyak mempengaruhi kualitas hidup Anda dan keluarga. \n\nKami berkomitmen untuk selalu menjaga kepercayaan Anda dengan memberikan pelayanan yang berkualitas dan tetap memperhatikan keselamatan dan keamanan Anda dan petugas kami selama berada di Outlet melalui prokotol Kesehatan Adaptasi Kebiasan Baru berikut.\n---\nKetik MENU untuk kembali ke menu utama",
+                        "type" : "text",
+                        "image_url" : "https://smcdn.s45.in/bot/assets_kasoem/Protokol%20Kesehatan%20Kasoem%20Group.jpg"
+                    }
+                ],
+                "survey" : {
+                    "active" : false
+                },
+                "load_conversation" : "KasoemConversation",
+                "questions_id" : [],
+                "reset_keys" : [ 
+                    "MENU"
+                ],
+                "top_level_questions" : [ 
+                    {
+                        "id" : "Ketik 1",
+                        "text" : "untuk Layanan Vision Care",
+                        "type" : "actions"
+                    }, 
+                    {
+                        "id" : "Ketik 2",
+                        "text" : "untuk Layanan Hearing Center",
+                        "type" : "actions"
+                    }, 
+                    {
+                        "id" : "Ketik 3",
+                        "text" : "untuk Protokol Kesehatan Kasoem",
+                        "type" : "actions"
+                    }, 
+                    {
+                        "id" : "Ketik 4",
+                        "text" : "Beli Kacamata Bisa Dapat Motor? Ikuti Promonya!",
+                        "type" : "actions"
+                    }, 
+                    {
+                        "id" : "Ketik 5",
+                        "text" : "Mendengar Lebih Baik dengan Dua Telinga. Yuk Ikuti Programnya!",
+                        "type" : "actions"
+                    }, 
+                    {
+                        "id" : "Ketik 6",
+                        "text" : "Yuk jadi Bintang Idola dengan mengikuti program Kasoem Idol \"Hear To Be A Star\"!",
+                        "type" : "actions"
+                    }, 
+                    {
+                        "id" : "Ketik 7",
+                        "text" : "Yuk belajar bareng Kasoem Hearing Center dalam Job Internship Program!",
+                        "type" : "actions"
+                    }
+                ],
+                "MENU" : [ 
+                    {
+                        "id" : "Ketik 1",
+                        "text" : "untuk Layanan Vision Care",
+                        "type" : "actions"
+                    }, 
+                    {
+                        "id" : "Ketik 2",
+                        "text" : "untuk Layanan Hearing Center",
+                        "type" : "actions"
+                    }, 
+                    {
+                        "id" : "Ketik 3",
+                        "text" : "untuk Protokol Kesehatan Kasoem",
+                        "type" : "actions"
+                    }, 
+                    {
+                        "id" : "Ketik 4",
+                        "text" : "Beli Kacamata Bisa Dapat Motor? Ikuti Promonya!",
+                        "type" : "actions"
+                    }, 
+                    {
+                        "id" : "Ketik 5",
+                        "text" : "Mendengar Lebih Baik dengan Dua Telinga. Yuk Ikuti Programnya!",
+                        "type" : "actions"
+                    }, 
+                    {
+                        "id" : "Ketik 6",
+                        "text" : "Yuk jadi Bintang Idola dengan mengikuti program Kasoem Idol \"Hear To Be A Star\"!",
+                        "type" : "actions"
+                    }, 
+                    {
+                        "id" : "Ketik 7",
+                        "text" : "Yuk belajar bareng Kasoem Hearing Center dalam Job Internship Program!",
+                        "type" : "actions"
+                    }
+                ],
+                "GIFT" : [ 
+                    {
+                        "id" : "GIFTA",
+                        "text" : "Selamat! Anda berhasil mendapatkan GIFT Ulang Tahun.\n\nSilakan nikmati Voucher Ulang Tahun untuk mendapatkan kacamata favorit  di Cabang Kasoem Vision Care kesayangan Anda & Keluarga, dengan menunjukkan e-voucher ini 😊\n---\nKetik MENU untuk kembali ke menu utama\nKetik HELP untuk reservasi / konsultasi lebih lanjut dengan KASOEM CARE OFFICER",
+                        "type" : "text",
+                        "image_url" : "https://smcdn.s45.in/bot/assets_kasoem/kasoem%20gift%20DEC%202021.jpeg"
+                    }
+                ],
+                "GIFTBOX" : [ 
+                    {
+                        "id" : "GIFTBOXA",
+                        "text" : "Selamat! Anda berhasil mendapatkan GIFT Ulang Tahun.\n\nSilakan nikmati Voucher Ulang Tahun untuk mendapatkan kacamata favorit  di Cabang Kasoem Vision Care kesayangan Anda & Keluarga, dengan menunjukkan e-voucher ini 😊\n---\nKetik MENU untuk kembali ke menu utama\nKetik HELP untuk reservasi / konsultasi lebih lanjut dengan KASOEM CARE OFFICER",
+                        "type" : "text",
+                        "image_url" : "https://smcdn.s45.in/bot/assets_kasoem/kasoem%20gift%20DEC%202021.jpeg"
+                    }
+                ],
+                "TRACKING" : [ 
+                    {
+                        "id" : "TRACKINGA",
+                        "text" : "Silakan cek status pemesanan Anda dengan mengetikkan format berikut, KASOEM CARE OFFICER kami akan membantu pengecekan pesanan Anda :\nketik SO<spasi>SO ID\n\ncontoh :SO SO115120109910\n----\nKetik *MENU* untuk kembali ke menu utama\nKetik *HELP* jika ingin membutuhkan bantu lain dari KASOEM CARE OFFICER\n[Sebagai informasi]\nJam operasional Kasoem Care Officer setiap hari Senin s.d Sabtu pukul 09.00 s.d 16.00 WIB, khusus tanggal merah dan hari minggu libur kami akan merespon kebutuhan Anda dihari kerja berikutnya. Terimakasih.",
+                        "type" : "integrate_api",
+                        "config" : {
+                            "api_url" : "https://kasea.kasoem.co.id:471/API/Sostatus?SO=<SOID>"
+                        },
+                        "after_input" : "goto_cs",
+                        "prev_menus" : {
+                            "MENU" : {
+                                "id" : "MENUA",
+                                "text" : "",
+                                "type" : "goto",
+                                "goto" : "main"
+                            },
+                            "HELP" : {
+                                "id" : "HELPA",
+                                "text" : "",
+                                "type" : "goto",
+                                "goto" : "cs"
+                            }
+                        }
+                    }
+                ],
+                "HELP" : [ 
+                    {
+                        "id" : "HELPA",
+                        "text" : "",
+                        "type" : "goto_cs",
+                        "goto" : "cs"
+                    }
+                ],
+                "4" : [ 
+                    {
+                        "id" : "4A",
+                        "text" : "Beli kacamata bisa mendapatkan hadiah motor? Bisa banget! 🎉🎉🎉\n\nYuk segera ikuti promo menarik dari *Kasoem Vision Care!*\n\nCaranya mudah banget! Cukup lakukan transaksi pembelian kacamata di Kasoem Vision Care dengan minimal transaksi Rp. 500.000,- dan dapatkan kupon undian hadiahnya (berlaku kelipatan).\n\nSelain motor, ada berbagai hadiah menarik lainnya juga loh. Diantaranya ada Smart TV, Kulkas, Sepeda Lipat, dan masih banyak lagi! 🎁🎁🎁\n\nHadiah akan diundi dalam 2 tahap:\n🎁 Pengundian pertama pada 3 Desember 2021\n🎁 Pengundian kedua pada 4 Februari 2022\n\nPeriode program ini berlangsung dari 5 Oktober 2021 s.d 31 Januari 2022 dan berlaku diseluruh cabang *Kasoem Vision Care.*\n\nYuk segera ketahui lebih lanjut kebutuhan Anda dan  keluarga lebih detail, atau reservasikan kunjungan dengan Ketik *HELP*",
+                        "type" : "text",
+                        "image_url" : "https://smcdn.s45.in/bot/assets_kasoem/KasoemDapatMotor.png"
+                    }
+                ],
+                "5" : [ 
+                    {
+                        "id" : "6A",
+                        "text" : "Tahukah Anda, betapa pentingnya menggunakan ABD pada kedua telinga bagi pasien dengan gangguan pendengaran? Selain membantu pasien untuk mendengar lebih optimal, menggunakan ABD pada kedua telinga juga dapat menjaga kondisi pendengaran pasien agar tidak mengalami penurunan yang lebih parah dikemudian hari.\n\n*Kasoem Hearing Center* memahami kebutuhan Anda, oleh karena itu kami hadir dengan program *\"\"Mendengar Lebih Baik dengan Dua Telinga\"\"* 🦻🏻\n\nDapatkan promo *potongan harga spesial hingga 75%* untuk pembelian ABD kedua, dengan ketentuan sebagai berikut:\n✅ Diskon berlaku bagi pembelian binaural secara langsung.\n✅ Diskon berlaku untuk alat kedua.\n\nBagi Anda yang sudah memiliki satu ABD juga bisa mendapatkan *potongan harga spesial hingga 35%* untuk pembelian satu ABD telinga sebelahnya, dengan ketentuan sebagai berikut:\n✅ Diskon berlaku untuk pasien yang baru menggunakan ABD di 1 telinga\n✅ Diskon berlaku jika pasien membeli alat untuk telinga sebelahnya yang belum menggunakan ABD.\n✅ Diskon berlaku bagi pengguna Oticon\n\n*Special diskon hingga 30%* untuk pembelian upgrade ABD:\n✅ Diskon berlaku untuk pasien yang membeli ABD dengan teknologi diatas dari teknologi ABD yang saat ini digunakan\n✅ Diskon berlaku bagi pengguna Oticon\n\nPeriode promo ini berlaku hingga tanggal 31 Desember 2021.\n\nYuk segera ketahui lebih lanjut kebutuhan Anda dan  keluarga lebih detail, atau reservasikan kunjungan dengan Ketik *HELP*",
+                        "type" : "text",
+                        "image_url" : "https://smcdn.s45.in/bot/assets_kasoem/KasoemMendengarLebihBaik.png"
+                    }
+                ],
+                "PROMO" : [ 
+                    {
+                        "id" : "PROMOA",
+                        "text" : "*=Program Promo=*\n\n*Promo Beli Kacamata Berkesempatan Dapat Motor*\nDapatkan kupon undian berhadiah motor dengan melakukan transaksi minimal Rp. 500.000,- (berlaku kelipatan).\nPeriode s.d 31 Januari 2021\n\n*Promo Retrograde*\nPembelian sudah termasuk lensa single vision Kastalite Shiny Blue dan tambah Rp 199.000,- untuk upgrade lensa Pelindung Sinar Radiasi Biru (Single Vision Kastalite Photo Blue)\nPeriode s.d 31 Desember 2021\n\n*Promo Kacamata Gadget Anak*\nPembelian sudah termasuk lensa FSV Kastalite Shiny Blue senilai Rp 299.000\nPeriode s.d 31 Desember 2021\n\n*Promo Kacamata Gamers*\nPembelian sudah termasuk lensa single vision Kastalite Shiny Blue dan tambah Rp 199.000,- untuk upgrade lensa Pelindung Sinar Radiasi Biru (Single Vision Kastalite Photo Blue)\nPeriode s.d 31 Desember 2021\n\n*Promo Beli Kacamata Gratis Sunglass*\nFree Sunglass Picasso setiap pembelian kacamata dengan minimal Rp 1.500.000,-\nPeriode s.d 31 Desember 2021\n\n*Promo Beli Kacamata Gratis Merchandise*\nFree Merchandise setiap melakukan pembelian frame dari brand Elle, Paul Frank, dan Esprite\nPeriode s.d 31 Desember 2021\n\n*Promo Free Upgrade Lensa Anti-Fog/Anti Embun*\nUpgrade lensa anti embun hanya dengan melakukan pembelian lensa UV\nPeriode s.d 31 Desember 2021\n\n*Promo Ayo Vaksin dan Dapatkan Cashback Rp 200.000*\nBerlaku untuk transaksi kacamata/frame/lensa saja minimal Rp 1.000.000 dan untuk pelanggan yang sudah vaksin dengan menunjukan sertifikat vaksinasi \nPeriode s.d 31 Desember 2021\n\n*Promo KasoemxWatsons*\nTunjukkan Member Watsons mu dan dapatkan diskon 30% untuk setiap pembelian Frame dan diskon 15% untuk pembelian Lensa\nPeriode s.d 31 Desember 2021\nberlaku di semua cabang\n\n*=Official Marketplace Store=*\n*Tokopedia : Optik Kasoem Official*\nhttp://bit.ly/tokpedkasoemvisioncare\n\n*Shopee : Kasoem Vision Care*\nhttp://bit.ly/shopeekasoemvisioncare\n\n------\nKetik *MENU* untuk kembali ke menu utama\nKetik *HELP* untuk konsultasi lebih lanjut dengan KASOEM CARE OFFICER",
+                        "type" : "text",
+                        "image_url" : ""
+                    }
+                ],
+                "6" : [ 
+                    {
+                        "id" : "6A",
+                        "text" : "Hai Sahabat Kasoem,\nApakah kamu siap dengan event online Pertama dan terbesar bagi pengguna Alat Bantu Dengar ditahun ini?\n\nAyo menjadi bagian kemeriahan Event *Kasoem Idol “Here To Be A Star”* yang akan dilaksanakan di akhir tahun ini. Acara ini ditujukan untuk semua putra-putri pengguna ABD (Umum) / Cochlear implant (Kasoem Hearing/Cochlear) yang berusia 5 s/d 10 tahun.\n\nTunjukan talenta terbaik mu dan jadilah Bintang Idola Kasoem Hearing Center. *Raih hadiah hingga puluhan juta rupiah.*\n\nPendaftaran : 14 – 31 Nov 2021.\nUpload video di IG TV/Reels 1 – 15 Des 2021\n\nPengumuman Pemenang 18 Desember 2021\n\nSyarat & Ketentuan :\n1. Usia Anak 5 – 10 Tahun\n2. Peserta adalah Pengguna Alat bantu dengar Merk Apapun (Umum) & Pengguna Cochlear Implant (Kasoem Hearing Center/Cochlear)\n3. Disubmit oleh orang dewasa (diatas 18 tahun) & wajib mengisi form pendaftaran untuk mendapatkan no peserta (no peserta akan di kirimkan via whatsapp).\n4. Video Talent dibuat minimal 1.5 menit\n5. Upload di Instagram TV/Reels\n6. Tag @kasoemhearingcenter dan Tulis Caption yang jelas dan menarik, serta tulis no peserta\n7. Wajib Gunakan Hastag #kasoemIdol2021 #HereToBeAstar #MendengarduaTelingaLebihBaik\n8. Wajib follow FB, IG dan youtube @kasoemhearingcenter\n9. Setiap Peserta boleh mengirimkan lebih dari 1 video Talent\n10. Keputusan Dewan Juri tidak dapat di ganggu gugat.\n\n*Untuk pendaftaran silahkan klik link berikut ini* bit.ly/KasoemIdol \n\nYuk segera ketahui lebih lanjut kebutuhan Anda dan keluarga lebih detail, atau reservasikan kunjungan dengan Ketik *HELP*",
+                        "type" : "text",
+                        "image_url" : "https://smcdn.s45.in/bot/assets_kasoem/gambar%20menu%20utama%20no%206.jpeg.jpeg"
+                    }
+                ],
+                "7" : [ 
+                    {
+                        "id" : "7A",
+                        "text" : "Hai Sahabat Kasoem,\n\nDalam rangka 32 tahun, Kasoem Hearing Center ingin menunjukan kepedulian terhadap anak-anak usia kerja dengan gangguan dengar untuk ikut merasakan pengalaman dunia kerja sesungguhnya.\n\nProgram Internship ini akan berlangsung selama 1 – 3 bulan untuk kategori sebagai berikut :\n\n✅ Lulus Kuliah\n✅ PKL Kuliah\n✅ Lulus SMA/ Sederajat\n✅ PKL SMA/ sederajat\n\nSyarat dan ketentuan :\n\n1. Peserta Magang adalah pelanggan Kasoem Hearing Center (pengguna ABD / CI)\n2. Batch I : 5 Peserta Magang\n3. Setiap Peserta akan mengikuti tahap seleksi, interview, Training & On the Job ( di bantu oleh mentor per departemen)\n4. Peserta akan mendapatkan sertifikat, Uang Transport & Uang Makan.\n5. Internship ini akan di buka di kota Jakarta ( Cikini & Pejaten ), Bandung, Surabaya\n\nAdapun posisi yang akan di tempati diantaranya :\n\n✅ E-commerce Officer\n✅ Designer Officer\n✅ Videographer\n✅ Copywriter\n✅ Social Media Officer\n✅ Video Editor\n✅ Animator Specialist\n✅ Creative Event Community\n✅ Customer experience Officer\n✅ HRD Officer\n\nBerikut proses penerimaan Intership :\n\n✅ Formulir & CV apply 14 – 30 November 2021\n✅ Interview 1 – 10 Desember 2021\n✅ Pengumuman 15 Desember 2021\n✅ Training 20 – 24 Desember 2021\n✅ Penempatan & On the Job 27 Desember 2021\n\n*Daftarkan diri kamu sekarang, dengan mengirimkan email ke recruitment@kasoem.co.id dengan*\n\n*Subject : Internship Kasoem – Posisi yang akan ditempati*\n\n*Contoh : Internship Kasoem – E-commerce Officer*\n\nYuk segera ketahui lebih lanjut informasinya dengan Ketik *HELP*",
+                        "type" : "text",
+                        "image_url" : "https://smcdn.s45.in/bot/assets_kasoem/gambar%20menu%20utama%20no%207.jpeg.jpeg"
+                    }
+                ],
+                "PROMO HC" : [ 
+                    {
+                        "id" : "PROMOHCA",
+                        "text" : "*=Program Promo=*\n*\"\"Mendengar Lebih Baik dengan Dua Telinga\"\"*\n\nDapatkan promo *potongan harga spesial hingga 75%* untuk pembelian ABD kedua, dengan ketentuan sebagai berikut:\n✅ Diskon berlaku bagi pembelian binaural secara langsung.\n✅ Diskon berlaku untuk alat kedua.\n\nBagi Anda yang sudah memiliki satu ABD juga bisa mendapatkan *potongan harga spesial hingga 35%* untuk pembelian satu ABD telinga sebelahnya, dengan ketentuan sebagai berikut:\n✅ Diskon berlaku untuk pasien yang baru menggunakan ABD di 1 telinga\n✅ Diskon berlaku jika pasien membeli alat untuk telinga sebelahnya yang belum menggunakan ABD.\n✅ Diskon berlaku khusus pelanggan pengguna Oticon\n\n*Special diskon hingga 30%* untuk pembelian upgrade ABD:\n✅ Diskon berlaku untuk pasien yang membeli ABD dengan teknologi diatas dari teknologi ABD yang saat ini digunakan\n✅ Diskon berlaku khusus pelanggan pengguna Oticon\n\nPeriode promo ini berlaku hingga tanggal 31 Desember 2021.\n\n*=Official Marketplace Store=*\n*Tokopedia : Kasoem Hearing Official*\nhttp://bit.ly/tokpedKasoemHC\n\n*Shopee : Kasoem Hearing*\nhttp://bit.ly/shopeeKasoemHC\n\n------\nKetik *MENU* untuk kembali ke menu utama\nKetik *HELP* untuk konsultasi lebih lanjut dengan Kasoem Care Officer",
+                        "type" : "text",
+                        "image_url" : ""
+                    }
+                ]
+            }
+        }
+    }
+}

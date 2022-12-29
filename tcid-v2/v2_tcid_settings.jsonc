@@ -1,0 +1,2156 @@
+// Setting ID 6152e1a673bedb25340c7fea
+{
+    "schemas": {
+        "6152dd143c2632e9418d3daf": {
+            "survey": {
+                "active": false
+            },
+            "reset_keys": [
+                "MENU",
+                "0"
+            ],
+            "load_conversation": "WabaTemplateConversation",
+            "dual_language": true,
+            "language_localization": {
+                "ID": {
+                    "auto_close_msg": "Terima kasih telah menghubungi Transcosmos Indonesia, sampai jumpa dan selamat beraktifitas kembali."
+                },
+                "EN": {
+                    "auto_close_msg": "Thank you for contacting Transcosmos Indonesia, have a nice day."
+                }
+            },
+            "main_menu_type": "button",
+            "top_level_questions": [
+                {
+                    "id": "ID",
+                    "text": "Bahasa",
+                    "type": "actions"
+                },
+                {
+                    "id": "EN",
+                    "text": "English",
+                    "type": "actions"
+                }
+            ],
+            "MENU": [
+                {
+                    "id": "ID",
+                    "text": "Bahasa",
+                    "type": "actions"
+                },
+                {
+                    "id": "EN",
+                    "text": "English",
+                    "type": "actions"
+                }
+            ],
+            "ID": [
+                {
+                    "id": "AA",
+                    "current_menu": "ID",
+                    "text": "Silahkan pilih pilihan berikut:",
+                    "current_lang": "ID",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "button",
+                    "menus": {
+                        "EMPLOYEE": {
+                            "id": "EA",
+                            "title": "Employee",
+                            "current_menu": "EMPLOYEE",
+                            "text": "Hi ~user_name~,\nSilahkan memilih informasi yang kamu butuhkan dibawah ini:\n*E1* Working hour\n*E2* Permit and leave\n*E3* Compensation and benefit\n*E4* BPJS\n*E5* Exit employee administration\n*E6* Drop your suggestion\n*E7* Other Topics",
+                            "type": "nest_menu",
+                            "validation": {
+                                "status": true,
+                                "text": "Silahkan masukan Nomor Induk Karyawan (NIK) Anda!",
+                                "type": "input",
+                                "method": "tcidEmployee",
+                                "error": {
+                                    "text": "Maaf, NIK yg anda masukan salah atau belum terdaftar.",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive-button",
+                                            "text": "Silahkan masukan NIK yang sesuai atau Kembali ke menu Utama!",
+                                            "menus": {
+                                                "MENU": {
+                                                    "id": "MENU",
+                                                    "title": "Main Menu"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "interactive_message": true,
+                            "interactive_type": "list",
+                            "menus": {
+                                "E1": {
+                                    "id": "E1A",
+                                    "title": "Working hour",
+                                    "current_menu": "E1",
+                                    "text": "Untuk mengetahui detail informasi mengenai ketentuan jam kerja silahkan login melalui akun andal kamu dan kunjungi tautan berikut:\n- Mobile Phone: https://bit.ly/WrkHours\n- Laptop (Wifi): https://bit.ly/WrkHours\n- Laptop (LAN): https://bit.ly/WrkHoursLAN\n\nJika ada informasi yang kurang jelas, silahkan chat dengan staff kami",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "menus": {
+                                        "CHATWER": {
+                                            "id": "CHATWER",
+                                            "title": "Chat with ER Staff",
+                                            "current_menu": "CHATWER",
+                                            "text": "",
+                                            "update_contact": true,
+                                            "type": "goto",
+                                            "goto": "cs",
+                                            "check_office_hour": {
+                                                "status": true,
+                                                "nin_off_hour": {
+                                                    "keep_mode": "nest_menu",
+                                                    "msg": "Kamu menghubungi diluar jam operasional kami. Jam operasional kami adalah senin-jumat pukul 08:00-17:00 WIB.",
+                                                    "next_bubbles": [
+                                                        {
+                                                            "type": "interactive-button",
+                                                            "text": "Silahkan hubungi kami pada jam tersebut.",
+                                                            "menus": {
+                                                                "MENU": {
+                                                                    "id": "MENU",
+                                                                    "title": "Main Menu"
+                                                                },
+                                                                "EBACK": {
+                                                                    "id": "EBACK",
+                                                                    "title": "Employee Menu"
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Main Menu",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "EBACK": {
+                                            "id": "EBACK",
+                                            "title": "Employee Menu",
+                                            "current_menu": "EBACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "E2": {
+                                    "id": "E2A",
+                                    "title": "Permit and leave",
+                                    "current_menu": "E2",
+                                    "text": "Untuk mengetahui detail informasi mengenai ketentuan ijin dan cuti silahkan login melalui akun andal kamu dan kunjungi tautan berikut:\n- Mobile Phone: https://bit.ly/WrkHours\n- Laptop (Wifi): https://bit.ly/WrkHours\n- Laptop (LAN): https://bit.ly/WrkHoursLAN\n\nJika ada informasi yang kurang jelas, silahkan chat",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "menus": {
+                                        "CHATWER": {
+                                            "id": "CHATWER",
+                                            "title": "Chat with ER Staff",
+                                            "current_menu": "CHATWER",
+                                            "text": "",
+                                            "update_contact": true,
+                                            "type": "goto",
+                                            "goto": "cs",
+                                            "check_office_hour": {
+                                                "status": true,
+                                                "nin_off_hour": {
+                                                    "keep_mode": "nest_menu",
+                                                    "msg": "Kamu menghubungi diluar jam operasional kami. Jam operasional kami adalah senin-jumat pukul 08:00-17:00 WIB.",
+                                                    "next_bubbles": [
+                                                        {
+                                                            "type": "interactive-button",
+                                                            "text": "Silahkan hubungi kami pada jam tersebut.",
+                                                            "menus": {
+                                                                "MENU": {
+                                                                    "id": "MENU",
+                                                                    "title": "Main Menu"
+                                                                },
+                                                                "EBACK": {
+                                                                    "id": "EBACK",
+                                                                    "title": "Employee Menu"
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Main Menu",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "EBACK": {
+                                            "id": "EBACK",
+                                            "title": "Employee Menu",
+                                            "current_menu": "EBACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "E3": {
+                                    "id": "E3A",
+                                    "title": "Compensation and benefit",
+                                    "current_menu": "E3",
+                                    "text": "Untuk mengetahui detail informasi mengenai pengupahan silahkan login melalui akun andal kamu kunjungi tautan\n- Mobile Phone: https://bit.ly/infbenefits\n- Laptop (Wifi): https://bit.ly/infbenefits\n- Laptop (LAN): https://bit.ly/infbenefitsLAN\n\nJika ada informasi yang kurang jelas, silahkan chat dengan staff kami.",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "menus": {
+                                        "CHATWER": {
+                                            "id": "CHATWER",
+                                            "title": "Chat with ER Staff",
+                                            "current_menu": "CHATWER",
+                                            "text": "",
+                                            "update_contact": true,
+                                            "type": "goto",
+                                            "goto": "cs",
+                                            "check_office_hour": {
+                                                "status": true,
+                                                "nin_off_hour": {
+                                                    "keep_mode": "nest_menu",
+                                                    "msg": "Kamu menghubungi diluar jam operasional kami. Jam operasional kami adalah senin-jumat pukul 08:00-17:00 WIB.",
+                                                    "next_bubbles": [
+                                                        {
+                                                            "type": "interactive-button",
+                                                            "text": "Silahkan hubungi kami pada jam tersebut.",
+                                                            "menus": {
+                                                                "MENU": {
+                                                                    "id": "MENU",
+                                                                    "title": "Main Menu"
+                                                                },
+                                                                "EBACK": {
+                                                                    "id": "EBACK",
+                                                                    "title": "Employee Menu"
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Main Menu",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "EBACK": {
+                                            "id": "EBACK",
+                                            "title": "Employee Menu",
+                                            "current_menu": "EBACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "E4": {
+                                    "id": "E4A",
+                                    "title": "BPJS",
+                                    "current_menu": "E4",
+                                    "text": "Untuk mengetahui detail informasi mengenai BPJS kesehatan, ketenagakerjaan, dan pensiun silahkan login melalui akun andal kamu kunjungi tautan berikut:\n- Mobile Phone: https://bit.ly/infbenefits\n- Laptop (Wifi): https://bit.ly/infbenefits\n- Laptop (LAN) https://bit.ly/infbenefitsLAN\nJika ada informasi yang kurang jelas, silahkan chat dengan staff kami.",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "menus": {
+                                        "CHATWER": {
+                                            "id": "CHATWER",
+                                            "title": "Chat with ER Staff",
+                                            "current_menu": "CHATWER",
+                                            "text": "",
+                                            "update_contact": true,
+                                            "type": "goto",
+                                            "goto": "cs",
+                                            "check_office_hour": {
+                                                "status": true,
+                                                "nin_off_hour": {
+                                                    "keep_mode": "nest_menu",
+                                                    "msg": "Kamu menghubungi diluar jam operasional kami. Jam operasional kami adalah senin-jumat pukul 08:00-17:00 WIB.",
+                                                    "next_bubbles": [
+                                                        {
+                                                            "type": "interactive-button",
+                                                            "text": "Silahkan hubungi kami pada jam tersebut.",
+                                                            "menus": {
+                                                                "MENU": {
+                                                                    "id": "MENU",
+                                                                    "title": "Main Menu"
+                                                                },
+                                                                "EBACK": {
+                                                                    "id": "EBACK",
+                                                                    "title": "Employee Menu"
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Main Menu",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "EBACK": {
+                                            "id": "EBACK",
+                                            "title": "Employee Menu",
+                                            "current_menu": "EBACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "E5": {
+                                    "id": "E5A",
+                                    "title": "Exit employee administration",
+                                    "current_menu": "E5",
+                                    "text": "Silahkan chat dengan staff kami untuk mengetahui informasi mengenai administrasi karyawan resign",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "menus": {
+                                        "CHATWER": {
+                                            "id": "CHATWER",
+                                            "title": "Chat with ER Staff",
+                                            "current_menu": "CHATWER",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs",
+                                            "update_contact": true,
+                                            "check_office_hour": {
+                                                "status": true,
+                                                "nin_off_hour": {
+                                                    "keep_mode": "nest_menu",
+                                                    "msg": "Kamu menghubungi diluar jam operasional kami. Jam operasional kami adalah senin-jumat pukul 08:00-17:00 WIB.",
+                                                    "next_bubbles": [
+                                                        {
+                                                            "type": "interactive-button",
+                                                            "text": "Silahkan hubungi kami pada jam tersebut.",
+                                                            "menus": {
+                                                                "MENU": {
+                                                                    "id": "MENU",
+                                                                    "title": "Main Menu"
+                                                                },
+                                                                "EBACK": {
+                                                                    "id": "EBACK",
+                                                                    "title": "Employee Menu"
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Main Menu",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "EBACK": {
+                                            "id": "EBACK",
+                                            "title": "Employee Menu",
+                                            "current_menu": "EBACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "E6": {
+                                    "id": "E6A",
+                                    "title": "Drop your suggestion",
+                                    "current_menu": "E6",
+                                    "text": "transcomos Indonesia sangat memahami kebutuhan setiap individu, baik karyawan, pimpinan, sampai dengan stakeholder yang mendukung kami. Sebagai bentuk pengembangan, kamu bisa memberikan saran terbaik dengan mengisi data berikut. \nTenang saja, data Kamu sangat bersifat rahasia dan tidak akan dipublikasikan ke siapa pun. \nSilahkan mengisi data dengan copy format dibawah ini.",
+                                    "type": "nest_menu",
+                                    "interactive_message": false,
+                                    "interactive_type": "button",
+                                    "match_keywords": true,
+                                    "drs_create_ticket": true,
+                                    "set_ticket_status": "close",
+                                    "update_contact": true,
+                                    "push_email": [
+                                        "tcid.wbs@trans-cosmos.co.id"
+                                    ],
+                                    "push_email_staging": [
+                                        "kun.hacker01@gmail.com",
+                                        "dimas.aditama@trans-cosmos.co.id"
+                                    ],
+                                    "subject": "*Kotak Saran*",
+                                    "keywords": [
+                                        "NAMA",
+                                        "NIP",
+                                        "PROJECT",
+                                        "TOPIK",
+                                        "SARAN"
+                                    ],
+                                    "next_bubbles": [
+                                        {
+                                            "type": "text",
+                                            "text": "Nama:\nNIP (jika karyawan):\nProject (jika karyawan):\nTopik (misal : HRD)\nSaran dan Masukan : "
+                                        }
+                                    ],
+                                    "closing_text": "Terima kasih atas sarannya,",
+                                    "closing_bubbles": [
+                                        {
+                                            "type": "interactive-button",
+                                            "text": "Kami akan segera menindaklanjuti saran Kamu agar Kami menjadi lebih baik.",
+                                            "menus": {
+                                                "CHATWER": {
+                                                    "id": "CHATWER",
+                                                    "title": "Chat with ER Staff"
+                                                },
+                                                "MENU": {
+                                                    "id": "MENU",
+                                                    "title": "Main Menu"
+                                                },
+                                                "EBACK": {
+                                                    "id": "EBACK",
+                                                    "title": "Employee Menu"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "menus": {
+                                        "CHATWER": {
+                                            "id": "CHATWER",
+                                            "current_menu": "CHATWER",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs",
+                                            "check_office_hour": {
+                                                "status": true,
+                                                "nin_off_hour": {
+                                                    "keep_mode": "nest_menu",
+                                                    "msg": "Kamu menghubungi diluar jam operasional kami. Jam operasional kami adalah senin-jumat pukul 08:00-17:00 WIB.",
+                                                    "next_bubbles": [
+                                                        {
+                                                            "type": "interactive-button",
+                                                            "text": "Silahkan hubungi kami pada jam tersebut.",
+                                                            "menus": {
+                                                                "MENU": {
+                                                                    "id": "MENU",
+                                                                    "title": "Main Menu"
+                                                                },
+                                                                "EBACK": {
+                                                                    "id": "EBACK",
+                                                                    "title": "Employee Menu"
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "EBACK": {
+                                            "id": "EBACK",
+                                            "current_menu": "EBACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "E7": {
+                                    "id": "E7A",
+                                    "title": "Other Topics",
+                                    "current_menu": "E7",
+                                    "text": "",
+                                    "type": "sequences",
+                                    "interactive_message": false,
+                                    "interactive_type": "button",
+                                    "check_office_hour": {
+                                        "status": true,
+                                        "nin_off_hour": {
+                                            "keep_mode": "nest_menu",
+                                            "msg": "Kamu menghubungi diluar jam operasional kami. Jam operasional kami adalah senin-jumat pukul 08:00-17:00 WIB.",
+                                            "next_bubbles": [
+                                                {
+                                                    "type": "interactive-button",
+                                                    "text": "Silahkan hubungi kami pada jam tersebut.",
+                                                    "menus": {
+                                                        "MENU": {
+                                                            "id": "MENU",
+                                                            "title": "Main Menu"
+                                                        },
+                                                        "EMENU": {
+                                                            "id": "EMENU",
+                                                            "title": "Employee Menu"
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "required_data": [
+                                        {
+                                            "id": "E7_SQ1",
+                                            "text": "Silahkan ketik topic yang ingin kamu tanyakan.",
+                                            "index": "Pelanggan",
+                                            "label": "topik",
+                                            "type": "text",
+                                            "validation": null,
+                                            "max_length": 255,
+                                            "error_max_length_msg": "Jumlah karakter melebihi batas maksimal 35!",
+                                            "error_msg": ""
+                                        },
+                                        {
+                                            "id": "E7_SQ2",
+                                            "text": "",
+                                            "index": "",
+                                            "label": "",
+                                            "type": "completed",
+                                            "create_ticket": true,
+                                            "end_session": true,
+                                            "validation": null,
+                                            "error_msg": "",
+                                            "completed_template": "Nama: ~user_name~\nTopik: ~Pelanggan.topik~\n\nMohon kesediannya untuk menunggu,\nSaat ini Anda sedang berada dalam antrian.",
+                                            "create_ticket_from_template": true,
+                                            "ticket_template_as_completed_template": true,
+                                            "internal_data_tag": "sites",
+                                            "update_contact": true
+                                        }
+                                    ]
+                                },
+                                "MENU": {
+                                    "id": "MENU",
+                                    "title": "Main Menu",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "ID-0"
+                                },
+                                "EMENU": {
+                                    "id": "EBACK",
+                                    "current_menu": "EBACK",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "ID-0-menus-EMPLOYEE"
+                                }
+                            }
+                        },
+                        "VISITOR": {
+                            "id": "VA",
+                            "title": "Visitor",
+                            "current_menu": "VISITOR",
+                            "text": "Hi ~user_name~,\nSilahkan memilih informasi yang kamu butuhkan dibawah ini:",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "V1": {
+                                    "id": "V1A",
+                                    "title": "Human Resources",
+                                    "current_menu": "V1",
+                                    "text": "Terima kasih telah memilih menu Human Resources. Berikut pilihan informasi yg tersedia",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "menus": {
+                                        "V11": {
+                                            "id": "V11A",
+                                            "title": "Request Paklaring",
+                                            "current_menu": "V11",
+                                            "text": "Untuk request paklaring, silahkan mengisi data dengan copy format dibawah ini (Request tidak akan terproses jika data tidak lengkap):",
+                                            "type": "nest_menu",
+                                            "interactive_message": false,
+                                            "interactive_type": "button",
+                                            "match_keywords": true,
+                                            "drs_create_ticket": true,
+                                            "set_ticket_status": "close",
+                                            "push_email": [
+                                                "hrs.er@trans-cosmos.co.id"
+                                            ],
+                                            "push_email_staging": [
+                                                "kun.hacker01@gmail.com",
+                                                "dimas.aditama@trans-cosmos.co.id"
+                                            ],
+                                            "subject": "*Request Packlaring*",
+                                            "keywords": [
+                                                "NAMA",
+                                                "NIP",
+                                                "PROJECT",
+                                                "EMAIL",
+                                                "NOMOR"
+                                            ],
+                                            "next_bubbles": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "Nama :\nNIP :\nProject :\nEmail :\nNomor HP :"
+                                                }
+                                            ],
+                                            "closing_text": "Terima kasih atas pengisian formnya, data Kamu sudah tercatat.",
+                                            "closing_bubbles": [
+                                                {
+                                                    "type": "interactive-button",
+                                                    "text": "Selanjutnya tim HR akan menghubungi Kamu jika paklaring sudah siap.",
+                                                    "menus": {
+                                                        "MENU": {
+                                                            "id": "MENU",
+                                                            "title": "Main Menu"
+                                                        },
+                                                        "VMENU": {
+                                                            "id": "VMENU",
+                                                            "title": "Visitor Menu"
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "menus": {
+                                                "VMENU": {
+                                                    "id": "VMENU",
+                                                    "current_menu": "VMENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-0-menus-VISITOR"
+                                                },
+                                                "MENU": {
+                                                    "id": "MENU",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-0"
+                                                }
+                                            }
+                                        },
+                                        "V12": {
+                                            "id": "V12A",
+                                            "title": "Job Vacancy",
+                                            "current_menu": "V12",
+                                            "text": "Untuk informasi selanjutnya, silakan tentukan pilihan berikut:\n*H1* Job info\n*H2* Apply\n*H3* Application status",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "list",
+                                            "menus": {
+                                                "H1": {
+                                                    "id": "H1A",
+                                                    "title": "Job info",
+                                                    "current_menu": "H1",
+                                                    "text": "Untuk informasi lowongan terbaru, Kamu bisa cek di Instagram @transcosmos.id atau kunjungi https://bit.ly/TCIDvacancy",
+                                                    "type": "nest_menu",
+                                                    "interactive_message": true,
+                                                    "interactive_type": "button",
+                                                    "menus": {
+                                                        "MENU": {
+                                                            "id": "MENU",
+                                                            "title": "Main Menu",
+                                                            "current_menu": "MENU",
+                                                            "text": "",
+                                                            "type": "goto",
+                                                            "goto": "targeted_menu",
+                                                            "targeted_path": "ID-0"
+                                                        },
+                                                        "VMENU": {
+                                                            "id": "VMENU",
+                                                            "title": "Visitor Menu",
+                                                            "current_menu": "VMENU",
+                                                            "text": "",
+                                                            "type": "goto",
+                                                            "goto": "targeted_menu",
+                                                            "targeted_path": "ID-0-menus-VISITOR"
+                                                        }
+                                                    }
+                                                },
+                                                "H2": {
+                                                    "id": "H2A",
+                                                    "title": "Apply",
+                                                    "current_menu": "H2",
+                                                    "text": "Jika Kamu berminat melamar pekerjaan di Transcosmos Indonesia, silakan daftar di link berikut ya: http://bit.ly/PendaftaranTCID",
+                                                    "type": "nest_menu",
+                                                    "interactive_message": true,
+                                                    "interactive_type": "button",
+                                                    "menus": {
+                                                        "MENU": {
+                                                            "id": "MENU",
+                                                            "title": "Main Menu",
+                                                            "current_menu": "MENU",
+                                                            "text": "",
+                                                            "type": "goto",
+                                                            "goto": "targeted_menu",
+                                                            "targeted_path": "ID-0"
+                                                        },
+                                                        "VMENU": {
+                                                            "id": "VMENU",
+                                                            "title": "Visitor Menu",
+                                                            "current_menu": "VMENU",
+                                                            "text": "",
+                                                            "type": "goto",
+                                                            "goto": "targeted_menu",
+                                                            "targeted_path": "ID-0-menus-VISITOR"
+                                                        }
+                                                    }
+                                                },
+                                                "H3": {
+                                                    "id": "H3A",
+                                                    "title": "Application status",
+                                                    "current_menu": "H3",
+                                                    "text": "Sebagai informasi, seluruh CV yang sudah masuk akan kami periksa berdasarkan posisi yang kamu apply. Jika sebelumnya kamu sudah diproses baik tes tertulis atau sudah sampai tahap interview mohon ditunggu ya, tim HR kami akan menghubungi kamu jika lolos paling lama 2 minggu setelah proses terakhir. Apabila dalam dua minggu kamu tidak dihubungi oleh tim kami, itu artinya kamu akan dikategorikan ke dalam kandidat potensial kami. Selanjutnya kami akan hubungi kembali jika sudah ada posisi yang sesuai. Tetap semangat dan sukses selalu.",
+                                                    "type": "nest_menu",
+                                                    "interactive_message": true,
+                                                    "interactive_type": "button",
+                                                    "menus": {
+                                                        "MENU": {
+                                                            "id": "MENU",
+                                                            "title": "Main Menu",
+                                                            "current_menu": "MENU",
+                                                            "text": "",
+                                                            "type": "goto",
+                                                            "goto": "targeted_menu",
+                                                            "targeted_path": "ID-0"
+                                                        },
+                                                        "VMENU": {
+                                                            "id": "VMENU",
+                                                            "title": "Visitor Menu",
+                                                            "current_menu": "VMENU",
+                                                            "text": "",
+                                                            "type": "goto",
+                                                            "goto": "targeted_menu",
+                                                            "targeted_path": "ID-0-menus-VISITOR"
+                                                        }
+                                                    }
+                                                },
+                                                "MENU": {
+                                                    "id": "MENU",
+                                                    "title": "Main Menu",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-0"
+                                                },
+                                                "VISITOR_MENU": {
+                                                    "id": "VBACK",
+                                                    "title": "Visitor Menu",
+                                                    "current_menu": "VMENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-0-menus-VISITOR"
+                                                }
+                                            }
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Main Menu",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "VMENU": {
+                                            "id": "VBACK",
+                                            "current_menu": "VMENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0-menus-VISITOR"
+                                        }
+                                    }
+                                },
+                                "V2": {
+                                    "id": "V2A",
+                                    "title": "Sales and Marketing",
+                                    "current_menu": "V2",
+                                    "text": "Transcosmos Indonesia merupakan perusahaan global yang bergerak pada bidang Business Process Outsourcing dan sudah memberikan pelayanan kepada banyak klien untuk membantu mengembangkan bisnis mereka.\n\nBerikut adalah solusi dan layanan kami:\n*S1* Contact Center\n*S2* Digital Marketing\n*S3* Human Resources",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "list",
+                                    "menus": {
+                                        "S1": {
+                                            "id": "S1A",
+                                            "title": "Contact Center",
+                                            "current_menu": "S1",
+                                            "text": "Transcomos Indonesia menyediakan layanan Contact Center Services untuk membantu klien melayani para customernya dalam memberikan pelayanan terbaik. Kami sudah membantu klient di berbagai industri seperti FMCG, Ecommerce, Travel, Otomotif, Banking, Home Appliance, Electronic, Fintech, dsb.\n\nUntuk informasi lebih lanjut, silahkan mengisi data dengan copy format dibawah ini:",
+                                            "type": "nest_menu",
+                                            "interactive_message": false,
+                                            "interactive_type": "button",
+                                            "match_keywords": true,
+                                            "drs_create_ticket": true,
+                                            "set_ticket_status": "close",
+                                            "push_email": [
+                                                "info@trans-cosmos.co.id"
+                                            ],
+                                            "push_email_staging": [
+                                                "kun.hacker01@gmail.com",
+                                                "dimas.aditama@trans-cosmos.co.id"
+                                            ],
+                                            "subject": "*Contact Center Services*",
+                                            "keywords": [
+                                                "NAMA",
+                                                "PERUSAHAAN",
+                                                "EMAIL",
+                                                "TELEPON"
+                                            ],
+                                            "next_bubbles": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "Nama:\nPerusahaan:\nEmail:\nNo. Telepon:"
+                                                }
+                                            ],
+                                            "closing_text": "Terima kasih untuk data yang diberikan.",
+                                            "closing_bubbles": [
+                                                {
+                                                    "type": "interactive-button",
+                                                    "text": "Sales representative Kami akan segera menghubungi Anda",
+                                                    "menus": {
+                                                        "MENU": {
+                                                            "id": "MENU",
+                                                            "title": "Main Menu"
+                                                        },
+                                                        "VMENU": {
+                                                            "id": "VMENU",
+                                                            "title": "Visitor Menu"
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "menus": {
+                                                "MENU": {
+                                                    "id": "MENU",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-0"
+                                                },
+                                                "VMENU": {
+                                                    "id": "VMENU",
+                                                    "current_menu": "VMENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-0-menus-VISITOR"
+                                                }
+                                            }
+                                        },
+                                        "S2": {
+                                            "id": "S2A",
+                                            "title": "Digital Marketing",
+                                            "current_menu": "S2",
+                                            "text": "Transcomos Indonesia menyediakan layanan Digital Marketing untuk membatu klien dalam mengembangkan perusahaan untuk go digital seperti pengembangan mobile apps, optimasi website, SEO, social media, digital marketing campaign, hingga pengembangan aplikasi digital lainnya.\n\nUntuk informasi lebih lanjut, silahkan mengisi data dengan copy format dibawah ini:",
+                                            "type": "nest_menu",
+                                            "interactive_message": false,
+                                            "interactive_type": "button",
+                                            "match_keywords": true,
+                                            "drs_create_ticket": true,
+                                            "set_ticket_status": "close",
+                                            "push_email": [
+                                                "dm.info@trans-cosmos.co.id"
+                                            ],
+                                            "push_email_staging": [
+                                                "kun.hacker01@gmail.com",
+                                                "dimas.aditama@trans-cosmos.co.id"
+                                            ],
+                                            "subject": "*Digital Marketing*",
+                                            "keywords": [
+                                                "NAMA",
+                                                "PERUSAHAAN",
+                                                "EMAIL",
+                                                "TELEPON"
+                                            ],
+                                            "next_bubbles": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "Nama:\nPerusahaan:\nEmail:\nNo. Telepon:"
+                                                }
+                                            ],
+                                            "closing_text": "Terima kasih untuk data yang diberikan.",
+                                            "closing_bubbles": [
+                                                {
+                                                    "type": "interactive-button",
+                                                    "text": "Sales representative Kami akan segera menghubungi Anda",
+                                                    "menus": {
+                                                        "MENU": {
+                                                            "id": "MENU",
+                                                            "title": "Main Menu"
+                                                        },
+                                                        "VMENU": {
+                                                            "id": "VMENU",
+                                                            "title": "Visitor Menu"
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "menus": {
+                                                "MENU": {
+                                                    "id": "MENU",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-0"
+                                                },
+                                                "VMENU": {
+                                                    "id": "VMENU",
+                                                    "current_menu": "VMENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-0-menus-VISITOR"
+                                                }
+                                            }
+                                        },
+                                        "S3": {
+                                            "id": "S3A",
+                                            "title": "Human Resources",
+                                            "current_menu": "S3",
+                                            "text": "Transcomos Indonesia membantu client dalam menyediakan tenaga kerja yang berkualitas untuk pekerjaan-pekerjaan tertentu seperti customer service, back office dsb.\n\nUntuk informasi lebih lanjut, silahkan mengisi data dengan copy format dibawah ini:",
+                                            "type": "nest_menu",
+                                            "interactive_message": false,
+                                            "interactive_type": "button",
+                                            "match_keywords": true,
+                                            "drs_create_ticket": true,
+                                            "set_ticket_status": "close",
+                                            "push_email": [
+                                                "info@trans-cosmos.co.id"
+                                            ],
+                                            "push_email_staging": [
+                                                "kun.hacker01@gmail.com",
+                                                "dimas.aditama@trans-cosmos.co.id"
+                                            ],
+                                            "subject": "*Human Resources Services*",
+                                            "keywords": [
+                                                "NAMA",
+                                                "EMAIL",
+                                                "PERUSAHAAN",
+                                                "TELEPON"
+                                            ],
+                                            "next_bubbles": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "Nama:\nPerusahaan:\nEmail:\nNo. Telepon:"
+                                                }
+                                            ],
+                                            "closing_text": "Terima kasih untuk data yang diberikan.",
+                                            "closing_bubbles": [
+                                                {
+                                                    "type": "interactive-button",
+                                                    "text": "Sales representative Kami akan segera menghubungi Anda",
+                                                    "menus": {
+                                                        "MENU": {
+                                                            "id": "MENU",
+                                                            "title": "Main Menu"
+                                                        },
+                                                        "VMENU": {
+                                                            "id": "VMENU",
+                                                            "title": "Visitor Menu"
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "menus": {
+                                                "MENU": {
+                                                    "id": "MENU",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-0"
+                                                },
+                                                "VMENU": {
+                                                    "id": "VMENU",
+                                                    "current_menu": "VMENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "ID-0-menus-VISITOR"
+                                                }
+                                            }
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Main Menu",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "VISITOR_MENU": {
+                                            "id": "VMENU",
+                                            "title": "Visitor Menu",
+                                            "current_menu": "VMENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0-menus-VISITOR"
+                                        }
+                                    }
+                                },
+                                "MENU": {
+                                    "id": "MENU",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "ID-0"
+                                },
+                                "VMENU": {
+                                    "id": "VMENU",
+                                    "current_menu": "VMENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "ID-0-menus-VISITOR"
+                                }
+                            }
+                        },
+                        "PILIHBAHASA": {
+                            "id": "VMENU",
+                            "title": "Pilih Bahasa",
+                            "current_menu": "PILIHBAHASA",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }
+            ],
+            "EN": [
+                {
+                    "id": "AA",
+                    "current_menu": "EN",
+                    "text": "Please choose the following option:",
+                    "current_lang": "EN",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "button",
+                    "menus": {
+                        "EMPLOYEE": {
+                            "id": "EA",
+                            "title": "Employee",
+                            "current_menu": "EMPLOYEE",
+                            "text": "Hi ~user_name~,\nPlease choose the following option:\n*E1* Working hour\n*E2* Permit and leave\n*E3* Compensation and benefit\n*E4* BPJS\n*E5* Exit employee administration\n*E6* Drop your suggestion\n*E7* Other Topics",
+                            "type": "nest_menu",
+                            "validation": {
+                                "status": true,
+                                "text": "Please input your employee ID (NIK)!",
+                                "type": "input",
+                                "method": "tcidEmployee",
+                                "error": {
+                                    "text": "Sorry, the employee ID was incorrect or not registered.",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive-button",
+                                            "text": "Please input the correct ID or back to main menu!",
+                                            "menus": {
+                                                "MENU": {
+                                                    "id": "MENU",
+                                                    "title": "Main Menu"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "interactive_message": true,
+                            "interactive_type": "list",
+                            "menus": {
+                                "E1": {
+                                    "id": "E1A",
+                                    "title": "Working hour",
+                                    "current_menu": "E1",
+                                    "text": "Please log in to your Andal account and find the detail information about working hours with the following link:\n- Mobile Phone: https://bit.ly/WrkHours\n- Laptop (Wifi): https://bit.ly/WrkHours\n- Laptop (LAN): https://bit.ly/WrkHoursLAN\n\nYou can chat with our staff for more information",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "menus": {
+                                        "CHATWER": {
+                                            "id": "CHATWER",
+                                            "title": "Chat with ER Staff",
+                                            "current_menu": "CHATWER",
+                                            "text": "Please wait,\nYou are currently in the queue.",
+                                            "update_contact": true,
+                                            "type": "goto",
+                                            "goto": "cs",
+                                            "language": "en",
+                                            "check_office_hour": {
+                                                "status": true,
+                                                "nin_off_hour": {
+                                                    "keep_mode": "nest_menu",
+                                                    "msg": "Chat closed, our operational hours is Monday - Friday, 08:00-17:00 UTC+7.",
+                                                    "next_bubbles": [
+                                                        {
+                                                            "type": "interactive-button",
+                                                            "text": "Please contact us during operation hours.",
+                                                            "menus": {
+                                                                "MENU": {
+                                                                    "id": "MENU",
+                                                                    "title": "Main Menu"
+                                                                },
+                                                                "EBACK": {
+                                                                    "id": "EBACK",
+                                                                    "title": "Employee Menu"
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Main Menu",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "EN-0"
+                                        },
+                                        "EBACK": {
+                                            "id": "EBACK",
+                                            "title": "Employee Menu",
+                                            "current_menu": "EBACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "E2": {
+                                    "id": "E2A",
+                                    "title": "Permit and leave",
+                                    "current_menu": "E2",
+                                    "text": "Please log in to your Andal account and find the detail information about permit and leave rules with the following link:\n- Mobile Phone: https://bit.ly/WrkHours\n- Laptop (Wifi): https://bit.ly/WrkHours\n- Laptop (LAN): https://bit.ly/WrkHoursLAN\n\nYou can chat with our staff for more information",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "menus": {
+                                        "CHATWER": {
+                                            "id": "CHATWER",
+                                            "title": "Chat with ER Staff",
+                                            "current_menu": "CHATWER",
+                                            "text": "Please wait,\nYou are currently in the queue.",
+                                            "update_contact": true,
+                                            "type": "goto",
+                                            "goto": "cs",
+                                            "language": "en",
+                                            "check_office_hour": {
+                                                "status": true,
+                                                "nin_off_hour": {
+                                                    "keep_mode": "nest_menu",
+                                                    "msg": "Chat closed, our operational hours is Monday - Friday, 08:00-17:00 UTC+7.",
+                                                    "next_bubbles": [
+                                                        {
+                                                            "type": "interactive-button",
+                                                            "text": "Please contact us during operation hours.",
+                                                            "menus": {
+                                                                "MENU": {
+                                                                    "id": "MENU",
+                                                                    "title": "Main Menu"
+                                                                },
+                                                                "EBACK": {
+                                                                    "id": "EBACK",
+                                                                    "title": "Employee Menu"
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Main Menu",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "EN-0"
+                                        },
+                                        "EBACK": {
+                                            "id": "EBACK",
+                                            "title": "Employee Menu",
+                                            "current_menu": "EBACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "E3": {
+                                    "id": "E3A",
+                                    "title": "Compensation and benefit",
+                                    "current_menu": "E3",
+                                    "text": "Please log in to your Andal account and find the detail information about compensation and benefits with the following link \n- Mobile Phone: https://bit.ly/infbenefits\n- Laptop (Wifi): https://bit.ly/infbenefits\n- Laptop (LAN): https://bit.ly/infbenefitsLAN\n\nYou can chat with our staff for more information",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "menus": {
+                                        "CHATWER": {
+                                            "id": "CHATWER",
+                                            "title": "Chat with ER Staff",
+                                            "current_menu": "CHATWER",
+                                            "text": "Please wait,\nYou are currently in the queue.",
+                                            "update_contact": true,
+                                            "type": "goto",
+                                            "goto": "cs",
+                                            "language": "en",
+                                            "check_office_hour": {
+                                                "status": true,
+                                                "nin_off_hour": {
+                                                    "keep_mode": "nest_menu",
+                                                    "msg": "Chat closed, our operational hours is Monday - Friday, 08:00-17:00 UTC+7.",
+                                                    "next_bubbles": [
+                                                        {
+                                                            "type": "interactive-button",
+                                                            "text": "Please contact us during operation hours.",
+                                                            "menus": {
+                                                                "MENU": {
+                                                                    "id": "MENU",
+                                                                    "title": "Main Menu"
+                                                                },
+                                                                "EBACK": {
+                                                                    "id": "EBACK",
+                                                                    "title": "Employee Menu"
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Main Menu",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "EN-0"
+                                        },
+                                        "EBACK": {
+                                            "id": "EBACK",
+                                            "title": "Employee Menu",
+                                            "current_menu": "EBACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "E4": {
+                                    "id": "E4A",
+                                    "title": "BPJS",
+                                    "current_menu": "E4",
+                                    "text": "Please log in to your Andal account and find the detail information about BPJS health, employment, and pension with the following link:\n- Mobile Phone: https://bit.ly/infbenefits\n- Laptop (Wifi): https://bit.ly/infbenefits\n- Laptop (LAN) https://bit.ly/infbenefitsLAN\nYou can chat with our staff for more information",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "menus": {
+                                        "CHATWER": {
+                                            "id": "CHATWER",
+                                            "title": "Chat with ER Staff",
+                                            "current_menu": "CHATWER",
+                                            "text": "Please wait,\nYou are currently in the queue.",
+                                            "update_contact": true,
+                                            "type": "goto",
+                                            "goto": "cs",
+                                            "language": "en",
+                                            "check_office_hour": {
+                                                "status": true,
+                                                "nin_off_hour": {
+                                                    "keep_mode": "nest_menu",
+                                                    "msg": "Chat closed, our operational hours is Monday - Friday, 08:00-17:00 UTC+7.",
+                                                    "next_bubbles": [
+                                                        {
+                                                            "type": "interactive-button",
+                                                            "text": "Please contact us during operation hours.",
+                                                            "menus": {
+                                                                "MENU": {
+                                                                    "id": "MENU",
+                                                                    "title": "Main Menu"
+                                                                },
+                                                                "EBACK": {
+                                                                    "id": "EBACK",
+                                                                    "title": "Employee Menu"
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Main Menu",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "EN-0"
+                                        },
+                                        "EBACK": {
+                                            "id": "EBACK",
+                                            "title": "Employee Menu",
+                                            "current_menu": "EBACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "E5": {
+                                    "id": "E5A",
+                                    "title": "Exit employee administration",
+                                    "current_menu": "E5",
+                                    "text": "You can chat with our staff for Exit employee administration information",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "menus": {
+                                        "CHATWER": {
+                                            "id": "CHATWER",
+                                            "title": "Chat with ER Staff",
+                                            "current_menu": "CHATWER",
+                                            "text": "Please wait,\nYou are currently in the queue.",
+                                            "update_contact": true,
+                                            "type": "goto",
+                                            "goto": "cs",
+                                            "language": "en",
+                                            "check_office_hour": {
+                                                "status": true,
+                                                "nin_off_hour": {
+                                                    "keep_mode": "nest_menu",
+                                                    "msg": "Chat closed, our operational hours is Monday - Friday, 08:00-17:00 UTC+7.",
+                                                    "next_bubbles": [
+                                                        {
+                                                            "type": "interactive-button",
+                                                            "text": "Please contact us during operation hours.",
+                                                            "menus": {
+                                                                "MENU": {
+                                                                    "id": "MENU",
+                                                                    "title": "Main Menu"
+                                                                },
+                                                                "EBACK": {
+                                                                    "id": "EBACK",
+                                                                    "title": "Employee Menu"
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Main Menu",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "EN-0"
+                                        },
+                                        "EBACK": {
+                                            "id": "EBACK",
+                                            "title": "Employee Menu",
+                                            "current_menu": "EBACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "E6": {
+                                    "id": "E6A",
+                                    "title": "Drop your suggestion",
+                                    "current_menu": "E6",
+                                    "text": "transcosmos Indonesia fully understand with every needs for each our employees, management, clients, and partners. For our improvement, your idea or suggestion would be important for us. Please complete the following form and we can assure your data will be kept very confidential.\nPlease fill out by copy the following format:",
+                                    "type": "nest_menu",
+                                    "interactive_message": false,
+                                    "interactive_type": "button",
+                                    "match_keywords": true,
+                                    "drs_create_ticket": true,
+                                    "set_ticket_status": "close",
+                                    "update_contact": true,
+                                    "language": "en",
+                                    "push_email": [
+                                        "tcid.wbs@trans-cosmos.co.id"
+                                    ],
+                                    "push_email_staging": [
+                                        "kun.hacker01@gmail.com",
+                                        "dimas.aditama@trans-cosmos.co.id"
+                                    ],
+                                    "subject": "*Kotak Saran*",
+                                    "keywords": [
+                                        "NAME",
+                                        "EMPLOYEE",
+                                        "PROJECT",
+                                        "TOPIC",
+                                        "IDEA"
+                                    ],
+                                    "next_bubbles": [
+                                        {
+                                            "type": "text",
+                                            "text": "Name:\nEmployee ID (only for employee):\nProject/ Client:\nTopic: (ex. HR, Payroll) \nIdea/ Suggestion :"
+                                        }
+                                    ],
+                                    "closing_text": "Thank you for your idea and suggestion",
+                                    "closing_bubbles": [
+                                        {
+                                            "type": "interactive-button",
+                                            "text": "We will follow up it soon.",
+                                            "menus": {
+                                                "CHATWER": {
+                                                    "id": "CHATWER",
+                                                    "title": "Chat with ER Staff"
+                                                },
+                                                "MENU": {
+                                                    "id": "MENU",
+                                                    "title": "Main Menu"
+                                                },
+                                                "EBACK": {
+                                                    "id": "EBACK",
+                                                    "title": "Employee Menu"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "menus": {
+                                        "CHATWER": {
+                                            "id": "CHATWER",
+                                            "title": "Chat with ER Staff",
+                                            "current_menu": "CHATWER",
+                                            "text": "Please wait,\nYou are currently in the queue.",
+                                            "update_contact": true,
+                                            "type": "goto",
+                                            "goto": "cs",
+                                            "language": "en",
+                                            "check_office_hour": {
+                                                "status": true,
+                                                "nin_off_hour": {
+                                                    "keep_mode": "nest_menu",
+                                                    "msg": "Chat closed, our operational hours is Monday - Friday, 08:00-17:00 UTC+7.",
+                                                    "next_bubbles": [
+                                                        {
+                                                            "type": "interactive-button",
+                                                            "text": "Please contact us during operation hours.",
+                                                            "menus": {
+                                                                "MENU": {
+                                                                    "id": "MENU",
+                                                                    "title": "Main Menu"
+                                                                },
+                                                                "EBACK": {
+                                                                    "id": "EBACK",
+                                                                    "title": "Employee Menu"
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Main Menu",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "EN-0"
+                                        },
+                                        "EBACK": {
+                                            "id": "EBACK",
+                                            "title": "Employee Menu",
+                                            "current_menu": "EBACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "E7": {
+                                    "id": "E7A",
+                                    "title": "Other Topics",
+                                    "current_menu": "E7",
+                                    "text": "",
+                                    "type": "sequences",
+                                    "interactive_message": false,
+                                    "interactive_type": "button",
+                                    "check_office_hour": {
+                                        "status": true,
+                                        "nin_off_hour": {
+                                            "keep_mode": "nest_menu",
+                                            "msg": "Chat closed, our operational hours is Monday - Friday, 08:00-17:00 UTC+7.",
+                                            "next_bubbles": [
+                                                {
+                                                    "type": "interactive-button",
+                                                    "text": "Please contact us during operation hours.",
+                                                    "menus": {
+                                                        "MENU": {
+                                                            "id": "MENU",
+                                                            "title": "Main Menu"
+                                                        },
+                                                        "EMENU": {
+                                                            "id": "EMENU",
+                                                            "title": "Employee Menu"
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "required_data": [
+                                        {
+                                            "id": "E7_SQ1",
+                                            "text": "Please type down topic you want to ask with.",
+                                            "index": "Pelanggan",
+                                            "label": "topik",
+                                            "type": "text",
+                                            "validation": null,
+                                            "max_length": 255,
+                                            "error_max_length_msg": "Maximum character 255!",
+                                            "error_msg": ""
+                                        },
+                                        {
+                                            "id": "E7_SQ2",
+                                            "text": "",
+                                            "index": "",
+                                            "label": "",
+                                            "type": "completed",
+                                            "create_ticket": true,
+                                            "end_session": true,
+                                            "validation": null,
+                                            "error_msg": "",
+                                            "completed_template": "Name: ~user_name~\nTopic: ~Pelanggan.topik~\n\nPlease wait,\nYou are currently in the queue.",
+                                            "create_ticket_from_template": true,
+                                            "ticket_template_as_completed_template": true,
+                                            "internal_data_tag": "sites",
+                                            "language": "en",
+                                            "update_contact": true
+                                        }
+                                    ]
+                                },
+                                "MENU": {
+                                    "id": "MENU",
+                                    "title": "Main Menu",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "EN-0"
+                                },
+                                "EMENU": {
+                                    "id": "EBACK",
+                                    "current_menu": "EBACK",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "EN-0-menus-EMPLOYEE"
+                                }
+                            }
+                        },
+                        "VISITOR": {
+                            "id": "VA",
+                            "title": "Visitor",
+                            "current_menu": "VISITOR",
+                            "text": "Hi ~user_name~,\nPlease choose our services below:",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "V1": {
+                                    "id": "V1A",
+                                    "title": "Human Resources",
+                                    "current_menu": "V1",
+                                    "text": "Thanks for choosing Human Resources. You can find more information as below:",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "menus": {
+                                        "V11": {
+                                            "id": "V11A",
+                                            "title": "Request Paklaring",
+                                            "current_menu": "V11",
+                                            "text": "To request a certificate of employment, please fill out by copy the following format (Incomplete data will not procced)",
+                                            "type": "nest_menu",
+                                            "interactive_message": false,
+                                            "interactive_type": "button",
+                                            "match_keywords": true,
+                                            "drs_create_ticket": true,
+                                            "set_ticket_status": "close",
+                                            "language": "en",
+                                            "push_email": [
+                                                "hrs.er@trans-cosmos.co.id"
+                                            ],
+                                            "push_email_staging": [
+                                                "kun.hacker01@gmail.com",
+                                                "dimas.aditama@trans-cosmos.co.id"
+                                            ],
+                                            "subject": "*Request Packlaring*",
+                                            "keywords": [
+                                                "NAME",
+                                                "EMPLOYEE",
+                                                "PROJECT",
+                                                "EMAIL",
+                                                "PHONE"
+                                            ],
+                                            "next_bubbles": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "Name :\nEmployee ID :\nProject :\nEmail :\nPhone No. :"
+                                                }
+                                            ],
+                                            "closing_text": "Thank you for fill out the form. Your data has been recorded",
+                                            "closing_bubbles": [
+                                                {
+                                                    "type": "interactive-button",
+                                                    "text": "Our HR team will be contact you directly once the document is ready",
+                                                    "menus": {
+                                                        "MENU": {
+                                                            "id": "MENU",
+                                                            "title": "Main Menu"
+                                                        },
+                                                        "VMENU": {
+                                                            "id": "VMENU",
+                                                            "title": "Visitor Menu"
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "menus": {
+                                                "VMENU": {
+                                                    "id": "VMENU",
+                                                    "title": "Visitor Menu",
+                                                    "current_menu": "VMENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "EN-0-menus-VISITOR"
+                                                },
+                                                "MENU": {
+                                                    "id": "MENU",
+                                                    "title": "Main Menu",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "EN-0"
+                                                }
+                                            }
+                                        },
+                                        "V12": {
+                                            "id": "V12A",
+                                            "title": "Job Vacancy",
+                                            "current_menu": "V1-2",
+                                            "text": "Please choose the following menu for more information:\n*H1* Job info\n*H2* Apply\n*H3* Application status",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "list",
+                                            "menus": {
+                                                "H1": {
+                                                    "id": "H1A",
+                                                    "title": "Job info",
+                                                    "current_menu": "H1",
+                                                    "text": "You can find out our latest vacancy on Instagram @transcosmos.id or visit https://bit.ly/TCIDvacancy",
+                                                    "type": "nest_menu",
+                                                    "interactive_message": true,
+                                                    "interactive_type": "button",
+                                                    "menus": {
+                                                        "MENU": {
+                                                            "id": "MENU",
+                                                            "title": "Main Menu",
+                                                            "current_menu": "MENU",
+                                                            "text": "",
+                                                            "type": "goto",
+                                                            "goto": "targeted_menu",
+                                                            "targeted_path": "EN-0"
+                                                        },
+                                                        "VMENU": {
+                                                            "id": "VMENU",
+                                                            "title": "Visitor Menu",
+                                                            "current_menu": "VMENU",
+                                                            "text": "",
+                                                            "type": "goto",
+                                                            "goto": "targeted_menu",
+                                                            "targeted_path": "EN-0-menus-VISITOR"
+                                                        }
+                                                    }
+                                                },
+                                                "H2": {
+                                                    "id": "H2A",
+                                                    "title": "Apply",
+                                                    "current_menu": "H2",
+                                                    "text": "If you are interested to apply job in Transcosmos Indonesia, please fill the following form: http://bit.ly/PendaftaranTCID",
+                                                    "type": "nest_menu",
+                                                    "interactive_message": true,
+                                                    "interactive_type": "button",
+                                                    "menus": {
+                                                        "MENU": {
+                                                            "id": "MENU",
+                                                            "title": "Main Menu",
+                                                            "current_menu": "MENU",
+                                                            "text": "",
+                                                            "type": "goto",
+                                                            "goto": "targeted_menu",
+                                                            "targeted_path": "EN-0"
+                                                        },
+                                                        "VMENU": {
+                                                            "id": "VMENU",
+                                                            "title": "Visitor Menu",
+                                                            "current_menu": "VMENU",
+                                                            "text": "",
+                                                            "type": "goto",
+                                                            "goto": "targeted_menu",
+                                                            "targeted_path": "EN-0-menus-VISITOR"
+                                                        }
+                                                    }
+                                                },
+                                                "H3": {
+                                                    "id": "H3A",
+                                                    "title": "Application status",
+                                                    "current_menu": "H3",
+                                                    "text": "We appreciate your interest in transcosmos Indonesia and thank you for providing us your information. As our standard, all of candidates will be review based on each requirement. If you have done written test or interview session please be wait,  our team required some time to review the result. Once you passed the selection, we will contact you within 2 weeks period. But if you don't receive any information from us, you will be shortlisted as our potential candidates for the next time.",
+                                                    "type": "nest_menu",
+                                                    "interactive_message": true,
+                                                    "interactive_type": "button",
+                                                    "menus": {
+                                                        "MENU": {
+                                                            "id": "MENU",
+                                                            "title": "Main Menu",
+                                                            "current_menu": "MENU",
+                                                            "text": "",
+                                                            "type": "goto",
+                                                            "goto": "targeted_menu",
+                                                            "targeted_path": "EN-0"
+                                                        },
+                                                        "VMENU": {
+                                                            "id": "VMENU",
+                                                            "title": "Visitor Menu",
+                                                            "current_menu": "VMENU",
+                                                            "text": "",
+                                                            "type": "goto",
+                                                            "goto": "targeted_menu",
+                                                            "targeted_path": "EN-0-menus-VISITOR"
+                                                        }
+                                                    }
+                                                },
+                                                "MENU": {
+                                                    "id": "MENU",
+                                                    "title": "Main Menu",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "EN-0"
+                                                },
+                                                "VISITOR_MENU": {
+                                                    "id": "VBACK",
+                                                    "title": "Visitor Menu",
+                                                    "current_menu": "VMENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "EN-0-menus-VISITOR"
+                                                }
+                                            }
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Main Menu",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "EN-0"
+                                        },
+                                        "VMENU": {
+                                            "id": "VBACK",
+                                            "current_menu": "VMENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "EN-0-menus-VISITOR"
+                                        }
+                                    }
+                                },
+                                "V2": {
+                                    "id": "V2A",
+                                    "title": "Sales and Marketing",
+                                    "current_menu": "V2",
+                                    "text": "Thank you for contacting Sales Department of transcosmos Indonesia.\n\nWhat type of service you are seeking for?\n*S1* Contact Center\n*S2* Digital Marketing\n*S3* Human Resources",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "list",
+                                    "menus": {
+                                        "S1": {
+                                            "id": "S1A",
+                                            "title": "Contact Center",
+                                            "current_menu": "S1",
+                                            "text": "transcosmos Indonesia provide the best services for your  Contact Center Operational, with expertise in different type of industries such as FMCG, Ecommerce, Travel, Automotive, Banking, Home Appliance, Electronic, Fintech, etc.\n\nIf you are interested to know more details, please fill out by copy the following format :",
+                                            "type": "nest_menu",
+                                            "interactive_message": false,
+                                            "interactive_type": "button",
+                                            "match_keywords": true,
+                                            "drs_create_ticket": true,
+                                            "set_ticket_status": "close",
+                                            "language": "en",
+                                            "push_email": [
+                                                "info@trans-cosmos.co.id"
+                                            ],
+                                            "push_email_staging": [
+                                                "kun.hacker01@gmail.com",
+                                                "dimas.aditama@trans-cosmos.co.id"
+                                            ],
+                                            "subject": "*Contact Center Services*",
+                                            "keywords": [
+                                                "NAME",
+                                                "COMPANY",
+                                                "EMAIL",
+                                                "PHONE"
+                                            ],
+                                            "next_bubbles": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "Name:\nCompany:\nEmail:\nPhone:"
+                                                }
+                                            ],
+                                            "closing_text": "Thank you for interesting with our service",
+                                            "closing_bubbles": [
+                                                {
+                                                    "type": "interactive-button",
+                                                    "text": "Our sales representative will contact you soon",
+                                                    "menus": {
+                                                        "MENU": {
+                                                            "id": "MENU",
+                                                            "title": "Main Menu"
+                                                        },
+                                                        "VMENU": {
+                                                            "id": "VMENU",
+                                                            "title": "Visitor Menu"
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "menus": {
+                                                "MENU": {
+                                                    "id": "MENU",
+                                                    "title": "Main Menu",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "EN-0"
+                                                },
+                                                "VMENU": {
+                                                    "id": "VMENU",
+                                                    "title": "Visitor Menu",
+                                                    "current_menu": "VMENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "EN-0-menus-VISITOR"
+                                                }
+                                            }
+                                        },
+                                        "S2": {
+                                            "id": "S2A",
+                                            "title": "Digital Marketing",
+                                            "current_menu": "S2",
+                                            "text": "transcosmos Indonesia provide the best services for your digital solution such as mobile apps, website optimization, SEO, social media, digital marketing campaign, and other digital expertise.\n\nIf you are interested to know more details, please fill out by copy the following format :",
+                                            "type": "nest_menu",
+                                            "interactive_message": false,
+                                            "interactive_type": "button",
+                                            "match_keywords": true,
+                                            "drs_create_ticket": true,
+                                            "set_ticket_status": "close",
+                                            "language": "en",
+                                            "push_email": [
+                                                "dm.info@trans-cosmos.co.id"
+                                            ],
+                                            "push_email_staging": [
+                                                "kun.hacker01@gmail.com",
+                                                "dimas.aditama@trans-cosmos.co.id"
+                                            ],
+                                            "subject": "*Digital Marketing*",
+                                            "keywords": [
+                                                "NAME",
+                                                "COMPANY",
+                                                "EMAIL",
+                                                "PHONE"
+                                            ],
+                                            "next_bubbles": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "Name:\nCompany:\nEmail:\nPhone:"
+                                                }
+                                            ],
+                                            "closing_text": "Thank you for interesting with our service",
+                                            "closing_bubbles": [
+                                                {
+                                                    "type": "interactive-button",
+                                                    "text": "Our sales representative will contact you soon",
+                                                    "menus": {
+                                                        "MENU": {
+                                                            "id": "MENU",
+                                                            "title": "Main Menu"
+                                                        },
+                                                        "VMENU": {
+                                                            "id": "VMENU",
+                                                            "title": "Visitor Menu"
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "menus": {
+                                                "MENU": {
+                                                    "id": "MENU",
+                                                    "title": "Main Menu",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "EN-0"
+                                                },
+                                                "VMENU": {
+                                                    "id": "VMENU",
+                                                    "title": "Visitor Menu",
+                                                    "current_menu": "VMENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "EN-0-menus-VISITOR"
+                                                }
+                                            }
+                                        },
+                                        "S3": {
+                                            "id": "S3A",
+                                            "title": "Human Resources",
+                                            "current_menu": "S3",
+                                            "text": "transcosmos Indonesia provide the best services for your Human Resources fulfillment such as customer service, back office, etc.\n\nIf you are interested to know more details, please fill out by copy the following format :",
+                                            "type": "nest_menu",
+                                            "interactive_message": false,
+                                            "interactive_type": "button",
+                                            "match_keywords": true,
+                                            "drs_create_ticket": true,
+                                            "set_ticket_status": "close",
+                                            "language": "en",
+                                            "push_email": [
+                                                "info@trans-cosmos.co.id"
+                                            ],
+                                            "push_email_staging": [
+                                                "kun.hacker01@gmail.com",
+                                                "dimas.aditama@trans-cosmos.co.id"
+                                            ],
+                                            "subject": "*Human Resources Services*",
+                                            "keywords": [
+                                                "NAME",
+                                                "COMPANY",
+                                                "EMAIL",
+                                                "PHONE"
+                                            ],
+                                            "next_bubbles": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "Name:\nCompany:\nEmail:\nPhone:"
+                                                }
+                                            ],
+                                            "closing_text": "Thank you for interesting with our service",
+                                            "closing_bubbles": [
+                                                {
+                                                    "type": "interactive-button",
+                                                    "text": "Our sales representative will contact you soon",
+                                                    "menus": {
+                                                        "MENU": {
+                                                            "id": "MENU",
+                                                            "title": "Main Menu"
+                                                        },
+                                                        "VMENU": {
+                                                            "id": "VMENU",
+                                                            "title": "Visitor Menu"
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "menus": {
+                                                "MENU": {
+                                                    "id": "MENU",
+                                                    "title": "Main Menu",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "EN-0"
+                                                },
+                                                "VMENU": {
+                                                    "id": "VMENU",
+                                                    "title": "Visitor Menu",
+                                                    "current_menu": "VMENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "targeted_menu",
+                                                    "targeted_path": "EN-0-menus-VISITOR"
+                                                }
+                                            }
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Main Menu",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "EN-0"
+                                        },
+                                        "VISITOR_MENU": {
+                                            "id": "VBACK",
+                                            "title": "Visitor Menu",
+                                            "current_menu": "VMENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "EN-0-menus-VISITOR"
+                                        }
+                                    }
+                                },
+                                "MENU": {
+                                    "id": "MENU",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "EN-0"
+                                },
+                                "VMENU": {
+                                    "id": "VMENU",
+                                    "current_menu": "VMENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "EN-0-menus-VISITOR"
+                                }
+                            }
+                        },
+                        "PILIHBAHASA": {
+                            "id": "VMENU",
+                            "title": "Choose Language",
+                            "current_menu": "PILIHBAHASA",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }
+            ],
+            "LETSTALK": [
+                {
+                    "id": "LETSTALK",
+                    "text": "",
+                    "type": "goto_cs",
+                    "goto": "cs",
+                    "current_menu": "LETSTALK"
+                }
+            ],
+            "SURVEYREASON": [
+                {
+                    "id": "SURVEYREASONA",
+                    "current_menu": "SURVEYREASON",
+                    "text": "",
+                    "type": "sequences",
+                    "required_data": [
+                        {
+                            "id": "SR_SQ1",
+                            "text": "Mohon berikan alasan atas penilaian yang kamu berikan",
+                            "index": "Pelanggan",
+                            "label": "surveyreason",
+                            "type": "text",
+                            "validation": null,
+                            "max_length": 255,
+                            "error_max_length_msg": "Maximum character 255!",
+                            "error_msg": ""
+                        },
+                        {
+                            "id": "SR_SQ2",
+                            "text": "",
+                            "index": "",
+                            "label": "",
+                            "type": "completed",
+                            "create_ticket": false,
+                            "end_session": true,
+                            "validation": null,
+                            "error_msg": "",
+                            "completed_template": "Terima kasih untuk penilaian yang telah diberikan, penilaian kamu sangat berharga untuk perbaikan layanan kami",
+                            "create_ticket_from_template": false,
+                            "ticket_template_as_completed_template": false
+                        }
+                    ]
+                }
+            ],
+            "SURVEYREASON_EN": [
+                {
+                    "id": "SURVEYREASONA",
+                    "current_menu": "SURVEYREASON",
+                    "text": "",
+                    "type": "sequences",
+                    "required_data": [
+                        {
+                            "id": "SR_SQ1",
+                            "text": "Please give the reason of your feedback.",
+                            "index": "Pelanggan",
+                            "label": "surveyreason",
+                            "type": "text",
+                            "validation": null,
+                            "max_length": 255,
+                            "error_max_length_msg": "Maximum character 255!",
+                            "error_msg": ""
+                        },
+                        {
+                            "id": "SR_SQ2",
+                            "text": "",
+                            "index": "",
+                            "label": "",
+                            "type": "completed",
+                            "create_ticket": false,
+                            "end_session": true,
+                            "validation": null,
+                            "error_msg": "",
+                            "completed_template": "Thanks for your feedback, it is very valuable for our improvement.",
+                            "create_ticket_from_template": false,
+                            "ticket_template_as_completed_template": false
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,1796 @@
+{
+    "_id": ObjectId("5c7eb96dae2638f2108b459c"),
+    "project": NumberLong(5881),
+    "max_pending_tiket": NumberLong(1000000000000),
+    "updated_at": ISODate("2022-05-09T17:27:38.000Z"),
+    "created_at": ISODate("2019-03-05T18:01:17.775Z"),
+    "office_hour": {
+        "status": true,
+        "data": [{
+                "day": 1,
+                "name": "Monday",
+                "is_close": false,
+                "from": "6:00",
+                "to": "21:00"
+            },
+            {
+                "day": 2,
+                "name": "Tuesday",
+                "is_close": false,
+                "from": "6:00",
+                "to": "21:00"
+            },
+            {
+                "day": 3,
+                "name": "Wednesday",
+                "is_close": false,
+                "from": "6:00",
+                "to": "21:00"
+            },
+            {
+                "day": 4,
+                "name": "Thursday",
+                "is_close": false,
+                "from": "6:00",
+                "to": "21:00"
+            },
+            {
+                "day": 5,
+                "name": "Friday",
+                "is_close": false,
+                "from": "6:00",
+                "to": "21:00"
+            },
+            {
+                "day": 6,
+                "name": "Saturday",
+                "is_close": false,
+                "from": "6:00",
+                "to": "21:00"
+            },
+            {
+                "day": 7,
+                "name": "Sunday",
+                "is_close": false,
+                "from": "6:00",
+                "to": "21:00"
+            }
+        ]
+    },
+    "mandatory_tag": true,
+    "ticket_limit": 25,
+    "get_started_walkthrough": 1,
+    "activity_code": "category",
+    "send_daily_report": {
+        "conversation": {
+            "status": true,
+            "email": "maulana.malik@seklahmu.co.id"
+        }
+    },
+    "chatbot_sch": {
+        "schemas": {
+            "625d7921801ddf200e3455ca": {
+                "survey": {
+                    "active": false
+                },
+                "reset_keys": [
+                    "MENU"
+                ],
+                "load_conversation": "WabaTemplateConversation",
+                "top_level_questions": [{
+                        "id": "1",
+                        "text": "Informasi Sekolahmu",
+                        "type": "actions"
+                    },
+                    {
+                        "id": "2",
+                        "text": "Konsultasi Pendaftaran",
+                        "type": "actions"
+                    },
+                    {
+                        "id": "3",
+                        "text": "Promo dan Coba Gratis",
+                        "type": "actions"
+                    },
+                    {
+                        "id": "4",
+                        "text": "Pendamping Belajar",
+                        "type": "actions"
+                    },
+                    {
+                        "id": "5",
+                        "text": "Panduan Kendala",
+                        "type": "actions"
+                    },
+                    {
+                        "id": "6",
+                        "text": "Prakerja",
+                        "type": "actions"
+                    }
+                ],
+                "MENU": [{
+                        "id": "1",
+                        "text": "Informasi Sekolahmu",
+                        "type": "actions"
+                    },
+                    {
+                        "id": "2",
+                        "text": "Konsultasi Pendaftaran",
+                        "type": "actions"
+                    },
+                    {
+                        "id": "3",
+                        "text": "Promo dan Coba Gratis",
+                        "type": "actions"
+                    },
+                    {
+                        "id": "4",
+                        "text": "Pendamping Belajar",
+                        "type": "actions"
+                    },
+                    {
+                        "id": "5",
+                        "text": "Panduan Kendala",
+                        "type": "actions"
+                    },
+                    {
+                        "id": "6",
+                        "text": "Prakerja",
+                        "type": "actions"
+                    }
+                ],
+                "1": [{
+                    "id": "1A",
+                    "current_menu": "1",
+                    "text": "Teman Sekolahmu ingin tahu informasi tentang apa?😊\n\nTeman bisa memilih menu di bawah ini dengan mengetik angka yang tertera yaa!\n\n*1*. Tentang Sekolahmu\n*2*. Cara Daftar di Sekolahmu\n*3*. Kelas yang tersedia di Sekolahmu\n*4*. Metode Belajar Di Sekolahmu\n*5*. Cara Beli Paket Kelas Di Sekolahmu\n*6*. Cara Mengikuti Pembelajaran di Sekolahmu\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "1A1",
+                            "current_menu": "1-1",
+                            "text": "Silahkan ketik angka yang tertera pada menu dibawah ini :\n\n*1*. Background Sekolahmu\n*2*. Lokasi Sekolahmu\n*3*. Batasan Umur atau Jenjang Pendidikan\n*4*. Kelas yang tersedia di Sekolahmu\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "1A11",
+                                    "current_menu": "1-1-1",
+                                    "text": "Sekolahmu adalah sekolah dengan sistem blended learning pertama di Indonesia. Berbasis teknologi dan berkolaborasi untuk menyediakan program belajar bagi semua orang. Sekolahmu ingin memastikan semua anak Indonesia sukses mencapai kompetensi dan meraih prestasi di masa depan dengan memberikan mutu pelayanan pendidikan yang berpihak kepada anak secara merata, serta menyediakan akses pembelajaran terintegrasi digital dengan struktur kurikulum yang personal dan fleksibel.\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "1A111",
+                                            "current_menu": "1-1-1-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "1A12",
+                                    "current_menu": "1-1-2",
+                                    "text": "Teman Sekolahmu,\nUntuk lokasi Sekolahmu bisa cek di web kami :\nhttps://www.Sekolah.mu/kontak-sekolahmu\nAtau bisa cek di aplikasi Sekolahmu pada bagian “Akun > Kontak kami”\nJl Jeruk Purut Dalam No. 33\nRT.6/RW.3, Cilandak Tim., Kec. Ps. Minggu, Kota Jakarta Selatan,  Daerah Khusus Ibukota Jakarta 12560\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "1A121",
+                                            "current_menu": "1-1-2-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "id": "1A13",
+                                    "current_menu": "1-1-3",
+                                    "text": "Teman Sekolahmu,\nJenjang pendidikan di Sekolahmu tersedia untuk Paud, SD, SMP, SMA dan untuk batasan umurnya sebagai berikut: - PAUD (Pendidikan Anak Usia Dini): Usia 3 Tahun s/d 6 Tahun\n- SD (Sekolah Dasar) Usia : 7 Tahun s/d 12 tahun\n- SMP (Sekolah Menengah Pertama) : 13 Tahun s/d 15 tahun\n- SMA (Sekolah Menengah Atas) : 16 Tahun s/d 18 Tahun\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "1A131",
+                                            "current_menu": "1-1-3-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "4": {
+                                    "id": "1A14",
+                                    "current_menu": "1-1-4",
+                                    "text": "Kunjungi tautan berikut untuk informasi lengkap seputar kelas-kelas Sekolahmu : PAUD : https://www.Sekolah.mu/paud\nSD : https://www.Sekolah.mu/sd\nSMP : https://www.Sekolah.mu/smp\nSMA : https://www.Sekolah.mu/sma-dan-smk\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "1A141",
+                                            "current_menu": "1-1-4-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "TANYA": {
+                                    "id": "1A15",
+                                    "current_menu": "1-1-5",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "BACK": {
+                                    "id": "BACKA",
+                                    "current_menu": "BACK",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "1A2",
+                            "current_menu": "1-2",
+                            "text": "Silahkan ketik angka yang tertera pada menu dibawah ini :\n\n*1*. Cara Daftar Sekolahmu\n*2*. Cara Login di Sekolahmu\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "1A21",
+                                    "current_menu": "1-2-1",
+                                    "text": "Teman Sekolahmu,\nUntuk melakukan pendaftaran di Sekolahmu, silakan mengikuti langkah-langkah berikut:\n\n1. Akses ke situs Sekolahmu melalui browser, atau unduh aplikasi Sekolahmu di Playstore.\n2. Klik tombol “Masuk/Daftar” di kanan atas.\n3. Pilih dan klik “Daftar di sini”.\n4. Silakan masukan data-data pengguna untuk mendaftar..\n5. Pilih Profil pengguna.\n6. Jika pilih sebagai murid, lanjutkan dengan memilih jenjang usia\n7. Masukan Email yang ingin di daftarkan.\n8. Masukan Nama sesuai identitas (karena nama akan tercantum di sertifikat program).\n9. Masukan nomor ponsel yang digunakan.\n10. Kata sandi yang akan digunakan, (8 karakter kombinasi huruf besar, huruf kecil, dan angka) 11. Checklist box untuk menyetujui ketentuan dan kebijakan.\nKlik “Daftar”.\n\nKamu sudah terdaftar di Sekolahmu dan kamu dapat memilih program pembelajaran yang diinginkan.\n\nSYARAT DAFTAR\n\n- Tidak ada syarat khusus untuk melakukan pendaftaran dan bergabung di Sekolahmu\n- Pastikan bahwa data yang diinput pada saat melakukan pendaftaran sesuai dengan data diri.\n- Pastikan email yang digunakan belum terdaftar di Sekolahmu karena satu email hanya untuk satu akun.\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "1A211",
+                                            "current_menu": "1-2-1-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "1A22",
+                                    "current_menu": "1-2-2",
+                                    "text": "Teman Sekolahmu,\n\nUntuk login ke Sekolahmu silahkan akses ke web Sekolahmu atau via aplikasi sekolahmu. Silakan masukan Email dan password yang sudah diregistrasikan atau dapat cek info selengkapnya pada link berikut:https://panduan.Sekolah.mu/help/akun-saya/daftar-masuk-akun-sekolah-mu/bagaimana-cara-login-akun-sekolah-mu/\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "1A221",
+                                            "current_menu": "1-2-2-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "TANYA": {
+                                    "id": "1A23",
+                                    "current_menu": "1-2-3",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "BACK": {
+                                    "id": "BACKA",
+                                    "current_menu": "BACK",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "3": {
+                            "id": "1A3",
+                            "current_menu": "1-3",
+                            "text": "Kunjungi tautan berikut untuk informasi lengkap seputar kelas-kelas Sekolahmu : PAUD : https://www.Sekolah.mu/paud\nSD : https://www.Sekolah.mu/sd\nSMP : https://www.Sekolah.mu/smp\nSMA : https://www.Sekolah.mu/sma-dan-smk\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "TANYA": {
+                                    "id": "1A31",
+                                    "current_menu": "1-3-1",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "BACK": {
+                                    "id": "BACKA",
+                                    "current_menu": "BACK",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "4": {
+                            "id": "1A4",
+                            "current_menu": "1-4",
+                            "text": "Pembelajaran di Sekolahmu menggunakan metode blended learning yang memungkinkan murid-murid belajar secara mandiri maupun dengan pendampingan guru, baik secara daring maupun luring, serta menyesuaikan dengan beragam minat, bakat dan aspirasi murid.\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "TANYA": {
+                                    "id": "1A41",
+                                    "current_menu": "1-4-1",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "BACK": {
+                                    "id": "BACKA",
+                                    "current_menu": "BACK",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "5": {
+                            "id": "1A5",
+                            "current_menu": "1-5",
+                            "text": "Teman sekolahmu,\n\nJika anda ingin melihat atau membeli paket kelas apa saja yang bisa diikuti di sekolahmu, silakan ikuti langkah- langkah berikut :\n1. klik / pilih jenjang pada kanan atas halaman situs sekolahmu.\n2. Setelah itu pilih paket kelas yang di inginkan, dan klik tombol “Beli Paket Sekarang”.\n3. Setelah memilih paket kelas yang diminati, Teman akan di arahkan ke situs bayar.Sekolahmu, setelah itu klik tombol “Pilih Paket” sesuai paket kelas yang teman inginkan\n4. Setelah itu, teman akan diarahkan menuju laman detail paket kelas, lalu klik tombol “Dapatkan Sekarang”\n5. Pilih skema pembayaran yang tersedia, bisa membayar penuh, atau cicilan, lalu klik tombol “Lanjut ke Pembayaran”\n6. Akan muncul Pop Up “Pastikan Informasi Sudah Tepat”, lalu klik tombol “Mengerti”\n7. Teman akan diarahkan pada menu checkout, pastikan detail paket kelas sudah sesuai dengan yang teman pilih, lalu klik tombol “Pilih Pembayaran”\n8. Pilih metode pembayaran yang tersedia, lalu klik tombol “Bayar dengan”\n9. Lakukan Pembayaran sebelum jatuh tempo\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "TANYA": {
+                                    "id": "1A51",
+                                    "current_menu": "1-5-1",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "BACK": {
+                                    "id": "BACKA",
+                                    "current_menu": "BACK",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "6": {
+                            "id": "1A6",
+                            "current_menu": "1-6",
+                            "text": "Teman Sekolahmu,\n\nJika Kamu ingin memulai program yang sudah dibeli pada program sekolahmu, silakan ikuti langkah-langkah berikut:\n1. Pada halaman awal situs Sekolahmu, pilih “kelasku” yang terdapat di bagian kanan atas halaman.\n2. Pilih program yang ingin dimulai untuk belajar.\n3. Akan muncul berbagai jenis aktivitas di samping program. Kamu bisa mulai belajar dengan memilih topik dan aktivitas yang ada secara berurutan ataupun secara fleksibel.\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "TANYA": {
+                                    "id": "1A61",
+                                    "current_menu": "1-6-1",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "BACK": {
+                                    "id": "BACKA",
+                                    "current_menu": "BACK",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "TANYA": {
+                            "id": "1A7",
+                            "current_menu": "1-7",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "BACK": {
+                            "id": "BACKA",
+                            "current_menu": "BACK",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }],
+                "2": [{
+                    "id": "2A",
+                    "current_menu": "2",
+                    "text": "",
+                    "type": "goto",
+                    "goto": "cs"
+                }],
+                "3": [{
+                    "id": "3C",
+                    "current_menu": "3",
+                    "text": "Halo Teman Sekolahmu, berikut ini adalah program promo dan coba gratis yang bisa teman pilih sesuai dengan jenjang teman ya!\n\nSilakan ketik angka yang sesuai dengan pilihan menu dibawah ini!\n\n*1*. Paket kelas Gratis jenjang PAUD\n*2*. Paket kelas Gratis jenjang SD\n*3*. Paket kelas Gratis jenjang SMP\n*4*. Trial Gratis SMA dan SMK\n*5*. Trial Kelas UTBK 2022\n*6*. Trial Kelas Ekskul SMA dan SMK\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "3C1",
+                            "current_menu": "3-1",
+                            "text": "Silahkan ketik angka yang tertera pada menu dibawah ini :\n\n*1*. Trial Gratis Living Qur'an PAUD\n*2*. Trial Gratis Living Qur'an KB\n*3*. Trial Living English Class Pioneer (4-5 Tahun)\n*4*. Trial Living English Class Traveler (5-7 Tahun)\n*5*. Trial Gratis Kreativitas Motorik KB 3-4 Tahun\n*6*. Trial Gratis Kreativitas Motorik PAUD 4-6 Tahun\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "3C11",
+                                    "current_menu": "3-1-1",
+                                    "text": "*Detail Paket Kelas\nKelas Trial Living Qur'an PAUD*\n\nPembelajaran Al Quran, studi keislaman seperti Fiqh, Akidah, Akhlak dan Sejarah Islam. Kelas ini menarik buat anak anak, selain guru nya kompeten, metode yang kita gunakan juga sesuai dengan kebutuhan.\n\nSilahkan Klik Link dibawah ini untuk mencoba gratis :\n\nhttps://info.Sekolah.mu/TrialLivingQuranPAUD\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "3C111",
+                                            "current_menu": "3-1-1-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "3C12",
+                                    "current_menu": "3-1-2",
+                                    "text": "*Detail Paket Kelas\nKelas Trial Living Qur'an KB*\n\nPembelajaran Al Quran, studi keislaman seperti Fiqh, Akidah, Akhlak dan Sejarah Islam. Kelas ini menarik buat anak anak, selain guru nya kompeten, metode yang kita gunakan juga sesuai dengan kebutuhan\n\nSilahkan Klik Link dibawah ini :\n\nhttps://info.Sekolah.mu/TrialLivingQuranKB\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "3C121",
+                                            "current_menu": "3-1-2-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "id": "3C13",
+                                    "current_menu": "3-1-3",
+                                    "text": "*Detail Paket Kelas\nTrial Living English Class Pioneer (4-5 Tahun)*\n\nKembangkan lebih mendalam kemampuan bahasa inggris anak secara menyenangkan dan aplikatif di kehidupan sehari-hari. Ikuti Trial untuk melihat serunya pembelajaran Cambridge English Class level Pioneer\n\nSilahkan Klik Link dibawah ini :\n\nhttps://info.Sekolah.mu/TrialLivingEnglishPioneer\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "3C131",
+                                            "current_menu": "3-1-3-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "4": {
+                                    "id": "3C14",
+                                    "current_menu": "3-1-4",
+                                    "text": "*Detail Paket Kelas\nTrial Living English Class Traveler (5-7 Tahun)*\n\nKembangkan lebih mendalam kemampuan bahasa inggris anak secara menyenangkan dan aplikatif di kehidupan sehari-hari. Ikuti Trial untuk melihat serunya Living English Class level Traveler!\n\nSilahkan Klik Link dibawah ini :\n\nhttps://bit.ly/3dLej88\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "3C141",
+                                            "current_menu": "3-1-4-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "5": {
+                                    "id": "3C15",
+                                    "current_menu": "3-1-5",
+                                    "text": "*Detail Paket Kelas\nTrial Gratis Kreativitas Motorik KB 3-4 Tahun*\n\nProgram ini adalah paket trial yang dikemas dengan akses rekaman pembelajaran dan aktivitas belajar motorik dan life skill untuk jenjang PAUD 3-4 tahun.\n\nSilahkan Klik Link dibawah ini :\n\nhttps://info.Sekolah.mu/TrialKreamoKB3-4Tahun\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "3C151",
+                                            "current_menu": "3-1-5-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "6": {
+                                    "id": "3C16",
+                                    "current_menu": "3-1-6",
+                                    "text": "*Detail Paket Kelas :\nTrial Gratis Kreativitas Motorik PAUD 4-6 Tahun*\n\nProgram ini adalah paket trial yang dikemas dengan akses rekaman pembelajaran dan aktivitas belajar berisi kegiatan yang mengasah motorik dan life skill untuk jenjang PAUD A-B, kelompok umur 4-6 tahun\n\nSilahkan Klik Link dibawah ini :\n\nhttps://info.Sekolah.mu/TrialKreamoPAUD4-6Tahun\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "3C161",
+                                            "current_menu": "3-1-6-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "TANYA": {
+                                    "id": "3C17",
+                                    "current_menu": "3-1-7",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "BACK": {
+                                    "id": "BACKA",
+                                    "current_menu": "BACK",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "3C2",
+                            "current_menu": "3-2",
+                            "text": "Silahkan ketik angka yang tertera pada menu dibawah ini :\n\n*1*. Kelas Trial Living Qur'an SD 1-3\n*2*. Kelas Trial Living Qur’an SD 4-6\n*3*. Trial Gratis Living English Class SD\n*4*. Trial Gratis Literasi Numerasi SD 1-2\n*5*. Trial Gratis Literasi Numerasi SD 3-4\n*6*. Trial Gratis Literasi Numerasi SD 5-6\n*7*. Trial Gratis Kelas Ilmuwan & Programmer Cilik (SD Kelas 1-3)\n*8*. Trial Gratis Kelas Ilmuwan & Programmer Cilik (SD Kelas 4-6)\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "3C21",
+                                    "current_menu": "3-2-1",
+                                    "text": "*Detail Paket kelas :\nKelas Trial Living Qur'an SD 1-3*\n\nPembelajaran Al Quran, studi keislaman seperti Fiqh, Akidah, Akhlak dan Sejarah Islam. Kelas ini menarik buat anak anak, selain guru nya kompeten, metode yang kita gunakan juga sesuai dengan kebutuhan\n\nSIlahkan Klik Link dibawah ini :\n\nhttps://info.Sekolah.mu/TrialLivingQuranSDKelas1-3\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "3C211",
+                                            "current_menu": "3-2-1-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "3C22",
+                                    "current_menu": "3-2-2",
+                                    "text": "*Detail Paket kelas :\nKelas Trial Living Qur'an SD 4-6*\n\nPembelajaran Al Quran, studi keislaman seperti Fiqh, Akidah, Akhlak dan Sejarah Islam. Kelas ini menarik buat anak anak, selain guru nya kompeten, metode yang kita gunakan juga sesuai dengan kebutuhan\n\nSIlahkan Klik Link dibawah ini :\n\nhttps://info.Sekolah.mu/TrialLivingQuranSDKelas4-6\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "3C221",
+                                            "current_menu": "3-2-2-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "id": "3C23",
+                                    "current_menu": "3-2-3",
+                                    "text": "Silahkan ketik angka yang sesuai dengan pilihan menu dibawah ini!\n\n1. Trial Gratis Living English Class Traveler (5-7 Tahun)\n2. Trial Gratis Living English Class Explorer (7-9 Tahun)\n3. Trial Gratis Living English Class Wanderer (9-11 Tahun)\n4. Trial Gratis Living English Class Voyager (11-13 Tahun)\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "1": {
+                                            "id": "3C231",
+                                            "current_menu": "3-2-3-1",
+                                            "text": "*Detail Paket Kelas :\nTrial Gratis Living English Class Traveler (5-7 Tahun)*\n\nKembangkan lebih mendalam kemampuan bahasa inggris anak secara menyenangkan dan aplikatif di kehidupan sehari-hari. Ikuti Trial untuk melihat serunya Cambridge English Class level Traveler!\n\nSilahkan Klik Link dibawah ini :\n\nhttps://info.Sekolah.mu/TrialLivingEnglishTraveler\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "3C2311",
+                                                    "current_menu": "3-2-3-1-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "BACKA",
+                                                    "current_menu": "BACK",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "3C232",
+                                            "current_menu": "3-2-3-2",
+                                            "text": "*Detail Paket Kelas :\nTrial Gratis Living English Class Explorer (7-9 Tahun)*\n\nKembangkan lebih mendalam kemampuan bahasa inggris anak secara menyenangkan dan aplikatif di kehidupan sehari-hari. Ikuti Trial untuk melihat serunya Cambridge English Class level Explorer\n\nSIlahkan Klik Link dibawah ini :\n\nhttps://info.Sekolah.mu/TrialLivingEnglishExplorer\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "3C2321",
+                                                    "current_menu": "3-2-3-2-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "BACKA",
+                                                    "current_menu": "BACK",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "id": "3C233",
+                                            "current_menu": "3-2-3-3",
+                                            "text": "*Detail Paket Kelas :\nTrial Gratis Living English Class Wanderer (9-11 Tahun)*\n\nKembangkan lebih mendalam kemampuan bahasa inggris anak secara menyenangkan dan aplikatif di kehidupan sehari-hari. Ikuti Trial untuk melihat serunya Cambridge English Class level Wanderer!\n\nSilahkan Klik Link dibawah ini :\n\nhttps://info.Sekolah.mu/TrialLivingEnglishWanderer\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "3C2331",
+                                                    "current_menu": "3-2-3-3-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "BACKA",
+                                                    "current_menu": "BACK",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                }
+                                            }
+                                        },
+                                        "4": {
+                                            "id": "3C234",
+                                            "current_menu": "3-2-3-4",
+                                            "text": "*Detail Paket Kelas :\nTrial Gratis Living English Class Voyager (11-13 Tahun)*\n\nKembangkan lebih mendalam kemampuan bahasa inggris anak secara menyenangkan dan aplikatif di kehidupan sehari-hari. Ikuti Trial untuk melihat serunya Cambridge English Class level Voyager!\n\nSIlahkan Klik dibawah ini :\n\nhttps://info.Sekolah.mu/TrialLivingEnglishVoyager\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "TANYA": {
+                                                    "id": "3C2341",
+                                                    "current_menu": "3-2-3-4-1",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "cs"
+                                                },
+                                                "BACK": {
+                                                    "id": "BACKA",
+                                                    "current_menu": "BACK",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "parent"
+                                                }
+                                            }
+                                        },
+                                        "TANYA": {
+                                            "id": "3C235",
+                                            "current_menu": "3-2-3-5",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "4": {
+                                    "id": "3C24",
+                                    "current_menu": "3-2-4",
+                                    "text": "*Detail Paket Kelas :\nTrial Gratis Literasi Numerasi SD 1-2*\n\nProgram ini adalah paket trial yang dikemas dengan akses rekaman pembelajaran dan aktivitas belajar literasi & numerasi untuk SD Kelas 1-2.\n\nSIlahkan Klik dibawah ini :\n\nhttps://info.Sekolah.mu/TrialLITNUMSDKelas1-2\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "3C241",
+                                            "current_menu": "3-2-4-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "5": {
+                                    "id": "3C25",
+                                    "current_menu": "3-2-5",
+                                    "text": "*Detail Paket Kelas :\nTrial Gratis Literasi Numerasi SD 3-4*\n\nProgram ini adalah paket trial yang dikemas dengan akses rekaman pembelajaran dan aktivitas belajar literasi & numerasi untuk SD Kelas 3 dan 4.\n\nSIlahkan Klik Link dibawah ini :\n\nhttps://info.Sekolah.mu/TrialLITNUMSDKelas3-4\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "3C251",
+                                            "current_menu": "3-2-5-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "6": {
+                                    "id": "3C26",
+                                    "current_menu": "3-2-6",
+                                    "text": "*Detail Paket kelas :\nTrial Gratis Literasi Numerasi SD 5-6*\n\nProgram ini adalah paket trial yang dikemas dengan akses rekaman dan kegiatan pembelajaran literasi dan numerasi.\n\nSilahkan Klik dibawah ini :\n\nhttps://info.Sekolah.mu/TrialLITNUMSDKelas5-6\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "3C261",
+                                            "current_menu": "3-2-6-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "7": {
+                                    "id": "3C27",
+                                    "current_menu": "3-2-7",
+                                    "text": "*Detail Paket Kelas :\nTrial Gratis Kelas Ilmuwan & Programmer Cilik (SD Kelas 1-3)*\n\nProgram ini adalah paket trial yang dikemas dengan akses rekaman pembelajaran dan aktivitas belajar dengan topik pembelajaran yang mengeksplorasi programming dan kreativitas\n\nSIlahkan Klik dibawah ini :\n\nhttps://info.Sekolah.mu/TrialIPCSDkelas1-3\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "3C271",
+                                            "current_menu": "3-2-7-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "8": {
+                                    "id": "3C28",
+                                    "current_menu": "3-2-8",
+                                    "text": "*Detail Paket kelas :\nTrial Gratis Kelas Ilmuwan & Programmer Cilik (SD Kelas 4-6)*\n\nProgram ini adalah paket trial yang dikemas dengan akses rekaman pembelajaran dan aktivitas belajar dengan topik pembelajaran yang mengeksplorasi programming dan kreativitas\n\nSilahlkan Klik Link dibawah :\n\nhttps://info.Sekolah.mu/TrialIPCSDKelas4-6\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "3C281",
+                                            "current_menu": "3-2-8-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "TANYA": {
+                                    "id": "3C29",
+                                    "current_menu": "3-2-9",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "BACK": {
+                                    "id": "BACKA",
+                                    "current_menu": "BACK",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "3": {
+                            "id": "3C3",
+                            "current_menu": "3-3",
+                            "text": "Silahkan ketik angka yang tertera pada menu dibawah ini :\n\n*1*. Living English - Trial Class Ranger\n*2*. Living English - Trial Class Surveyor\n*3*. Trial Kelas Ekskul Bakat\n*4*. Trial Kelas Gamer\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "3C31",
+                                    "current_menu": "3-3-1",
+                                    "text": "*Detail Paket Kelas :\nLiving English - Trial Class Ranger*\n\nKembangkan lebih mendalam kemampuan bahasa inggris secara menyenangkan dan aplikatif di kehidupan sehari-hari. Ikuti Trial untuk melihat serunya Living English Class level Ranger\n\nSIlahkan Klik Link dibawah ini :\n\nhttps://info.Sekolah.mu/TrialLivingEnglishRanger\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "3C311",
+                                            "current_menu": "3-3-1-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "3C32",
+                                    "current_menu": "3-3-2",
+                                    "text": "*Detail paket Kelas :\nLiving English - Trial Class Surveyor*\n\nKembangkan lebih mendalam kemampuan bahasa inggris secara menyenangkan dan aplikatif di kehidupan sehari-hari. Ikuti Trial untuk melihat serunya Living English Class level Surveyor\n\nSilahkan Klik Link dibawah :\n\nhttps://info.Sekolah.mu/TrialLivingEnglishSurveyor\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "3C321",
+                                            "current_menu": "3-3-2-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "id": "3C33",
+                                    "current_menu": "3-3-3",
+                                    "text": "*Detail Paket Kelas :\nTrial Kelas Ekskul Bakat*\n\nProgram ini adalah paket trial yang dikemas dengan akses rekaman pembelajaran dan aktivitas belajar dengan topik pembelajaran yang mengeksplorasi minat kamu.\n\nSIlahkan Klik Link dibawah ini :\n\nhttps://info.Sekolah.mu/TrialEkskulBakatSMP\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "3C331",
+                                            "current_menu": "3-3-3-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "4": {
+                                    "id": "3C34",
+                                    "current_menu": "3-3-4",
+                                    "text": "*Detail Paket kelas :\nTrial Kelas Gamer*\n\n(Trial Gratis) Menjadi Pro Gamer Mobile Legend bersama RRQ Academy \n\nSIlahkan Klik dibawah ini :\n\nhttps://info.Sekolah.mu/TrialGamerSMP\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "3C341",
+                                            "current_menu": "3-3-4-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "TANYA": {
+                                    "id": "3C35",
+                                    "current_menu": "3-3-5",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "BACK": {
+                                    "id": "BACKA",
+                                    "current_menu": "BACK",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "4": {
+                            "id": "3C4",
+                            "current_menu": "3-4",
+                            "text": "Silahkan ketik angka yang tertera pada menu dibawah ini :\n\n*1*. Living English - Trial Class Mariner\n*2*. Living English - Trial Class Frontier\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "3C41",
+                                    "current_menu": "3-4-1",
+                                    "text": "*Detail Paket Kelas :\nLiving English - Trial Class Mariner*\n\nKembangkan lebih mendalam kemampuan bahasa inggris secara menyenangkan dan aplikatif di kehidupan sehari-hari. Ikuti Trial untuk melihat serunya Living English Class level Mariner\n\nSilahkan Klik Link dibawah ini :\n\nhttps://info.Sekolah.mu/TrialLivingEnglishMariner\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "3C411",
+                                            "current_menu": "3-4-1-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "3C42",
+                                    "current_menu": "3-4-2",
+                                    "text": "*Detail Paket Kelas :\nLiving English - Trial Class Frontier*\n\nKembangkan lebih mendalam kemampuan bahasa inggris anak secara menyenangkan dan aplikatif di kehidupan sehari-hari. Ikuti Trial untuk melihat serunya Living English Class level Frontier\n\nSIlahkan Klik Link dibawah ini :\n\nhttps://info.Sekolah.mu/TrialLEFrontier\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "3C421",
+                                            "current_menu": "3-4-2-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "TANYA": {
+                                    "id": "3C43",
+                                    "current_menu": "3-4-3",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "BACK": {
+                                    "id": "BACKA",
+                                    "current_menu": "BACK",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "5": {
+                            "id": "3C5",
+                            "current_menu": "3-5",
+                            "text": "*Detail Paket Kelas :\nTrial Kelas UTBK 2022*\n\nSukses masuk PTN dengan memilih jurusan dengan tepat.\n\nSIlahkan Klik Link dibawah ini :\n\nhttps://info.Sekolah.mu/TrialUTBK\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "TANYA": {
+                                    "id": "3C51",
+                                    "current_menu": "3-5-1",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "BACK": {
+                                    "id": "BACKA",
+                                    "current_menu": "BACK",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "6": {
+                            "id": "3C6",
+                            "current_menu": "3-6",
+                            "text": "Silahkan ketik angka yang tertera pada menu dibawah ini :\n\n*1*. Trial Kelas Ekskul Bakat\n*2*. Trial Kelas Gamer\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "3C61",
+                                    "current_menu": "3-6-1",
+                                    "text": "*Detail Paket Kelas :\nTrial Kelas Ekskul Bakat*\n\nProgram ini adalah paket trial yang dikemas dengan akses rekaman pembelajaran dan aktivitas belajar dengan topik pembelajaran yang mengeksplorasi minat kamu.\n\nSilahkan Klik Link dibawah ini :\n\nhttps://info.Sekolah.mu/TrialEkskulBakatSMA\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "3C611",
+                                            "current_menu": "3-6-1-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "3C62",
+                                    "current_menu": "3-6-2",
+                                    "text": "*Detail Paket Kelas :\nTrial Kelas Gamer*\n\nKelas trial Gamer \"Menjadi Pro Gamer Mobile Legend bersama RRQ Academy\" \n\nSIlahkan Klik Link dibawah ini :\n\nhttps://info.Sekolah.mu/TrialGamerSMA\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "3C621",
+                                            "current_menu": "3-6-2-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "TANYA": {
+                                    "id": "3C13",
+                                    "current_menu": "3-1-3",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "BACK": {
+                                    "id": "BACKA",
+                                    "current_menu": "BACK",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "TANYA": {
+                            "id": "3C7",
+                            "current_menu": "3-7",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "BACK": {
+                            "id": "BACKA",
+                            "current_menu": "BACK",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }],
+                "4": [{
+                    "id": "4D",
+                    "current_menu": "4",
+                    "text": "",
+                    "type": "goto",
+                    "goto": "cs"
+                }],
+                "5": [{
+                    "id": "5E",
+                    "current_menu": "5",
+                    "text": "Hai Teman Sekolahmu, saat ini kamu sedang mengalami kendala apa?\n\nKetik angka yang sesuai dengan kendala kamu ya, dan mohon untuk mengetiknya 1 kali saja ya teman!\n\n*1*. Kendala Daftar\n*2*. Kendala Login\n*3*. Kendala Pembayaran\n*4*. Kendala Saat Belajar\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "5E1",
+                            "current_menu": "5-1",
+                            "text": "Ketik angka yang sesuai dengan kendala kamu ya, dan mohon untuk mengetiknya 1 kali saja ya teman!\n\n*1*. Tidak menerima email verifikasi\n*2*. Email sudah terdaftar\n*3*. Nama Lembaga Tidak Tersedia\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "5E11",
+                                    "current_menu": "5-1-1",
+                                    "text": "Mohon untuk memperhatikan beberapa poin berikut :\n\n1. Pastikan bahwa email yang teman daftarkan sudah sesuai (tidak typo)\n2. Periksa email yang sudah kami kirimkan di spam atau promosi\n3. Kamu dapat melakukan perubahan email\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "5E111",
+                                            "current_menu": "5-1-1-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "5E12",
+                                    "current_menu": "5-1-2",
+                                    "text": "Kamu dapat login menggunakan email yang sudah terdaftar, jika kamu lupa password kamu dapat login menggunakan fitur “masuk dengan google”\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "5E121",
+                                            "current_menu": "5-1-2-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "id": "5E13",
+                                    "current_menu": "5-1-3",
+                                    "text": "Kamu dapat memilih nama lembaga yang sesuai dengan lembaga sekolah kamu.\n\nJika nama lembaga sekolah kamu belum tersedia, kamu dapat melakukan beberapa tahap berikut :\n1. Gulir nama lembaga ke bagian yang paling bawah\n2. Tersedia tombol + untuk menambah nama lembaga sesuai lembaga sekolah kamu\n3. Klik simpan\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "5E131",
+                                            "current_menu": "5-1-3-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "TANYA": {
+                                    "id": "5E14",
+                                    "current_menu": "5-1-4",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "BACK": {
+                                    "id": "BACKA",
+                                    "current_menu": "BACK",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "5E2",
+                            "current_menu": "5-2",
+                            "text": "Ketik angka yang sesuai dengan kendala kamu ya, dan mohon untuk mengetiknya 1 kali saja ya teman!\n\n*1*. Email Salah\n*2*. Password Salah\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "5E21",
+                                    "current_menu": "5-2-1",
+                                    "text": "Hai Teman Sekolahmu, jika kamu mengalami kendala dengan keterangan Email salah, mohon untuk memastikan bahwa email yang sudah kamu cantumkan pada kolom login sudah sesuai dengan email yang kamu daftarkan.\nKamu dapat login menggunakan fitur “masuk dengan google” untuk mempermudah proses login kamu.\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "5E211",
+                                            "current_menu": "5-2-1-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "5E22",
+                                    "current_menu": "5-2-2",
+                                    "text": "Hai teman Sekolahmu jika kamu mengalami kendala login dengan keterangan password salah, mohon untuk memperhatikan beberapa poin berikut :\n\n1. Mohon perhatikan besar kecil huruf yang kamu masukkan\n2. Periksa kembali apakah password yang kamu masukkan sudah sesuai\n\nJika kedua langkah diatas sudah kamu perhatikan dan masih mengalami kendala, kami sarankan agar kamu melakukan perubahan password dengan menekan tulisan ubah password.\n\nAtau kamu dapat login menggunakan fitur “masuk dengan google / login with google”\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "5E221",
+                                            "current_menu": "5-2-2-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "TANYA": {
+                                    "id": "5E23",
+                                    "current_menu": "5-2-3",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "BACK": {
+                                    "id": "BACKA",
+                                    "current_menu": "BACK",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "3": {
+                            "id": "5E3",
+                            "current_menu": "5-3",
+                            "text": "Ketik angka yang sesuai dengan kendala kamu ya, dan mohon untuk mengetiknya 1 kali saja ya teman!\n\n*1*. Tidak dapat memilih paket kelas ini\n*2*. Invoice kadaluarsa\n*3*. Tagihan tidak muncul\n*4*. Kode voucher tidak dapat digunakan\n*5*. Kode voucher tidak sesuai ketentuan\n*6*. Kode voucher sudah melewati batas pakai\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "5E31",
+                                    "current_menu": "5-3-1",
+                                    "text": "Mohon untuk mencoba transaksi di esok hari agar status invoice diperbaharui.\n\nJika kamu masih mengalami kendala, kamu dapat menghubungi live  agent kami dengan mencantumkan beberapa data berikut :\n\n1. Nama Akun :\n2. Email Akun :\n3. Nomor HP :\n4. Nomor Invoice Pembayaran :\n5. Detail Kendala :\n6. Lampiran Screenshot Kendala :\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "5E311",
+                                            "current_menu": "5-3-1-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "5E32",
+                                    "current_menu": "5-3-2",
+                                    "text": "Mohon untuk mencoba transaksi di esok hari agar status invoice diperbaharui.\n\nJika kamu masih mengalami kendala, kamu dapat menghubungi live agent kami dengan mencantumkan beberapa data berikut :\n\n1. Nama Akun :\n2. Email Akun :\n3. Nomor HP :\n4. Nomor Invoice Pembayaran :\n5. Detail Kendala :\n6. Lampiran Screenshot Kendala :\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "5E321",
+                                            "current_menu": "5-3-2-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "id": "5E33",
+                                    "current_menu": "5-3-3",
+                                    "text": "Mohon pastikan bahwa tanggal pembayaran kamu sudah masuk kedalam billing cycle.\n\nContoh : Jika jatuh tempo pembayaran kamu adalah tanggal 28 setiap bulannya, maka billing cycle adalah 10 hari sebelum tanggal jatuh tempo yaitu di tanggal 19, pastikan teman cek invoice ketika sudah memasuki periode billing cycle\n\n\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "5E331",
+                                            "current_menu": "5-3-3-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "4": {
+                                    "id": "5E34",
+                                    "current_menu": "5-3-4",
+                                    "text": "Pastikan kode voucher sudah sesuai.\n\nJika masih mengalami kendala, teman dapat menghubungi live agent kami.\n\n\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "5E341",
+                                            "current_menu": "5-3-4-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "5": {
+                                    "id": "5E35",
+                                    "current_menu": "5-3-5",
+                                    "text": "Pastikan kode voucher sudah sesuai.\n\nJika masih mengalami kendala, teman dapat menghubungi live agent kami.\n\n\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "5E351",
+                                            "current_menu": "5-3-5-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "6": {
+                                    "id": "5E36",
+                                    "current_menu": "5-3-6",
+                                    "text": "Mohon maaf, Kode voucher tersebut sudah tidak dapat digunakan, kamu dapat menggunakan kode voucher yang lain\n\n\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "TANYA": {
+                                            "id": "5E361",
+                                            "current_menu": "5-3-6-1",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "cs"
+                                        },
+                                        "BACK": {
+                                            "id": "BACKA",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        }
+                                    }
+                                },
+                                "TANYA": {
+                                    "id": "5E37",
+                                    "current_menu": "5-3-7",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "cs"
+                                },
+                                "BACK": {
+                                    "id": "BACKA",
+                                    "current_menu": "BACK",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "4": {
+                            "id": "5E4",
+                            "current_menu": "5-4",
+                            "text": "Hai Teman Sekolahmu, Jika kamu mengalami kendala saat belajar, kamu dapat menghubungi live agent kami.\n\n\n\nKetik *Tanya* untuk menghubungi live agent kami\n\nKetik *Back* untuk kembali ke menu sebelumnya\n\nKetik *Menu* untuk kembali ke menu utama",
+                            "type": "text"
+                        },
+                        "TANYA": {
+                            "id": "5E5",
+                            "current_menu": "5-5",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "BACK": {
+                            "id": "BACKA",
+                            "current_menu": "BACK",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }],
+                "6": [{
+                    "id": "6F",
+                    "current_menu": "6",
+                    "text": "Mohon maaf, jika kamu adalah peserta program kartu prakerja, kamu dapat menghubungi nomor khusus Karier.mu disini\n\nhttps://wa.me/628118902171\n\n\n\nKetik *Menu* untuk kembali ke menu utama",
+                    "type": "text"
+                }],
+                "SURVEYREASON": [{
+                    "id": "SURVEYREASONA",
+                    "current_menu": "SURVEYREASON",
+                    "text": "",
+                    "type": "sequences",
+                    "required_data": [{
+                            "id": "SR_SQ1",
+                            "text": "Mohon berikan alasan Sahabat Sekolahmu",
+                            "index": "Pelanggan",
+                            "label": "surveyreason",
+                            "type": "text",
+                            "validation": null,
+                            "max_length": 255,
+                            "error_max_length_msg": "Maximum character 255!",
+                            "error_msg": ""
+                        },
+                        {
+                            "id": "SR_SQ2",
+                            "text": "",
+                            "index": "",
+                            "label": "",
+                            "type": "completed",
+                            "create_ticket": false,
+                            "end_session": true,
+                            "validation": null,
+                            "error_msg": "",
+                            "completed_template": "Terima kasih atas partisipasi Sahabat Sekolahmu",
+                            "create_ticket_from_template": false,
+                            "ticket_template_as_completed_template": false
+                        }
+                    ]
+                }]
+            }
+        }
+    },
+    "waba_templates": [{
+            "namespace": "4052003",
+            "name": "sekhola_25",
+            "type": "template",
+            "message": "Mohon maaf, saat ini kamu masih dalam antrian pada layanan WhatsApp Sekolah.mu🙏🏻\nAgent kami akan segera membantu kendala kamu. Mohon kesediaannya untuk membalas chat ini dengan mengirimkan pesan:\n\n1. Ya (jika kendala masih belum selesai)\n2. Tidak (jika kendala sudah selesai)",
+            "message_type": "text",
+            "param_size": 0
+        },
+        {
+            "namespace": "4052005",
+            "name": "sekhola_26",
+            "type": "template",
+            "message": "Halo {{1}}, \nTerima kasih telah bersedia menunggu. Saat ini kami telah mendapatkan jawaban untuk membantu kendala yang kamu temui.\nMohon kesediaanmu untuk membalas chat ini dengan mengirimkan pesan:\n1. Ya (jika kendala masih belum selesai)\n2. Tidak (jika kendala sudah selesai)",
+            "message_type": "text",
+            "param_size": 1
+        },
+        {
+            "namespace": "4085763",
+            "name": "sekhola_27",
+            "type": "template",
+            "message": "Mohon maaf, saat ini kamu masih dalam antrian pada layanan WhatsApp Sekolah.mu🙏🏻\nAgent kami akan segera membantu kendala kamu. Mohon kesediaannya untuk membalas chat ini dengan mengirimkan pesan:\n\n1. Ya (jika kendala masih belum selesai)\n2. Tidak (jika kendala sudah selesai)",
+            "message_type": "text",
+            "param_size": 0,
+            "is_followup_reply": true
+        },
+        {
+            "namespace": "4085767",
+            "name": "sekhola_28",
+            "type": "template",
+            "message": "Halo {{1}}, \nTerima kasih telah bersedia menunggu. Saat ini kami telah mendapatkan jawaban untuk membantu kendala yang kamu temui.\nMohon kesediaanmu untuk membalas chat ini dengan mengirimkan pesan:\n1. Ya (jika kendala masih belum selesai)\n2. Tidak (jika kendala sudah selesai)",
+            "message_type": "text",
+            "param_size": 1
+        }
+    ],
+    "fullscreen_ticket": false,
+    "create_log_enabled": 1,
+    "assign_agent": true,
+    "response_waiting": 180,
+    "forward": {
+        "webhook": {
+            "url": "https://sekolahmu.ivosights.com/webhook-receiving-sekolahmu"
+        },
+        "status": true,
+        "custom_fields": [{
+                "label": "Project",
+                "tag": "select",
+                "type": "select",
+                "name": "project",
+                "is_webchat": false,
+                "required": false,
+                "placeholder": "Project",
+                "description": "",
+                "options": [{
+                    "display": "SekolahMu",
+                    "value": "5881"
+                }]
+            },
+            {
+                "label": "Target Division",
+                "tag": "select",
+                "type": "select",
+                "name": "division",
+                "is_webchat": false,
+                "required": false,
+                "placeholder": "Division",
+                "description": "",
+                "options": [{
+                        "display": "QA Tech",
+                        "value": "QA Tech"
+                    },
+                    {
+                        "display": "Product",
+                        "value": "Product"
+                    },
+                    {
+                        "display": "Akademic",
+                        "value": "Akademic"
+                    },
+                    {
+                        "display": "Finance",
+                        "value": "Finance"
+                    },
+                    {
+                        "display": "Partnership",
+                        "value": "Partnership"
+                    },
+                    {
+                        "display": "Layer 2",
+                        "value": "Layer 2"
+                    },
+                    {
+                        "display": "Layer 2 SMM",
+                        "value": "Layer 2 SMM"
+                    }
+                ]
+            }
+        ]
+    },
+    "response_time_hours": false,
+    "custom_fields": [{
+            "label": "JENJANG",
+            "tag": "select",
+            "type": "select",
+            "is_webchat": false,
+            "required": true,
+            "name": "jenjang",
+            "placeholder": "JENJANG",
+            "description": "",
+            "options": [{
+                    "display": "PAUD",
+                    "value": "paud"
+                },
+                {
+                    "display": "SD",
+                    "value": "sd"
+                },
+                {
+                    "display": "SMP",
+                    "value": "smp"
+                },
+                {
+                    "display": "SMA",
+                    "value": "sma"
+                },
+                {
+                    "display": "OTHER",
+                    "value": "other"
+                }
+            ]
+        },
+        {
+            "label": "NAMA PROGRAM",
+            "tag": "input",
+            "type": "text",
+            "name": "nama_program",
+            "is_webchat": false,
+            "required": true,
+            "placeholder": "NAMA PROGRAM",
+            "description": ""
+        },
+        {
+            "label": "NAMA AKTIVITAS",
+            "tag": "input",
+            "type": "text",
+            "name": "nama_aktivitas",
+            "is_webchat": false,
+            "required": true,
+            "placeholder": "NAMA AKTIVITAS",
+            "description": ""
+        },
+        {
+            "label": "AKSES",
+            "tag": "select",
+            "type": "select",
+            "is_webchat": false,
+            "required": true,
+            "name": "akses",
+            "placeholder": "AKSES",
+            "description": "",
+            "options": [{
+                    "display": "APPS",
+                    "value": "apps"
+                },
+                {
+                    "display": "MOBILE WEB",
+                    "value": "mobile_web"
+                },
+                {
+                    "display": "WEB BROWSER",
+                    "value": "web_browser"
+                },
+                {
+                    "display": "-",
+                    "value": "other"
+                }
+            ]
+        },
+        {
+            "label": "PRIORITY",
+            "tag": "select",
+            "type": "select",
+            "name": "priority",
+            "is_webchat": false,
+            "required": true,
+            "placeholder": "PRIORITY",
+            "description": "",
+            "options": [{
+                    "display": "LOW",
+                    "value": "low"
+                },
+                {
+                    "display": "MEDIUM",
+                    "value": "medium"
+                },
+                {
+                    "display": "HIGH",
+                    "value": "high"
+                }
+            ]
+        },
+        {
+            "label": "MASS PROBLEM",
+            "tag": "select",
+            "type": "select",
+            "name": "mass_problem",
+            "is_webchat": false,
+            "required": true,
+            "placeholder": "MASS PROBLEM",
+            "description": "",
+            "options": [{
+                    "display": "YES",
+                    "value": "yes"
+                },
+                {
+                    "display": "NO",
+                    "value": "no"
+                }
+            ]
+        },
+        {
+            "label": "BISNIS UNIT",
+            "tag": "select",
+            "type": "select",
+            "is_webchat": false,
+            "required": true,
+            "name": "bisnis_unit",
+            "placeholder": "BISNIS UNIT",
+            "description": "",
+            "options": [{
+                    "display": "SEKOLAHMU",
+                    "value": "sekolahmu"
+                },
+                {
+                    "display": "SEKOLAH CIKAL",
+                    "value": "sekolah_cikal"
+                },
+                {
+                    "display": "FMM",
+                    "value": "fmm"
+                },
+                {
+                    "display": "MANDIRI",
+                    "value": "mandiri"
+                },
+                {
+                    "display": "-",
+                    "value": "-"
+                }
+            ]
+        }
+    ]
+}

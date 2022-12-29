@@ -1,0 +1,1301 @@
+{
+    "schemas": {
+        "default": {
+            "survey": {
+                "active": false
+            },
+            "reset_keys": [
+                "MENU"
+            ],
+            "load_conversation": "WabaTemplateConversation",
+            "top_level_questions": [
+                {
+                    "id": "1",
+                    "text": "Apa itu Alpha",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "Apakah Alpha terdaftar dan diawasi oleh OJK?",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "Mengapa harus berinvestasi di Alpha?",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "Lainnya",
+                    "type": "actions"
+                },
+                {
+                    "id": "5",
+                    "text": "Tanya CS",
+                    "type": "actions"
+                }
+            ],
+            "MENU": [
+                {
+                    "id": "1",
+                    "text": "Apa itu Alpha",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "Apakah Alpha terdaftar dan diawasi oleh OJK?",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "Mengapa harus berinvestasi di Alpha?",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "Lainnya",
+                    "type": "actions"
+                },
+                {
+                    "id": "5",
+                    "text": "Tanya CS",
+                    "type": "actions"
+                }
+            ],
+            "1": [
+                {
+                    "id": "1A",
+                    "current_menu": "1",
+                    "text": "Alpha adalah sebuah aplikasi yang memudahkan kamu dalam melakukan jual-beli saham secara 100% online. Dengan Alpha, semua orang dapat memiliki akses ke produk investasi yang aman dan nyaman. Selain itu kamu juga bisa mendapatkan pengetahuan yang dibutuhkan dalam berinvestasi.",
+                    "interactive_message": false,
+                    "interactive_type": "button",
+                    "type": "nest_menu",
+                    "next_bubbles": [
+                        {
+                            "type": "interactive_button",
+                            "text": "Silahkan pilih *MENU* untuk kembali ke menu utama\nSilahkan pilih *SELESAI* untuk mengakhiri Percakapan",
+                            "menus": {
+                                "MENU": {
+                                    "id": "MENU",
+                                    "title": "Menu Utama"
+                                },
+                                "SELESAI": {
+                                    "id": "SELESAI",
+                                    "title": "Selesai"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "MENU": {
+                            "id": "MENU",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        },
+                        "SELESAI": {
+                            "id": "SELESAI",
+                            "title": "Selesai",
+                            "current_menu": "SELESAI",
+                            "text": "",
+                            "type": "text"
+                        }
+                    }
+                }
+            ],
+            "2": [
+                {
+                    "id": "2B",
+                    "current_menu": "2",
+                    "text": "Kamu tidak perlu khawatir, tentu saja Alpha terdaftar dan diawasi OJK. Kamu bisa mengecek izin Alpha melalui website resmi OJK maupun IDX. Dengan detail sebagai berikut : Transaksi saham di Alpha difasilitasi oleh PT. Paramitra Alfa Sekuritas dengan izin PPE (Perantara Pedagang Efek) no KEP-44/PM/1992 tanggal 20 Februari 1992. Pastikan kamu selalu cek izin resmi dari lembaga keuangan yang kamu gunakan agar kamu mendapatkan layanan yang layak, stabil dan sehat.",
+                    "interactive_message": false,
+                    "interactive_type": "button",
+                    "type": "nest_menu",
+                    "next_bubbles": [
+                        {
+                            "type": "interactive_button",
+                            "text": "Silahkan pilih *MENU* untuk kembali ke menu utama\nSilahkan pilih *SELESAI* untuk mengakhiri Percakapan",
+                            "menus": {
+                                "MENU": {
+                                    "id": "MENU",
+                                    "title": "Menu Utama"
+                                },
+                                "SELESAI": {
+                                    "id": "SELESAI",
+                                    "title": "Selesai"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "MENU": {
+                            "id": "MENU",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        },
+                        "SELESAI": {
+                            "id": "SELESAI",
+                            "title": "Selesai",
+                            "current_menu": "SELESAI",
+                            "text": "",
+                            "type": "text"
+                        }
+                    }
+                }
+            ],
+            "3": [
+                {
+                    "id": "3C",
+                    "current_menu": "3",
+                    "text": "- Pendaftaran 100% online. Kamu bisa melakukan registrasi kapanpun dan dimanapun.\n- Mudah digunakan. Alpha dirancang sedemikian rupa agar para investor pemula mudah dalam menggunakannya.\n- Fee broker rendah\n- Kamu bisa mulai investasi tanpa minimum deposito",
+                    "interactive_message": false,
+                    "interactive_type": "button",
+                    "type": "nest_menu",
+                    "next_bubbles": [
+                        {
+                            "type": "interactive_button",
+                            "text": "Silahkan pilih *MENU* untuk kembali ke menu utama\nSilahkan pilih *SELESAI* untuk mengakhiri Percakapan",
+                            "menus": {
+                                "MENU": {
+                                    "id": "MENU",
+                                    "title": "Menu Utama"
+                                },
+                                "SELESAI": {
+                                    "id": "SELESAI",
+                                    "title": "Selesai"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "MENU": {
+                            "id": "MENU",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        },
+                        "SELESAI": {
+                            "id": "SELESAI",
+                            "title": "Selesai",
+                            "current_menu": "SELESAI",
+                            "text": "",
+                            "type": "text"
+                        }
+                    }
+                }
+            ],
+            "4": [
+                {
+                    "id": "4D",
+                    "current_menu": "4",
+                    "text": "1. Tentang Alpha\n2. Registrasi\n3. Saham\n4. Transaksi\n5. Akun Alpha",
+                    "interactive_message": true,
+                    "interactive_type": "list",
+                    "type": "nest_menu",
+                    "next_bubbles": [
+                        {
+                            "type": "interactive_button",
+                            "text": "Silahkan pilih *BACK* untuk kembali ke menu sebelumnya\nSilahkan pilih *SELESAI* untuk mengakhiri Percakapan",
+                            "menus": {
+                                "BACK": {
+                                    "id": "BACK",
+                                    "title": "Menu Sebelumnya"
+                                },
+                                "SELESAI": {
+                                    "id": "SELESAI",
+                                    "title": "Selesai"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "SELESAI": {
+                            "id": "SELESAI",
+                            "title": "Selesai",
+                            "current_menu": "SELESAI",
+                            "text": "",
+                            "type": "text"
+                        },
+                        "BACK": {
+                            "id": "BACK",
+                            "title": "Menu Sebelumnya",
+                            "current_menu": "BACK",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "parent"
+                        },
+                        "1": {
+                            "id": "4D1",
+                            "current_menu": "4-1",
+                            "text": "1. Apa itu Alpha ?\n2. Mengapa harus berinvestasi di Alpha ?\n3. Apakah Alpha terdaftar dan diawasi OJK ?\n4. Apakah ada biaya bulanan ?",
+                            "interactive_message": true,
+                            "interactive_type": "list",
+                            "type": "nest_menu",
+                            "next_bubbles": [
+                                {
+                                    "type": "interactive_button",
+                                    "text": "Silahkan pilih *MENU* untuk kembali ke menu utama\nSilahkan pilih *BACK* untuk kembali ke menu sebelumnya\nSilahkan pilih *SELESAI* untuk mengakhiri Percakapan",
+                                    "menus": {
+                                        "BACK": {
+                                            "id": "BACK",
+                                            "title": "Menu Sebelumnya"
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Menu Utama"
+                                        },
+                                        "SELESAI": {
+                                            "id": "SELESAI",
+                                            "title": "Selesai"
+                                        }
+                                    }
+                                }
+                            ],
+                            "menus": {
+                                "SELESAI": {
+                                    "id": "SELESAI",
+                                    "title": "Selesai",
+                                    "current_menu": "SELESAI",
+                                    "text": "",
+                                    "type": "text"
+                                },
+                                "BACK": {
+                                    "id": "BACK",
+                                    "title": "Menu Sebelumnya",
+                                    "current_menu": "BACK",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                },
+                                "MENU": {
+                                    "id": "MENU",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "4D11",
+                                    "current_menu": "4-1-1",
+                                    "text": "Alpha adalah sebuah aplikasi yang memudahkan kamu dalam melakukan jual-beli saham secara 100% online. Dengan Alpha, semua orang dapat memiliki akses ke produk investasi yang aman dan nyaman. Selain itu kamu juga bisa mendapatkan pengetahuan yang dibutuhkan dalam berinvestasi.",
+                                    "interactive_message": false,
+                                    "interactive_type": "button",
+                                    "type": "nest_menu",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive_button",
+                                            "text": "Silahkan pilih *MENU* untuk kembali ke menu utama\nSilahkan pilih *BACK* untuk kembali ke menu sebelumnya\nSilahkan pilih *SELESAI* untuk mengakhiri Percakapan",
+                                            "menus": {
+                                                "BACK": {
+                                                    "id": "BACK",
+                                                    "title": "Menu Sebelumnya"
+                                                },
+                                                "MENU": {
+                                                    "id": "MENU",
+                                                    "title": "Menu Utama"
+                                                },
+                                                "SELESAI": {
+                                                    "id": "SELESAI",
+                                                    "title": "Selesai"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "menus": {
+                                        "SELESAI": {
+                                            "id": "SELESAI",
+                                            "title": "Selesai",
+                                            "current_menu": "SELESAI",
+                                            "text": "",
+                                            "type": "text"
+                                        },
+                                        "BACK": {
+                                            "id": "BACK",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "4D12",
+                                    "current_menu": "4-1-2",
+                                    "text": "- Pendaftaran 100% online. Kamu bisa melakukan registrasi kapanpun dan dimanapun.\n- Mudah digunakan. Alpha dirancang sedemikian rupa agar para investor pemula mudah dalam menggunakannya.\n- Fee broker rendah\n- Kamu bisa mulai investasi tanpa minimum deposito",
+                                    "interactive_message": false,
+                                    "interactive_type": "button",
+                                    "type": "nest_menu",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive_button",
+                                            "text": "Silahkan pilih *MENU* untuk kembali ke menu utama\nSilahkan pilih *BACK* untuk kembali ke menu sebelumnya\nSilahkan pilih *SELESAI* untuk mengakhiri Percakapan",
+                                            "menus": {
+                                                "BACK": {
+                                                    "id": "BACK",
+                                                    "title": "Menu Sebelumnya"
+                                                },
+                                                "MENU": {
+                                                    "id": "MENU",
+                                                    "title": "Menu Utama"
+                                                },
+                                                "SELESAI": {
+                                                    "id": "SELESAI",
+                                                    "title": "Selesai"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "menus": {
+                                        "SELESAI": {
+                                            "id": "SELESAI",
+                                            "title": "Selesai",
+                                            "current_menu": "SELESAI",
+                                            "text": "",
+                                            "type": "text"
+                                        },
+                                        "BACK": {
+                                            "id": "BACK",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "id": "4D13",
+                                    "current_menu": "4-1-3",
+                                    "text": "Kamu tidak perlu khawatir, tentu saja Alpha terdaftar dan diawasi OJK. Kamu bisa mengecek izin Alpha melalui website resmi OJK maupun IDX. Dengan detail sebagai berikut : Transaksi saham di Alpha difasilitasi oleh PT. Paramitra Alfa Sekuritas dengan izin PPE (Perantara Pedagang Efek) no KEP-44/PM/1992 tanggal 20 Februari 1992. Pastikan kamu selalu cek izin resmi dari lembaga keuangan yang kamu gunakan agar kamu mendapatkan layanan yang layak, stabil dan sehat.",
+                                    "interactive_message": false,
+                                    "interactive_type": "button",
+                                    "type": "nest_menu",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive_button",
+                                            "text": "Silahkan pilih *MENU* untuk kembali ke menu utama\nSilahkan pilih *BACK* untuk kembali ke menu sebelumnya\nSilahkan pilih *SELESAI* untuk mengakhiri Percakapan",
+                                            "menus": {
+                                                "BACK": {
+                                                    "id": "BACK",
+                                                    "title": "Menu Sebelumnya"
+                                                },
+                                                "MENU": {
+                                                    "id": "MENU",
+                                                    "title": "Menu Utama"
+                                                },
+                                                "SELESAI": {
+                                                    "id": "SELESAI",
+                                                    "title": "Selesai"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "menus": {
+                                        "SELESAI": {
+                                            "id": "SELESAI",
+                                            "title": "Selesai",
+                                            "current_menu": "SELESAI",
+                                            "text": "",
+                                            "type": "text"
+                                        },
+                                        "BACK": {
+                                            "id": "BACK",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        }
+                                    }
+                                },
+                                "4": {
+                                    "id": "4D14",
+                                    "current_menu": "4-1-4",
+                                    "text": "Kamu tidak perlu khawatir, tidak ada biaya bulanan yang dikenakan untuk bertransaksi melalui Alpha.",
+                                    "interactive_message": false,
+                                    "interactive_type": "button",
+                                    "type": "nest_menu",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive_button",
+                                            "text": "Silahkan pilih *MENU* untuk kembali ke menu utama\nSilahkan pilih *BACK* untuk kembali ke menu sebelumnya\nSilahkan pilih *SELESAI* untuk mengakhiri Percakapan",
+                                            "menus": {
+                                                "BACK": {
+                                                    "id": "BACK",
+                                                    "title": "Menu Sebelumnya"
+                                                },
+                                                "MENU": {
+                                                    "id": "MENU",
+                                                    "title": "Menu Utama"
+                                                },
+                                                "SELESAI": {
+                                                    "id": "SELESAI",
+                                                    "title": "Selesai"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "menus": {
+                                        "SELESAI": {
+                                            "id": "SELESAI",
+                                            "title": "Selesai",
+                                            "current_menu": "SELESAI",
+                                            "text": "",
+                                            "type": "text"
+                                        },
+                                        "BACK": {
+                                            "id": "BACK",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "4D2",
+                            "current_menu": "4-2",
+                            "text": "1. Dokumen apa saja yang perlu disiapkan untuk proses verifikasi data ?\n2. Mengapa registrasi akun saya gagal ? \n3. Berapa lama proses registrasi akun di aplikasi Alpha ?",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "type": "nest_menu",
+                            "next_bubbles": [
+                                {
+                                    "type": "interactive_button",
+                                    "text": "Silahkan pilih *MENU* untuk kembali ke menu utama\nSilahkan pilih *BACK* untuk kembali ke menu sebelumnya\nSilahkan pilih *SELESAI* untuk mengakhiri Percakapan",
+                                    "menus": {
+                                        "BACK": {
+                                            "id": "BACK",
+                                            "title": "Menu Sebelumnya"
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Menu Utama"
+                                        },
+                                        "SELESAI": {
+                                            "id": "SELESAI",
+                                            "title": "Selesai"
+                                        }
+                                    }
+                                }
+                            ],
+                            "menus": {
+                                "SELESAI": {
+                                    "id": "SELESAI",
+                                    "title": "Selesai",
+                                    "current_menu": "SELESAI",
+                                    "text": "",
+                                    "type": "text"
+                                },
+                                "BACK": {
+                                    "id": "BACK",
+                                    "title": "Menu Sebelumnya",
+                                    "current_menu": "BACK",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                },
+                                "MENU": {
+                                    "id": "MENU",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "4D21",
+                                    "current_menu": "4-2-1",
+                                    "text": "Pertama, kamu wajib menyiapkan foto KTP yang jelas, tidak blur dan semua data pada KTP terbaca dengan jelas agar proses verifikasi lancar. Foto KTP diambil secara landscape (horizontal) dan seluruh bagian KTP masuk dalam frame foto. Kamu bisa selfie bersama KTP milik kamu dan pastikan foto terlihat jelas dan tidak blur. Tips : Pastikan bahwa data – data yang diberikan sudah akurat dan sesuai dengan data Dukcapil (KTP) dan perbankan (RDN).",
+                                    "interactive_message": false,
+                                    "interactive_type": "button",
+                                    "type": "nest_menu",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive_button",
+                                            "text": "Silahkan pilih *MENU* untuk kembali ke menu utama\nSilahkan pilih *BACK* untuk kembali ke menu sebelumnya\nSilahkan pilih *SELESAI* untuk mengakhiri Percakapan",
+                                            "menus": {
+                                                "BACK": {
+                                                    "id": "BACK",
+                                                    "title": "Menu Sebelumnya"
+                                                },
+                                                "MENU": {
+                                                    "id": "MENU",
+                                                    "title": "Menu Utama"
+                                                },
+                                                "SELESAI": {
+                                                    "id": "SELESAI",
+                                                    "title": "Selesai"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "menus": {
+                                        "SELESAI": {
+                                            "id": "SELESAI",
+                                            "title": "Selesai",
+                                            "current_menu": "SELESAI",
+                                            "text": "",
+                                            "type": "text"
+                                        },
+                                        "BACK": {
+                                            "id": "BACK",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "4D22",
+                                    "current_menu": "4-2-2",
+                                    "text": "Kendala terbesar mengenai mengapa registrasi kamu gagal adalah karena data yang kamu berikan belum sesuai dengan data Dukcapil dan atau perbankan. Pastikan data yang kamu berikan sudah akurat. ",
+                                    "interactive_message": false,
+                                    "interactive_type": "button",
+                                    "type": "nest_menu",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive_button",
+                                            "text": "Silahkan pilih *MENU* untuk kembali ke menu utama\nSilahkan pilih *BACK* untuk kembali ke menu sebelumnya\nSilahkan pilih *SELESAI* untuk mengakhiri Percakapan",
+                                            "menus": {
+                                                "BACK": {
+                                                    "id": "BACK",
+                                                    "title": "Menu Sebelumnya"
+                                                },
+                                                "MENU": {
+                                                    "id": "MENU",
+                                                    "title": "Menu Utama"
+                                                },
+                                                "SELESAI": {
+                                                    "id": "SELESAI",
+                                                    "title": "Selesai"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "menus": {
+                                        "SELESAI": {
+                                            "id": "SELESAI",
+                                            "title": "Selesai",
+                                            "current_menu": "SELESAI",
+                                            "text": "",
+                                            "type": "text"
+                                        },
+                                        "BACK": {
+                                            "id": "BACK",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "id": "4D23",
+                                    "current_menu": "4-2-3",
+                                    "text": "Pada kondisi normal, proses registrasi selesai dalam waktu 1-2 hari kerja bursa. Proses tersebut sudah termasuk 4 tahap registrasi akun Alpha :\n1. Data pribadi\n2. Data Bank dan Pekerjaan\n3. Data Pendukung\n4. Pernyataan\nSebagai informasi tambahan jika data diri kamu belum akurat, maka untuk proses verifikasi bisa berjalan lebih lama. Kamu tidak perlu khawatir, Alpha akan selalu memberikan notifikasi tentang apa saja yang terjadi di setiap tahapan registrasi.",
+                                    "interactive_message": false,
+                                    "interactive_type": "button",
+                                    "type": "nest_menu",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive_button",
+                                            "text": "Silahkan pilih *MENU* untuk kembali ke menu utama\nSilahkan pilih *BACK* untuk kembali ke menu sebelumnya\nSilahkan pilih *SELESAI* untuk mengakhiri Percakapan",
+                                            "menus": {
+                                                "BACK": {
+                                                    "id": "BACK",
+                                                    "title": "Menu Sebelumnya"
+                                                },
+                                                "MENU": {
+                                                    "id": "MENU",
+                                                    "title": "Menu Utama"
+                                                },
+                                                "SELESAI": {
+                                                    "id": "SELESAI",
+                                                    "title": "Selesai"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "menus": {
+                                        "SELESAI": {
+                                            "id": "SELESAI",
+                                            "title": "Selesai",
+                                            "current_menu": "SELESAI",
+                                            "text": "",
+                                            "type": "text"
+                                        },
+                                        "BACK": {
+                                            "id": "BACK",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "id": "4D3",
+                            "current_menu": "4-3",
+                            "text": "1. Apa itu saham ?\n2. Apakah bisa memindahkan saham dari sekuritas lain ke Alpha ?\n3. Apa itu dividen dan bagaimana cara mendapatkannya?",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "type": "nest_menu",
+                            "next_bubbles": [
+                                {
+                                    "type": "interactive_button",
+                                    "text": "Silahkan pilih *MENU* untuk kembali ke menu utama\nSilahkan pilih *BACK* untuk kembali ke menu sebelumnya\nSilahkan pilih *SELESAI* untuk mengakhiri Percakapan",
+                                    "menus": {
+                                        "BACK": {
+                                            "id": "BACK",
+                                            "title": "Menu Sebelumnya"
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Menu Utama"
+                                        },
+                                        "SELESAI": {
+                                            "id": "SELESAI",
+                                            "title": "Selesai"
+                                        }
+                                    }
+                                }
+                            ],
+                            "menus": {
+                                "SELESAI": {
+                                    "id": "SELESAI",
+                                    "title": "Selesai",
+                                    "current_menu": "SELESAI",
+                                    "text": "",
+                                    "type": "text"
+                                },
+                                "BACK": {
+                                    "id": "BACK",
+                                    "title": "Menu Sebelumnya",
+                                    "current_menu": "BACK",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                },
+                                "MENU": {
+                                    "id": "MENU",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "4D31",
+                                    "current_menu": "4-3-1",
+                                    "text": "Saham merupakan sebuah bukti kepemilikan nilai atas sebuah perusahaan. Saat memiliki saham, investor memiliki klaim atas pendapatan dan aset perusahaan, serta berhak hadir dalam RUPS (Rapat Umum Pemegang Saham). Biasanya investor membeli saham dengan satuan lot (1 lot = 100 lembar). Harga saham adalah harga per lembar dan berubah setiap waktu tergantung permintaan beli dan penawaran jual antar investor.",
+                                    "interactive_message": false,
+                                    "interactive_type": "button",
+                                    "type": "nest_menu",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive_button",
+                                            "text": "Silahkan pilih *MENU* untuk kembali ke menu utama\nSilahkan pilih *BACK* untuk kembali ke menu sebelumnya\nSilahkan pilih *SELESAI* untuk mengakhiri Percakapan",
+                                            "menus": {
+                                                "BACK": {
+                                                    "id": "BACK",
+                                                    "title": "Menu Sebelumnya"
+                                                },
+                                                "MENU": {
+                                                    "id": "MENU",
+                                                    "title": "Menu Utama"
+                                                },
+                                                "SELESAI": {
+                                                    "id": "SELESAI",
+                                                    "title": "Selesai"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "menus": {
+                                        "SELESAI": {
+                                            "id": "SELESAI",
+                                            "title": "Selesai",
+                                            "current_menu": "SELESAI",
+                                            "text": "",
+                                            "type": "text"
+                                        },
+                                        "BACK": {
+                                            "id": "BACK",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "4D32",
+                                    "current_menu": "4-3-2",
+                                    "text": "Tentu saja bisa. Kamu cukup menghubungi CS dan CS akan membantu kamu untuk proses pemindahan saham dari sekuritas sebelumnya.",
+                                    "interactive_message": false,
+                                    "interactive_type": "button",
+                                    "type": "nest_menu",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive_button",
+                                            "text": "Silahkan pilih *MENU* untuk kembali ke menu utama\nSilahkan pilih *BACK* untuk kembali ke menu sebelumnya\nSilahkan pilih *SELESAI* untuk mengakhiri Percakapan",
+                                            "menus": {
+                                                "BACK": {
+                                                    "id": "BACK",
+                                                    "title": "Menu Sebelumnya"
+                                                },
+                                                "MENU": {
+                                                    "id": "MENU",
+                                                    "title": "Menu Utama"
+                                                },
+                                                "SELESAI": {
+                                                    "id": "SELESAI",
+                                                    "title": "Selesai"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "menus": {
+                                        "SELESAI": {
+                                            "id": "SELESAI",
+                                            "title": "Selesai",
+                                            "current_menu": "SELESAI",
+                                            "text": "",
+                                            "type": "text"
+                                        },
+                                        "BACK": {
+                                            "id": "BACK",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "id": "4D33",
+                                    "current_menu": "4-3-3",
+                                    "text": "Dividen adalah Pembagian laba, keuntungan ataupun profit perusahaan kepada pemegang saham dalam satu periode tertentu berdasarkan banyaknya jumlah saham yang dimiliki. Namun, tidak semua perusahaan membagikan dividen, jadi kamu wajib cermati kebijakan dividen saham perusahaan yang kamu minati sebelum membeli, ya.",
+                                    "interactive_message": false,
+                                    "interactive_type": "button",
+                                    "type": "nest_menu",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive_button",
+                                            "text": "Silahkan pilih *MENU* untuk kembali ke menu utama\nSilahkan pilih *BACK* untuk kembali ke menu sebelumnya\nSilahkan pilih *SELESAI* untuk mengakhiri Percakapan",
+                                            "menus": {
+                                                "BACK": {
+                                                    "id": "BACK",
+                                                    "title": "Menu Sebelumnya"
+                                                },
+                                                "MENU": {
+                                                    "id": "MENU",
+                                                    "title": "Menu Utama"
+                                                },
+                                                "SELESAI": {
+                                                    "id": "SELESAI",
+                                                    "title": "Selesai"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "menus": {
+                                        "SELESAI": {
+                                            "id": "SELESAI",
+                                            "title": "Selesai",
+                                            "current_menu": "SELESAI",
+                                            "text": "",
+                                            "type": "text"
+                                        },
+                                        "BACK": {
+                                            "id": "BACK",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "4": {
+                            "id": "4D4",
+                            "current_menu": "4-4",
+                            "text": "1. Apa yang dimaksud dengan RDN ?\n2. Mengapa top up RDN saya belum masuk ?\n3. Berapa lama waktu yang dibutuhkan untuk pencairan dana dari RDN ?\n4. Apakah saya bisa meminta portofolio untuk lapor pajak ?",
+                            "interactive_message": true,
+                            "interactive_type": "list",
+                            "type": "nest_menu",
+                            "next_bubbles": [
+                                {
+                                    "type": "interactive_button",
+                                    "text": "Silahkan pilih *MENU* untuk kembali ke menu utama\nSilahkan pilih *BACK* untuk kembali ke menu sebelumnya\nSilahkan pilih *SELESAI* untuk mengakhiri Percakapan",
+                                    "menus": {
+                                        "BACK": {
+                                            "id": "BACK",
+                                            "title": "Menu Sebelumnya"
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Menu Utama"
+                                        },
+                                        "SELESAI": {
+                                            "id": "SELESAI",
+                                            "title": "Selesai"
+                                        }
+                                    }
+                                }
+                            ],
+                            "menus": {
+                                "BACK": {
+                                    "id": "BACK",
+                                    "title": "Menu Sebelumnya",
+                                    "current_menu": "BACK",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                },
+                                "MENU": {
+                                    "id": "MENU",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "4D41",
+                                    "current_menu": "4-4-1",
+                                    "text": "RDN  atau rekening dana nasabah adalah rekening atas nama nasabah untuk transaksi jual beli saham atau instrumen investasi lain di pasar modal. Setiap transaksi saham hanya dapat dilakukan melalui RDN dan dana hanya dapat dicairkan ke rekening yang telah kamu daftarkan. Saat ini pembukaan RDN hanya bisa dilakukan oleh Bank BCA.",
+                                    "interactive_message": false,
+                                    "interactive_type": "button",
+                                    "type": "nest_menu",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive_button",
+                                            "text": "Silahkan pilih *MENU* untuk kembali ke menu utama\nSilahkan pilih *BACK* untuk kembali ke menu sebelumnya\nSilahkan pilih *SELESAI* untuk mengakhiri Percakapan",
+                                            "menus": {
+                                                "BACK": {
+                                                    "id": "BACK",
+                                                    "title": "Menu Sebelumnya"
+                                                },
+                                                "MENU": {
+                                                    "id": "MENU",
+                                                    "title": "Menu Utama"
+                                                },
+                                                "SELESAI": {
+                                                    "id": "SELESAI",
+                                                    "title": "Selesai"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "menus": {
+                                        "SELESAI": {
+                                            "id": "SELESAI",
+                                            "title": "Selesai",
+                                            "current_menu": "SELESAI",
+                                            "text": "",
+                                            "type": "text"
+                                        },
+                                        "BACK": {
+                                            "id": "BACK",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "4D42",
+                                    "current_menu": "4-4-2",
+                                    "text": "Kamu harus memastikan apakah nomor RDN kamu sudah benar dan akurat. Jika sudah benar dan akurat, kamu bisa melakukan pengecekan status RDN kamu secara berkala dalam aplikasi Alpha. Proses top up RDN biasanya memakan waktu 1x24 jam. Jika setelah 1x24 jam RDN kamu belum terisi, maka kamu bisa menghubungi tim CS dengan melampirkan bukti transfer RDN.",
+                                    "interactive_message": false,
+                                    "interactive_type": "button",
+                                    "type": "nest_menu",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive_button",
+                                            "text": "Silahkan pilih *MENU* untuk kembali ke menu utama\nSilahkan pilih *BACK* untuk kembali ke menu sebelumnya\nSilahkan pilih *SELESAI* untuk mengakhiri Percakapan",
+                                            "menus": {
+                                                "BACK": {
+                                                    "id": "BACK",
+                                                    "title": "Menu Sebelumnya"
+                                                },
+                                                "MENU": {
+                                                    "id": "MENU",
+                                                    "title": "Menu Utama"
+                                                },
+                                                "SELESAI": {
+                                                    "id": "SELESAI",
+                                                    "title": "Selesai"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "menus": {
+                                        "SELESAI": {
+                                            "id": "SELESAI",
+                                            "title": "Selesai",
+                                            "current_menu": "SELESAI",
+                                            "text": "",
+                                            "type": "text"
+                                        },
+                                        "BACK": {
+                                            "id": "BACK",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "id": "4D43",
+                                    "current_menu": "4-4-3",
+                                    "text": "Pengajuan penarikan dana dari RDN yang dilakukan sebelum pukul 13.30 pada hari kerja bursa akan diproses pada hari yang sama. Jika proses transfer sudah berhasil, maka kamu akan mendapatkan notifikasi dari Alpha. Untuk pengajuan penarikan dana yang dilakukan di atas pukul 13.30 atau di luar hari kerja bursa akan diproses pada hari kerja bursa berikutnya. Sebagai informasi tambahan bahwa terdapat biaya penarikan yang akan dibebankan kepada nasabah, sesuai dengan aturan dari Bank ",
+                                    "interactive_message": false,
+                                    "interactive_type": "button",
+                                    "type": "nest_menu",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive_button",
+                                            "text": "Silahkan pilih *MENU* untuk kembali ke menu utama\nSilahkan pilih *BACK* untuk kembali ke menu sebelumnya\nSilahkan pilih *SELESAI* untuk mengakhiri Percakapan",
+                                            "menus": {
+                                                "BACK": {
+                                                    "id": "BACK",
+                                                    "title": "Menu Sebelumnya"
+                                                },
+                                                "MENU": {
+                                                    "id": "MENU",
+                                                    "title": "Menu Utama"
+                                                },
+                                                "SELESAI": {
+                                                    "id": "SELESAI",
+                                                    "title": "Selesai"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "menus": {
+                                        "SELESAI": {
+                                            "id": "SELESAI",
+                                            "title": "Selesai",
+                                            "current_menu": "SELESAI",
+                                            "text": "",
+                                            "type": "text"
+                                        },
+                                        "BACK": {
+                                            "id": "BACK",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        }
+                                    }
+                                },
+                                "4": {
+                                    "id": "4D44",
+                                    "current_menu": "4-4-4",
+                                    "text": "Tentu saja bisa. Kamu cukup menghubungi CS kami dan mintalah data untuk pelaporan pajak saham tahunan. Proses pembuatan data akan selesai dalam 2 - 4 hari kerja bursa dan akan dikirimkan via  email kamu. ",
+                                    "interactive_message": false,
+                                    "interactive_type": "button",
+                                    "type": "nest_menu",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive_button",
+                                            "text": "Silahkan pilih *MENU* untuk kembali ke menu utama\nSilahkan pilih *BACK* untuk kembali ke menu sebelumnya\nSilahkan pilih *SELESAI* untuk mengakhiri Percakapan",
+                                            "menus": {
+                                                "BACK": {
+                                                    "id": "BACK",
+                                                    "title": "Menu Sebelumnya"
+                                                },
+                                                "MENU": {
+                                                    "id": "MENU",
+                                                    "title": "Menu Utama"
+                                                },
+                                                "SELESAI": {
+                                                    "id": "SELESAI",
+                                                    "title": "Selesai"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "menus": {
+                                        "SELESAI": {
+                                            "id": "SELESAI",
+                                            "title": "Selesai",
+                                            "current_menu": "SELESAI",
+                                            "text": "",
+                                            "type": "text"
+                                        },
+                                        "BACK": {
+                                            "id": "BACK",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "id": "4D5",
+                            "current_menu": "4-5",
+                            "text": "1. Bagaimana cara pengkinian data pada aplikasi Alpha ?",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "type": "nest_menu",
+                            "next_bubbles": [
+                                {
+                                    "type": "interactive_button",
+                                    "text": "Silahkan pilih *MENU* untuk kembali ke menu utama\nSilahkan pilih *BACK* untuk kembali ke menu sebelumnya\nSilahkan pilih *SELESAI* untuk mengakhiri Percakapan",
+                                    "menus": {
+                                        "BACK": {
+                                            "id": "BACK",
+                                            "title": "Menu Sebelumnya"
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Menu Utama"
+                                        },
+                                        "SELESAI": {
+                                            "id": "SELESAI",
+                                            "title": "Selesai"
+                                        }
+                                    }
+                                }
+                            ],
+                            "menus": {
+                                "SELESAI": {
+                                    "id": "SELESAI",
+                                    "title": "Selesai",
+                                    "current_menu": "SELESAI",
+                                    "text": "",
+                                    "type": "text"
+                                },
+                                "BACK": {
+                                    "id": "BACK",
+                                    "title": "Menu Sebelumnya",
+                                    "current_menu": "BACK",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                },
+                                "MENU": {
+                                    "id": "MENU",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "4D51",
+                                    "current_menu": "4-5-1",
+                                    "text": "Tentu saja kamu bisa melakukan pengkinian data. Kamu bisa menghubungi CS kami untuk proses pengkinian data.",
+                                    "interactive_message": false,
+                                    "interactive_type": "button",
+                                    "type": "nest_menu",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive_button",
+                                            "text": "Silahkan pilih *MENU* untuk kembali ke menu utama\nSilahkan pilih *BACK* untuk kembali ke menu sebelumnya\nSilahkan pilih *SELESAI* untuk mengakhiri Percakapan",
+                                            "menus": {
+                                                "BACK": {
+                                                    "id": "BACK",
+                                                    "title": "Menu Sebelumnya"
+                                                },
+                                                "MENU": {
+                                                    "id": "MENU",
+                                                    "title": "Menu Utama"
+                                                },
+                                                "SELESAI": {
+                                                    "id": "SELESAI",
+                                                    "title": "Selesai"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "menus": {
+                                        "SELESAI": {
+                                            "id": "SELESAI",
+                                            "title": "Selesai",
+                                            "current_menu": "SELESAI",
+                                            "text": "",
+                                            "type": "text"
+                                        },
+                                        "BACK": {
+                                            "id": "BACK",
+                                            "title": "Menu Sebelumnya",
+                                            "current_menu": "BACK",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        },
+                                        "MENU": {
+                                            "id": "MENU",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            ],
+            "5": [
+                {
+                    "id": "5E",
+                    "current_menu": "5",
+                    "text": "Terima kasih telah menghubungi Alpha. Mohon menunggu, Customer service kami akan segera membantu kamu.",
+                    "type": "goto",
+                    "goto": "cs"
+                }
+            ]
+        }
+    }
+}

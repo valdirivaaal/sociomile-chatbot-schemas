@@ -1,0 +1,382 @@
+{
+    "schemas": {
+        "default": {
+            "survey": {
+                "active": false
+            },
+            "reset_keys": [""],
+            "load_conversation": "wabaTemplateConversation",
+            "top_level_questions": [
+                {
+                    "id": "ID",
+                    "text": "*ID* - Bahasa Indonesia",
+                    "type": "actions"
+                },
+                {
+                    "id": "EN",
+                    "text": "*EN* - English",
+                    "type": "actions"
+                }
+            ],
+            "MENU": [
+                {
+                    "id": "ID",
+                    "text": "*ID* - Bahasa Indonesia",
+                    "type": "actions"
+                },
+                {
+                    "id": "EN",
+                    "text": "*EN* - English",
+                    "type": "actions"
+                }
+            ],
+            "ID": [
+                {
+                    "id": "AA",
+                    "text": "Hi <name>, selamat datang di Transcosmos Indonesia. silakan ketik angka untuk melanjutkan informasi berikutnya\n*(1)* HR Department\n*(2)* Sales Department\n*(3)* Kotak Saran",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "A1A",
+                            "text": "Silakan ketik kode berikut untuk melanjutkan\n*(PAC)* Request paklaring bagi karyawan yang sudah resign\n*(VAC)* Informasi lowongan kerja, melamar pekerjaan, dan status rekrutmen",
+                            "type": "nest_menu",
+                            "menus": {
+                                "PAC": {
+                                    "id": "A11A",
+                                    "text": "Untuk request paklaring, silakan masukkan data berikut (Request tidak akan terproses jika data tidak lengkap):\nNama :\nNIP :\nProject :\nEmail :\nNomor HP :",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "id": "A111A",
+                                        "text": "Terima kasih atas pengisian formnya, data Kamu sudah tercatat. Selanjutnya tim HR akan menghubungi Kamu jika paklaring sudah siap.\nSilahkan ketik *0* untuk kembali ke menu utama",
+                                        "type": "nest_menu",
+                                        "menus": {
+                                            "0": {
+                                                "id": "A1111A",
+                                                "text": "",
+                                                "type": "goto",
+                                                "goto": "parent"
+                                            }
+                                        }
+                                    }
+                                },
+                                "VAC": {
+                                    "id": "A12A",
+                                    "text": "Untuk informasi selanjutnya, silakan ketik kode berikut\n*(LOW)* Informasi lowongan kerja\n*(APP)* Melamar pekerjaan\n*(STT)* Status rekrutmen",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "LOW": {
+                                            "id": "A121A",
+                                            "text": "Untuk informasi lowongan terbaru, Kamu bisa cek di Instagram @transcosmos.id atau kunjungi https://www.jobstreet.co.id/id/job-search/jobs-at-pt-transcosmos-indonesia/",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "id": "A1211A",
+                                                "text": "Silahkan ketik 0 untuk kembali ke menu utama",
+                                                "type": "nest_menu",
+                                                "menus": {
+                                                    "0": {
+                                                        "id": "A12111A",
+                                                        "text": "",
+                                                        "type": "goto",
+                                                        "goto": "parent"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "APP": {
+                                            "id": "A122A",
+                                            "text": "Jika Kamu berminat melamar pekerjaan di Transcosmos Indonesia, silakan daftar di link berikut ya: http://bit.ly/PendaftaranTCID",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "id": "A1221A",
+                                                "text": "Silahkan ketik 0 untuk kembali ke menu utama",
+                                                "type": "nest_menu",
+                                                "menus": {
+                                                    "0": {
+                                                        "id": "A12211A",
+                                                        "text": "",
+                                                        "type": "goto",
+                                                        "goto": "parent"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "STT": {
+                                            "id": "A123A",
+                                            "text": "Sebagai informasi, seluruh CV yang sudah masuk akan Kami periksa berdasarkan posisi yang Kamu apply. Jika sebelumnya Kamu sudah diproses baik tes tertulis atau sudah sampai tahap interview mohon ditunggu ya, tim HR Kami akan menghubungi Kamu jika lolos paling lama 2 minggu setelah proses terakhir. Apabila dalam dua minggu Kamu tidak dihubungi oleh tim kami, itu artinya kamu akan dikategorikan ke dalam kandidat potensial Kami. Selanjutnya Kami akan hubungi kembali jika sudah ada posisi yang sesuai. Tetap semangat dan sukses selalu.",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "id": "A1231A",
+                                                "text": "Silahkan ketik 0 untuk kembali ke menu utama",
+                                                "type": "nest_menu",
+                                                "menus": {
+                                                    "0": {
+                                                        "id": "A12311A",
+                                                        "text": "",
+                                                        "type": "goto",
+                                                        "goto": "parent"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "A2A",
+                            "text": "Transcosmos Indonesia merupakan perusahaan global yang bergerak pada bidang Business Process Outsourcing dan sudah memberikan pelayanan kepada banyak klien untuk membantu mengembangkan bisnis mereka.\n\nLayanan kami berfokus pada:\n*(CC)* Contact Center Services\n*(DM)* Digital Marketing\n*(HR)* Human Resources Services\n\nUntuk melanjutkan, silakan ketik kode pada pilihan di atas",
+                            "type": "nest_menu",
+                            "menus": {
+                                "CC": {
+                                    "id": "A21A",
+                                    "text": "Transcomos Indonesia menyediakan layanan Contact Center Services untuk membantu klien melayani para customernya dalam memberikan pelayanan terbaik. Kami sudah membantu klient di berbagai industri seperti FMCG, Ecommerce, Travel, Otomotif, Banking, Home Appliance, Electronic, Fintech, dsb.\n\nUntuk informasi lebih lanjut, silakan tinggalkan kontak Anda sebagai berikut:\nNama:\nPerusahaan:\nEmail:\nNo. Telepon",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "id": "A211A",
+                                        "text": "Terima kasih untuk data yang diberikan. Sales representative Kami akan segera menghubungi Anda\n\nSilakan ketik *0* untuk kembali ke menu utama",
+                                        "type": "nest_menu",
+                                        "menus": {
+                                            "0": {
+                                                "id": "A2111A",
+                                                "text": "",
+                                                "type": "goto",
+                                                "goto": "parent"
+                                            }
+                                        }
+                                    }
+                                },
+                                "DM": {
+                                    "id": "A22A",
+                                    "text": "Transcomos Indonesia menyediakan layanan Digital Marketing untuk membatu klien dalam mengembangkan perusahaan untuk go digital seperti pengembangan mobile apps, optimasi website, SEO, social media, digital marketing campaign, hingga pengembangan aplikasi digital lainnya.\n\nUntuk informasi lebih lanjut, silakan tinggalkan kontak Anda sebagai berikut:\nNama:\nPerusahaan:\nEmail:\nNo. Telepon",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "id": "A221A",
+                                        "text": "Terima kasih untuk data yang diberikan. Sales representative Kami akan segera menghubungi Anda\n\nSilakan ketik *0* untuk kembali ke menu utama",
+                                        "type": "nest_menu",
+                                        "menus": {
+                                            "0": {
+                                                "id": "A2211A",
+                                                "text": "",
+                                                "type": "goto",
+                                                "goto": "parent"
+                                            }
+                                        }
+                                    }
+                                },
+                                "HR": {
+                                    "id": "A23A",
+                                    "text": "Transcomos Indonesia membantu client dalam menyediakan tenaga kerja yang berkualitas untuk pekerjaan-pekerjaan tertentu seperti customer service, back office dsb.\n\nUntuk informasi lebih lanjut, silakan tinggalkan kontak Anda sebagai berikut:\nNama:\nPerusahaan:\nEmail:\nNo. Telepon",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "id": "A231A",
+                                        "text": "Terima kasih untuk data yang diberikan. Sales representative Kami akan segera menghubungi Anda\n\nSilakan ketik *0* untuk kembali ke menu utama",
+                                        "type": "nest_menu",
+                                        "menus": {
+                                            "0": {
+                                                "id": "A2311A",
+                                                "text": "",
+                                                "type": "goto",
+                                                "goto": "parent"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "id": "A3A",
+                            "text": "Transcomos Indonesia sangat memahami kebutuhan setiap individu, baik karyawan, pimpinan, sampai dengan stakeholder yang mendukung Kami. Sebagai bentuk pengembangan Kami, Kamu bisa memberikan saran terbaik dengan mengisi data berikut. Tenang saja, data Kamu sangat bersifat rahasia dan tidak akan dipublikasikan ke siapa pun.\nNama:\nNIP (jika karyawan):\nProject (jika karyawan):\nTopik (misal : HRD)\nSaran dan Masukan :",
+                            "type": "nest_menu",
+                            "menus": {
+                                "id": "A31A",
+                                "text": "Terima kasih atas sarannya, Kami akan segera menindaklanjuti saran Kamu agar Kami menjadi lebih baik.\n\nSilakan ketik *0* untuk kembali ke menu utama",
+                                "type": "nest_menu",
+                                "menus": {
+                                    "0": {
+                                        "id": "A311A",
+                                        "text": "",
+                                        "type": "goto",
+                                        "goto": "parent"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            ],
+            "EN": [
+                {
+                    "id": "BB",
+                    "text": "Hi <name>, welcome to Transcosmos Indonesia. please enter the number to continue the information\n*(1)* HR Department\n*(2)* Sales Department\n*(3)* Suggestion center",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "B1B",
+                            "text": "To continue the process, please enter the code below\n*(PAC)* To request certificate of employment \n*(VAC)* For vacancy information, how to apply job, and recruitment status",
+                            "type": "nest_menu",
+                            "menus": {
+                                "PAC": {
+                                    "id": "B11B",
+                                    "text": "To request a certificate of employment, please fill in the following information (Incomplete data will not procced)\nName :\nEmployee ID :\nProject :\nEmail :\nPhone No. :",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "id": "B111B",
+                                        "text": "Thank you for fill out the form. Your data has been recorded. Our HR team will be contact you directly once the document is ready.\nPlease type *0* to back to main menu.",
+                                        "type": "nest_menu",
+                                        "menus": {
+                                            "0": {
+                                                "id": "B1111B",
+                                                "text": "",
+                                                "type": "goto",
+                                                "goto": "parent"
+                                            }
+                                        }
+
+                                    }
+                                },
+                                "VAC": {
+                                    "id": "B12B",
+                                    "text": "To continue, please enter the code below\n*(LOW)* Vacancy\n*(APP)* How to apply job \n*(STS)* Recruitment status",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "LOW": {
+                                            "id": "B121B",
+                                            "text": "You can find out our latest vacancy on Instagram @transcosmos.id or visit https://www.jobstreet.co.id/id/job-search/jobs-at-pt-transcosmos-indonesia/",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "id": "B1211B",
+                                                "text": "Please type *0* to back to main menu.",
+                                                "type": "nest_menu",
+                                                "menus": {
+                                                    "0": {
+                                                        "id": "B12111B",
+                                                        "text": "",
+                                                        "type": "goto",
+                                                        "goto": "parent"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "APP": {
+                                            "id": "B122B",
+                                            "text": "If you are interested to apply job in Transcosmos Indonesia, please fill the following form http://bit.ly/PendaftaranTCID",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "id": "B1221B",
+                                                "text": "Please type *0* to back to main menu.",
+                                                "type": "nest_menu",
+                                                "menus": {
+                                                    "0": {
+                                                        "id": "B12211B",
+                                                        "text": "",
+                                                        "type": "goto",
+                                                        "goto": "parent"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "STS": {
+                                            "id": "B123B",
+                                            "text": "We appreciate your interest in Transcosmos Indonesia and thank you for providing us your information. As our standard, all of candidates will be review based on each requirement. If your have done written test or interview session please be wait,  our team required some time to review the result. Once you passed the selection, we will contact you within 2 weeks period. But if you don’t receive any information from us, you will be shortlisted as our potential candidates for the next time.",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "id": "B1231B",
+                                                "text": "Please type *0* to back to main menu.",
+                                                "type": "nest_menu",
+                                                "menus": {
+                                                    "0": {
+                                                        "id": "B12311B",
+                                                        "text": "",
+                                                        "type": "goto",
+                                                        "goto": "parent"
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "B2B",
+                            "text": "Thank you for contacting Sales Department of transcosmos Indonesia.\nWhat type of service you are seeking for?\n*(CC)* Contact Center Services\n*(DM)* Digital Marketing\n*(HR)* Human Resources Services\n\nPlease enter the code above to continue for the information",
+                            "type": "nest_menu",
+                            "menus": {
+                                "CC": {
+                                    "id": "B21B",
+                                    "text": "Transcosmos Indonesia provide the best services for your  Contact Center Operational, with expertise in different type of industries such as FMCG, Ecommerce, Travel, Automotive, Banking, Home Appliance, Electronic, Fintech, etc.\n\nIf you are interested to know more details, please complete the following form:\nName:\nCompany:\nEmail:\nPhone:",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "id": "B211B",
+                                        "text": "Thank you for interesting with our service. Our sales representative will contact you soon.\n\nPlease type *0* to back to main menu.",
+                                        "type": "nest_menu",
+                                        "menus": {
+                                            "0": {
+                                                "id": "B2111B",
+                                                "text": "",
+                                                "type": "goto",
+                                                "goto": "parent"
+                                            }
+                                        }
+                                    }
+                                },
+                                "DM": {
+                                    "id": "B22B",
+                                    "text": "Transcosmos Indonesia provide the best services for your digital solution such as mobile apps, website optimization, SEO, social media, digital marketing campaign, and other digital expertise.\n\nIf you are interested to know more details, please complete the following form:\nName:\nCompany:\nEmail:\nPhone:",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "id": "B221B",
+                                        "text": "Thank you for interesting with our service. Our sales representative will contact you soon.\n\nPlease type *0* to back to main menu.",
+                                        "type": "nest_menu",
+                                        "menus": {
+                                            "0": {
+                                                "id": "B2211B",
+                                                "text": "",
+                                                "type": "goto",
+                                                "goto": "parent"
+                                            }
+                                        }
+                                    }
+                                },
+                                "HR": {
+                                    "id": "B23B",
+                                    "text": "Transcosmos Indonesia provide the best services for your Human Resources fulfillment such as customer service, back office, etc.\n\nIf you are interested to know more details, please complete the following form:\nName:\nCompany:\nEmail:\nPhone:",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "id": "B231B",
+                                        "text": "Thank you for interesting with our service. Our sales representative will contact you soon.\n\nPlease type *0* to back to main menu.",
+                                        "type": "nest_menu",
+                                        "menus": {
+                                            "0": {
+                                                "id": "B2311B",
+                                                "text": "",
+                                                "type": "goto",
+                                                "goto": "parent"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "id": "B3B",
+                            "text": "Transcosmos Indonesia fully understand with every needs for each our employees, management, clients, and partners. For our improvement, your idea or suggestion would be important for us. Please complete the following form and we can assure your data will be kept very confidential.\n\nName:\nEmployee ID (only for employee):\nProject/ Client:\nTopic (ex. HR, Payroll)\nIdea/ Suggestion :",
+                            "type": "nest_menu",
+                            "menus": {
+                                "id": "B31B",
+                                "text": "Thank you for your idea and suggestion. We will follow up it soon.\n\nPlease type *0* to back to main menu.",
+                                "type": "nest_menu",
+                                "menus": {
+                                    "id": "B311B",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

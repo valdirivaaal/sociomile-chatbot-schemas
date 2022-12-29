@@ -1,0 +1,380 @@
+{
+    "schemas": {
+        "default": {
+            "survey": {
+                "active": false
+            },
+            "reset_keys": ["MENU", "0"],
+            "load_conversation": "wabaTemplateConversation",
+            "top_level_questions": [
+                {
+                    "id": "1",
+                    "text": "Tentang SMM",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "Pendaftaran dan Pembayaran",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "Akun",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "Toolkit",
+                    "type": "actions"
+                },
+                {
+                    "id": "5",
+                    "text": "Program PAUD",
+                    "type": "actions"
+                },
+                {
+                    "id": "6",
+                    "text": "Program SD SMP SMA",
+                    "type": "actions"
+                },
+                {
+                    "id": "7",
+                    "text": "Cuti/Berhenti/Refund",
+                    "type": "actions"
+                },
+                {
+                    "id": "8",
+                    "text": "Kontak langsung dengan Parents Care SMM",
+                    "type": "actions"
+                }
+            ],
+            "MENU": [
+                {
+                    "id": "1",
+                    "text": "Tentang SMM",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "Pendaftaran dan Pembayaran",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "Akun",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "Toolkit",
+                    "type": "actions"
+                },
+                {
+                    "id": "5",
+                    "text": "Program PAUD",
+                    "type": "actions"
+                },
+                {
+                    "id": "6",
+                    "text": "Program SD SMP SMA",
+                    "type": "actions"
+                },
+                {
+                    "id": "7",
+                    "text": "Cuti/Berhenti/Refund",
+                    "type": "actions"
+                },
+                {
+                    "id": "8",
+                    "text": "Kontak langsung dengan Parents Care SMM",
+                    "type": "actions"
+                }
+            ],
+            "1": [
+                {
+                    "id": "AA",
+                    "text": "1. Apa itu Sekolah Merdeka atau SMM?",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "A1A",
+                            "text": "Sekolah Murid Merdeka adalah sebuah sekolah inovatif yang berfokus pada metode belajar blended learning, sebuah metode belajar dengan pengalaman belajar baru yang menggabungkan sistem belajar luring dan daring. Sekolah Murid Merdeka merupakan PKBM dan tergolong sebagai sekolah non-formal. Blended Learning adalah sebuah metode belajar yang mengkombinasikan praktik pendidikan konvensional (luring) dengan pendidikan berbasis digital (daring)",
+                            "type": "text"
+                        }
+                    }
+                }
+            ],
+            "2": [
+                {
+                    "id": "BA",
+                    "text": "1. Syarat mendaftar di SMM\n2. Bagaimana cara mendaftar dan melakukan pembayaran untuk murid baru dan murid lama (pembayaran lanjutan) di SMM?\n3. Apa yang saya lakukan setelah pembayaran (baik pembayaran baru, lanjutan dan daftar ulang?\n4. Setelah mengisi form peserta didik selanjutnya apa yang harus dilakukan?\n5. Apakah bisa jika ingin mendaftar ketika periode program telah berjalan? Bagaimana cara nya?\n6. Detail Pembayaran di SMM\n7. Tipe pembayaran di SMM\n8. Kontak langsung dengan Parents Care SMM",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "B1A",
+                            "text": "Tidak ada syarat tertentu untuk mendaftar ke SMM, namun untuk jenjang PAUD usia minimal yakni berumur 2 tahun 6 bulan pada bulan Juli.\nDokumen yang dibutuhkan untuk mendaftar ke jenjang SD-SMA adalah:\n- Rapor/Ijazah jenjang sebelumnya\n- Surat Mutasi dari sekolah sebelumnya \n- Kartu Keluarga\n- Akta Kelahiran\n\nDokumen-dokumen tersebut dapat diunggah saat Ayah Bunda melengkapi Formulir Data Murid",
+                            "type": "text"
+                        },
+                        "2": {
+                            "id": "B2A",
+                            "text": "1. Murid baru\n2. Murid lama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "B21A",
+                                    "text": "Untuk murid baru, yang harus Bunda lakukan mengakses :\n\nPAUD : \nhttps://www.sekolahmuridmerdeka.id/jenjang-paud/ \n\nSD :\nhttps://www.sekolahmuridmerdeka.id/jenjang-sd/ \n\nSMP :\nhttps://www.sekolahmuridmerdeka.id/jenjang-smp/ \n\n\nSMA : \nhttps://www.sekolahmuridmerdeka.id/jenjang-sma/ \n\nKetika telah menyelesaikan pembayaran, sIlahkan cek email secara berkala untuk melihat informasi tentang pembayaran, program, dan cara belajar, atau bisa langsung cek di akun Sekolah.mu milik Ayah/Bunda :)",
+                                    "type": "text"
+                                },
+                                "2": {
+                                    "id": "B22A",
+                                    "text": "Untuk murid lama, yang harus Bunda lakukan mengakses :\n\nPAUD : \nhttps://www.sekolahmuridmerdeka.id/jenjang-paud/ \n\nSD :\nhttps://www.sekolahmuridmerdeka.id/jenjang-sd/ \n\nSMP :\nhttps://www.sekolahmuridmerdeka.id/jenjang-smp/ \n\n\nSMA : \nhttps://www.sekolahmuridmerdeka.id/jenjang-sma/ \n\nKetika telah menyelesaikan pembayaran, sIlahkan cek email secara berkala untuk melihat informasi tentang pembayaran, program, dan cara belajar, atau bisa langsung cek di akun Sekolah.mu milik Ayah/Bunda :)",
+                                    "type": "text"
+                                }
+                            }
+                        },
+                        "3": {
+                            "id": "B3A",
+                            "text": "Terimakasih sudah melakukan pembayaran :)\nLangkah selanjut nya yang harus Ayah/Bunda lakukan adalah : \n\nJenjang PAUD :\n\n- Login ke https://www.sekolah.mu dengan akun yang digunakan melakukan pendaftaran dan pembayaran, di tab \"programmu\" telah tersedia program program dari paket yang sudah dibeli\n- Silahkan Cek di Inbox email Ayah/Bunda secara berkala, karena akan dikirimkan secara bertahap status pembayaran, dan cara mulai belajar di SMM \n\nJenjang SD SMP SMA :\n\n- Login ke www.sekolah.mu dengan akun yang digunakan melakukan pendaftaran dan pembayaran, di tab \"programmu\" telah tersedia program program dari paket yang sudah dibeli\n- Silahkan Cek di Inbox email Ayah/Bunda secara berkala, karena akan dikirimkan secara bertahap status pembayaran, cara mulai belajar di SMM, dan langkah yang harus diikuti setelah menyelesaikan pembayaran, yaitu mengisikan form data siswa untuk kebutuhan Data Pokok Pendidikan anak, NISN, dan pelajaran pelajaran tertentu.\n- Khusus untuk SMA yang ingin mengambil jurusan IPC silahkan mengisikan form jurusan yang tertera di email Ayah/Bunda ya\n\nTerimakasih",
+                            "type": "text"
+                        },
+                        "4": {
+                            "id": "B4A",
+                            "text": "Silahkan menunggu dalam 2x24 jam akan diinputkan program Agama dan program pilihan khusus untuk SMA jurusan IPC ke akun Sekolah.mu yang digunakan untuk membayar",
+                            "type": "text"
+                        },
+                        "5": {
+                            "id": "B5A",
+                            "text": "Bisa. Tidak perlu khawatir untuk ketertinggalan pelajaran karena akan ada rekaman video belajar di dalam aktivitas program belajar anak, dan asesmen tetap bisa dikumpulkan.\nToolkit akan mulai dikirimkan setiap jam 2 siang setiap hari nya untuk yang mendaftar ketika periode progam tengah berjalan. Begitu juga untuk program belajar anak. akan diinputkan setiap jam 2 siang setiap hari nya untuk yang baru mendaftar. \n\nProgram belajar akan berakhir di akhir periode yang telah ditentukan meskipun baru mengikuti di tengah berjalan nya suatu periode program belajar, akan tetap mengakhiri periode pembelajaran serentak sesuai yang telah ditentukan.\n\nCara nya bisa diikuti seperti langkah nomor 1&2.",
+                            "type": "text"
+                        },
+                        "6": {
+                            "id": "B6A",
+                            "text": "SPP yang Ayah Bunda bayarkan sudah termasuk:\n- Materi pembelajaran dengan sesi tatap muka online (PAUD 2x seminggu, SD 4-5x seminggu)\n- Toolkit/perlengkapan belajar dasar (bukan tambahan)\n- Biaya pengiriman toolkit ke seluruh Indonesia (biaya pengiriman toolkit ke luar negeri akan ditanggung oleh orang tua)\n- Tanya.mu = Fitur komunikasi chat bersama guru dan orang tua lainnya\n- Workshop orangtua 1 tahun sekali, dan sesi bersama orangtua per 3 bulan",
+                            "type": "text"
+                        },
+                        "7": {
+                            "id": "B7A",
+                            "text": "Tipe pembayaran di SMM ada dua, yaitu Pembayaran Penuh/Lunas dan Pembayaran Cicilan.\n\nPembayaran penuh adalah pembayaran yang dilakukan lunas ketika mendaftar di SMM,\nPembayaran cicilan adalah pembayaran yang dilakukan secara berkala di tanggal 10 setiap bulan nya.\n\nUntuk info pembayaran cicilan ke-2 dan seterus nya akan diinfokan melalui email yang digunakan untuk mendaftar di SMM,\nJika ditanggal 10 setiap bulan nya belum melakukan pembayaran, program belajar akan otomatis tidak bisa diakses sementara sampai pembayaran di bulan tersebut selesai ",
+                            "type": "text"
+                        },
+                        "8": {
+                            "id": "B8A",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "cs"
+                        }
+                    }
+                }
+            ],
+            "3": [
+                {
+                    "id": "CA",
+                    "text": "1. Akun yang digunakan untuk belajar \n2. Email yang digunakan untuk membuatkan akun\n3. Jika terlanjur membayarkan dengan 1 akun untuk 2 anak/lebih\n4. Jika ingin memindahkan program belajar dari satu akun ke akun lain\n5. Akun khusus orang tua\n6. Merelasikan akun anak dan akun orang tua\n7. Lupa Password\n8. Mengganti Email akun\n9. Kontak langsung dengan Parents Care SMM",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "C1A",
+                            "text": "Akun yang digunakan untuk belajar adalah akun yang digunakan untuk membayar. Jika bunda ingin mendaftarkan lebih dari 1 anak kami sarankan untuk membuatkan akun untuk masing-masing anak agar tidak saling bentrok jadwal belajar dan rapor serta sertifikat nya",
+                            "type": "text"
+                        },
+                        "2": {
+                            "id": "C2A",
+                            "text": "Email yang digunakan untuk membuatkan akun bisa dengan email apapun, tetapi 1 akun hanya bisa menggunakan 1 email",
+                            "type": "text"
+                        },
+                        "3": {
+                            "id": "C3A",
+                            "text": "Silahkan hubungi CS SMM dengan mengisikan data berikut ya \n\nNama :\nEmail akun :\nJenjang :\nSkema pembayaran : (Cicilan/Penuh)\nKeluhan : \n\nTerimakasih, nanti akan dihubungi kembali oleh CS SMM untuk langkah-langkah pemindahan nya ya :)",
+                            "type": "text"
+                        },
+                        "4": {
+                            "id": "C4A",
+                            "text": "Silahkan hubungi CS SMM dengan mengisikan data berikut ya \n\nNama :\nEmail akun :\nJenjang :\nSkema pembayaran : (Cicilan/Penuh)\nKeluhan : \n\nTerimakasih, nanti akan dihubungi kembali oleh CS SMM untuk langkah-langkah pemindahan nya ya :)\n\nCatatan : Program akan otomatis mengulang dari awal.",
+                            "type": "text"
+                        },
+                        "5": {
+                            "id": "C5A",
+                            "text": "Akun khusus orang tua bersifat opsional atau \"tidak wajib\". Akun untuk orang tua bertujuan untuk memantau perkembangan belajar anak tanpa harus masuk ke akun anak. Dengan syarat harus membuat relasi antara akun anak dan akun orang tua.\nTapi jika dirasa cukup menggunakan satu akun untuk belajar dan memantau perkembangan belajar anak, maka tidak perlu membuatkan akun orang tua kembali ya :)",
+                            "type": "text"
+                        },
+                        "6": {
+                            "id": "C6A",
+                            "text": "Untuk langkahnya sebagai berilkut ya \n1. Bunda login akun orang tua sekolahmu \n2. Klik akun\n3. pilih *lihat profil*\n4. klik *data anak* \n5. klik *tambah* \n6. masukan email anak yang sudah dibuatkan menjadi akun sekolahmu. \n7. logout dari akun orang tua , kemudian login menggunakan akun murid untuk konfirmasi",
+                            "type": "text"
+                        },
+                        "7": {
+                            "id": "C7A",
+                            "text": "Bunda bisa mengubahkan nya dengan klik \"Lupa Password\", atau bunda bisa menghubungi CS SMM dengan mengisikan data berikut \nNama :\nEmail akun :\nPassword baru :\n\nAkan kami bantu ubahkan ya bunda :)",
+                            "type": "text"
+                        },
+                        "8": {
+                            "id": "C8A",
+                            "text": "Perubahan email suatu akun hanya bisa diganti jika belum melakukan verifikasi akun di bagian profil.\nJika sudah mermverifikasi suatu akun maka email sudah bersifat permanen dan tidak bisa diubahkan ",
+                            "type": "text"
+                        },
+                        "9": {
+                            "id": "C9A",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "cs"
+                        }
+                    }
+                }
+            ],
+            "4": [
+                {
+                    "id": "DA",
+                    "text": "1. Apa itu toolkit?\n2. Macam-macam toolkit\n3. Pengiriman toolkit\n4. Cek status pengiriman toolkit\n5. Ubah alamat pengiriman toolkit\n6. Link tokopedia toolkit basic dan add on SMM\n7. Kontak langsung dengan Parents Care SMM",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "D1A",
+                            "text": "Toolkit adalah media belajar yang akan digunakan kawan murid SMM didalam kegiatan belajar mengajar baik saat belajar live ataupun belajar mandiri. Toolkit akan dikirimkan setiap 3 bulan ke alamat masing masing untuk semua jenjang di SMM.",
+                            "type": "text"
+                        },
+                        "2": {
+                            "id": "D2A",
+                            "text": "Toolkit akan berbeda beda setiap jenjang nya, namun ada 2 macam toolkit, yaitu \n\n- toolkit basic (wajib) yang sudah langsung didapatkan ketika sudah melakukan pembayaran di SMM\n- toolkit add-on (tidak wajib) yang bisa didapatkan di tokopedia Sekolah.mu, bersifat tidak wajib karena toolkit add-on adalah toolkit tambahan yang disediakan SMM",
+                            "type": "text"
+                        },
+                        "3": {
+                            "id": "D3A",
+                            "text": "Toolkit akan dikirimkan ke alamat masing-masing sesuai yang diisikan saat melakukan pembayaran, jasa pengiriman yang digunakan SMM adalah JNE dan JNT yang akan langsung dipilihkan oleh pihak SMM \nPeriode pengiriman toolkit dibagi menjadi 2 : \n\n- Sebelum masuk kegiatan belajar mengajar toolkit akan dikirimkan serempak dan secara bertahap H-2 Minggu kegiatan belajar mengajar dimulai.\n- Sesudah masuk kegiatan belajar mengajar toolkit akan dikirimkan H+4 hari setelah pembayaran selesai",
+                            "type": "text"
+                        },
+                        "4": {
+                            "id": "D4A",
+                            "text": "Mohon maaf untuk saat ini bunda belum bisa melakukan pengecekkan secara mandiri pengiriman toolkit nya, \nKami bisa bantu bunda dengan menghubungi CS SMM dan mengisikan data berikut ya \nNama :\nEmail akun :\nJenjang :\nKeluhan : Cek resi toolkit",
+                            "type": "text"
+                        },
+                        "5": {
+                            "id": "D5A",
+                            "text": "Untuk mengubah alamat pengiriman toolkit, silahkan hubungi CS SMM dan mengisikan data berikut : \n\nNama :\nEmail Akun :\nJenjang :\nAlamat baru : \nKeluhan : Ubah alamat toolkit",
+                            "type": "text"
+                        },
+                        "6": {
+                            "id": "D6A",
+                            "text": "KB Basic:\nhttps://www.tokopedia.com/sekolahmu/smm-paud-playkit-basic-paud-kb-term-1 \n\nKB Add-on:\nhttps://www.tokopedia.com/sekolahmu/smm-paud-playkit-add-on-paud-kb-term-1\n\nPAUD A basic:\nhttps://www.tokopedia.com/sekolahmu/smm-paud-playkit-basic-paud-a-term-1\n\nPAUD A add-on:\nhttps://www.tokopedia.com/sekolahmu/smm-paud-playkit-add-on-paud-a-term-1 \n\nPAUD B basic: \nhttps://www.tokopedia.com/sekolahmu/smm-paud-playkit-basic-paud-b-term-1\n\nPAUD B add-on:\nhttps://www.tokopedia.com/sekolahmu/smm-paud-playkit-add-on-paud-b-term-1",
+                            "type": "text"
+                        },
+                        "7": {
+                            "id": "D7A",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "cs"
+                        }
+                    }
+                }
+            ],
+            "5": [
+                {
+                    "id": "EA",
+                    "text": "1. Tentang ijazah, Raport, Sertifikat dan eportofolio ?\n2. Jadwal belajar\n3. Cara Belajar di SMM\n4. Rasio Guru dan Murid\n5. Kelas Add on atau Kelas Tambahan\n6. Tanya.mu\n7. Kontak langsung dengan Parents Care SMM",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "E1A",
+                            "text": "Murid PAUD SMM tidak mendapatkan ijazah tetapi sertifikat kelulusan (sertifikat penyelesaian jenjang PAUD) berserta Raport, Sertifikat penyelesaian program dan e-portofolio\n\nMurid SD, SMP, SMA SMM akan mendapatkan ijazah setara Paket A, Paket B dan Paket C berserta Raport, Sertifikat dan e-portofolio",
+                            "type": "text"
+                        },
+                        "2": {
+                            "id": "E2A",
+                            "text": "Cara belajar di SMM dibagi menjadi 2 cara, yaitu, belajar live bersama guru dan belajar mandiri\n\nBelajar Live bersama guru diselenggarakan 2 kali semingu dengan jadwal yang dapat bunda pilih sendiri, pilihan jadwal nya adalah :\n- Senin & Kamis\n- Selasa & Jumat\n- Rabu & Sabtu\n- Sabtu & Minggu\njadwal belajar dapat dipilih secara mandiri melalui program belajar ya :)",
+                            "type": "text"
+                        },
+                        "3": {
+                            "id": "E3A",
+                            "text": "Berikut dokumen yang bisa bunda baca untuk informasi tentang cara memulai belajar di SMM \nhttps://www.sekolahmuridmerdeka.id/mulai-belajar-SMM",
+                            "type": "text"
+                        },
+                        "4": {
+                            "id": "E4A",
+                            "text": "Perbandingan Guru dan Murid SMM adalah 1:70 per kelas nya. Dan dibagi menjadi 2 waktu belajar (pagi & sore) setiap belajar live yang bisa dipilih bebas sesuai keinginan dan kebutuhan Bunda dan Anak ya",
+                            "type": "text"
+                        },
+                        "5": {
+                            "id": "E5A",
+                            "text": "Kelas Add on atau Kelas tambahan adalah kelas belajar live dengan rasio antara Guru dan Murid 1:10. Kelas Add on adalah kelas berbayar untuk setiap satu pertemuan saja, dan dapat diakses di dalam program belajar",
+                            "type": "text"
+                        },
+                        "6": {
+                            "id": "E6A",
+                            "text": "Tanya.mu adalah fitur yang disediakan oleh SMM didalam setiap program belajar untuk melakukan komunikasi langsung dengan Guru masing masing kelas.",
+                            "type": "text"
+                        },
+                        "7": {
+                            "id": "E7A",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "cs"
+                        }
+                    }
+                }
+            ],
+            "6": [
+                {
+                    "id": "FA",
+                    "text": "1. Tentang ijazah, Raport, Sertifikat dan eportofolio ?\n2. Permintaan Surat Keterangan diterima di SMM?\n3. Permintaan Surat Mutasi dari SMM\n4. Pelajaran dan Jadwal Belajar SD, SMP, dan SMA\n5. Rasio Guru dan Murid\n6. Jurusan di SMA\n7. Kontak langsung dengan Parents Care di SMM",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "F1A",
+                            "text": "Murid PAUD SMM tidak mendapatkan ijazah tetapi sertifikat kelulusan (sertifikat penyelesaian jenjang PAUD) berserta Raport, Sertifikat penyelesaian program dan e-portofolio\n\nMurid SD, SMP, SMA SMM akan mendapatkan ijazah setara Paket A, Paket B dan Paket C berserta Raport, Sertifikat dan e-portofolio",
+                            "type": "text"
+                        },
+                        "2": {
+                            "id": "F2A",
+                            "text": "Silahkan isi data berikut ya Ayah/Bunda :\nNama :\nNISN :\nTempat, tgl Lahir :\nJenis Kelamin :\nTingkat kelas :\nNama Orang tua/Wali :\nAlamat :\nPindahan dari :\nEmail aktif untuk dikirimi surat :\n\nLalu kirimkan kepada CS SMM ya bunda data nya, dalam maksimal 2x24 jam akan dikirimkan ke email aktif yang bunda isikan, silahkan dicek secara berkala di email tersebut ya :)",
+                            "type": "text"
+                        },
+                        "3": {
+                            "id": "F3A",
+                            "text": "Silahkan kirimkan Surat Penerimaan Murid dari sekolah baru kepada CS SMM, lalu mengisi exit form : https://www.sekolahmuridmerdeka.id/exit-form-smm",
+                            "type": "text"
+                        },
+                        "4": {
+                            "id": "F4A",
+                            "text": "Silahkan dicek di :\n\nSD :\nhttps://www.sekolahmuridmerdeka.id/jenjang-sd/ \n\nSMP :\nhttps://www.sekolahmuridmerdeka.id/jenjang-smp/ \n\nSMA :\nhttps://www.sekolahmuridmerdeka.id/jenjang-sma/ ",
+                            "type": "text"
+                        },
+                        "5": {
+                            "id": "F5A",
+                            "text": "Perbandingan Guru dan Murid SMM adalah 1:70 per kelas nya. Dan dibagi menjadi 2 waktu belajar (pagi & sore) setiap belajar live yang bisa dipilih bebas sesuai keinginan dan kebutuhan Bunda dan Anak ya",
+                            "type": "text"
+                        },
+                        "6": {
+                            "id": "F6A",
+                            "text": "Ada 3 jurusan di SMA, yaitu, IPA, IPS, dan IPC, pemilihan jurusan dapat dilakukan ketika sudah melakukan pendaftaran dan pembayaran di SMM, akan dikirimkan form pemilihan jurusan",
+                            "type": "text"
+                        },
+                        "7": {
+                            "id": "F7A",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "cs"
+                        }
+                    }
+                }
+            ],
+            "7": [
+                {
+                    "id": "GA",
+                    "text": "1. Cuti sementara, dan tidak melanjutkan belajar di SMM?\n2. Ajukan Refund program di SMM?",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "G1A",
+                            "text": "Untuk melakukan cuti sementara, tidak melanjutkan belajar di SMM dan Pengajuan surat mutasi ke sekolah lain bisa mengisi form di link berikut ini : https://www.sekolahmuridmerdeka.id/exit-form-smm",
+                            "type": "text"
+                        },
+                        "2": {
+                            "id": "G2A",
+                            "text": "Silahkan hubungi CS SMM dan mengisikan data berikut ya bunda\n1. Nama Akun :\n2. Email Akun :\n3. Nama Murid :\n4. Nama Program :\n5. Nama Bank Penerima :\n6. No Rekening Penerima :\n7. Nama Penerima :\n8. Bukti Transfer : (screenshot)\n9. No Invoice : \n10. Alasan Refund : ",
+                            "type": "text"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "active": true,
+    "mode": "basic",
+    "greetingMessage": "Halo, selamat datang di layanan WhatsApp Kami. Silahkan ketik pilihan angka dibawah ini untuk melanjutkan informasi berikutnya :",
+    "exit_keyword": "",
+    "order_keywords": ["NAMA", "PERUSAHAAN", "DEMO PRODUK", "NO. HANDPHONE", "EMAIL"],
+    "order_reply_msg": "",
+    "to_cs_keyword": "",
+    "response_cs_keyword": "Terimakasih atas data yang diberikan, tim kami akan segera menghubungi Anda",
+    "listCommandMessage": "",
+    "contactCsMessage": "",
+    "prefixGreeting": "",
+    "check_office_hour": true,
+    "concat_greeting_and_menu": true,
+    "no_ofh_bot_msg": ""
+}

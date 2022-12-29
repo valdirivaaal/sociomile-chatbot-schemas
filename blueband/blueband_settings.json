@@ -1,0 +1,1217 @@
+{
+    "schemas": {
+        "default": {
+            "survey": {
+                "active": false
+            },
+            "reset_keys": [
+                "0"
+            ],
+            "load_conversation": "WabaTemplateConversation",
+            "dual_language": true,
+            "language_localization": {
+                "ID": {
+                    "auto_close_msg": ""
+                },
+                "EN": {
+                    "auto_close_msg": ""
+                }
+            },
+            "expire_time": 5,
+            "top_level_questions": [
+                {
+                    "id": "1",
+                    "text": "Bahasa Indonesia",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "English",
+                    "type": "actions"
+                }
+            ],
+            "MAIN_MENU": [
+                {
+                    "id": "1",
+                    "text": "Bahasa Indonesia",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "English",
+                    "type": "actions"
+                }
+            ],
+            "DICTIONARY_KEYS": {},
+            "1": [
+                {
+                    "id": "1A",
+                    "current_menu": "ID",
+                    "text": "Apakah Mitra Bisnis berkenan untuk menerima segala bentuk informasi dan promosi dari Blue Band Kitchen Master?",
+                    "current_lang": "ID",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "button",
+                    "menus": {
+                        "YA": {
+                            "id": "YA",
+                            "title": "Ya",
+                            "current_menu": "1-YA",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "targeted_menu",
+                            "targeted_path": "ID-0"
+                        },
+                        "TIDAK": {
+                            "id": "TIDAK",
+                            "title": "Tidak",
+                            "current_menu": "1-TIDAK",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "targeted_menu",
+                            "targeted_path": "ID-0"
+                        },
+                        "MENU": {
+                            "id": "MENU",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "targeted_menu",
+                            "targeted_path": "ID-0"
+                        }
+                    }
+                }
+            ],
+            "ID": [
+                {
+                    "id": "AA",
+                    "current_menu": "ID",
+                    "text": "Terima kasih sudah menghubungi Blue Band Kitchen Master\nSilahkan pilih menu dibawah  ini:\n*1*. Mengenal Upfield Professional\n*2*. Bergabung dengan komunitas kami\n*3*. Dapatkan Produk Kami\n*4*. Berbicara dengan Customer Service\n*5*. Konsultasi dengan chef kami",
+                    "current_lang": "ID",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "list",
+                    "menus": {
+                        "1": {
+                            "id": "1A",
+                            "current_menu": "ID-1",
+                            "title": "Mengenal Upfield Professional",
+                            "text": "Silakan kunjungi web kami untuk mengenal tentang Upfield Professional dan produk-produk Blue Band Master https://www.upfieldprofessional.com/id-id\n\nKetik angka *0* untuk kembali ke menu utama, angka *4* untuk terhubung dengan customer service, atau angka *5* untuk terhubung dengan cheff kami, ketik *END* untuk mengakhiri sesi",
+                            "type": "nest_menu",
+                            "interactive_type": "list",
+                            "interactive_message": true,
+                            "next_bubbles": [],
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "ID-0"
+                                },
+                                "4": {
+                                    "id": "4",
+                                    "title": "Berbicara dengan CS",
+                                    "current_menu": "ID-4",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "ID-0-menus-4"
+                                },
+                                "5": {
+                                    "id": "5",
+                                    "title": "Konsultasi dengan Cheff",
+                                    "current_menu": "ID-5",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "ID-0-menus-5"
+                                },
+                                "END": {
+                                    "id": "END",
+                                    "title": "Akhiri Sessi",
+                                    "current_menu": "END_SESSION",
+                                    "text": "Sesi percakapan kamu sudah berakhir. Terima kasih!",
+                                    "type": "end_session"
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "2A",
+                            "current_menu": "ID-2",
+                            "title": "Bergabung dengan komunitas kami",
+                            "text": "Bergabung bersama komunitas kami untuk mendapatkan inspirasi dan solusi bagi usaha Anda\n\nSilahkan klik tautan berikut untuk Bergabung dengan komunitas kami:\n1. Facebook bit.ly/bluebandkitchenmasterindonesia\n2. Instagram bit.ly/kitchenmasterindonesia\n\nKetik angka *0* untuk kembali ke menu utama, angka *4* untuk terhubung dengan customer service, atau angka *5* untuk terhubung dengan chef kami, ketik *END* untuk mengakhiri sesi",
+                            "type": "nest_menu",
+                            "interactive_type": "list",
+                            "interactive_message": true,
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "ID-0"
+                                },
+                                "4": {
+                                    "id": "4",
+                                    "title": "Berbicara dengan CS",
+                                    "current_menu": "ID-4",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "ID-0-menus-4"
+                                },
+                                "5": {
+                                    "id": "5",
+                                    "title": "Konsultasi dengan Cheff",
+                                    "current_menu": "ID-5",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "ID-0-menus-5"
+                                },
+                                "END": {
+                                    "id": "END",
+                                    "title": "Akhiri Sessi",
+                                    "current_menu": "END_SESSION",
+                                    "text": "Sesi percakapan kamu sudah berakhir. Terima kasih!",
+                                    "type": "end_session"
+                                }
+                            }
+                        },
+                        "3": {
+                            "id": "3A",
+                            "current_menu": "ID-3",
+                            "title": "Dapatkan Produk Kami",
+                            "text": "Terima kasih atas kepercayaan Anda terhadap produk Blue Band Master dari Upfield Professional\n\nKetik *1* untuk mendapatkan penawaran dan solusi terbaik bagi Mitra Bisnis dari distributor resmi kami.\n\nAtau, kunjungi Blue Band official store di bawah untuk mendapatkan produk kami di e-commerce\nTokopedia  bit.ly/bluebandofficialtokopedia\nShopee bit.ly/bluebandofficialshopee\n\nKetik angka *0* untuk kembali ke menu utama, angka *4* untuk terhubung dengan customer service, atau angka *5* untuk terhubung dengan chef kami, ketik *END* untuk mengakhiri sesi",
+                            "type": "nest_menu",
+                            "interactive_type": "list",
+                            "interactive_message": true,
+                            "menus": {
+                                "1": {
+                                    "id": "1",
+                                    "current_menu": "ID-3-1",
+                                    "text": "",
+                                    "type": "sequences",
+                                    "required_data": [
+                                        {
+                                            "id": "SQ1",
+                                            "index": "register",
+                                            "label": "area",
+                                            "text": "Anda bisa memilih salah satu area dibawah ini untuk mendaftarkan usaha kamu ke distributor resmi Upfield Profesional. Silahkan pilih salah satu menu dengan mengetikkan pilihan nomor di bawah ini (Contoh: *1*) :\n\n*1*. Sumatera\n*2*. Jabodetabek\n*3*. Jawa Barat\n*4*. Jawa Tengah - DIY\n*5*. Jawa Timur\n*6*. Bali\n*7*. Banjarmasin\n*8*. Samarinda - Pontianak - Balikpapan\n*9*. Sulawesi\n*10*. Papua Maluku",
+                                            "type": "text",
+                                            "validation": "validate_choices",
+                                            "valid_choices": [
+                                                "1",
+                                                "2",
+                                                "3",
+                                                "4",
+                                                "5",
+                                                "6",
+                                                "7",
+                                                "8",
+                                                "9",
+                                                "10"
+                                            ],
+                                            "area_": {
+                                                "1": "Sumatera",
+                                                "2": "Jabodetabek",
+                                                "3": "Jawa Barat",
+                                                "4": "Jawa Tengah - DIY",
+                                                "5": "Jawa Timur",
+                                                "6": "Bali",
+                                                "7": "Banjarmasin",
+                                                "8": "Samarinda - Pontianak - Balikpapan",
+                                                "9": "Sulawesi",
+                                                "10": "Papua Maluku",
+                                                "11": "Tenjo Humaidi",
+                                                "12": "Cicayur Syahrul",
+                                                "13": "Tebet Pingot"
+                                            },
+                                            "error_msg": "Silahkan pilih salah satu menu dengan mengetikkan pilihan nomor di bawah ini (Contoh: *1*) :\n\n*1*. Sumatera\n*2*. Jabodetabek\n*3*. Jawa Barat\n*4*. Jawa Tengah - DIY\n*5*. Jawa Timur\n*6*. Bali\n*7*. Banjarmasin\n*8*. Samarinda - Pontianak - Balikpapan\n*9*. Sulawesi\n*10*. Papua Maluku"
+                                        },
+                                        {
+                                            "id": "SQ2",
+                                            "index": "register",
+                                            "label": "nama",
+                                            "text": "Untuk mendaftarkan usaha pada  area yang sudah Anda pilih silahkan isi data di bawah ini :\n\nNama :",
+                                            "type": "text",
+                                            "validation": null,
+                                            "error_msg": ""
+                                        },
+                                        {
+                                            "id": "SQ3",
+                                            "index": "register",
+                                            "label": "notlp",
+                                            "text": "No telepon :",
+                                            "type": "text",
+                                            "validation": null,
+                                            "error_msg": ""
+                                        },
+                                        {
+                                            "id": "SQ4",
+                                            "index": "register",
+                                            "label": "alamat",
+                                            "text": "Alamat :",
+                                            "type": "text",
+                                            "validation": null,
+                                            "error_msg": ""
+                                        },
+                                        {
+                                            "id": "SQ5",
+                                            "index": "register",
+                                            "label": "provinsi",
+                                            "text": "Provinsi :",
+                                            "type": "text",
+                                            "validation": null,
+                                            "error_msg": ""
+                                        },
+                                        {
+                                            "id": "SQ6",
+                                            "index": "register",
+                                            "label": "kota",
+                                            "text": "Kota :",
+                                            "type": "text",
+                                            "validation": null,
+                                            "error_msg": ""
+                                        },
+                                        {
+                                            "id": "SQ7",
+                                            "index": "register",
+                                            "label": "kecamatan",
+                                            "text": "Kecamatan :",
+                                            "type": "text",
+                                            "validation": null,
+                                            "error_msg": ""
+                                        },
+                                        {
+                                            "id": "SQ8",
+                                            "index": "register",
+                                            "label": "kelurahan",
+                                            "text": "Kelurahan :",
+                                            "type": "text",
+                                            "validation": null,
+                                            "error_msg": ""
+                                        },
+                                        {
+                                            "id": "SQ9",
+                                            "index": "register",
+                                            "label": "namausaha",
+                                            "text": "Nama usaha :",
+                                            "type": "text",
+                                            "validation": null,
+                                            "error_msg": ""
+                                        },
+                                        {
+                                            "id": "SQ10",
+                                            "index": "register",
+                                            "label": "jenisusaha",
+                                            "text": "Jenis usaha (bakery, restoran, catering, martabak, dll) :",
+                                            "type": "text",
+                                            "validation": null,
+                                            "error_msg": ""
+                                        },
+                                        {
+                                            "id": "SQ11",
+                                            "index": "register",
+                                            "label": "pemakaian",
+                                            "text": "Rata-rata pemakaian margarin dalam 1 bulan berapa kg :",
+                                            "type": "text",
+                                            "validation": null,
+                                            "error_msg": ""
+                                        },
+                                        {
+                                            "id": "SQ12",
+                                            "index": "register",
+                                            "label": "summary",
+                                            "text": "Terima kasih atas konfirmasinya. Berikut detail informasi Anda :\n\nNama : ~register.nama~\nNo telepon : ~register.notlp~\nAlamat : ~register.alamat~\nProvinsi : ~register.provinsi~\nKota : ~register.kota~\nKecamatan : ~register.kecamatan~\nKelurahan : ~register.kelurahan~\nNama usaha : ~register.namausaha~\nJenis usaha : ~register.jenisusaha~\nRata-rata pemakaian margarin dalam 1 bulan berapa kg : ~register.pemakaian~",
+                                            "previous_summary": true,
+                                            "next_bubbles": [
+                                                {
+                                                    "type": "interactive-button",
+                                                    "text": "Apakah data diatas sudah sesuai?",
+                                                    "menus": {
+                                                        "YA": {
+                                                            "id": "YA",
+                                                            "title": "Ya"
+                                                        },
+                                                        "TIDAK": {
+                                                            "id": "TIDAK",
+                                                            "title": "Tidak"
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "type": "goto_index",
+                                            "goto_index": {
+                                                "YA": 12,
+                                                "TIDAK": 1
+                                            },
+                                            "run_method_if_NO": {
+                                                "status": true,
+                                                "method_name": "resetSequenceReminder"
+                                            },
+                                            "validation": "validate_choices",
+                                            "valid_choices": [
+                                                "YA",
+                                                "TIDAK"
+                                            ],
+                                            "summary": {
+                                                "YA": "Ya",
+                                                "TIDAK": "Tidak"
+                                            },
+                                            "error_msg": "Pilihan Anda tidak sesuai!\n\nApakah data diatas sudah sesuai?(*Ya* / *Tidak*)"
+                                        },
+                                        {
+                                            "id": "SQ13",
+                                            "text": "",
+                                            "index": "",
+                                            "label": "",
+                                            "type": "completed",
+                                            "create_ticket": true,
+                                            "end_session": true,
+                                            "validation": null,
+                                            "error_msg": "",
+                                            "create_ticket_from_template": false,
+                                            "ticket_template_as_completed_template": false,
+                                            "completed_template": "Terima kasih atas konfirmasinya. \nBerikut kontak PIC sesuai area yang Anda pilih : \n~pic_name~\n~pic_number~\n\nKami akan memproses pendaftaran usaha Bapak/Ibu paling lambat dalam waktu 1x24 jam kerja. Jika dalam waktu tersebut belum ada konfirmasi, Bapak/Ibu dapat menghubungi Kami kembali.",
+                                            "run_method": true,
+                                            "method_name": "bluebandOrderNotif",
+                                            "use_waba_template": true,
+                                            "reply_from_method": true,
+                                            "waba_templates": {
+                                                "namespace": "633adb3de4f949454d3bc757",
+                                                "name": "notif_order_indonesia_revisi",
+                                                "type": "template",
+                                                "message": "Dear Bapak/Ibu {{1}}\nAda order masuk baru dengan detail sebagai berikut :\n\nNama : {{2}}\nNo telepon : {{3}}\nAlamat : {{4}}\nProvinsi : {{5}}\nKota : {{6}}\nKecamatan : {{7}}\nKelurahan : {{8}}\nNama usaha : {{9}}\nJenis usaha : {{10}}\nRata-rata pemakaian margarin dalam 1 bulan berapa kg : {{11}}\n\nMohon untuk segera diproses dalam waktu 1x24 jam kerja.",
+                                                "message_type": "text",
+                                                "language": {
+                                                    "code": "id",
+                                                    "policy": "deterministic"
+                                                },
+                                                "param_size": 11,
+                                                "is_followup_reply": true
+                                            },
+                                            "data_references": {
+                                                "1": {
+                                                    "pic_name": "M. Irfansyah",
+                                                    "pic_number": "6282166081082"
+                                                },
+                                                "2": {
+                                                    "pic_name": "Ari Baiduri",
+                                                    "pic_number": "628118823361"
+                                                },
+                                                "3": {
+                                                    "pic_name": "Yadi",
+                                                    "pic_number": "628112101393"
+                                                },
+                                                "4": {
+                                                    "pic_name": "Teguh N",
+                                                    "pic_number": "628112547180"
+                                                },
+                                                "5": {
+                                                    "pic_name": "Doddy",
+                                                    "pic_number": "6281110621159"
+                                                },
+                                                "6": {
+                                                    "pic_name": "Silvi",
+                                                    "pic_number": "628112297610"
+                                                },
+                                                "7": {
+                                                    "pic_name": "Yusuf",
+                                                    "pic_number": "628118520891"
+                                                },
+                                                "8": {
+                                                    "pic_name": "Gunawan",
+                                                    "pic_number": "6281227555911"
+                                                },
+                                                "9": {
+                                                    "pic_name": "Rudi",
+                                                    "pic_number": "6282190348101"
+                                                },
+                                                "10": {
+                                                    "pic_name": "Rahim",
+                                                    "pic_number": "6281112521092"
+                                                }
+                                            },
+                                            "closing_bubbles": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "Terima kasih telah menghubungi Customer Care Upfield Profesional. Semoga usaha Anda menjadi semakin berkembang dengan kemudahan memperoleh produk-produk kami."
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "prev_menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "ID-0"
+                                        },
+                                        "END": {
+                                            "id": "END",
+                                            "title": "Akhiri Sessi",
+                                            "current_menu": "END_SESSION",
+                                            "text": "Sesi percakapan kamu sudah berakhir. Terima kasih!",
+                                            "type": "end_session"
+                                        }
+                                    }
+                                },
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "ID-0"
+                                },
+                                "4": {
+                                    "id": "4",
+                                    "title": "Berbicara dengan CS",
+                                    "current_menu": "ID-4",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "ID-0-menus-4"
+                                },
+                                "5": {
+                                    "id": "5",
+                                    "title": "Konsultasi dengan Cheff",
+                                    "current_menu": "ID-5",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "ID-0-menus-5"
+                                },
+                                "END": {
+                                    "id": "END",
+                                    "title": "Akhiri Sessi",
+                                    "current_menu": "END_SESSION",
+                                    "text": "Sesi percakapan kamu sudah berakhir. Terima kasih!",
+                                    "type": "end_session"
+                                }
+                            }
+                        },
+                        "4": {
+                            "id": "4A",
+                            "current_menu": "ID-4",
+                            "title": "Berbicara dengan Customer Service",
+                            "text": "Mohon menunggu, sesaat lagi Anda akan terhubung dengan Customer Care Representative Kami.",
+                            "type": "goto",
+                            "goto": "cs",
+                            "tag": "CsBlueband",
+                            "check_office_hour": {
+                                "status": true,
+                                "nin_off_hour": {
+                                    "keep_mode": "nest_menu",
+                                    "msg": "Mohon maaf, Customer Care Blue Band Kitchen Master akan segera menghubungi Anda di jam operasional pada hari Senin-Jumat, pukul 08.00-17.00 WIB.",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive-button",
+                                            "text": "Terima kasih telah menghubungi Blue Band Kitchen Master, kami akan selalu memberikan produk yang terbaik untuk perkembangan bisnis Anda.\nKetik angka *0* untuk kembali ke menu utama, ketik *END* untuk mengakhiri sesi",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama"
+                                                },
+                                                "END": {
+                                                    "id": "END",
+                                                    "title": "Akhiri Sessi"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "5": {
+                            "id": "5A",
+                            "current_menu": "ID-5",
+                            "title": "Konsultasi dengan chef kami",
+                            "text": "Untuk terhubung dengan chef profesional kami, silahkan pilih salah satu chef dibawah ini berdasarkan kebutuhan konsultasi Anda (Contoh, ketik: \"1\" untuk memilih opsi layanan):\n\n*1*. Baking\n*2*. Cooking",
+                            "type": "nest_menu",
+                            "interactive_type": "button",
+                            "interactive_message": true,
+                            "menus": {
+                                "1": {
+                                    "id": "51A",
+                                    "current_menu": "ID-5-1",
+                                    "title": "Baking",
+                                    "text": "Mohon menunggu, sesaat lagi Bapak/Ibu akan terhubung dengan Technical Baker kami",
+                                    "tag": "CookingBaking",
+                                    "type": "goto",
+                                    "goto": "cs",
+                                    "check_office_hour": {
+                                        "status": true,
+                                        "nin_off_hour": {
+                                            "keep_mode": "nest_menu",
+                                            "msg": "Mohon maaf, Chef Profesional kami akan segera menghubungi Bapak/Ibu di jam operasional pada hari Senin-Jumat, pukul 08.00-17.00 WIB.",
+                                            "next_bubbles": [
+                                                {
+                                                    "type": "interactive-button",
+                                                    "text": "Terima kasih telah menghubungi Blue Band Kitchen Master, kami akan selalu memberikan produk yang terbaik untuk perkembangan bisnis Anda. Ketik angka *0* untuk kembali ke menu utama, atau ketik *END* untuk mengakhiri sesi.",
+                                                    "menus": {
+                                                        "0": {
+                                                            "id": "0",
+                                                            "title": "Menu Utama"
+                                                        },
+                                                        "END": {
+                                                            "id": "END",
+                                                            "title": "Akhiri Sessi"
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "52A",
+                                    "current_menu": "ID-5-2",
+                                    "title": "Cooking",
+                                    "text": "Mohon menunggu, sesaat lagi Bapak/Ibu akan terhubung dengan Culinary Chef kami",
+                                    "tag": "CookingBaking",
+                                    "type": "goto",
+                                    "goto": "cs",
+                                    "check_office_hour": {
+                                        "status": true,
+                                        "nin_off_hour": {
+                                            "keep_mode": "nest_menu",
+                                            "msg": "Mohon maaf, Chef Profesional kami akan segera menghubungi Bapak/Ibu di jam operasional pada hari Senin-Jumat, pukul 08.00-17.00 WIB.",
+                                            "next_bubbles": [
+                                                {
+                                                    "type": "interactive-button",
+                                                    "text": "Terima kasih telah menghubungi Blue Band Kitchen Master, kami akan selalu memberikan produk yang terbaik untuk perkembangan bisnis Anda. Ketik angka *0* untuk kembali ke menu utama, atau ketik *END* untuk mengakhiri sesi.",
+                                                    "menus": {
+                                                        "0": {
+                                                            "id": "0",
+                                                            "title": "Menu Utama"
+                                                        },
+                                                        "END": {
+                                                            "id": "END",
+                                                            "title": "Akhiri Sessi"
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "0": {
+                                    "id": "0",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "ID-0"
+                                }
+                            }
+                        },
+                        "MENU": {
+                            "id": "MENU",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "targeted_menu",
+                            "targeted_path": "ID-0"
+                        }
+                    }
+                }
+            ],
+            "2": [
+                {
+                    "id": "2A",
+                    "current_menu": "EN",
+                    "text": "Are you willing to accept all of the information and promotions from Blue Band Kitchen Master?",
+                    "current_lang": "EN",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "button",
+                    "menus": {
+                        "YES": {
+                            "id": "YES",
+                            "title": "Yes",
+                            "current_menu": "1-YES",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "targeted_menu",
+                            "targeted_path": "EN-0"
+                        },
+                        "NO": {
+                            "id": "NO",
+                            "title": "No",
+                            "current_menu": "1-NO",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "targeted_menu",
+                            "targeted_path": "ID-0"
+                        },
+                        "MENU": {
+                            "id": "MENU",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "targeted_menu",
+                            "targeted_path": "EN-0"
+                        }
+                    }
+                }
+            ],
+            "EN": [
+                {
+                    "id": "AA",
+                    "current_menu": "EN",
+                    "text": "Thank you for contacting Blue Band Kitchen Master.\n\nPlease select the menu below:\n*1*. Introduction of Upfield Professional\n*2*. Join our community\n*3*. Purchase our product\n*4*. Chat with Customer Service\n*5*. Consult with our Chef",
+                    "current_lang": "EN",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "list",
+                    "menus": {
+                        "1": {
+                            "id": "1A",
+                            "current_menu": "EN-1",
+                            "title": "Introduction of Upfield Professional",
+                            "text": "Please visit our website to know about Upfield Professional and Blue Band Master products https://www.upfieldprofessional.com/id-id\n\nType *0* to return to the main menu, *4* to connect with customer service, or *5* to connect with our Chef, type *END* to end the session.",
+                            "type": "nest_menu",
+                            "interactive_type": "list",
+                            "interactive_message": true,
+                            "next_bubbles": [],
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Main Menu",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "EN-0"
+                                },
+                                "4": {
+                                    "id": "4",
+                                    "title": "Chat with CS",
+                                    "current_menu": "EN-4",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "EN-0-menus-4"
+                                },
+                                "5": {
+                                    "id": "5",
+                                    "title": "Chat with Chef",
+                                    "current_menu": "EN-5",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "EN-0-menus-5"
+                                },
+                                "END": {
+                                    "id": "END",
+                                    "title": "End Session",
+                                    "current_menu": "END_SESSION",
+                                    "text": "Your conversation session is over. Thank you!",
+                                    "type": "end_session"
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "2A",
+                            "current_menu": "EN-2",
+                            "title": "Join our community",
+                            "text": "Join our community to get inspiration and solution for your business\n\nPlease click the following link to join our community:\n1. Facebook bit.ly/bluebandkitchenmasterindonesia\n2. Instagram bit.ly/kitchenmasterindonesia\n\nType *0* to return to the main menu, *4* to connect with customer service, or *5* to connect with our chef, type *END* to end the session",
+                            "type": "nest_menu",
+                            "interactive_type": "list",
+                            "interactive_message": true,
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Main Menu",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "EN-0"
+                                },
+                                "4": {
+                                    "id": "4",
+                                    "title": "Chat with CS",
+                                    "current_menu": "EN-4",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "EN-0-menus-4"
+                                },
+                                "5": {
+                                    "id": "5",
+                                    "title": "Chat with Chef",
+                                    "current_menu": "EN-5",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "EN-0-menus-5"
+                                },
+                                "END": {
+                                    "id": "END",
+                                    "title": "End Session",
+                                    "current_menu": "END_SESSION",
+                                    "text": "Your conversation session is over. Thank you!",
+                                    "type": "end_session"
+                                }
+                            }
+                        },
+                        "3": {
+                            "id": "3A",
+                            "current_menu": "EN-3",
+                            "title": "Purchase our product",
+                            "text": "Thank you for choosing Blue Band Master from Upfield Professional.\n\nType *1* to get the best offers and solution to Business Partners from our authorized distributor.\n\nOr, visit Blue Band official store below to purchase our product from e-commerce. \nTokopedia bit.ly/bluebandofficialtokopedia\nShopee bit.ly/bluebandofficialshopee\n\nType *0* to return to the main menu, *4* to connect with customer service, or *5* to connect with our chef, type *END* to end the session",
+                            "type": "nest_menu",
+                            "interactive_type": "list",
+                            "interactive_message": true,
+                            "menus": {
+                                "1": {
+                                    "id": "1",
+                                    "current_menu": "EN-3-1",
+                                    "text": "",
+                                    "type": "sequences",
+                                    "required_data": [
+                                        {
+                                            "id": "SQ1",
+                                            "index": "register",
+                                            "label": "area",
+                                            "text": "You can select one of the areas below to register your business with an authorized Upfield Professional distributor. Please select one of the menu option below (Example: *1*) :\n\n*1*. Sumatera\n*2*. Jabodetabek\n*3*. Jawa Barat\n*4*. Jawa Tengah - DIY\n*5*. Jawa Timur\n*6*. Bali\n*7*. Banjarmasin\n*8*. Samarinda - Pontianak - Balikpapan\n*9*. Sulawesi\n*10*. Papua Maluku",
+                                            "type": "text",
+                                            "validation": "validate_choices",
+                                            "valid_choices": [
+                                                "1",
+                                                "2",
+                                                "3",
+                                                "4",
+                                                "5",
+                                                "6",
+                                                "7",
+                                                "8",
+                                                "9",
+                                                "10"
+                                            ],
+                                            "area_": {
+                                                "1": "Sumatera",
+                                                "2": "Jabodetabek",
+                                                "3": "Jawa Barat",
+                                                "4": "Jawa Tengah - DIY",
+                                                "5": "Jawa Timur",
+                                                "6": "Bali",
+                                                "7": "Banjarmasin",
+                                                "8": "Samarinda - Pontianak - Balikpapan",
+                                                "9": "Sulawesi",
+                                                "10": "Papua Maluku",
+                                                "11": "Tenjo Humaidi",
+                                                "12": "Cicayur Syahrul",
+                                                "13": "Tebet Pingot"
+                                            },
+                                            "error_msg": "Please select one of the menu option below (Example: *1*) :\n\n*1*. Sumatera\n*2*. Jabodetabek\n*3*. Jawa Barat\n*4*. Jawa Tengah - DIY\n*5*. Jawa Timur\n*6*. Bali\n*7*. Banjarmasin\n*8*. Samarinda - Pontianak - Balikpapan\n*9*. Sulawesi\n*10*. Papua Maluku"
+                                        },
+                                        {
+                                            "id": "SQ2",
+                                            "index": "register",
+                                            "label": "nama",
+                                            "text": "To register a business in your chosen area, please fill out the form below:\n\nName :",
+                                            "type": "text",
+                                            "validation": null,
+                                            "error_msg": ""
+                                        },
+                                        {
+                                            "id": "SQ3",
+                                            "index": "register",
+                                            "label": "notlp",
+                                            "text": "Phone number :",
+                                            "type": "text",
+                                            "validation": null,
+                                            "error_msg": ""
+                                        },
+                                        {
+                                            "id": "SQ4",
+                                            "index": "register",
+                                            "label": "alamat",
+                                            "text": "Address :",
+                                            "type": "text",
+                                            "validation": null,
+                                            "error_msg": ""
+                                        },
+                                        {
+                                            "id": "SQ5",
+                                            "index": "register",
+                                            "label": "provinsi",
+                                            "text": "Province :",
+                                            "type": "text",
+                                            "validation": null,
+                                            "error_msg": ""
+                                        },
+                                        {
+                                            "id": "SQ6",
+                                            "index": "register",
+                                            "label": "kota",
+                                            "text": "City :",
+                                            "type": "text",
+                                            "validation": null,
+                                            "error_msg": ""
+                                        },
+                                        {
+                                            "id": "SQ7",
+                                            "index": "register",
+                                            "label": "kecamatan",
+                                            "text": "Sub-district :",
+                                            "type": "text",
+                                            "validation": null,
+                                            "error_msg": ""
+                                        },
+                                        {
+                                            "id": "SQ8",
+                                            "index": "register",
+                                            "label": "kelurahan",
+                                            "text": "Urban village :",
+                                            "type": "text",
+                                            "validation": null,
+                                            "error_msg": ""
+                                        },
+                                        {
+                                            "id": "SQ9",
+                                            "index": "register",
+                                            "label": "namausaha",
+                                            "text": "Business Name :",
+                                            "type": "text",
+                                            "validation": null,
+                                            "error_msg": ""
+                                        },
+                                        {
+                                            "id": "SQ10",
+                                            "index": "register",
+                                            "label": "jenisusaha",
+                                            "text": "Type of business (bakery, restoran, catering, martabak, dll) :",
+                                            "type": "text",
+                                            "validation": null,
+                                            "error_msg": ""
+                                        },
+                                        {
+                                            "id": "SQ11",
+                                            "index": "register",
+                                            "label": "pemakaian",
+                                            "text": "The average use of margarine in 1 month how many kg :",
+                                            "type": "text",
+                                            "validation": null,
+                                            "error_msg": ""
+                                        },
+                                        {
+                                            "id": "SQ12",
+                                            "index": "register",
+                                            "label": "summary",
+                                            "text": "Thank you for the confirmation. Here are your details:\n\nName : ~register.nama~\nPhone Number : ~register.notlp~\nAddress : ~register.alamat~\nProvince : ~register.provinsi~\nCity : ~register.kota~\nDistrict : ~register.kecamatan~\nUrban village : ~register.kelurahan~\nBusiness name : ~register.namausaha~\nType of business : ~register.jenisusaha~\nThe average use of margarine in 1 month is how many kg : ~register.pemakaian~",
+                                            "previous_summary": true,
+                                            "next_bubbles": [
+                                                {
+                                                    "type": "interactive-button",
+                                                    "text": "Are the order details above correct?",
+                                                    "menus": {
+                                                        "YES": {
+                                                            "id": "YES",
+                                                            "title": "Yes"
+                                                        },
+                                                        "NO": {
+                                                            "id": "NO",
+                                                            "title": "No"
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "type": "goto_index",
+                                            "goto_index": {
+                                                "YES": 12,
+                                                "NO": 1
+                                            },
+                                            "run_method_if_NO": {
+                                                "status": true,
+                                                "method_name": "resetSequenceReminder"
+                                            },
+                                            "validation": "validate_choices",
+                                            "valid_choices": [
+                                                "YES",
+                                                "NO"
+                                            ],
+                                            "summary": {
+                                                "YES": "Yes",
+                                                "NO": "No"
+                                            },
+                                            "error_msg": "Your choice does not match!\n\nAre the order details above correct?(*Yes* / *No*)"
+                                        },
+                                        {
+                                            "id": "SQ13",
+                                            "text": "",
+                                            "index": "",
+                                            "label": "",
+                                            "type": "completed",
+                                            "create_ticket": true,
+                                            "end_session": true,
+                                            "validation": null,
+                                            "error_msg": "",
+                                            "create_ticket_from_template": false,
+                                            "ticket_template_as_completed_template": false,
+                                            "completed_template": "Thank you for the confirmation.\nThe following are the contacts for the PIC according to the area you selected: \n~pic_name~\n~pic_number~\n\nWe will process your business registration no later than 1x24 working hours.\nIf within that time there is no confirmation, you can contact us again.",
+                                            "run_method": true,
+                                            "method_name": "bluebandOrderNotif",
+                                            "use_waba_template": true,
+                                            "reply_from_method": true,
+                                            "waba_templates": {
+                                                "namespace": "633a675714df9450c0367692",
+                                                "name": "notif_order_inggris",
+                                                "type": "template",
+                                                "message": "Dear Mr/Mrs {{1}}\nThere is a new incoming order with the following details:\n\nName : {{2}}\nPhone Number : {{3}}\nAddress : {{4}}\nProvince : {{5}}\nCity : {{6}}\nSubsdistrict : {{7}}\nUrban Village : {{8}}\nBusiness Name : {{9}}\nType of business (bakery, restaurant, catering, martabak, etc.) : {{10}}\nThe average use of margarine in 1 month how many kg : {{11}}\n\nPlease immediately process it within 1x24 working hours.",
+                                                "message_type": "text",
+                                                "language": {
+                                                    "code": "id",
+                                                    "policy": "deterministic"
+                                                },
+                                                "param_size": 11,
+                                                "is_followup_reply": true
+                                            },
+                                            "data_references": {
+                                                "1": {
+                                                    "pic_name": "M. Irfansyah",
+                                                    "pic_number": "6282166081082"
+                                                },
+                                                "2": {
+                                                    "pic_name": "Ari Baiduri",
+                                                    "pic_number": "628118823361"
+                                                },
+                                                "3": {
+                                                    "pic_name": "Yadi",
+                                                    "pic_number": "628112101393"
+                                                },
+                                                "4": {
+                                                    "pic_name": "Teguh N",
+                                                    "pic_number": "628112547180"
+                                                },
+                                                "5": {
+                                                    "pic_name": "Doddy",
+                                                    "pic_number": "6281110621159"
+                                                },
+                                                "6": {
+                                                    "pic_name": "Silvi",
+                                                    "pic_number": "628112297610"
+                                                },
+                                                "7": {
+                                                    "pic_name": "Yusuf",
+                                                    "pic_number": "628118520891"
+                                                },
+                                                "8": {
+                                                    "pic_name": "Gunawan",
+                                                    "pic_number": "6281227555911"
+                                                },
+                                                "9": {
+                                                    "pic_name": "Rudi",
+                                                    "pic_number": "6282190348101"
+                                                },
+                                                "10": {
+                                                    "pic_name": "Rahim",
+                                                    "pic_number": "6281112521092"
+                                                }
+                                            },
+                                            "langauge": "EN",
+                                            "closing_bubbles": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "Thank you for contacting Upfield Professional Customer Care, Hopefully your business will grow with the ease of obtaining our products."
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "prev_menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Main Menu",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "targeted_menu",
+                                            "targeted_path": "EN-0"
+                                        },
+                                        "END": {
+                                            "id": "END",
+                                            "title": "End Session",
+                                            "current_menu": "END_SESSION",
+                                            "text": "Your conversation session is over. Thank you!",
+                                            "type": "end_session"
+                                        }
+                                    }
+                                },
+                                "0": {
+                                    "id": "0",
+                                    "title": "Main Menu",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "EN-0"
+                                },
+                                "4": {
+                                    "id": "4",
+                                    "title": "Chat with CS",
+                                    "current_menu": "EN-4",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "EN-0-menus-4"
+                                },
+                                "5": {
+                                    "id": "5",
+                                    "title": "Chat with Chef",
+                                    "current_menu": "EN-5",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "EN-0-menus-5"
+                                },
+                                "END": {
+                                    "id": "END",
+                                    "title": "End Session",
+                                    "current_menu": "END_SESSION",
+                                    "text": "Your conversation session is over. Thank you!",
+                                    "type": "end_session"
+                                }
+                            }
+                        },
+                        "4": {
+                            "id": "4A",
+                            "current_menu": "EN-4",
+                            "title": "Chat with Customer Service",
+                            "text": "Please wait for a moment, you will be connected to our Customer Care Representative.",
+                            "type": "goto",
+                            "goto": "cs",
+                            "tag": "CsBlueband",
+                            "check_office_hour": {
+                                "status": true,
+                                "nin_off_hour": {
+                                    "keep_mode": "nest_menu",
+                                    "msg": "We are sorry, Customer Care Blue Band Kitchen Master will contact you during operating hours on Monday-Friday, 08.00-17.00 WIB.",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "interactive-button",
+                                            "text": "Thank you for contacting Blue Band Kitchen Master, we will always provide the best products to develop your business.\nType *0* to return to the main menu, or type *END* to end the session",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Main Menu"
+                                                },
+                                                "END": {
+                                                    "id": "END",
+                                                    "title": "End Session"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "5": {
+                            "id": "5A",
+                            "current_menu": "EN-5",
+                            "title": "Consult with our Chef",
+                            "text": "To connect with our professional Chef, please select one of the chefs below based on your consultation needs (For example, type: \"1\" to select a service option):\n\n*1*. Baking\n*2*. Cooking",
+                            "type": "nest_menu",
+                            "interactive_type": "button",
+                            "interactive_message": true,
+                            "menus": {
+                                "1": {
+                                    "id": "51A",
+                                    "current_menu": "EN-5-1",
+                                    "title": "Baking",
+                                    "text": "Please wait for a moment, you will be connected with our Technical Bakers",
+                                    "tag": "CookingBaking",
+                                    "type": "goto",
+                                    "goto": "cs",
+                                    "check_office_hour": {
+                                        "status": true,
+                                        "nin_off_hour": {
+                                            "keep_mode": "nest_menu",
+                                            "msg": "We are sorry, our profesional chef will contact you during operating hours on Monday-Friday, 08.00-17.00 WIB.",
+                                            "next_bubbles": [
+                                                {
+                                                    "type": "interactive-button",
+                                                    "text": "Thank you for contacting Blue Band Kitchen Master, we will always provide the best products to develop your business. Type *0* to return to the main menu, or type *END* to end the session",
+                                                    "menus": {
+                                                        "0": {
+                                                            "id": "0",
+                                                            "title": "Main Menu"
+                                                        },
+                                                        "END": {
+                                                            "id": "END",
+                                                            "title": "End Session"
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "52A",
+                                    "current_menu": "EN-5-2",
+                                    "title": "Cooking",
+                                    "text": "Please wait for a moment, you will be connected with our Culinary Chef",
+                                    "tag": "CookingBaking",
+                                    "type": "goto",
+                                    "goto": "cs",
+                                    "check_office_hour": {
+                                        "status": true,
+                                        "nin_off_hour": {
+                                            "keep_mode": "nest_menu",
+                                            "msg": "We are sorry, our profesional chef will contact you during operating hours on Monday-Friday, 08.00-17.00 WIB.",
+                                            "next_bubbles": [
+                                                {
+                                                    "type": "interactive-button",
+                                                    "text": "Thank you for contacting Blue Band Kitchen Master, we will always provide the best products to develop your business. Type *0* to return to the main menu, or type *END* to end the session",
+                                                    "menus": {
+                                                        "0": {
+                                                            "id": "0",
+                                                            "title": "Main Menu"
+                                                        },
+                                                        "END": {
+                                                            "id": "END",
+                                                            "title": "End Session"
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "0": {
+                                    "id": "0",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "EN-0"
+                                }
+                            }
+                        },
+                        "MENU": {
+                            "id": "MENU",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "targeted_menu",
+                            "targeted_path": "EN-0"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

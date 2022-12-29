@@ -1,0 +1,41 @@
+{
+    "_id" : ObjectId("60a79bf473bedb4f3526b463"),
+    "source" : "whatsapp",
+    "project" : 6608,
+    "data" : {
+        "id" : "wab-kaleyra-628118179910",
+        "type" : "business",
+        "number" : "628118179910",
+        "username" : "628118179910",
+        "password" : null,
+        "token" : null,
+        "token_expire" : 0,
+        "partner" : "kaleyra",
+        "name" : "Kasoem",
+        "user_name" : "Kasoem",
+        "avatar" : null,
+        "api_key" : "Ab3a9d604dbb96314598dbdcf7ab425a6",
+        "api_secret" : "HXAP1682932711ID",
+        "chatbot" : {
+            "active" : true,
+            "mode" : "basic",
+            "greetingMessage" : "Selamat datang Sahabat Kasoem dilayanan Whatsapp Official KASOEM CARE, dengan senang hati kami siap MEMBANTU Anda 😊\n\nKASOEM peduli melawan penyebaran COVID-19 mari bersama untuk selalu menjalankan protokol kesehatan (ingat 5M) untuk melindungi keselamatan kita dan keluarga.\n\nSilakan pilih menu di bawah sesuai kebutuhan Anda",
+            "exit_keyword" : "",
+            "order_keywords" : [],
+            "order_reply_msg" : "",
+            "to_cs_keyword" : "HELP",
+            "response_cs_keyword" : "Mohon kesediannya untuk menunggu,\nKasoem Care Officer kami akan segera memberikan respon pada kesempatan pertama. 😊\n[Sebagai informasi]\nJam operasional Kasoem Care Officer setiap hari Senin s.d Sabtu pukul 09.00 s.d 16.00 WIB, khusus tanggal merah dan hari minggu libur kami akan merespon kebutuhan Anda dihari kerja berikutnya. Terimakasih.",
+            "listCommandMessage" : "",
+            "contactCsMessage" : "",
+            "prefixGreeting" : "",
+            "notUnderstandMessage" : "Mohon maaf pilihan Anda tidak sesuai. Silakan ketik kembali nomor pilihan Anda atau ketik MENU untuk kembali ke menu utama, atau ketik HELP untuk berbicara dengan Customer Care Agent.",
+            "check_office_hour" : false,
+            "concat_greeting_and_menu" : true,
+            "no_ofh_bot_msg" : "Maaf, saat ini kami tidak dapat melayani Anda. Jam operasional kami setiap hari Senin-Sabtu, pukul 09:00-16:00 WIB. Silakan hubungi kami kembali pada jam tersebut, terima kasih."
+        }
+    },
+    "status" : true,
+    "is_trash" : false,
+    "updated_at" : ISODate("2021-12-02T11:33:30.000Z"),
+    "created_at" : ISODate("2021-05-21T11:39:32.000Z")
+}

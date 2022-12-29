@@ -1,0 +1,17 @@
+{
+    "active": true,
+    "mode": "basic",
+    "greetingMessage": "Halo! Terima kasih telah menghubungi Syailendra Capital. Silahkan pilih salah satu kategori dibawah, untuk membantu menjawab pertanyaan kamu :",
+    "exit_keyword": "",
+    "order_keywords": [],
+    "order_reply_msg": "",
+    "to_cs_keyword": "",
+    "response_cs_keyword": "Mohon menunggu customer service kami akan segera membantu Anda",
+    "listCommandMessage": "",
+    "contactCsMessage": "",
+    "prefixGreeting": "Ketik A, B, C, atau D, lalu kirim ke kami. Kami akan menjawab pertanyaan kamu.\n\nUntuk info lebih detail, silahkan menghubungi Customer Service kami di :\nTelp : (021)-27939900\nWA Call Centre : 08197939900\nEmail : cs@syailendracapital.com",
+    "notUnderstandMessage": "Mohon maaf pilihan Anda tidak sesuai. Ketik *MENU* untuk kembali ke menu utama",
+    "check_office_hour": true,
+    "concat_greeting_and_menu": true,
+    "no_ofh_bot_msg": ""
+}

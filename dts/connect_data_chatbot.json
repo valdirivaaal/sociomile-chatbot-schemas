@@ -1,0 +1,17 @@
+{
+    "active": true,
+    "mode": "basic",
+    "greetingMessage": "Hai saya Petugas Layanan Digital Talent Scholarship, mohon ketikkan nama Sobat sesuai dengan KTP",
+    "exit_keyword": "",
+    "order_keywords": [],
+    "order_reply_msg": "",
+    "to_cs_keyword": "",
+    "response_cs_keyword": "Mohon ditunggu, Sobat akan terhubung dengan Petugas kami ",
+    "listCommandMessage": "",
+    "contactCsMessage": "",
+    "prefixGreeting": "",
+    "notUnderstandMessage": "Mohon maaf pilihan Anda tidak sesuai. Ketik *MENU* untuk kembali ke menu utama",
+    "check_office_hour": true,
+    "concat_greeting_and_menu": true,
+    "no_ofh_bot_msg": ""
+}

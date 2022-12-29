@@ -1,0 +1,369 @@
+{
+    "schemas": {
+        "default": {
+            "survey": {
+                "active": false
+            },
+            "reset_keys": [],
+            "load_conversation": "WabaTemplateConversation",
+            "top_level_question": [
+                {
+                    "id": "Y",
+                    "text": "(name), Terima kasih telah menggunakan layanan Astragraphia. Teknisi kami telah mengunjungi anda pada tanggal *(tgl)* untuk mesin EQ *(no_mesin)* dengan nomor SVO *(no_svo)*. Apakah anda bersedia untuk mengikuti survey 1 menit terkait pelayanan yang kami berikan?\nJika bersedia balas dengan huruf Y,\n",
+                    "type": "actions"
+                },
+                {
+                    "id": "T",
+                    "text": "Jika tidak bersedia balas dengan huruf T",
+                    "type": "actions"
+                }
+            ],
+            "Y": [
+                {
+                    "id": "1A",
+                    "current_menu": "1",
+                    "text": "Apakah teknisi kami datang tepat waktu?\n*Y*\n*T*",
+                    "type": "nest_menu",
+                    "menus": {
+                        "Y": {
+                            "id": "1A1",
+                            "current_menu": "1-1",
+                            "text": "Apakah teknisi kami berpakaian rapi dan berperilaku sopan?\n*Y*\n*T*",
+                            "type": "nest_menu",
+                            "menus": {
+                                "Y": {
+                                    "id": "1A11",
+                                    "current_menu": "1-1-1",
+                                    "text": "Seberapa puaskah anda dengan pelayanan yang diberikan oleh teknisi kami?\n\n5. Sangat Puas\n4. Puas\n3. Biasa saja\n2. Tidak Puas\n1. Sangat tidak puas",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "1": {
+                                            "id": "1A111",
+                                            "current_menu": "1-1-1-1",
+                                            "text": "Mohon maaf jika pelayanan kami masih kurang memuaskan. Kenapa anda merasa kurang puas?",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "1": {
+                                                    "id": "1A1111",
+                                                    "current_menu": "1-1-1-1-1",
+                                                    "text": "Terima kasih atas kesedian anda. Survey ini sangat membantu kami untuk meningkatkan kualitas pelayanan yang akan kami berikan.\nMenginformasikan juga, layanan Astragraphia kini dapat diakses melalui mobile apps berikut ini\nhttps://www.documentsolution.com/content/customersupport/icare\nTanyakan kepada teknisi kami mengenai aplikasi iCare.\nUntuk pencatatan meter otomatis, anda juga dapat menanyakan mengenai aplikasi iSense ke teknisi kami.\nhttps://www.documentsolution.com/content/customersupport/isense",
+                                                    "type": "text"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "1A112",
+                                            "current_menu": "1-1-1-2",
+                                            "text": "Mohon maaf jika pelayanan kami masih kurang memuaskan. Kenapa anda merasa kurang puas?",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "1": {
+                                                    "id": "1A1121",
+                                                    "current_menu": "1-1-1-2-1",
+                                                    "text": "Terima kasih atas kesedian anda. Survey ini sangat membantu kami untuk meningkatkan kualitas pelayanan yang akan kami berikan.\nMenginformasikan juga, layanan Astragraphia kini dapat diakses melalui mobile apps berikut ini\nhttps://www.documentsolution.com/content/customersupport/icare\nTanyakan kepada teknisi kami mengenai aplikasi iCare.\nUntuk pencatatan meter otomatis, anda juga dapat menanyakan mengenai aplikasi iSense ke teknisi kami.\nhttps://www.documentsolution.com/content/customersupport/isense",
+                                                    "type": "text"
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "id": "1A113",
+                                            "current_menu": "1-1-1-3",
+                                            "text": "Mohon maaf jika pelayanan kami masih kurang memuaskan. Kenapa anda merasa kurang puas?",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "1": {
+                                                    "id": "1A1131",
+                                                    "current_menu": "1-1-1-3-1",
+                                                    "text": "Terima kasih atas kesedian anda. Survey ini sangat membantu kami untuk meningkatkan kualitas pelayanan yang akan kami berikan.\nMenginformasikan juga, layanan Astragraphia kini dapat diakses melalui mobile apps berikut ini\nhttps://www.documentsolution.com/content/customersupport/icare\nTanyakan kepada teknisi kami mengenai aplikasi iCare.\nUntuk pencatatan meter otomatis, anda juga dapat menanyakan mengenai aplikasi iSense ke teknisi kami.\nhttps://www.documentsolution.com/content/customersupport/isense",
+                                                    "type": "text"
+                                                }
+                                            }
+                                        },
+                                        "4": {
+                                            "id": "1A114",
+                                            "current_menu": "1-1-1-4",
+                                            "text": "Dalam skala 10-0, seberapa kah anda akan merekomendasikan layanan Astragraphia kepada rekan atau teman anda\n10. Sangat merekomendasikan\n9.\n8.\n7.\n6.\n5.\n4.\n3.\n2.\n1.\n0. Sangat tidak merekomendasikan",
+                                            "type": "text",
+                                            "menus": {
+                                                "1": {
+                                                    "id": "1A1141",
+                                                    "current_menu": "1-1-1-4-1",
+                                                    "text": "Terima kasih atas kesedian anda. Survey ini sangat membantu kami untuk meningkatkan kualitas pelayanan yang akan kami berikan.\nMenginformasikan juga, layanan Astragraphia kini dapat diakses melalui mobile apps berikut ini\nhttps://www.documentsolution.com/content/customersupport/icare\nTanyakan kepada teknisi kami mengenai aplikasi iCare.\nUntuk pencatatan meter otomatis, anda juga dapat menanyakan mengenai aplikasi iSense ke teknisi kami.\nhttps://www.documentsolution.com/content/customersupport/isense",
+                                                    "type": "text"
+                                                }
+                                            }
+                                        },
+                                        "5": {
+                                            "id": "1A115",
+                                            "current_menu": "1-1-1-5",
+                                            "text": "Dalam skala 10-0, seberapa kah anda akan merekomendasikan layanan Astragraphia kepada rekan atau teman anda\n10. Sangat merekomendasikan\n9.\n8.\n7.\n6.\n5.\n4.\n3.\n2.\n1.\n0. Sangat tidak merekomendasikan",
+                                            "type": "text",
+                                            "menus": {
+                                                "1": {
+                                                    "id": "1A1151",
+                                                    "current_menu": "1-1-1-5-1",
+                                                    "text": "Terima kasih atas kesedian anda. Survey ini sangat membantu kami untuk meningkatkan kualitas pelayanan yang akan kami berikan.\nMenginformasikan juga, layanan Astragraphia kini dapat diakses melalui mobile apps berikut ini\nhttps://www.documentsolution.com/content/customersupport/icare\nTanyakan kepada teknisi kami mengenai aplikasi iCare.\nUntuk pencatatan meter otomatis, anda juga dapat menanyakan mengenai aplikasi iSense ke teknisi kami.\nhttps://www.documentsolution.com/content/customersupport/isense",
+                                                    "type": "text"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "T": {
+                                    "id": "1A12",
+                                    "current_menu": "1-1-2",
+                                    "text": "Seberapa puaskah anda dengan pelayanan yang diberikan oleh teknisi kami?\n\n5. Sangat Puas\n4. Puas\n3. Biasa saja\n2. Tidak Puas\n1. Sangat tidak puas",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "1": {
+                                            "id": "1A121",
+                                            "current_menu": "1-1-2-1",
+                                            "text": "Mohon maaf jika pelayanan kami masih kurang memuaskan. Kenapa anda merasa kurang puas?",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "1": {
+                                                    "id": "1A1211",
+                                                    "current_menu": "1-1-2-1-1",
+                                                    "text": "Terima kasih atas kesedian anda. Survey ini sangat membantu kami untuk meningkatkan kualitas pelayanan yang akan kami berikan.\nMenginformasikan juga, layanan Astragraphia kini dapat diakses melalui mobile apps berikut ini\nhttps://www.documentsolution.com/content/customersupport/icare\nTanyakan kepada teknisi kami mengenai aplikasi iCare.\nUntuk pencatatan meter otomatis, anda juga dapat menanyakan mengenai aplikasi iSense ke teknisi kami.\nhttps://www.documentsolution.com/content/customersupport/isense",
+                                                    "type": "text"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "1A122",
+                                            "current_menu": "1-1-2-2",
+                                            "text": "Mohon maaf jika pelayanan kami masih kurang memuaskan. Kenapa anda merasa kurang puas?",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "1": {
+                                                    "id": "1A1221",
+                                                    "current_menu": "1-1-2-2-1",
+                                                    "text": "Terima kasih atas kesedian anda. Survey ini sangat membantu kami untuk meningkatkan kualitas pelayanan yang akan kami berikan.\nMenginformasikan juga, layanan Astragraphia kini dapat diakses melalui mobile apps berikut ini\nhttps://www.documentsolution.com/content/customersupport/icare\nTanyakan kepada teknisi kami mengenai aplikasi iCare.\nUntuk pencatatan meter otomatis, anda juga dapat menanyakan mengenai aplikasi iSense ke teknisi kami.\nhttps://www.documentsolution.com/content/customersupport/isense",
+                                                    "type": "text"
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "id": "1A123",
+                                            "current_menu": "1-1-2-3",
+                                            "text": "Mohon maaf jika pelayanan kami masih kurang memuaskan. Kenapa anda merasa kurang puas?",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "1": {
+                                                    "id": "1A1231",
+                                                    "current_menu": "1-1-2-3-1",
+                                                    "text": "Terima kasih atas kesedian anda. Survey ini sangat membantu kami untuk meningkatkan kualitas pelayanan yang akan kami berikan.\nMenginformasikan juga, layanan Astragraphia kini dapat diakses melalui mobile apps berikut ini\nhttps://www.documentsolution.com/content/customersupport/icare\nTanyakan kepada teknisi kami mengenai aplikasi iCare.\nUntuk pencatatan meter otomatis, anda juga dapat menanyakan mengenai aplikasi iSense ke teknisi kami.\nhttps://www.documentsolution.com/content/customersupport/isense",
+                                                    "type": "text"
+                                                }
+                                            }
+                                        },
+                                        "4": {
+                                            "id": "1A124",
+                                            "current_menu": "1-1-2-4",
+                                            "text": "Dalam skala 10-0, seberapa kah anda akan merekomendasikan layanan Astragraphia kepada rekan atau teman anda\n10. Sangat merekomendasikan\n9.\n8.\n7.\n6.\n5.\n4.\n3.\n2.\n1.\n0. Sangat tidak merekomendasikan",
+                                            "type": "text",
+                                            "menus": {
+                                                "1": {
+                                                    "id": "1A1241",
+                                                    "current_menu": "1-1-2-4-1",
+                                                    "text": "Terima kasih atas kesedian anda. Survey ini sangat membantu kami untuk meningkatkan kualitas pelayanan yang akan kami berikan.\nMenginformasikan juga, layanan Astragraphia kini dapat diakses melalui mobile apps berikut ini\nhttps://www.documentsolution.com/content/customersupport/icare\nTanyakan kepada teknisi kami mengenai aplikasi iCare.\nUntuk pencatatan meter otomatis, anda juga dapat menanyakan mengenai aplikasi iSense ke teknisi kami.\nhttps://www.documentsolution.com/content/customersupport/isense",
+                                                    "type": "text"
+                                                }
+                                            }
+                                        },
+                                        "5": {
+                                            "id": "1A125",
+                                            "current_menu": "1-1-2-5",
+                                            "text": "Dalam skala 10-0, seberapa kah anda akan merekomendasikan layanan Astragraphia kepada rekan atau teman anda\n10. Sangat merekomendasikan\n9.\n8.\n7.\n6.\n5.\n4.\n3.\n2.\n1.\n0. Sangat tidak merekomendasikan",
+                                            "type": "text",
+                                            "menus": {
+                                                "1": {
+                                                    "id": "1A1251",
+                                                    "current_menu": "1-1-2-5-1",
+                                                    "text": "Terima kasih atas kesedian anda. Survey ini sangat membantu kami untuk meningkatkan kualitas pelayanan yang akan kami berikan.\nMenginformasikan juga, layanan Astragraphia kini dapat diakses melalui mobile apps berikut ini\nhttps://www.documentsolution.com/content/customersupport/icare\nTanyakan kepada teknisi kami mengenai aplikasi iCare.\nUntuk pencatatan meter otomatis, anda juga dapat menanyakan mengenai aplikasi iSense ke teknisi kami.\nhttps://www.documentsolution.com/content/customersupport/isense",
+                                                    "type": "text"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "T": {
+                            "id": "1A2",
+                            "current_menu": "1-2",
+                            "text": "Apakah teknisi kami berpakaian rapi dan berperilaku sopan?\n*Y*\n*T*",
+                            "type": "nest_menu",
+                            "menus": {
+                                "Y": {
+                                    "id": "1A21",
+                                    "current_menu": "1-2-1",
+                                    "text": "Seberapa puaskah anda dengan pelayanan yang diberikan oleh teknisi kami?\n\n5. Sangat Puas\n4. Puas\n3. Biasa saja\n2. Tidak Puas\n1. Sangat tidak puas",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "1": {
+                                            "id": "1A211",
+                                            "current_menu": "1-2-1-1",
+                                            "text": "Mohon maaf jika pelayanan kami masih kurang memuaskan. Kenapa anda merasa kurang puas?",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "1": {
+                                                    "id": "1A2111",
+                                                    "current_menu": "1-2-1-1-1",
+                                                    "text": "Terima kasih atas kesedian anda. Survey ini sangat membantu kami untuk meningkatkan kualitas pelayanan yang akan kami berikan.\nMenginformasikan juga, layanan Astragraphia kini dapat diakses melalui mobile apps berikut ini\nhttps://www.documentsolution.com/content/customersupport/icare\nTanyakan kepada teknisi kami mengenai aplikasi iCare.\nUntuk pencatatan meter otomatis, anda juga dapat menanyakan mengenai aplikasi iSense ke teknisi kami.\nhttps://www.documentsolution.com/content/customersupport/isense",
+                                                    "type": "text"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "1A212",
+                                            "current_menu": "1-2-1-2",
+                                            "text": "Mohon maaf jika pelayanan kami masih kurang memuaskan. Kenapa anda merasa kurang puas?",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "1": {
+                                                    "id": "1A2121",
+                                                    "current_menu": "1-2-1-2-1",
+                                                    "text": "Terima kasih atas kesedian anda. Survey ini sangat membantu kami untuk meningkatkan kualitas pelayanan yang akan kami berikan.\nMenginformasikan juga, layanan Astragraphia kini dapat diakses melalui mobile apps berikut ini\nhttps://www.documentsolution.com/content/customersupport/icare\nTanyakan kepada teknisi kami mengenai aplikasi iCare.\nUntuk pencatatan meter otomatis, anda juga dapat menanyakan mengenai aplikasi iSense ke teknisi kami.\nhttps://www.documentsolution.com/content/customersupport/isense",
+                                                    "type": "text"
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "id": "1A213",
+                                            "current_menu": "1-2-1-3",
+                                            "text": "Mohon maaf jika pelayanan kami masih kurang memuaskan. Kenapa anda merasa kurang puas?",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "1": {
+                                                    "id": "1A2131",
+                                                    "current_menu": "1-2-1-3-1",
+                                                    "text": "Terima kasih atas kesedian anda. Survey ini sangat membantu kami untuk meningkatkan kualitas pelayanan yang akan kami berikan.\nMenginformasikan juga, layanan Astragraphia kini dapat diakses melalui mobile apps berikut ini\nhttps://www.documentsolution.com/content/customersupport/icare\nTanyakan kepada teknisi kami mengenai aplikasi iCare.\nUntuk pencatatan meter otomatis, anda juga dapat menanyakan mengenai aplikasi iSense ke teknisi kami.\nhttps://www.documentsolution.com/content/customersupport/isense",
+                                                    "type": "text"
+                                                }
+                                            }
+                                        },
+                                        "4": {
+                                            "id": "1A214",
+                                            "current_menu": "1-2-1-4",
+                                            "text": "Dalam skala 10-0, seberapa kah anda akan merekomendasikan layanan Astragraphia kepada rekan atau teman anda\n10. Sangat merekomendasikan\n9.\n8.\n7.\n6.\n5.\n4.\n3.\n2.\n1.\n0. Sangat tidak merekomendasikan",
+                                            "type": "text",
+                                            "menus": {
+                                                "1": {
+                                                    "id": "1A2141",
+                                                    "current_menu": "1-2-1-4-1",
+                                                    "text": "Terima kasih atas kesedian anda. Survey ini sangat membantu kami untuk meningkatkan kualitas pelayanan yang akan kami berikan.\nMenginformasikan juga, layanan Astragraphia kini dapat diakses melalui mobile apps berikut ini\nhttps://www.documentsolution.com/content/customersupport/icare\nTanyakan kepada teknisi kami mengenai aplikasi iCare.\nUntuk pencatatan meter otomatis, anda juga dapat menanyakan mengenai aplikasi iSense ke teknisi kami.\nhttps://www.documentsolution.com/content/customersupport/isense",
+                                                    "type": "text"
+                                                }
+                                            }
+                                        },
+                                        "5": {
+                                            "id": "1A215",
+                                            "current_menu": "1-2-1-5",
+                                            "text": "Dalam skala 10-0, seberapa kah anda akan merekomendasikan layanan Astragraphia kepada rekan atau teman anda\n10. Sangat merekomendasikan\n9.\n8.\n7.\n6.\n5.\n4.\n3.\n2.\n1.\n0. Sangat tidak merekomendasikan",
+                                            "type": "text",
+                                            "menus": {
+                                                "1": {
+                                                    "id": "1A2151",
+                                                    "current_menu": "1-2-1-5-1",
+                                                    "text": "Terima kasih atas kesedian anda. Survey ini sangat membantu kami untuk meningkatkan kualitas pelayanan yang akan kami berikan.\nMenginformasikan juga, layanan Astragraphia kini dapat diakses melalui mobile apps berikut ini\nhttps://www.documentsolution.com/content/customersupport/icare\nTanyakan kepada teknisi kami mengenai aplikasi iCare.\nUntuk pencatatan meter otomatis, anda juga dapat menanyakan mengenai aplikasi iSense ke teknisi kami.\nhttps://www.documentsolution.com/content/customersupport/isense",
+                                                    "type": "text"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "T": {
+                                    "id": "1A22",
+                                    "current_menu": "1-2-2",
+                                    "text": "Seberapa puaskah anda dengan pelayanan yang diberikan oleh teknisi kami?\n\n5. Sangat Puas\n4. Puas\n3. Biasa saja\n2. Tidak Puas\n1. Sangat tidak puas",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "1": {
+                                            "id": "1A221",
+                                            "current_menu": "1-2-2-1",
+                                            "text": "Mohon maaf jika pelayanan kami masih kurang memuaskan. Kenapa anda merasa kurang puas?",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "1": {
+                                                    "id": "1A2211",
+                                                    "current_menu": "1-2-2-1-1",
+                                                    "text": "Terima kasih atas kesedian anda. Survey ini sangat membantu kami untuk meningkatkan kualitas pelayanan yang akan kami berikan.\nMenginformasikan juga, layanan Astragraphia kini dapat diakses melalui mobile apps berikut ini\nhttps://www.documentsolution.com/content/customersupport/icare\nTanyakan kepada teknisi kami mengenai aplikasi iCare.\nUntuk pencatatan meter otomatis, anda juga dapat menanyakan mengenai aplikasi iSense ke teknisi kami.\nhttps://www.documentsolution.com/content/customersupport/isense",
+                                                    "type": "text"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "1A222",
+                                            "current_menu": "1-2-2-2",
+                                            "text": "Mohon maaf jika pelayanan kami masih kurang memuaskan. Kenapa anda merasa kurang puas?",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "1": {
+                                                    "id": "1A2221",
+                                                    "current_menu": "1-2-2-2-1",
+                                                    "text": "Terima kasih atas kesedian anda. Survey ini sangat membantu kami untuk meningkatkan kualitas pelayanan yang akan kami berikan.\nMenginformasikan juga, layanan Astragraphia kini dapat diakses melalui mobile apps berikut ini\nhttps://www.documentsolution.com/content/customersupport/icare\nTanyakan kepada teknisi kami mengenai aplikasi iCare.\nUntuk pencatatan meter otomatis, anda juga dapat menanyakan mengenai aplikasi iSense ke teknisi kami.\nhttps://www.documentsolution.com/content/customersupport/isense",
+                                                    "type": "text"
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "id": "1A223",
+                                            "current_menu": "1-2-2-3",
+                                            "text": "Mohon maaf jika pelayanan kami masih kurang memuaskan. Kenapa anda merasa kurang puas?",
+                                            "type": "nest_menu",
+                                            "menus": {
+                                                "1": {
+                                                    "id": "1A2231",
+                                                    "current_menu": "1-2-2-3-1",
+                                                    "text": "Terima kasih atas kesedian anda. Survey ini sangat membantu kami untuk meningkatkan kualitas pelayanan yang akan kami berikan.\nMenginformasikan juga, layanan Astragraphia kini dapat diakses melalui mobile apps berikut ini\nhttps://www.documentsolution.com/content/customersupport/icare\nTanyakan kepada teknisi kami mengenai aplikasi iCare.\nUntuk pencatatan meter otomatis, anda juga dapat menanyakan mengenai aplikasi iSense ke teknisi kami.\nhttps://www.documentsolution.com/content/customersupport/isense",
+                                                    "type": "text"
+                                                }
+                                            }
+                                        },
+                                        "4": {
+                                            "id": "1A224",
+                                            "current_menu": "1-2-2-4",
+                                            "text": "Dalam skala 10-0, seberapa kah anda akan merekomendasikan layanan Astragraphia kepada rekan atau teman anda\n10. Sangat merekomendasikan\n9.\n8.\n7.\n6.\n5.\n4.\n3.\n2.\n1.\n0. Sangat tidak merekomendasikan",
+                                            "type": "text",
+                                            "menus": {
+                                                "1": {
+                                                    "id": "1A2241",
+                                                    "current_menu": "1-2-2-4-1",
+                                                    "text": "Terima kasih atas kesedian anda. Survey ini sangat membantu kami untuk meningkatkan kualitas pelayanan yang akan kami berikan.\nMenginformasikan juga, layanan Astragraphia kini dapat diakses melalui mobile apps berikut ini\nhttps://www.documentsolution.com/content/customersupport/icare\nTanyakan kepada teknisi kami mengenai aplikasi iCare.\nUntuk pencatatan meter otomatis, anda juga dapat menanyakan mengenai aplikasi iSense ke teknisi kami.\nhttps://www.documentsolution.com/content/customersupport/isense",
+                                                    "type": "text"
+                                                }
+                                            }
+                                        },
+                                        "5": {
+                                            "id": "1A225",
+                                            "current_menu": "1-2-2-5",
+                                            "text": "Dalam skala 10-0, seberapa kah anda akan merekomendasikan layanan Astragraphia kepada rekan atau teman anda\n10. Sangat merekomendasikan\n9.\n8.\n7.\n6.\n5.\n4.\n3.\n2.\n1.\n0. Sangat tidak merekomendasikan",
+                                            "type": "text",
+                                            "menus": {
+                                                "1": {
+                                                    "id": "1A2251",
+                                                    "current_menu": "1-2-2-5-1",
+                                                    "text": "Terima kasih atas kesedian anda. Survey ini sangat membantu kami untuk meningkatkan kualitas pelayanan yang akan kami berikan.\nMenginformasikan juga, layanan Astragraphia kini dapat diakses melalui mobile apps berikut ini\nhttps://www.documentsolution.com/content/customersupport/icare\nTanyakan kepada teknisi kami mengenai aplikasi iCare.\nUntuk pencatatan meter otomatis, anda juga dapat menanyakan mengenai aplikasi iSense ke teknisi kami.\nhttps://www.documentsolution.com/content/customersupport/isense",
+                                                    "type": "text"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            ],
+            "T": [
+                {
+                    "id": "2B",
+                    "current_menu": "2",
+                    "text": "Terima kasih atas informasi yang diberikan",
+                    "type": "text"
+                }
+            ]
+        }
+    }
+}

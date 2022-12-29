@@ -1,0 +1,17 @@
+{
+    "active": true,
+    "mode": "basic",
+    "greetingMessage": "Halo, selamat datang di layanan WhatsApp Kami. Silahkan ketik pilihan angka dibawah ini untuk melanjutkan informasi berikutnya :",
+    "exit_keyword": "",
+    "order_keywords": ["NAMA", "EMAIL AKUN", "JENJANG", "SKEMA PEMBAYARAN", "KELUHAN", "PASSWORD BARU", "ALAMAT BARU", "NISN", "TEMPAT, TGL LAHIR", "JENIS KELAMIN", "TINGKAT KELAS", "NAMA ORANG TUA/WALI", "ALAMAT", "PINDAHAN DARI", "EMAIL AKTIF UNTUK DIKIRIMI SURAT", "NAMA AKUN", "NAMA MURID", "NAMA PROGRAM", "NAMA BANK PENERIMA", "NO REKENING PENERIMA", "NAMA PENERIMA", "BUKTI TRANSFER", "NO INVOICE", "ALASAN REFUND"],
+    "order_reply_msg": "",
+    "to_cs_keyword": "",
+    "response_cs_keyword": "Mohon menunggu customer service kami akan segera membantu Anda",
+    "listCommandMessage": "",
+    "contactCsMessage": "",
+    "prefixGreeting": "",
+    "notUnderstandMessage": "Mohon maaf pilihan Anda tidak sesuai. Ketik *MENU* untuk kembali ke menu utama",
+    "check_office_hour": true,
+    "concat_greeting_and_menu": true,
+    "no_ofh_bot_msg": ""
+}

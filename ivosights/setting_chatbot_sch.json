@@ -1,0 +1,206 @@
+{
+    "schemas": {
+        "default": {
+            "survey": {
+                "active": false
+            },
+            "reset_keys": [""],
+            "load_conversation": "wabaTemplateConversation",
+            "top_level_questions": [
+                {
+                    "id": "1",
+                    "text": "Request Demo",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "Informasi Produk",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "Informasi Harga",
+                    "type": "actions"
+                }
+            ],
+            "MENU": [
+                {
+                    "id": "1",
+                    "text": "Request Demo",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "Informasi Produk",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "Informasi Harga",
+                    "type": "actions"
+                }
+            ],
+            "1": [
+                {
+                    "id": "AA",
+                    "text": "Untuk request demo, silakan isi data berikut agar tim sales kami dapat menghubungi Anda :\nNama :\nPerusahaan :\nDemo Produk :\nNo. Handphone :\nEmail :\n",
+                    "type": "text"
+                }
+            ],
+            "2": [
+                {
+                    "id": "BA",
+                    "text": "Silakan pilih informasi produk yang ingin Anda ketahui :\n1. Ripple10\n2. Sociomile\n3. WhatsApp Business\n4. Sociomation",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "B1A",
+                            "text": "Ripple10 adalah aplikasi yang digunakan untuk memantau percakapan masyarakat di media sosial. Sumber data Ripple10 berasal dari kanal Facebook, Instagram, YouTube, Tiktok, Twitter, News, Blog dan Forum.\nBenefit dari penggunaan Ripple10 :\n1. Memantau percakapan digital brand/perusahaan Anda\n2. Analisa sentimen masyarakat terhadap brand/perusahaan Anda\n3. Infografis harian dan peringat dini otomatis untuk penanganan krisis\n4. Command center untuk monitoring real time\n5. Insight terhadap brand/perusahaan Anda\nTertarik mengenal lebih dalam tentang Ripple10?\nKetik YA untuk terhubung langsung dengan tim sales kami\nKetik TIDAK untuk mengakhiri sesi percakapan ini",
+                            "type": "nest_menu",
+                            "menus": {
+                                "YA": {
+                                    "id": "B11A",
+                                    "text": "Silahkan isi data berikut agar tim sales kami dapat menghubungi Anda :\nNama :\nPerusahaan :\nDemo Produk :\nNo. Handphone :\nEmail :\n",
+                                    "type": "text"
+                                },
+                                "TIDAK": {
+                                    "id": "B12A",
+                                    "text": "Terimakasih telah menghubungi kami. Sesi percakapan ini telah berakhir",
+                                    "type": "text"
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "B2A",
+                            "text": "Sociomile adalah aplikasi Omnichannel Customer Service yang dapat menghandle inquiry pesan atau keluhan pelanggan dari berbagai media digital dalam satu dashboard.\nBenefit dari penggunaan Sociomile :\n1. Dapat terhubung dengan berbagai kanal media (Facebook, Instagram, Twitter, YouTube, Email, SMS, WhatsApp, Line, Telegram, Webschat, Playstore)\n2. Pemantauan performansi Agent\n3. Efisiensi Cost & Agent\n4. Pengaturan distribusi tiket ke agent/kelompok agent\n5. Custom report format\nTertarik mengenal lebih dalam tentang Sociomile?\nKetik YA untuk terhubung langsung dengan tim sales kami\nKetik TIDAK untuk mengakhiri sesi percakapan ini",
+                            "type": "nest_menu",
+                            "menus": {
+                                "YA": {
+                                    "id": "B21A",
+                                    "text": "Silahkan isi data berikut agar tim sales kami dapat menghubungi Anda :\nNama :\nPerusahaan :\nDemo Produk :\nNo. Handphone :\nEmail :\n",
+                                    "type": "text"
+                                },
+                                "TIDAK": {
+                                    "id": "B22A",
+                                    "text": "Terimakasih telah menghubungi kami. Sesi percakapan ini telah berakhir",
+                                    "type": "text"
+                                }
+                            }
+                        },
+                        "3": {
+                            "id": "B3A",
+                            "text": "Ivosights sebagai penyedia Layanan WhatsApp Business API untuk skala bisnis menengah hingga enterprise dalam melakukan integrasi pelanggan secara mudah, & efisien melalui platform chat terbesar WhatsApp.\nBenefit dari penggunaan WhatsApp Business API :\n1. Centang hijau (trusted/bisnis terpercaya)\n2. Display name sesuai dengan nama bisnis/usaha nya\n3. Broadcast ke ribuan kontak sekaligus\n4. Dashboard monitoring real-time untuk campaign\n5. Integrasi dengan internal system seperti CRM / Database management system\n6. Integrasi dengan Botchat\n7. Satu sentral nomor yang bisa dihandle banyak agent\nPersyaratan pengajuan WhatsApp Business API :\n1. Bisnis harus berbadan usaha (PT/CV)\n2. Memiliki website dan email yang sesuai dengan domain website\n3. Memiilki ID FB Business Manager\n4. Jenis bisnis yang diperizinkan oleh Facebook/WhatsApp\n(Commerce Policy) : http://www.whatsapp.com/policies/commeerce-policy/\nTertarik mengenal lebih dalam tentang WhatsApp Business API?\nKetik YA untuk terhubung langsung dengan tim sales kami\nKetik TIDAK untuk mengakhiri sesi percakapan ini",
+                            "type": "nest_menu",
+                            "menus": {
+                                "YA": {
+                                    "id": "B31A",
+                                    "text": "Silahkan isi data berikut agar tim sales kami dapat menghubungi Anda :\nNama :\nPerusahaan :\nDemo Produk :\nNo. Handphone :\nEmail :\n",
+                                    "type": "text"
+                                },
+                                "TIDAK": {
+                                    "id": "B32A",
+                                    "text": "Terimakasih telah menghubungi kami. Sesi percakapan ini telah berakhir",
+                                    "type": "text"
+                                }
+                            }
+                        },
+                        "4": {
+                            "id": "B4A",
+                            "text": "Sociomation adalah aplikasi blasting/broadcast berbasis skenario melalui Email, SMS, Telegram dan Twitter.\nBenefit dari penggunaan Sociomation :\n1. Multi channel blasting\n2. Otomasi skenario\n3. Segmentasi tidak terbatas\n4. Data Enrichment dengan Big Data\nTertarik mengenal lebih dalam tentang Sociomation?\nKetik YA untuk terhubung langsung dengan tim sales kami\nKetik TIDAK untuk mengakhiri sesi percakapan ini",
+                            "type": "nest_menu",
+                            "menus": {
+                                "YA": {
+                                    "id": "B41A",
+                                    "text": "Silahkan isi data berikut agar tim sales kami dapat menghubungi Anda :\nNama :\nPerusahaan :\nDemo Produk :\nNo. Handphone :\nEmail :\n",
+                                    "type": "text"
+                                },
+                                "TIDAK": {
+                                    "id": "B42A",
+                                    "text": "Terimakasih telah menghubungi kami. Sesi percakapan ini telah berakhir",
+                                    "type": "text"
+                                }
+                            }
+                        }
+                    }
+                }
+            ],
+            "3": [
+                {
+                    "id": "CA",
+                    "text": "Silakan pilih informasi harga produk yang ingin Anda ketahui :\n1. Ripple10\n2. Sociomile\n3. WhatsApp Business\n4. Sociomation",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "C1A",
+                            "text": "*Package Lite*\nIDR 10.000.000/month\n- 10 Keyword\n- 2 Project & 1 competitor\n- Raw Data\n- Alert System\n- Daily Report\n\n*Package Basic*\nIDR 13.000.000/month\n- 15 Keyword\n- 3 Project & 3 competitor\n- Raw Data\n- Alert System\n- Daily Report\n\n*Package Pro*\nIDR 15.000.000/month\n- 30 Keyword\n- 5 Project & 5 competitor\n- Raw Data\n- Alert System\n- Daily Report\n\nIngin custom kebutuhan Anda?\nSilakan ketik YA untuk terhubung langsung dengan tim sales kami\nKetik TIDAK untuk mengakhiri sesi percakapan ini",
+                            "type": "nest_menu",
+                            "menus": {
+                                "YA": {
+                                    "id": "C11A",
+                                    "text": "Silahkan isi data berikut agar tim sales kami dapat menghubungi Anda :\nNama :\nPerusahaan :\nDemo Produk :\nNo. Handphone :\nEmail :\n",
+                                    "type": "text"
+                                },
+                                "TIDAK": {
+                                    "id": "C12A",
+                                    "text": "Terimakasih telah menghubungi kami. Sesi percakapan ini telah berakhir",
+                                    "type": "text"
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "C2A",
+                            "text": "Full Dashboard\nReport tim & Individual\nJumlah tiket tak terbatas\nChannel : Email, Facebook, Instagram, Twitter, Webchat, Telegram, Line, SMS, Google Play, WhatsApp, YouTube\n\n1 - 10 : IDR 1.500.000/agent/month\n11 - 50 : IDR 1.250.000/agent/month\n51 - 100 : IDR 1.000.000/agent/month\n>100 : IDR 850.000/agent/month\n\nIngin custom kebutuhan Anda?\nSilakan ketik YA untuk terhubung langsung dengan tim sales kami\nKetik TIDAK untuk mengakhiri sesi percakapan ini",
+                            "type": "nest_menu",
+                            "menus": {
+                                "YA": {
+                                    "id": "C21A",
+                                    "text": "Silahkan isi data berikut agar tim sales kami dapat menghubungi Anda :\nNama :\nPerusahaan :\nDemo Produk :\nNo. Handphone :\nEmail :\n",
+                                    "type": "text"
+                                },
+                                "TIDAK": {
+                                    "id": "C22A",
+                                    "text": "Terimakasih telah menghubungi kami. Sesi percakapan ini telah berakhir",
+                                    "type": "text"
+                                }
+                            }
+                        },
+                        "3": {
+                            "id": "C3A",
+                            "text": "Biaya Setup : IDR 3.500.000 (1 kali)\nBiaya Bulanan : IDR 2.500.000 (Quota 5000 MAU)\nExtra per-MAU : IDR 250\nPush Message : IDR 385\n\nIngin custom kebutuhan Anda?\nSilakan ketik YA untuk terhubung langsung dengan tim sales kami\nKetik TIDAK untuk mengakhiri sesi percakapan ini",
+                            "type": "nest_menu",
+                            "menus": {
+                                "YA": {
+                                    "id": "C31A",
+                                    "text": "Silahkan isi data berikut agar tim sales kami dapat menghubungi Anda :\nNama :\nPerusahaan :\nDemo Produk :\nNo. Handphone :\nEmail :\n",
+                                    "type": "text"
+                                },
+                                "TIDAK": {
+                                    "id": "C32A",
+                                    "text": "Terimakasih telah menghubungi kami. Sesi percakapan ini telah berakhir",
+                                    "type": "text"
+                                }
+                            }
+                        },
+                        "4": {
+                            "id": "C4A",
+                            "text": "Dashboard & Report performance\nSegmentasi & Skenario tak terbatas\nChannel : Email, SMS(masking), Telegram, Twitter\nIDR 5.000.000/month\nIngin custom kebutuhan Anda?\nSilakan ketik YA untuk terhubung langsung dengan tim sales kami\nKetik TIDAK untuk mengakhiri sesi percakapan ini",
+                            "type": "nest_menu",
+                            "menus": {
+                                "YA": {
+                                    "id": "C41A",
+                                    "text": "Silahkan isi data berikut agar tim sales kami dapat menghubungi Anda :\nNama :\nPerusahaan :\nDemo Produk :\nNo. Handphone :\nEmail :\n",
+                                    "type": "text"
+                                },
+                                "TIDAK": {
+                                    "id": "C42A",
+                                    "text": "Terimakasih telah menghubungi kami. Sesi percakapan ini telah berakhir",
+                                    "type": "text"
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

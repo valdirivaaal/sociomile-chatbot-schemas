@@ -1,0 +1,640 @@
+{
+    "schemas": {
+        "default": {
+            "survey": {
+                "active": false
+            },
+            "reset_keys": [
+                "MENU"
+            ],
+            "load_conversation": "WabaTemplateConversation",
+            "top_level_questions": [
+                {
+                    "id": "1",
+                    "text": "Booking IGD",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "Booking Rawat Jalan",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "Booking Rawat Inap",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "Booking Medical Check Up",
+                    "type": "actions"
+                },
+                {
+                    "id": "5",
+                    "text": "Terhubung dengan Operator",
+                    "type": "actions"
+                }
+            ],
+            "MENU": [
+                {
+                    "id": "1",
+                    "text": "Booking IGD",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "Booking Rawat Jalan",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "Booking Rawat Inap",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "Booking Medical Check Up",
+                    "type": "actions"
+                },
+                {
+                    "id": "5",
+                    "text": "Terhubung dengan Operator",
+                    "type": "actions"
+                }
+            ],
+            "1": [
+                {
+                    "id": "1A",
+                    "current_menu": "1",
+                    "text": "",
+                    "type": "sequences",
+                    "parent_key": "1",
+                    "required_data": [
+                        {
+                            "id": "1_1_SQ1",
+                            "index": "Pelanggan",
+                            "label": "domisili",
+                            "text": "Dimana Domisili Anda Saat ini?",
+                            "type": "text",
+                            "validation": null,
+                            "error_msg": ""
+                        },
+                        {
+                            "id": "1_1_SQ2",
+                            "index": "Pelanggan",
+                            "label": "keluhan",
+                            "text": "Apa keluhan yang anda alami?",
+                            "type": "text",
+                            "validation": null,
+                            "error_msg": ""
+                        },
+                        {
+                            "id": "1_1_SQ3",
+                            "index": "Pelanggan",
+                            "label": "rs_pilihan",
+                            "text": "Apakah anda sudah memiliki RS pilihan? (Ya/Tidak)",
+                            "type": "nest_menu",
+                            "validation": null,
+                            "error_msg": "",
+                            "menus": {
+                                "YA": {
+                                    "id": "1_1_SQ31",
+                                    "index": "Pelanggan",
+                                    "label": "nama_rs",
+                                    "text": "Tuliskan Nama RS",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": ""
+                                },
+                                "TIDAK": {
+                                    "id": "1_1_SQ32",
+                                    "index": "Pelanggan",
+                                    "label": "pembayaran",
+                                    "text": "Apakah pembayaran menggunakan Asuransi atau Pribadi?",
+                                    "type": "nest_menu",
+                                    "validation": null,
+                                    "error_msg": "",
+                                    "menus": {
+                                        "ASURANSI": {
+                                            "id": "1_1_SQ321",
+                                            "index": "Pelanggan",
+                                            "label": "foto_asuransi",
+                                            "text": "Mohon kirimkan foto Asuransi Anda",
+                                            "type": "text",
+                                            "validation": null,
+                                            "error_msg": ""
+                                        },
+                                        "PRIBADI": {
+                                            "id": "1_1_SQ322",
+                                            "index": "Pelanggan",
+                                            "label": "",
+                                            "text": "Terimakasih, mohon ditunggu Operator kami akan segera menghubungi anda",
+                                            "type": "goto",
+                                            "goto": "cs",
+                                            "validation": null,
+                                            "error_msg": ""
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "id": "1_1_SQ33",
+                            "index": "Pelanggan",
+                            "label": "foto_ktp",
+                            "text": "Mohon kirimkan foto KTP Anda",
+                            "type": "text",
+                            "validation": null,
+                            "error_msg": "",
+                            "goto": "1_2_SQ32"
+                        }
+                    ]
+                }
+            ],
+            "2": [
+                {
+                    "id": "2B",
+                    "current_menu": "2",
+                    "text": "",
+                    "type": "sequences",
+                    "parent_key": "2",
+                    "required_data": [
+                        {
+                            "id": "1_2_SQ1",
+                            "index": "Pelanggan",
+                            "label": "domisili",
+                            "text": "Dimana Domisili Anda Saat ini?",
+                            "type": "text",
+                            "validation": null,
+                            "error_msg": ""
+                        },
+                        {
+                            "id": "1_2_SQ2",
+                            "index": "Pelanggan",
+                            "label": "dokter_spesialis",
+                            "text": "Dokter Spesialis apa yang dituju?",
+                            "type": "text",
+                            "validation": null,
+                            "error_msg": ""
+                        },
+                        {
+                            "id": "1_2_SQ3",
+                            "index": "Pelanggan",
+                            "text": "Apakah anda sudah memiliki RS Pilihan? (Ya/Tidak)",
+                            "label": "rs_pilihan",
+                            "type": "nest_menu",
+                            "validation": null,
+                            "error_msg": "",
+                            "menus": {
+                                "YA": {
+                                    "id": "1_2_SQ31",
+                                    "index": "Pelanggan",
+                                    "label": "nama_rs",
+                                    "text": "Tuliskan Nama RS",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": "",
+                                    "goto": "1_2_SQ32"
+                                },
+                                "TIDAK": {
+                                    "id": "1_2_SQ32",
+                                    "index": "Pelanggan",
+                                    "label": "dokter_pilihan",
+                                    "text": "Apakah anda sudah memiliki Dokter yang dipilih? (Ya/Tidak)",
+                                    "type": "nest_menu",
+                                    "validation": null,
+                                    "error_msg": "",
+                                    "menus": {
+                                        "YA": {
+                                            "id": "1_2_SQ321",
+                                            "index": "Pelanggan",
+                                            "label": "nama_rs",
+                                            "text": "Tuliskan Nama RS",
+                                            "type": "text",
+                                            "validation": null,
+                                            "error_msg": "",
+                                            "goto": "1_2_SQ322"
+                                        },
+                                        "TIDAK": {
+                                            "id": "1_2_SQ322",
+                                            "index": "Pelanggan",
+                                            "label": "jadwal_rawat_jalan",
+                                            "text": "Apakah anda sudah ada jadwal rawat jalan? (Ya/Tidak)",
+                                            "type": "nest_menu",
+                                            "validation": null,
+                                            "error_msg": "",
+                                            "menus": {
+                                                "YA": {
+                                                    "id": "1_2_SQ3221",
+                                                    "index": "Pelanggan",
+                                                    "label": "",
+                                                    "text": "",
+                                                    "type": "",
+                                                    "validation": null,
+                                                    "error_msg": ""
+                                                },
+                                                "TIDAK": {
+                                                    "id": "1_2_SQ3222",
+                                                    "index": "Pelanggan",
+                                                    "text": "Apakah pembayaran menggunakan Asuransi atau Pribadi?",
+                                                    "label": "pembayaran",
+                                                    "type": "nest_menu",
+                                                    "validation": null,
+                                                    "error_msg": "",
+                                                    "menus": {
+                                                        "ASURANSI": {
+                                                            "id": "1_2_SQ32221",
+                                                            "index": "Pelanggan",
+                                                            "label": "foto_asuransi",
+                                                            "text": "Mohon kirimkan foto Asuransi anda",
+                                                            "type": "text",
+                                                            "validation": null,
+                                                            "error_msg": ""
+                                                        },
+                                                        "PRIBADI": {
+                                                            "id": "1_2_SQ32222",
+                                                            "index": "Pelanggan",
+                                                            "label": "",
+                                                            "text": "Terimakasih, mohon ditunggu Operator kami akan segera menghubungi anda",
+                                                            "type": "goto",
+                                                            "goto": "cs",
+                                                            "validation": null,
+                                                            "error_msg": ""
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "id": "1_2_SQ3223",
+                            "index": "Pelanggan",
+                            "label": "tanggal_berangkat",
+                            "text": "Tuliskan Tanggal & jam rencana ke RS",
+                            "type": "text",
+                            "validation": null,
+                            "error_msg": ""
+                        },
+                        {
+                            "id": "1_2_SQ3224",
+                            "index": "Pelanggan",
+                            "label": "foto_ktp",
+                            "text": "Mohon Kirimkan foto KTP Anda",
+                            "type": "text",
+                            "validation": null,
+                            "error_msg": "",
+                            "goto": "1_2_SQ3222"
+                        }
+                    ]
+                }
+            ],
+            "3": [
+                {
+                    "id": "3C",
+                    "current_menu": "3",
+                    "text": "",
+                    "type": "sequences",
+                    "parent_key": "3",
+                    "required_data": [
+                        {
+                            "id": "1_3_SQ1",
+                            "index": "Pelanggan",
+                            "label": "domisili",
+                            "text": "Dimana Domisili Anda Saat ini? (Contoh: Kedoya Barat)",
+                            "type": "text",
+                            "validation": null,
+                            "error_msg": ""
+                        },
+                        {
+                            "id": "1_3_SQ2",
+                            "index": "Pelanggan",
+                            "label": "diagnosa",
+                            "text": "Tuliskan Diagnosa/Keluhan/Kondisi yang anda alami",
+                            "type": "text",
+                            "validation": null,
+                            "error_msg": ""
+                        },
+                        {
+                            "id": "1_3_SQ3",
+                            "index": "Pelanggan",
+                            "label": "surat_rujukan",
+                            "text": "Apakah anda sudah memiliki surat rujukan rawat inap?",
+                            "type": "nest_menu",
+                            "validation": null,
+                            "error_msg": "",
+                            "menus": {
+                                "YA": {
+                                    "id": "1_3_SQ31",
+                                    "index": "Pelanggan",
+                                    "label": "foto_rujukan",
+                                    "text": "Mohon kirimkan foto surat rujukan",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": ""
+                                },
+                                "TIDAK": {
+                                    "id": "1_3_SQ32",
+                                    "index": "Pelanggan",
+                                    "label": "rs_pilihan",
+                                    "text": "Apakah anda sudah memiliki RS pilihan?",
+                                    "type": "nest_menu",
+                                    "validation": null,
+                                    "error_msg": "",
+                                    "menus": {
+                                        "YA": {
+                                            "id": "1_3_SQ321",
+                                            "index": "Pelanggan",
+                                            "label": "nama_rs",
+                                            "text": "Tuliskan Nama RS",
+                                            "type": "text",
+                                            "validation": null,
+                                            "error_msg": ""
+                                        },
+                                        "TIDAK": {
+                                            "id": "1_3_SQ322",
+                                            "index": "Pelanggan",
+                                            "label": "pembayaran",
+                                            "text": "Apakah pembayaran menggunakan Asuransi atau Pribadi?",
+                                            "type": "nest_menu",
+                                            "validation": null,
+                                            "error_msg": "",
+                                            "menus": {
+                                                "ASURANSI": {
+                                                    "id": "1_3_SQ3221",
+                                                    "index": "Pelanggan",
+                                                    "label": "foto_asuransi",
+                                                    "text": "Mohon kirimkan foto asuransi anda",
+                                                    "type": "text",
+                                                    "validation": null,
+                                                    "error_msg": "",
+                                                    "next_bubbles": [
+                                                        {
+                                                            "type": "goto",
+                                                            "goto": "cs",
+                                                            "text": "Terimakasih, mohon ditunggu Operator kami akan segera menghubungi anda"
+                                                        }
+                                                    ]
+                                                },
+                                                "PRIBADI": {
+                                                    "id": "1_3_SQ3222",
+                                                    "index": "Pelanggan",
+                                                    "label": "",
+                                                    "text": "Terimakasih, mohon ditunggu Operator kami akan segera menghubungi anda",
+                                                    "type": "goto",
+                                                    "goto": "cs",
+                                                    "validation": null,
+                                                    "error_msg": ""
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "id": "1_3_SQ4",
+                            "index": "Pelanggan",
+                            "label": "rs_rujuk",
+                            "text": "Apakah anda akan dirawat di RS yang dirujuk? (Ya/Tidak)",
+                            "type": "nest_menu",
+                            "validation": null,
+                            "error_msg": "",
+                            "menus": {
+                                "YA": {
+                                    "id": "1_3_SQ41",
+                                    "index": "Pelanggan",
+                                    "label": "foto_ktp",
+                                    "text": "Mohon kirimkan foto KTP anda",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": ""
+                                },
+                                "TIDAK": {
+                                    "id": "1_3_SQ42",
+                                    "index": "Pelanggan",
+                                    "label": "nama_rs",
+                                    "text": "Tuliskan Nama RS",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": ""
+                                }
+                            }
+                        },
+                        {
+                            "id": "1_3_SQ421",
+                            "index": "Pelanggan",
+                            "label": "foto_ktp",
+                            "text": "Mohon Kirimkan foto KTP anda",
+                            "type": "text",
+                            "validation": null,
+                            "error_msg": ""
+                        },
+                        {
+                            "id": "1_3_SQ422",
+                            "index": "Pelanggan",
+                            "label": "pembayaran",
+                            "text": "Apakah pembayaran menggunakan Asuransi atau Pribadi?",
+                            "type": "nest_menu",
+                            "validation": null,
+                            "error_msg": "",
+                            "menus": {
+                                "ASURANSI": {
+                                    "id": "1_3_SQ4221",
+                                    "index": "Pelanggan",
+                                    "label": "foto_asuransi",
+                                    "text": "Mohon kirimkan foto asuransi anda",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": "",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "goto",
+                                            "goto": "cs",
+                                            "text": "Terimakasih, mohon ditunggu Operator kami akan segera menghubungi anda"
+                                        }
+                                    ]
+                                },
+                                "PRIBADI": {
+                                    "id": "1_3_SQ4222",
+                                    "index": "Pelanggan",
+                                    "label": "",
+                                    "text": "Terimakasih, mohon ditunggu Operator kami akan segera menghubungi anda",
+                                    "type": "goto",
+                                    "goto": "cs",
+                                    "validation": null,
+                                    "error_msg": ""
+                                }
+                            }
+                        },
+                        {
+                            "id": "1_3_SQ5",
+                            "index": "Pelanggan",
+                            "label": "pembayaran",
+                            "text": "Apakah pembayaran menggunakan Asuransi / Pribadi?",
+                            "type": "nest_menu",
+                            "validation": null,
+                            "error_msg": "",
+                            "menus": {
+                                "ASURANSI": {
+                                    "id": "1_3_SQ2",
+                                    "index": "Pelanggan",
+                                    "label": "foto_kartu_asuransi",
+                                    "text": "Mohon kirimkan foto kartu Asuransi anda",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": ""
+                                },
+                                "PRIBADI": {
+                                    "id": "1_3_SQ52",
+                                    "index": "Pelanggan",
+                                    "label": "jumlah_bed",
+                                    "text": "Tuliskan jumlah bed dalam kamar perawatan yang anda inginkan",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": "",
+                                    "next_bubbles": [
+                                        {
+                                            "type": "text",
+                                            "text": "Terimakasih, mohon ditunggu Operator kami akan segera menghubungi anda"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "id": "1_3_SQ6",
+                            "index": "Pelanggan",
+                            "label": "plan_asuransi",
+                            "text": "Tuliskan plan Kartu Asuransi",
+                            "type": "text",
+                            "validation": null,
+                            "error_msg": ""
+                        },
+                        {
+                            "id": "1_3_SQ7",
+                            "index": "Pelanggan",
+                            "label": "tgl_berlaku",
+                            "text": "Tuliskan tanggal berlaku asuransi Kesehatan anda",
+                            "type": "text",
+                            "validation": null,
+                            "error_msg": ""
+                        },
+                        {
+                            "id": "1_3_SQ8",
+                            "index": "Pelanggan",
+                            "label": "ketentuan_asuransi",
+                            "text": "Apakah Asuransi Kesehatan anda memiliki ketentuan Substandar",
+                            "type": "text",
+                            "validation": null,
+                            "error_msg": ""
+                        },
+                        {
+                            "id": "1_3_SQ9",
+                            "index": "Pelanggan",
+                            "label": "jumlah_bed",
+                            "text": "Tuliskan jumlah bed dalam kamar perawatan yang anda inginkan",
+                            "type": "text",
+                            "validation": null,
+                            "error_msg": "",
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "Terimakasih, mohon ditunggu Operator kami akan segera menghubungi anda"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "4": [
+                {
+                    "id": "4D",
+                    "current_menu": "4",
+                    "text": "",
+                    "type": "sequences",
+                    "parent_key": "4",
+                    "required_data": [
+                        {
+                            "id": "1_4_SQ1",
+                            "index": "Pelanggan",
+                            "label": "domisili",
+                            "text": "Dimana Domisili Anda Saat ini ?",
+                            "type": "text",
+                            "validation": null,
+                            "error_msg": ""
+                        },
+                        {
+                            "id": "1_4_SQ2",
+                            "index": "Pelanggan",
+                            "label": "jenis_mcu",
+                            "text": "Apakah anda akan melakukan MCU untuk keperluan Asuransi / Pribadi?",
+                            "type": "nest_menu",
+                            "validation": null,
+                            "error_msg": "",
+                            "menus": {
+                                "ASURANSI": {
+                                    "id": "1_4_SQ21",
+                                    "index": "Pelanggan",
+                                    "label": "form_mcu",
+                                    "text": "Mohon kirimkan FORM MCU dari Asuransi",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": ""
+                                },
+                                "PRIBADI": {
+                                    "id": "1_4_SQ22",
+                                    "index": "Pelanggan",
+                                    "label": "jenis_pemeriksaan",
+                                    "text": "Tuliskan jenis pemeriksaan yang akan dilakukan",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": ""
+                                }
+                            }
+                        },
+                        {
+                            "id": "1_4_SQ3",
+                            "index": "Pelanggan",
+                            "label": "foto_ktp",
+                            "text": "Mohon kirimkan foto KTP anda",
+                            "type": "text",
+                            "validation": null,
+                            "error_msg": ""
+                        },
+                        {
+                            "id": "1_4_SQ4",
+                            "index": "Pelanggan",
+                            "label": "tanggal_mcu",
+                            "text": "Mohon tuliskan perkiraan tanggal yang diinginkan untuk MCU",
+                            "type": "",
+                            "validation": null,
+                            "error_msg": ""
+                        },
+                        {
+                            "id": "1_4_SQ5",
+                            "index": "Pelanggan",
+                            "label": "",
+                            "text": "Terimakasih, mohon ditunggu Operator kami akan segera menghubungi anda (Terhubung ke Sociomile)",
+                            "type": "goto",
+                            "goto": "cs",
+                            "validation": null,
+                            "error_msg": ""
+                        }
+                    ]
+                }
+            ],
+            "5": [
+                {
+                    "id": "5E",
+                    "current_menu": "5",
+                    "text": "Terimakasih, mohon ditunggu Operator kami akan segera menghubungi anda (Terhubung ke Sociomile)",
+                    "type": "goto",
+                    "goto": "cs"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,103 @@
+{
+    "_id" : ObjectId("61b28d9773bedb57087fe462"),
+    "source" : "chat",
+    "project" : 9749,
+    "status" : true,
+    "data" : {
+        "id" : "chatkominfo",
+        "name" : "Live Chat Kominfo",
+        "user_name" : "Live Chat Kominfo",
+        "avatar" : "https://smcdn.s45.in/sm-avatar/943b00e8551393698ee50bbfdb2128c3.jpeg",
+        "link" : "sociomile.com",
+        "domain" : "sociomile.com",
+        "email" : "hume@ivosights.com",
+        "twitter" : "",
+        "offline_message" : "",
+        "chatbot" : {
+            "active" : true,
+            "mode" : "basic",
+            "greetingMessage" : "Informasi apa yang Sobat butuhkan?\n\n",
+            "exit_keyword" : "",
+            "order_keywords" : [],
+            "order_reply_msg" : "",
+            "to_cs_keyword" : "",
+            "response_cs_keyword" : "Mohon ditunggu,\nSobat akan terhubung dengan Petugas kami",
+            "contactCsMessage" : "",
+            "prefixGreeting" : "",
+            "check_office_hour" : false,
+            "concat_greeting_and_menu" : true,
+            "no_ofh_bot_msg" : "",
+            "AutoCloseMessage" : "Kami belum mendapatkan respon Anda, Izinkan kami untuk melakukan penutupan laporan",
+            "startNewBtnText" : "Akhiri Percakapan",
+            "iddleReminderTime" : 10.0,
+            "maxReminderLimit" : 1.0,
+            "iddleReminderMsg" : "Anda sudah tidak merespon selama {irt} menit, apakah ingin mengakhiri percakapan?",
+            "listCommandMessage" : "Untuk memilih layanan, silakan pilih menu yang sesuai",
+            "askName" : "Hai saya Petugas Layanan Digital Talent Scholarship, mohon ketikkan nama Sobat sesuai dengan KTP",
+            "askEmail" : "Mohon ketikkan alamat email  Sobat yang terdaftar di Digital Talent Scholarship.",
+            "askPhone" : "Silahkan masukkan nomor HP Sobat yang valid (hanya numerik)",
+            "chooseMessage" : "Silakan pilih:",
+            "cs_bot_text" : "DTS Care",
+            "notUnderstandMessage" : "Mohon maaf pilihan Sobat tidak sesuai.! Untuk memilih layanan, silakan pilih menu yang sesuai",
+            "replyAskName" : "Halo",
+            "end_waiting_msg" : "Mohon maaf, seluruh agent kami sedang melayani peserta lainnya. Apakah kamu bersedia untuk tetap menunggu ?",
+            "errorNameMessage" : "Oops! Nama Sobat tidak boleh mengandung spesial karakter atau angka.",
+            "errorEmailMessage" : "Oops! Sepertinya alamat email Sobat salah. Silakan masukkan kembali alamat email yang benar.",
+            "errorPhoneMessage" : "Oops! Sepertinya format nomor HP yang Sobat masukkan salah. Silakan masukkan kembali nomor HP yang benar.",
+            "confirmEndMessage" : "Kamu yakin ingin mengakhiri percakapan?",
+            "confirmLogoutBtnText" : "Ya",
+            "cancelLogoutBtnText" : "Tidak"
+        },
+        "css" : "https://smcdn.s45.in/2021/12/10//tmp/chat_61b28d9773bedb57087fe462.css?id=61b2f4f9bb426",
+        "widget_title" : "",
+        "agent_alias" : "",
+        "custom_cs_text" : "",
+        "custom_widget_url" : "",
+        "show_cs_text" : false,
+        "welcome_msg" : "",
+        "greeting_msg" : "",
+        "win5menit_message" : "",
+        "agent_idle_msg" : "",
+        "busy_time_series" : "",
+        "confirm_wait_msg" : "",
+        "wait_or_end_msg" : "",
+        "account_name" : "Live Chat Kominfo",
+        "winSorry_message" : "",
+        "hide_powered_by" : false
+    },
+    "is_trash" : false,
+    "updated_at" : ISODate("2021-12-10T11:00:00.000Z"),
+    "created_at" : ISODate("2021-12-09T23:13:27.000Z"),
+    "webchat" : {
+        "chat_id" : "61b28d9773bedb57087fe462",
+        "customer_idle" : {
+            "auto_response" : {
+                "status" : false,
+                "minutes" : 0
+            },
+            "auto_close" : {
+                "status" : false,
+                "minutes" : 0
+            }
+        },
+        "offline_message" : {
+            "status" : false,
+            "message" : null
+        },
+        "first_response" : {
+            "status" : false,
+            "message" : null
+        },
+        "send_history_chat" : false,
+        "max_ticket" : 1,
+        "widget_color" : "#007cff",
+        "widget_icon_size" : "60",
+        "widget_max_height" : "335",
+        "autodistribution_limit" : 10,
+        "custom_ph_name" : "",
+        "custom_ph_email" : "",
+        "custom_ph_phone" : "",
+        "custom_ph_message" : "",
+        "disconnect_message" : ""
+    }
+}

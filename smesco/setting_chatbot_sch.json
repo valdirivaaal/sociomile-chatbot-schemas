@@ -1,0 +1,383 @@
+{
+    "schemas": {
+        "default": {
+            "survey": {
+                "active": false
+            },
+            "reset_keys": [
+                "MENU"
+            ],
+            "load_conversation": "WabaTemplateConversation",
+            "top_level_questions": [
+                {
+                    "id": "1",
+                    "text": "Website Smesco",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "Pendaftaran UKM",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "Pembuatan e-Brosur",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "Informasi Program Smesco",
+                    "type": "actions"
+                },
+                {
+                    "id": "5",
+                    "text": "Smesco Fullfilment Center",
+                    "type": "actions"
+                },
+                {
+                    "id": "6",
+                    "text": "SIREN - Smesco Indonesia Retail Network",
+                    "type": "actions"
+                },
+                {
+                    "id": "7",
+                    "text": "Alamat Smesco",
+                    "type": "actions"
+                },
+                {
+                    "id": "8",
+                    "text": "Informasi Lainnya",
+                    "type": "actions"
+                }
+            ],
+            "MENU": [
+                {
+                    "id": "1",
+                    "text": "Website Smesco",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "Pendaftaran UKM",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "Pembuatan e-Brosur",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "Informasi Program Smesco",
+                    "type": "actions"
+                },
+                {
+                    "id": "5",
+                    "text": "Smesco Fullfilment Center",
+                    "type": "actions"
+                },
+                {
+                    "id": "6",
+                    "text": "SIREN - Smesco Indonesia Retail Network",
+                    "type": "actions"
+                },
+                {
+                    "id": "7",
+                    "text": "Alamat Smesco",
+                    "type": "actions"
+                },
+                {
+                    "id": "8",
+                    "text": "Informasi Lainnya",
+                    "type": "actions"
+                }
+            ],
+            "1": [
+                {
+                    "id": "1A",
+                    "current_menu": "1",
+                    "text": "Baik {CUSTOMER_NAME}\nUntuk website Resmi Smesco Indonesia https://smesco.go.id",
+                    "type": "nest_menu",
+                    "interactive_type": "button",
+                    "interractive_message": true,
+                    "next_bubbles": [
+                        {
+                            "type": "interactive_button",
+                            "text": "Silahkan Klik Button *Kembali ke Menu Utama*",
+                            "menus": {
+                                "MENU": {
+                                    "id": "MENU",
+                                    "title": "Menu Utama"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "MENU": {
+                            "id": "MENU",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }
+            ],
+            "2": [
+                {
+                    "id": "2B",
+                    "current_menu": "2",
+                    "text": "Untuk pendaftaran UKM ke Smesco silahkan melalui Landing Page resmi Smesco Indonesia disini >> https://dataukm.smesco.go.id",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "button",
+                    "next_bubbles": [
+                        {
+                            "type": "text",
+                            "text": "Jika anda sudah pernah mendaftarkan silahkan cek data usaha anda disini >> https://smesco.go.id/ukm/cek"
+                        },
+                        {
+                            "type": "interactive_button",
+                            "text": "Silahkan Klik Button *Kembali ke Menu Utama*",
+                            "menus": {
+                                "MENU": {
+                                    "id": "MENU",
+                                    "title": "Menu Utama"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "MENU": {
+                            "id": "MENU",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }
+            ],
+            "3": [
+                {
+                    "id": "3C",
+                    "current_menu": "3",
+                    "text": "Untuk pembuatan Layanan e-Brosur Smesco Indonesia bisa langsung menuju link ini >> https://e-brochure.smesco.go.id",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "button",
+                    "next_bubbles": [
+                        {
+                            "type": "text",
+                            "text": "Cara pembuatannya sudah ada pada link di atas. Semoga membantu"
+                        },
+                        {
+                            "type": "interactive_button",
+                            "text": "Silahkan Klik Button *Kembali ke Menu Utama*",
+                            "menus": {
+                                "MENU": {
+                                    "id": "MENU",
+                                    "title": "Menu Utama"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "MENU": {
+                            "id": "MENU",
+                            "current_menu": "MENU",
+                            "title": "Menu Utama",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }
+            ],
+            "4": [
+                {
+                    "id": "4D",
+                    "current_menu": "4",
+                    "text": "Baik {{CUSTOMER_NAME}}\nUntuk program dari Smesco, akan selalu di update melalui email dan sosial media Smesco Indonesia.",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "button",
+                    "next_bubbles": [
+                        {
+                            "type": "text",
+                            "text": "Pastikan anda sudah terdaftar di https://dataukm.smesco.go.id dan mengikuti sosial media Smesco Indonesia untuk selalu mendapatkan informasi terupdate dari Smesco."
+                        },
+                        {
+                            "type": "text",
+                            "text": "Sosial Media Smesco Indonesia:\n\n*Instagram*\nhttps://instagram.com/smescoindonesia\n\n*Facebook*\nhttps://facebook.com/smescoindonesia\n\n*Twitter*\nhttps://twitter.com/smescoindonesia\n\n*Youtube*\nhttps://www.youtube.com/channel/UCbpSLM92kDsByGJxNjx_v6A"
+                        },
+                        {
+                            "type": "interactive_button",
+                            "text": "Silahkan Klik Button *Kembali ke Menu Utama*",
+                            "menus": {
+                                "MENU": {
+                                    "id": "MENU",
+                                    "title": "Menu Utama"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "MENU": {
+                            "id": "MENU",
+                            "current_menu": "MENU",
+                            "title":"Menu Utama",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }
+            ],
+            "5": [
+                {
+                    "id": "5E",
+                    "current_menu": "5",
+                    "text": "Solusi Ongkos Kirim Murah Se-Pulau JAWA cuma 9rban saja.",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "button",
+                    "next_bubbles": [
+                        {
+                            "type": "text",
+                            "text": "Smesco Fulfilment Center adalah Gudang penyimpanan/transit barang untuk membantu para pelaku UKM, dalam menyimpan barang, packing barang dan pengiriman barang semua dilakukan oleh tim Profesional Smesco Fulfillment Center."
+                        },
+                        {
+                            "type": "text",
+                            "text": "Mau gabung ke Smesco Fulfillment Center ? Yuk cari tau detail dan pendaftarannya disini https://gudang.smesco.go.id"
+                        },
+                        {
+                            "type": "interactive_button",
+                            "text": "Silahkan Klik Button *Kembali ke Menu Utama*",
+                            "menus": {
+                                "MENU": {
+                                    "id": "MENU",
+                                    "title": "Menu Utama"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "MENU": {
+                            "id": "MENU",
+                            "current_menu": "MENU",
+                            "title":"Menu Utama",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }
+            ],
+            "6": [
+                {
+                    "id": "6F",
+                    "current_menu": "6",
+                    "text": "SIREN adalah Platform Bisnis Dropship Bagian dari Smesco Indonesia yang berfokus pada menjual produk-produk UKM di seluruh Indonesia.",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "button",
+                    "next_bubbles": [
+                        {
+                            "type": "text",
+                            "text": "Untuk lebih detail dan cara bergabung silahkan kunjungi https://siren.id"
+                        }
+                    ],
+                    "menus": {
+                        "MENU": {
+                            "id": "MENU",
+                            "current_menu": "MENU",
+                            "title": "Menu Utama",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }
+            ],
+            "7": [
+                {
+                    "id": "7G",
+                    "current_menu": "7",
+                    "text": "Alamat Smesco Indonesia:\nJl. Gatot Subroto Kav.94 Pancoran, Jakarta Selatan, 12780",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "button",
+                    "next_bubbles": [
+                        {
+                            "type": "text",
+                            "text": "Untuk info Operational Admin kami: \nSenin - Jum'at : 08.00 - 16.00"
+                        },
+                        {
+                            "type": "interactive_button",
+                            "text": "Silahkan Klik Button *Kembali ke Menu Utama*",
+                            "menus": {
+                                "MENU": {
+                                    "id": "MENU",
+                                    "title": "Menu Utama"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "MENU": {
+                            "id": "MENU",
+                            "current_menu": "MENU",
+                            "title": "Menu Utama",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }
+            ],
+            "8": [
+                {
+                    "id": "8H",
+                    "current_menu": "8",
+                    "text": "Apakah {{CUSTOMER_NAME}} belum memiliki legalitas untuk usahanya ?",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "button",
+                    "next_bubbles": [
+                        {
+                            "type": "text",
+                            "text": "Berikut ini bisa anda pelajari untuk membuat legalitas produk/usaha anda:\n*Cara Membuat PIRT*\n- https://bit.ly/smesco-PIRT\n\n*Cara Mendaftar NIB*\n- https://bit.ly/smesco-NIB\n- https://bit.ly/smescp-NIB-2"
+                        },
+                        {
+                            "type": "text",
+                            "text": "*Cara Mendaftar BPOM*\n- https://bit.ly/smesco-BPOM\n- https://bit.ly/smesco-BPOM-2\n\n*Cara Mendaftar CV dan PT*\n- https://bit.ly/smesco-CV-PT\n\n*Cara Mendaftar Halal*\n- https://bit.ly/smesco-Label-HALAL\n\n*Cara Mendaftar HAKI*\n- https://bit.ly/smesco-HKI"
+                        },
+                        {
+                            "type": "interactive_button",
+                            "text": "Silahkan Klik Button *Kembali ke Menu Utama*",
+                            "menus": {
+                                "MENU": {
+                                    "id": "MENU",
+                                    "title": "Menu Utama"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "MENU": {
+                            "id": "MENU",
+                            "current_menu": "MENU",
+                            "title": "Menu Utama",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "active": true,
+    "mode": "basic",
+    "greetingMessage": "Hallo Insan PNM! Selamat datang di layanan DigiCare, Sebelum memulai, pastikan kamu adalah karyawan aktif PNM dan aplikasi PNMDigi mu sudah terupdate yaaa..Untuk memilih layanan, silakan ketik balasan dengan nomor yang sesuai :",
+    "exit_keyword": "",
+    "order_keywords": [],
+    "order_reply_msg": "",
+    "to_cs_keyword": "",
+    "response_cs_keyword": "",
+    "listCommandMessage": "",
+    "contactCsMessage": "",
+    "prefixGreeting": "",
+    "notUnderstandMessage": "Mohon maaf pilihan Anda tidak sesuai. Ketik *MENU* untuk kembali ke menu utama",
+    "check_office_hour": true,
+    "concat_greeting_and_menu": true,
+    "no_ofh_bot_msg": ""
+}

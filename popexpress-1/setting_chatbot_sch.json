@@ -1,0 +1,278 @@
+{
+    "schemas": {
+        "default": {
+            "survey": {
+                "active": false
+            },
+            "reset_keys": ["MAIN"],
+            "load_conversation" : "LivechatTemplateConversation",
+            "top_level_questions": [
+                {
+                    "id": "1",
+                    "text": "1. Jenis layanan",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "2. Info tarif",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "3. Jenis layanan",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "4. Lokasi PopExpress",
+                    "type": "actions"
+                },
+                {
+                    "id": "5",
+                    "text": "5. Pelacakan paket",
+                    "type": "actions"
+                },
+                {
+                    "id": "6",
+                    "text": "6. Masalah pengiriman",
+                    "type": "actions"
+                },
+                {
+                    "id": "7",
+                    "text": "7. Keagenan",
+                    "type": "actions"
+                }
+            ],
+            "MENU": [
+                {
+                    "id": "1",
+                    "text": "1. Jenis layanan",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "2. Info tarif",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "3. Jenis layanan",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "4. Lokasi PopExpress",
+                    "type": "actions"
+                },
+                {
+                    "id": "5",
+                    "text": "5. Pelacakan paket",
+                    "type": "actions"
+                },
+                {
+                    "id": "6",
+                    "text": "6. Masalah pengiriman",
+                    "type": "actions"
+                },
+                {
+                    "id": "7",
+                    "text": "7. Keagenan",
+                    "type": "actions"
+                }
+            ],
+            "1": [
+                {
+                    "id": "1A",
+                    "text": "Untuk informasi layanan, Poppers bisa akses link dibawah ini ya\n\nhttps://www.popexpress.id\n\n\nApakah penjelasan Popi sudah cukup membantu?\n1. Ya\n0. Kembali ke menu utama",
+                    "type": "nest_menu",
+                    "menus": {
+                        "0": {
+                            "id": "1A1",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }
+            ],
+            "2": [
+                {
+                    "id": "2A",
+                    "text": "Untuk informasi tarif, Poppers bisa akses link dibawah ini ya\n\nhttps://www.popexpress.id\n\n\nApakah penjelasan Popi sudah cukup membantu?\n1. Ya\n0. Kembali ke menu utama",
+                    "type": "nest_menu",
+                    "menus": {
+                        "0": {
+                            "id": "2A1",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }
+            ],
+            "3": [
+                {
+                    "id": "3A",
+                    "text": "Untuk informasi barang yang tidak bisa dikirim adalah:\na. Kembang api, aminusi / kartrid, inflator airbag, komposisi TNT, suar\nb. Aerosol, tabung gas (berisi), silikon, fire stop, kutek, gas CO2\nc. Lem, parfume, cat kaleng, sanpoly, oli, toner, pelampung bensin\nd. Alkali metal, alumunium fosfit, karbon, kamper, kain berminyak\ne. Peroksida organik, zat pengoksidasi\nf. Obat tanaman, serbuk toner, racun semut & kecoa\ng. Material radioaktif\nh. Cairan corrosive, cairan pembersih kerak\ni. Baterai, tangki kosong, baterai emergency, baterai laptop, power bank, laptop, cairan racun serangga, zippo, timbangan digital, mic, dinamo, cylinder head, magnet, baterai lithium\nj. Hewan atau tanaman hidup\n\n0. Kembali ke menu utama",
+                    "type": "nest_menu",
+                    "menus": {
+                        "0": {
+                            "id": "3A1",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }
+            ],
+            "4": [
+                {
+                    "id": "4A",
+                    "text": "Untuk informasi lokasi PopExpress, Poppers bisa akses link dibawah ini ya\n\nhttps://www.popexpress.id\n\n\nApakah penjelasan Popi sudah cukup membantu?\n1. Ya\n0. Kembali ke menu utama",
+                    "type": "nest_menu",
+                    "menus": {
+                        "0": {
+                            "id": "4A1",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }
+            ],
+            "5": [
+                {
+                    "id": "5A",
+                    "text": "Masukkan No Resi:\n\nAtau Ketik 0 Untuk Kembali ke Menu Utama",
+                    "type": "text",
+                    "menus": {
+                        "0": {
+                            "id": "4A1",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        },
+                        "VALID": {
+                            "id": "VALID",
+                            "text": "Status terakhir paket kamu pada 29 Sep 2021 10:56:22, di BALARAJA, Paket telah diterima penerimanya adalah Adryan\n\n\napakah anda ingin melihat detail dari pelacakan ini?\nKetik 1 Untuk Ya\nKetik 2 Untuk Tidak, Kembali ke menu sebelumnya (Masukkan No. Resi)\nKetik 0 Untuk Kembali ke menu utama",
+                            "type": "nest_menu",
+                            "menus": {
+                                "1": {
+                                    "id": "5A1",
+                                    "text": "29 Sep 2021 10:56:22\nPaket telah selesai dikirim. (Penerima rohim - Lainnya)\n29 Sep 2021 09:15:15\n1st delivery attempt oleh kurir Iyan Sarudin (000516).\n29 Sep 2021 01:12:57\nPaket gabungan telah masuk di HUB destinasi JKT01-Tebet\n28 Sep 2021 22:58:06\nPaket gabungan telah keluar dari HUB origin CGK01 - Palmerah menuju ke HUB JKT01 - Tebet\n28 Sep 2021 13:58:46\nPaket di manifest di Palmerah (CGK01).\n25 Sep 2021 21:20:02\nData pickup dibuat dengan nomor pickup RET21092509003 via on demand.\n25 Sep 2021 21:14:40\nPaket pickup telah berada di dalam loker.\n25 Sep 2021 21:20:02\nPickup request di buat dan ready di pickup di 2021-09-25 21:14:40\n\nKetik 1 Untuk Kembali ke menu sebelumnya (Masukkan No. Resi)\nKetik 0 Untuk Kembali ke menu utama",
+                                    "type": "nest_menu",
+                                    "menus": {
+                                        "1": {
+                                            "id": "5A11",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "parent"
+                                        },
+                                        "2": {
+                                            "id": "5A12",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "5A2",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                },
+                                "0": {
+                                    "id": "5A0",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        },
+                        "TIDAK_VALID": {
+                            "id": "INVALID",
+                            "text": "Maaf, nomor resi yang anda masukkan salah / tidak valid\n\nKetik 0 Untuk Kembali Ke Menu Sebelumnya (Masukkan No. Resi)",
+                            "type": "nest_menu",
+                            "menus": {
+                                "0": {
+                                    "id": "5A2",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        }
+                    }
+                }
+            ],
+            "6": [
+                {
+                    "id": "6A",
+                    "text": "Pilih salah satu opsi\n1. Paket Belum Sampai\n2. Status Pengiriman tidak update\n3. Kurir belum pickup\n4. Perubahan alamat penerima\n5. Permintaan retur paket\n6. Status pengiriman sudah sampai, tetapi paket belum diterima\n7. Paket Rusak\n8. Paket Hilang\n9. Isi paket tidak lengkap / tidak sesuai\n0. Kembali ke Menu Utama",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "6A1",
+                            "text": "Mohon dilengkapi data pengiriman berikut\n1. Nama :\n2. No Telpon :\n3. No Resi :",
+                            "type": "text"
+                        },
+                        "2": {
+                            "id": "6A2",
+                            "text": "Mohon dilengkapi data pengiriman berikut\n1. Nama :\n2. No Telpon :\n3. No Resi :",
+                            "type": "text"
+                        },
+                        "3": {
+                            "id": "6A3",
+                            "text": "Mohon dilengkapi data pengiriman berikut\n1. Nama :\n2. No Telpon :\n3. No Resi :",
+                            "type": "text"
+                        },
+                        "4": {
+                            "id": "6A4",
+                            "text": "Mohon dilengkapi data pengiriman berikut\n1. Nama :\n2. No Telpon :\n3. No Resi :\n4. Sebagai pengirim / penerima:\n5. Nama barang:\n6. Alamat penerima:",
+                            "type": "text"
+                        },
+                        "5": {
+                            "id": "6A5",
+                            "text": "Mohon dilengkapi data pengiriman berikut\n1. Nama :\n2. No Telpon :\n3. No Resi :\n4. Sebagai pengirim / penerima:\n5. Nama barang:\n6. Alamat penerima:",
+                            "type": "text"
+                        },
+                        "6": {
+                            "id": "6A6",
+                            "text": "Mohon dilengkapi data pengiriman berikut\n1. Nama :\n2. No Telpon :\n3. No Resi :\n4. Sebagai pengirim / penerima:\n5. Nama barang:\n6. Alamat penerima:",
+                            "type": "text"
+                        },
+                        "7": {
+                            "id": "6A7",
+                            "text": "Mohon dilengkapi data pengiriman berikut\n1. Nama :\n2. No Telpon :\n3. No Resi :\n4. Sebagai pengirim / penerima:\n5. Nama barang:\n6. Alamat penerima:",
+                            "type": "text"
+                        },
+                        "8": {
+                            "id": "6A8",
+                            "text": "Mohon dilengkapi data pengiriman berikut\n1. Nama :\n2. No Telpon :\n3. No Resi :\n4. Sebagai pengirim / penerima:\n5. Nama barang:\n6. Alamat penerima:",
+                            "type": "text"
+                        },
+                        "9": {
+                            "id": "6A9",
+                            "text": "Mohon dilengkapi data pengiriman berikut\n1. Nama :\n2. No Telpon :\n3. No Resi :\n4. Sebagai pengirim / penerima:\n5. Nama barang:\n6. Alamat penerima:",
+                            "type": "text"
+                        },
+                        "0": {
+                            "id": "6A0",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }
+            ],
+            "7": [
+                {
+                    "id": "7A",
+                    "text": "Mohon dilengkapi data berikut:\nNama:\nNo. Telpon:",
+                    "type": "text"
+                }
+            ]
+        }
+    }
+}

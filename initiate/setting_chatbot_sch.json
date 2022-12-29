@@ -1,0 +1,17 @@
+{
+    "schemas": {
+        "default": {
+            "survey": {
+                "active": false
+            },
+            "reset_keys": [""],
+            "top_level_questions": [],
+            "MENU": [],
+            "A": [],
+            "B": [],
+            "C": [],
+            "D": [],
+            "E": []
+        }
+    }
+}

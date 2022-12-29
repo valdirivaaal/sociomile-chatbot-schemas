@@ -1,0 +1,488 @@
+{
+    "survey": {
+        "active": false
+    },
+    "reset_keys": [
+        "MENU"
+    ],
+    "expire_time": 15,
+    "load_conversation": "WabaTemplateConversation",
+    "top_level_questions": [
+        {
+            "id": "1",
+            "text": "Konfirmasi Donasi",
+            "type": "actions"
+        },
+        {
+            "id": "2",
+            "text": "Konsultasi",
+            "type": "actions"
+        },
+        {
+            "id": "3",
+            "text": "Informasi",
+            "type": "actions"
+        },
+        {
+            "id": "4",
+            "text": "Program Rumah Zakat",
+            "type": "actions"
+        }
+    ],
+    "MENU": [
+        {
+            "id": "header_text",
+            "text": "Silahkan pilih layanan yang sahabat butuhkan:",
+            "type": "text"
+        },
+        {
+            "id": "1",
+            "text": "Konfirmasi Donasi",
+            "type": "actions"
+        },
+        {
+            "id": "2",
+            "text": "Konsultasi",
+            "type": "actions"
+        },
+        {
+            "id": "3",
+            "text": "Informasi",
+            "type": "actions"
+        },
+        {
+            "id": "4",
+            "text": "Program Rumah Zakat",
+            "type": "actions"
+        }
+    ],
+    "1": [
+        {
+            "id": "1A",
+            "current_menu": "1",
+            "text": "Mohon maaf, untuk saat ini fitur Konfirmasi Donasi masih dalam pengembangan.",
+            "type": "text",
+            "interactive_message": false,
+            "interactive_type": "list",
+            "next_bubbles": [
+                {
+                    "type": "text",
+                    "text": "Saat ini ada yang dapat Aruma bantu kembali Sahabat? Jika ada silhkan Ketik *Menu*"
+                }
+            ]
+        }
+    ],
+    "2": [
+        {
+            "id": "2B",
+            "current_menu": "2",
+            "text": "Silahkan pilih layanan konsultasi yang sahabat inginkan\n\n*1*. Cara Menghitung Zakat\n*2*. Cara Berdonasi\n*3*. Konsultasi Dengan Petugas",
+            "type": "nest_menu",
+            "interactive_message": true,
+            "interactive_type": "button",
+            "menus": {
+                "1": {
+                    "id": "2B1",
+                    "title": "Cara Menghitung Zakat",
+                    "current_menu": "2-1",
+                    "text": "Untuk perhitungan zakat penghasilan ada 2 cara, Bruto dan Netto.\nBruto : Total Penghasilan x 2,5%\nNetto : Total Penghasilan - Total Pengeluaran x 2,5%\n*zakat dikeluarkan apabila sudah mencapai nishab senilai 520kg beras\n\nInsyaallah keduanya dapat dipergunakan, namun disarankan menggunakan perhitungan secara Bruto untuk menjaga kehati-hatian.",
+                    "type": "nest_menu",
+                    "interactive_message": false,
+                    "interactive_type": "button",
+                    "next_bubbles": [
+                        {
+                            "type": "text",
+                            "text": "Untuk memudahkan sahabat dalam menghitung zakat silahkan gunakan kalkulator zakat kami klik https://www.rumahzakat.org/kalkulator-zakat"
+                        },
+                        {
+                            "type": "interactive-button",
+                            "text": "Saat ini ada yang dapat Aruma bantu kembali Sahabat? Jika ada silhkan Ketik *Menu* untuk kembali ke menu utama, atau ketik *Back* untuk kembali ke menu sebelumnya",
+                            "menus": {
+                                "BACK": {
+                                    "id": "BACK",
+                                    "title": "Menu Sebelumnya"
+                                },
+                                "MENU": {
+                                    "id": "MENU",
+                                    "title": "Menu Utama"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "BACK": {
+                            "id": "BACK",
+                            "title": "Back",
+                            "current_menu": "BACK",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "parent"
+                        },
+                        "MENU": {
+                            "id": "MENU",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                },
+                "2": {
+                    "id": "2B2",
+                    "title": "Cara Berdonasi",
+                    "current_menu": "2-2",
+                    "text": "Sahabat ~user_name~ untuk menunaikan Donasinya dapat melalui rekening donasi kami berikut.\n\nhttps://www.rumahzakat.org/daftar-no-rekening-donasi/\n\nUntuk konfirmasi dapat pilih **Menu Konfirmasi**\n\natau dapat melalui Donasi online kami tanpa harus konfirmasi donasi.\n\nSilahkan Klik tautan berikut https://www.rumahzakat.org/donasi",
+                    "type": "nest_menu",
+                    "interactive_message": false,
+                    "interactive_type": "button",
+                    "next_bubbles": [
+                        {
+                            "type": "interactive-button",
+                            "text": "Saat ini ada yang dapat Aruma bantu kembali Sahabat? Jika ada silhkan Ketik *Menu* untuk kembali ke menu utama, atau ketik *Back* untuk kembali ke menu sebelumnya",
+                            "menus": {
+                                "BACK": {
+                                    "id": "BACK",
+                                    "title": "Menu Sebelumnya"
+                                },
+                                "MENU": {
+                                    "id": "MENU",
+                                    "title": "Menu Utama"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "BACK": {
+                            "id": "BACK",
+                            "title": "Back",
+                            "current_menu": "BACK",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "parent"
+                        },
+                        "MENU": {
+                            "id": "MENU",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                },
+                "3": {
+                    "id": "2B3",
+                    "title": "Konsultasi Dengan Petugas",
+                    "current_menu": "2-3",
+                    "text": "Terima kasih Sahabat sudah berkenan menggunakan layanan Contact Center Rumah Zakat via WhatsApp.\nLaporan Pemberdayaan 2021 dapat diakses pada tautan berikut ini https://bit.ly/Pemberdayaan_2021\nSaat ini Sahabat sedang dalam antrian. Mohon tunggu beberapa saat.",
+                    "type": "goto",
+                    "goto": "cs"
+                }
+            }
+        }
+    ],
+    "3": [
+        {
+            "id": "3C",
+            "current_menu": "3",
+            "text": "Silahkan pilih layanan Informasi yang sahabat inginkan:\n\n*1*. Pengajuan Bantuan\n*2*. Pengajuan Penelitian\n*3*. Keluhan\n*4*. Unduh BSZ",
+            "type": "nest_menu",
+            "interactive_message": true,
+            "interactive_type": "list",
+            "menus": {
+                "1": {
+                    "id": "3C1",
+                    "title": "Pengajuan Bantuan",
+                    "current_menu": "3-1",
+                    "text": "Untuk mengajukan bantuan silahkan sahabat klik tautan berikut https://www.rumahzakat.org/pengajuan-bantuan-sosial/\n\nCatatan : Sebelum mengajukan sahabat dapat membaca terlebih dahulu syarat & ketetuan",
+                    "type": "nest_menu",
+                    "interactive_message": false,
+                    "interactive_type": "button",
+                    "next_bubbles": [
+                        {
+                            "type": "interactive-button",
+                            "text": "Saat ini ada yang dapat Aruma bantu kembali Sahabat? Jika ada silhkan Ketik *Menu* untuk kembali ke menu utama, atau ketik *Back* untuk kembali ke menu sebelumnya",
+                            "menus": {
+                                "BACK": {
+                                    "id": "BACK",
+                                    "title": "Menu Sebelumnya"
+                                },
+                                "MENU": {
+                                    "id": "MENU",
+                                    "title": "Menu Utama"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "BACK": {
+                            "id": "BACK",
+                            "title": "Back",
+                            "current_menu": "BACK",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "parent"
+                        },
+                        "MENU": {
+                            "id": "MENU",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                },
+                "2": {
+                    "id": "3C2",
+                    "title": "Pengajuan Penelitian",
+                    "current_menu": "3-2",
+                    "text": "Untuk mengajukan penelitian silahkan sahabat klik tautan berikut https://www.rumahzakat.org/penelitian/\n\nCatatan : Sebelum mengajukan sahabat dapat membaca terlebih dahulu syarat & ketetuan",
+                    "type": "nest_menu",
+                    "interactive_message": false,
+                    "interactive_type": "button",
+                    "next_bubbles": [
+                        {
+                            "type": "interactive-button",
+                            "text": "Saat ini ada yang dapat Aruma bantu kembali Sahabat? Jika ada silhkan Ketik *Menu* untuk kembali ke menu utama, atau ketik *Back* untuk kembali ke menu sebelumnya",
+                            "menus": {
+                                "BACK": {
+                                    "id": "BACK",
+                                    "title": "Menu Sebelumnya"
+                                },
+                                "MENU": {
+                                    "id": "MENU",
+                                    "title": "Menu Utama"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "BACK": {
+                            "id": "BACK",
+                            "title": "Back",
+                            "current_menu": "BACK",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "parent"
+                        },
+                        "MENU": {
+                            "id": "MENU",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                },
+                "3": {
+                    "id": "3C3",
+                    "title": "Keluhan",
+                    "current_menu": "3-3",
+                    "text": "Terima kasih Sahabat sudah berkenan menggunakan layanan Contact Center Rumah Zakat via WhatsApp.\nLaporan Pemberdayaan 2021 dapat diakses pada tautan berikut ini https://bit.ly/Pemberdayaan_2021\n\nSaat ini Sahabat sedang dalam antrian. Mohon tunggu beberapa saat.",
+                    "type": "goto",
+                    "goto": "cs"
+                },
+                "4": {
+                    "id": "3C4",
+                    "title": "Unduh BSZ",
+                    "current_menu": "3-4",
+                    "text": "Mohon maaf nomor Handphone sahabat belum terdaftar, silahkan hubungi petugas kami untuk bantuan",
+                    "type": "nest_menu",
+                    "run_method": "unduhBSZ",
+                    "interactive_message": false,
+                    "interactive_type": "button",
+                    "next_bubbles": [
+                        {
+                            "type": "interactive-button",
+                            "text": "Saat ini ada yang dapat Aruma bantu kembali Sahabat? Jika ada silhkan Ketik *Menu* untuk kembali ke menu utama, atau ketik *Back* untuk kembali ke menu sebelumnya",
+                            "menus": {
+                                "BACK": {
+                                    "id": "BACK",
+                                    "title": "Menu Sebelumnya"
+                                },
+                                "MENU": {
+                                    "id": "MENU",
+                                    "title": "Menu Utama"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "BACK": {
+                            "id": "BACK",
+                            "title": "Back",
+                            "current_menu": "BACK",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "parent"
+                        },
+                        "MENU": {
+                            "id": "MENU",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "4": [
+        {
+            "id": "4D",
+            "current_menu": "4",
+            "text": "Silahkan pilih layanan Program yang sahabat inginkan:\n\n*1*. Insidental Bencana & Kemanusiaan\n*2*. Wakaf\n*3*. Basiswa",
+            "type": "nest_menu",
+            "interactive_message": true,
+            "interactive_type": "button",
+            "menus": {
+                "1": {
+                    "id": "4D1",
+                    "title": "Insidental Bencana & Kemanusiaan",
+                    "current_menu": "4-1",
+                    "text": "Dalam keadaan darurat, ketersediaan pangan untuk memenuhi kebutuhan energi dan gizi masyarakat terdampak bencana menjadi sangat penting. Salah satu caranya adalah dengan cara menyediakan cadangan makanan yang bisa dengan mudah didistibusikan ke lokasi-lokasi rawan pangan\n\nBantu sekarang klik https://www.rumahzakat.org/donasi/siaga-pangan",
+                    "type": "nest_menu",
+                    "interactive_message": false,
+                    "interactive_type": "button",
+                    "next_bubbles": [
+                        {
+                            "type": "interactive-button",
+                            "text": "Saat ini ada yang dapat Aruma bantu kembali Sahabat? Jika ada silhkan Ketik *Menu* untuk kembali ke menu utama, atau ketik *Back* untuk kembali ke menu sebelumnya",
+                            "menus": {
+                                "BACK": {
+                                    "id": "BACK",
+                                    "title": "Menu Sebelumnya"
+                                },
+                                "MENU": {
+                                    "id": "MENU",
+                                    "title": "Menu Utama"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "BACK": {
+                            "id": "BACK",
+                            "title": "Back",
+                            "current_menu": "BACK",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "parent"
+                        },
+                        "MENU": {
+                            "id": "MENU",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                },
+                "2": {
+                    "id": "4D2",
+                    "title": "Wakaf",
+                    "current_menu": "4-2",
+                    "text": "Wakaf produktif adalah sebuah skema pengelolaan donasi wakaf dengan memproduktifkan donasi tersebut, seperti dijadikan Rumah Sakit, Sekolah atau usaha lainnya hingga mampu menghasilkan surplus berkelanjutan. Surplus atau hasil dari Wakaf Produktif ini akan digunakan untuk program-program pemberdayaan dan kesejahteraan masyarakat.\n\nWakaf Sekarang klik https://www.rumahzakat.org/donasi/wakaf-produktif",
+                    "type": "nest_menu",
+                    "interactive_message": false,
+                    "interactive_type": "button",
+                    "next_bubbles": [
+                        {
+                            "type": "interactive-button",
+                            "text": "Saat ini ada yang dapat Aruma bantu kembali Sahabat? Jika ada silhkan Ketik *Menu* untuk kembali ke menu utama, atau ketik *Back* untuk kembali ke menu sebelumnya",
+                            "menus": {
+                                "BACK": {
+                                    "id": "BACK",
+                                    "title": "Menu Sebelumnya"
+                                },
+                                "MENU": {
+                                    "id": "MENU",
+                                    "title": "Menu Utama"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "BACK": {
+                            "id": "BACK",
+                            "title": "Back",
+                            "current_menu": "BACK",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "parent"
+                        },
+                        "MENU": {
+                            "id": "MENU",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                },
+                "3": {
+                    "id": "4D3",
+                    "title": "Basiswa",
+                    "current_menu": "4-3",
+                    "text": "10.000 Anak Yatim dan Dhuafa Butuh Bantuanmu\nSetiap anak berhak mendapatkan akses pendidikan yang layak, namun terkadang keadaan ekonomi menyebabkan anak-anak yatim dan dhuafa dari keluarga tidak mampu kesulitan mendapatkan aks es Pendidikan.\n\nMelalui program Beasiswa Juara, Rumah Zakat mengajak sahabat semua untuk turut serta mensupport 10.000 anak asuh yatim dan dhuafa untuk memperoleh pendidikan yang layak.\n\nBeasiswa Juara SD : Rp375.000/anak\nBeasiswa Juara SMP : Rp450.000/anak\nBeasiswa Juara SMK : Rp1.000.000/anak",
+                    "type": "nest_menu",
+                    "interactive_message": false,
+                    "interactive_type": "button",
+                    "next_bubbles": [
+                        {
+                            "type": "text",
+                            "text": "Informasi lebih lanjut ketik *Petugas*"
+                        },
+                        {
+                            "type": "interactive-button",
+                            "text": "Saat ini ada yang dapat Aruma bantu kembali Sahabat? Jika ada silhkan Ketik *Menu* untuk kembali ke menu utama, atau ketik *Back* untuk kembali ke menu sebelumnya",
+                            "menus": {
+                                "BACK": {
+                                    "id": "BACK",
+                                    "title": "Menu Sebelumnya"
+                                },
+                                "MENU": {
+                                    "id": "MENU",
+                                    "title": "Menu Utama"
+                                }
+                            }
+                        }
+                    ],
+                    "menus": {
+                        "BACK": {
+                            "id": "BACK",
+                            "title": "Back",
+                            "current_menu": "BACK",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "parent"
+                        },
+                        "MENU": {
+                            "id": "MENU",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        },
+                        "PETUGAS": {
+                            "id": "PETUGAS",
+                            "title": "Petugas",
+                            "current_menu": "PETUGAS",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "cs"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
