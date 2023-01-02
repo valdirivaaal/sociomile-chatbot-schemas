@@ -1,0 +1,1254 @@
+{
+    "schemas": {
+        "default": {
+            "survey": {
+                "active": false
+            },
+            "reset_keys": [
+                "0"
+            ],
+            "load_conversation": "WabaTemplateConversation",
+            "dual_language": false,
+            "language_localization": {
+                "ID": {}
+            },
+            "expire_time": 5,
+            "top_level_questions": [
+                {
+                    "id": "1",
+                    "text": "A. Layanan Sapawarga untuk Publik",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "B. Layanan Sapawarga untuk Ketua RW",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "C. Layanan Program Desa Digital",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "D. Layanan Ekosistem Data Jawa Barat",
+                    "type": "actions"
+                },
+                {
+                    "id": "5",
+                    "text": "E. Layanan Informasi dan Koordinasi Data Gempa Cianjur (PISODAPUR)",
+                    "type": "actions"
+                },
+                {
+                    "id": "6",
+                    "text": "F. Layanan Aduan Bullying",
+                    "type": "actions"
+                }
+            ],
+            "0": [
+                {
+                    "id": "1",
+                    "text": "A. Layanan Sapawarga untuk Publik",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "B. Layanan Sapawarga untuk Ketua RW",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "C. Layanan Program Desa Digital",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "D. Layanan Ekosistem Data Jawa Barat",
+                    "type": "actions"
+                },
+                {
+                    "id": "5",
+                    "text": "E. Layanan Informasi dan Koordinasi Data Gempa Cianjur (PISODAPUR)",
+                    "type": "actions"
+                },
+                {
+                    "id": "6",
+                    "text": "F. Layanan Aduan Bullying",
+                    "type": "actions"
+                }
+            ],
+            "1": [
+                {
+                    "id": "AA",
+                    "current_menu": "1",
+                    "current_lang": "",
+                    "text": "Selamat datang di Pusat Informasi dan Layanan Sapawarga. Aplikasi Sapawarga merupakan platform yang memberikan kemudahan bagi masyarakat untuk mendapatkan informasi, layanan serta menyampaikan aspirasi. Semoga warga Jabar dalam keadaan sehat, ya! \n\nAyo, segera daftarkan diri Anda untuk dapat menikmati berbagai kemudahan melalui aplikasi Sapawarga!\n\n_*Silakan pilih salah satu opsi di bawah:*_\n\nA. Informasi seputar Akses Fitur\nB. Informasi seputar Permasalahan Akun\nC. Layanan Pembayaran Pajak Kendaraan Bermotor (Sambara)\nD. Layanan Pencarian Lowongan Kerja (Si Juara)\nE. Layanan Informasi dan Koordinasi Covid-19 Jawa Barat (PIKOBAR)\nF. Saya Punya Pertanyaan Lain\n\n💡 Mohon dijawab dengan ketik huruf saja (contoh: *A*)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "list",
+                    "menus": {
+                        "0": {
+                            "id": "0",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        },
+                        "1": {
+                            "id": "1",
+                            "title": "Informasi seputar Akses Fitur",
+                            "current_menu": "1-1",
+                            "text": "Aplikasi Sapawarga memiliki beberapa kategori hak akses yang berkaitan dengan fitur sebagai berikut:\n\n1. Fitur-fitur yang bisa Anda akses tanpa login\na. Pikobar–Jadwal Vaksinasi\nb. Pikobar–Pusat Informasi Covid-19\n\n2. Fitur yang yang bisa Anda akses dengan login akun publik\na. Sambara–Cek Pajak Kendaraan Saya, Bayar Pajak Kendaraan, Blokir Kendaraan\nb. Si Juara\nc. Pikobar–Konsultasi Dokter\nd. Pikobar–Permohonan vitamin\n\n3. Fitur yang yang bisa Anda akses dengan login akun publik dengan hak akses khusus\na. Kegiatan RW\n\nMohon segera registrasi untuk mendapatkan berbagai kemudahan di Sapawarga.\n\n💡 Ketik huruf lainnya untuk informasi selanjutnya (contoh : B)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "2",
+                            "title": "Informasi seputar Permasalahan Akun",
+                            "current_menu": "1-2",
+                            "text": "Apakah permasalahan terkait akun Sapawarga yang Anda miliki?\n\nSilakan pilih salah satu opsi di bawah:\n\n1. Pembuatan Akun\n2. Akun belum terverifikasi\n3. Lupa password \n\n💡 Ketik angka opsi yang sesuai dengan kebutuhan Anda (contoh: 1)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "1",
+                                    "title": "Pembuatan Akun",
+                                    "current_menu": "1-2-1",
+                                    "text": "Aplikasi Sapawarga memiliki beberapa fitur yang memerlukan hak akses sebagai pengguna Sapawarga. Untuk mendapatkan hak akses tersebut, diperlukan pembuatan akun publik yang dilengkapi dengan beberapa keterangan data diri. Keterangan data diri tersebut dijamin kerahasiaannya dan akan digunakan untuk menghubungkan Anda dengan layanan yang tersedia pada aplikasi Sapawarga.\n\nUntuk melakukan pembuatan akun publik dapat mengikuti langkah berikut:\n1. Buka aplikasi Sapawarga.\n2. Klik menu “Profil Anda”.\n3. Klik tab “Buat Akun”.\n4. Klik “Mulai Buat Akun”.\n5. Masukkan email dan password untuk akun yang akan digunakan.\n6. Klik “Mulai Lengkapi Data Diri”.\n7. Mengisi informasi data diri untuk melengkapi profil.\n8. Klik “Simpan Perubahan”.\n9. Cek inbox pada email yang digunakan untuk pendaftaran (estimasi menunggu 2 menit, jika email verifikasi belum masuk dapat dilakukan request ulang).\n10. Klik “Verifikasi Akun Saya” yang terdapat pada inbox email atau cek folder spam\n11. Akun sudah dapat digunakan untuk login pada aplikasi Sapawarga.\n\n💡 Ketik angka lainnya untuk informasi selanjutnya (contoh : 2)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "2",
+                                    "title": "Akun belum terverifikasi",
+                                    "current_menu": "1-2-2",
+                                    "text": "Apabila Anda sudah mendaftarkan akun akan tetapi belum dapat mengakses fitur, kemungkinan akun Anda belum terverifikasi. Terdapat beberapa kemungkinan akun belum terverifikasi sebagai berikut:\n\n1. Belum menerima email verifikasi\n2. Belum melakukan klik “Verifikasi Email”\n\nJika belum menerima email verifikasi, Anda dapat mengikuti langkah berikut:\n1. Ketika berada di halaman Proses Verifikasi Email, klik “Kirim Ulang”.\n2. Cek inbox pada email yang sudah didaftarkan sebelumnya (estimasi menunggu 2 menit. Jika email verifikasi belum masuk dapat dilakukan request ulang).\n3. Klik “Verifikasi Email”.\n4. Akun berhasil terverifikasi.\n\nJika sudah menerima email verifikasi akan tetapi belum melakukan klik “Verifikasi Email” dapat mengikuti langkah berikut:\n1. Cek inbox pada email yang sudah didaftarkan sebelumnya (estimasi menunggu 2 menit. Jika email verifikasi belum masuk dapat dilakukan request ulang).\n2. Klik “Verifikasi Akun Saya”.\n3. Akun berhasil terverifikasi.\n\n\n💡 Ketik angka lainnya untuk informasi selanjutnya (contoh: 3)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "id": "3",
+                                    "title": "Lupa password",
+                                    "current_menu": "1-2-3",
+                                    "text": "Apabila Anda lupa dengan password yang digunakan pada akun Sapawarga, Anda dapat mengakses dengan cara:\n\n1. Buka aplikasi Sapawarga.\n2. Klik menu “Profil Anda”.\n3. Klik tab “Masuk Akun”.\n4. Klik “Dapatkan Bantuan”.\n5. Masukkan email yang yang sudah didaftarkan sebelumnya.\n6. Cek inbox pada email yang sudah didaftarkan sebelumnya (estimasi menunggu 2 menit).\n7. Klik “Buat Password Baru”.\n8. Masukkan password baru dan klik “Simpan Perubahan”.\n9. Password Anda berhasil ter-update.\n\n\n💡 Ketik angka lainnya untuk informasi selanjutnya (contoh: 1)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "3": {
+                            "id": "3",
+                            "title": "Layanan Pembayaran Pajak Kendaraan Bermotor (Sambara)",
+                            "current_menu": "1-3",
+                            "text": "Sambara–Samsat Mobile Jawa Barat merupakan aplikasi mobile yang dilayani oleh Bappenda. Anda kini dapat menikmati kemudahan dalam melakukan pembayaran pajak kendaraan bermotor melalui satu aplikasi. Melalui Sambara, Anda dapat menikmati beragam kemudahan seperti:\n\n1. Cek Info Pajak Kendaraan Bermotor–lihat informasi terkait pajak kendaraan bermotor yang dimiliki berdasarkan informasi yang sesuai dengan KTP anda.\n2. Pembayaran Pajak Kendaraan Bermotor–pembayaran pajak kendaraan bermotor kini lebih praktis dan mudah melalui aplikasi yang dilengkapi berbagai metode  pembayaran.\n3. Lepas Kepemilikan Kendaraan Bermotor–lepas kepemilikan kendaraan bermotor yang sudah berpindah tangan dengan praktis dan mudah melalui aplikasi.\n\nApa saja yang ingin Anda ketahui seputar Sambara–Samsat Mobile Jawa Barat?\n\nSilakan pilih salah satu opsi di bawah:\n\n1. Informasi Tata Cara Cek Informasi Pajak Kendaraan Bermotor \n2. Informasi Pembayaran Pajak Kendaraan Bermotor\n3. Informasi Tata Cara Lepas Kepemilikan Kendaraan bermotor\n4. Saya Punya Pertanyaan Lainnya\n\n💡 Ketik angka opsi yang sesuai dengan kebutuhan Anda  (contoh: 1)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "list",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "1",
+                                    "title": "Informasi Tata Cara Cek Informasi Pajak Kendaraan Bermotor",
+                                    "current_menu": "1-3-1",
+                                    "text": "Cek informasi pajak kendaraan bermotor dengan praktis dan mudah hanya dengan masuk ke aplikasi Sapawarga. Semua kendaraan bermotor yang terdaftar sesuai KTP Anda akan muncul secara otomatis. \n\nSilakan pilih salah satu opsi di bawah:\n\nA. Cek Pajak Kendaraan Bermotor Milik Saya\nB. Cek Pajak Kendaraan Bermotor Milik Orang Lain \n\n💡 Ketik huruf opsi yang sesuai dengan kebutuhan Anda  (contoh: A)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "1": {
+                                            "id": "1",
+                                            "title": "Cek Pajak Kendaraan Bermotor Milik Saya",
+                                            "current_menu": "1-3-1-1",
+                                            "text": "Untuk melakukan cek pajak kendaraan bermotor milik pribadi, Anda dapat melakukannya dengan cara sebagai berikut:\n1. Login ke aplikasi Sapawarga.\n2. Masuk ke fitur “Pajak Kendaraan Bermotor”.\n3. Pilih menu “Cek Pajak Kendaraan Saya”.\n4. Ketika sudah tampil daftar kendaraan yang Anda miliki, pilih salah satu kendaraan yang tampil untuk memunculkan rincian terkait informasi kendaraan, dokumen e-SKKP, beserta informasi biaya pajak tahunan kendaraan tersebut.\n5. Jika daftar kendaraan Anda belum tampil, pastikan untuk melengkapi profil Anda dengan mengisi nama, NIK, dan nomor HP Anda.\n\n💡 Ketik angka lainnya untuk informasi selanjutnya (contoh : B)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "button",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "2",
+                                            "title": "Cek Pajak Kendaraan Bermotor Milik Orang Lain ",
+                                            "current_menu": "1-3-1-2",
+                                            "text": "Untuk melakukan cek pajak kendaraan bermotor milik orang lain, Anda dapat melakukannya dengan cara sebagai berikut:\n1. Login aplikasi Sapawarga.\n2. Masuk ke fitur “Pajak Kendaraan Bermotor”.\n3. Pilih menu “Cek Pajak Kendaraan Lain”.\n4. Masukkan nomor polisi kendaraan yang ingin dicek.\n5. Masukkan warna TNKB.\n6. Kemudian tekan \"Cari\".\n7. Rincian kendaraan akan muncul pada halaman aplikasi.\n\n💡 Ketik angka lainnya untuk informasi selanjutnya (contoh : A)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "button",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "2",
+                                    "title": "Informasi Pembayaran Pajak Kendaraan Bermotor",
+                                    "current_menu": "1-3-2",
+                                    "text": "Pembayaran pajak kendaraan bermotor dengan aplikasi Sapawarga sangat praktis, tinggal klik layar semua beres. Dengan menggunakan fitur Sambara, Anda dapat langsung membayar pajak kendaraan melalui aplikasi. \n\nSilakan pilih salah satu opsi di bawah:\n\nA. Tata Cara Pembayaran Pajak Kendaraan Bermotor\nB. Kanal Pembayaran SAMBARA\nC. Bagaimana Saya Mengetahui Pembayaran Pajak Sudah Berhasil?\nD. Apakah Perlu Untuk Melakukan Pengesahan STNK?\n\n💡 Ketik huruf opsi yang sesuai dengan kebutuhan Anda  (contoh: A)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "list",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "1": {
+                                            "id": "1",
+                                            "title": "Tata Cara Pembayaran Pajak Kendaraan Bermotor",
+                                            "current_menu": "1-3-2-1",
+                                            "text": "Untuk melakukan pembayaran pajak kendaraan bermotor milik pribadi, Anda dapat melakukannya dengan cara sebagai berikut:\n\n1. Login ke aplikasi Sapawarga. \n2. Klik fitur “Pajak Kendaraan Bermotor”.\n3. Pilih kendaraan Anda yang pajaknya akan dibayarkan.\n4. Pilih metode pembayaran yang diinginkan.\n5. Lakukan pembayaran sesuai metode yang dipilih.\n6. Selanjutnya, Anda tinggal melakukan pengesahan STNK.\n\nCatatan:\nUntuk melakukan pengesahan STNK, silakan datang ke Samsat terdekat dengan menunjukkan bukti pembayaran, KTP, dan e-SKKP yang telah diterbitkan.\n\n💡 Ketik huruf lainnya untuk informasi selanjutnya (contoh : B)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\n\nHatur Nuhun 🙏",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "button",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "2",
+                                            "title": "Kanal Pembayaran SAMBARA",
+                                            "current_menu": "1-3-2-2",
+                                            "text": "Anda dapat melakukan pembayaran pajak bermotor melalui Sapawarga dengan menggunakan metode yang tersedia seperti:\n\n1. Gerai Minimarket Modern (Alfamart, Alfamidi, Indomaret)\n2. Marketplace (Bukalapak, Tokopedia, Kaspro)\n3. Mesin ATM (BJB, BCA, BNI)\n4. Virtual Account (ATM BJB, BJB Mobile, BJB Net, bank lain yang mendukung pembayaran VA)\n5. QRIS (BJB Mobile, BJB DigiCash, aplikasi lain yang mendukung pembayaran QRIS)\n\n💡 Ketik huruf lainnya untuk informasi selanjutnya (contoh : C)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "button",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                }
+                                            }
+                                        },
+                                        "3": {
+                                            "id": "3",
+                                            "title": "Bagaimana Saya Mengetahui Pembayaran Pajak Sudah Berhasil?",
+                                            "current_menu": "1-3-2-3",
+                                            "text": "Apabila tanggal jatuh tempo pembayaran pajak tahunan telah ter-update ke tahun berikutnya, maka pembayaran telah berhasil diterima dan e-SKKP yang diterbitkan menjadi dokumen pembayaran yang sah dan Anda sudah menjadi warga yang taat pajak.\n\n💡 Ketik angka lainnya untuk informasi selanjutnya (contoh : D)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "button",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                }
+                                            }
+                                        },
+                                        "4": {
+                                            "id": "4",
+                                            "title": "Apakah Perlu Untuk Melakukan Pengesahan STNK?",
+                                            "current_menu": "1-3-2-4",
+                                            "text": "Ya, untuk saat ini jika Anda membutuhkan pengesahan STNK maka Anda masih perlu melakukan pengesahan di Kantor Samsat terdekat dengan menunjukkan bukti pembayaran, KTP, dan e-SKKP yang diterbitkan. Pengesahan online (e-Sah) maupun pengiriman STNK fisik yang sudah disahkan ke rumah warga dalam rangka uji coba untuk wilayah Kota Bandung masih dalam tahap pengerjaan. Secepatnya fitur akan segera dirilis sehingga kedepannya warga tidak perlu lagi melakukan pengesahan offline ke kantor Samsat terdekat.\n\n💡 Ketik angka lainnya untuk informasi selanjutnya (contoh : A)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\n\nHatur Nuhun 🙏",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "button",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "id": "3",
+                                    "title": "Informasi Tata Cara Lepas Kepemilikan Kendaraan bermotor",
+                                    "current_menu": "1-3-3",
+                                    "text": "Lepas kepemilikan kendaraan bermotor bertujuan untuk menghindari permasalahan terkait pajak, khususnya pajak progresif dan legalitas kendaraan tersebut. Hal tersebut dapat dilakukan oleh wajib pajak dengan 5 kategori alasan yang telah diatur oleh Tim Pembina Samsat Jawa Barat seperti berikut:\n1. Kendaraan Bermotor Yang Telah Dijual\n2. Kendaraan Bermotor Yang Hilang\n3. Kendaraan Bermotor Yang Rusak Berat\n4. Kendaraan Bermotor Yang Ditarik Oleh Pihak Leasing\n5. Tidak Memiliki Kendaraan Tersebut\n\nSilakan pilih salah satu opsi di bawah:\n\nA. Tata Cara Lepas Kepemilikan Kendaraan Bermotor\nB. Persyaratan Lepas Kepemilikan Kendaraan Bermotor\n\n💡 Ketik huruf opsi yang sesuai dengan kebutuhan Anda  (contoh: A)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "1": {
+                                            "id": "1",
+                                            "title": "Tata Cara Lepas Kepemilikan Kendaraan Bermotor",
+                                            "current_menu": "1-3-3-1",
+                                            "text": "Untuk melakukan lepas kepemilikan kendaraan bermotor, Anda dapat menggunakan fitur Lepas Kepemilikan pada Sapawarga dengan cara berikut:\n1. Login ke aplikasi Sapawarga.\n2. Klik menu “Lepas Kepemilikan”.\n3. Anda akan dialihkan ke form untuk mengisi data yang dibutuhkan.\n4. Pilih alasan dilakukannya lepas kepemilikan kendaraan dan lengkapi dokumen yang diminta.\n5. Setelah melakukan submit, tim akan melakukan pengecekan terkait kelengkapan data yang terlampir dan wargi tinggal menunggu informasi melalui email bahwa kendaraan berhasil terblokir atau lepas dari kepemilikan.\n\nCatatan:\n1. Jam operasional untuk layanan lepas kepemilikan ini dimulai pada pukul 08:00–16:00 WIB.\n2. Kuota untuk lepas kepemilikan kendaraan bermotor dalam sehari adalah sebanyak 30 pemohon.\n3. Proses dilakukannya lepas kepemilikan oleh tim Samsat adalah 1x24 jam.\n4. Cek email secara berkala untuk mendapatkan informasi ter-update mengenai status lepas kepemilikan kendaraan bermotor Anda.\n\n\n💡 Ketik huruf lainnya untuk informasi selanjutnya (contoh : B)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "button",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "2",
+                                            "title": "Persyaratan Lepas Kepemilikan Kendaraan Bermotor",
+                                            "current_menu": "1-3-3-2",
+                                            "text": "Apabila anda ingin melakukan lepas kepemilikan kendaraan bermotor berdasarkan 5 kategori alasan yang sudah diatur oleh Tim Pembina Samsat Jabar, terdapat beberapa dokumen yang harus dilampirkan sesuai dengan alasan pengajuan:\n\n1. Kendaraan Bermotor Yang Telah Dijual\na. Input 5 digit terakhir nomor rangka kendaraan pada form pengajuan\nb. Foto KTP dan foto diri (selfie)\nc. Surat pernyataan kendaraan telah dijual bermaterai\nd. Input tanda tangan pada form pengajuan\n\n2. Kendaraan Bermotor Yang Hilang\na. Foto KTP dan foto diri (selfie)\nb. STNK kendaraan\nc. Surat kehilangan kendaraan dari pihak kepolisian\nd. Input tanda tangan pada form pengajuan\n\n3. Kendaraan Bermotor Yang Rusak Berat\na. Foto KTP dan foto diri (selfie)\nb. STNK kendaraan\nc. Surat kehilangan kendaraan dari pihak kepolisian\nd. Input tanda tangan pada form pengajuan\n\n4. Kendaraan Bermotor Yang Ditarik oleh Pihak Leasing\na. Foto KTP dan foto diri (selfie)\nb. STNK kendaraan\nc. Input tanda tangan pada form pengajuan\n\n5. Tidak Memiliki Kendaraan Tersebut\na. Foto KTP dan foto diri (selfie)\nb. Input tanda tangan pada form pengajuan\n\n💡 Ketik huruf lainnya untuk informasi selanjutnya (contoh : A)\n💡 Ketik angka 0 untuk kembali ke halaman utama \n\nHatur Nuhun 🙏",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "button",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "4": {
+                                    "id": "4",
+                                    "title": "Saya Punya Pertanyaan Lainnya",
+                                    "current_menu": "1-3-4",
+                                    "text": "Apabila Anda memiliki pertanyaan lain seputar Samsat Jabar, silakan hubungi Layanan Call Center 150410 (Berbayar), Email sambara@bapenda.jabarprov.go.id, dan Layanan WhatsApp 0811-2230-1818 (https://s.id/hotline-sambara)\n\n💡 Ketik huruf lainnya untuk informasi selanjutnya (contoh : 1)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\n\nHatur Nuhun 🙏",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "4": {
+                            "id": "4",
+                            "title": "Layanan Pencarian Lowongan Kerja (Si Juara)",
+                            "current_menu": "1-4",
+                            "text": "*Si Juara* (Sistem Informasi Jaringan Warga Jabar Sejahtera) merupakan aplikasi ketenagakerjaan bagi warga Jawa Barat dalam memperoleh informasi lapangan pekerjaan. \n\nFitur Aplikasi Si Juara :\n1. *Matchmaking*–dapat memudahkan pencari kerja dalam menemukan lapangan pekerjaan sesuai dengan kompetensi yang dimiliki.\n2. *Perlindungan Perekrutan*–pencari kerja dan perusahaan diberikan perlindungan dalam proses rekrutmen.\n3. *Perlindungan Selama Bekerja*–fitur aduan dan laporan situasi darurat. Ketika pekerja mengalami masalah dan situasi darurat.\n4. *Informasi Pekerjaan Dalam dan Luar negeri*–pengguna sebagai pencari kerja dapat memilih pekerjaan berdasarkan lokasi (dalam/luar negeri).\n5. *Informasi Pelatihan*–tenaga kerja yang kurang memiliki skill dan kompetensi dapat mengikuti pelatihan yang sesuai dengan minat.\n\nAplikasi Si Juara bisa diakses melalui aplikasi Sapawarga pada menu “Lowongan Pekerjaan”\n\nApa saja yang ingin Anda ketahui seputar *Si Juara - Pencarian Lowongan Kerja* ?\n\n*Silakan pilih salah satu opsi di bawah*:\n\n1. Informasi Tata Cara Melengkapi Profil\n2. Informasi Tata Cara Melamar Pekerjaan\n3. Saya punya pertanyaan lain\n\n💡 Ketik huruf opsi yang sesuai dengan kebutuhan Anda  (contoh: A)\n💡 Ketik angka 0 untuk kembali ke halaman utama \n\nHatur Nuhun 🙏",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "1",
+                                    "title": "Informasi Tata Cara Melengkapi Profil",
+                                    "current_menu": "1-4-1",
+                                    "text": "",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "2",
+                                    "title": "Informasi Tata Cara Melamar Pekerjaan",
+                                    "current_menu": "1-4-2",
+                                    "text": "Untuk mencari lowongan pekerjaan silakan untuk ikuti langkah-langkah berikut:\n1. Klik menu \"Pasar Kerja\" yang ada pada halaman utama.\n2. Klik \"Cari peluang kerja\" lalu pilih ikon “Filter” seperti pada gambar.\n3. Setelah itu akan muncul lowongan pekerjaan yang tersedia dan sudah dipublikasikan oleh perusahaan.\n\nCatatan:\nLowongan pekerjaan akan ter-update secara berkala sesuai dengan lowongan yang akan diinputkan oleh perusahaan\n\n💡 Ketik angka lainnya untuk informasi selanjutnya (contoh : 3)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "id": "3",
+                                    "title": "Saya punya pertanyaan lain",
+                                    "current_menu": "1-4-3",
+                                    "text": "Apabila memiliki pertanyaan lain Anda dapat menghubungi hotline Si Juara melalui:\n\n▶️  https://s.id/hotline-sijuara  (hanya pesan WA)\n\n💡 Ketik angka lainnya untuk informasi selanjutnya (contoh: 1)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "5": {
+                            "id": "5",
+                            "title": "Layanan Informasi dan Koordinasi Covid-19 Jawa Barat (PIKOBAR)",
+                            "current_menu": "1-5",
+                            "text": "Pusat Koordinasi dan Informasi Covid-19 Jawa Barat (Pikobar) merupakan kanal komunikasi dan informasi penanganan Covid-19 satu pintu di Jawa Barat. Hadirkan data dan visualisasi perkembangan kasus terkini Covid-19. Dilengkapi ragam layanan kesehatan digital pendukung kedaruratan pandemi.\n\nUntuk memulai, silakan pilih salah satu opsi di bawah:\n\n1. Layanan Vaksinasi Covid-19\n2. Layanan Isolasi Mandiri (Isoman)\n3. Saya punya pertanyaan lain\n\n💡 Ketik huruf opsi yang sesuai dengan kebutuhan Anda  (contoh: G)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "1",
+                                    "title": "Layanan Vaksinasi Covid-19",
+                                    "current_menu": "1-5-1",
+                                    "text": "",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "2",
+                                    "title": "Layanan Isolasi Mandiri (Isoman)",
+                                    "current_menu": "1-5-2",
+                                    "text": "Bagi para pasien Covid-19 yang sedang melakukan isolasi mandiri, Pemdaprov Jawa Barat memberikan layanan berupa Telekonsultasi Dokter & Permohonan Vitamin Pikobar. \n\nUntuk memulai, silakan pilih salah satu opsi di bawah:\n\nA. Telekonsultasi Dokter Pikobar \nB. Permohonan Vitamin Pikobar \n\n💡 Ketik huruf opsi yang sesuai dengan kebutuhan Anda  (contoh: A)\n💡 Ketik angka 0 untuk kembali ke halaman utama \n\nHatur Nuhun 🙏",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        },
+                                        "1": {
+                                            "id": "1",
+                                            "title": "Telekonsultasi Dokter Pikobar",
+                                            "current_menu": "1-5-2-1",
+                                            "text": "Konsultasikan dengan dokter mengenai gejala yang Anda rasakan saat melakukan isolasi mandiri, dengan cara klik link berikut:\n\n▶️  https://s.id/request-konsultasi \n\n💡 Ketik huruf lainnya untuk informasi selanjutnya (contoh: B)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "button",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                }
+                                            }
+                                        },
+                                        "2": {
+                                            "id": "2",
+                                            "title": "Permohonan Vitamin Pikobar",
+                                            "current_menu": "1-5-2-2",
+                                            "text": "Ajukan permohonan vitamin Pikobar untuk membantu Anda dalam meningkatkan imunitas selama melakukan isolasi mandiri, dengan cara klik link berikut : \n\n▶️ https://s.id/request-vitamin \n\n💡 Ketik huruf lainnya untuk informasi selanjutnya (contoh: A)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                                            "type": "nest_menu",
+                                            "interactive_message": true,
+                                            "interactive_type": "button",
+                                            "menus": {
+                                                "0": {
+                                                    "id": "0",
+                                                    "title": "Menu Utama",
+                                                    "current_menu": "MENU",
+                                                    "text": "",
+                                                    "type": "goto",
+                                                    "goto": "main"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "3": {
+                                    "id": "3",
+                                    "title": "Saya punya pertanyaan lain",
+                                    "current_menu": "1-5-3",
+                                    "text": "Apabila Anda memiliki pertanyaan lain, silakan menghubungi hotline Pikobar melalui:\n\n▶️  https://s.id/hotline-pikobar (hanya pesan WA) \n\n💡 Ketik angka lainnya untuk informasi selanjutnya (contoh: 1)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "6": {
+                            "id": "6",
+                            "title": "Saya Punya Pertanyaan Lain",
+                            "current_menu": "1-6",
+                            "text": "Apabila Anda memiliki pertanyaan lain silakan menghubungi hotline Sapawarga melalui:\n\n▶️ https://s.id/hotline-sapawarga (hanya pesan WA) \n\n💡 Ketik huruf lainnya untuk informasi selanjutnya (contoh: A)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        }
+                    }
+                }
+            ],
+            "2": [
+                {
+                    "id": "BB",
+                    "current_menu": "2",
+                    "current_lang": "",
+                    "text": "Sapawarga RW merupakan sistem yang disediakan bagi para RW se-Jawa Barat sebagai kanal penyampaian informasi, kegiatan, dan aspirasi. Ketua RW dapat mengunduh aplikasi Sapawarga RW melalui tautan berikut http://s.id/sapawarga \n\nApa saja yang ingin Warga ketahui seputar Sapawarga RW ? \n\nSilakan pilih salah satu opsi di bawah:\n\nA. Informasi Tata Cara Pembuatan Akun Sapawarga RW\nB. Informasi Tata Cara Masuk Sapawarga RW\nC. Informasi Tata Cara Klaim Akun Ketua RW\nD. Informasi Fitur Kegiatan RW\nE. Saya punya pertanyaan lain\n\n💡 Mohon dijawab dengan ketik huruf saja (contoh: A)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "list",
+                    "menus": {
+                        "0": {
+                            "id": "0",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        },
+                        "1": {
+                            "id": "1",
+                            "title": "Informasi Tata Cara Pembuatan Akun Sapawarga RW",
+                            "current_menu": "2-1",
+                            "text": "Untuk pembuatan akun Sapawarga, Anda dapat mengikuti langkah-langkah berikut:\n\n1. Buka aplikasi Sapawarga.\n2. Klik “Buat Akun” pada halaman Masuk Aplikasi.\n3. Isi email, password, dan data diri secara lengkap.\n4. Periksa kembali isian lalu klik “Simpan Data”\n5. Segera periksa pesan otomatis yang sistem kirim ke email Anda untuk verifikasi akun.\n6. Klik tombol “Verifikasi Akun Saya” yang terdapat di badan email.\n7. Anda akan dialihkan kembali ke aplikasi Sapawarga.\n8. Silakan masukan email dan password yang sudah berhasil diverifikasi.\n\n💡 Ketik huruf lainnya untuk informasi selanjutnya (contoh: B)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "2",
+                            "title": "Informasi Tata Cara Masuk Sapawarga RW",
+                            "current_menu": "2-2",
+                            "text": "Ketua RW yang sudah terdaftar dapat masuk ke aplikasi Sapawarga RW dengan mengikuti langkah berikut:\n\n1. Buka aplikasi Sapawarga.\n2. Masukkan username dan password.\n3. Pilih tombol masuk.\n4. Klik fitur “Sapawarga RW”.\n\n💡 Ketik huruf lainnya untuk informasi selanjutnya (contoh : C)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        },
+                        "3": {
+                            "id": "3",
+                            "title": "Informasi Tata Cara Klaim Akun Ketua RW",
+                            "current_menu": "2-3",
+                            "text": "Sapawarga versi terbaru memberikan akses yang lebih luas sehingga dapat dinikmati oleh publik dan Ketua RW. Jika Anda adalah Ketua RW yang sudah memiliki akun Sapawarga dan ingin mengakses fitur Sapawarga RW, maka Anda dapat melakukan klaim akun RW dengan cara berikut:\n\n1. Login ke aplikasi Sapawarga. \n2. Klik tombol “Klaim Akun RW Saya” pada menu beranda.\n3. Lengkapi data diri jika Anda belum melengkapinya.\n3. Upload SK Ketua RW yang berlaku.\n4. Setelah proses verifikasi berhasil, maka Anda dapat mengakses fitur Sapawarga RW.\n\n💡 Ketik huruf lainnya untuk informasi selanjutnya (contoh : D)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        },
+                        "4": {
+                            "id": "4",
+                            "title": "Informasi Fitur Kegiatan RW",
+                            "current_menu": "2-4",
+                            "text": "Kegiatan RW adalah fitur di aplikasi Sapawarga yang diperuntukan bagi Kepala RW se-Jawa Barat untuk membagikan dokumentasi foto dan video kegiatan warga sekitar. Untuk dapat masuk ke fitur Kegiatan RW, Warga dapat menekan tombol Kegiatan RW di halaman beranda. Setelah menekan tombol tersebut Warga akan dialihkan ke halaman Kegiatan RW dan dapat melihat kegiatan - kegiatan RW yang telah diunggah oleh Ketua RW lainnya.\n\nSelain membagikan dokumentasi dan video, Kepala RW juga bisa melakukan: \n1. Memberikan Like, Komentar, Bagikan, dan Profil pada postingan RW lain\n2. Upload Kegiatan harian\n3. Laporkan Kegiatan dan Profile dari postingan yang kurang pantas\n\nInformasi lengkap bisa diakses melalui Manual Book Aplikasi Sapawarga melalui link berikut: http://s.id/manual-book-rw \n\n💡 Ketik huruf lainnya untuk informasi selanjutnya (contoh : E)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        },
+                        "5": {
+                            "id": "5",
+                            "title": "Saya punya pertanyaan lain",
+                            "current_menu": "2-5",
+                            "text": "Apabila memiliki pertanyaan lain Warga dapat menghubungi hotline Sapawarga RW melalui:\n\n▶️ https://s.id/hotline-sapawarga-rw (hanya pesan WA)\n\n\n💡 Ketik huruf lainnya untuk informasi selanjutnya (contoh : A)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        }
+                    }
+                }
+            ],
+            "3": [
+                {
+                    "id": "CC",
+                    "current_menu": "3",
+                    "current_lang": "",
+                    "text": "Desa Digital merupakan salah satu  program unggulan  Gubernur Jawa Barat yang bertujuan untuk menurunkan kesenjangan dan memeratakan pembangunan di Desa Melalui Inovasi dan Kolaborasi Digital. Berkolaborasi dengan Dinas Pemberdayaan Masyarakat dan Perdesaan Provinsi Jawa Barat, Desa Digital hingga kini telah memperluas jangkauan penerima manfaat bagi lebih dari 2.000 desa di Jawa Barat. \n\nApa saja yang ingin Warga ketahui seputar Program Desa Digital ? \n\nSilakan pilih salah satu opsi di bawah:\n\nA. Informasi Umum terkait Desa Digital\nB. Informasi Tata Cara Bergabung dalam Program Desa Digital\nC. Informasi Program Candradimuka Jabar Coding Camp\nD. Informasi Website Desa Digital\nE. Informasi Kemitraan\nF. Saya punya pertanyaan lain\n\n💡 Mohon dijawab dengan ketik huruf saja (contoh: A)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "list",
+                    "menus": {
+                        "0": {
+                            "id": "0",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        },
+                        "1": {
+                            "id": "1",
+                            "title": "Informasi Umum terkait Desa Digital",
+                            "current_menu": "3-1",
+                            "text": "Pemerintah Daerah Provinsi Jawa Barat di bawah Gubernur Ridwan Kamil, melalui Dinas Komunikasi dan Informatika dan Dinas Pemberdayaan Masyarakat dan Desa menggagas program inovatif Desa Digital dengan tujuan untuk mewujudkan desa-desa di Jawa Barat yang mandiri secara digital sehingga meningkatkan standar hidup masyarakatnya.\n\nTujuan dari program ini adalah menciptakan desa juara melalui inovasi digital melalui:\n1. Menurunkan tingkat kesenjangan digital Provinsi Jawa Barat,\n2. Meningkatkan angka literasi digital Provinsi Jawa Barat,\n3. Mengembangkan potensi desa melalui inovasi dan kolaborasi digital.\n\nSasaran dari program ini adalah 5.312 desa di Jawa Barat, utamanya desa dengan Indeks Desa Membangun (IDM) tertinggal dan berkembang.\n\nProgram Desa Digital diklasifikasikan ke dalam 4 (empat) level tahapan, diantaranya:\n- Level 1.0 Pembangunan Infrastruktur yang bertujuan untuk menghadirkan jaringan internet di desa-desa dan penuntasan blankspot.\n- Level 2.0 Pelatihan Literasi Digital yang bertujuan untuk mendampingi masyarakat desa untuk menggunakan internet dalam berkomunikasi dan mengakses informasi. \n- Level 3.0 Pelatihan Pemasaran Digital yang bertujuan untuk mengajak pelaku usaha & BUMDes untuk mengikuti program pelatihan terkait pemasaran digital. \n- Level 4.0 Implementasi Pemanfaatan Teknologi yang bertujuan untuk meningkatkan produktivitas masyarakat desa secara mandiri dan berkelanjutan lewat pemanfaatan Internet of Things (IoT).\n\n💡 Ketik huruf lainnya untuk informasi selanjutnya (contoh : B)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "2",
+                            "title": "Informasi Tata Cara Bergabung dalam Program Desa Digital",
+                            "current_menu": "3-2",
+                            "text": "Pemdaprov Jawa Barat, melalui Jabar Digital Service pada Diskominfo Jawa Barat, menyelenggarakan Program Sayembara Desa Digital setiap tahunnya guna memperluas jangkauan penerima manfaat Program Desa Digital Tematik secara terbuka dan transparan dan memperkenalkan ketersediaan Platform Desa Digital sebagai media kolaborasi bagi desa dan mitra. \n\nProgram Sayembara Desa Digital terbuka bagi seluruh desa di Jawa Barat, utamanya desa dengan Indeks Desa Membangun (IDM) tertinggal dan berkembang.\n\nPendaftaran dilakukan oleh Kepala Desa masing-masing melalui Website Desa Digital yang dapat diakses di https://desadigital.jabarprov.go.id/sayembara. Silakan mengunjungi Website Desa Digital untuk informasi lebih lengkap.\n\n💡 Ketik huruf lainnya untuk informasi selanjutnya (contoh : B)\n\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        },
+                        "3": {
+                            "id": "3",
+                            "title": "Informasi Program Candradimuka Jabar Coding Camp",
+                            "current_menu": "3-3",
+                            "text": "Candradimuka Jabar Coding Camp Merupakan sebuah program pelatihan coding/programming gratis, komprehensif, dan intensif, sebagai sarana untuk melahirkan talenta berkualitas tinggi dan siap bekerja, perwujudan visi Jabar sebagai Provinsi Digital. \n\nHingga saat ini, tercatat 21.520 total pendaftar dan 1.452 alumni Program Candradimuka Jabar Coding Camp sejak Tahun 2021. \n\nInformasi lebih lanjut terkait program Candradimuka Jabar Coding Camp, silahkan mengunjungi laman website di https://jabarcodingcamp.jabarprov.go.id/ atau bisa kunjungi lama Instagram dan Facebook \"Jabar Coding Camp\".\n\n💡 Ketik huruf lainnya untuk informasi selanjutnya (contoh : C)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        },
+                        "4": {
+                            "id": "4",
+                            "title": "Informasi Program Candradimuka Jabar Coding Camp",
+                            "current_menu": "3-4",
+                            "text": "Website Desa Digital merupakan portal Informasi lengkap seputar Program Desa Digital di Jawa Barat yang mana dapat di akses melalui laman website : https://desadigital.jabarprov.go.id/ \n\n💡 Ketik huruf lainnya untuk informasi selanjutnya (contoh : D)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        },
+                        "5": {
+                            "id": "5",
+                            "title": "Informasi Kemitraan",
+                            "current_menu": "3-5",
+                            "text": "Kriteria Mitra Desa Digital Level 4.0 untuk pengembangan potensi desa diantaranya:\n\n1. Memiliki proses bisnis yang berkelanjutan:\na. Inovasi mengandung unsur kebaruan melalui pemanfaatan teknologi digital;\nb. Memberi manfaat untuk masyarakat Jawa Barat; \nc. Dapat dilanjutkan secara mandiri oleh masyarakat.\n\n2. Menyepakati pemberian akses dashboard dan data untuk keperluan penyediaan data alternatif untuk pengambilan kebijakan dan untuk keperluan monitoring dan evaluasi kebermanfaatan program;\n\n3. Memenuhi prasyarat administrasi untuk keperluan Pengadaan Langsung, maupun Perjanjian Kerja Sama.\n\n4. Memiliki ajuan lokasi kerja dengan syarat sebagai berikut:\na. Sesuai dengan rencana kerja JDS di tahun kerja sama;\nb. Lokasi memiliki potensi ekonomi \nc. Inovasi digital yang ditawarkan mampu membantu permasalahan di lokasi \ntersebut;\nd. Lebih disukai apabila lokasi memperhatikan aspek ketersebaran/pemerataan.\n\n5. Memiliki kontak local champion untuk memastikan pemberdayaan lokal dan membantu proses monitoring, evaluasi, dan assesment dampak secara berkala;\n\nJika Anda tertarik untuk menjadi bagian dari Program Desa Digital sebagai mitra, silakan hubungi nomor hotline kami. \n\n💡 Ketik huruf lainnya untuk informasi selanjutnya (contoh : B)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        },
+                        "6": {
+                            "id": "6",
+                            "title": "Saya punya pertanyaan lain",
+                            "current_menu": "3-6",
+                            "text": "Apabila memiliki pertanyaan lain, Warga dapat menghubungi hotline Desa Digital melalui :\n\n▶️ 0821-2567-5017 (hanya pesan WA)\n\n\n💡 Ketik huruf lainnya untuk informasi selanjutnya (contoh : A)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        }
+                    }
+                }
+            ],
+            "4": [
+                {
+                    "id": "DD",
+                    "current_menu": "4",
+                    "current_lang": "",
+                    "text": "Layanan Ekosistem Data Jawa Barat merupakan platform komponen Sistem Manajemen Data di lingkungan Pemerintah Daerah Provinsi Jawa Barat yang saling terhubung satu sama lain.\n\nApa saja yang ingin Warga ketahui seputar Layanan Ekosistem Data Jawa Barat ? \n\nSilakan pilih salah satu opsi di bawah:\n\nA. Informasi Tata Cara mengakses Satu Data Jawa Barat \nB. Informasi Tata Cara mengakses Open Data Jawa Barat\nC. Informasi Tata Cara mengakses Satu Peta Jawa Barat\nD. Informasi Tata Cara mengakses Dashboard Jabar\nE. Saya punya pertanyaan lain\n💡 Mohon dijawab dengan ketik huruf saja (contoh: A)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "list",
+                    "menus": {
+                        "0": {
+                            "id": "0",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        },
+                        "1": {
+                            "id": "1",
+                            "title": "Informasi Tata Cara mengakses Satu Data Jawa Barat",
+                            "current_menu": "4-1",
+                            "text": "Satu Data Jabar merupakan platform pengelolaan data internal Pemerintah Daerah Provinsi Jawa Barat yang bertujuan untuk memberikan kemudahan bagi seluruh organisasi perangkat daerah di lingkungan Pemerintah Daerah Provinsi Jawa Barat untuk mengelola dan berbagi pakai data yang akurat dengan mudah dan cepat yang dapat diakses di laman https://satudata.jabarprov.go.id/auth/login .\n\nApabila memiliki pertanyaan seputar tidak bisa login dan lupa password dalam akses halaman Satu Data Jabar, Warga dapat menghubungi hotline Ekosistem Data Jabar melalui :\n\n▶️ 082125675017 (hanya pesan WA)\n\n💡 Ketik huruf lainnya untuk informasi selanjutnya (contoh : B)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "2",
+                            "title": "Informasi Tata Cara mengakses Open Data Jawa Barat",
+                            "current_menu": "4-2",
+                            "text": "Portal transparansi data dan informasi publik bagi warga Jawa Barat. Siapa saja bisa jelajahi dan dapatkan koleksi dataset terbuka dari Organisasi Perangkat Daerah di Jawa Barat yang dapat diakses di laman https://opendata.jabarprov.go.id/id . Ada berbagai layanan yang dapat diakses melalui website ini, diantaranya: \n\n<a href=\"https://opendata.jabarprov.go.id/id/dataset\">1. Akses Dataset dari seluruh Organisasi Perangkat Daerah di Provinsi Jawa Barat</a>\n<a href=\"https://opendata.jabarprov.go.id/id/visualisasi\">2. Akses Dataset dalam bentuk Visualisasi dari seluruh Organisasi Perangkat Daerah di Provinsi Jawa Barat</a>\n<a href=\"https://opendata.jabarprov.go.id/id/infografik\">3. Akses Dataset dalam bentuk Infografik dari seluruh Organisasi Perangkat Daerah di Provinsi Jawa Barat</a>\n<a href=\"https://opendata.jabarprov.go.id/id/dataset/request\">4. Permohonan Dataset</a>\n\n💡 Ketik huruf lainnya untuk informasi selanjutnya (contoh : C)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        },
+                        "3": {
+                            "id": "3",
+                            "title": "Informasi Tata Cara mengakses Satu Peta Jawa Barat",
+                            "current_menu": "4-3",
+                            "text": "Satu Peta Jabar adalah Portal transparansi data dan informasi publik bagi warga Jawa Barat, yang hadir untuk memberikan kemudahan bagi Organisasi Perangkat Daerah atau instansi lainnya untuk mengelola dan berbagi pakai data geospasial di lingkungan Pemerintah Daerah Provinsi Jawa Barat dalam mendukung upaya pengambilan keputusan dan perumusan kebijakan strategis yang lebih terukur. Selain itu, Satu Peta Jabar diharapkan dapat menjadi media transparansi data dan informasi dalam bentuk Peta Tematik atau Geospasial bagi masyarakat. Untuk informasi selengkapnya dapat diakses melalui link berikut https://satupeta.jabarprov.go.id/#/home\n\nUntuk mencari dan mendownload Dataset Geospasial bisa melihat laman berikut : https://satupeta.jabarprov.go.id/#/help \n\n💡 Ketik huruf lainnya untuk informasi selanjutnya (contoh : D)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        },
+                        "4": {
+                            "id": "4",
+                            "title": "Informasi Tata Cara mengakses Dashboard Jabar",
+                            "current_menu": "4-4",
+                            "text": "Dashboard Jabar merupakan platform yang menyajikan informasi melalui visualisasi yang informatif, terintegrasi, mutakhir, dan dapat diandalkan untuk pengambilan kebijakan berbasis data yang terukur bagi pemerintah dan sarana edukasi bagi masyarakat.\n\nSelain itu, Dashboard Jabar diharapkan dapat menjadi media transparansi data dan visualisasi data dalam satu kanal bagi masyarakat. Untuk informasi selengkapnya dapat diakses melalui link berikut https://dashboard.jabarprov.go.id/id .\n\nUntuk mencari referensi dan visualisasi data bisa melihat laman berikut : https://dashboard.jabarprov.go.id/id/dashboard .\n\n💡 Ketik huruf lainnya untuk informasi selanjutnya (contoh : E)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        },
+                        "5": {
+                            "id": "5",
+                            "title": "Saya Punya Pertanyaan Lain Seputar Ekosistem Data Jabar",
+                            "current_menu": "4-5",
+                            "text": "Apabila memiliki pertanyaan lain, Warga dapat menghubungi hotline Ekosistem Data Jabar melalui :\n\n▶️ 082125675017 (hanya pesan WA)\n\n💡 Ketik huruf lainnya untuk informasi selanjutnya (contoh : A)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        }
+                    }
+                }
+            ],
+            "5": [
+                {
+                    "id": "EE",
+                    "current_menu": "5",
+                    "current_lang": "",
+                    "text": "Pisodapur atau Pusat Informasi Dan Koordinasi Data Gempa Cianjur merupakan sistem satu pintu informasi dan koordinasi data gempa Cianjur. Hadirkan data dan visualisasi perkembangan gempa berbasis peta spasial. Dilengkapi ragam layanan pendukung kedaruratan kebencanaan.\n\nUntuk memulai, silakan pilih salah satu opsi di bawah:\n\nA. Informasi Layanan Pisodapur\nB. Informasi Tata Cara Pengajuan Bantuan Logistik \nC. Informasi Tata Cara Keluhan atau Pengaduan\nD. Saya Punya Pertanyaan Lainnya\n\n💡 Mohon dijawab dengan ketik huruf saja (contoh: A)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "list",
+                    "menus": {
+                        "0": {
+                            "id": "0",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        },
+                        "1": {
+                            "id": "1",
+                            "title": "Informasi Layanan Pisodapur",
+                            "current_menu": "5-1",
+                            "text": "Dalam upaya penanggulangan bencana gempa di Cianjur, Pemprov Jabar memberikan berbagai layanan yang tersedia pada https://pisodapur.jabarprov.go.id. Adapun  ragam layanan yang dapat diakses melalui website ini diantaranya: \n\n<a href=\"https://form.jotform.com/223324024976455\">1. Pengajuan Bantuan Logistik</a>\n<a href=\"https://form.jotform.com/223340600392041\">2. Pengajuan Distribusi</a>\n<a href=\"https://deskrelawanpb.bnpb.go.id/gempa-cianjur/reports/submit\">3. Desk / Pendataan Relawan</a>\n<a href=\"http://map-pisodapur.jabarprov.go.id/\">4. Dashboard / Informasi Peta Geospasial Gempa Cianjur</a>\n\n💡 Ketik huruf lainnya untuk informasi selanjutnya (contoh: B)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "list",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                                
+                            }
+                        },
+                        "2": {
+                            "id": "2",
+                            "title": "Informasi Tata Cara Pengajuan Bantuan Logistik",
+                            "current_menu": "5-2",
+                            "text": "Dalam upaya penanggulangan kebencanaan gempa di Cianjur, Warga yang terdampak dan membutuhkan bantuan dapat melakukan permohonan bantuan dengan mengikuti langkah berikut:\n\n1. Akses website Pisodapur (https://pisodapur.jabarprov.go.id)\n2. Klik tombol Pengajuan Bantuan Logistik pada section Masyarakat Terdampak\n3. Mengisikan formulir Data Diri dan Kebutuhan Logistik yang diperlukan\n4. Menekan tombol submit / selesai.\n\n💡 Ketik huruf lainnya untuk informasi selanjutnya (contoh: C)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        },
+                        "3": {
+                            "id": "3",
+                            "title": "Informasi Tata Cara Keluhan atau Pengaduan",
+                            "current_menu": "5-3",
+                            "text": "Dalam upaya penanggulangan kebencanaan gempa di Cianjur, Warga yang terdampak dan mengalami kendala atau permasalahan terutama dalam hal pembagian bantuan, dapat melakukan aduan dengan mengikuti langkah berikut:\n\n1. Mengunjungi website Pisodapur (https://pisodapur.jabarprov.go.id)\n2. Klik tombol Pengaduan Distribusi pada section Aduan Masyarakat\n3. Mengisikan formulir Data Diri dan Keluhan atau Pengaduan\n4. Menekan tombol submit / selesai.\n\n💡 Ketik huruf lainnya untuk informasi selanjutnya (contoh: D)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        },
+                        "4": {
+                            "id": "4",
+                            "title": "Saya Punya Pertanyaan Lain Seputar Pisodapur",
+                            "current_menu": "5-4",
+                            "text": "Apabila Warga memiliki pertanyaan lain, maka Warga dapat menghubungi hotline Piso Dapur melalui:\n\n▶️  https://s.id/hotline-pisodapur  (hanya pesan WA) \n\n\n💡 Ketik huruf lainnya untuk informasi selanjutnya (contoh: A)\n💡 Ketik angka 0 untuk kembali ke halaman utama \n\nHatur Nuhun 🙏",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        }
+                    }
+                }
+            ],
+            "6": [
+                {
+                    "id": "FF",
+                    "current_menu": "6",
+                    "current_lang": "",
+                    "text": "Layanan Aduan Bullying merupakan kanal aduan untuk korban bullying atau perundungan bagi siswa di wilayah Jawa Barat. Dilengkapi dengan layanan telekonsultasi untuk korban dapat melakukan sesi konseling atau pendampingan dengan psikolog/konselor dari Dinas Pemberdayaan Perempuan Perlindungan Anak & Keluarga Jawa Barat.\n\nUntuk memulai, silakan pilih salah satu opsi di bawah:\n\nA. Laporkan Kejadian Bullying\nB. Telekonsultasi Kesehatan Mental dengan Konselor/Psikolog\n\n💡 Ketik huruf opsi yang sesuai dengan kebutuhan Anda  (contoh: A)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "button",
+                    "menus": {
+                        "0": {
+                            "id": "0",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        },
+                        "1": {
+                            "id": "1",
+                            "title": "Laporkan Kejadian Bullying",
+                            "current_menu": "6-1",
+                            "text": "Apakah Anda/kerabat yang dilaporkan adalah siswa/i yang berasal dari SMA, SMK, atau SLB di Jawa Barat?\n\n1. Ya\n2. Tidak\n\n💡 Ketik angka opsi yang sesuai dengan kebutuhan Anda  (contoh: 1)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "1",
+                                    "title": "Ya",
+                                    "current_menu": "6-1-1",
+                                    "text": "Selamat datang di Layanan Aduan Bullying yang berfungsi sebagai  kanal aduan untuk korban bullying atau perundungan bagi siswa di wilayah Jawa Barat.\n\nSebelumnya mohon maaf atas keterlambatan respon kami, dikarenakan banyaknya load pesan yang masuk, dan kami mohon pengertiannya. \n\nBagi siswa di bawah kewenangan Dinas Pendidikan Jawa Barat yakni SMA, SMK, dan SLB maka Anda dapat membuat laporan melalui Aplikasi Sigesit Juara yang dapat diakses pada laman berikut \n\n▶️  https://sigesitjuara.jabarprov.go.id/review \n\n💡 Ketik angka lainnya untuk informasi selanjutnya (contoh: 2)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "2",
+                                    "title": "Ya",
+                                    "current_menu": "6-1-2",
+                                    "text": "Selamat datang di Layanan Aduan Bullying yang berfungsi sebagai  kanal aduan untuk korban bullying atau perundungan bagi siswa di wilayah Jawa Barat.\n\nsSebelumnya mohon maaf atas keterlambatan respon kami, dikarenakan banyaknya load pesan yang masuk, dan kami mohon pengertiannya. \n\nBagi siswa diluar  kewenangan Dinas Pendidikan Jawa Barat yakni Jenjang Pendidikan Selain SMA, SMK, dan SLB maka Anda dapat membuat laporan melalui Aplikasi SP4N Lapor yang dapat diakses pada laman berikut \n\n▶️  https://www.lapor.go.id/ \n\n💡 Ketik angka lainnya untuk informasi selanjutnya (contoh: 1)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "2",
+                            "title": "Telekonsultasi Kesehatan Mental dengan Konselor/Psikolog",
+                            "current_menu": "6-2",
+                            "text": "Apakah Anda/kerabat yang dilaporkan adalah siswa/i yang berasal dari SMA, SMK, atau SLB di Jawa Barat?\n\n1. Ya\n2. Tidak\n\n💡 Ketik angka opsi yang sesuai dengan kebutuhan Anda  (contoh: 1)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                },
+                                "1": {
+                                    "id": "1",
+                                    "title": "Ya",
+                                    "current_menu": "6-2-1",
+                                    "text": "Selamat datang di Telekonsultasi Kesehatan Mental. Layanan ini ditujukan untuk siswa yang menjadi korban bully di wilayah Jawa Barat, silakan menghubungi hotline Aduan Bullying Dinas Pendidikan Jawa Barat melalui:\n\n▶️ https://s.id/hotline-bullying \n\n💡 Ketik angka lainnya untuk informasi selanjutnya (contoh: 2)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        }
+                                    }
+                                },
+                                "2": {
+                                    "id": "2",
+                                    "title": "Ya",
+                                    "current_menu": "6-2-2",
+                                    "text": "Anda masuk dalam kategori Sekolah diluar Kewenangan Dinas Pendidikan Jabar sehingga Telekonsultasi dapat dilakukan dengan Psikolog/Konselor dari DP3AKB. Anda dapat menghubungi Psikolog/Konselor dari DP3AKB  pada Nomor Hotline UPTD PPA Provinsi Jawa Barat \n\n▶️  http://wa.me/6285222206777 \n\n💡 Ketik angka lainnya untuk informasi selanjutnya (contoh: 1)\n💡 Ketik angka 0 untuk kembali ke halaman utama\n\nHatur Nuhun 🙏",
+                                    "type": "nest_menu",
+                                    "interactive_message": true,
+                                    "interactive_type": "button",
+                                    "menus": {
+                                        "0": {
+                                            "id": "0",
+                                            "title": "Menu Utama",
+                                            "current_menu": "MENU",
+                                            "text": "",
+                                            "type": "goto",
+                                            "goto": "main"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
