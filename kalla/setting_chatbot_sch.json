@@ -1,0 +1,519 @@
+{
+    "schemas": {
+        "default": {
+            "survey": {
+                "active": false
+            },
+            "reset_keys": [
+                "0"
+            ],
+            "load_conversation": "WabaTemplateConversation",
+            "dual_language": false,
+            "language_localization": {
+                "ID": {}
+            },
+            "expire_time": 10,
+            "top_level_questions": [
+                {
+                    "id": "1",
+                    "text": "Pembelian",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "Booking",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "Promo",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "Emergency/Darurat",
+                    "type": "actions"
+                },
+                {
+                    "id": "5",
+                    "text": "Complaint",
+                    "type": "actions"
+                },
+                {
+                    "id": "6",
+                    "text": "Terhubung ke Customer Care",
+                    "type": "actions"
+                },
+                {
+                    "id": "7",
+                    "text": "FAQ",
+                    "type": "actions"
+                }
+            ],
+            "0": [
+                {
+                    "id": "1",
+                    "text": "Pembelian",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "Booking",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "Promo",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "Emergency/Darurat",
+                    "type": "actions"
+                },
+                {
+                    "id": "5",
+                    "text": "Complaint",
+                    "type": "actions"
+                },
+                {
+                    "id": "6",
+                    "text": "Terhubung ke Customer Care",
+                    "type": "actions"
+                },
+                {
+                    "id": "7",
+                    "text": "FAQ",
+                    "type": "actions"
+                }
+            ],
+            "1": [{
+                "id": "AA",
+                "current_menu": "1",
+                "current_lang": "",
+                "text": "Silakan memilih kategori produk yang Anda inginkan:\n\n(1) Mobil\n(2) Motor\n(3) Cahaya Bone\n(4) Tiket Bugis Waterpark\n(5) Perumahan Bukit Baruga\n(6) Driving Range Bukit Baruga\n(7) Lainnya",
+                "type": "nest_menu",
+                "interactive_message": true,
+                "interactive_type": "list",
+                "menus": {
+                    "1": {
+                        "id": "1",
+                        "title": "Mobil",
+                        "current_menu": "1-1",
+                        "text": "Silakan memilih kategori produk yang Anda inginkan:\n\n(1) Toyota\n(2) Used Car\n(3) Jeep",
+                        "type": "nest_menu",
+                        "interactive_message": true,
+                        "interactive_type": "button",
+                        "menus": {
+                            "1": {
+                                "id": "1",
+                                "title": "Toyota",
+                                "current_menu": "1-1-1",
+                                "text": "Silakan memilih kategori produk yang Anda inginkan:\n\n(1) Avanza\n(2) Agya\n(3) Calya\n(4) Raize\n(5) Rush\n(6) Innova\n(7) Other",
+                                "type": "nest_menu",
+                                "interactive_message": true,
+                                "interactive_type": "list",
+                                "menus": {
+                                    "1": {
+                                        "id": "1",
+                                        "title": "",
+                                        "current_menu": "1-1-1-1",
+                                        "text": "Saat ini lagi banyak promo menarik yang gak boleh Kalla Friends lewatkan.\nUntuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan :\nNo. Telp :\nJenis Kelamin :\nDeskripsi pertanyaan :",
+                                        "type": "text"
+                                    },
+                                    "2": {
+                                        "id": "2",
+                                        "title": "",
+                                        "current_menu": "1-1-1-2",
+                                        "text": "Saat ini lagi banyak promo menarik yang gak boleh Kalla Friends lewatkan.\nUntuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan :\nNo. Telp :\nJenis Kelamin :\nDeskripsi pertanyaan :",
+                                        "type": "text"
+                                    },
+                                    "3": {
+                                        "id": "3",
+                                        "title": "",
+                                        "current_menu": "1-1-1-3",
+                                        "text": "Saat ini lagi banyak promo menarik yang gak boleh Kalla Friends lewatkan.\nUntuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan :\nNo. Telp :\nJenis Kelamin :\nDeskripsi pertanyaan :",
+                                        "type": "text"
+                                    },
+                                    "4": {
+                                        "id": "4",
+                                        "title": "",
+                                        "current_menu": "1-1-1-4",
+                                        "text": "Saat ini lagi banyak promo menarik yang gak boleh Kalla Friends lewatkan.\nUntuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan :\nNo. Telp :\nJenis Kelamin :\nDeskripsi pertanyaan :",
+                                        "type": "text"
+                                    },
+                                    "5": {
+                                        "id": "5",
+                                        "title": "",
+                                        "current_menu": "1-1-1-5",
+                                        "text": "Saat ini lagi banyak promo menarik yang gak boleh Kalla Friends lewatkan.\nUntuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan :\nNo. Telp :\nJenis Kelamin :\nDeskripsi pertanyaan :",
+                                        "type": "text"
+                                    },
+                                    "6": {
+                                        "id": "6",
+                                        "title": "",
+                                        "current_menu": "1-1-1-6",
+                                        "text": "Saat ini lagi banyak promo menarik yang gak boleh Kalla Friends lewatkan.\nUntuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan :\nNo. Telp :\nJenis Kelamin :\nDeskripsi pertanyaan :",
+                                        "type": "text"
+                                    },
+                                    "7": {
+                                        "id": "7",
+                                        "title": "",
+                                        "current_menu": "1-1-1-7",
+                                        "text": "Saat ini lagi banyak promo menarik yang gak boleh Kalla Friends lewatkan.\nUntuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan :\nNo. Telp :\nJenis Kelamin :\nDeskripsi pertanyaan :",
+                                        "type": "text"
+                                    }
+                                }
+                            },
+                            "2": {
+                                "id": "2",
+                                "title": "Used Car",
+                                "current_menu": "1-1-2",
+                                "text": "Saat ini lagi banyak promo menarik yang gak boleh Kalla Friends lewatkan.\nUntuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan :\nNo. Telp :\nJenis Kelamin :\nDeskripsi pertanyaan :",
+                                "type": "text"
+                            },
+                            "3": {
+                                "id": "3",
+                                "title": "Jeep",
+                                "current_menu": "1-1-3",
+                                "text": "Saat ini lagi banyak promo menarik yang gak boleh Kalla Friends lewatkan.\nUntuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan :\nNo. Telp :\nJenis Kelamin :\nDeskripsi pertanyaan :",
+                                "type": "text"
+                            }
+                        }
+                    },
+                    "2": {
+                        "id": "2",
+                        "title": "Motor",
+                        "current_menu": "1-2",
+                        "text": "Silakan memilih kategori produk yang Anda inginkan:\n\n(1) Motobi\n(2) Patagonia\n(3) Panarea\n(4) Shiny\n(5) Panagonian\n(6) Other",
+                        "type": "nest_menu",
+                        "interactive_message": true,
+                        "interactive_type": "list",
+                        "menus": {
+                            "1": {
+                                "id": "1",
+                                "title": "Motobi",
+                                "current_menu": "1-2-1",
+                                "text": "Saat ini lagi banyak promo menarik yang gak boleh Kalla Friends lewatkan.\nUntuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan :\nNo. Telp :\nJenis Kelamin :\nDeskripsi pertanyaan :",
+                                "type": "text"
+                            },
+                            "2": {
+                                "id": "2",
+                                "title": "Patagonia",
+                                "current_menu": "1-2-2",
+                                "text": "Saat ini lagi banyak promo menarik yang gak boleh Kalla Friends lewatkan.\nUntuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan :\nNo. Telp :\nJenis Kelamin :\nDeskripsi pertanyaan :",
+                                "type": "text"
+                            },
+                            "3": {
+                                "id": "3",
+                                "title": "Panarea",
+                                "current_menu": "1-2-3",
+                                "text": "Saat ini lagi banyak promo menarik yang gak boleh Kalla Friends lewatkan.\nUntuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan :\nNo. Telp :\nJenis Kelamin :\nDeskripsi pertanyaan :",
+                                "type": "text"
+                            },
+                            "4": {
+                                "id": "4",
+                                "title": "Shiny",
+                                "current_menu": "1-2-4",
+                                "text": "Saat ini lagi banyak promo menarik yang gak boleh Kalla Friends lewatkan.\nUntuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan :\nNo. Telp :\nJenis Kelamin :\nDeskripsi pertanyaan :",
+                                "type": "text"
+                            },
+                            "5": {
+                                "id": "5",
+                                "title": "Panagonian",
+                                "current_menu": "1-2-5",
+                                "text": "Saat ini lagi banyak promo menarik yang gak boleh Kalla Friends lewatkan.\nUntuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan :\nNo. Telp :\nJenis Kelamin :\nDeskripsi pertanyaan :",
+                                "type": "text"
+                            },
+                            "6": {
+                                "id": "6",
+                                "title": "Other",
+                                "current_menu": "1-2-6",
+                                "text": "Saat ini lagi banyak promo menarik yang gak boleh Kalla Friends lewatkan.\nUntuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan :\nNo. Telp :\nJenis Kelamin :\nDeskripsi pertanyaan :",
+                                "type": "text"
+                            }
+                        }
+                    },
+                    "3": {
+                        "id": "3",
+                        "title": "Cahaya Bone",
+                        "current_menu": "1-3",
+                        "text": "Silakan memilih kategori produk yang Anda inginkan:\n\n(1) Pengiriman Barang\n(2) Tiket Penumpang",
+                        "type": "nest_menu",
+                        "interactive_message": true,
+                        "interactive_type": "button",
+                        "menus": {
+                            "1": {
+                                "id": "1",
+                                "title": "Pengiriman Barang",
+                                "current_menu": "1-3-1",
+                                "text": "Saat ini lagi banyak promo menarik yang gak boleh Kalla Friends lewatkan.\nUntuk itu mohon kesediaannya mengisi data berikut :\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan :\nNo. Telp :\nJenis Kelamin :\nDeskripsi pertanyaan :",
+                                "type": "text",
+                            },
+                            "2": {
+                                "id": "2",
+                                "title": "Tiket Penumpang",
+                                "current_menu": "1-3-2",
+                                "text": "Saat ini lagi banyak promo menarik yang gak boleh Kalla Friends lewatkan.\nUntuk itu mohon kesediaannya mengisi data berikut :\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan :\nNo. Telp :\nJenis Kelamin :\nDeskripsi pertanyaan :",
+                                "type": "text",
+                            }
+                        }
+                    },
+                    "4": {
+                        "id": "4",
+                        "title": "Tiket Bugis Waterpark",
+                        "current_menu": "1-4",
+                        "text": "Saat ini lagi banyak promo menarik yang gak boleh Kalla Friends lewatkan.\nUntuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan :\nNo. Telp :\nJenis Kelamin :\nDeskripsi pertanyaan :",
+                        "type": "text"
+                    },
+                    "5": {
+                        "id": "5",
+                        "title": "Perumahan Bukit Baruga",
+                        "current_menu": "1-5",
+                        "text": "Saat ini lagi banyak promo menarik yang gak boleh Kalla Friends lewatkan.\nUntuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan :\nNo. Telp :\nJenis Kelamin :\nDeskripsi pertanyaan :",
+                        "type": "text"
+                    },
+                    "6": {
+                        "id": "6",
+                        "title": "Driving Range Baruga",
+                        "current_menu": "1-6",
+                        "text": "Saat ini lagi banyak promo menarik yang gak boleh Kalla Friends lewatkan.\nUntuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan :\nNo. Telp :\nJenis Kelamin :\nDeskripsi pertanyaan :",
+                        "type": "text"
+                    }
+                }
+            }],
+            "2": [{
+                "id": "BB",
+                "current_menu": "2",
+                "current_lang": "",
+                "text": "Silakan memilih cabang yang anda inginkan :\n\n(1) Toyota\n(2) Otoexpert",
+                "type": "nest_menu",
+                "interactive_message": true,
+                "interactive_type": "button",
+                "menus": {
+                    "1": {
+                        "id": "1",
+                        "title": "Toyota",
+                        "current_menu": "2-1",
+                        "text": "Silakan memilih cabang yang Anda inginkan:\n\n(1) Urip Sumohardjo\n(2) Alauddin\n(3) Kendari\n(4) Serui\n(5) Palopo\n(6) Maros\n(7) Lainnya",
+                        "type": "nest_menu",
+                        "interactive_message": true,
+                        "interactive_type": "list",
+                        "menus": {
+                            "1": {
+                                "id": "1",
+                                "title": "Urip Sumohardjo",
+                                "current_menu": "2-1-1",
+                                "text": "Baik Bapak/Ibu terkait permintaan Booking Service akan dibantu oleh team kami segera. Untuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan : \nNo. Telp Yang Aktif :\nJenis Kelamin :\nType Kendaraan :\nPlat Kendaraan :\nHari/Waktu :\nJenis Service :",
+                                "type": "text"
+                            },
+                            "2": {
+                                "id": "2",
+                                "title": "Alauddin",
+                                "current_menu": "2-1-2",
+                                "text": "Baik Bapak/Ibu terkait permintaan Booking Service akan dibantu oleh team kami segera. Untuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan : \nNo. Telp Yang Aktif :\nJenis Kelamin :\nType Kendaraan :\nPlat Kendaraan :\nHari/Waktu :\nJenis Service :",
+                                "type": "text"
+                            },
+                            "3": {
+                                "id": "3",
+                                "title": "Kendari",
+                                "current_menu": "2-1-3",
+                                "text": "Baik Bapak/Ibu terkait permintaan Booking Service akan dibantu oleh team kami segera. Untuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan : \nNo. Telp Yang Aktif :\nJenis Kelamin :\nType Kendaraan :\nPlat Kendaraan :\nHari/Waktu :\nJenis Service :",
+                                "type": "text"
+                            },
+                            "4": {
+                                "id": "4",
+                                "title": "Serui",
+                                "current_menu": "2-1-4",
+                                "text": "Baik Bapak/Ibu terkait permintaan Booking Service akan dibantu oleh team kami segera. Untuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan : \nNo. Telp Yang Aktif :\nJenis Kelamin :\nType Kendaraan :\nPlat Kendaraan :\nHari/Waktu :\nJenis Service :",
+                                "type": "text"
+                            },
+                            "5": {
+                                "id": "5",
+                                "title": "Palopo",
+                                "current_menu": "2-1-5",
+                                "text": "Baik Bapak/Ibu terkait permintaan Booking Service akan dibantu oleh team kami segera. Untuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan : \nNo. Telp Yang Aktif :\nJenis Kelamin :\nType Kendaraan :\nPlat Kendaraan :\nHari/Waktu :\nJenis Service :",
+                                "type": "text"
+                            },
+                            "6": {
+                                "id": "6",
+                                "title": "Maros",
+                                "current_menu": "2-1-6",
+                                "text": "Baik Bapak/Ibu terkait permintaan Booking Service akan dibantu oleh team kami segera. Untuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan : \nNo. Telp Yang Aktif :\nJenis Kelamin :\nType Kendaraan :\nPlat Kendaraan :\nHari/Waktu :\nJenis Service :",
+                                "type": "text"
+                            },
+                            "7": {
+                                "id": "7",
+                                "title": "Lainnya",
+                                "current_menu": "2-1-7",
+                                "text": "Baik Bapak/Ibu terkait permintaan Booking Service akan dibantu oleh team kami segera. Untuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan : \nNo. Telp Yang Aktif :\nJenis Kelamin :\nType Kendaraan :\nPlat Kendaraan :\nHari/Waktu :\nJenis Service :",
+                                "type": "text"
+                            }
+                        }
+                    },
+                    "2": {
+                        "id": "2",
+                        "title": "Otoexpert",
+                        "current_menu": "2-2",
+                        "text": "Silakan memilih cabang yang Anda inginkan:\n\n(1) Daya\n(2) Hertasning",
+                        "type": "nest_menu",
+                        "interactive_message": true,
+                        "interactive_type": "button",
+                        "menus": {
+                            "1": {
+                                "id": "1",
+                                "title": "",
+                                "current_menu": "2-2-1",
+                                "text": "Baik Bapak/Ibu terkait permintaan Booking Service akan dibantu oleh team kami segera. Untuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan : \nNo. Telp Yang Aktif :\nJenis Kelamin :\nType Kendaraan :\nPlat Kendaraan :\nHari/Waktu :\nJenis Service :",
+                                "type": "text"
+                            },
+                            "2": {
+                                "id": "2",
+                                "title": "",
+                                "current_menu": "2-2-2",
+                                "text": "Baik Bapak/Ibu terkait permintaan Booking Service akan dibantu oleh team kami segera. Untuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan : \nNo. Telp Yang Aktif :\nJenis Kelamin :\nType Kendaraan :\nPlat Kendaraan :\nHari/Waktu :\nJenis Service :",
+                                "type": "text"
+                            }
+                        }
+                    }
+                }
+            }],
+            "3": [{
+                "id": "CC",
+                "current_menu": "3",
+                "current_lang": "Silakan memilih promo yang ingin anda ketahui:\n\n(1) Toyota\n(2) Benelli\n(3) Perumahan Bukit Baruga\n(4) BWP\n(5) Cabo\n(6) Logistik\n(7) Lainnya",
+                "text": "",
+                "type": "nest_menu",
+                "interactive_message": true,
+                "interactive_type": "list",
+                "menus": {
+                    "1": {
+                        "id": "1",
+                        "title": "Toyota",
+                        "current_menu": "3-1",
+                        "text": "Saat ini lagi banyak promo menarik yang gak boleh Kalla Friends lewatkan.\nUntuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan :\nNo. Telp :\nJenis Kelamin :\nDeskripsi pertanyaan :",
+                        "type": "text"
+                    },
+                    "2": {
+                        "id": "2",
+                        "title": "Benelli",
+                        "current_menu": "3-2",
+                        "text": "Saat ini lagi banyak promo menarik yang gak boleh Kalla Friends lewatkan.\nUntuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan :\nNo. Telp :\nJenis Kelamin :\nDeskripsi pertanyaan :",
+                        "type": "text"
+                    },
+                    "3": {
+                        "id": "3",
+                        "title": "Perumahan Bukit Baruga",
+                        "current_menu": "3-3",
+                        "text": "Saat ini lagi banyak promo menarik yang gak boleh Kalla Friends lewatkan.\nUntuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan :\nNo. Telp :\nJenis Kelamin :\nDeskripsi pertanyaan :",
+                        "type": "text"
+                    },
+                    "4": {
+                        "id": "4",
+                        "title": "BWP",
+                        "current_menu": "3-4",
+                        "text": "Saat ini lagi banyak promo menarik yang gak boleh Kalla Friends lewatkan.\nUntuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan :\nNo. Telp :\nJenis Kelamin :\nDeskripsi pertanyaan :",
+                        "type": "text"
+                    },
+                    "5": {
+                        "id": "5",
+                        "title": "Cabo",
+                        "current_menu": "3-5",
+                        "text": "Saat ini lagi banyak promo menarik yang gak boleh Kalla Friends lewatkan.\nUntuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan :\nNo. Telp :\nJenis Kelamin :\nDeskripsi pertanyaan :",
+                        "type": "text"
+                    },
+                    "6": {
+                        "id": "6",
+                        "title": "Logistik",
+                        "current_menu": "3-6",
+                        "text": "Saat ini lagi banyak promo menarik yang gak boleh Kalla Friends lewatkan.\nUntuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan :\nNo. Telp :\nJenis Kelamin :\nDeskripsi pertanyaan :",
+                        "type": "text"
+                    },
+                    "7": {
+                        "id": "7",
+                        "title": "Lainnya",
+                        "current_menu": "3-7",
+                        "text": "Saat ini lagi banyak promo menarik yang gak boleh Kalla Friends lewatkan.\nUntuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nKecamatan :\nNo. Telp :\nJenis Kelamin :\nDeskripsi pertanyaan :",
+                        "type": "text"
+                    }
+                }
+            }],
+            "4": [{
+                "id": "DD",
+                "current_menu": "4",
+                "current_lang": "",
+                "text": "Baik Bapak/Ibu terkait kendalanya akan dibantu oleh team kami segera. \nUntuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nNo. Telp yang Aktif :\nLokasi :\nType Kendaraan :\nPlat Kendaraan :\nKendala Kendaraan :",
+                "type": "text"
+            }],
+            "5": [{
+                "id": "EE",
+                "current_menu": "5",
+                "current_lang": "",
+                "text": "Mohon maaf atas ketidaknyamannya, terkait keluhan Bapak/Ibu kami akan teruskan ke bagian terkait agar dapat segera ditindaklanjuti. Untuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nNo. Telp yang Aktif :\nNama Unit Bisnis yang di Komplain :\nDeskripsi Keluhan :",
+                "type": "text"
+            }],
+            "6": [{
+                "id": "FF",
+                "current_menu": "6",
+                "current_lang": "",
+                "text": "Mohon maaf atas ketidaknyamannya, terkait keluhan Bapak/Ibu kami akan teruskan ke bagian terkait agar dapat segera ditindaklanjuti. Untuk itu mohon kesediaannya mengisi data berikut :\n\nNama : Sesuai KTP\nAlamat : Sesuai KTP\nNo. Telp yang Aktif :\nNama Unit Bisnis yang di Komplain :\nDeskripsi Keluhan :",
+                "type": "goto",
+                "goto": "cs"
+            }],
+            "7": [{
+                "id": "GG",
+                "current_menu": "7",
+                "current_lang": "",
+                "text": "Silakan memilih yang ingin anda ketahui:\n\n(1) Informasi Loker\n(2) Informasi Beasiswa\n(3) Informasi Pengiriman Kendaraan/Alat/Barang\n(4) Informasi Event Kalla\n(5) Informasi Sponshorship\n(6) Terhubung ke Customer Care",
+                "type": "nest_menu",
+                "interactive_message": true,
+                "interactive_type": "list",
+                "menus": {
+                    "1": {
+                        "id": "1",
+                        "title": "Informasi Loker",
+                        "current_menu": "7-1",
+                        "text": "Baik Kalla Friends, untuk informasi lowongan pekerjaan dapat dilihat pada laman website resmi kami di https://career.kallagroup.co.id/ atau bisa kunjungi ke media sosial Instagram @lifeatkalla \n\nTerima kasih Salam #DariHati",
+                        "type": "text"
+                    },
+                    "2": {
+                        "id": "2",
+                        "title": "Informasi Beasiswa",
+                        "current_menu": "7-2",
+                        "text": "Baik Kalla Friends, untuk informasi seputar Beasiswa Kalla dapat dilihat pada laman website resmi kami di https://www.yayasanhadjikalla.co.id/ atau bisa kunjungi ke media sosial Instagram @yayasankalla\n\nTerima kasih Salam #DariHati",
+                        "type": "text"
+                    },
+                    "3": {
+                        "id": "3",
+                        "title": "Informasi Pengiriman Kendaraan/Alat/Barang",
+                        "current_menu": "7-3",
+                        "text": "",
+                        "type": "text"
+                    },
+                    "4": {
+                        "id": "4",
+                        "title": "Informasi Event Kalla",
+                        "current_menu": "7-4",
+                        "text": "",
+                        "type": "text"
+                    },
+                    "5": {
+                        "id": "5",
+                        "title": "Informasi Sponshorship",
+                        "current_menu": "7-5",
+                        "text": "Baik Kalla Friends, untuk pengajuan proposal sponsorship dapat diakses melalui link bit.ly/sponsorshipkalla . \n\nTerima kasih Salam #DariHati",
+                        "type": "text"
+                    },
+                    "6": {
+                        "id": "6",
+                        "title": "Terhubung ke Customer Care",
+                        "current_menu": "7-6",
+                        "text": "",
+                        "type": "goto",
+                        "goto": "cs"
+                    }
+                }
+            }]
+        }
+    }
+}
