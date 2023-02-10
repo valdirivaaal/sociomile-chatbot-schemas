@@ -1,0 +1,27 @@
+{
+    "active": true,
+    "mode": "basic",
+    "greetingMessage": "Assalamualaikum. Halo, mitra Adev. Selamat datang di layanan Customer Support PT. Adev Natural Indonesia.\n\nSilakan pilih nomor menu sesuai dengan informasi yang anda butuhkan.",
+    "exit_keyword": "",
+    "order_keywords": [],
+    "order_reply_msg": "",
+    "to_cs_keyword": "_NO_CS_KEY_YET_",
+    "response_cs_keyword": "Mohon menunggu, sesaat lagi Bapak/Ibu akan terhubung dengan Customer Care Representative Kami.",
+    "listCommandMessage": "",
+    "backtomenu_msg": "",
+    "contactCsMessage": "",
+    "prefixGreeting": "",
+    "notUnderstandMessage": "Silahkan KETIK pilihan menu yang sudah diinformasikan di atas untuk menjelajahi informasi yang tersedia",
+    "multiLangNotUnderstandMessage": {
+        "ID": "Silahkan KETIK pilihan menu yang sudah diinformasikan di atas untuk menjelajahi informasi yang tersedia"
+    },
+    "check_office_hour": false,
+    "concat_greeting_and_menu": true,
+    "no_ofh_bot_msg": "",
+    "skip_cs_keyword": false,
+    "end_session_keys": [
+        "END", "END_SESSION"
+    ],
+    "end_session_reply": "Terima kasih telah menyapa, kami senang melayani Anda :)",
+    "menus_detail": {}
+}

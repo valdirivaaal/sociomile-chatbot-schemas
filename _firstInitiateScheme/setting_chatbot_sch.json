@@ -1,0 +1,32 @@
+{
+    "schemas": {
+        "default": {
+            "survey": {
+                "active": false
+            },
+            "reset_keys": [
+                "0"
+            ],
+            "load_conversation": "WabaTemplateConversation",
+            "dual_language": false,
+            "language_localization": {
+                "ID": {}
+            },
+            "expire_time": 5,
+            "top_level_questions": [
+                {
+                    "id": "1",
+                    "type": "actions",
+                    "text": ""
+                }
+            ],
+            "MAIN_MENU": [
+                {
+                    "id": "1",
+                    "type": "actions",
+                    "text": ""
+                }
+            ]
+        }
+    }
+}

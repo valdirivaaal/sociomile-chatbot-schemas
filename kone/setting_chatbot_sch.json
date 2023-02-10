@@ -1,0 +1,277 @@
+{
+    "schemas": {
+        "default": {
+            "survey": {
+                "active": false
+            },
+            "reset_keys": [
+                "0"
+            ],
+            "load_conversation": "WabaTemplateConversation",
+            "dual_language": false,
+            "language_localization": {
+                "ID": {}
+            },
+            "expire_time": 5,
+            "top_level_questions": [
+                {
+                    "id": "1",
+                    "type": "actions",
+                    "text": "Informasi & Penawaran Produk"
+                },
+                {
+                    "id": "2",
+                    "type": "actions",
+                    "text": "Pelaporan Kendala Unit"
+                },
+                {
+                    "id": "3",
+                    "type": "actions",
+                    "text": "Pertanyaan Lainnya"
+                }
+            ],
+            "MAIN_MENU": [
+                {
+                    "id": "1",
+                    "type": "actions",
+                    "text": "Informasi & Penawaran Produk"
+                },
+                {
+                    "id": "2",
+                    "type": "actions",
+                    "text": "Pelaporan Kendala Unit"
+                },
+                {
+                    "id": "3",
+                    "type": "actions",
+                    "text": "Pertanyaan Lainnya"
+                }
+            ],
+            "1": [
+                {
+                    "id": "AA",
+                    "current_menu": "1",
+                    "current_lang": "",
+                    "text": "Terima kasih telah menghubungi KONE Customer Care Center. \nUntuk Informasi seputar Leads silahkan kunjungi website kami pada link berikut ini https://www.kone.co.id/id/about-us/contact-us/contact-form/?utm_source=whatsapp&utm_medium=organic_social&utm_campaign=id-id-whatsapp-direct\n\nKetik *99* untuk kembali ke Menu Utama",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "button",
+                    "menus": {
+                        "99": {
+                            "id": "99",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }
+            ],
+            "2": [
+                {
+                    "id": "AA",
+                    "current_menu": "2",
+                    "current_lang": "",
+                    "text": "Terima kasih telah menghubungi KONE Customer Care Center. \nSilahkan pilih jalur laporan di bawah ini untuk melaporkan kendala pada unit Anda ataupun untuk memanggil layanan teknisi. \n\nUntuk tanggapan cepat, kami sarankan untuk menelpon tim Call Center kami.\n*1. 24/7 Call Center*\n*2. Email Customer Care*\n*3. Pelaporan Via Whatsapp*\n\nKetik *99* untuk kembali ke Menu Utama",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "button",
+                    "menus": {
+                        "1": {
+                            "id": "1",
+                            "current_menu": "2-1",
+                            "title": "24/7 Call Center",
+                            "text": "Untuk tanggapan cepat, silahkan hubungi kami di nomor +62 804 1 888 800 \n\nKetik *0* untuk kembali ke menu sebelumnya\nKetik *99* untuk kembali ke Menu Utama",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Sebelumnya",
+                                    "current_menu": "PARENT",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                },
+                                "99": {
+                                    "id": "99",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "2",
+                            "current_menu": "2-2",
+                            "title": "Email Customer Care",
+                            "text": "Untuk melaporkan kendala pada unit Anda melalui email, silahkan emailkan ke kiekc3.agent1@kone.com \n\nKetik *0* untuk kembali ke menu sebelumnya\nKetik *99* untuk kembali ke Menu Utama",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Sebelumnya",
+                                    "current_menu": "PARENT",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                },
+                                "99": {
+                                    "id": "99",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        },
+                        "3": {
+                            "id": "3",
+                            "current_menu": "2-3",
+                            "title": "Pelaporan Via Whatsapp",
+                            "text": "Untuk melaporkan kendala pada unit Anda, mohon untuk dapat memberikan informasi berikut dan tim kami akan segera merespon Anda. \n\nNama pelapor : \nNama gedung / proyek : \nAlamat : \nID unit yang dilaporkan : \nKendala yang terjadi : \n\nKetik *0* untuk kembali ke menu sebelumnya\nKetik *99* untuk kembali ke Menu Utama",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Sebelumnya",
+                                    "current_menu": "PARENT",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                },
+                                "99": {
+                                    "id": "99",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        },
+                        "99": {
+                            "id": "99",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }
+            ],
+            "3": [
+                {
+                    "id": "AA",
+                    "current_menu": "3",
+                    "current_lang": "",
+                    "text": "Terima kasih telah menghubungi Customer Service KONE Indonesia. \nSilahkan pilih jalur komunikasi di bawah ini untuk mengirimkan pertanyaan umum Anda. \nAnda bisa menghubungi kami di hari kerja (Senin – Jumat) pukul 08.30 sampai 17.30.\n*1. Hubungi Kantor KONE*\n*2. Customer Service*\n*3. Pelaporan Lanjutan*\n\nKetik *99* untuk kembali ke Menu Utama",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "button",
+                    "menus": {
+                        "1": {
+                            "id": "1",
+                            "current_menu": "3-1",
+                            "title": "Hubungi Kantor KONE",
+                            "text": "Untuk Menghubungi kantor KONE, silahkan hubungi kami di nomor +62 21 3006 0418 \n\nKetik *0* untuk kembali ke menu sebelumnya\nKetik *99* untuk kembali ke Menu Utama",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Sebelumnya",
+                                    "current_menu": "PARENT",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                },
+                                "99": {
+                                    "id": "99",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "2",
+                            "current_menu": "3-2",
+                            "title": "Customer Service",
+                            "text": "Untuk terhubung ke customer service melalui email, silahkan emailkan ke CustomerService.id@kone.com \n\nKetik *0* untuk kembali ke menu sebelumnya\nKetik *99* untuk kembali ke Menu Utama",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Sebelumnya",
+                                    "current_menu": "PARENT",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                },
+                                "99": {
+                                    "id": "99",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        },
+                        "3": {
+                            "id": "3",
+                            "current_menu": "3-3",
+                            "title": "Pelaporan Lanjutan",
+                            "text": "Untuk melanjutkan percakapan dengan tim Customer Service kami, mohon untuk dapat memberikan informasi berikut dan tim kami akan segera terhubung dengan Anda. \n\nNama :\nPerusahaan :  \nNama Proyek / Gedung :  \nEmail :\nTopik : (Spare-part / Invoice / Faktur Pajak / Kontrak Servis / Lainnya) \n\nKetik *0* untuk kembali ke menu sebelumnya\nKetik *99* untuk kembali ke Menu Utama",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Sebelumnya",
+                                    "current_menu": "PARENT",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                },
+                                "99": {
+                                    "id": "99",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "main"
+                                }
+                            }
+                        },
+                        "99": {
+                            "id": "99",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "main"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

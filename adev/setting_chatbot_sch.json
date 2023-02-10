@@ -16,64 +16,64 @@
             "top_level_questions": [
                 {
                     "id": "1",
-                    "text": "*Maklon Kosmetik*\n_Untuk informasi seputar proses, produk dan biaya maklon_",
+                    "text": "Maklon Kosmetik",
                     "type": "actions"
                 },
                 {
                     "id": "2",
-                    "text": "*Event / Promo*\n_Untuk informasi promo yang sedang berlangsung_",
+                    "text": "Event atau Promo",
                     "type": "actions"
                 },
                 {
                     "id": "3",
-                    "text": "*Keluhan Pelanggan*\n_Untuk Mengisi Form Keluhan Pelanggan_",
+                    "text": "Keluhan Pelanggan",
                     "type": "actions"
                 },
                 {
                     "id": "4",
-                    "text": "*Karir*\n_Untuk informasi Lowongan Kerja / Internship_",
+                    "text": "Karir",
                     "type": "actions"
                 },
                 {
                     "id": "5",
-                    "text": "*Penawaran Kerja Sama*\n_Untuk pengiriman penawaran kerja sama_",
+                    "text": "Penawaran Kerja Sama",
                     "type": "actions"
                 },
                 {
                     "id": "6",
-                    "text": "*Cek Produk Palsu*\n_Untuk Pengecekan keaslian produk Adev_",
+                    "text": "Cek Produk Palsu",
                     "type": "actions"
                 }
             ],
             "MAIN_MENU": [
                 {
                     "id": "1",
-                    "text": "*Maklon Kosmetik*\n_Untuk informasi seputar proses, produk dan biaya maklon_",
+                    "text": "Maklon Kosmetik",
                     "type": "actions"
                 },
                 {
                     "id": "2",
-                    "text": "*Event / Promo*\n_Untuk informasi promo yang sedang berlangsung_",
+                    "text": "Event atau Promo",
                     "type": "actions"
                 },
                 {
                     "id": "3",
-                    "text": "*Keluhan Pelanggan*\n_Untuk Mengisi Form Keluhan Pelanggan_",
+                    "text": "Keluhan Pelanggan",
                     "type": "actions"
                 },
                 {
                     "id": "4",
-                    "text": "*Karir*\n_Untuk informasi Lowongan Kerja / Internship_",
+                    "text": "Karir",
                     "type": "actions"
                 },
                 {
                     "id": "5",
-                    "text": "*Penawaran Kerja Sama*\n_Untuk pengiriman penawaran kerja sama_",
+                    "text": "Penawaran Kerja Sama",
                     "type": "actions"
                 },
                 {
                     "id": "6",
-                    "text": "*Cek Produk Palsu*\n_Untuk Pengecekan keaslian produk Adev_",
+                    "text": "Cek Produk Palsu",
                     "type": "actions"
                 }
             ],
@@ -82,10 +82,10 @@
                     "id": "AA",
                     "current_menu": "1",
                     "current_lang": "",
-                    "text": "Terima Kasih telah memilih menu Maklon Kosmetik, silakan pilih beberapa informasi menu di bawah ini :\n1. *Alur Maklon*\n2. *Syarat Maklon*\n_(MOQ, dll)\n3. *Katalog Produk*\n_Link Price list and Package_\n4. *Buat Jadwal Pertemuan*\n5. *Tanya CS*\n_Jam Operasional 07.00 - 18.00_\n\nSilakan ketik *0* untuk kembali ke Menu Utama",
+                    "text": "Terima Kasih telah memilih menu Maklon Kosmetik, silakan pilih beberapa informasi menu di bawah ini :\n1. *Alur Maklon*\n2. *Syarat Maklon* _(MOQ, dll)_\n3. *Katalog Produk* _Link Price list and Package_\n4. *Buat Jadwal Pertemuan*\n5. *Tanya CS* _Jam Operasional 07.00 - 18.00_\n\nSilakan ketik *0* untuk kembali ke Menu Utama",
                     "type": "nest_menu",
                     "interactive_message": true,
-                    "interactive_type": "button",
+                    "interactive_type": "list",
                     "menus": {
                         "0": {
                             "id": "0",
@@ -202,6 +202,7 @@
                     "current_lang": "",
                     "text": "Di akhir tahun ini, kamu-kamu yang pingin banget memulai tahun 2023 dengan berbisnis kosmetik, siap-siap kebanjiran promo!\n\nAda apa aja promonya? Yuk Follow Instagram Adev di @adev.official lalu pantengin terus postingan Adev, ya!\n\nSilakan ketik *0* untuk kembali ke Menu Utama",
                     "type": "nest_menu",
+                    "image_url": "https://www.instagram.com/p/CkibFtYPj7o/?igshid=MDJmNzVkMjY%3D",
                     "interactive_message": true,
                     "interactive_type": "button",
                     "menus": {
@@ -320,7 +321,7 @@
                     "text": "Terima Kasih telah memilih menu Penawaran Kerja Sama, silakan pilih beberapa informasi menu dibawah ini : \n1. *Raw Material*\n2. *Packaging Material*\n3. *Finance*\n4. *General Affair*\n5. *Lainnya*\n\nSilakan ketik *0* untuk kembali ke Menu Utama",
                     "type": "nest_menu",
                     "interactive_message": true,
-                    "interactive_type": "button",
+                    "interactive_type": "list",
                     "menus": {
                         "0": {
                             "id": "0",
@@ -337,7 +338,7 @@
                             "text": "Terima Kasih telah memilih menu Raw Material\n\nUntuk Penawaran Kerjasama perihal Raw Material Packaging silakan kirimkan penawaran anda ke email : purchasing@adev.co.id\n\nSilakan ketik *0* untuk kembali ke Menu Utama atau,\nSilakan ketik *99* untuk kembail ke Menu Sebelumnya",
                             "type": "nest_menu",
                             "interactive_message": true,
-                            "interactive_type": "list",
+                            "interactive_type": "button",
                             "menus": {
                                 "0": {
                                     "id": "0",
@@ -364,7 +365,7 @@
                             "text": "Terima Kasih telah memilih menu Packaging Material\n\nUntuk Penawaran Kerjasama perihal Packaging Material, silakan kirimkan penawaran anda ke email : financeadmin@adev.co.id\n\nSilakan ketik *0* untuk kembali ke Menu Utama atau,\nSilakan ketik *99* untuk kembail ke Menu Sebelumnya",
                             "type": "nest_menu",
                             "interactive_message": true,
-                            "interactive_type": "list",
+                            "interactive_type": "button",
                             "menus": {
                                 "0": {
                                     "id": "0",
@@ -391,7 +392,7 @@
                             "text": "Terima Kasih telah memilih menu Finance\n\nUntuk Penawaran Kerjasama perihal Financial, silakan kirimkan penawaran anda ke email : financeadmin@adev.co.id\n\nSilakan ketik *0* untuk kembali ke Menu Utama atau,\nSilakan ketik *99* untuk kembail ke Menu Sebelumnya",
                             "type": "nest_menu",
                             "interactive_message": true,
-                            "interactive_type": "list",
+                            "interactive_type": "button",
                             "menus": {
                                 "0": {
                                     "id": "0",
@@ -418,7 +419,7 @@
                             "text": "Terima Kasih telah memilih menu General Affair\n\nUntuk Penawaran Kerjasama perihal Pengadaan General Affair, silakan kirimkan penawaran anda ke email : spvga@adev.co.id\n\nSilakan ketik *0* untuk kembali ke Menu Utama atau,\nSilakan ketik *99* untuk kembail ke Menu Sebelumnya",
                             "type": "nest_menu",
                             "interactive_message": true,
-                            "interactive_type": "list",
+                            "interactive_type": "button",
                             "menus": {
                                 "0": {
                                     "id": "0",
@@ -440,7 +441,7 @@
                         },
                         "5": {
                             "id": "5",
-                            "title": "",
+                            "title": "Lainnya",
                             "current_menu": "5-5",
                             "text": "Terima Kasih telah memilih menu lainnya. Mohon menunggu, anda akan dihubungkan ke CS Adev Natural Indonesia",
                             "type": "goto",

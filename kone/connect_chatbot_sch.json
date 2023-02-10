@@ -1,0 +1,29 @@
+{
+    "active": true,
+    "mode": "basic",
+    "greetingMessage": "Selamat datang di layanan WhatsApp KONE Indonesia. \nBagaimana kami bisa membantu Anda hari ini? Silahkan pilih layanan yang sesuai dengan kebutuhan Anda melalui menu di bawah ini. \n\n*Nomor layanan WhatsApp ini tidak bisa menerima panggilan ataupun videocall.\nTerima kasih telah menghubungi KONE. ",
+    "exit_keyword": "",
+    "order_keywords": [],
+    "order_reply_msg": "",
+    "to_cs_keyword": "_NO_CS_KEY_YET_",
+    "response_cs_keyword": "Mohon menunggu, sesaat lagi Bapak/Ibu akan terhubung dengan Customer Care Representative kami.",
+    "listCommandMessage": "",
+    "backtomenu_msg": "",
+    "contactCsMessage": "",
+    "prefixGreeting": "",
+    "notUnderstandMessage": "Silahkan KETIK pilihan menu yang sudah diinformasikan di atas untuk menjelajahi informasi yang tersedia",
+    "multiLangNotUnderstandMessage": {
+        "ID": "Silahkan KETIK pilihan menu yang sudah diinformasikan di atas untuk menjelajahi informasi yang tersedia"
+    },
+    "check_office_hour": false,
+    "concat_greeting_and_menu": true,
+    "no_ofh_bot_msg": "Mohon maaf untuk saat ini layanan kami sedang offline. Informasi jam operasional layanan CS kami dimulai pada jam 07.00 - 18.00 Wib.",
+    "skip_cs_keyword": false,
+    "end_session_keys": [
+        "END", "END_SESSION"
+    ],
+    "end_session_reply": "Terima kasih telah menyapa, kami senang melayani Anda :)",
+    "menus_detail": {
+        
+    }
+}

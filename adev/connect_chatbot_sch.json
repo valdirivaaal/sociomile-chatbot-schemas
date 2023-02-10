@@ -1,0 +1,46 @@
+{
+    "active": true,
+    "mode": "basic",
+    "greetingMessage": "Assalamualaikum. Halo, mitra Adev. Selamat datang di layanan Customer Support PT. Adev Natural Indonesia.\n\nSilakan pilih nomor menu sesuai dengan informasi yang anda butuhkan.",
+    "exit_keyword": "",
+    "order_keywords": [],
+    "order_reply_msg": "",
+    "to_cs_keyword": "_NO_CS_KEY_YET_",
+    "response_cs_keyword": "Mohon menunggu, sesaat lagi Bapak/Ibu akan terhubung dengan Customer Care Representative Kami.",
+    "listCommandMessage": "",
+    "backtomenu_msg": "",
+    "contactCsMessage": "",
+    "prefixGreeting": "",
+    "notUnderstandMessage": "Silahkan KETIK pilihan menu yang sudah diinformasikan di atas untuk menjelajahi informasi yang tersedia",
+    "multiLangNotUnderstandMessage": {
+        "ID": "Silahkan KETIK pilihan menu yang sudah diinformasikan di atas untuk menjelajahi informasi yang tersedia"
+    },
+    "check_office_hour": true,
+    "concat_greeting_and_menu": true,
+    "no_ofh_bot_msg": "Mohon maaf untuk saat ini layanan kami sedang offline. Informasi jam operasional layanan CS kami dimulai pada jam 07.00 - 18.00 Wib.",
+    "skip_cs_keyword": false,
+    "end_session_keys": [
+        "END", "END_SESSION"
+    ],
+    "end_session_reply": "Terima kasih telah menyapa, kami senang melayani Anda :)",
+    "menus_detail": {
+        "1": "Maklon Kosmetik",
+        "1-1": "Alur Maklon",
+        "1-2": "Syarat Maklon",
+        "1-3": "Katalog Produk",
+        "1-4": "Buat Jadwal Pertemuan",
+        "1-5": "Tanya CS",
+        "2": "Event / Promo",
+        "3": "Keluhan Pelanggan",
+        "3-1": "Keluhan Maklon",
+        "3-2": "Keluhan Lainnya",
+        "4": "Karir",
+        "5": "Penawaran Kerja Sama",
+        "5-1": "Raw Material",
+        "5-2": "Packaging Material",
+        "5-3": "Finance",
+        "5-4": "General Affair",
+        "5-5": "Lainnya",
+        "6": "Cek Produk Palsu"
+    }
+}
