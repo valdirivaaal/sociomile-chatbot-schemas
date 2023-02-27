@@ -54,12 +54,12 @@
                     "current_lang": "",
                     "text": "Terima kasih telah menghubungi KONE Customer Care Center. \nUntuk Informasi seputar Leads silahkan kunjungi website kami pada link berikut ini https://www.kone.co.id/id/about-us/contact-us/contact-form/?utm_source=whatsapp&utm_medium=organic_social&utm_campaign=id-id-whatsapp-direct\n\nKetik *99* untuk kembali ke Menu Utama",
                     "type": "nest_menu",
-                    "interactive_message": true,
-                    "interactive_type": "button",
+                    "interactive_message": false,
+                    "interactive_type": "",
                     "menus": {
                         "99": {
                             "id": "99",
-                            "title": "Menu Utama",
+                            "title": "",
                             "current_menu": "MENU",
                             "text": "",
                             "type": "goto",
@@ -76,20 +76,20 @@
                     "text": "Terima kasih telah menghubungi KONE Customer Care Center. \nSilahkan pilih jalur laporan di bawah ini untuk melaporkan kendala pada unit Anda ataupun untuk memanggil layanan teknisi. \n\nUntuk tanggapan cepat, kami sarankan untuk menelpon tim Call Center kami.\n*1. 24/7 Call Center*\n*2. Email Customer Care*\n*3. Pelaporan Via Whatsapp*\n\nKetik *99* untuk kembali ke Menu Utama",
                     "type": "nest_menu",
                     "interactive_message": true,
-                    "interactive_type": "button",
+                    "interactive_type": "list",
                     "menus": {
                         "1": {
                             "id": "1",
                             "current_menu": "2-1",
                             "title": "24/7 Call Center",
-                            "text": "Untuk tanggapan cepat, silahkan hubungi kami di nomor +62 804 1 888 800 \n\nKetik *0* untuk kembali ke menu sebelumnya\nKetik *99* untuk kembali ke Menu Utama",
+                            "text": "Untuk tanggapan cepat, silahkan hubungi kami di nomor +62 804 1 888 800 \n\nKetik *0* untuk kembali ke Menu Sebelumnya\nKetik *99* untuk kembali ke Menu Utama",
                             "type": "nest_menu",
-                            "interactive_message": true,
-                            "interactive_type": "button",
+                            "interactive_message": false,
+                            "interactive_type": "",
                             "menus": {
                                 "0": {
                                     "id": "0",
-                                    "title": "Menu Sebelumnya",
+                                    "title": "",
                                     "current_menu": "PARENT",
                                     "text": "",
                                     "type": "goto",
@@ -97,7 +97,7 @@
                                 },
                                 "99": {
                                     "id": "99",
-                                    "title": "Menu Utama",
+                                    "title": "",
                                     "current_menu": "MENU",
                                     "text": "",
                                     "type": "goto",
@@ -109,14 +109,14 @@
                             "id": "2",
                             "current_menu": "2-2",
                             "title": "Email Customer Care",
-                            "text": "Untuk melaporkan kendala pada unit Anda melalui email, silahkan emailkan ke kiekc3.agent1@kone.com \n\nKetik *0* untuk kembali ke menu sebelumnya\nKetik *99* untuk kembali ke Menu Utama",
+                            "text": "Untuk melaporkan kendala pada unit Anda melalui email, silahkan emailkan ke kiekc3.agent1@kone.com \n\nKetik *0* untuk kembali ke Menu Sebelumnya\nKetik *99* untuk kembali ke Menu Utama",
                             "type": "nest_menu",
-                            "interactive_message": true,
-                            "interactive_type": "button",
+                            "interactive_message": false,
+                            "interactive_type": "",
                             "menus": {
                                 "0": {
                                     "id": "0",
-                                    "title": "Menu Sebelumnya",
+                                    "title": "",
                                     "current_menu": "PARENT",
                                     "text": "",
                                     "type": "goto",
@@ -124,7 +124,7 @@
                                 },
                                 "99": {
                                     "id": "99",
-                                    "title": "Menu Utama",
+                                    "title": "",
                                     "current_menu": "MENU",
                                     "text": "",
                                     "type": "goto",
@@ -133,26 +133,108 @@
                             }
                         },
                         "3": {
-                            "id": "3",
-                            "current_menu": "2-3",
+                            "id": "CHATAGENT",
+                            "current_menu": "CHATAGENT",
                             "title": "Pelaporan Via Whatsapp",
-                            "text": "Untuk melaporkan kendala pada unit Anda, mohon untuk dapat memberikan informasi berikut dan tim kami akan segera merespon Anda. \n\nNama pelapor : \nNama gedung / proyek : \nAlamat : \nID unit yang dilaporkan : \nKendala yang terjadi : \n\nKetik *0* untuk kembali ke menu sebelumnya\nKetik *99* untuk kembali ke Menu Utama",
-                            "type": "nest_menu",
-                            "interactive_message": true,
-                            "interactive_type": "button",
-                            "menus": {
+                            "text": "",
+                            "type": "sequences",
+                            "required_data": [
+                                {
+                                    "id": "SQ0",
+                                    "index": "customer",
+                                    "label": "nama",
+                                    "text": "Untuk melaporkan kendala pada unit Anda, mohon untuk dapat memberikan informasi berikut dan tim kami akan segera merespon Anda.\nNama pelapor :\n\nKetik *0* untuk kembali ke Menu Sebelumnya\nKetik *99* untuk kembali ke Menu Utama",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": ""
+                                },
+                                {
+                                    "id": "SQ1",
+                                    "index": "customer",
+                                    "label": "gedung",
+                                    "text": "Nama gedung / proyek:\n\nKetik *0* untuk kembali ke Menu Sebelumnya\nKetik *99* untuk kembali ke Menu Utama",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": ""
+                                },
+                                {
+                                    "id": "SQ2",
+                                    "index": "customer",
+                                    "label": "alamat",
+                                    "text": "Alamat:\n\nKetik *0* untuk kembali ke Menu Sebelumnya\nKetik *99* untuk kembali ke Menu Utama",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": ""
+                                },
+                                {
+                                    "id": "SQ3",
+                                    "index": "customer",
+                                    "label": "id",
+                                    "text": "ID unit yang dilaporkan:\n\nKetik *0* untuk kembali ke Menu Sebelumnya\nKetik *99* untuk kembali ke Menu Utama",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": ""
+                                },
+                                {
+                                    "id": "SQ4",
+                                    "index": "customer",
+                                    "label": "kendala",
+                                    "text": "Kendala yang terjadi:\n\nKetik *0* untuk kembali ke Menu Sebelumnya\nKetik *99* untuk kembali ke Menu Utama",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": ""
+                                },
+                                {
+                                    "id": "SQ5",
+                                    "index": "",
+                                    "label": "",
+                                    "text": "",
+                                    "type": "completed",
+                                    "create_ticket": true,
+                                    "end_session": true,
+                                    "validation": null,
+                                    "error_msg": "",
+                                    "run_method": false,
+                                    "method_name": null,
+                                    "create_ticket_from_template": true,
+                                    "ticket_template": "Nama pelapor : ~customer.nama~\nNama gedung / proyek : ~customer.gedung~\nAlamat : ~customer.alamat~\nID unit yang dilaporkan : ~customer.id~\nKendala yang terjadi : ~customer.kendala~\nMenu : Pelaporan Kendala Unit > Pelaporan Via Whatsapp",
+                                    "ticket_template_as_completed_template": false,
+                                    "completed_template": "Nama pelapor : ~customer.nama~\nNama gedung / proyek : ~customer.gedung~\nAlamat : ~customer.alamat~\nID unit yang dilaporkan : ~customer.id~\nKendala yang terjadi : ~customer.kendala~\nMenu : Pelaporan Kendala Unit > Pelaporan Via Whatsapp",
+                                    "closing_bubbles": [
+                                        {
+                                            "type": "text",
+                                            "text": "Mohon ditunggu, petugas kami akan segera membalas pesan anda"
+                                        }
+                                    ],
+                                    "check_office_hour": {
+                                        "status": true,
+                                        "nin_off_hour": {
+                                            "create_ticket": false,
+                                            "end_session": true,
+                                            "msg": "Nama pelapor : ~customer.nama~\nNama gedung / proyek : ~customer.gedung~\nAlamat : ~customer.alamat~\nID unit yang dilaporkan : ~customer.id~\nKendala yang terjadi : ~customer.kendala~\nMenu : Pelaporan Kendala Unit > Pelaporan Via Whatsapp",
+                                            "next_bubbles": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "Mohon Maaf, Saat ini petugas kami sedang Offline. Tetapi kamu jangan khawatir kami akan segera membalas pesan kamu di hari kerja (Senin - Jumat) Pukul 08.30 Sampai 17.30. Terima Kasih"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ],
+                            "prev_menus": {
                                 "0": {
                                     "id": "0",
-                                    "title": "Menu Sebelumnya",
-                                    "current_menu": "PARENT",
+                                    "title": "",
+                                    "current_menu": "Menu Sebelumnya",
                                     "text": "",
                                     "type": "goto",
                                     "goto": "parent"
                                 },
                                 "99": {
                                     "id": "99",
-                                    "title": "Menu Utama",
-                                    "current_menu": "MENU",
+                                    "title": "",
+                                    "current_menu": "Menu Utama",
                                     "text": "",
                                     "type": "goto",
                                     "goto": "main"
@@ -161,7 +243,7 @@
                         },
                         "99": {
                             "id": "99",
-                            "title": "Menu Utama",
+                            "title": "",
                             "current_menu": "MENU",
                             "text": "",
                             "type": "goto",
@@ -178,20 +260,20 @@
                     "text": "Terima kasih telah menghubungi Customer Service KONE Indonesia. \nSilahkan pilih jalur komunikasi di bawah ini untuk mengirimkan pertanyaan umum Anda. \nAnda bisa menghubungi kami di hari kerja (Senin – Jumat) pukul 08.30 sampai 17.30.\n*1. Hubungi Kantor KONE*\n*2. Customer Service*\n*3. Pelaporan Lanjutan*\n\nKetik *99* untuk kembali ke Menu Utama",
                     "type": "nest_menu",
                     "interactive_message": true,
-                    "interactive_type": "button",
+                    "interactive_type": "list",
                     "menus": {
                         "1": {
                             "id": "1",
                             "current_menu": "3-1",
                             "title": "Hubungi Kantor KONE",
-                            "text": "Untuk Menghubungi kantor KONE, silahkan hubungi kami di nomor +62 21 3006 0418 \n\nKetik *0* untuk kembali ke menu sebelumnya\nKetik *99* untuk kembali ke Menu Utama",
+                            "text": "Untuk Menghubungi kantor KONE, silahkan hubungi kami di nomor +62 21 3006 0418 \n\nKetik *0* untuk kembali ke Menu Sebelumnya\nKetik *99* untuk kembali ke Menu Utama",
                             "type": "nest_menu",
-                            "interactive_message": true,
-                            "interactive_type": "button",
+                            "interactive_message": false,
+                            "interactive_type": "",
                             "menus": {
                                 "0": {
                                     "id": "0",
-                                    "title": "Menu Sebelumnya",
+                                    "title": "",
                                     "current_menu": "PARENT",
                                     "text": "",
                                     "type": "goto",
@@ -199,7 +281,7 @@
                                 },
                                 "99": {
                                     "id": "99",
-                                    "title": "Menu Utama",
+                                    "title": "",
                                     "current_menu": "MENU",
                                     "text": "",
                                     "type": "goto",
@@ -211,14 +293,14 @@
                             "id": "2",
                             "current_menu": "3-2",
                             "title": "Customer Service",
-                            "text": "Untuk terhubung ke customer service melalui email, silahkan emailkan ke CustomerService.id@kone.com \n\nKetik *0* untuk kembali ke menu sebelumnya\nKetik *99* untuk kembali ke Menu Utama",
+                            "text": "Untuk terhubung ke customer service melalui email, silahkan emailkan ke CustomerService.id@kone.com \n\nKetik *0* untuk kembali ke Menu Sebelumnya\nKetik *99* untuk kembali ke Menu Utama",
                             "type": "nest_menu",
-                            "interactive_message": true,
-                            "interactive_type": "button",
+                            "interactive_message": false,
+                            "interactive_type": "",
                             "menus": {
                                 "0": {
                                     "id": "0",
-                                    "title": "Menu Sebelumnya",
+                                    "title": "",
                                     "current_menu": "PARENT",
                                     "text": "",
                                     "type": "goto",
@@ -226,7 +308,7 @@
                                 },
                                 "99": {
                                     "id": "99",
-                                    "title": "Menu Utama",
+                                    "title": "",
                                     "current_menu": "MENU",
                                     "text": "",
                                     "type": "goto",
@@ -235,26 +317,108 @@
                             }
                         },
                         "3": {
-                            "id": "3",
-                            "current_menu": "3-3",
+                            "id": "CHATAGENT",
+                            "current_menu": "CHATAGENT",
                             "title": "Pelaporan Lanjutan",
-                            "text": "Untuk melanjutkan percakapan dengan tim Customer Service kami, mohon untuk dapat memberikan informasi berikut dan tim kami akan segera terhubung dengan Anda. \n\nNama :\nPerusahaan :  \nNama Proyek / Gedung :  \nEmail :\nTopik : (Spare-part / Invoice / Faktur Pajak / Kontrak Servis / Lainnya) \n\nKetik *0* untuk kembali ke menu sebelumnya\nKetik *99* untuk kembali ke Menu Utama",
-                            "type": "nest_menu",
-                            "interactive_message": true,
-                            "interactive_type": "button",
-                            "menus": {
+                            "text": "",
+                            "type": "sequences",
+                            "required_data": [
+                                {
+                                    "id": "SQ0",
+                                    "index": "customer",
+                                    "label": "nama",
+                                    "text": "Untuk melanjutkan percakapan dengan tim Customer Service kami, mohon untuk dapat memberikan informasi berikut dan tim kami akan segera terhubung dengan Anda.\n\nNama :\n\nKetik *0* untuk kembali ke Menu Sebelumnya\nKetik *99* untuk kembali ke Menu Utama",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": ""
+                                },
+                                {
+                                    "id": "SQ1",
+                                    "index": "customer",
+                                    "label": "perusahaan",
+                                    "text": "Perusahaan :\n\nKetik *0* untuk kembali ke Menu Sebelumnya\nKetik *99* untuk kembali ke Menu Utama",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": ""
+                                },
+                                {
+                                    "id": "SQ2",
+                                    "index": "customer",
+                                    "label": "gedung",
+                                    "text": "Nama Proyek / Gedung :\n\nKetik *0* untuk kembali ke Menu Sebelumnya\nKetik *99* untuk kembali ke Menu Utama",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": ""
+                                },
+                                {
+                                    "id": "SQ3",
+                                    "index": "customer",
+                                    "label": "email",
+                                    "text": "Email :\n\nKetik *0* untuk kembali ke Menu Sebelumnya\nKetik *99* untuk kembali ke Menu Utama",
+                                    "type": "text",
+                                    "validation": "email",
+                                    "error_msg": "Format email tidak sesuai"
+                                },
+                                {
+                                    "id": "SQ4",
+                                    "index": "customer",
+                                    "label": "topik",
+                                    "text": "Topik : (Spare-part / Invoice / Faktur Pajak / Kontrak Servis / Lainnya)\n\nKetik *0* untuk kembali ke Menu Sebelumnya\nKetik *99* untuk kembali ke Menu Utama",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": ""
+                                },
+                                {
+                                    "id": "SQ5",
+                                    "index": "",
+                                    "label": "",
+                                    "text": "",
+                                    "type": "completed",
+                                    "create_ticket": true,
+                                    "end_session": true,
+                                    "validation": null,
+                                    "error_msg": "",
+                                    "run_method": false,
+                                    "method_name": null,
+                                    "create_ticket_from_template": true,
+                                    "ticket_template": "Nama : ~customer.nama~\nPerusahaan : ~customer.perusahaan~\nNama Proyek / Gedung : ~customer.gedung~\nEmail : ~customer.email~\nTopik : ~customer.topik~\nMenu : Pelaporan Kendala Unit > Pelaporan Lanjutan",
+                                    "ticket_template_as_completed_template": false,
+                                    "completed_template": "Nama : ~customer.nama~\nPerusahaan : ~customer.perusahaan~\nNama Proyek / Gedung : ~customer.gedung~\nEmail : ~customer.email~\nTopik : ~customer.topik~\nMenu : Pelaporan Kendala Unit > Pelaporan Lanjutan",
+                                    "closing_bubbles": [
+                                        {
+                                            "type": "text",
+                                            "text": "Mohon ditunggu, petugas kami akan segera membalas pesan anda"
+                                        }
+                                    ],
+                                    "check_office_hour": {
+                                        "status": true,
+                                        "nin_off_hour": {
+                                            "create_ticket": false,
+                                            "end_session": true,
+                                            "msg": "Nama : ~customer.nama~\nPerusahaan : ~customer.perusahaan~\nNama Proyek / Gedung : ~customer.gedung~\nEmail : ~customer.email~\nTopik : ~customer.topik~\nMenu : Pelaporan Kendala Unit > Pelaporan Lanjutan",
+                                            "next_bubbles": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "Mohon Maaf, Saat ini petugas kami sedang Offline. Tetapi kamu jangan khawatir kami akan segera membalas pesan kamu di hari kerja (Senin - Jumat) Pukul 08.30 Sampai 17.30. Terima Kasih"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ],
+                            "prev_menus": {
                                 "0": {
                                     "id": "0",
-                                    "title": "Menu Sebelumnya",
-                                    "current_menu": "PARENT",
+                                    "title": "",
+                                    "current_menu": "Menu Sebelumnya",
                                     "text": "",
                                     "type": "goto",
                                     "goto": "parent"
                                 },
                                 "99": {
                                     "id": "99",
-                                    "title": "Menu Utama",
-                                    "current_menu": "MENU",
+                                    "title": "",
+                                    "current_menu": "Menu Utama",
                                     "text": "",
                                     "type": "goto",
                                     "goto": "main"
@@ -263,7 +427,7 @@
                         },
                         "99": {
                             "id": "99",
-                            "title": "Menu Utama",
+                            "title": "",
                             "current_menu": "MENU",
                             "text": "",
                             "type": "goto",

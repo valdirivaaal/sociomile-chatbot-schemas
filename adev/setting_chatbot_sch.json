@@ -89,7 +89,7 @@
                     "menus": {
                         "0": {
                             "id": "0",
-                            "title": "Menu Utama",
+                            "title": "",
                             "current_menu": "MENU",
                             "text": "",
                             "type": "goto",
@@ -101,12 +101,12 @@
                             "current_menu": "1-1",
                             "text": "Terima Kasih telah memilih menu Alur Maklon, berikut alur proses untuk Maklon :\n1. Diskusi\n2. Pembuatan Sampel\n3. Pengurusan Legalitas\n4. Pembuatan Desain Kemasan\n5. Produksi\n6. Pengiriman\n\nSilakan ketik *0* untuk kembali ke Menu Utama, atau\nSilakan ketik *99* untuk kembali ke Menu Sebelumnya",
                             "type": "nest_menu",
-                            "interactive_message": true,
-                            "interactive_type": "button",
+                            "interactive_message": false,
+                            "interactive_type": "",
                             "menus": {
                                 "0": {
                                     "id": "0",
-                                    "title": "Menu Utama",
+                                    "title": "",
                                     "current_menu": "MENU",
                                     "text": "",
                                     "type": "goto",
@@ -114,7 +114,7 @@
                                 },
                                 "99": {
                                     "id": "99",
-                                    "title": "Menu Sebelumnya",
+                                    "title": "",
                                     "current_menu": "PARENT",
                                     "text": "",
                                     "type": "goto",
@@ -128,12 +128,12 @@
                             "current_menu": "1-2",
                             "text": "Terima Kasih telah memilih menu Syarat Maklon, berikut syarat-syarat untuk Maklon :\n*1. Syarat Perorangan*\n- Foto KTP\n- Foto NPWP\n- Desain dan Logo produk\n(Jika sudah ada)\n\n*2. Syarat Perusahaan*\n- Foto KTP Direktur\n- Foto NPWP Direktur\n- Foto NPWP Perusahaan\n- Akta Pendirian Perusahaan\n- Desain dan Logo produk\n(Jika sudah ada)\n\n*3. MOQ*\n- Basic : 3000 pcs/varian\n- Pro : 3000pcs/varian\n- Business : 8000 pcs/varian\n- Prime : 10.000 pcs/varian\n- Enterprise : 12.000 pcs/varian\n\nSilakan ketik *0* untuk kembali ke Menu Utama, atau\nSilakan ketik *99* untuk kembali ke Menu Sebelumnya",
                             "type": "nest_menu",
-                            "interactive_message": true,
-                            "interactive_type": "button",
+                            "interactive_message": false,
+                            "interactive_type": "",
                             "menus": {
                                 "0": {
                                     "id": "0",
-                                    "title": "Menu Utama",
+                                    "title": "",
                                     "current_menu": "MENU",
                                     "text": "",
                                     "type": "goto",
@@ -141,7 +141,7 @@
                                 },
                                 "99": {
                                     "id": "99",
-                                    "title": "Menu Sebelumnya",
+                                    "title": "",
                                     "current_menu": "PARENT",
                                     "text": "",
                                     "type": "goto",
@@ -155,12 +155,12 @@
                             "current_menu": "1-3",
                             "text": "Terima Kasih telah memilih menu Katalog Produk & Layanan, berikut informasinya : \n\n1. Produk (Link Pricelist & Package)\nhttps://bit.ly/adevpricelistnpackage\n\n2. Layanan\nhttps://bit.ly/AdevServicesPricelist\n\nSilakan ketik *0* untuk kembali ke Menu Utama, atau\nSilakan ketik *99* untuk kembali ke Menu Sebelumnya",
                             "type": "nest_menu",
-                            "interactive_message": true,
-                            "interactive_type": "button",
+                            "interactive_message": false,
+                            "interactive_type": "",
                             "menus": {
                                 "0": {
                                     "id": "0",
-                                    "title": "Menu Utama",
+                                    "title": "",
                                     "current_menu": "MENU",
                                     "text": "",
                                     "type": "goto",
@@ -168,7 +168,7 @@
                                 },
                                 "99": {
                                     "id": "99",
-                                    "title": "Menu Sebelumnya",
+                                    "title": "",
                                     "current_menu": "PARENT",
                                     "text": "",
                                     "type": "goto",
@@ -203,12 +203,12 @@
                     "text": "Di akhir tahun ini, kamu-kamu yang pingin banget memulai tahun 2023 dengan berbisnis kosmetik, siap-siap kebanjiran promo!\n\nAda apa aja promonya? Yuk Follow Instagram Adev di @adev.official lalu pantengin terus postingan Adev, ya!\n\nSilakan ketik *0* untuk kembali ke Menu Utama",
                     "type": "nest_menu",
                     "image_url": "https://www.instagram.com/p/CkibFtYPj7o/?igshid=MDJmNzVkMjY%3D",
-                    "interactive_message": true,
-                    "interactive_type": "button",
+                    "interactive_message": false,
+                    "interactive_type": "",
                     "menus": {
                         "0": {
                             "id": "0",
-                            "title": "Menu Utama",
+                            "title": "",
                             "current_menu": "MENU",
                             "text": "",
                             "type": "goto",
@@ -229,7 +229,7 @@
                     "menus": {
                         "0": {
                             "id": "0",
-                            "title": "Menu Utama",
+                            "title": "",
                             "current_menu": "MENU",
                             "text": "",
                             "type": "goto",
@@ -241,12 +241,12 @@
                             "current_menu": "3-1",
                             "text": "Terima Kasih telah memilih menu Keluhan Maklon, silakan isi form pada link berikut ini :\n\nhttp://bit.ly/formpengaduanpelangganadev\n\nSilakan ketik *0* untuk kembali ke Menu Utama atau,\nSilakan ketik *99* untuk kembali ke Menu Sebelumnya",
                             "type": "nest_menu",
-                            "interactive_message": true,
-                            "interactive_type": "button",
+                            "interactive_message": false,
+                            "interactive_type": "",
                             "menus": {
                                 "0": {
                                     "id": "0",
-                                    "title": "Menu Utama",
+                                    "title": "",
                                     "current_menu": "MENU",
                                     "text": "",
                                     "type": "goto",
@@ -254,7 +254,7 @@
                                 },
                                 "99": {
                                     "id": "99",
-                                    "title": "Menu Sebelumnya",
+                                    "title": "",
                                     "current_menu": "PARENT",
                                     "text": "",
                                     "type": "goto",
@@ -268,12 +268,12 @@
                             "current_menu": "3-2",
                             "text": "Terima Kasih telah memilih menu Keluhan Lainnya, silakan isi form pada link berikut ini :\n\nhttp://bit.ly/formpengaduanpelangganadev\n\nSilakan ketik *0* untuk kembali ke Menu Utama atau,\nSilakan ketik *99* untuk kembali ke Menu Sebelumnya",
                             "type": "nest_menu",
-                            "interactive_message": true,
-                            "interactive_type": "button",
+                            "interactive_message": false,
+                            "interactive_type": "",
                             "menus": {
                                 "0": {
                                     "id": "0",
-                                    "title": "Menu Utama",
+                                    "title": "",
                                     "current_menu": "MENU",
                                     "text": "",
                                     "type": "goto",
@@ -281,7 +281,7 @@
                                 },
                                 "99": {
                                     "id": "99",
-                                    "title": "Menu Sebelumnya",
+                                    "title": "",
                                     "current_menu": "PARENT",
                                     "text": "",
                                     "type": "goto",
@@ -299,12 +299,12 @@
                     "current_lang": "",
                     "text": "Terim Kasih telah memilih menu Karir,\n\nUntuk informasi seputar karir, silakan kunjungi halaman website kami di *recruitment@adev.co.id*\n\nSilakan ketik *0* untuk kembali ke Menu Utama",
                     "type": "nest_menu",
-                    "interactive_message": true,
-                    "interactive_type": "button",
+                    "interactive_message": false,
+                    "interactive_type": "",
                     "menus": {
                         "0": {
                             "id": "0",
-                            "title": "Menu Utama",
+                            "title": "",
                             "current_menu": "MENU",
                             "text": "",
                             "type": "goto",
@@ -325,7 +325,7 @@
                     "menus": {
                         "0": {
                             "id": "0",
-                            "title": "Menu Utama",
+                            "title": "",
                             "current_menu": "MENU",
                             "text": "",
                             "type": "goto",
@@ -337,12 +337,12 @@
                             "current_menu": "5-1",
                             "text": "Terima Kasih telah memilih menu Raw Material\n\nUntuk Penawaran Kerjasama perihal Raw Material Packaging silakan kirimkan penawaran anda ke email : purchasing@adev.co.id\n\nSilakan ketik *0* untuk kembali ke Menu Utama atau,\nSilakan ketik *99* untuk kembail ke Menu Sebelumnya",
                             "type": "nest_menu",
-                            "interactive_message": true,
-                            "interactive_type": "button",
+                            "interactive_message": false,
+                            "interactive_type": "",
                             "menus": {
                                 "0": {
                                     "id": "0",
-                                    "title": "Menu Utama",
+                                    "title": "",
                                     "current_menu": "MENU",
                                     "text": "",
                                     "type": "goto",
@@ -350,7 +350,7 @@
                                 },
                                 "99": {
                                     "id": "99",
-                                    "title": "Menu Sebelumnya",
+                                    "title": "",
                                     "current_menu": "PARENT",
                                     "text": "",
                                     "type": "goto",
@@ -364,12 +364,12 @@
                             "current_menu": "5-2",
                             "text": "Terima Kasih telah memilih menu Packaging Material\n\nUntuk Penawaran Kerjasama perihal Packaging Material, silakan kirimkan penawaran anda ke email : financeadmin@adev.co.id\n\nSilakan ketik *0* untuk kembali ke Menu Utama atau,\nSilakan ketik *99* untuk kembail ke Menu Sebelumnya",
                             "type": "nest_menu",
-                            "interactive_message": true,
-                            "interactive_type": "button",
+                            "interactive_message": false,
+                            "interactive_type": "",
                             "menus": {
                                 "0": {
                                     "id": "0",
-                                    "title": "Menu Utama",
+                                    "title": "",
                                     "current_menu": "MENU",
                                     "text": "",
                                     "type": "goto",
@@ -377,7 +377,7 @@
                                 },
                                 "99": {
                                     "id": "99",
-                                    "title": "Menu Sebelumnya",
+                                    "title": "",
                                     "current_menu": "PARENT",
                                     "text": "",
                                     "type": "goto",
@@ -391,12 +391,12 @@
                             "current_menu": "5-3",
                             "text": "Terima Kasih telah memilih menu Finance\n\nUntuk Penawaran Kerjasama perihal Financial, silakan kirimkan penawaran anda ke email : financeadmin@adev.co.id\n\nSilakan ketik *0* untuk kembali ke Menu Utama atau,\nSilakan ketik *99* untuk kembail ke Menu Sebelumnya",
                             "type": "nest_menu",
-                            "interactive_message": true,
-                            "interactive_type": "button",
+                            "interactive_message": false,
+                            "interactive_type": "",
                             "menus": {
                                 "0": {
                                     "id": "0",
-                                    "title": "Menu Utama",
+                                    "title": "",
                                     "current_menu": "MENU",
                                     "text": "",
                                     "type": "goto",
@@ -404,7 +404,7 @@
                                 },
                                 "99": {
                                     "id": "99",
-                                    "title": "Menu Sebelumnya",
+                                    "title": "",
                                     "current_menu": "PARENT",
                                     "text": "",
                                     "type": "goto",
@@ -418,12 +418,12 @@
                             "current_menu": "5-4",
                             "text": "Terima Kasih telah memilih menu General Affair\n\nUntuk Penawaran Kerjasama perihal Pengadaan General Affair, silakan kirimkan penawaran anda ke email : spvga@adev.co.id\n\nSilakan ketik *0* untuk kembali ke Menu Utama atau,\nSilakan ketik *99* untuk kembail ke Menu Sebelumnya",
                             "type": "nest_menu",
-                            "interactive_message": true,
+                            "interactive_message": false,
                             "interactive_type": "button",
                             "menus": {
                                 "0": {
                                     "id": "0",
-                                    "title": "Menu Utama",
+                                    "title": "",
                                     "current_menu": "MENU",
                                     "text": "",
                                     "type": "goto",
@@ -431,7 +431,7 @@
                                 },
                                 "99": {
                                     "id": "99",
-                                    "title": "Menu Sebelumnya",
+                                    "title": "",
                                     "current_menu": "PARENT",
                                     "text": "",
                                     "type": "goto",
@@ -457,12 +457,12 @@
                     "current_lang": "",
                     "text": "Terima Kasih telah memilih menu Cek Produk Palsu,\n\nUntuk pengecekan keaslian produk Adev, silakan kunjungi Adev Authentic Tools pada website : *https://cek.adevnatural.co.id/*\n\nSilakan ketik *0* untuk kembali ke Menu Utama",
                     "type": "nest_menu",
-                    "interactive_message": true,
-                    "interactive_type": "button",
+                    "interactive_message": false,
+                    "interactive_type": "",
                     "menus": {
                         "0": {
                             "id": "0",
-                            "title": "Menu Utama",
+                            "title": "",
                             "current_menu": "MENU",
                             "text": "",
                             "type": "goto",
