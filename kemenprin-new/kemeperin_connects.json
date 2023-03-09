@@ -1,0 +1,94 @@
+{
+    "active": true,
+    "mode": "basic",
+    "greetingMessage": "Salam hangat. Saya BETTY, asisten virtual layanan jasa industri BBSPJI Tekstil. Untuk dapat lebih mengetahui kebutuhan Anda, mohon lengkapi data berikut :",
+    "exit_keyword": "",
+    "order_keywords": [],
+    "order_reply_msg": "",
+    "to_cs_keyword": "_NO_CS_KEY_YET_",
+    "response_cs_keyword": "Halo Bapak/Ibu ~user_name~,\n\nMohon tunggu sebentar, kami akan menghubungkan Anda dengan Live Customer Service Officer (CSO) kami.\nAnda dapat berkomunikasi dengan batas waktu  sesi 1x24 jam (sesuai waktu operasional) , setelah itu sistem kami akan menutup percakapan secara otomatis. Selalu simpan nomor tiket percakapan Anda dan jika percakapan terputus /berakhir, silakan hubungi kembali Contact Center BBSPJI Tekstil.\n\nLive Customer Service Officer hanya dapat melayani selama jam operasional layanan:\nSenin - Kamis : 08.00 - 15.30 WIB, dan Jumat : 08.00 - 16.00 WIB\nJika saat ini Anda menghubungi diluar jam operasional, silakan coba hubungi kembali esok hari",
+    "listCommandMessage": "",
+    "backtomenu_msg": "",
+    "contactCsMessage": "",
+    "prefixGreeting": "",
+    "notUnderstandMessage": "Maaf, respon Anda belum sesuai, Mohon dicoba kembali ya.",
+    "check_office_hour": false,
+    "concat_greeting_and_menu": true,
+    "no_ofh_bot_msg": "",
+    "skip_cs_keyword": false,
+    "end_session_keys": [
+        "ENDCONVER"
+    ],
+    "end_session_reply": "Terima kasih telah menghubungi WhatsApp Kemenperin. Selamat beraktivitas kembali.",
+    "menus_detail": {
+        "FIRST_LEVEL_SEQUENCE": "First level",
+        "1": "Informasi Layanan",
+        "1-1": "Pengujian TPT, Lingkungan dan  Masker Medis",
+        "1-2": "Kalibrasi",
+        "1-3": "Sertifikat Produk",
+        "1-4": "Sertifikasi Sistem Manajemen Mutu",
+        "1-5": "Sertifikat Industri Hijau",
+        "1-6": "Konsultasi Teknis",
+        "1-7": "Pelatihan Teknis & Bimtek",
+        "1-8": "Wisata Teknologi Tekstil ",
+        "1-9": "Solusi Industri",
+        "2": "Administrasi Layanan",
+        "2-1": "Permintaan Surat Penawaran",
+        "2-2": "Permintaan Nomor Work Order (WO)",
+        "2-3": "Permintaan Kode Billing",
+        "2-4": "Panduan Pembayaran",
+        "2-5": "Permintaan Revisi LHU/ Sertifikat",
+        "2-6": "Permintaan Jadwal Pembayaran",
+        "3": "Penelusuran (Tracking)",
+        "3-1": "Penelurusan Status Work Order (WO)",
+        "3-2": "Permintaan Pengiriman sample Uji/Dokumen",
+        "4": "Keluhan dan Pengaduan",
+        "5": "Berbicara dengan Live Customer Support Officer (CSO)"
+    },
+    "reminder_template": {
+        "SEQREMINDER": {
+            "first_msg": {
+                "ID": "Halo Bpk/Ibu ~user_name~,\nMohon maaf kami belum menerima respon Anda.\n\nSilahkan tekan *0* untuk Kembali ke menu utama\nSilahkan tekan *99* untuk Kembali ke menu Sebelumnya"
+            },
+            "second_msg": {
+                "ID": "Halo Bpk/Ibu ~user_name~,\nMohon maaf dikarenakan Bpk/Ibu tidak kunjung memberikan respon, maka mohon izin sesi interaksi ini akan kami akhiri.\n\nTerima Kasih."
+            }
+        }
+    },
+    "first_reminder": {
+        "local_testing": false,
+        "status": true,
+        "set_expire": false,
+        "minutes": 2,
+        "interactive_message": false,
+        "interactive_type": "text",
+        "menus": {
+            "ID": {
+                "MENU": "Ya",
+                "ENDCONVER": "Tidak"
+            }
+        },
+        "message": {
+            "ID": "Halo Bpk/Ibu ~user_name~,\nMohon maaf kami belum menerima respon Anda."
+        },
+        "next_bubbles": []
+    },
+    "second_reminder": {
+        "local_testing": false,
+        "status": true,
+        "set_expire": true,
+        "minutes": 3,
+        "interactive_message": false,
+        "interactive_type": "text",
+        "menus": {
+            "ID": {
+                "MENU": "Ya",
+                "ENDCONVER": "Tidak"
+            }
+        },
+        "message": {
+            "ID": "Halo Bpk/Ibu ~user_name~,\nMohon maaf dikarenakan Bpk/Ibu tidak kunjung memberikan respon, maka mohon izin sesi interaksi ini akan kami akhiri.\n\nTerima Kasih."
+        },
+        "next_bubbles": null
+    }
+}

@@ -1,12 +1,12 @@
 {
     "active": true,
     "mode": "basic",
-    "greetingMessage": "",
+    "greetingMessage": "Terima kasih telah menghubungi Contact Center Dering DJPK Kemenkeu.\n*_Mohon untuk mengisi data berikut ini. Terima kasih._*",
     "exit_keyword": "",
     "order_keywords": [],
     "order_reply_msg": "",
     "to_cs_keyword": "_NO_CS_KEY_YET_",
-    "response_cs_keyword": "Mohon menunggu, sesaat lagi Bapak/Ibu akan terhubung dengan Customer Care Representative kami.",
+    "response_cs_keyword": "Terima kasih telah menghubungi Contact Center Dering DJPK. Saat ini Bapak/Ibu telah terhubung dengan petugas konsultasi, silakan disampaikan pertanyaannya. ",
     "listCommandMessage": "",
     "backtomenu_msg": "",
     "contactCsMessage": "",
@@ -15,9 +15,9 @@
     "multiLangNotUnderstandMessage": {
         "ID": "Silahkan KETIK pilihan menu yang sudah diinformasikan di atas untuk menjelajahi informasi yang tersedia"
     },
-    "check_office_hour": false,
+    "check_office_hour": true,
     "concat_greeting_and_menu": true,
-    "no_ofh_bot_msg": "Mohon maaf untuk saat ini layanan kami sedang offline. Informasi jam operasional layanan CS kami dimulai pada jam 07.00 - 18.00 Wib.",
+    "no_ofh_bot_msg": "Terima kasih telah menghubungi DJPK.\n\nSaat ini Bapak/Ibu tengah menghubungi contact center Dering DJPK diluar jam pelayanan. Pertanyaan Bapak/Ibu akan menjadi prioritas saat kami aktif kembali, yaitu setiap hari kerja Senin s.d. Jumat pukul 08.00-16.00 WIB. \n\nSebagai informasi, DJPK tidak memungut biaya apapun atas pelayanan yang diberikan. Mohon untuk tidak mempercayai informasi percaloan dan pungutan liar sehubungan pengalokasian dan penyaluran Transfer ke Daerah dan Dana Desa, Pinjaman Daerah, dan Hibah Daerah. Untuk menjaga integritas, diharapkan tidak menyerahkan pemberian dalam bentuk apapun kepada pejabat/pegawai DJPK.\n\nJika ada hal lain yang ingin ditanyakan, Bapak/Ibu juga dapat menghubungi kami melalui nomor telepon 150420 atau email callcenter.djpk@kemenkeu.go.id \n\nSelamat beraktivitas kembali.",
     "skip_cs_keyword": false,
     "end_session_keys": [
         "END", "END_SESSION"
@@ -271,5 +271,41 @@
         "7-2": "Permohonan Data oleh Organisasi",
         "8": "Informasi Kunjungan ke DJPK",
         "9": "Chat Agent"
+    },
+    "first_reminder": {
+        "local_testing": false,
+        "status": true,
+        "set_expire": false,
+        "minutes": 2,
+        "interactive_message": false,
+        "interactive_type": "text",
+        "menus": {
+            "ID": {
+                "MENU": "Ya",
+                "ENDCONVER": "Tidak"
+            }
+        },
+        "message": {
+            "ID": "Halo Bpk/Ibu ~user_name~,\nMohon maaf kami belum menerima respon Anda."
+        },
+        "next_bubbles": []
+    },
+    "second_reminder": {
+        "local_testing": false,
+        "status": true,
+        "set_expire": true,
+        "minutes": 10,
+        "interactive_message": false,
+        "interactive_type": "text",
+        "menus": {
+            "ID": {
+                "MENU": "Ya",
+                "ENDCONVER": "Tidak"
+            }
+        },
+        "message": {
+            "ID": " Terima kasih telah menghubungi DJPK.\n\nSebagai informasi, DJPK tidak memungut biaya apapun atas pelayanan yang diberikan. Mohon untuk tidak mempercayai informasi percaloan dan pungutan liar sehubungan pengalokasian dan penyaluran Transfer ke Daerah dan Dana Desa, Pinjaman Daerah, dan Hibah Daerah. Untuk menjaga integritas, diharapkan tidak menyerahkan pemberian dalam bentuk apapun kepada pejabat/pegawai DJPK.\n\nJika ada hal lain yang ingin ditanyakan, Bapak/Ibu juga dapat menghubungi kami nomor telepon 150420 atau email callcenter.djpk@kemenkeu.go.id pada hari kerja Senin s.d. Jumat pukul 08.00-16.00 WIB.\n\nSelamat beraktivitas kembali. "
+        },
+        "next_bubbles": null
     }
 }

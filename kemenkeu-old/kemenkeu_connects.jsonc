@@ -1,0 +1,149 @@
+{
+    "active": true,
+    "mode": "basic",
+    "greetingMessage": "Selamat datang di layanan WhatsApp Kemenkeu PRIME, Pusat Kontak Layanan Kementerian Keuangan. Kami memberikan informasi berkaitan dengan tugas dan fungsi Kementerian Keuangan sebagai tanggapan atas:\n1. pertanyaan;\n2. keluhan atas kendala layanan; dan/atau\n3. pengaduan atas pelanggaran dan tindak lanjut pelaporan pelanggaran (_whistleblowing_) di lingkungan Kementerian Keuangan.",
+    "exit_keyword": "",
+    "order_keywords": [],
+    "order_reply_msg": "",
+    "to_cs_keyword": "_NO_CS_KEY_YET_",
+    "response_cs_keyword": "Saat ini Anda sedang dalam antrian. Mohon untuk menunggu beberapa saat",
+    "listCommandMessage": "",
+    "backtomenu_msg": "",
+    "contactCsMessage": "",
+    "prefixGreeting": "",
+    "notUnderstandMessage": "Maaf, respon Anda belum sesuai, Mohon dicoba kembali ya.",
+    "check_office_hour": true,
+    "concat_greeting_and_menu": true,
+    "no_ofh_bot_msg": "Mohon maaf saat ini kami tidak dapat melayani Bapak/Ibu. Silakan menghubungi kami melalui:\n\nTelepon : 134;\nEmail : kemenkeu.prime@kemenkeu.go.id; atau\nWeb form: https://www.kemenkeu.go.id/hubungi-kami\n\nTerima kasih telah menghubungi WhatsApp Kemenkeu PRIME. Selamat beraktivitas kembali.",
+    "skip_cs_keyword": false,
+    "end_session_keys": [
+        "ENDCONVER"
+    ],
+    "end_session_reply": "Terima kasih telah menghubungi WhatsApp Kemenkeu PRIME. Selamat beraktivitas kembali.",
+    "menus_detail": {
+        "FIRST_LEVEL_SEQUENCE": "First level"
+    },
+    "first_reminder": {
+        "local_testing": false,
+        "status": true,
+        "set_expire": true,
+        "minutes": 15,
+        "interactive_message": false,
+        "interactive_type": "text",
+        "menus": {
+            "ID": {
+                "MENU": "Ya",
+                "ENDCONVER": "Tidak"
+            }
+        },
+        "message": {
+            "ID": "Mohon maaf, percakapan telah berakhir. Silakan Bapak/Ibu menghubungi kami kembali di nomor WhatsApp yang sama pada hari kerja pukul 08.00 s.d. 16.00 WIB\n\nTerima kasih telah menghubungi WhatsApp Kemenkeu PRIME. Selamat beraktivitas kembali."
+        },
+        "next_bubbles": []
+    },
+    "ticket_status_reminder": {
+        "local_testing": false,
+        "status": true,
+        "set_ticket_status": {
+            "open": "close",
+            "progress": ""
+        },
+        "type": "minutes",
+        "minutes": {
+            "open": 30,
+            "progress": 28
+        },
+        "days": {
+            "open": 3,
+            "progress": 3
+        },
+        "hours": {
+            "open": 3,
+            "progress": 3
+        },
+        "interactive_message": false,
+        "interactive_type": "text",
+        "menus": {
+            "ID": {
+                "open": {
+                    "cb0494e62bf541b2361d1ba02bd5cecd": "Ya",
+                    "b41514c8580d48fd394698e5db187f8b": "Tidak"
+                }
+            }
+        },
+        "message": {
+            "ID": {
+                "open": "Mohon maaf, saat ini seluruh agen kami sedang melayani pengguna lain. Apabila Bapak/Ibu membutuhkan informasi lebih lanjut, silahkan menghubungi kami melalui:\n1. telepon : 134;\n2. surat elektronik : kemenkeu.prime@kemenkeu.go.id; dan\n3. _webform_ : https://www.kemenkeu.go.id/hubungi-kami .\nTerima kasih telah menghubungi Whatsapp Kemenkeu PRIME. Selamat beraktivitas kembali.",
+                "progress": "Mohon maaf, Bapak/Ibu belum memberikan respons atas pesan kami. Bila tidak ada respons lanjutan dari Bapak/Ibu, percakapan ini akan tertutup secara otomatis dalam beberapa saat lagi."
+            }
+        },
+        "next_bubbles_": [],
+        "expand_query": {
+            "is_close": false,
+            "is_spam": false,
+            "is_wait": false,
+            "is_trash": false,
+            "is_other": false,
+            "is_pending": false,
+            "reminder": {
+                ":d:exists": false
+            }
+        },
+        "use_template": false,
+        "waba_templates": {
+            "ID": {
+                "open": {
+                    "namespace": "631b01278eb73c281d3741e2",
+                    "name": "day_3_reminder_bahasa_indonesia",
+                    "type": "template",
+                    "message": "Salam sehat Bapak/Ibu {{1}},\n\nTerima kasih telah mempercayakan air minum Anda bersama Pristine8.6+\nMohon konfirmasinya, apakah pesanan Bapak/Ibu sudah diterima ?\n1. Sudah diterima\n2. Belum diterima",
+                    "message_type": "text",
+                    "language": {
+                        "code": "id",
+                        "policy": "deterministic"
+                    },
+                    "param_size": 1
+                }
+            }
+        }
+    },
+    "auto_close_ticket_jobs": {
+        "local_testing": false,
+        "status": true,
+        "type": "minutes",
+        "minutes": 2,
+        "days": 3,
+        "interactive_message": false,
+        "interactive_type": "text",
+        "menus": {
+            "ID": {
+                "cb0494e62bf541b2361d1ba02bd5cecd": "Ya",
+                "b41514c8580d48fd394698e5db187f8b": "Tidak"
+            }
+        },
+        "message": {
+            "ID": "Mohon maaf, percakapan telah berakhir. Silakan Bapak/Ibu menghubungi kami kembali di nomor WhatsApp yang sama pada hari kerja pukul 08.00 s.d. 16.00 WIB\n\nTerima kasih telah menghubungi WhatsApp Kemenkeu PRIME. Selamat beraktivitas kembali."
+        },
+        "next_bubbles_": [],
+        "expand_query": {
+            "reminder:sent": true,
+            "is_close": false
+        },
+        "use_template": false,
+        "waba_templates": {
+            "ID": {
+                "namespace": "631b01278eb73c281d3741e2",
+                "name": "day_3_reminder_bahasa_indonesia",
+                "type": "template",
+                "message": "Salam sehat Bapak/Ibu {{1}},\n\nTerima kasih telah mempercayakan air minum Anda bersama Pristine8.6+\nMohon konfirmasinya, apakah pesanan Bapak/Ibu sudah diterima ?\n1. Sudah diterima\n2. Belum diterima",
+                "message_type": "text",
+                "language": {
+                    "code": "id",
+                    "policy": "deterministic"
+                },
+                "param_size": 1
+            }
+        }
+    },
+    "next_bubbles_after_greeting": []
+}

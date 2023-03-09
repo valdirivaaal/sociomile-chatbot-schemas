@@ -1,0 +1,1295 @@
+{
+    "schemas": {
+        "default": {
+            "survey": {
+                "active": false
+            },
+            "reset_keys": [
+                "START"
+            ],
+            "load_conversation": "WabaTemplateConversation",
+            "dual_language": false,
+            "language_localization": {
+                "ID": []
+            },
+            "expire_time": 5,
+            "top_level_questions": [
+                {
+                    "id": "1",
+                    "type": "actions",
+                    "text": "Informasi Layanan"
+                },
+                {
+                    "id": "2",
+                    "type": "actions",
+                    "text": "Administrasi Layanan"
+                },
+                {
+                    "id": "3",
+                    "type": "actions",
+                    "text": "Penelurusan (Tracking)"
+                },
+                {
+                    "id": "4",
+                    "type": "actions",
+                    "text": "Keluhan dan Pengaduan"
+                },
+                {
+                    "id": "5",
+                    "type": "actions",
+                    "text": "Berbicara dengan Live Customer Support Office (CSO)"
+                }
+            ],
+            "MAIN_MENU": [
+                {
+                    "id": "1",
+                    "type": "actions",
+                    "text": "Informasi Layanan"
+                },
+                {
+                    "id": "2",
+                    "type": "actions",
+                    "text": "Administrasi Layanan"
+                },
+                {
+                    "id": "3",
+                    "type": "actions",
+                    "text": "Penelurusan (Tracking)"
+                },
+                {
+                    "id": "4",
+                    "type": "actions",
+                    "text": "Keluhan dan Pengaduan"
+                },
+                {
+                    "id": "5",
+                    "type": "actions",
+                    "text": "Berbicara dengan Live Customer Support Office (CSO)"
+                }
+            ],
+            "START": [
+                {
+                    "id": "AA",
+                    "current_menu": "1",
+                    "text": "Selamat datang ~user_name~, Informasi apa yang Anda perlukan?\n\n*1* Informasi Layanan\n*2* Administrasi Layanan\n*3* Penelusuran ( _Tracking_ )\n*4* Keluhan dan Pengaduan\n*5* Berbicara dengan _Live Customer Support Officer (CSO)_",
+                    "current_lang": "ID",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "list",
+                    "menus": {
+                        "1": {
+                            "id": "1",
+                            "current_menu": "1",
+                            "title": "Informasi Layanan",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "targeted_menu",
+                            "targeted_path": "1-0"
+                        },
+                        "2": {
+                            "id": "2",
+                            "current_menu": "2",
+                            "title": "Administrasi Layanan",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "targeted_menu",
+                            "targeted_path": "2-0"
+                        },
+                        "3": {
+                            "id": "3",
+                            "current_menu": "3",
+                            "title": "Penelusuran (Tracking)",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "targeted_menu",
+                            "targeted_path": "3-0"
+                        },
+                        "4": {
+                            "id": "4",
+                            "current_menu": "4",
+                            "title": "Keluhan dan Pengaduan",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "targeted_menu",
+                            "targeted_path": "4-0"
+                        },
+                        "5": {
+                            "id": "5",
+                            "current_menu": "5",
+                            "title": "Berbicara dengan Live Customer Support Officer (CSO)",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "targeted_menu",
+                            "targeted_path": "5-0"
+                        }
+                    }
+                }
+            ],
+            "1": [
+                {
+                    "id": "AA",
+                    "current_menu": "1",
+                    "text": "Layanan Jasa Industri apa yang  anda butuhkan / gunakan saat ini : \n1. Pengujian TPT, Lingkungan dan  Masker Medis.\n2. Kalibrasi\n3. Sertifikat Produk\n4. Sertifikasi Sistem Manajemen Mutu\n5. Sertifikat Industri Hijau\n6. Konsultasi Teknis\n7. Pelatihan Teknis & Bimtek\n8. Wisata Teknologi Tekstil \n9. Solusi Industri",
+                    "next_bubbles": [
+                        {
+                            "type": "text",
+                            "text": "Silakan ketik *0* untuk kembali ke Menu Utama.\nKetik *99* untuk kembali ke Menu Sebelumnya."
+                        }
+                    ],
+                    "current_lang": "ID",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "list",
+                    "menus": {
+                        "0": {
+                            "id": "0",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "targeted_menu",
+                            "targeted_path": "START-0"
+                        },
+                        "99": {
+                            "id": "99",
+                            "current_menu": "PARENT",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "targeted_menu",
+                            "targeted_path": "START-0"
+                        },
+                        "1": {
+                            "id": "1",
+                            "title": "Pengujian TPT, Lingkungan dan  Masker Medis",
+                            "current_menu": "1-1",
+                            "text": "Halo Bapak/Ibu ~user_name~, Berikut informasi terkait Layanan Jasa Pengujian TPT, Lingkungan, Masker Medis :\n\n1. Alur prosedur layanan : https://bit.ly/infografis_pengujiantekstilmasker\n\n2. Tarif layanan per item uji : https://bit.ly/tarif_pengujianTPT\n\n3. Formulir pengujian :\nhttps://bit.ly/form_ujiTPT \nhttps://bit.ly/form_ujimaskermedis \nhttps://bit.ly/form_ujiK3Lpermendag\n\n4. Standar pelayanan minimum :  \n- Serat : 15 hari kerja \n- Benang, kain dan garmen : 6 hari kerja\n- Geotekstil : 15 hari kerja (Full item uji), 12 hari kerja (< 5 item uji) \n- Karpet : 10 hari kerja \n- Kaos kaki : 15 hari kerja \n- Mainan anak : 12 hari kerja\n- Zat warna azo : 7 hari kerja\n- Migrasi logam : 7 hari kerja\n- Masker medis : 18 hari kerja (full item uji) \n\n5. Jika Anda mengirimkan sample uji menggunakan kurir, silakan unduh dan tempelkan label berikut pada paket Anda (formulir dimasukkan kedalam paket) : https://bit.ly/LabelPengirimanSampleUji ",
+                            "type": "nest_menu",
+                            "interactive_message": false,
+                            "interactive_type": "button",
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "Silakan ketik *0* untuk kembali ke Menu Utama.\nKetik *99* untuk kembali ke Menu Sebelumnya."
+                                }
+                            ],
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "START-0"
+                                },
+                                "99": {
+                                    "id": "99",
+                                    "title": "Menu Sebelumnya",
+                                    "current_menu": "PARENT",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "2",
+                            "title": "Kalibrasi",
+                            "current_menu": "1-2",
+                            "text": "Bapak/Ibu ~user_name~, Berikut informasi terkait Layanan Jasa Kalibrasi :\n\n1. Alur prosedur layanan kalibrasi di pabrik & di Lab.Kalibrasi BBSPJIT: https://bit.ly/infografis_alurkalibrasiinsitu https://bit.ly/infografis_alurkalibrasilab\n\n2. Tarif layanan : https://bit.ly/tarif_kalibrasibbt\n\n3. Formulir kalibrasi : https://bit.ly/form_kalibrasi\n\n4. Standar pelayanan minimum (berdasarkan jumlah alat yang dikalibrasi) :  \n1 – 5 : 5 hari kerja \n6 – 10 : 10 hari kerja \n11 – 25 : 20 hari kerja \n26 – 40 : 30 hari kerja \n> 40 : 60 – 90 hari kerja\n\n5. Jika Anda mengirimkan alat menggunakan kurir, silakan unduh dan tempelkan label  berikut pada paket Anda (formulir dimasukkan kedalam paket) : https://bit.ly/LabelPengirimanAlatKalibrasi ",
+                            "type": "nest_menu",
+                            "interactive_message": false,
+                            "interactive_type": "button",
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "Silakan ketik *0* untuk kembali ke Menu Utama.\nKetik *99* untuk kembali ke Menu Sebelumnya."
+                                }
+                            ],
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "START-0"
+                                },
+                                "99": {
+                                    "id": "99",
+                                    "title": "Menu Sebelumnya",
+                                    "current_menu": "PARENT",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "3": {
+                            "id": "3",
+                            "title": "Sertifikat Produk",
+                            "current_menu": "1-3",
+                            "text": "Bapak/Ibu ~user_name~, Berikut informasi terkait Layanan Jasa Sertifikasi Produk oleh TEXPA-BBSPJIT :\n\n1. Alur prosedur layanan sertifikasi produk :\nhttps://bit.ly/infografis_alursertifikasiproduk\n\n2. Ruang lingkup SNI dan Tarif layanan :\nhttps://bbt.kemenperin.go.id/layanan/sertifikasi_produk\n\n3. Formulir sertifikasi produk : https://bit.ly/form_sniwajib_pakaianbayi\nhttps://bit.ly/form_sniwajib_mainan \nhttps://bit.ly/form_sertifikasi_sukarela \nhttps://bit.ly/form_sertifikasi_maskerkain\n\n4. Standar pelayanan minimum :  \nSNI Wajib : 25 hari kerja\nSNI Sukarela : 75 hari kerja ",
+                            "type": "nest_menu",
+                            "interactive_message": false,
+                            "interactive_type": "button",
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "Silakan ketik *0* untuk kembali ke Menu Utama.\nKetik *99* untuk kembali ke Menu Sebelumnya."
+                                }
+                            ],
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "START-0"
+                                },
+                                "99": {
+                                    "id": "99",
+                                    "title": "Menu Sebelumnya",
+                                    "current_menu": "PARENT",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "4": {
+                            "id": "4",
+                            "title": "Sertifikasi Sistem Manajemen Mutu",
+                            "current_menu": "1-4",
+                            "text": "Bapak/Ibu ~user_name~, Berikut informasi terkait layanan jasa Sertifikasi SMM oleh TIQA-BBSPJIT:\n\n1. Alur Prosedur Layanan Sertifikasi Sistem Manajemen Mutu:\nhttps://bit.ly/infografis_sertifikasiSMM\n\n2. Ruang Lingkup SNI dan Layanan:\nhttps://bbt.kemenperin.go.id/layanan/sertifikasi_smm\n\n3. Formulir Sertifikasi SMM:\nhttps://bit.ly/form_sertifikasi_smm\n\n4. Standar Pelayanan Minimum:\nSertifikasi SMM: 75 Hari kerja",
+                            "type": "nest_menu",
+                            "interactive_message": false,
+                            "interactive_type": "button",
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "Silakan ketik *0* untuk kembali ke Menu Utama.\nKetik *99* untuk kembali ke Menu Sebelumnya."
+                                }
+                            ],
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "START-0"
+                                },
+                                "99": {
+                                    "id": "99",
+                                    "title": "Menu Sebelumnya",
+                                    "current_menu": "PARENT",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "5": {
+                            "id": "5",
+                            "title": "Sertifikat Industri Hijau",
+                            "current_menu": "1-5",
+                            "text": "Bapak/Ibu ~user_name~, Berikut informasi terkait Layanan Jasa Sertifikasi SIH oleh LSIH-BBSPJIT :\n\n1. Alur prosedur layanan sertifikasi SIH :\nhttps://bit.ly/infografis_sertifikasiSMM\n\n2. Ruang lingkup SNI dan Tarif layanan :\nhttps://bbt.kemenperin.go.id/layanan/industri_hijau \n\n3. Formulir sertifikasi SIH :\nhttps://bit.ly/form_sertifikasi_industrihijau\n\n4. Standar pelayanan minimum :\nSertifikasi SMM : 75 hari kerja",
+                            "type": "nest_menu",
+                            "interactive_message": false,
+                            "interactive_type": "button",
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "Silakan ketik *0* untuk kembali ke Menu Utama.\nKetik *99* untuk kembali ke Menu Sebelumnya."
+                                }
+                            ],
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "START-0"
+                                },
+                                "99": {
+                                    "id": "99",
+                                    "title": "Menu Sebelumnya",
+                                    "current_menu": "PARENT",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "6": {
+                            "id": "6",
+                            "title": "Konsultasi Teknis",
+                            "current_menu": "1-6",
+                            "text": "Bapak/Ibu ~user_name~, Berikut informasi terkait Layanan Jasa Konsultansi Teknis: \n\n1. Alur prosedur layanan konsultansi teknis :\nhttps://bit.ly/infografis_alurkonsultansi\n\n2. Ruang lingkup konsultansi teknis :\nhttps://bbt.kemenperin.go.id/layanan/konsultansi\n\n3. Formulir permohonan konsultansi teknis:\nhttps://bit.ly/form_konsultansi \n\n4. Standar pelayanan minimum :\nSesuai kesepakatan",
+                            "type": "nest_menu",
+                            "interactive_message": false,
+                            "interactive_type": "button",
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "Silakan ketik *0* untuk kembali ke Menu Utama.\nKetik *99* untuk kembali ke Menu Sebelumnya."
+                                }
+                            ],
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "START-0"
+                                },
+                                "99": {
+                                    "id": "99",
+                                    "title": "Menu Sebelumnya",
+                                    "current_menu": "PARENT",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "7": {
+                            "id": "7",
+                            "title": "Pelatihan Teknis & Bimtek",
+                            "current_menu": "1-7",
+                            "text": "Bapak/Ibu ~user_name~, Berikut informasi terkait Layanan Jasa Pelatihan dan Bimbingan Teknis : \n\n1, Alur prosedur layanan pelatihan dan bimbingan teknis : https://bit.ly/infografis_alurpelatihan\n\n2. Ruang lingkup pelatihan dan bimbingan teknis : https://bbt.kemenperin.go.id/layanan/bimbingan_teknis\n\n3. Formulir permohonan pelatihan : https://bit.ly/form_pelatihanbimtek\n\n4. Standar pelayanan minimum : Sesuai jadwal program",
+                            "type": "nest_menu",
+                            "interactive_message": false,
+                            "interactive_type": "button",
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "Silakan ketik *0* untuk kembali ke Menu Utama.\nKetik *99* untuk kembali ke Menu Sebelumnya."
+                                }
+                            ],
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "START-0"
+                                },
+                                "99": {
+                                    "id": "99",
+                                    "title": "Menu Sebelumnya",
+                                    "current_menu": "PARENT",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "8": {
+                            "id": "8",
+                            "title": "Wisata Teknologi Tekstil ",
+                            "current_menu": "1-8",
+                            "text": "Bapak/Ibu ~user_name~, Berikut informasi terkait program Wisata Teknologi Tekstil : \n\n1. Prosedur layanan :\nhttps://bit.ly/infografis_alurwistek\n\n2. Surat permohonan kunjungan yang mencantumkan tanggal rencana kunjungan dan  estimasi jumlah peserta dapat dikirimkan melalui email : bbt@kemenperin.go.id\n\n3. Isi kegiatan :\nPengenalan BBSPJI Tekstil, Kunjungan ke Product Development and Design Center (PDDC), workshop (opsional diluar alur reguler).\n\n4. Waktu yang direkomendasikan :\nSenin - Kamis, 09.00 - 12.00 WIB (durasi maksimal 3 jam, kecuali jika ada workshop  tambahan)",
+                            "type": "nest_menu",
+                            "interactive_message": false,
+                            "interactive_type": "button",
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "Silakan ketik *0* untuk kembali ke Menu Utama.\nKetik *99* untuk kembali ke Menu Sebelumnya."
+                                }
+                            ],
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "START-0"
+                                },
+                                "99": {
+                                    "id": "99",
+                                    "title": "Menu Sebelumnya",
+                                    "current_menu": "PARENT",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "9": {
+                            "id": "9",
+                            "title": "Solusi Industri",
+                            "current_menu": "1-9",
+                            "text": "Bapak/Ibu ~user_name~, Berikut informasi terkait Layanan Jasa Solusi Industri :\n\n1. Alur prosedur layanan solusi industri\nhttps://bit.ly/infografis_alurkonsultasi\n\n2. Ruang lingkup layanan solusi industri : \n- Teknologi proses pembuatan benang\n- Teknologi proses pembuatan kain\n- Teknologi proses garmen\n- Teknologi proses pencelupan & penyempurnaan\n-  Pengembangan material tekstil\n- Sistem manajemen industri\n- Industri hijau\n\n3. Formulir permohonan kajian awal Solusi Industri : https://bit.ly/kajiawal_issc",
+                            "type": "nest_menu",
+                            "interactive_message": false,
+                            "interactive_type": "button",
+                            "next_bubbles": [
+                                {
+                                    "type": "text",
+                                    "text": "Silakan ketik *0* untuk kembali ke Menu Utama.\nKetik *99* untuk kembali ke Menu Sebelumnya."
+                                }
+                            ],
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "START-0"
+                                },
+                                "99": {
+                                    "id": "99",
+                                    "title": "Menu Sebelumnya",
+                                    "current_menu": "PARENT",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        }
+                    }
+                }
+            ],
+            "2": [
+                {
+                    "id": "BB",
+                    "current_menu": "2",
+                    "text": "Pilih jenis administrasi layanan yang anda butuhkan saat ini :\n1. Permintaan Surat Penawaran\n2. Permintaan Nomor Work Order (WO)\n3. Permintaan Kode Billing\n4. Panduan Pembayaran\n5. Permintaan Revisi LHU/ Sertifikat\n6. Permintaan Jadwal Pembayaran",
+                    "next_bubbles": [
+                        {
+                            "type": "text",
+                            "text": "Silakan ketik *0* untuk kembali ke Menu Utama.\nKetik *99* untuk kembali ke Menu Sebelumnya."
+                        }
+                    ],
+                    "current_lang": "ID",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "list",
+                    "menus": {
+                        "0": {
+                            "id": "0",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "targeted_menu",
+                            "targeted_path": "START-0"
+                        },
+                        "99": {
+                            "id": "99",
+                            "current_menu": "PARENT",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "targeted_menu",
+                            "targeted_path": "START-0"
+                        },
+                        "1": {
+                            "id": "1",
+                            "current_menu": "2-1",
+                            "title": "Permintaan Surat Penawaran",
+                            "text": "",
+                            "type": "sequences",
+                            "reminder_template": "SEQREMINDER",
+                            "required_data": [
+                                {
+                                    "id": "SQ1",
+                                    "index": "penawaran",
+                                    "label": "dokimage",
+                                    "text": "Halo Bapak/Ibu ~user_name~, \nKami bantu proses  penerbitan surat penawaran. Silahkan Upload Formulir layanan jasa yang sudah di  lengkapi, di bubuhi tanda tangan dan dicap perusahaan.",
+                                    "type": "text",
+                                    "validation": "link_image",
+                                    "error_msg": "Silahkan Upload Formulir layanan jasa yang sudah di  lengkapi, di bubuhi tanda tangan dan dicap perusahaan."
+                                },
+                                {
+                                    "id": "SQ2",
+                                    "text": "",
+                                    "index": "",
+                                    "label": "",
+                                    "type": "completed",
+                                    "create_ticket": true,
+                                    "end_session": true,
+                                    "validation": null,
+                                    "error_msg": "",
+                                    "run_method": false,
+                                    "method_name": null,
+                                    "create_ticket_from_template": true,
+                                    "ticket_template": "Menu : Administrasi Layanan > Permintaan Surat Penawaran\n\n Link: ~penawaran.dokimage~",
+                                    "ticket_template_as_completed_template": false,
+                                    "completed_template": "Kami akan proses permohonan Anda ke bagian terkait. Silakan tunggu balasan melalui email yang Anda cantumkan dalam formulir layanan.\n\nJika tidak menemukannya dalam inbox Anda, silakan cek di folder spam / junkmail. Hal ini dapat terjadi jika provider email Anda mendeteksi email kami sebagai spam."
+                                }
+                            ],
+                            "prev_menus": {
+                                "0": {
+                                    "id": "0",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_path",
+                                    "targeted_path": "START-0"
+                                },
+                                "99": {
+                                    "id": "99",
+                                    "current_menu": "PARENT",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_path",
+                                    "targeted_path": "2-0"
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "2",
+                            "current_menu": "2-2",
+                            "title": "Permintaan Nomor Work Order (WO)",
+                            "text": "",
+                            "type": "sequences",
+                            "reminder_template": "SEQREMINDER",
+                            "required_data": [
+                                {
+                                    "id": "SQ1",
+                                    "index": "workorder",
+                                    "label": "namaPerusahaan",
+                                    "text": "Halo Bapak / Ibu ~user_name~,\nNomor Work Order (WO) adalah nomor identitas pemesanan pekerjaan jasa Anda, yang dapat digunakan untuk melakukan penelusuran (tracking) status layanan Anda. Mohon lengkapi informasi untuk kami dapat bantu kirimkan Nomor WO Anda.\n\nSilakan tuliskan nama perusahaan yang terdaftar dalam formulir/surat permohonan:",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": ""
+                                },
+                                {
+                                    "id": "SQ2",
+                                    "index": "workorder",
+                                    "label": "jenisAdministrasi",
+                                    "text": "Silakan pilih jenis layanan yang digunakan:\n1. Pengujian Tekstil dan Produk Tekstil\n2. Pengujian Masker Medis dan Respirator\n3. Kalibrasi\n4. Sertifikat Produk\n5. Sertifikasi ISO 9001 -2015\n6. Sertifikasi Industri Hijau\n7. Konsultasi Teknis\n8. Wisata Teknologi Tekstil\n9. Optimasi Pemanfaatan Tekhnologi\n10. Layanan Solusi Industri (ISSC)",
+                                    "type": "text",
+                                    "validation": "validate_choices",
+                                    "valid_choices": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6",
+                                        "7",
+                                        "8",
+                                        "9",
+                                        "10"
+                                    ],
+                                    "jenisAdministrasi": {
+                                        "1": "Pengujian Tekstil dan Produk Tekstil",
+                                        "2": "Pengujian Masker Medis dan Respirator",
+                                        "3": "Kalibrasi",
+                                        "4": "Sertifikat Produk",
+                                        "5": "Sertifikasi ISO 9001 -2015",
+                                        "6": "Sertifikasi Industri Hijau",
+                                        "7": "Konsultasi Teknis",
+                                        "8": "Wisata Teknologi Tekstil",
+                                        "9": "Optimasi Pemanfaatan Tekhnologi",
+                                        "10": "Layanan Solusi Industri (ISSC)"
+                                    },
+                                    "error_msg": "Pilahan Anda tidak sesuai!\nSilakan pilih jenis layanan yang digunakan:\n1. Pengujian Tekstil dan Produk Tekstil\n2. Pengujian Masker Medis dan Respirator\n3. Kalibrasi\n4. Sertifikat Produk\n5. Sertifikasi ISO 9001 -2015\n6. Sertifikasi Industri Hijau\n7. Konsultasi Teknis\n8. Wisata Teknologi Tekstil\n9. Optimasi Pemanfaatan Tekhnologi\n10. Layanan Solusi Industri (ISSC)"
+                                },
+                                {
+                                    "id": "SQ3",
+                                    "index": "workorder",
+                                    "label": "email",
+                                    "text": "Silahkan masukan alamat email untuk pengiriman informasi work order",
+                                    "type": "text",
+                                    "validation": "email",
+                                    "error_msg": "Mohon maaf, format _email_ yang Anda masukkan tidak sesuai. Silakan masukkan kembali sesuai format."
+                                },
+                                {
+                                    "id": "SQ3",
+                                    "index": "workorder",
+                                    "label": "kodebil",
+                                    "text": "Mohon informasikan tanggal pembayaran kode e-billing:",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": ""
+                                },
+                                {
+                                    "id": "SQ4",
+                                    "text": "",
+                                    "index": "",
+                                    "label": "",
+                                    "type": "completed",
+                                    "create_ticket": true,
+                                    "end_session": true,
+                                    "validation": null,
+                                    "error_msg": "",
+                                    "run_method": false,
+                                    "method_name": null,
+                                    "create_ticket_from_template": true,
+                                    "ticket_template": "Menu : Administrasi Layanan > Permintaan Nomor Work Order\n\n Nama: ~user_name~\nNama Perusahaan : ~workorder.namaPerusahaan~\nJenis Layanan : ~workorder.jenisAdministrasi~\nEmail : ~workorder.email~\nKode e-billing: ~workorder.kodebil~",
+                                    "ticket_template_as_completed_template": false,
+                                    "completed_template": "Terima Kasih anda telah melengkapi informasi ini. Petugas kami akan mengirimkan nomor WO anda melalui email.\n\nJika tidak menemukannya dalam inbox Anda, silakan cek di folder spam / junkmail. Hal ini dapat terjadi jika provider email Anda mendeteksi email kami sebagai spam."
+                                }
+                            ],
+                            "prev_menus": {
+                                "0": {
+                                    "id": "0",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_path",
+                                    "targeted_path": "START-0"
+                                },
+                                "99": {
+                                    "id": "99",
+                                    "current_menu": "PARENT",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_path",
+                                    "targeted_path": "2-0"
+                                }
+                            }
+                        },
+                        "3": {
+                            "id": "3",
+                            "current_menu": "2-3",
+                            "title": "Permintaan Kode Billing",
+                            "text": "",
+                            "type": "sequences",
+                            "reminder_template": "SEQREMINDER",
+                            "required_data": [
+                                {
+                                    "id": "SQ1",
+                                    "index": "kodebilling",
+                                    "label": "penerbitan",
+                                    "text": "Halo Bapak/Ibu ~user_name~, Lengkapi informasi ini untuk kami dapat bantu rilis kode e-billing anda, mohon informasikan Jenis Penerbitan Kode E Billing anda : \n*1*. Penerbitan Baru\n*2*. Penerbitan Ulang (Kadaluwarsa)",
+                                    "type": "goto_index",
+                                    "goto_index": {
+                                        "1": 1,
+                                        "2": 6
+                                    },
+                                    "validation": "validate_choices",
+                                    "valid_choices": [
+                                        "1",
+                                        "2"
+                                    ],
+                                    "penerbitan": {
+                                        "1": "Penerbitan Baru",
+                                        "2": "Penerbitan Ulang (Kadaluwarsa)"
+                                    },
+                                    "error_msg": "Pilihan Anda tidak sesuai!\nMohon informasikan Jenis Penerbitan Kode E Billing anda : \n*1*. Penerbitan Baru\n*2*. Penerbitan Ulang (Kadaluwarsa)"
+                                },
+                                {
+                                    "id": "SQ2",
+                                    "index": "kodebilling",
+                                    "label": "namaPerusahaan",
+                                    "text": "Silahkan masukkan nama perusahaan yang tercantum dalam formulir permohonan / surat informasi biaya dari BBSPJI Tekstil:",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": ""
+                                },
+                                {
+                                    "id": "SQ3",
+                                    "index": "kodebilling",
+                                    "label": "tnr",
+                                    "text": "Silahkan masukkan tanggal dan nomor surat informasi biaya layanan dari BBSPJI Tekstil\n(contoh format: 1234/BSKJI/BBSPJIT/PNP/MS/IV/2022).\nJika Anda tidak pernah meminta informasi biaya melalui surat resmi, ketik *TIDAK ADA*",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": ""
+                                },
+                                {
+                                    "id": "SQ4",
+                                    "index": "kodebilling",
+                                    "label": "po",
+                                    "text": "Silahkan upload Purchase Order / Bukti Persetujuan atas biaya yang ditawarkan BBSPJI Tekstil. Jika dokumen ini tidak tersedia, ketik *TIDAK ADA*",
+                                    "type": "text",
+                                    "validation": "link_image",
+                                    "error_msg": "Silahkan upload Purchase Order / Bukti Persetujuan atas biaya yang ditawarkan BBSPJI Tekstil. Jika dokumen ini tidak tersedia, ketik *TIDAK ADA*"
+                                },
+                                {
+                                    "id": "SQ5",
+                                    "index": "kodebilling",
+                                    "label": "email",
+                                    "text": "Silahkan masukan alamat email untuk pengiriman kode e-billing:",
+                                    "type": "text",
+                                    "validation": "email",
+                                    "error_msg": "Mohon maaf, format _email_ yang Anda masukkan tidak sesuai. Silakan masukkan kembali sesuai format."
+                                },
+                                {
+                                    "id": "SQ6",
+                                    "text": "",
+                                    "index": "",
+                                    "label": "",
+                                    "type": "completed",
+                                    "create_ticket": true,
+                                    "end_session": true,
+                                    "validation": null,
+                                    "error_msg": "",
+                                    "run_method": false,
+                                    "method_name": null,
+                                    "create_ticket_from_template": true,
+                                    "ticket_template": "Menu : Administrasi Layanan > Permintaan Kode Billing\n\nJenis Penerbitan: ~kodebilling.penerbitan~\n\nNama Perusahaan yang tercantum dalam formulir permohonan: ~kodebilling.namaPerusahaan~\n\nTanggal dan Nomor referensi surat informasi biaya layanan: ~kodebilling.tnr~\n\nPO/Bukti Persetujuan: ~kodebilling.po~\n\nEmail: ~kodebilling.email~",
+                                    "ticket_template_as_completed_template": false,
+                                    "completed_template": "Terima Kasih anda telah melengkapi informasi ini. Petugas kami akan proses permintaan kode e-billing Anda.\n\nJika tidak menemukannya dalam inbox Anda, silakan cek di folder spam / junkmail. Hal ini dapat terjadi jika provider email Anda mendeteksi email kami sebagai spam."
+                                },
+                                {
+                                    "id": "SQ7",
+                                    "index": "kodebilling",
+                                    "label": "namaPerusahaan",
+                                    "text": "Silahkan masukkan nama perusahaan yang tercantum dalam formulir permohonan / surat informasi biaya dari BBSPJI Tekstil:",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": ""
+                                },
+                                {
+                                    "id": "SQ8",
+                                    "index": "kodebilling",
+                                    "label": "tnr",
+                                    "text": "Silahkan masukkan tanggal dan nomor surat informasi biaya layanan dari BBSPJI Tekstil\n(contoh format: 1234/BSKJI/BBSPJIT/PNP/MS/IV/2022).\nJika Anda tidak pernah meminta informasi biaya melalui surat resmi, ketik *TIDAK ADA*",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": ""
+                                },
+                                {
+                                    "id": "SQ9",
+                                    "index": "kodebilling",
+                                    "label": "po",
+                                    "text": "Silahkan upload Purchase Order / Bukti Persetujuan atas biaya yang ditawarkan BBSPJI Tekstil. Jika dokumen ini tidak tersedia, ketik *TIDAK ADA*",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": "Silahkan upload Purchase Order / Bukti Persetujuan atas biaya yang ditawarkan BBSPJI Tekstil. Jika dokumen ini tidak tersedia, ketik *TIDAK ADA*"
+                                },
+                                {
+                                    "id": "SQ10",
+                                    "index": "kodebilling",
+                                    "label": "kodebilling",
+                                    "text": "Silakan Upload Kode e-billing yang telah kadaluwarsa:",
+                                    "type": "text",
+                                    "validation": "link_image",
+                                    "error_msg": "Silakan Upload Kode e-billing yang telah kadaluwarsa"
+                                },
+                                {
+                                    "id": "SQ11",
+                                    "index": "kodebilling",
+                                    "label": "email",
+                                    "text": "Silahkan masukan alamat email untuk pengiriman kode e-billing:",
+                                    "type": "text",
+                                    "validation": "email",
+                                    "error_msg": "Mohon maaf, format _email_ yang Anda masukkan tidak sesuai. Silakan masukkan kembali sesuai format."
+                                },
+                                {
+                                    "id": "SQ12",
+                                    "text": "",
+                                    "index": "",
+                                    "label": "",
+                                    "type": "completed",
+                                    "create_ticket": true,
+                                    "end_session": true,
+                                    "validation": null,
+                                    "error_msg": "",
+                                    "run_method": false,
+                                    "method_name": null,
+                                    "create_ticket_from_template": true,
+                                    "ticket_template": "Menu : Administrasi Layanan > Permintaan Kode Billing\n\nJenis Penerbitan: ~kodebilling.penerbitan~\n\nNama Perusahaan yang tercantum dalam formulir permohonan: ~kodebilling.namaPerusahaan~\n\nTanggal dan Nomor referensi surat informasi biaya layanan: ~kodebilling.tnr~\n\nPO/Bukti Persetujuan: ~kodebilling.po~\n\nKode e-billing: ~kodebilling.kodebilling~\n\nEmail: ~kodebilling.email~",
+                                    "ticket_template_as_completed_template": false,
+                                    "completed_template": "Terima Kasih anda telah melengkapi informasi ini. Petugas kami akan proses permintaan kode e-billing Anda.\n\nJika tidak menemukannya dalam inbox Anda, silakan cek di folder spam / junkmail. Hal ini dapat terjadi jika provider email Anda mendeteksi email kami sebagai spam."
+                                }
+                            ],
+                            "prev_menus": {
+                                "0": {
+                                    "id": "0",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_path",
+                                    "targeted_path": "START-0"
+                                },
+                                "99": {
+                                    "id": "99",
+                                    "current_menu": "PARENT",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_path",
+                                    "targeted_path": "2-0"
+                                }
+                            }
+                        },
+                        "4": {
+                            "id": "4",
+                            "current_menu": "2-4",
+                            "title": "Panduan Pembayaran",
+                            "label": "Panduan Pembayaran",
+                            "text": "Halo Bapak / Ibu ~user_name~, \n\nBerikut tautan untuk informasi tata  cara pembayaran kode ebilling melalui bank persepsi MPN-G3 :\n\nhttps://bit.ly/panduanbayar_ebilling\n\nSelain bank persepsi, anda dapat membayar melalui channel berikut :\nE-wallet : Dana\nE-commerce : Tokopedia &  Bukalapak\nPos Indonesia : Kantor Pos, Aplikasi Pospay\n\nSilahkan cari ikon MPN-G3 pada  masing-masing aplikasi.",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "START-0"
+                                },
+                                "99": {
+                                    "id": "99",
+                                    "title": "Menu Sebelumnya",
+                                    "current_menu": "PARENT",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        },
+                        "5": {
+                            "id": "5",
+                            "current_menu": "2-5",
+                            "title": "Permintaan Revisi LHU Sertifikat",
+                            "text": "",
+                            "type": "sequences",
+                            "reminder_template": "SEQREMINDER",
+                            "required_data": [
+                                {
+                                    "id": "SQ1",
+                                    "index": "revisilhu",
+                                    "label": "jdokumen",
+                                    "text": "Halo Bapak/Ibu ~user_name~,\nLengkapi informasi ini untuk kami dapat bantu proses permintaan revisi laporan hasil Uji / Sertifikat anda,\nSilakan pilih jenis dokumen:\n*1*. Sertifikat Kalibrasi Alat\n*2*. Sertifikat SNI Produk\n*3*. Sertifikat ISO 9001:2015\n*4*. Sertifikat Industri Hijau\n*5*. Laporan Hasil Uji\n*6*. Sertifikat Pelatihan & Bimtek",
+                                    "type": "text",
+                                    "validation": "validate_choices",
+                                    "valid_choices": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5",
+                                        "6"
+                                    ],
+                                    "jdokumen": {
+                                        "1": "Sertifikat Kalibrasi Alat",
+                                        "2": "Sertifikat SNI Produk",
+                                        "3": "Sertifikat ISO 9001:2015",
+                                        "4": "Sertifikat Industri Hijau",
+                                        "5": "Laporan Hasil Uji",
+                                        "6": "Sertifikat Pelatihan & Bimtek"
+                                    },
+                                    "error_msg": "Pilihan Anda tidak sesuai!\nSilakan pilih jenis dokumen:\n*1*. Sertifikat Kalibrasi Alat\n*2*. Sertifikat SNI Produk\n*3*. Sertifikat ISO 9001:2015\n*4*. Sertifikat Industri Hijau\n*5*. Laporan Hasil Uji\n*6*. Sertifikat Pelatihan & Bimtek"
+                                },
+                                {
+                                    "id": "SQ2",
+                                    "index": "revisilhu",
+                                    "label": "namaPerusahaan",
+                                    "text": "Silakan masukkan nama perusahaan yang tercantum dalam dokumen :",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": ""
+                                },
+                                {
+                                    "id": "SQ3",
+                                    "index": "revisilhu",
+                                    "label": "email",
+                                    "text": "Silakan masukkan email anda",
+                                    "type": "text",
+                                    "validation": "email",
+                                    "error_msg": "Mohon maaf, format _email_ yang Anda masukkan tidak sesuai. Silakan masukkan kembali sesuai contoh."
+                                },
+                                {
+                                    "id": "SQ4",
+                                    "index": "revisilhu",
+                                    "label": "nts",
+                                    "text": "Silakan masukkan nomor dan tanggal sertifikat",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": ""
+                                },
+                                {
+                                    "id": "SQ5",
+                                    "index": "revisilhu",
+                                    "label": "penjelasan",
+                                    "text": "Silakan jelaskan bagian yang perlu direvisi:",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": ""
+                                },
+                                {
+                                    "id": "SQ6",
+                                    "index": "revisilhu",
+                                    "label": "uploadsertifikat",
+                                    "text": "Silakan upload foto Sertifikat/LHU:",
+                                    "type": "text",
+                                    "validation": "link_image",
+                                    "error_msg": "Silakan upload foto Sertifikat/LHU:"
+                                },
+                                {
+                                    "id": "SQ6",
+                                    "text": "",
+                                    "index": "",
+                                    "label": "",
+                                    "type": "completed",
+                                    "create_ticket": true,
+                                    "end_session": true,
+                                    "validation": null,
+                                    "error_msg": "",
+                                    "run_method": false,
+                                    "method_name": null,
+                                    "create_ticket_from_template": true,
+                                    "ticket_template": "Menu : Administrasi Layanan > Permintaan Revisi LHU/ Sertifikat\n\nJenis Dokumen: ~revisilhu.jdokumen~\n\nNama perusahaan yang tercantum dalam dokumen: ~revisilhu.namaPerusahaan~\n\nAlamat Email: ~revisilhu.email~\n\n Nomor dan tanggal sertifikat: ~revisilhu.nts~\n\nBagian yang perlu direvisi: ~revisilhu.penjelasan~\n\nDokumen foto Sertifikat/LHU: ~revisilhu.uploadsertifikat~",
+                                    "ticket_template_as_completed_template": false,
+                                    "completed_template": "Terima Kasih anda telah melengkapi informasi ini. Petugas kami akan proses permintaan revisi LHU/ sertifikat Anda.\n\nJika tidak menemukannya dalam inbox Anda, silakan cek di folder spam / junkmail. Hal ini dapat terjadi jika provider email Anda mendeteksi email kami sebagai spam."
+                                }
+                            ],
+                            "prev_menus": {
+                                "0": {
+                                    "id": "0",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_path",
+                                    "targeted_path": "START-0"
+                                },
+                                "99": {
+                                    "id": "99",
+                                    "current_menu": "PARENT",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_path",
+                                    "targeted_path": "2-0"
+                                }
+                            }
+                        },
+                        "6": {
+                            "id": "6",
+                            "current_menu": "2-6",
+                            "title": "Permintaan Jadwal Pembayaran",
+                            "text": "Mohon maaf, belum ada informasi terkait Permintaan Jadwal Pembayaran",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "START-0"
+                                },
+                                "99": {
+                                    "id": "99",
+                                    "title": "Menu Sebelumnya",
+                                    "current_menu": "PARENT",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "parent"
+                                }
+                            }
+                        }
+                    }
+                }
+            ],
+            "3": [
+                {
+                    "id": "CC",
+                    "current_menu": "3",
+                    "text": "Layanan Penelusuran (Tracking)  apa yang anda inginkan : \n1. Penelusuran Status Work Order (WO)\n2. Penelusuran status pengiriman sample uji/dokumen",
+                    "next_bubbles": [
+                        {
+                            "type": "text",
+                            "text": "Silakan ketik *0* untuk kembali ke Menu Utama.\nKetik *99* untuk kembali ke Menu Sebelumnya."
+                        }
+                    ],
+                    "current_lang": "ID",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "list",
+                    "menus": {
+                        "0": {
+                            "id": "0",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "targeted_menu",
+                            "targeted_path": "START-0"
+                        },
+                        "99": {
+                            "id": "99",
+                            "current_menu": "PARENT",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "targeted_menu",
+                            "targeted_path": "START-0"
+                        },
+                        "1": {
+                            "id": "1",
+                            "title": "Penelurusan Status Work Order (WO)",
+                            "current_menu": "3-1",
+                            "text": "Halo Bapak / Ibu ~user_name~,\nBerikut tautan penelusuran status  Work Order (WO) : \n\nhttps://bit.ly/trackingWO\n\nFormat Nomor Work Order yang  diinput harus Lengkap tanpa spasi, dengan format  Nomor/Kode layanan/Bulan/Tahun \nContoh : 1161/EV/X/2022\n\nEV: Pengujian Tekstil, PL:Pengujian lingkungan, MASK: Pengujian masker, KAL: Kalibrasi)\n\nJika anda, belum mengetahui nomor WO anda, silahkan ketik *INFO WO* untuk menuju ke menu Permintaan Nomor Work Order",
+                            "type": "nest_menu",
+                            "interactive_message": true,
+                            "interactive_type": "button",
+                            "menus": {
+                                "0": {
+                                    "id": "0",
+                                    "title": "Menu Utama",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "START-0"
+                                },
+                                "99": {
+                                    "id": "99",
+                                    "title": "Menu Sebelumnya",
+                                    "current_menu": "PARENT",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "3-0"
+                                },
+                                "INFO WO": {
+                                    "id": "99",
+                                    "current_menu": "INFO WO",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_menu",
+                                    "targeted_path": "2-0-menus-2"
+                                }
+                            }
+                        },
+                        "2": {
+                            "id": "2",
+                            "title": "Penelusuran status pengiriman sample uji/dokumen",
+                            "current_menu": "3-2",
+                            "text": "",
+                            "type": "sequences",
+                            "reminder_template": "SEQREMINDER",
+                            "required_data": [
+                                {
+                                    "id": "SQ1",
+                                    "index": "tracking",
+                                    "label": "jenis",
+                                    "text": "Halo Bapak/Ibu ~user_name~, \n\nUntuk dapat kami bantu cek status  penerimaan sample uji atau dokumen anda, mohon isi informasi berikut.\nSilakan Pilih Jenis Paket:\n*1*. Dokumen\n*2*. Paket Sample Uji\n*3*. Alat Kalibrasi",
+                                    "type": "text",
+                                    "validation": "validate_choices",
+                                    "valid_choices": [
+                                        "1",
+                                        "2",
+                                        "3"
+                                    ],
+                                    "jenis": {
+                                        "1": "Dokumen",
+                                        "2": "Paket Sample Uji",
+                                        "3": "Alat Kalibrasi"
+                                    },
+                                    "error_msg": "Pilahan Anda tidak sesuai!\nSilakan Pilih Jenis Paket:\n*1*. Dokumen\n*2*. Paket Sample Uji\n*3*. Alat Kalibrasi"
+                                },
+                                {
+                                    "id": "SQ2",
+                                    "index": "tracking",
+                                    "label": "kurirresi",
+                                    "text": "Silahkan masukkan detail nama kurir dan nomor resi (contoh : JNE, connote  xxxxxxxx):",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": ""
+                                },
+                                {
+                                    "id": "SQ2",
+                                    "index": "tracking",
+                                    "label": "pengirim",
+                                    "text": "Silakan masukan nama pengirim:",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": ""
+                                },
+                                {
+                                    "id": "SQ4",
+                                    "index": "tracking",
+                                    "label": "fotopaket",
+                                    "text": "Silakan upload foto paket (jika tidak ada, ketik *TIDAK ADA*)",
+                                    "type": "text",
+                                    "validation": null,
+                                    "error_msg": ""
+                                },
+                                {
+                                    "id": "SQ5",
+                                    "text": "",
+                                    "index": "",
+                                    "label": "",
+                                    "type": "completed",
+                                    "create_ticket": true,
+                                    "end_session": true,
+                                    "validation": null,
+                                    "error_msg": "",
+                                    "run_method": false,
+                                    "method_name": null,
+                                    "create_ticket_from_template": true,
+                                    "ticket_template": "Menu : Penelusuran > Permintaan Pengiriman sample Uji/Dokumen\n\nJenis Paket: ~tracking.jenis~\n\nNama kurir dan nomor resi: ~tracking.kurirresi~\n\nNama pengirim: ~tracking.pengirim~\n\nFoto paket: ~tracking.fotopaket~",
+                                    "ticket_template_as_completed_template": false,
+                                    "completed_template": "Terima Kasih anda telah melengkapi informasi ini. Petugas kami akan proses permintaan penelusuran Permintaan Pengiriman sample Uji/Dokumen Anda.\n\nJika tidak menemukannya dalam inbox Anda, silakan cek di folder spam / junkmail. Hal ini dapat terjadi jika provider email Anda mendeteksi email kami sebagai spam."
+                                }
+                            ],
+                            "prev_menus": {
+                                "0": {
+                                    "id": "0",
+                                    "current_menu": "MENU",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_path",
+                                    "targeted_path": "START-0"
+                                },
+                                "99": {
+                                    "id": "99",
+                                    "current_menu": "PARENT",
+                                    "text": "",
+                                    "type": "goto",
+                                    "goto": "targeted_path",
+                                    "targeted_path": "2-0"
+                                }
+                            }
+                        }
+                    }
+                }
+            ],
+            "4": [
+                {
+                    "id": "DD",
+                    "current_menu": "4",
+                    "text": "Halo Bapak/Ibu ~user_name~ \n\nSebelumnya kami merasa prihatin atas ketidaknyamanan yang Anda alami.  Anda dapat melakukan pengaduan dengan cara mengisi formulir pengaduan (fisik di  Unit Pelayanan Publik) maupun digital  melalui tautan : \nhttp://bit.ly/pengaduanbbt\n\nPastikan seluruh data Anda sudah betul,  khususnya nomor kontak aktif karena Petugas akan melakukan verifikasi dan  konfirmasi terkait keluhan Anda.\n\nBBSPJI Tekstil berhak menggugurkan pengaduan jika tidak melampirkan bukti konkrit dan pemohon tidak berkenan diverifikasi.\n\nTerimakasih.",
+                    "current_lang": "ID",
+                    "type": "nest_menu",
+                    "interactive_message": true,
+                    "interactive_type": "button",
+                    "menus": {
+                        "0": {
+                            "id": "0",
+                            "title": "Menu Utama",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "targeted_menu",
+                            "targeted_path": "START-0"
+                        },
+                        "99": {
+                            "id": "99",
+                            "title": "Menu Sebelumnya",
+                            "current_menu": "MENU",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "targeted_menu",
+                            "targeted_path": "START-0"
+                        }
+                    }
+                }
+            ],
+            "5": [
+                {
+                    "id": "EE",
+                    "current_menu": "5",
+                    "text": "Halo Bapak/Ibu ~user_name~,\n\nMohon tunggu sebentar, kami akan menghubungkan Anda dengan Live Customer Service Officer (CSO) kami.\nAnda dapat berkomunikasi dengan batas waktu  sesi 1x24 jam (sesuai waktu operasional) , setelah itu sistem kami akan menutup percakapan secara otomatis. Selalu simpan nomor tiket percakapan Anda dan jika percakapan terputus /berakhir, silakan hubungi kembali Contact Center BBSPJI Tekstil.\n\nLive Customer Service Officer hanya dapat melayani selama jam operasional layanan:\nSenin - Kamis : 08.00 - 15.30 WIB, dan Jumat : 08.00 - 16.00 WIB\nJika saat ini Anda menghubungi diluar jam operasional, silakan coba hubungi kembali esok hari",
+                    "current_lang": "ID",
+                    "type": "goto",
+                    "goto": "cs"
+                }
+            ],
+            "PRE_DEFINE_QUESTION": {
+                "type": "sequences"
+            },
+            "FirstLevelSequence": [
+                {
+                    "id": "FirstLevelSequence",
+                    "current_menu": "FIRST_LEVEL_SEQUENCE",
+                    "text": "",
+                    "type": "sequences",
+                    "required_data": [
+                        {
+                            "id": "SQ1",
+                            "index": "customer",
+                            "label": "nama",
+                            "save_as_username": true,
+                            "text": "Silakan masukkan nama lengkap Anda:",
+                            "type": "text",
+                            "validation": null,
+                            "error_msg": ""
+                        },
+                        {
+                            "id": "SQ2",
+                            "index": "customer",
+                            "label": "instansi",
+                            "text": "Silakan masukkan nama Perusahaan/Instansi:",
+                            "type": "text",
+                            "validation": null,
+                            "error_msg": ""
+                        },
+                        {
+                            "id": "SQ3",
+                            "index": "customer",
+                            "label": "email",
+                            "text": "Silakan masukkan alamat _email_ Anda (contoh: xxx@yyy.com):",
+                            "type": "text",
+                            "validation": "email",
+                            "error_msg": "Mohon maaf, format _email_ yang Anda masukkan tidak sesuai. Silakan masukkan kembali sesuai contoh."
+                        },
+                        {
+                            "id": "SQ4",
+                            "index": "customer",
+                            "label": "newslatter",
+                            "text": "Apakah Anda bersedia menerima informasi berkala melalui email Newslatter? *Ya* / *Tidak*",
+                            "type": "text",
+                            "validation": "validate_choices",
+                            "valid_choices": [
+                                "Y",
+                                "YA",
+                                "YES",
+                                "TDK",
+                                "TIDAK",
+                                "NO"
+                            ],
+                            "newslatter": {
+                                "Y": "Ya",
+                                "YA": "Ya",
+                                "YES": "Ya",
+                                "TDK": "Tidak",
+                                "TIDAK": "Tidak",
+                                "NO": "Tidak"
+                            },
+                            "error_msg": "Jawaban Anda tidak sesuai!\nApakah Anda bersedia menerima informasi berkala melalui email Newslatter? *Ya* / *Tidak*"
+                        },
+                        {
+                            "id": "SQ5",
+                            "index": "customer",
+                            "label": "end",
+                            "text": "",
+                            "type": "targeted_path",
+                            "targeted_path": "START-0",
+                            "run_method": true,
+                            "method_name": "kemenperin4NewsLatter",
+                            "push_email_local": [
+                                "syahrul@ivosights.com"
+                            ],
+                            "push_email_staging": [
+                                "yeremia@ivosights.com",
+                                "ayub.ghazali@ivosights.com",
+                                "syahrul@ivosights.com",
+                                "hume@ivosights.com"
+                            ],
+                            "push_email": [
+                                "contactcenterbbt@gmail.com"
+                            ],
+                            "validation": null,
+                            "error_msg": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

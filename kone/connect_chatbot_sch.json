@@ -33,5 +33,41 @@
         "3-1": "Hubungi Kantor KONE",
         "3-2": "Customer Service",
         "3-3": "Pelaporan Lanjutan"
+    },
+    "first_reminder" : {
+        "local_testing" : false,
+        "status" : true,
+        "set_expire" : false,
+        "minutes" : 3,
+        "interactive_message" : false,
+        "interactive_type" : "text",
+        "menus" : {
+            "ID" : {
+                "MENU" : "Ya",
+                "ENDCONVER" : "Tidak"
+            }
+        },
+        "message" : {
+            "ID" : "Hallo apakah masih terhubung bersama kami?"
+        },
+        "next_bubbles" : []
+    },
+    "second_reminder" : {
+        "local_testing" : false,
+        "status" : true,
+        "set_expire" : true,
+        "minutes" : 5,
+        "interactive_message" : false,
+        "interactive_type" : "text",
+        "menus" : {
+            "ID" : {
+                "MENU" : "Ya",
+                "ENDCONVER" : "Tidak"
+            }
+        },
+        "message" : {
+            "ID" : "Terima kasih telah menghubungi KONE, jika ada pertanyaan lanjutan, jangan sungkan untuk menghubungi kami ya."
+        },
+        "next_bubbles" : []
     }
 }

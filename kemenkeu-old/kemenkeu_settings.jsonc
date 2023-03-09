@@ -1,0 +1,126 @@
+{
+    "schemas": {
+        "default": {
+            "survey" : {
+                "active" : false
+            },
+            "expire_time" : 15,
+            "reset_keys" : [ 
+                "MENU"
+            ],
+            "load_conversation" : "WabaTemplateConversation",
+            "top_level_questions" : [ 
+                {
+                    "id" : "1",
+                    "text" : "Informasi",
+                    "type" : "actions"
+                }
+            ],
+            "MENU" : [ 
+                {
+                    "id" : "1",
+                    "text" : "Informasi",
+                    "type" : "actions"
+                }
+            ],
+            "1" : [ 
+                {
+                    "id" : "1A",
+                    "current_menu" : "1",
+                    "text" : "",
+                    "type" : "goto",
+                    "goto" : "targeted_menu",
+                    "targeted_path" : "FirstLevelSequence-0"
+                }
+            ],
+            "FirstLevelSequence" : [ 
+                {
+                    "id" : "FirstLevelSequence",
+                    "current_menu" : "FIRST_LEVEL_SEQUENCE",
+                    "text" : "",
+                    "type" : "sequences",
+                    "required_data" : [ 
+                        {
+                            "id" : "SQ1",
+                            "index" : "customer",
+                            "label" : "nama",
+                            "text" : "Silakan masukkan nama lengkap Bapak/Ibu:",
+                            "type" : "text",
+                            "validation" : null,
+                            "error_msg" : ""
+                        }, 
+                        {
+                            "id" : "SQ2",
+                            "index" : "customer",
+                            "label" : "email",
+                            "text" : "Silakan masukkan alamat _email_ Bapak/Ibu (contoh: xxx@yyy.com):",
+                            "type" : "text",
+                            "validation" : "email",
+                            "error_msg" : "Mohon maaf, format _email_ yang Bapak/Ibu masukkan tidak sesuai. Silakan masukkan kembali sesuai contoh."
+                        }, 
+                        {
+                            "id" : "SQ3",
+                            "index" : "customer",
+                            "label" : "kategori",
+                            "text" : "Silakan pilih kategori di bawah ini:\n*1* Masyarakat Umum\n*2* Bisnis\n*3* Pemerintahan\n*4* Pegawai Kemenkeu\n\nContoh: Ketik *1* untuk memilih Masyarakat Umum",
+                            "type" : "text",
+                            "validation" : "validate_choices",
+                            "valid_choices" : [ 
+                                "1", 
+                                "2", 
+                                "3", 
+                                "4"
+                            ],
+                            "kategori" : {
+                                "1" : "Masyarakat Umum",
+                                "2" : "Bisnis",
+                                "3" : "Pemerintahan",
+                                "4" : "Pegawai Kemenkeu"
+                            },
+                            "error_msg" : "Silakan pilih kategori di bawah ini:\n*1* Masyarakat Umum\n*2* Bisnis\n*3* Pemerintahan\n*4* Pegawai Kemenkeu\n\nContoh: Ketik *1* untuk memilih Masyarakat Umum"
+                        }, 
+                        {
+                            "id" : "SQ4",
+                            "index" : "customer",
+                            "label" : "informasi",
+                            "text" : "Silakan ketik informasi yang dibutuhkan: (minimal 20 karakter)",
+                            "type" : "text",
+                            "validation" : "min_length",
+                            "min_length" : 20,
+                            "error_msg" : "Silakan ketik informasi yang dibutuhkan: (minimal 20 karakter)"
+                        }, 
+                        {
+                            "id" : "SQ5",
+                            "text" : "",
+                            "index" : "",
+                            "label" : "",
+                            "type" : "completed",
+                            "create_ticket" : true,
+                            "end_session" : true,
+                            "validation" : null,
+                            "error_msg" : "",
+                            "run_method" : false,
+                            "method_name" : null,
+                            "create_ticket_from_template" : true,
+                            "ticket_template_as_completed_template" : true,
+                            "completed_template" : "Nama Lengkap: ~customer.nama~\nEmail: ~customer.email~\nKategori: ~customer.kategori~\nInformasi yang dibutuhkan: ~customer.informasi~\n\nTerima kasih atas data yang diberikan. Mohon menunggu, agen kami akan segera membantu Bapak/Ibu. Mohon untuk tidak melakukan _chat_ berulang.",
+                            "update_contact" : true,
+                            "check_office_hour" : {
+                                "status" : true,
+                                "nin_off_hour" : {
+                                    "create_ticket" : false,
+                                    "end_session" : true,
+                                    "msg" : "Mohon maaf saat ini kami tidak dapat melayani Bapak/Ibu. Silakan menghubungi kami melalui:\n\nTelepon : 134;\nEmail : kemenkeu.prime@kemenkeu.go.id; atau\nWeb form: https://www.kemenkeu.go.id/hubungi-kami\n\nTerima kasih telah menghubungi WhatsApp Kemenkeu PRIME. Selamat beraktivitas kembali.",
+                                    "next_bubbles" : []
+                                }
+                            }
+                        }
+                    ]
+                }
+            ],
+            "PRE_DEFINE_QUESTION" : {
+                "type" : "sequences"
+            }
+        }
+    }
+}
