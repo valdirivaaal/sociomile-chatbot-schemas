@@ -1,7 +1,7 @@
 {
     "active": true,
     "mode": "basic",
-    "greetingMessage": "Assalamualaikum. Halo, mitra Adev. Selamat datang di layanan Customer Support PT. Adev Natural Indonesia.\n\nSilakan pilih nomor menu sesuai dengan informasi yang anda butuhkan.",
+    "greetingMessage": "Halo! Selamat Datang di layanan Welcab Service kami.\nSilahkan pilih layanan yang ingin Anda gunakan: ",
     "exit_keyword": "",
     "order_keywords": [],
     "order_reply_msg": "",

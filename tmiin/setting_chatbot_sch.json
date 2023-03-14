@@ -14,10 +14,172 @@
             },
             "expire_time": 5,
             "top_level_questions": [
-
+                {
+                    "id": "1",
+                    "text": "Informasi Produk",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "Pemesanan Jasa Welcab",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "Komplain Pelanggan",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "Customer Service",
+                    "type": "actions"
+                }
             ],
             "MAIN_MENU": [
-                
+                {
+                    "id": "1",
+                    "text": "Informasi Produk",
+                    "type": "actions"
+                },
+                {
+                    "id": "2",
+                    "text": "Pemesanan Jasa Welcab",
+                    "type": "actions"
+                },
+                {
+                    "id": "3",
+                    "text": "Komplain Pelanggan",
+                    "type": "actions"
+                },
+                {
+                    "id": "4",
+                    "text": "Customer Service",
+                    "type": "actions"
+                }
+            ],
+            "1": [
+                {
+                    "id": "1",
+                    "current_menu": "1",
+                    "current_lang": "",
+                    "text": "Layanan Welcab Service TMMIN adalah layanan antar jemput dikhususkan untuk para pasien disabilitas yang membutuhkan mobilisasi dari rumah sakit ke rumah. Proses pemesanan dilakukan secara H-1 sebelum penjemputan.",
+                    "type": "text"
+                }
+            ],
+            "2": [
+                {
+                    "id": "2",
+                    "current_menu": "2",
+                    "current_lang": "",
+                    "text": "",
+                    "type": "sequences",
+                    "required_data": [
+                        {
+                            "id": "SQ1",
+                            "index": "customer",
+                            "label": "nama",
+                            "text": "*Form Pemesanan*\nNama :",
+                            "type": "text",
+                            "validation": null,
+                            "error_msg": ""
+                        },
+                        {
+                            "id": "SQ2",
+                            "index": "customer",
+                            "label": "lokasi_penjemputan",
+                            "text": "Lokasi :\na.) Penjemputan",
+                            "type": "text",
+                            "validation": null,
+                            "error_msg": ""
+                        },
+                        {
+                            "id": "SQ3",
+                            "index": "customer",
+                            "label": "lokasi_pengantaran",
+                            "text": "b.) Pengantaran",
+                            "type": "text",
+                            "validation": null,
+                            "error_msg": ""
+                        },
+                        {
+                            "id": "SQ4",
+                            "index": "customer",
+                            "label": "waktu",
+                            "text": "Waktu Penjemputan :",
+                            "type": "text",
+                            "validation": null,
+                            "error_msg": ""
+                        },
+                        {
+                            "id": "SQ5",
+                            "index": "customer",
+                            "label": "tanggal",
+                            "text": "Tanggal Penjemputan :",
+                            "type": "text",
+                            "validation": null,
+                            "error_msg": ""
+                        },
+                        {
+                            "id": "SQ6",
+                            "index": "customer",
+                            "label": "telepon",
+                            "text": "No. Telp. Aktif Pelanggan :",
+                            "type": "text",
+                            "validation": null,
+                            "error_msg": ""
+                        },
+                        {
+                            "id": "SQ7",
+                            "index": "",
+                            "label": "",
+                            "text": "",
+                            "type": "completed",
+                            "create_ticket": true,
+                            "end_session": true,
+                            "validation": null,
+                            "error_msg": "",
+                            "create_ticket_from_template": true,
+                            "ticket_template": "*Form Pemesanan*\n- Nama : ~customer.nama~\n- Lokasi\na.) Penjemputan : ~customer.lokasi_penjemputan~\nb.) Pengantaran : ~customer.lokasi_pengantaran~\n- Waktu Penjemputan : ~customer.waktu~\n- Tanggal Penjemputan : ~customer.tanggal~\n- No. Telp. Aktif Pelanggan : ~customer.telepon~",
+                            "ticket_template_as_completed_template": false,
+                            "completed_template": "*Form Pemesanan*\n- Nama : ~customer.nama~\n- Lokasi\na.) Penjemputan : ~customer.lokasi_penjemputan~\nb.) Pengantaran : ~customer.lokasi_pengantaran~\n- Waktu Penjemputan : ~customer.waktu~\n- Tanggal Penjemputan : ~customer.tanggal~\n- No. Telp. Aktif Pelanggan : ~customer.telepon~"
+                        }
+                    ]
+                }
+            ],
+            "3": [
+                {
+                    "id": "3",
+                    "current_menu": "3",
+                    "current_lang": "",
+                    "text": "Anda telah memilih layanan interaktif untuk komplain pelanggan. Kendala apa yang sedang Anda alami? \n1.) Pemesanan (Order)\n2.) Pengalaman dari Welcab Service (Customer Experience)",
+                    "type": "nest_menu",
+                    "menus": {
+                        "1": {
+                            "id": "1",
+                            "current_menu": "3-1",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "cs"
+                        },
+                        "2": {
+                            "id": "2",
+                            "current_menu": "3-2",
+                            "text": "",
+                            "type": "goto",
+                            "goto": "cs"
+                        }
+                    }
+                }
+            ],
+            "4": [
+                {
+                    "id": "4",
+                    "current_menu": "4",
+                    "current_lang": "",
+                    "text": "Terima kasih atas respondnya. Kami akan segera menghubungkan Anda dengan operator. Mohon ditunggu.",
+                    "type": "goto",
+                    "goto": "cs"
+                }
             ]
         }
     }
